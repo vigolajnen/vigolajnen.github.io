@@ -760,7 +760,7 @@ a {
   width: 100%;
   min-height: 400px;
   background-color: #a7a7a7;
-  background-image: url("../../img/restaurant-info/promo-mobile.jpg");
+  background-image: url("../img/restaurant-info/promo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
   .restaurant-info__wrapper {
@@ -865,13 +865,13 @@ a {
       right: -40px;
       width: 40px;
       height: 40px;
-      background-image: url("../../img/icons/icon-arrow.svg");
+      background-image: url("../img/icons/icon-arrow.svg");
       background-repeat: no-repeat;
       background-position: center; }
 
 @media (min-width: 600px) {
   .restaurant-info {
-    background-image: url("../../img/restaurant-info/promo.jpg"); }
+    background-image: url("../img/restaurant-info/promo.jpg"); }
     .restaurant-info__wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1058,7 +1058,7 @@ a {
   width: 60px;
   height: 60px;
   margin-top: -60px;
-  background-image: url("../../img/icons/icon-more.svg");
+  background-image: url("../img/icons/icon-more.svg");
   background-repeat: no-repeat; }
 
 #filters-scrollbar::-webkit-scrollbar-track {
@@ -1262,7 +1262,7 @@ a {
     width: 26px;
     height: 46px;
     background-color: #ffffff;
-    background-image: url("../../img/icons/icon-arrow-select.svg");
+    background-image: url("../img/icons/icon-arrow-select.svg");
     background-repeat: no-repeat;
     background-position: center; }
   .goods__select__filter {
@@ -1540,7 +1540,7 @@ a {
   font-size: 0;
   line-height: 0;
   background-color: #f8f9fa;
-  background-image: url("../../img/icons/icon-close.svg");
+  background-image: url("../img/icons/icon-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   text-decoration: none;
