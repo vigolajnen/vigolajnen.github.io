@@ -497,20 +497,6 @@ a {
   z-index: 2;
   border-bottom: 1px solid #e8eaed; }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 100%;
-  z-index: 200;
-  padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8); }
-
-.sticky + .page-header__wrapper {
-  padding-top: 200px; }
-
 .page-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,7 +507,7 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 1575px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -748,6 +734,9 @@ a {
 .hidden {
   display: none; }
 
+.hidden-overflow {
+  overflow: hidden; }
+
 .restaurant-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,7 +749,7 @@ a {
   width: 100%;
   min-height: 400px;
   background-color: #a7a7a7;
-  background-image: url("../img/restaurant-info/promo-mobile.jpg");
+  background-image: url("../../img/restaurant-info/promo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
   .restaurant-info__wrapper {
@@ -865,13 +854,13 @@ a {
       right: -40px;
       width: 40px;
       height: 40px;
-      background-image: url("../img/icons/icon-arrow.svg");
+      background-image: url("../../img/icons/icon-arrow.svg");
       background-repeat: no-repeat;
       background-position: center; }
 
 @media (min-width: 600px) {
   .restaurant-info {
-    background-image: url("../img/restaurant-info/promo.jpg"); }
+    background-image: url("../../img/restaurant-info/promo.jpg"); }
     .restaurant-info__wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -926,7 +915,9 @@ a {
   .restaurant-info {
     min-height: 90vh; }
     .restaurant-info__inner {
-      padding: 73px 0 82px 40px; }
+      padding: 73px 0 82px 40px;
+      max-width: 890px;
+      margin-left: auto; }
     .restaurant-info__title {
       margin-right: auto; }
     .restaurant-info__list {
@@ -968,9 +959,7 @@ a {
     background: rgba(0, 0, 0, 0.5);
     -webkit-overflow-scrolling: touch; }
   .filters__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -985,8 +974,8 @@ a {
     height: 100%;
     min-height: 60px;
     max-height: 400px;
-    -webkit-animation-name: animation__bottomFadeOut;
-            animation-name: animation__bottomFadeOut;
+    -webkit-animation-name: animation__filters;
+            animation-name: animation__filters;
     -webkit-animation-delay: 0s;
             animation-delay: 0s;
     -webkit-animation-duration: 0.5s;
@@ -1053,12 +1042,12 @@ a {
   position: relative;
   z-index: 1;
   top: -18px;
-  left: 75%;
+  left: 63%;
   right: 0;
   width: 60px;
   height: 60px;
   margin-top: -60px;
-  background-image: url("../img/icons/icon-more.svg");
+  background-image: url("../../img/icons/icon-more.svg");
   background-repeat: no-repeat; }
 
 #filters-scrollbar::-webkit-scrollbar-track {
@@ -1098,6 +1087,9 @@ a {
     .filters--bg {
       background-color: transparent; }
     .filters__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       width: 100%;
       padding-left: 40px;
       overflow-x: scroll;
@@ -1257,12 +1249,12 @@ a {
     content: "";
     position: absolute;
     right: -5px;
-    top: -5px;
+    top: -10px;
     z-index: 0;
     width: 26px;
     height: 46px;
     background-color: #ffffff;
-    background-image: url("../img/icons/icon-arrow-select.svg");
+    background-image: url("../../img/icons/icon-arrow-select.svg");
     background-repeat: no-repeat;
     background-position: center; }
   .goods__select__filter {
@@ -1383,6 +1375,7 @@ a {
   margin: 0 auto;
   padding: 0; }
   .box__item {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1540,7 +1533,7 @@ a {
   font-size: 0;
   line-height: 0;
   background-color: #f8f9fa;
-  background-image: url("../img/icons/icon-close.svg");
+  background-image: url("../../img/icons/icon-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   text-decoration: none;
@@ -1557,8 +1550,12 @@ a {
   display: block; }
 
 .blur {
-  -webkit-filter: blur(5px);
-          filter: blur(5px); }
+  -webkit-animation-name: animation__blur;
+          animation-name: animation__blur;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .card {
   display: -webkit-box;
@@ -1593,12 +1590,30 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 100%;
-    padding: 40px 0 0; }
+    padding: 40px 0 0;
+    -webkit-animation-name: animation__bottomFadeOut;
+            animation-name: animation__bottomFadeOut;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s; }
   .card__header {
-    padding: 0 16px; }
+    padding: 0 16px;
+    -webkit-animation-name: animation__bottomFadeOut;
+            animation-name: animation__bottomFadeOut;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s; }
   .card__content {
     margin-bottom: 40px;
-    padding: 0 16px; }
+    padding: 0 16px;
+    -webkit-animation-name: animation__bottomFadeOut;
+            animation-name: animation__bottomFadeOut;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; }
   .card__title {
     margin: 0 0 40px 0;
     line-height: 27px;
@@ -1620,11 +1635,23 @@ a {
     padding-right: 40px;
     line-height: normal;
     font-size: 18px;
-    font-weight: 900; }
+    font-weight: 900;
+    -webkit-animation-name: animation__bottomFadeOut;
+            animation-name: animation__bottomFadeOut;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s; }
   .card__name {
     line-height: 17px;
     font-size: 12px;
-    opacity: 0.4; }
+    opacity: 0.4;
+    -webkit-animation-name: animation__bottomFadeOut;
+            animation-name: animation__bottomFadeOut;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s; }
   .card__payment {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1684,18 +1711,14 @@ a {
     .card__info {
       width: 50%; }
     .card__inner {
-      padding-top: 116px;
-      -webkit-animation-name: animation__bottomFadeOut;
-              animation-name: animation__bottomFadeOut;
-      -webkit-animation-delay: 0s;
-              animation-delay: 0s;
-      -webkit-animation-duration: 0.5s;
-              animation-duration: 0.5s; }
+      padding-top: 116px; }
     .card__header {
-      padding-left: 75px; }
+      padding-left: 75px;
+      padding-right: 75px; }
     .card__content {
       margin-bottom: 130px;
-      padding-left: 75px; }
+      padding-left: 75px;
+      padding-right: 75px; }
     .card__button {
       display: block;
       min-height: auto;
@@ -1715,9 +1738,9 @@ a {
 
 @media (min-width: 1140px) {
   .card__preview {
-    width: 60%; }
+    width: 70%; }
   .card__info {
-    width: 40%; } }
+    width: 30%; } }
 
 @media (min-width: 1240px) {
   .card__preview {
@@ -1729,19 +1752,19 @@ a {
 
 @-webkit-keyframes animation__bottomFadeOut {
   0% {
-    position: absolute;
-    bottom: -70px; }
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px); }
   100% {
-    position: absolute;
-    bottom: 0; } }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 @keyframes animation__bottomFadeOut {
   0% {
-    position: absolute;
-    bottom: -70px; }
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px); }
   100% {
-    position: absolute;
-    bottom: 0; } }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 @-webkit-keyframes animation__topFadeOut {
   0% {
@@ -1758,3 +1781,35 @@ a {
   100% {
     position: absolute;
     top: -50px; } }
+
+@-webkit-keyframes animation__blur {
+  0% {
+    -webkit-filter: blur(0);
+            filter: blur(0); }
+  100% {
+    -webkit-filter: blur(10px);
+            filter: blur(10px); } }
+
+@keyframes animation__blur {
+  0% {
+    -webkit-filter: blur(0);
+            filter: blur(0); }
+  100% {
+    -webkit-filter: blur(10px);
+            filter: blur(10px); } }
+
+@-webkit-keyframes animation__filters {
+  0% {
+    position: absolute;
+    bottom: -70px; }
+  100% {
+    position: absolute;
+    bottom: 0; } }
+
+@keyframes animation__filters {
+  0% {
+    position: absolute;
+    bottom: -70px; }
+  100% {
+    position: absolute;
+    bottom: 0; } }
