@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header id="header-fixed" class="page-header fixed-top">
     <div class="page-header__top page-header__top--bg">
       <div class="page-header__box">
         <div class="page-header__nav">
@@ -66,17 +66,44 @@
                 <li class="navigation__item">
                   <a class="navigation__link navigation__arrow" href="#">Частным лицам</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">корпоративным клиентам</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">Контакты</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">блог</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">сервис</a>
+                </li>
+                <li class="navigation__item navigation__item-more">
+                  <a class="navigation__link navigation__arrow" href="#">Еще</a>
+                  <div class="submenu animated fadeInUpSmall">
+                    <ul class="submenu__sub">
+                      <li class="submenu__sub-item">
+                        <a href="" class="submenu__sub-link">
+                          <span class="submenu__sub-name">корпоративным клиентам</span>
+                        </a>
+                      </li>
+                      <li class="submenu__sub-item">
+                        <a href="" class="submenu__sub-link">
+                          <span class="submenu__sub-name">Контакты</span>
+                        </a>
+                      </li>
+                      <li class="submenu__sub-item">
+                        <a href="distributors.html" class="submenu__sub-link">
+                          <span class="submenu__sub-name">блог</span>
+                        </a>
+                      </li>
+                      <li class="submenu__sub-item">
+                        <a href="distributors.html" class="submenu__sub-link">
+                          <span class="submenu__sub-name">сервис</>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -1439,20 +1466,52 @@
                 </div>
               </div>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">пиво</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Пиво</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">вода</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Вода</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">сиропы</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Сиропы</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">стекло</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Стекло</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">аксессуары</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Аксессуары</a>
+            </li>
+            <li class="top-menu__item top-menu__item-more">
+              <a class="top-menu__link" href="#">Еще</a>
+              <div class="submenu animated fadeInUpSmall">
+                <ul class="submenu__sub">
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Пиво</span>
+                    </a>
+                  </li>
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Вода</span>
+                    </a>
+                  </li>
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Сиропы</span>
+                    </a>
+                  </li>
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Стекло</span>
+                    </a>
+                  </li>
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Аксессуары</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>
@@ -1470,7 +1529,6 @@
         </div>
       </div>
     </div>
-
   </header>
   <div class="container">
     <div class="sidebar">

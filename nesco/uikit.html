@@ -22,22 +22,62 @@
 <body>
 <div class="container">
   <div class="toggle">
-<ul class="toggle__list animated fadeInDown">
-      <li class="toggle__item toggle--active" data-id="0">
-        <a class="toggle__link" href="#red">Для бизнеса</a>
-      </li>
-      <li class="toggle__item" data-id="1">
-        <a class="toggle__link" href="#rest">Ресторанам</a>
-      </li>
-      <li class="toggle__item" data-id="5">
-        <a class="toggle__link" href="#mag">Магазинам</a>
-      </li>
-      <li class="toggle__item" data-id="3">
-        <a class="toggle__link" href="#dist">Дистрибьюторам</a>
-      </li>
-    </ul>
+  <ul class="toggle__list animated fadeInDown">
+  <li class="toggle__item toggle--active" data-id="0">
+  <a class="toggle__link" href="#red">Для бизнеса</a>
+  </li>
+  <li class="toggle__item" data-id="1">
+  <a class="toggle__link" href="#rest">Ресторанам</a>
+  </li>
+  <li class="toggle__item" data-id="5">
+  <a class="toggle__link" href="#mag">Магазинам</a>
+  </li>
+  <li class="toggle__item" data-id="3">
+  <a class="toggle__link" href="#dist">Дистрибьюторам</a>
+  </li>
+  </ul>
   </div>
-
+  <div class="filters">
+  <form class="item__buy-form" action="#" method="post">
+  <div class="item__buy-form-top">
+  <div class="filters__item">
+  <label class="filters__item-title" for="buy-1">Показатель:</label>
+  <select class="custom-select js-size" id="buy-1">
+  <option value="50">50</option>
+  <option value="100">100</option>
+  <option value="150">150</option>
+  </select>
+  <div class="ss-14003 ss-main custom-select js-size" style="">
+  <div class="ss-single-selected ss-open-below">
+  <span class="placeholder">50</span>
+  <span class="ss-deselect ss-hide">X</span>
+  <span class="ss-arrow"><span class="arrow-up"></span>
+  </span>
+  </div>
+  <div class="ss-content ss-open">
+  <div class="ss-search ss-hide">
+  <input readonly="" type="search" placeholder="Search" tabindex="0">
+  </div>
+  <div class="ss-list">
+  <div class="ss-option ss-disabled" data-id="22377515">50</div>
+  <div class="ss-option" data-id="80452706">100</div>
+  <div class="ss-option" data-id="389491">150</div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="item__buy-form-top">
+  <div class="filters__item">
+  <label class="filters__item-title" for="buy-1">Сортировка:</label>
+  <select class="custom-select js-size" id="buy-1">
+  <option value="по цене">по цене</option>
+  <option value="по дате">по дате</option>
+  </select>
+  </div>
+  </div>
+  </form> 
+  </div>
 </div>
 
 <script src="js/vendor.min.js"></script>

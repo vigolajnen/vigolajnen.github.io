@@ -20,7 +20,217 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <div class="mobile-side-elements">
+    <div class="mobile-sidebar">
+      <button class="mobile-sidebar__catalog-btn button">
+        <div class="button-link">
+        <span class="burger-btn burger-btn--header burger-btn--mobile-sidebar">
+        <!--<span class="burger-icon"></span>-->
+        <svg class="sidebar__catalog-svg" width="13" height="11">
+            <use xlink:href="img/sprite.svg#icon-dots-menu"></use>
+        </svg>
+        <span class="close-btn visually-hidden"></span>
+        </span>
+        <span class="mobile-sidebar__catalog-text text-md">Каталог</span>
+      </div>
+      </button>
+      <button class="mobile-sidebar__search-btn button">
+        <svg class="mobile-sidebar__search-svg" width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon-search-2"></use>
+        </svg>
+      </button>
+      <button class="mobile-sidebar__like-btn button">
+        <svg class="mobile-sidebar__like-svg" width="20" height="20">l
+            <use xlink:href="img/sprite.svg#icon-like-2"></use>
+        </svg>
+      </button>
+    
+      <!-- <div class="mobile-sidebar__search-input">
+      <form action="/search/" method="get">
+      <input type="search" placeholder="Введите название товара" name="q" value="">
+      <input name="s" type="submit" value="Поиск" hidden="">
+      </form>
+      </div> -->
+    </div>
+    <nav class="mobile-menu">
+      <button class="mobile-menu__close button" aria-label="закрыть меню"></button>
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__cities">
+          <button class="mobile-menu__city button">
+            Санкт-Петербург
+            <span class="mobile-menu__city--arrow" aria-label="стрелка"></span>
+          </button>
+          <a class="mobile-menu__phone" href="tel:+78121232233">+7 (812) 123-22-33</a>
+        </div>
+        <!-- <div class="mobile-menu__cat">
+              <div class="mobile-menu__cat-title">Каталог</div>
+              <nav class="mobile-cat">
+                <ul class="mobile-cat__list">
+                  <li class="mobile-cat__item">
+                    <a class="mobile-cat__link mobile-cat__link--icon" href="#">Вино</a>
+                    <ul class="mobile-cat__subcat">
+                      <li class="mobile-cat__subcat-item">
+                        <a class="mobile-cat__subcat-link" href="#">Все</a>
+                      </li>
+                      <li class="mobile-cat__subcat-item">
+                        <a class="mobile-cat__subcat-link" href="#">Белое</a>
+                      </li>
+                      <li class="mobile-cat__subcat-item">
+                        <a class="mobile-cat__subcat-link" href="#">Розовое</a>
+                      </li>
+                      <li class="mobile-cat__subcat-item">
+                        <a class="mobile-cat__subcat-link" href="#">Красное</a>
+                      </li>
+                      <li class="mobile-cat__subcat-item">
+                        <a class="mobile-cat__subcat-link" href="#">Розовое</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mobile-cat__item">
+                    <a class="mobile-cat__link mobile-cat__link--icon" href="#">Крепкий алкоголь</a>
+                  </li>
+                  <li class="mobile-cat__item">
+                    <a class="mobile-cat__link mobile-cat__link--icon" href="#">Игристое вино</a>
+                  </li>
+                  <li class="mobile-cat__item">
+                    <a class="mobile-cat__link mobile-cat__link--icon" href="#">Пиво</a>
+                  </li>
+                  <li class="mobile-cat__item">
+                    <a class="mobile-cat__link mobile-cat__link--icon" href="#">Сиропы</a>
+                  </li>
+                  <li class="mobile-cat__item">
+                    <a class="mobile-cat__link mobile-cat__link--icon" href="#">Стекло</a>
+                  </li>
+                  <li class="mobile-cat__item">
+                    <a class="mobile-cat__link mobile-cat__link--icon" href="#">Аксессуары</a>
+                  </li>
+                </ul>
+              </nav>
+            </div> -->
+        <div class="mobile-menu__dop">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Бренды</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Новинки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__buttom">
+          <ul class="mobile-menu__list mobile-menu__list--gray">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link--icon" href="#">О компании</a>
+              <ul class="mobile-submenu">
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Ресторанам</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Магазинам</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Дистрибьюторам</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link--icon" href="#">Для бизнеса</a>
+              <ul class="mobile-submenu">
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Ресторанам</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Магазинам</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Дистрибьюторам</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link--icon" href="#">Сервис</a>
+              <ul class="mobile-submenu">
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Ресторанам</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Магазинам</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">Дистрибьюторам</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Частнам лицам</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Контакты</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Блог</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="mobile-catalog">
+      <div class="mobile-catalog__wrapper">
+        <div class="mobile-catalog__header">
+          <span class="mobile-catalog__name">Каталог</span>
+          <button class="mobile-catalog__close button button-close" aria-label="закрыть каталог">
+            <!-- <svg class="mobile-catalog__svg" width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-menu-close"></use>
+            </svg> -->
+          </button>
+        </div>
+        <ul class="mobile-catalog__list">
+          <li class="mobile-catalog__item">
+            <a class="mobile-catalog__link mobile-catalog__link--icon" href="#">Вино</a>
+            <ul class="mobile-catalog__sub">
+              <li class="mobile-catalog__sub-item">
+                <a class="mobile-catalog__sub-link" href="#">Все</a>
+              </li>
+              <li class="mobile-catalog__sub-item">
+                <a class="mobile-catalog__sub-link" href="#">Белое</a>
+              </li>
+              <li class="mobile-catalog__sub-item">
+                <a class="mobile-catalog__sub-link" href="#">Красное</a>
+              </li>
+              <li class="mobile-catalog__sub-item">
+                <a class="mobile-catalog__sub-link" href="#">Розовое</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-catalog__item">
+            <a class="mobile-catalog__link mobile-catalog__link--icon" href="#">Крепкий алкоголь</a>
+          </li>
+          <li class="mobile-catalog__item">
+            <a class="mobile-catalog__link mobile-catalog__link--icon" href="#">Шампанское и игристое</a>
+          </li>
+          <li class="mobile-catalog__item">
+            <a class="mobile-catalog__link mobile-catalog__link--icon" href="#">Пиво</a>
+          </li>
+          <li class="mobile-catalog__item">
+            <a class="mobile-catalog__link mobile-catalog__link--icon" href="#">Вода</a>
+          </li>
+          <li class="mobile-catalog__item">
+            <a class="mobile-catalog__link mobile-catalog__link--icon" href="#">Сиропы</a>
+          </li>
+          <li class="mobile-catalog__item">
+            <a class="mobile-catalog__link mobile-catalog__link--icon" href="#">Стекло</a>
+          </li>
+          <li class="mobile-catalog__item">
+            <a class="mobile-catalog__link mobile-catalog__link--icon" href="#">Аксессуары</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <header id="header-fixed" class="page-header fixed-top">
     <div class="page-header__top page-header__top--bg">
       <div class="page-header__box">
         <div class="page-header__nav">
@@ -66,17 +276,44 @@
                 <li class="navigation__item">
                   <a class="navigation__link navigation__arrow" href="#">Частным лицам</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">корпоративным клиентам</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">Контакты</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">блог</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">сервис</a>
+                </li>
+                <li class="navigation__item navigation__item-more">
+                  <a class="navigation__link navigation__arrow" href="#">Еще</a>
+                  <div class="submenu animated fadeInUpSmall">
+                    <ul class="submenu__sub">
+                      <li class="submenu__sub-item">
+                        <a href="" class="submenu__sub-link">
+                          <span class="submenu__sub-name">корпоративным клиентам</span>
+                        </a>
+                      </li>
+                      <li class="submenu__sub-item">
+                        <a href="" class="submenu__sub-link">
+                          <span class="submenu__sub-name">Контакты</span>
+                        </a>
+                      </li>
+                      <li class="submenu__sub-item">
+                        <a href="distributors.html" class="submenu__sub-link">
+                          <span class="submenu__sub-name">блог</span>
+                        </a>
+                      </li>
+                      <li class="submenu__sub-item">
+                        <a href="distributors.html" class="submenu__sub-link">
+                          <span class="submenu__sub-name">сервис</>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -1439,20 +1676,52 @@
                 </div>
               </div>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">пиво</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Пиво</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">вода</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Вода</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">сиропы</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Сиропы</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">стекло</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Стекло</a>
             </li>
-            <li class="top-menu__item">
-              <a class="top-menu__link" href="#">аксессуары</a>
+            <li class="top-menu__item top-menu__item--hidden">
+              <a class="top-menu__link" href="#">Аксессуары</a>
+            </li>
+            <li class="top-menu__item top-menu__item-more">
+              <a class="top-menu__link" href="#">Еще</a>
+              <div class="submenu animated fadeInUpSmall">
+                <ul class="submenu__sub">
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Пиво</span>
+                    </a>
+                  </li>
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Вода</span>
+                    </a>
+                  </li>
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Сиропы</span>
+                    </a>
+                  </li>
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Стекло</span>
+                    </a>
+                  </li>
+                  <li class="submenu__sub-item">
+                    <a class="submenu__sub-link" href="#">
+                      <span class="submenu__sub-name">Аксессуары</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>
@@ -1470,7 +1739,6 @@
         </div>
       </div>
     </div>
-
   </header>
 
   <section class="item">
@@ -1507,7 +1775,7 @@
     <div class="item__price">
       <span>2000 P</span>
     </div>
-    <section class="item__characteristic characteristic">
+    <section class="item__characteristic characteristic vp-invisible">
       <table class="characteristic__table">
         <tbody>
           <tr>
@@ -1543,7 +1811,7 @@
         </tbody>
       </table>
     </section>
-    <section class="item__map map">
+    <section class="item__map map vp-invisible">
       <h3 class="visually-hidden">Карта</h3>
       <div class="map__wrapper">
         <div class="map__caption">
@@ -1570,7 +1838,7 @@
         </section>
       </div>
     </section>
-    <section class="item__characteristic characteristic">
+    <section class="item__characteristic characteristic vp-invisible">
       <h3 class="title title--before">Характеристика</h3>
       <table class="characteristic__table">
         <tbody>
@@ -1634,7 +1902,7 @@
       </div>
       <a class="link" href="#">Еще</a>
     </section>
-    <section class="item__characteristic characteristic">
+    <section class="item__characteristic characteristic vp-invisible">
       <h3 class="title title--before">Стилистика</h3>
       <table class="characteristic__table">
         <tbody>
@@ -1681,7 +1949,7 @@
         </tbody>
       </table>
     </section>
-    <section class="reviews">
+    <section class="reviews vp-invisible">
       <div class="reviews__wrapper">
         <h3 class="title title--before">Отзывы сомелье</h3>
         <div class="reviews__btn">
@@ -1747,7 +2015,7 @@
         </div>
       </div>
     </section>
-    <section class="content-box">
+    <section class="content-box vp-invisible">
       <h3 class="title title--before">О бренде</h3>
       <img class="picture" src="img/brands/martini.png" alt="martini">
       <div class="content-box__text">
@@ -1757,7 +2025,7 @@
       </div>
       <a class="button-link" href="#">Смотреть все</a>
     </section>
-    <section class="slider-product">
+    <section class="slider-product vp-invisible">
       <div class="slider-product__wrapper">
         <h3 class="slider-product__title title title--before">Рекомендуем</h3>
         <div class="slider-product__btn">
@@ -1791,7 +2059,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">1300 P</div>
             </div>
@@ -1822,7 +2090,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Podere Montepulciano d'Abruzzo</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">4 500 P</div>
             </div>
@@ -1853,7 +2121,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Le Grand Noir Cabernet Sauvignon</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">4 200 P</div>
             </div>
@@ -1884,7 +2152,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Remole</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">2 500 P</div>
             </div>
@@ -1915,7 +2183,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">1300 P</div>
             </div>
@@ -1924,7 +2192,7 @@
         <a class="slider-product__link button-link" href="#">Смотреть все</a>
       </div>
     </section>
-    <section class="slider-product">
+    <section class="slider-product vp-invisible">
       <div class="slider-product__wrapper">
         <h3 class="slider-product__title title title--before">Вы ранее просматривали</h3>
         <div class="slider-product__btn">
@@ -1958,7 +2226,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">1300 P</div>
             </div>
@@ -1989,7 +2257,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Podere Montepulciano d'Abruzzo</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">4 500 P</div>
             </div>
@@ -2020,7 +2288,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Le Grand Noir Cabernet Sauvignon</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">4 200 P</div>
             </div>
@@ -2051,7 +2319,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Remole</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">2 500 P</div>
             </div>
@@ -2082,7 +2350,7 @@
                 <a href="#" class="product__name-link">
                   <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
                 </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="product__price">1300 P</div>
             </div>
@@ -2091,7 +2359,7 @@
         <a class="slider-product__link button-link" href="#">Смотреть все</a>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages vp-invisible">
       <div class="advantages__wrapper">
         <h3 class="visually-hidden">Преимущества</h3>
         <ul class="advantages__list">
