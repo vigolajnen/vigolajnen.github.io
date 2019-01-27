@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nesco</title>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <meta name="description" content="">
@@ -16,31 +17,38 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="">
   <meta name="twitter:title" content="">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <div class="mobile-side-elements">
     <div class="mobile-sidebar">
-      <button class="mobile-sidebar__catalog-btn button">
-        <div class="button-link">
-        <span class="burger-btn burger-btn--header burger-btn--mobile-sidebar">
-        <!--<span class="burger-icon"></span>-->
-        <svg class="sidebar__catalog-svg" width="13" height="11">
-            <use xlink:href="img/sprite.svg#icon-dots-menu"></use>
-        </svg>
-        <span class="close-btn visually-hidden"></span>
-        </span>
-        <span class="mobile-sidebar__catalog-text text-md">Каталог</span>
+      <div class="mobile-sidebar__catalog-btn button">
+        <button class="button-link button">
+          <span class="burger-btn burger-btn--header burger-btn--mobile-sidebar">
+          <!--<span class="burger-icon"></span>-->
+          <svg class="sidebar__catalog-svg" width="13" height="11">
+              <use xlink:href="img/sprite.svg#icon-dots-menu"></use>
+          </svg>
+          <span class="close-btn visually-hidden"></span>
+          </span>
+          <span class="mobile-sidebar__catalog-text text-md">Каталог</span>
+        </button>
       </div>
-      </button>
-      <button class="mobile-sidebar__search-btn button">
+      <button class="mobile-sidebar__search-btn button" aria-label="Кнопка поиска">
         <svg class="mobile-sidebar__search-svg" width="16" height="16">
             <use xlink:href="img/sprite.svg#icon-search-2"></use>
         </svg>
       </button>
       <button class="mobile-sidebar__like-btn button">
-        <svg class="mobile-sidebar__like-svg" width="20" height="20">l
+        <svg class="mobile-sidebar__like-svg" width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-like-2"></use>
         </svg>
       </button>
@@ -309,7 +317,7 @@
                       </li>
                       <li class="submenu__sub-item">
                         <a href="distributors.html" class="submenu__sub-link">
-                          <span class="submenu__sub-name">сервис</>
+                          <span class="submenu__sub-name">сервис</span>
                         </a>
                       </li>
                     </ul>
@@ -2470,7 +2478,7 @@
         <div class="form-search__input">
           <span class="form-search__naem">Вино</span>
           <label class="visually-hidden" for="search">Поиск вина</label>
-          <input class="visually-hidden" name="search" type="text" placeholder="Вино">
+          <input class="visually-hidden" id="search" name="search" type="text" placeholder="Вино">
         </div>
         <div class="form-search__wrapper">
           <div class="search-result">
@@ -2481,7 +2489,7 @@
                     <img class="picture" src="img/goods/min-product.jpg" alt="вино">
                   </div>
                   <div class="search-result__data">
-                    <div class="search-result__name">Negrita Rum White</div>
+                    <a class="search-result__name" href="#">Negrita Rum White</a>
                     <div class="search-result__info">
                       <div class="search-result__info-box border-before">
                         <div class="search-result__info-title">Тип:</div>
@@ -2510,7 +2518,7 @@
                     <img class="picture" src="img/goods/min-product.jpg" alt="вино">
                   </div>
                   <div class="search-result__data">
-                    <div class="search-result__name">Negrita Rum White</div>
+                    <a class="search-result__name" href="#">Negrita Rum White</a>
                     <div class="search-result__info">
                       <div class="search-result__info-box border-before">
                         <div class="search-result__info-title">Тип:</div>
@@ -2539,7 +2547,7 @@
                     <img class="picture" src="img/goods/min-product.jpg" alt="вино">
                   </div>
                   <div class="search-result__data">
-                    <div class="search-result__name">Negrita Rum White</div>
+                    <a class="search-result__name" href="#">Negrita Rum White</a>
                     <div class="search-result__info">
                       <div class="search-result__info-box border-before">
                         <div class="search-result__info-title">Тип:</div>
@@ -2566,11 +2574,12 @@
             <div class="search-result__wrapper">
               <div class="search-result__item">
                 <div class="search-result__box search-result__box-empty">
-                  <div class="search-result__name">Ничего не найдено</div>
+                  <a class="search-result__name" href="#">Ничего не найдено</>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </form>
     </div>
   </div>

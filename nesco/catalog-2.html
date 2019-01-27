@@ -31,6 +31,7 @@
         <div class="mobile-sidebar__catalog-btn button">
           <button class="button-link button">
             <span class="burger-btn burger-btn--header burger-btn--mobile-sidebar">
+            <!--<span class="burger-icon"></span>-->
             <svg class="sidebar__catalog-svg" width="13" height="11">
                 <use xlink:href="img/sprite.svg#icon-dots-menu"></use>
             </svg>
@@ -49,6 +50,13 @@
               <use xlink:href="img/sprite.svg#icon-like-2"></use>
           </svg>
         </button>
+    
+        <!-- <div class="mobile-sidebar__search-input">
+        <form action="/search/" method="get">
+        <input type="search" placeholder="Введите название товара" name="q" value="">
+        <input name="s" type="submit" value="Поиск" hidden="">
+        </form>
+        </div> -->
       </div>
       <nav class="mobile-menu">
         <button class="mobile-menu__close button" aria-label="закрыть меню"></button>
@@ -60,6 +68,51 @@
             </button>
             <a class="mobile-menu__phone" href="tel:+78121232233">+7 (812) 123-22-33</a>
           </div>
+          <!-- <div class="mobile-menu__cat">
+                <div class="mobile-menu__cat-title">Каталог</div>
+                <nav class="mobile-cat">
+                  <ul class="mobile-cat__list">
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Вино</a>
+                      <ul class="mobile-cat__subcat">
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Все</a>
+                        </li>
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Белое</a>
+                        </li>
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Розовое</a>
+                        </li>
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Красное</a>
+                        </li>
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Розовое</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Крепкий алкоголь</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Игристое вино</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Пиво</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Сиропы</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Стекло</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Аксессуары</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div> -->
           <div class="mobile-menu__dop">
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
@@ -1694,43 +1747,256 @@
       </div>
     </header>
 
-    <div class="promo">
-      <div class="promo__wrapper">
-        <div id="slider-promo" class="promo__slider slider-main">
-          <a class="slider-main__link" href="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/promo/slide-1.jpg 1x, img/promo/slide-1@2x.jpg 2x">
-              <img class="slider-main__pic picture" src="img/promo/slide-mob.jpg" width="1920" height="785" alt="slide">
-            </picture>
-          </a>
-          <a class="slider-main__link" href="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/promo/slide-1.jpg 1x, img/promo/slide-1@2x.jpg 2x">
-              <img class="slider-main__pic picture" src="img/promo/slide-mob.jpg" width="1920" height="785" alt="slide">
-            </picture>
-          </a>
-          <a class="slider-main__link" href="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/promo/slide-1.jpg 1x, img/promo/slide-1@2x.jpg 2x">
-              <img class="slider-main__pic picture" src="img/promo/slide-mob.jpg" width="1920" height="785" alt="slide">
-            </picture>
-          </a>
-          <a class="slider-main__link" href="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/promo/slide-1.jpg 1x, img/promo/slide-1@2x.jpg 2x">
-              <img class="slider-main__pic picture" src="img/promo/slide-mob.jpg" width="1920" height="785" alt="slide">
-            </picture>
-          </a>
+    <div class="filter-block">
+      <section class="filter-block__box vp-invisible">
+        <div class="filter-block__wrapper">
+          <p class="filter-block__title filter-block__title--icon">Вино</p>
+          <ul class="filter-block__list">
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Красное</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Белое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Розовое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Сухое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Полусладкое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Мерло</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Вермут</button>
+            </li>
+          </ul>
         </div>
-        <div class="promo__slider__btn">
-          <button class="promo__slider__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
-          <button class="promo__slider__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
+      </section>
+      <section class="filter-block__box vp-invisible">
+        <div class="filter-block__wrapper">
+          <p class="filter-block__title filter-block__title--icon">Игристое вино</p>
+          <ul class="filter-block__list">
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Красное</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Белое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Розовое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Сухое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Полусладкое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Мерло</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Вермут</button>
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
+      <section class="filter-block__box vp-invisible">
+        <div class="filter-block__wrapper">
+          <p class="filter-block__title filter-block__title--icon">Стекло</p>
+          <ul class="filter-block__list">
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Красное</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Белое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Розовое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Сухое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Полусладкое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Мерло</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Вермут</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="filter-block__box vp-invisible">
+        <div class="filter-block__wrapper">
+          <p class="filter-block__title filter-block__title--icon">Аксессуары</p>
+          <ul class="filter-block__list">
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Красное</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Белое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Розовое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Сухое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Полусладкое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Мерло</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Вермут</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="filter-block__box vp-invisible">
+        <div class="filter-block__wrapper">
+          <p class="filter-block__title filter-block__title--icon">Крепкий алкоголь</p>
+          <ul class="filter-block__list">
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Водка</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Ром</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Виски</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Коньяк</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Настойка</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Самогон</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Джин</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Водка</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Ром</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Виски</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Коньяк</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Настойка</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Самогон</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Джин</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="filter-block__box vp-invisible">
+        <div class="filter-block__wrapper">
+          <p class="filter-block__title filter-block__title--icon">Пиво</p>
+          <ul class="filter-block__list">
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Красное</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Белое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Розовое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Сухое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Полусладкое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Мерло</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Вермут</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="filter-block__box vp-invisible">
+        <div class="filter-block__wrapper">
+          <p class="filter-block__title filter-block__title--icon">Вода</p>
+          <ul class="filter-block__list">
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Красное</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Белое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Розовое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Сухое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Полусладкое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Мерло</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Вермут</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="filter-block__box vp-invisible">
+        <div class="filter-block__wrapper">
+          <p class="filter-block__title filter-block__title--icon">Сиропы</p>
+          <ul class="filter-block__list">
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Красное</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Белое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Розовое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Сухое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Полусладкое</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Мерло</button>
+            </li>
+            <li class="filter-block__item">
+              <button class="filter-block__btn button">Вермут</button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
     <section class="new-goods vp-invisible">
       <div class="new-goods__wrapper">
-        <h3 class="new-goods__title title title--before">Новинки</h3>
+        <h3 class="new-goods__title title title--before">Новые поступления</h3>
         <div class="new-goods__btn">
           <button class="new-goods__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
           <button class="new-goods__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
@@ -1895,559 +2161,7 @@
         <a class="new-goods__link button-link" href="#">В каталог</a>
       </div>
     </section>
-    <section class="brands vp-invisible">
-      <div class="brands__wrapper">
-        <h3 class="brands__title title title--before">Эксклюзивные бренды</h3>
-        <div class="brands__btn">
-          <button class="brands__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
-          <button class="brands__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
-        </div>
-        <div id="slider-brands" class="brands__slider">
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-1">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-2">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-1">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-2">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-1">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-2">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-1">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-2">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="popular-goods vp-invisible">
-      <div class="popular-goods__wrapper">
-        <h3 class="popular-goods__title title title--before">Популярные товары</h3>
-        <div class="popular-goods__btn">
-          <button class="popular-goods__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
-          <button class="popular-goods__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
-        </div>
-        <div id="slider-popular-goods" class="popular-goods__slider">
-          <div class="product">
-            <div class="product__pic-box">
-              <div class="showcases">
-                <a class="showcases__link showcases__link--like" href="#" title="Like">
-                  <svg class="showcases__icon" width="35" height="30">
-                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
-                  </svg>
-                </a>
-                <a class="showcases__link showcases__link--new"  href="#" title="Новинки">
-                  <svg class="showcases__icon" width="50" height="40">
-                    <use xlink:href="img/sprite.svg#icon-new"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="product__image">
-                <a class="product__link-img" href="#">
-                  <img class="picture" src="img/goods/product-1.jpg" alt="product">
-                </a>
-              </div>
-            </div>
-            <div class="product__info-box">
-              <div class="product__box">
-                <div class="product__country">Италия</div>
-                <a href="#" class="product__name-link">
-                  <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
-                </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="product__price">1300 P</div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__pic-box">
-              <div class="showcases">
-                <a class="showcases__link showcases__link--like" href="#" title="Like">
-                  <svg class="showcases__icon" width="35" height="30">
-                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
-                  </svg>
-                </a>
-                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
-                  <svg class="showcases__icon" width="50" height="40">
-                    <use xlink:href="img/sprite.svg#icon-new"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="product__image">
-                <a class="product__link-img" href="#">
-                  <img class="picture" src="img/goods/product-2.jpg" alt="product">
-                </a>
-              </div>
-            </div>
-            <div class="product__info-box">
-              <div class="product__box">
-                <div class="product__country">Италия</div>
-                <a href="#" class="product__name-link">
-                  <h3 class="product__name">Podere Montepulciano d'Abruzzo</h3>
-                </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="product__price">4 500 P</div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__pic-box">
-              <div class="showcases">
-                <a class="showcases__link showcases__link--like" href="#" title="Like">
-                  <svg class="showcases__icon" width="35" height="30">
-                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
-                  </svg>
-                </a>
-                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
-                  <svg class="showcases__icon" width="50" height="40">
-                    <use xlink:href="img/sprite.svg#icon-new"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="product__image">
-                <a class="product__link-img" href="#">
-                  <img class="picture" src="img/goods/product-3.jpg" alt="product">
-                </a>
-              </div>
-            </div>
-            <div class="product__info-box">
-              <div class="product__box">
-                <div class="product__country">Италия</div>
-                <a href="#" class="product__name-link">
-                  <h3 class="product__name">Le Grand Noir Cabernet Sauvignon</h3>
-                </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="product__price">4 200 P</div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__pic-box">
-              <div class="showcases">
-                <a class="showcases__link showcases__link--like" href="#" title="Like">
-                  <svg class="showcases__icon" width="35" height="30">
-                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
-                  </svg>
-                </a>
-                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
-                  <svg class="showcases__icon" width="50" height="40">
-                    <use xlink:href="img/sprite.svg#icon-new"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="product__image">
-                <a class="product__link-img" href="#">
-                  <img class="picture" src="img/goods/product-4.jpg" alt="product">
-                </a>
-              </div>
-            </div>
-            <div class="product__info-box">
-              <div class="product__box">
-                <div class="product__country">Италия</div>
-                <a href="#" class="product__name-link">
-                  <h3 class="product__name">Remole</h3>
-                </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="product__price">2 500 P</div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__pic-box">
-              <div class="showcases">
-                <a class="showcases__link showcases__link--like" href="#" title="Like">
-                  <svg class="showcases__icon" width="35" height="30">
-                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
-                  </svg>
-                </a>
-                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
-                  <svg class="showcases__icon" width="50" height="40">
-                    <use xlink:href="img/sprite.svg#icon-new"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="product__image">
-                <a class="product__link-img" href="#">
-                  <img class="picture" src="img/goods/product-1.jpg" alt="product">
-                </a>
-              </div>
-            </div>
-            <div class="product__info-box">
-              <div class="product__box">
-                <div class="product__country">Италия</div>
-                <a href="#" class="product__name-link">
-                  <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
-                </a>
-                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              </div>
-              <div class="product__price">1300 P</div>
-            </div>
-          </div>
-        </div>
-        <a class="popular-goods__link button-link" href="#">В каталог</a>
-      </div>
-    </section>
-    <section class="approach vp-invisible">
-      <div class="approach__wrapper">
-        <h3 class="approach__title title title--before">Индивидуальный подход к каждому клиенту</h3>
-        <div class="approach__inner">
-          <div class="approach__item">
-            <a class="approach__box" href="#">
-              <h3 class="approach__name">Магазинам</h3>
-              <p class="approach__text">Помогаем выбрать ассортимент, обучаем персонал и проводим акции для покупателей.</p>
-              <button class="approach__link button button-link">Подробнее</button>
-            </a>
-            <div class="approach__bg" style="background-image: url(img/approach/approach-hover-pic.jpg);"></div>
-          </div>
-          <div class="approach__item">
-            <a class="approach__box" href="#">
-              <h3 class="approach__name">HoReCa</h3>
-              <p class="approach__text">Помогаем выбрать ассортимент, обучаем персонал и проводим акции для покупателей.</p>
-              <button class="approach__link button button-link">Подробнее</button>
-            </a>
-            <div class="approach__bg" style="background-image: url(img/approach/approach-hover-pic.jpg);"></div>
-          </div>
-          <div class="approach__item">
-            <a class="approach__box" href="#">
-              <h3 class="approach__name">Корпоративным клиентам</h3>
-              <p class="approach__text">Помогаем выбрать ассортимент, обучаем персонал и проводим акции для покупателей.</p>
-              <button class="approach__link button button-link">Подробнее</button>
-            </a>
-            <div class="approach__bg" style="background-image: url(img/approach/approach-hover-pic.jpg);"></div>
-          </div>
-          <div class="approach__item">
-            <a class="approach__box" href="#">
-              <h3 class="approach__name">Дистрибьюторам</h3>
-              <p class="approach__text">Помогаем выбрать ассортимент, обучаем персонал и проводим акции для покупателей.</p>
-              <button class="approach__link button button-link">Подробнее</button>
-            </a>
-            <div class="approach__bg" style="background-image: url(img/approach/approach-hover-pic.jpg);"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews vp-invisible">
-        <div class="reviews__wrapper">
-          <h3 class="title title--before">Отзывы</h3>
-          <div class="reviews__btn">
-            <button class="reviews__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
-            <button class="reviews__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
-          </div>
-          <div id="slider-reviews" class="reviews__slider">
-            <div class="reviews__item">
-              <div class="reviews__inner">
-                <div class="reviews__user">
-                  <div class="reviews__user-pic">
-                    <img src="img/reviews/reviews-photo.jpg" alt="user">
-                  </div>
-                  <div class="reviews__user-info">
-                    <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
-                    <h4 class="reviews__name">Евгения Грекова</h4>
-                    <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
-                  </div>
-                </div>
-                <div class="reviews__text">
-                  <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела в 2016 году
-                  эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по адресу:
-                  Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д. Новосаратовка,
-                  Центральное отделение. Комплекс находится радом с развязкой Вантового Моста, ближайшие станции метро «Пролетарская» и
-                  «Проспект Большевиков».</p>
-                  <button class="reviews__button button-link">Оригинал отзыва</button>
-                </div>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__inner">
-                <div class="reviews__user">
-                  <div class="reviews__user-pic">
-                    <img src="img/reviews/reviews-photo.jpg" alt="user">
-                  </div>
-                  <div class="reviews__user-info">
-                    <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
-                    <h4 class="reviews__name">Евгения Грекова</h4>
-                    <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
-                  </div>
-                </div>
-                <div class="reviews__text">
-                  <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела в
-                    2016 году
-                    эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по адресу:
-                    Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
-                    Новосаратовка,
-                    Центральное отделение. Комплекс находится радом с развязкой Вантового Моста, ближайшие станции метро
-                    «Пролетарская» и
-                    «Проспект Большевиков».</p>
-                    <button class="reviews__button button-link">Оригинал отзыва</button>
-                </div>
-              </div>
-            </div>
-            <div class="reviews__item">
-                <div class="reviews__inner">
-                  <div class="reviews__user">
-                    <div class="reviews__user-pic">
-                      <img src="img/reviews/reviews-photo.jpg" alt="user">
-                    </div>
-                    <div class="reviews__user-info">
-                      <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
-                      <h4 class="reviews__name">Евгения Грекова</h4>
-                      <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
-                    </div>
-                  </div>
-                  <div class="reviews__text">
-                    <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела в
-                      2016 году
-                      эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по адресу:
-                      Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
-                      Новосаратовка,
-                      Центральное отделение. Комплекс находится радом с развязкой Вантового Моста, ближайшие станции метро
-                      «Пролетарская» и
-                      «Проспект Большевиков».</p>
-                      <button class="reviews__button button-link">Оригинал отзыва</button>
-                  </div>
-                </div>
-              </div>
-              <div class="reviews__item">
-                  <div class="reviews__inner">
-                    <div class="reviews__user">
-                      <div class="reviews__user-pic">
-                        <img src="img/reviews/reviews-photo.jpg" alt="user">
-                      </div>
-                      <div class="reviews__user-info">
-                        <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
-                        <h4 class="reviews__name">Евгения Грекова</h4>
-                        <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
-                      </div>
-                    </div>
-                    <div class="reviews__text">
-                      <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела в
-                        2016 году
-                        эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по адресу:
-                        Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
-                        Новосаратовка,
-                        Центральное отделение. Комплекс находится радом с развязкой Вантового Моста, ближайшие станции метро
-                        «Пролетарская» и
-                        «Проспект Большевиков».</p>
-                        <button class="reviews__button button-link">Оригинал отзыва</button>
-                    </div>
-                  </div>
-                </div>
-          </div>
-        </div>
-      </section>
-    <div class="tabs vp-invisible">
-      <div class="tabs__wrapper">
-        <ul id="tabs-links" class="tabs__list">
-          <li class="tabs__item">
-            <a class="tabs__link" href="#blog">Блог</a>
-          </li>
-          <li class="tabs__item">
-            <a class="tabs__link" href="#news">Новости</a>
-          </li>
-        </ul>
-        <div id="tabs-container" class="tabs__container">
-          <div id="blog" class="tabs__content">
-            <h3 class="tabs__content-title title title--before">Блог</h3>
-            <div class="blog js-slider-blog">
-              <a class="blog__item blog__item-first" href="#">
-                <div class="blog__box-pic box-pic-hover">
-                  <img class="blog__pic picture" src="img/blog/blog-preview-1.jpg" alt="blog">
-                </div>
-                <div class="blog__info">
-                  <span class="blog__marker">о напитках</span>
-                  <div class="blog__title">Дегустация белых вин в магазине Joia</div>
-                  <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="blog__item" href="#">
-                <div class="blog__box-pic box-pic-hover">
-                  <img class="blog__pic picture" src="img/blog/blog-preview-2.jpg" alt="blog">
-                </div>
-                <div class="blog__info">
-                  <span class="blog__marker">о напитках</span>
-                  <div class="blog__title">Дегустация белых вин в магазине Joia</div>
-                  <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="blog__item" href="#">
-                <div class="blog__box-pic box-pic-hover">
-                  <img class="blog__pic picture" src="img/blog/blog-preview-3.jpg" alt="blog">
-                </div>
-                <div class="blog__info">
-                  <span class="blog__marker">о напитках</span>
-                  <div class="blog__title">Дегустация белых вин в магазине Joia</div>
-                  <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="blog__item" href="#">
-                <div class="blog__box-pic box-pic-hover">
-                  <img class="blog__pic picture" src="img/blog/blog-preview-4.jpg" alt="blog">
-                </div>
-                <div class="blog__info">
-                  <span class="blog__marker">о напитках</span>
-                  <div class="blog__title">Дегустация белых вин в магазине Joia</div>
-                  <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="blog__item" href="#">
-                <div class="blog__box-pic box-pic-hover">
-                  <img class="blog__pic picture" src="img/blog/blog-preview-5.jpg" alt="blog">
-                </div>
-                <div class="blog__info">
-                  <span class="blog__marker">о напитках</span>
-                  <div class="blog__title">Дегустация белых вин в магазине Joia</div>
-                  <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-            </div>
-            <a class="button-link" href="#">Показать все</a>
-          </div>
-          <div id="news" class="tabs__content">
-            <h3 class="tabs__content-title title title--before">Новости</h3>
-            <div class="news js-slider-news">
-              <a class="news__item" href="#">
-                <div class="news__box-pic box-pic-hover">
-                  <img class="news__pic picture" src="img/news/news-preview.jpg" alt="news-pic">
-                </div>
-                <div class="news__info">
-                  <span class="news__date">18 марта 2018</span>
-                  <div class="news__title">Проект JOIA участвует в Moscow Bar Show 2017</div>
-                  <p class="news__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="news__item" href="#">
-                <div class="news__box-pic box-pic-hover">
-                  <img class="news__pic picture" src="img/news/news-preview.jpg" alt="news-pic">
-                </div>
-                <div class="news__info">
-                  <span class="news__date">18 марта 2018</span>
-                  <div class="news__title">Проект JOIA участвует в Moscow Bar Show 2017</div>
-                  <p class="news__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="news__item" href="#">
-                <div class="news__box-pic box-pic-hover">
-                  <img class="news__pic picture" src="img/news/news-preview.jpg" alt="news-pic">
-                </div>
-                <div class="news__info">
-                  <span class="news__date">18 марта 2018</span>
-                  <div class="news__title">Проект JOIA участвует в Moscow Bar Show 2017</div>
-                  <p class="news__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="news__item" href="#">
-                <div class="news__box-pic box-pic-hover">
-                  <img class="news__pic picture" src="img/news/news-preview.jpg" alt="news-pic">
-                </div>
-                <div class="news__info">
-                  <span class="news__date">18 марта 2018</span>
-                  <div class="news__title">Проект JOIA участвует в Moscow Bar Show 2017</div>
-                  <p class="news__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="news__item" href="#">
-                <div class="news__box-pic box-pic-hover">
-                  <img class="news__pic picture" src="img/news/news-preview.jpg" alt="news-pic">
-                </div>
-                <div class="news__info">
-                  <span class="news__date">18 марта 2018</span>
-                  <div class="news__title">Проект JOIA участвует в Moscow Bar Show 2017</div>
-                  <p class="news__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="news__item" href="#">
-                <div class="news__box-pic box-pic-hover">
-                  <img class="news__pic picture" src="img/news/news-preview.jpg" alt="news-pic">
-                </div>
-                <div class="news__info">
-                  <span class="news__date">18 марта 2018</span>
-                  <div class="news__title">Проект JOIA участвует в Moscow Bar Show 2017</div>
-                  <p class="news__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="news__item" href="#">
-                <div class="news__box-pic box-pic-hover">
-                  <img class="news__pic picture" src="img/news/news-preview.jpg" alt="news-pic">
-                </div>
-                <div class="news__info">
-                  <span class="news__date">18 марта 2018</span>
-                  <div class="news__title">Проект JOIA участвует в Moscow Bar Show 2017</div>
-                  <p class="news__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-              <a class="news__item" href="#">
-                <div class="news__box-pic box-pic-hover">
-                  <img class="news__pic picture" src="img/news/news-preview.jpg" alt="news-pic">
-                </div>
-                <div class="news__info">
-                  <span class="news__date">18 марта 2018</span>
-                  <div class="news__title">Проект JOIA участвует в Moscow Bar Show 2017</div>
-                  <p class="news__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-                </div>
-              </a>
-            </div>
-            <a class="button-link" href="#">Показать все</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <section class="advantages vp-invisible">
       <div class="advantages__wrapper">
         <h3 class="visually-hidden">Преимущества</h3>
@@ -2660,7 +2374,6 @@
         </div>
       </div>
     </footer>
-
     <div id="city-popup" class="popup popup-city white-popup-block mfp-hide">
       <div class="popup__wrapper popup-city__wrapper">
         <button class="popup-modal-dismiss" aria-label="Закрыть окно">
@@ -2842,5 +2555,6 @@
     <script>
       svg4everybody();
     </script>
+
   </body>
 </html>
