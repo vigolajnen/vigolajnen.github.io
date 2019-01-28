@@ -6357,6 +6357,10 @@ h1 {
   @media (min-width: 1280px) {
     .top-menu__item {
       font-size: 15px;
+      margin-right: 9px; } }
+  @media (min-width: 1350px) {
+    .top-menu__item {
+      font-size: 15px;
       margin-right: 15px; } }
   .top-menu__item--hidden {
     display: none; }
@@ -6491,7 +6495,9 @@ h1 {
     padding: 0;
     margin: 0;
     list-style: none;
-    list-style-type: none; }
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside; }
 
 .submenu__block {
   white-space: normal;
@@ -6653,6 +6659,9 @@ h1 {
         height: 26px; }
     .additionally__link.button-link {
       padding: 15px 10px; }
+      @media (min-width: 1385px) {
+        .additionally__link.button-link {
+          margin: 0 20px 0 5px; } }
   .additionally__icon {
     fill: transparent;
     stroke: #333b3f;
