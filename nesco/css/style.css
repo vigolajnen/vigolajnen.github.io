@@ -3917,7 +3917,8 @@ a.ui-button:active,
 .polzunok-container-10 {
   padding: 0;
   margin: 0;
-  width: 220px;
+  width: 100%;
+  max-width: 295px;
   position: relative; }
 
 .polzunok-container-5:after,
@@ -4005,9 +4006,9 @@ a.ui-button:active,
   line-height: 20px;
   font-weight: 500;
   padding: 16px;
-  width: 100px;
+  width: 46%;
   margin-top: -60px;
-  padding-left: 25px; }
+  padding-left: 0; }
 
 .polzunok-input-5-left,
 .polzunok-input-6-left,
@@ -4481,6 +4482,12 @@ h1 {
   color: #252525; }
 
 .page-footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 31px;
@@ -4488,6 +4495,7 @@ h1 {
   text-decoration: none; }
 
 .page-footer__social-icon {
+  margin-right: 5px;
   fill: #252525; }
 
 .page-footer__caption {
@@ -6254,7 +6262,7 @@ h1 {
         display: -ms-flexbox;
         display: flex; } }
   .tabs__item {
-    margin-right: 10px; }
+    margin-right: 30px; }
     .tabs__item:last-child {
       margin-right: 0; }
   .tabs__link {
@@ -8884,7 +8892,12 @@ h1 {
           justify-content: center;
   text-align: center; }
   .social__link {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-style: normal;
     font-weight: 500;
     line-height: 17px;
@@ -8942,6 +8955,9 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 4.6875%; }
   @media (min-width: 769px) {
     .page-catalog {
@@ -8954,7 +8970,7 @@ h1 {
     padding-right: 30px; }
     @media (min-width: 1140px) {
       .page-catalog__bar {
-        width: 25%; } }
+        width: 20%; } }
   .page-catalog__content {
     width: 100%; }
     @media (min-width: 1140px) {
@@ -9000,32 +9016,51 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 80px; }
     @media (max-width: 768px) {
       .page-catalog__sort {
         margin-bottom: 40px; } }
 
 .products__wrapper {
-  display: block; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .products .product {
-  display: inline-block;
-  font-size: 0;
-  vertical-align: top;
-  width: 49%; }
-  .products .product:last-child {
-    margin-right: 0; }
+  width: 49%;
+  margin-bottom: 10px; }
   @media (min-width: 600px) {
     .products .product {
-      width: 30%;
-      margin-right: 22px; } }
-  @media (min-width: 1140px) {
+      width: calc(100%/3 - 10px); } }
+  @media (min-width: 769px) {
     .products .product {
-      margin-right: 30px; } }
+      width: calc(100%/3 - 10px); } }
+  @media (min-width: 1920px) {
+    .products .product {
+      width: calc(100%/3 - 20px); } }
+
+.filters__item-title {
+  color: #2c2c2c;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 44.91px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+  @media (min-width: 769px) {
+    .filters__item-title {
+      font-size: 12px; } }
 
 .form-filters {
   display: none; }
-  @media (min-width: 769px) {
+  @media (min-width: 1280px) {
     .form-filters {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -9042,6 +9077,7 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 295px;
     padding: 0;
     margin: 0;
     list-style: none; }
@@ -9107,6 +9143,9 @@ h1 {
       line-height: 20px;
       color: #8f8f8f; }
 
+.form-filters__link--all {
+  display: none; }
+
 .form-filters input:checked + .form-filters__box-label::before {
   content: "";
   position: absolute;
@@ -9119,11 +9158,17 @@ h1 {
   background-position: 50% 50%; }
 
 .form-filters__button {
+  margin-top: 30px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
   color: #000000;
   text-transform: none; }
+  .form-filters__button--reset {
+    margin-top: 0;
+    opacity: 0.61;
+    color: #000000;
+    text-decoration: underline; }
 
 .form-filters__lb-vol-left {
   position: absolute;
@@ -9136,12 +9181,15 @@ h1 {
 
 .form-filters__lb-vol-right {
   position: absolute;
-  right: 70px;
+  right: 90px;
   bottom: 33px;
   z-index: 5;
   font-size: 18px;
   line-height: 20px;
   color: #8f8f8f; }
+  @media (min-width: 1800px) {
+    .form-filters__lb-vol-right {
+      right: 110px; } }
 
 .item__buy-form {
   display: -webkit-box;
@@ -9150,10 +9198,16 @@ h1 {
 
 .custom-select.js-size {
   border: none;
-  padding: 5px; }
+  padding: 10px;
+  font-weight: 500;
+  line-height: 44.91px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #2c2c2c;
+  font-size: 12px; }
   @media (max-width: 768px) {
     .custom-select.js-size {
-      font-size: 12px;
+      font-size: 10px;
       padding: 10px; } }
 
 .item__buy-form-top {
@@ -9166,7 +9220,8 @@ h1 {
 
 .sort__item .button {
   margin-right: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  cursor: pointer; }
   .sort__item .button:last-child {
     margin-right: 0; }
   @media (max-width: 768px) {
@@ -9189,7 +9244,8 @@ h1 {
     .sort__item #mob-filters-btn {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      margin: 4px 0; } }
 
 .counter {
   font-size: 18px;
@@ -9197,20 +9253,23 @@ h1 {
   color: #8f8f8f; }
 
 .form-filters__box-i-search {
+  width: 100%;
   padding: 5px 10px;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   color: #000000;
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd;
+  text-transform: lowercase; }
 
 .form-filters .scrollbar {
-  width: 250px;
+  width: 295px;
   height: 350px; }
 
 .form-filters .jspDrag {
-  background-color: #1995c9; }
+  background-color: #1995c9;
+  height: 76px !important; }
 
 .form-filters .jspTrack {
   background-color: #efefef; }
