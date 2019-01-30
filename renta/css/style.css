@@ -1890,13 +1890,14 @@ body {
   .advantages__item {
     padding-top: 10px; }
   .advantages__name {
-    padding-top: 70px; }
+    padding-top: 70px;
+    margin-bottom: 10px; }
     .advantages__name--icon-1::before, .advantages__name--icon-2::before, .advantages__name--icon-3::before, .advantages__name--icon-4::before {
       width: 60px;
       height: 60px; }
   .advantages__number {
-    line-height: 140px;
-    font-size: 214px; }
+    line-height: 120px;
+    font-size: 200px; }
   .advantages__text {
     font-size: 13px; } }
 
