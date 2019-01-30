@@ -1290,6 +1290,7 @@ body {
   height: 100%;
   margin-left: 100px;
   overflow: hidden;
+  background-color: #ffffff;
   border: 1px solid #d4d1d1; }
   @media (min-width: 769px) {
     .slider-task {
@@ -1508,6 +1509,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+@media (max-height: 850px) and (min-width: 1140px) {
+  .slider-task__button-prev::before {
+    top: -55%; }
+  .slider-task__buttons div {
+    margin-bottom: 75px; }
+  .slider-task__button-next::before {
+    top: 55%; } }
 
 .section {
   position: relative;
