@@ -304,6 +304,230 @@ template {
 [hidden] {
   display: none; }
 
+.left-animation {
+  animation: animationFrames ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%; }
+
+@keyframes animationFrames {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(300px, 0px);
+            transform: translate(300px, 0px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(300px, 0px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px); } }
+
+.top-animation {
+  animation: animationFrames-2 ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation: animationFrames-2 ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation: animationFrames-2 ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation: animationFrames-2 ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation: animationFrames-2 ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/ }
+
+@keyframes animationFrames-2 {
+  -1% {
+    -webkit-transform: translate(undefined, 100px);
+            transform: translate(undefined, 100px); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 200px);
+            transform: translate(0px, 200px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
+
+@-webkit-keyframes animationFrames-2 {
+  -1% {
+    -webkit-transform: translate(undefined, 100px); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 200px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px); } }
+
+.right-animation {
+  animation: animationFrames12 ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation: animationFrames12 ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation: animationFrames12 ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation: animationFrames12 ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation: animationFrames12 ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/ }
+
+@keyframes animationFrames12 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-1500px, 0px);
+            transform: translate(-1500px, 0px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate(30px, 0px);
+            transform: translate(30px, 0px); }
+  80% {
+    -webkit-transform: translate(-10px, 0px);
+            transform: translate(-10px, 0px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
+
+@-webkit-keyframes animationFrames12 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-1500px, 0px); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate(30px, 0px); }
+  80% {
+    -webkit-transform: translate(-10px, 0px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px); } }
+
+.adv-animation {
+  animation: animationAdv ease 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation: animationAdv ease 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation: animationAdv ease 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation: animationAdv ease 2s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation: animationAdv ease 2s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/ }
+
+@keyframes animationAdv {
+  0% {
+    -webkit-transform: translate(300px, 0px);
+            transform: translate(300px, 0px); }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
+
+@-webkit-keyframes animationAdv {
+  0% {
+    -webkit-transform: translate(300px, 0px); }
+  100% {
+    -webkit-transform: translate(0px, 0px); } }
+
+.advBlock3-animation {
+  animation: animationAdvBlock3 ease 2.5s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation: animationAdvBlock3 ease 2.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation: animationAdvBlock3 ease 2.5s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation: animationAdvBlock3 ease 2.5s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation: animationAdvBlock3 ease 2.5s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/ }
+
+@keyframes animationAdvBlock3 {
+  0% {
+    -webkit-transform: translate(300px, 0px);
+            transform: translate(300px, 0px); }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
+
+@-webkit-keyframes animationAdvBlock3 {
+  0% {
+    -webkit-transform: translate(300px, 0px); }
+  100% {
+    -webkit-transform: translate(0px, 0px); } }
+
 /*stylelint-disable*/
 /* Slider */
 /* Icons */
@@ -732,8 +956,10 @@ body {
 .itemBlock {
   -webkit-animation-name: itemBlock;
           animation-name: itemBlock;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
 
 .button {
   display: inline-block;
@@ -802,6 +1028,24 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
+.page-header__button {
+  position: relative;
+  width: 108px;
+  height: 100%; }
+  .page-header__button::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/icons/icon-burger-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 @media (max-width: 768px) {
   .page-header {
@@ -1372,7 +1616,14 @@ body {
   line-height: 40px;
   font-size: 40px;
   font-size: calc(100vw * 0.081);
+  font-size: 24px;
   color: #B22A2E; }
+  @media (min-width: 480px) {
+    .title {
+      font-size: calc(2.22222vw + 13.33333px); } }
+  @media (min-width: 1920px) {
+    .title {
+      font-size: 56px; } }
   @media (min-width: 769px) {
     .title {
       line-height: 48px;
@@ -1444,6 +1695,11 @@ body {
       .advantages__item {
         width: 50%;
         padding: 165px 20px 20px; } }
+    @media (min-width: 769px) {
+      .advantages__item {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     @media (min-width: 1140px) {
       .advantages__item {
         width: 33%;
@@ -1820,8 +2076,7 @@ body {
     width: 100vw;
     height: 100%; }
     .feedback__wrapper {
-      width: 100vw;
-      padding-bottom: 100px; }
+      width: 100vw; }
     .feedback__item {
       width: 100%; }
       .feedback__item:last-child {
