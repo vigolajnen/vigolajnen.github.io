@@ -2138,10 +2138,16 @@ html {
 }
 
 .promo__item--video {
+  position: relative;
   width: 36%
 }
 
 .promo__item--video video {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   max-width: 100%;
   margin: 0 auto
 }
