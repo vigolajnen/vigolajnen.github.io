@@ -1241,6 +1241,8 @@ body {
     line-height: 25px;
     font-size: 16px;
     color: #60749D; }
+    .popup-order__textarea:hover, .popup-order__textarea:focus {
+      border: 1px solid #5993FF; }
   .popup-order__button {
     margin: 0 auto;
     display: block; }
