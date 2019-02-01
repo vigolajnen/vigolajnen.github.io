@@ -1415,6 +1415,7 @@ html {
     text-transform: uppercase; }
   .slider-task__name {
     margin-right: 10px;
+    margin-top: 14px;
     max-width: 300px;
     font-family: "Playfair Display", "Arial", serif;
     font-style: normal;
@@ -1440,7 +1441,6 @@ html {
         font-size: 13px; } }
   .slider-task__buttons {
     width: 100px;
-    height: 230px;
     border-left: 1px solid #d4d1d1;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1458,8 +1458,7 @@ html {
     @media (min-width: 769px) {
       .slider-task__buttons {
         height: 100%;
-        border-rigth: 1px solid #d4d1d1;
-        min-height: 231px; } }
+        border-rigth: 1px solid #d4d1d1; } }
     @media (min-width: 1140px) {
       .slider-task__buttons {
         max-height: auto; } }
@@ -1548,15 +1547,19 @@ html {
     .section {
       height: 100vh; } }
   .section--bg-feedback {
-    background-image: url("../../img/feedback/feedback-mob.jpg"); }
+    background-image: url("../../img/feedback/feedback-mob.jpg");
+    background-size: 100%; }
     @media (min-width: 480px) {
       .section--bg-feedback {
         background-image: url("../../img/feedback/feedback-bg.jpg");
+        background-size: 100%; } }
+    @media (min-width: 1140px) {
+      .section--bg-feedback {
         background-size: cover; } }
   .section--bg-advantages {
     background-image: url("../../img/advantages/advantages-bg.jpg");
     background-position: top right;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat; }
     @media (min-width: 769px) {
       .section--bg-advantages {
@@ -1606,8 +1609,7 @@ html {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    background-color: #ffffff;
-    border-top: 1px solid #d4d1d1; }
+    background-color: #ffffff; }
   .box__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1632,7 +1634,10 @@ html {
     @media (min-width: 1140px) {
       .box__link {
         width: 33.33%; } }
-    @media (min-width: 1281px) {
+    @media (min-width: 1280px) and (max-width: 1505px) {
+      .box__link {
+        width: 25%; } }
+    @media (min-width: 1551px) {
       .box__link {
         width: 34%; } }
 
@@ -1666,11 +1671,11 @@ html {
   font-style: normal;
   font-weight: normal;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 26px;
   color: #B22A2E; }
   @media (min-width: 480px) {
     .title {
-      font-size: calc(2.63889vw + 17.33333px); } }
+      font-size: calc(2.91667vw + 12px); } }
   @media (min-width: 1920px) {
     .title {
       font-size: 68px; } }
@@ -1800,7 +1805,20 @@ html {
           -ms-flex-align: center;
               align-items: center;
       background-color: #B22A2E;
-      padding: 0; }
+      padding: 0;
+      width: 100%; }
+      @media (min-width: 1140px) {
+        .advantages__item--red {
+          width: 33.33%;
+          -webkit-box-flex: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1; } }
+      @media (min-width: 1280px) {
+        .advantages__item--red {
+          width: 25%;
+          -webkit-box-flex: 0;
+              -ms-flex-positive: 0;
+                  flex-grow: 0; } }
   .advantages__name {
     margin: 0;
     margin-bottom: 20px;
@@ -1880,9 +1898,9 @@ html {
 
 @media (max-width: 768px) {
   .advantages__item {
-    padding-top: 60px;
-    padding-right: 50px;
-    padding-bottom: 50px; }
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px; }
     .advantages__item--first {
       padding: 40px 24px; }
     .advantages__item:nth-child(4) {
@@ -1906,12 +1924,13 @@ html {
   .advantages__name--icon-4::before {
     left: 0;
     width: 70px;
-    height: 70px; }
+    height: 70px;
+    bottom: -50px; }
   .advantages__text {
     font-size: 14px;
-    padding-left: 80px; }
+    padding-left: 120px; }
   .advantages__name {
-    padding-left: 80px;
+    padding-left: 120px;
     padding-top: 0; } }
 
 @media (max-height: 790px) and (min-width: 1140px) {
@@ -2103,7 +2122,7 @@ html {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 100%;
-    padding: 10% 8% 15%;
+    padding: 10% 8% 10%;
     background-color: #efefef; }
     @media (min-width: 769px) {
       .feedback__wrapper {
@@ -2237,6 +2256,11 @@ html {
 .feedback__bottom .feedback__form-button--icon {
   -ms-flex-item-align: center;
       align-self: center; }
+  @media (max-width: 768px) {
+    .feedback__bottom .feedback__form-button--icon {
+      margin-left: auto;
+      display: block;
+      margin-top: 15px; } }
 
 .nav-bar {
   position: fixed;

@@ -1490,6 +1490,7 @@ html {
 
 .slider-task__name {
   margin-right: 10px;
+  margin-top: 14px;
   max-width: 300px;
   font-family: "Playfair Display", "Arial", serif;
   font-style: normal;
@@ -1532,7 +1533,6 @@ html {
 
 .slider-task__buttons {
   width: 100px;
-  height: 230px;
   border-left: 1px solid #d4d1d1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1552,8 +1552,7 @@ html {
 @media (min-width:769px) {
   .slider-task__buttons {
     height: 100%;
-    border-rigth: 1px solid #d4d1d1;
-    min-height: 231px
+    border-rigth: 1px solid #d4d1d1
   }
 }
 
@@ -1652,12 +1651,19 @@ html {
 }
 
 .section--bg-feedback {
-  background-image: url(../img/feedback/feedback-mob.jpg)
+  background-image: url(../img/feedback/feedback-mob.jpg);
+  background-size: 100%
 }
 
 @media (min-width:480px) {
   .section--bg-feedback {
     background-image: url(../img/feedback/feedback-bg.jpg);
+    background-size: 100%
+  }
+}
+
+@media (min-width:1140px) {
+  .section--bg-feedback {
     background-size: cover
   }
 }
@@ -1665,7 +1671,7 @@ html {
 .section--bg-advantages {
   background-image: url(../img/advantages/advantages-bg.jpg);
   background-position: top right;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat
 }
 
@@ -1742,7 +1748,6 @@ html {
 
 .box__inner {
   background-color: #fff;
-  border-top: 1px solid #d4d1d1;
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -1775,7 +1780,13 @@ html {
   }
 }
 
-@media (min-width:1281px) {
+@media (min-width:1280px) and (max-width:1505px) {
+  .box__link {
+    width: 25%
+  }
+}
+
+@media (min-width:1551px) {
   .box__link {
     width: 34%
   }
@@ -1823,13 +1834,13 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 26px;
   color: #b22a2e
 }
 
 @media (min-width:480px) {
   .title {
-    font-size: calc(2.63889vw + 17.33333px)
+    font-size: calc(2.91667vw + 12px)
   }
 }
 
@@ -2020,7 +2031,26 @@ html {
   -ms-flex-align: center;
   align-items: center;
   background-color: #b22a2e;
-  padding: 0
+  padding: 0;
+  width: 100%
+}
+
+@media (min-width:1140px) {
+  .advantages__item--red {
+    width: 33.33%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+  }
+}
+
+@media (min-width:1280px) {
+  .advantages__item--red {
+    width: 25%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0
+  }
 }
 
 .advantages__name {
@@ -2140,9 +2170,9 @@ html {
 
 @media (max-width:768px) {
   .advantages__item {
-    padding-top: 60px;
-    padding-right: 50px;
-    padding-bottom: 50px
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px
   }
 
   .advantages__item--first {
@@ -2178,16 +2208,17 @@ html {
   .advantages__name--icon-4::before {
     left: 0;
     width: 70px;
-    height: 70px
+    height: 70px;
+    bottom: -50px
   }
 
   .advantages__text {
     font-size: 14px;
-    padding-left: 80px
+    padding-left: 120px
   }
 
   .advantages__name {
-    padding-left: 80px;
+    padding-left: 120px;
     padding-top: 0
   }
 }
@@ -2415,7 +2446,7 @@ html {
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 100%;
-  padding: 10% 8% 15%;
+  padding: 10% 8%;
   background-color: #efefef
 }
 
@@ -2612,6 +2643,14 @@ html {
 .feedback__bottom .feedback__form-button--icon {
   -ms-flex-item-align: center;
   align-self: center
+}
+
+@media (max-width:768px) {
+  .feedback__bottom .feedback__form-button--icon {
+    margin-left: auto;
+    display: block;
+    margin-top: 15px
+  }
 }
 
 .nav-bar {
