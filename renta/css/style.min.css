@@ -1023,7 +1023,7 @@ html {
 
   .page-header__button {
     position: fixed;
-    bottom: 50px;
+    bottom: 130px;
     z-index: 9999;
     border-radius: 50%;
     right: 10px;
@@ -1368,7 +1368,7 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   text-decoration: none
 }
 
@@ -1377,7 +1377,7 @@ html {
     width: 85%;
     padding-top: 50px;
     padding-bottom: 50px;
-    border-left: 1px solid #d4d1d1
+    border-right: 1px solid #d4d1d1
   }
 }
 
@@ -1483,7 +1483,7 @@ html {
 }
 
 .slider-task__box--icon-4::before {
-  background-image: url(../img/icons/icon-gr-1.svg)
+  background-image: url(../img/icons/icon-compass.svg)
 }
 
 .slider-task__box--icon-5::before {
@@ -1543,7 +1543,6 @@ html {
 
 .slider-task__buttons {
   width: 100px;
-  border-left: 1px solid #d4d1d1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1557,6 +1556,12 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center
+}
+
+@media (max-width:768px) {
+  .slider-task__buttons {
+    border-left: 1px solid #d4d1d1
+  }
 }
 
 @media (min-width:769px) {
@@ -2135,13 +2140,21 @@ html {
   position: relative
 }
 
-.advantages__name--icon-1::before,
+.advantages__name--icon-1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain
+}
+
 .advantages__name--icon-2::before,
 .advantages__name--icon-3::before {
   bottom: 40px
 }
 
-.advantages__name--icon-1::before,
 .advantages__name--icon-2::before,
 .advantages__name--icon-3::before,
 .advantages__name--icon-4::before {
@@ -2155,6 +2168,7 @@ html {
 }
 
 .advantages__name--icon-1::before {
+  bottom: 60px;
   background-image: url(../img/icons/icon-group06.svg)
 }
 
@@ -2167,7 +2181,7 @@ html {
 }
 
 .advantages__name--icon-4::before {
-  bottom: 60px;
+  bottom: 40px;
   background-image: url(../img/icons/icon-group07.svg)
 }
 
@@ -2836,8 +2850,13 @@ html {
   }
 }
 
+.pagination {
+  margin-top: 15px
+}
+
 .pagination__item {
   position: relative;
+  padding: 0 3px;
   line-height: normal;
   font-size: 12px;
   letter-spacing: .12em

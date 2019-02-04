@@ -1079,7 +1079,7 @@ html {
     padding-left: 24px; }
   .page-header__button {
     position: fixed;
-    bottom: 50px;
+    bottom: 130px;
     z-index: 9999;
     border-radius: 50%;
     right: 10px;
@@ -1356,14 +1356,14 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     text-decoration: none; }
     @media (min-width: 769px) {
       .slider-task__item {
         width: 85%;
         padding-top: 50px;
         padding-bottom: 50px;
-        border-left: 1px solid #d4d1d1; } }
+        border-right: 1px solid #d4d1d1; } }
     @media (min-width: 1140px) {
       .slider-task__item {
         width: 45%; } }
@@ -1421,7 +1421,7 @@ html {
     .slider-task__box--icon-3::before {
       background-image: url("../../img/icons/icon-group03.svg"); }
     .slider-task__box--icon-4::before {
-      background-image: url("../../img/icons/icon-gr-1.svg"); }
+      background-image: url("../../img/icons/icon-compass.svg"); }
     .slider-task__box--icon-5::before {
       background-image: url("../../img/icons/icon-task-rub.svg"); }
   .slider-task__mark {
@@ -1458,7 +1458,6 @@ html {
         font-size: 13px; } }
   .slider-task__buttons {
     width: 100px;
-    border-left: 1px solid #d4d1d1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1472,6 +1471,9 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 768px) {
+      .slider-task__buttons {
+        border-left: 1px solid #d4d1d1; } }
     @media (min-width: 769px) {
       .slider-task__buttons {
         height: 100%;
@@ -1896,13 +1898,14 @@ html {
       background-repeat: no-repeat;
       background-size: contain; }
     .advantages__name--icon-1::before {
+      bottom: 60px;
       background-image: url("../../img/icons/icon-group06.svg"); }
     .advantages__name--icon-2::before {
       background-image: url("../../img/icons/icon-gr-6.svg"); }
     .advantages__name--icon-3::before {
       background-image: url("../../img/icons/icon-gr-5.svg"); }
     .advantages__name--icon-4::before {
-      bottom: 60px;
+      bottom: 40px;
       background-image: url("../../img/icons/icon-group07.svg"); }
   .advantages__text {
     margin: 0; }
@@ -2390,18 +2393,21 @@ html {
     width: 64px;
     height: 64px; } }
 
-.pagination__item {
-  position: relative;
-  line-height: normal;
-  font-size: 12px;
-  letter-spacing: 0.12em; }
-  .pagination__item:last-child::after {
-    position: absolute;
-    content: "/";
-    top: 0;
-    left: -5px; }
-  .pagination__item.active {
-    color: #B22A2E; }
+.pagination {
+  margin-top: 15px; }
+  .pagination__item {
+    position: relative;
+    padding: 0 3px;
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: 0.12em; }
+    .pagination__item:last-child::after {
+      position: absolute;
+      content: "/";
+      top: 0;
+      left: -5px; }
+    .pagination__item.active {
+      color: #B22A2E; }
 
 .nav-scrollbar {
   position: fixed;
