@@ -849,6 +849,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
   overflow-x: hidden;
   font-family: "TT Norms", "Arial", serif;
   line-height: 23px;
@@ -858,7 +859,7 @@ body {
     body {
       overflow-y: auto; } }
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
   body,
   html {
     overflow-y: visible; } }
@@ -1604,9 +1605,6 @@ html {
     @media (min-width: 1540px) {
       .section--bg-advantages {
         background-size: 53vw 100vh; } }
-    @media (min-width: 1640px) {
-      .section--bg-advantages {
-        background-size: 52.1vw 100vh; } }
   .section__promo {
     height: 80%; }
   .section__slider {
@@ -1668,7 +1666,7 @@ html {
         width: 39.5%; } }
     @media (min-width: 1550px) {
       .box__item:last-child {
-        width: 22.2vw; } }
+        width: 23vw; } }
   .box__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1905,10 +1903,13 @@ html {
     font-size: 16px; }
     @media (min-width: 480px) {
       .advantages__name {
-        font-size: calc(0.34722vw + 14.33333px); } }
+        font-size: calc(0.13889vw + 15.33333px); } }
     @media (min-width: 1920px) {
       .advantages__name {
-        font-size: 21px; } }
+        font-size: calc(0vw + 18px); } }
+    @media (min-width: 2000px) {
+      .advantages__name {
+        font-size: 18px; } }
     @media (min-width: 769px) {
       .advantages__name {
         padding-top: 100px; } }
@@ -1928,7 +1929,7 @@ html {
       background-repeat: no-repeat;
       background-size: contain; }
     .advantages__name--icon-1::before {
-      bottom: 60px;
+      bottom: 40px;
       background-image: url("../../img/icons/icon-group06.svg"); }
     .advantages__name--icon-2::before {
       background-image: url("../../img/icons/icon-gr-6.svg"); }
@@ -1938,7 +1939,8 @@ html {
       bottom: 40px;
       background-image: url("../../img/icons/icon-group07.svg"); }
   .advantages__text {
-    margin: 0; }
+    margin: 0;
+    font-size: 14px; }
   .advantages__number {
     position: relative;
     font-family: "Spectral", "Arial", serif;
@@ -2299,7 +2301,7 @@ html {
         margin-left: 80px; } }
     @media (min-width: 1540px) {
       .feedback__wrapper {
-        padding: 10% 8% 10%; } }
+        padding: 10% 8% 0; } }
   .feedback__caption {
     width: 100%;
     padding-bottom: 24px;
@@ -2437,6 +2439,24 @@ html {
       display: block;
       margin-top: 15px; } }
 
+.feedback__bottom.copy {
+  margin-top: 10%;
+  margin-bottom: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: normal;
+  font-size: 14px;
+  color: #333333;
+  opacity: 0.7; }
+  .feedback__bottom.copy a {
+    text-decoration: none;
+    color: #333333; }
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -2486,7 +2506,8 @@ html {
 
 @media (max-height: 900px) and (max-width: 1440px) {
   .nav-bar {
-    width: 80px; } }
+    width: 80px;
+    height: 80px; } }
 
 .pagination {
   margin-top: 15px; }
