@@ -1988,7 +1988,7 @@ html {
     margin-top: 10%;
     min-height: calc(80vh - 10%); }
   .advantages__item {
-    padding-top: 0;
+    padding-top: 80px;
     width: 17vw; }
   .advantages__item--first {
     width: 34vw; }
@@ -2174,12 +2174,14 @@ html {
   margin-bottom: 0; }
 
 @media (max-width: 375px) {
+  #promo {
+    min-height: 100vh; }
   .promo {
-    height: 65vh; }
+    height: 70vh; }
   .promo__text {
     padding: 40px 20px; }
-  .slider-tasx {
-    height: 35vh; }
+  .slider-task {
+    height: 30vh; }
   .slick-dotted.slick-slider {
     margin-bottom: 0; } }
 
