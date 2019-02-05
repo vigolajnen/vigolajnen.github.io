@@ -1059,8 +1059,7 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 138px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #d4d1d1; }
+  background-color: #ffffff; }
   .page-header__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1090,7 +1089,7 @@ html {
 .page-header__button {
   position: relative;
   width: 98px;
-  height: 101%; }
+  height: 100%; }
   .page-header__button::before {
     position: absolute;
     content: "";
@@ -1101,7 +1100,7 @@ html {
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url("../../img/icons/icon-burger-right.svg");
+    background-image: url("../img/icons/icon-burger-right.svg");
     background-repeat: no-repeat;
     background-size: contain; }
 
@@ -1358,28 +1357,17 @@ html {
   height: 100%;
   margin-left: 100px;
   overflow: hidden;
-  border: 1px solid #d4d1d1; }
+  border: 1px solid #d4d1d1;
+  border-top: none; }
   @media (min-width: 769px) {
     .slider-task {
       display: block; } }
   .slider-task__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
     width: 95%;
     height: 100%;
     overflow: hidden; }
     @media (min-width: 769px) {
       .slider-task__wrapper {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
         width: 90%;
         margin-left: 100px; } }
   .slider-task__item {
@@ -1455,15 +1443,15 @@ html {
           width: 100px;
           height: 100px; } }
     .slider-task__box--icon-1::before {
-      background-image: url("../../img/icons/icon-group01.svg"); }
+      background-image: url("../img/icons/icon-group01.svg"); }
     .slider-task__box--icon-2::before {
-      background-image: url("../../img/icons/icon-group02.svg"); }
+      background-image: url("../img/icons/icon-group02.svg"); }
     .slider-task__box--icon-3::before {
-      background-image: url("../../img/icons/icon-group03.svg"); }
+      background-image: url("../img/icons/icon-group03.svg"); }
     .slider-task__box--icon-4::before {
-      background-image: url("../../img/icons/icon-compass.svg"); }
+      background-image: url("../img/icons/icon-compass.svg"); }
     .slider-task__box--icon-5::before {
-      background-image: url("../../img/icons/icon-task-rub.svg"); }
+      background-image: url("../img/icons/icon-task-rub.svg"); }
   .slider-task__mark {
     line-height: 18px;
     font-size: 12px;
@@ -1498,6 +1486,7 @@ html {
         font-size: 13px; } }
   .slider-task__buttons {
     width: 100px;
+    border-top: 1px solid #d4d1d1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1545,7 +1534,7 @@ html {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     color: #b22a2e;
-    background-image: url("../../img/icons/icon-arrow-slide-red.svg");
+    background-image: url("../img/icons/icon-arrow-slide-red.svg");
     background-repeat: no-repeat;
     background-size: contain; }
 
@@ -1570,7 +1559,7 @@ html {
     color: #dddddd;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-image: url("../../img/icons/icon-arrow-slide.svg");
+    background-image: url("../img/icons/icon-arrow-slide.svg");
     background-repeat: no-repeat;
     background-size: contain; }
 
@@ -1616,17 +1605,17 @@ html {
     .section {
       height: 100vh; } }
   .section--bg-feedback {
-    background-image: url("../../img/feedback/feedback-mob.jpg");
+    background-image: url("../img/feedback/feedback-mob.jpg");
     background-size: 100%; }
     @media (min-width: 480px) {
       .section--bg-feedback {
-        background-image: url("../../img/feedback/feedback-bg.jpg");
+        background-image: url("../img/feedback/feedback-bg.jpg");
         background-size: 100%; } }
     @media (min-width: 1140px) {
       .section--bg-feedback {
         background-size: cover; } }
   .section--bg-advantages {
-    background-image: url("../../img/advantages/advantages-bg.jpg");
+    background-image: url("../img/advantages/advantages-bg.jpg");
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -1961,14 +1950,14 @@ html {
       background-size: contain; }
     .advantages__name--icon-1::before {
       bottom: 40px;
-      background-image: url("../../img/icons/icon-group06.svg"); }
+      background-image: url("../img/icons/icon-group06.svg"); }
     .advantages__name--icon-2::before {
-      background-image: url("../../img/icons/icon-gr-6.svg"); }
+      background-image: url("../img/icons/icon-gr-6.svg"); }
     .advantages__name--icon-3::before {
-      background-image: url("../../img/icons/icon-gr-5.svg"); }
+      background-image: url("../img/icons/icon-gr-5.svg"); }
     .advantages__name--icon-4::before {
       bottom: 40px;
-      background-image: url("../../img/icons/icon-group07.svg"); }
+      background-image: url("../img/icons/icon-group07.svg"); }
   .advantages__text {
     margin: 0;
     font-size: 14px; }
@@ -2142,7 +2131,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("../../img/promo/promo-dark.jpg");
+    background-image: url("../img/promo/promo-dark.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -2151,7 +2140,7 @@ html {
         width: 65%; } }
     @media (min-width: 1600px) {
       .promo__item--info {
-        width: 65%; } }
+        width: 64.95%; } }
   .promo__item--video {
     position: relative;
     width: 34%;
@@ -2408,7 +2397,7 @@ html {
         right: 0;
         width: 20px;
         height: 20px;
-        background-image: url("../../img/icons/icon-feedback.svg");
+        background-image: url("../img/icons/icon-feedback.svg");
         background-repeat: no-repeat; }
 
 @media (max-width: 768px) {
@@ -2577,7 +2566,7 @@ html {
     display: block;
     width: 16px;
     height: 10px;
-    background-image: url("../../img/icons/icon-open.svg");
+    background-image: url("../img/icons/icon-open.svg");
     background-repeat: no-repeat;
     background-size: contain; }
 
@@ -2594,8 +2583,7 @@ html {
 
 @media (max-height: 900px) and (max-width: 1440px) {
   .nav-bar {
-    width: 80px;
-    height: 80px; } }
+    width: 80px; } }
 
 .pagination {
   margin-top: 15px; }
