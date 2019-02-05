@@ -1370,7 +1370,10 @@ html {
     @media (min-width: 769px) {
       .slider-task__wrapper {
         width: 90%;
-        margin-left: 100px; } }
+        margin-left: 79px; } }
+    @media (min-width: 1280px) {
+      .slider-task__wrapper {
+        margin-left: 99px; } }
     @media (min-width: 1540px) {
       .slider-task__wrapper {
         width: 94%; } }
@@ -1469,6 +1472,7 @@ html {
     text-transform: uppercase; }
   .slider-task__name {
     margin-right: 10px;
+    padding-bottom: 20px;
     margin-top: 14px;
     max-width: 300px;
     font-family: "Playfair Display", "Arial", serif;
@@ -1477,6 +1481,7 @@ html {
     line-height: 19px;
     letter-spacing: 0.02em;
     color: #444444;
+    border-bottom: 1px solid transparent;
     font-size: 15px; }
     @media (min-width: 480px) {
       .slider-task__name {
@@ -1585,6 +1590,8 @@ html {
   width: 100%; }
 
 .slider-task__item.slick-slide:hover .slider-task__name {
+  position: relative;
+  z-index: 1;
   color: #B22A2E;
   -webkit-transition: 1s;
   transition: 1s; }
@@ -1592,6 +1599,70 @@ html {
 @media (max-height: 900px) and (max-width: 1440px) {
   .slider-task__buttons {
     width: 80px; } }
+
+.slider-task__item.slick-slide {
+  position: relative;
+  overflow: hidden; }
+  @media (min-width: 375px) {
+    .slider-task__item.slick-slide {
+      height: 215px; } }
+  @media (min-width: 2300px) {
+    .slider-task__item.slick-slide {
+      height: 226px; } }
+  @media (min-width: 2500px) {
+    .slider-task__item.slick-slide {
+      height: 240px; } }
+  .slider-task__item.slick-slide::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    -webkit-transition: 1.2s all;
+    transition: 1.2s all;
+    background: #B22A2E url("../img/slide.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: multiply;
+    border-color: #B22A2E; }
+
+.slider-task__item.slick-slide:hover {
+  -webkit-transition: 1s;
+  transition: 1s; }
+  .slider-task__item.slick-slide:hover .slider-task__box--icon-1::before {
+    background-image: url("../img/icons/icon-group01-wh.svg"); }
+  .slider-task__item.slick-slide:hover .slider-task__box--icon-2::before {
+    background-image: url("../img/icons/icon-group02-wh.svg"); }
+  .slider-task__item.slick-slide:hover .slider-task__box--icon-3::before {
+    background-image: url("../img/icons/icon-group03-wh.svg"); }
+  .slider-task__item.slick-slide:hover .slider-task__box--icon-4::before {
+    background-image: url("../img/icons/icon-compass-wh.svg"); }
+  .slider-task__item.slick-slide:hover .slider-task__box--icon-5::before {
+    background-image: url("../img/icons/icon-task-rub-wh.svg"); }
+  .slider-task__item.slick-slide:hover .slider-task__box::after {
+    background-image: url(../img/sprite-png.png);
+    background-position: 0px 0px;
+    width: 16px;
+    height: 14px; }
+
+.slider-task__item.slick-slide:hover:before {
+  top: 0;
+  -webkit-transition: .6s all;
+  transition: .6s all; }
+
+.slider-task__item.slick-slide:hover .slider-task__name,
+.slider-task__item.slick-slide:hover .slider-task__mark {
+  color: #ffffff;
+  -webkit-transition: .6s all;
+  transition: .6s all; }
+
+.slider-task__item.slick-slide:hover .slider-task__name {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff; }
+
+.slider-task .slick-dots {
+  display: none; }
 
 .section {
   position: relative;
@@ -1606,7 +1677,7 @@ html {
       height: 100vh; } }
   .section--bg-feedback {
     background-image: url("../img/feedback/feedback-mob.jpg");
-    background-size: 50% 50%; }
+    background-size: 100%; }
     @media (min-width: 480px) {
       .section--bg-feedback {
         background-image: url("../img/feedback/feedback-bg.jpg");
@@ -1615,15 +1686,19 @@ html {
       .section--bg-feedback {
         background-size: cover; } }
   .section--bg-advantages {
-    background-image: url("../img/advantages/advantages-bg.jpg");
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat; }
     @media (min-width: 769px) {
       .section--bg-advantages {
+        background-image: url("../img/advantages/advantages-bg-1000.jpg");
         background-size: 51.75vw 100%; } }
+    @media (min-width: 1280px) {
+      .section--bg-advantages {
+        background-image: url("../img/advantages/advantages-bg-1440.jpg"); } }
     @media (min-width: 1540px) {
       .section--bg-advantages {
+        background-image: url("../img/advantages/advantages-bg.jpg");
         background-size: 53vw 100vh; } }
   .section__promo {
     height: 80%; }
