@@ -1090,7 +1090,7 @@ html {
 .page-header__button {
   position: relative;
   width: 98px;
-  height: 103%; }
+  height: 100%; }
   .page-header__button::before {
     position: absolute;
     content: "";
@@ -2436,7 +2436,7 @@ html {
 
 @media (min-height: 900px) and (min-width: 1600px) {
   .promo__item--info {
-    width: 65%; } }
+    width: 65.1%; } }
 
 @media (max-height: 900px) and (min-width: 1600px) {
   .promo__item--info {
