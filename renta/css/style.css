@@ -898,6 +898,9 @@ html {
   @media (min-width: 769px) {
     .onepage-pagination {
       right: 45px; } }
+  @media (min-width: 1280px) {
+    .onepage-pagination {
+      right: 45px; } }
 
 .wrapper {
   position: relative; }
@@ -2264,7 +2267,7 @@ html {
       content: "";
       top: 0;
       right: 0;
-      width: 98px;
+      width: 97.5px;
       height: 100%;
       background: #fff;
       z-index: 1; }
@@ -2432,7 +2435,7 @@ html {
 
 @media (max-height: 900px) and (min-width: 1440px) {
   .promo__item--info {
-    width: 64.9%; } }
+    width: 64.8%; } }
 
 @media (min-height: 900px) and (min-width: 1600px) {
   .promo__item--info {
