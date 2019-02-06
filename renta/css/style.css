@@ -1647,8 +1647,8 @@ html {
     height: 100%;
     opacity: 0;
     content: '';
-    -webkit-transition: 1s all;
-    transition: 1s all;
+    -webkit-transition: .3s all;
+    transition: .3s all;
     background: #B22A2E url("../img/slide.jpg") no-repeat;
     background-size: 100% 100%;
     background-blend-mode: multiply;
