@@ -1111,7 +1111,7 @@ html {
     padding-left: 24px; }
   .page-header__button {
     position: fixed;
-    bottom: 130px;
+    bottom: 30px;
     z-index: 9999;
     border-radius: 50%;
     right: 10px;
