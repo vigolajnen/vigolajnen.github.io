@@ -2418,6 +2418,46 @@ html {
   .promo__item--info {
     width: 65.1%; } }
 
+@media (min-height: 900px) and (min-width: 1280px) {
+  .promo__item--info {
+    width: 64.6%; } }
+
+@media (max-height: 900px) and (min-width: 1280px) {
+  .promo__item--info {
+    width: 64.5%; } }
+
+@media (min-height: 900px) and (min-width: 1440px) {
+  .promo__item--info {
+    width: 64%; } }
+
+@media (max-height: 900px) and (min-width: 1440px) {
+  .promo__item--info {
+    width: 64.9%; } }
+
+@media (min-height: 900px) and (min-width: 1600px) {
+  .promo__item--info {
+    width: 65%; } }
+
+@media (max-height: 900px) and (min-width: 1600px) {
+  .promo__item--info {
+    width: 64.9%; } }
+
+@media (min-height: 900px) and (min-width: 2200px) {
+  .promo__item--info {
+    width: 65.1%; } }
+
+@media (max-height: 900px) and (min-width: 1920px) {
+  .promo__item--info {
+    width: 65.1%; } }
+
+@media (min-height: 900px) and (min-width: 2200px) {
+  .promo__item--info {
+    width: 65.4%; } }
+
+@media (max-height: 900px) and (min-width: 2200px) {
+  .promo__item--info {
+    width: 65.4%; } }
+
 .feedback {
   position: relative; }
   @media (min-width: 1141px) {
