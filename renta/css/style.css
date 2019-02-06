@@ -1977,9 +1977,12 @@ html {
     @media (min-width: 1141px) {
       .advantages__item {
         width: 17vw; } }
-    @media (min-width: 2000px) {
+    @media (min-width: 2000px) and (max-height: 900px) {
       .advantages__item {
         padding: 56px; } }
+    @media (min-width: 2000px) and (min-height: 900px) {
+      .advantages__item {
+        padding: 38px 56px; } }
     .advantages__item--first {
       width: 100vw;
       padding: 0;
@@ -2238,7 +2241,7 @@ html {
     background-position: center; }
     @media (min-width: 1140px) {
       .promo__item--info {
-        width: 65%; } }
+        width: 64%; } }
     @media (min-width: 1600px) {
       .promo__item--info {
         width: 64.95%;
@@ -2389,7 +2392,7 @@ html {
 
 @media (max-height: 900px) and (min-width: 1280px) {
   .promo__item--info {
-    width: 65%; } }
+    width: 64.6%; } }
 
 @media (max-height: 900px) and (min-width: 1400px) {
   .promo__item--info {
@@ -2397,7 +2400,23 @@ html {
 
 @media (max-height: 900px) and (min-width: 1600px) {
   .promo__item--info {
+    width: 64.9%; } }
+
+@media (min-width: 1280px) {
+  .promo__item--info {
+    width: 64.6%; } }
+
+@media (min-width: 1400px) {
+  .promo__item--info {
     width: 64.7%; } }
+
+@media (min-width: 1440px) {
+  .promo__item--info {
+    width: 64.9%; } }
+
+@media (min-width: 1800px) {
+  .promo__item--info {
+    width: 65.1%; } }
 
 .feedback {
   position: relative; }
