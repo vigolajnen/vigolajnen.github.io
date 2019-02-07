@@ -1767,9 +1767,9 @@ html {
     height: 80vh; }
     @media (min-width: 769px) {
       .section__advantages {
-        height: 60vh; } }
+        height: 70vh; } }
   .section__box {
-    min-height: 20vh; }
+    height: 10vh; }
 
 .box {
   margin-left: 13vw;
@@ -1919,12 +1919,11 @@ html {
     .advantages {
       padding-right: 15vw;
       margin-top: 20vh;
-      min-height: 60vh; } }
+      min-height: 70vh; } }
   @media (min-width: 1540px) {
     .advantages {
       padding-right: 15vw;
-      margin-top: 20vh;
-      min-height: 60vh; } }
+      margin-top: 20vh; } }
   @media (max-height: 900px) and (min-width: 1140px) {
     .advantages {
       margin-top: 15vh; } }
@@ -1942,6 +1941,7 @@ html {
         padding: 0; } }
   .advantages__item {
     width: 100vw;
+    min-height: 30vh;
     padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2130,7 +2130,7 @@ html {
     background-size: 51.5vw 100%; }
   .advantages {
     margin-top: 20vh;
-    min-height: 60vh; }
+    min-height: 70vh; }
   .advantages__item {
     width: 17vw; }
     .advantages__item--first {
@@ -2157,12 +2157,12 @@ html {
     line-height: 16px; }
   .box__item:last-child {
     width: 35.5%; }
-  .section__box {
-    height: 20vh; }
   .section--bg-advantages {
     background-size: 53vw 100%; } }
 
 @media (max-height: 900px) and (min-width: 1440px) {
+  .advantages__name {
+    margin-top: 20px; }
   .advantages__name--icon-1::before {
     bottom: 20px; }
   .advantages__name--icon-3::before {
@@ -2174,7 +2174,9 @@ html {
 
 @media (min-height: 900px) and (min-width: 1140px) {
   .advantages__item--first {
-    width: 34vw; } }
+    width: 34vw; }
+  .advantages__name {
+    margin-top: 20px; } }
 
 @media (max-height: 800px) and (min-width: 1140px) {
   .advantages__name--icon-1::before, .advantages__name--icon-2::before, .advantages__name--icon-3::before, .advantages__name--icon-4::before {
@@ -2192,7 +2194,7 @@ html {
 
 @media (max-height: 900px) and (min-width: 1140px) {
   .advantages__item {
-    padding-top: 40px; }
+    padding-top: 50px; }
     .advantages__item--first {
       padding-top: 20px; }
     .advantages__item--red {
@@ -2241,6 +2243,12 @@ html {
   .advantages__year {
     margin-top: 30px; } }
 
+.advantages__icon {
+  height: 70px; }
+  @media (min-width: 2000px) and (min-height: 1000px) {
+    .advantages__icon {
+      height: 90px; } }
+
 .advantages__svg {
   fill: transparent; }
   @media (min-width: 2000px) and (min-height: 1000px) {
@@ -2249,7 +2257,8 @@ html {
       height: 90px; } }
 
 .advantages__box {
-  position: relative; }
+  position: relative;
+  margin-bottom: auto; }
 
 .advantages__icon {
   position: absolute;
