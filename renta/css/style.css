@@ -900,7 +900,10 @@ html {
       right: 34px; } }
   @media (min-width: 1440px) {
     .onepage-pagination {
-      right: 43px; } }
+      right: 36px; } }
+  @media (min-width: 1600px) {
+    .onepage-pagination {
+      right: 44px; } }
 
 .wrapper {
   position: relative; }
