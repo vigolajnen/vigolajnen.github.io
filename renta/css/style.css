@@ -1964,7 +1964,6 @@ html {
         padding: 0; } }
   .advantages__item {
     width: 100vw;
-    height: calc(65vh / 2);
     padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2021,7 +2020,8 @@ html {
                   order: 0; } }
     @media (min-width: 1141px) {
       .advantages__item {
-        width: 17vw; } }
+        width: 17vw;
+        height: calc(65vh / 2); } }
     @media (min-width: 1141px) and (min-height: 900px) {
       .advantages__item {
         min-height: 230px; } }
