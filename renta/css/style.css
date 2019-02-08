@@ -1680,7 +1680,7 @@ html {
       height: 226px; } }
   @media (min-width: 2500px) {
     .slider-task__item.slick-slide {
-      height: 240px; } }
+      height: 100%; } }
   .slider-task__item.slick-slide::before {
     position: absolute;
     top: 0;
@@ -1781,6 +1781,9 @@ html {
       .section--bg-advantages {
         background-image: url("../img/advantages/advantages-bg.jpg");
         background-size: 53vw 100vh; } }
+    @media (min-width: 1140px) and (max-width: 1440px) {
+      .section--bg-advantages {
+        background-size: 49vw 100vh; } }
   .section__promo {
     height: 80%; }
   .section__slider {
@@ -1800,6 +1803,12 @@ html {
         height: 70vh; } }
   .section__box {
     height: 15vh; }
+    @media (min-width: 1141px) {
+      .section__box {
+        height: 10vh; } }
+    @media (min-width: 1440px) {
+      .section__box {
+        height: 15vh; } }
 
 .box {
   margin-left: 13vw;
@@ -1837,6 +1846,9 @@ html {
     @media (max-height: 900px) {
       .box__item:last-child {
         width: 35.5%; } }
+    @media (min-width: 1140px) and (max-width: 1440px) {
+      .box__item:last-child {
+        width: 28%; } }
     @media (min-width: 1500px) {
       .box__item:last-child {
         width: 39.5%; } }
@@ -1950,6 +1962,15 @@ html {
       padding-right: 15vw;
       margin-top: 20vh;
       min-height: 65vh; } }
+  @media (min-width: 1141px) {
+    .advantages {
+      padding-right: 8vw;
+      min-height: 70vh; } }
+  @media (min-width: 1440px) {
+    .advantages {
+      padding-right: 15vw;
+      margin-top: 20vh;
+      min-height: 65vh; } }
   @media (min-width: 1540px) {
     .advantages {
       padding-right: 15vw; } }
@@ -1961,7 +1982,8 @@ html {
         max-width: 500px; } }
     @media (min-width: 1140px) {
       .advantages__title {
-        padding: 0; } }
+        padding: 0;
+        margin-top: -30px; } }
   .advantages__item {
     width: 100vw;
     padding: 20px;
@@ -2020,11 +2042,12 @@ html {
                   order: 0; } }
     @media (min-width: 1141px) {
       .advantages__item {
+        width: 18vw;
+        height: calc(70vh / 2); } }
+    @media (min-width: 1440px) {
+      .advantages__item {
         width: 17vw;
         height: calc(65vh / 2); } }
-    @media (min-width: 1141px) and (min-height: 900px) {
-      .advantages__item {
-        min-height: 230px; } }
     @media (min-width: 1900px) {
       .advantages__item {
         padding-top: 40px; }
@@ -2160,13 +2183,6 @@ html {
     color: #f1eee9; }
 
 @media (max-height: 900px) and (min-width: 1140px) {
-  .advantages__title.title.title--before::before {
-    background: none; }
-  .section--bg-advantages {
-    background-size: 51.5vw 100%; }
-  .advantages {
-    margin-top: 20vh;
-    min-height: 65vh; }
   .advantages__item {
     width: 17vw; }
     .advantages__item--first {
@@ -2190,9 +2206,7 @@ html {
       right: -5px; }
   .advantages__text {
     font-size: 11px;
-    line-height: 16px; }
-  .section--bg-advantages {
-    background-size: 53vw 100%; } }
+    line-height: 16px; } }
 
 @media (max-height: 900px) and (min-width: 1440px) {
   .advantages__name {
@@ -2230,9 +2244,9 @@ html {
   .advantages__item {
     padding-top: 50px; }
     .advantages__item--first {
-      padding-top: 20px; }
+      padding-top: 0; }
     .advantages__item--red {
-      padding-top: 20px; } }
+      padding-top: 0; } }
 
 @media (max-height: 800px) and (min-width: 1140px) {
   .advantages__item {
@@ -2320,6 +2334,12 @@ html {
     .advantages__icon {
       position: static !important; } }
 
+@media (min-width: 1140px) and (max-width: 1440px) {
+  .advantages__item {
+    width: 19vw; }
+  .advantages__item--first {
+    width: 38vw; } }
+
 .promo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2400,20 +2420,6 @@ html {
       @media (min-width: 2200px) {
         .promo__item--video::before {
           padding-right: 0; } }
-    .promo__item--video img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 10%;
-      margin-right: 6%; }
-      @media (min-width: 1024px) {
-        .promo__item--video img {
-          margin-top: 25%; } }
-      @media (min-width: 1141px) {
-        .promo__item--video img {
-          margin-right: 25%; } }
-      @media (min-width: 1600px) {
-        .promo__item--video img {
-          margin-top: 10%; } }
     .promo__item--video video {
       position: absolute;
       top: 59%;
