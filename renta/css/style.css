@@ -1979,7 +1979,7 @@ html {
     padding: 50px 15px; }
     @media (min-width: 769px) {
       .advantages__title {
-        max-width: 500px; } }
+        max-width: 480px; } }
     @media (min-width: 1140px) {
       .advantages__title {
         padding: 0;
