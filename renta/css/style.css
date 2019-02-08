@@ -1769,7 +1769,7 @@ html {
       .section__advantages {
         height: 70vh; } }
   .section__box {
-    height: 10vh; }
+    height: 15vh; }
 
 .box {
   margin-left: 13vw;
@@ -1803,10 +1803,10 @@ html {
     width: 64.5%;
     background-color: #ffffff; }
   .box__item:last-child {
-    width: 34.5%; }
-    @media (max-height: 800px) {
+    width: 33.5%; }
+    @media (max-height: 900px) {
       .box__item:last-child {
-        width: 34.5%; } }
+        width: 35.5%; } }
     @media (min-width: 1500px) {
       .box__item:last-child {
         width: 39.5%; } }
@@ -1919,17 +1919,10 @@ html {
     .advantages {
       padding-right: 15vw;
       margin-top: 20vh;
-      min-height: 70vh; } }
+      min-height: 65vh; } }
   @media (min-width: 1540px) {
     .advantages {
-      padding-right: 15vw;
-      margin-top: 20vh; } }
-  @media (max-height: 900px) and (min-width: 1140px) {
-    .advantages {
-      margin-top: 15vh; } }
-  @media (max-height: 800px) and (min-width: 1140px) {
-    .advantages {
-      margin-top: 15vh; } }
+      padding-right: 15vw; } }
   .advantages__title {
     width: auto;
     padding: 50px 15px; }
@@ -1941,7 +1934,7 @@ html {
         padding: 0; } }
   .advantages__item {
     width: 100vw;
-    min-height: 30vh;
+    height: calc(65vh / 2);
     padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2130,7 +2123,7 @@ html {
     background-size: 51.5vw 100%; }
   .advantages {
     margin-top: 20vh;
-    min-height: 70vh; }
+    min-height: 65vh; }
   .advantages__item {
     width: 17vw; }
     .advantages__item--first {
@@ -2155,8 +2148,6 @@ html {
   .advantages__text {
     font-size: 11px;
     line-height: 16px; }
-  .box__item:last-child {
-    width: 35.5%; }
   .section--bg-advantages {
     background-size: 53vw 100%; } }
 
