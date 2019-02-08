@@ -1783,7 +1783,7 @@ html {
         background-size: 53vw 100vh; } }
     @media (min-width: 1140px) and (max-width: 1440px) {
       .section--bg-advantages {
-        background-size: 49vw 100vh; } }
+        background-size: 47vw 100vh; } }
   .section__promo {
     height: 80%; }
   .section__slider {
@@ -1848,7 +1848,7 @@ html {
         width: 35.5%; } }
     @media (min-width: 1140px) and (max-width: 1440px) {
       .box__item:last-child {
-        width: 28%; } }
+        width: 24%; } }
     @media (min-width: 1500px) {
       .box__item:last-child {
         width: 39.5%; } }
@@ -1964,7 +1964,7 @@ html {
       min-height: 65vh; } }
   @media (min-width: 1141px) {
     .advantages {
-      padding-right: 8vw;
+      padding-right: 5vw;
       min-height: 70vh; } }
   @media (min-width: 1440px) {
     .advantages {
@@ -2336,9 +2336,9 @@ html {
 
 @media (min-width: 1140px) and (max-width: 1440px) {
   .advantages__item {
-    width: 19vw; }
+    width: 20vw; }
   .advantages__item--first {
-    width: 38vw; } }
+    width: 40vw; } }
 
 .promo {
   display: -webkit-box;
@@ -2432,8 +2432,6 @@ html {
       @media (max-width: 1140px) {
         .promo__item--video video {
           left: 50%; } }
-    .promo__item--video video[poster] {
-      padding: 5%; }
 
 @media (min-width: 769px) {
   .promo__text {
