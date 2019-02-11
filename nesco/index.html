@@ -31,6 +31,7 @@
         <div class="mobile-sidebar__catalog-btn button">
           <button class="button-link button">
             <span class="burger-btn burger-btn--header burger-btn--mobile-sidebar">
+            <!--<span class="burger-icon"></span>-->
             <svg class="sidebar__catalog-svg" width="13" height="11">
                 <use xlink:href="img/sprite.svg#icon-dots-menu"></use>
             </svg>
@@ -49,6 +50,13 @@
               <use xlink:href="img/sprite.svg#icon-like-2"></use>
           </svg>
         </button>
+    
+        <!-- <div class="mobile-sidebar__search-input">
+        <form action="/search/" method="get">
+        <input type="search" placeholder="Введите название товара" name="q" value="">
+        <input name="s" type="submit" value="Поиск" hidden="">
+        </form>
+        </div> -->
       </div>
       <nav class="mobile-menu">
         <button class="mobile-menu__close button" aria-label="закрыть меню"></button>
@@ -60,6 +68,51 @@
             </button>
             <a class="mobile-menu__phone" href="tel:+78121232233">+7 (812) 123-22-33</a>
           </div>
+          <!-- <div class="mobile-menu__cat">
+                <div class="mobile-menu__cat-title">Каталог</div>
+                <nav class="mobile-cat">
+                  <ul class="mobile-cat__list">
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Вино</a>
+                      <ul class="mobile-cat__subcat">
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Все</a>
+                        </li>
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Белое</a>
+                        </li>
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Розовое</a>
+                        </li>
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Красное</a>
+                        </li>
+                        <li class="mobile-cat__subcat-item">
+                          <a class="mobile-cat__subcat-link" href="#">Розовое</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Крепкий алкоголь</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Игристое вино</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Пиво</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Сиропы</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Стекло</a>
+                    </li>
+                    <li class="mobile-cat__item">
+                      <a class="mobile-cat__link mobile-cat__link--icon" href="#">Аксессуары</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div> -->
           <div class="mobile-menu__dop">
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
@@ -183,7 +236,7 @@
         </div>
       </nav>
     </div>
-    <header id="header-fixed" class="page-header fixed-top">
+    <header class="page-header">
       <div class="page-header__top page-header__top--bg">
         <div class="page-header__box">
           <div class="page-header__nav">
@@ -280,8 +333,8 @@
           </div>
         </div>
       </div>
-      <div class="page-header__bottom">
-        <div class="page-header__box">
+      <div id="header-fixed" class="page-header__bottom fixed">
+        <div class=" page-header__box">
           <div class="page-header__logo logo">
             <a class="logo__link">
               <img class="logo__pic" src="img/header/logo.png" width="126" height="31" alt="логотип Nesco">
@@ -290,9 +343,9 @@
           <nav class="main-nav">
             <ul class="top-menu border-before">
               <li class="top-menu__item">
-                <a class="top-menu__link button-link" href="#">
+                <a class="top-menu__link button-link button-link--catalog" href="catalog.html">
                   <svg class="top-menu__icon" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-menu-open"></use>
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
                   </svg>
                   Каталог
                 </a>
@@ -610,7 +663,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="submenu__block">
+                  <div class="submenu__block submenu__block--no-brd">
                     <div class="submenu__title">
                       <a class="submenu__title-link submenu__arrow" href="#">Стекло
                         <span class="submenu__title-counter">(912)</span></a>
@@ -979,7 +1032,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="submenu__block">
+                  <div class="submenu__block submenu__block--no-brd">
                     <div class="submenu__title">
                       <div class="submenu__title-link">Цена</div>
                     </div>
@@ -1275,7 +1328,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="submenu__block">
+                  <div class="submenu__block submenu__block--no-brd">
                     <div class="submenu__title">
                       <div class="submenu__title-link">Популярное</div>
                     </div>
@@ -1568,7 +1621,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="submenu__block">
+                  <div class="submenu__block submenu__block--no-brd">
                     <div class="submenu__title">
                       <div class="submenu__title-link">Цена</div>
                     </div>
@@ -1693,6 +1746,7 @@
         </div>
       </div>
     </header>
+
 
     <div class="promo">
       <div class="promo__wrapper">
@@ -1905,79 +1959,80 @@
         <div id="slider-brands" class="brands__slider">
           <div class="brands__row">
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-1">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-1">
             </a>
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-2">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-2">
             </a>
           </div>
           <div class="brands__row">
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-1">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-5">
             </a>
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-2">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-6">
             </a>
           </div>
           <div class="brands__row">
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-1">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-1">
             </a>
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-2">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-2">
             </a>
           </div>
           <div class="brands__row">
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-5">
             </a>
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
-            </a>
-          </div>
-          <div class="brands__row">
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-1">
-            </a>
-            <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-2">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-6">
             </a>
           </div>
           <div class="brands__row">
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/4-jura.png" alt="brands-5">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-1">
             </a>
             <a class="brands__item" href="#">
-              <img class="brands__pic picture" src="img/brands/1-martini.png" alt="brands-6">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-2">
+            </a>
+          </div>
+          <div class="brands__row">
+            <a class="brands__item" href="#">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-5">
+            </a>
+            <a class="brands__item" href="#">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-6">
+            </a>
+          </div>
+          <div class="brands__row">
+            <a class="brands__item" href="#">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-5">
+            </a>
+            <a class="brands__item" href="#">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-6">
+            </a>
+          </div>
+          <div class="brands__row">
+            <a class="brands__item" href="#">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-1">
+            </a>
+            <a class="brands__item" href="#">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-2">
+            </a>
+          </div>
+          <div class="brands__row">
+            <a class="brands__item" href="#">
+              <img class="brands__pic picture" src="img/brands/jura-hover.png" alt="brands-5">
+            </a>
+            <a class="brands__item" href="#">
+              <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-6">
             </a>
           </div>
         </div>
       </div>
     </section>
+
     <section class="popular-goods vp-invisible">
       <div class="popular-goods__wrapper">
         <h3 class="popular-goods__title title title--before">Популярные товары</h3>
@@ -2155,7 +2210,7 @@
               <p class="approach__text">Помогаем выбрать ассортимент, обучаем персонал и проводим акции для покупателей.</p>
               <button class="approach__link button button-link">Подробнее</button>
             </a>
-            <div class="approach__bg" style="background-image: url(img/approach/approach-hover-pic-2.jpg);"></div>
+            <div class="approach__bg" style="background-image: url(/img/approach/approach-hover-pic-2.jpg);"></div>
           </div>
           <div class="approach__item">
             <a class="approach__box" href="#">
@@ -2163,7 +2218,7 @@
               <p class="approach__text">Помогаем выбрать ассортимент, обучаем персонал и проводим акции для покупателей.</p>
               <button class="approach__link button button-link">Подробнее</button>
             </a>
-            <div class="approach__bg" style="background-image: url(img/approach/approach-hover-pic-2.jpg);"></div>
+            <div class="approach__bg" style="background-image: url(/img/approach/approach-hover-pic-2.jpg);"></div>
           </div>
           <div class="approach__item">
             <a class="approach__box" href="#">
@@ -2171,7 +2226,7 @@
               <p class="approach__text">Помогаем выбрать ассортимент, обучаем персонал и проводим акции для покупателей.</p>
               <button class="approach__link button button-link">Подробнее</button>
             </a>
-            <div class="approach__bg" style="background-image: url(img/approach/approach-hover-pic-2.jpg);"></div>
+            <div class="approach__bg" style="background-image: url(/img/approach/approach-hover-pic-2.jpg);"></div>
           </div>
           <div class="approach__item">
             <a class="approach__box" href="#">
@@ -2179,7 +2234,7 @@
               <p class="approach__text">Помогаем выбрать ассортимент, обучаем персонал и проводим акции для покупателей.</p>
               <button class="approach__link button button-link">Подробнее</button>
             </a>
-            <div class="approach__bg" style="background-image: url(img/approach/approach-hover-pic-2.jpg);"></div>
+            <div class="approach__bg" style="background-image: url(/img/approach/approach-hover-pic-2.jpg);"></div>
           </div>
         </div>
       </div>

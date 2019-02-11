@@ -238,7 +238,7 @@
       </div>
     </nav>
   </div>
-  <header id="header-fixed" class="page-header fixed-top">
+  <header class="page-header">
     <div class="page-header__top page-header__top--bg">
       <div class="page-header__box">
         <div class="page-header__nav">
@@ -335,8 +335,8 @@
         </div>
       </div>
     </div>
-    <div class="page-header__bottom">
-      <div class="page-header__box">
+    <div id="header-fixed" class="page-header__bottom fixed">
+      <div class=" page-header__box">
         <div class="page-header__logo logo">
           <a class="logo__link">
             <img class="logo__pic" src="img/header/logo.png" width="126" height="31" alt="логотип Nesco">
@@ -345,9 +345,9 @@
         <nav class="main-nav">
           <ul class="top-menu border-before">
             <li class="top-menu__item">
-              <a class="top-menu__link button-link" href="#">
+              <a class="top-menu__link button-link button-link--catalog" href="catalog.html">
                 <svg class="top-menu__icon" width="15" height="15">
-                  <use xlink:href="img/sprite.svg#icon-menu-open"></use>
+                  <use xlink:href="img/sprite.svg#icon-burger"></use>
                 </svg>
                 Каталог
               </a>
@@ -665,7 +665,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="submenu__block">
+                <div class="submenu__block submenu__block--no-brd">
                   <div class="submenu__title">
                     <a class="submenu__title-link submenu__arrow" href="#">Стекло
                       <span class="submenu__title-counter">(912)</span></a>
@@ -1034,7 +1034,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="submenu__block">
+                <div class="submenu__block submenu__block--no-brd">
                   <div class="submenu__title">
                     <div class="submenu__title-link">Цена</div>
                   </div>
@@ -1330,7 +1330,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="submenu__block">
+                <div class="submenu__block submenu__block--no-brd">
                   <div class="submenu__title">
                     <div class="submenu__title-link">Популярное</div>
                   </div>
@@ -1623,7 +1623,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="submenu__block">
+                <div class="submenu__block submenu__block--no-brd">
                   <div class="submenu__title">
                     <div class="submenu__title-link">Цена</div>
                   </div>
@@ -1748,6 +1748,7 @@
       </div>
     </div>
   </header>
+
 
   <section class="item">
     <div class="item__breadcrumbs breadcrumbs">
