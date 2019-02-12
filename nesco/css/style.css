@@ -4521,10 +4521,6 @@ img {
     -webkit-transition: 1s;
     transition: 1s;
     border: 1px solid #1c97cf; }
-  .button-link--catalog {
-    border: 1px solid #1c97cf; }
-    .button-link--catalog svg {
-      fill: #333b3f; }
   @media (min-width: 769px) {
     .button-link {
       padding: 13px 20px;
@@ -4788,6 +4784,14 @@ img {
       .promo__slider .slick-dots {
         bottom: 100px;
         left: 10%;
+        width: 380px; } }
+    @media (min-width: 1024px) {
+      .promo__slider .slick-dots {
+        bottom: 58px; } }
+    @media (min-width: 1280px) {
+      .promo__slider .slick-dots {
+        left: 10.5%;
+        bottom: 100px;
         width: 400px; } }
   .promo__slider .slick-dots li {
     height: 10px;
@@ -4815,6 +4819,12 @@ img {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
+    @media (min-width: 1024px) {
+      .promo__slider__btn {
+        bottom: 48px; } }
+    @media (min-width: 1280px) {
+      .promo__slider__btn {
+        bottom: 88px; } }
   .promo__slider__btn-prev, .promo__slider__btn-next {
     position: relative;
     font-size: 0;
@@ -4822,6 +4832,14 @@ img {
     height: 48px;
     margin: 0 10px;
     background-color: rgba(245, 252, 255, 0.21); }
+    @media (min-width: 1024px) {
+      .promo__slider__btn-prev, .promo__slider__btn-next {
+        width: 38px;
+        height: 38px; } }
+    @media (min-width: 1280px) {
+      .promo__slider__btn-prev, .promo__slider__btn-next {
+        width: 48px;
+        height: 48px; } }
   .promo__slider__btn-prev::before, .promo__slider__btn-next::before {
     position: absolute;
     content: ">";
@@ -4831,11 +4849,29 @@ img {
     width: 20px;
     height: 20px;
     font-size: 20px; }
+    @media (min-width: 1024px) {
+      .promo__slider__btn-prev::before, .promo__slider__btn-next::before {
+        top: 5px;
+        width: 10px;
+        height: 10px; } }
+    @media (min-width: 1280px) {
+      .promo__slider__btn-prev::before, .promo__slider__btn-next::before {
+        top: 10px;
+        width: 20px;
+        height: 20px; } }
   .promo__slider__btn-prev::before {
     top: 18px;
     left: 13px;
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg); }
+    @media (min-width: 1024px) {
+      .promo__slider__btn-prev::before {
+        top: 21px;
+        left: 13px; } }
+    @media (min-width: 1280px) {
+      .promo__slider__btn-prev::before {
+        top: 18px;
+        left: 13px; } }
 
 .promo .slick-dotted.slick-slider {
   margin-bottom: 0; }
@@ -6417,11 +6453,10 @@ img {
       display: none; } }
 
 .top-menu__item {
-  position: relative;
   display: inline-block;
   vertical-align: top;
   margin-right: 15px;
-  padding-bottom: 10px; }
+  padding-bottom: 19px; }
   .top-menu__item:first-child .top-menu__link {
     font-size: 12px;
     letter-spacing: 1.71px;
@@ -6439,14 +6474,12 @@ img {
         margin: 10px 40px 0; } }
   .top-menu__item:last-child {
     margin-right: 0; }
-  .top-menu__item:nth-child(2) .submenu {
-    left: -30px; }
   .top-menu__item:nth-child(2) .submenu::before {
-    left: 35px; }
-  .top-menu__item:nth-child(4) .submenu {
-    left: -120px; }
+    left: 15%; }
+  .top-menu__item:nth-child(3) .submenu::before {
+    left: 24%; }
   .top-menu__item:nth-child(4) .submenu::before {
-    left: 170px; }
+    left: 37%; }
   @media (min-width: 880px) {
     .top-menu__item {
       margin-right: 10px; } }
@@ -6474,7 +6507,6 @@ img {
       display: none; } }
 
 .top-menu__link {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6491,17 +6523,26 @@ img {
   text-decoration: none;
   -webkit-transition: all .1s ease;
   transition: all .1s ease; }
-  .top-menu__link::before {
-    position: absolute;
-    content: "";
-    top: 60%;
-    right: 0;
-    background-image: url(../img/sprite-png.png);
-    background-position: -15px -18px;
-    width: 9px;
-    height: 6px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+  .top-menu__link--before {
+    position: relative; }
+    .top-menu__link--before::before {
+      position: absolute;
+      content: "";
+      top: 60%;
+      right: 0;
+      background-image: url(../img/sprite-png.png);
+      background-position: -15px -18px;
+      width: 9px;
+      height: 6px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .top-menu__link--catalog {
+    border: 1px solid #1c97cf; }
+    .top-menu__link--catalog:hover {
+      border-color: transparent;
+      color: #333b3f; }
+    .top-menu__link--catalog svg {
+      fill: #333b3f; }
   @media (min-width: 880px) {
     .top-menu__link {
       font-size: 9px; } }
@@ -6545,7 +6586,7 @@ img {
 
 .submenu {
   position: absolute;
-  top: 65px;
+  top: 79px;
   left: 0;
   z-index: 25;
   display: -webkit-box;
@@ -6572,16 +6613,14 @@ img {
       padding: 20px 20px 0; } }
   @media (min-width: 1550px) {
     .submenu {
-      width: -webkit-max-content;
-      width: -moz-max-content;
-      width: max-content;
-      max-width: 72vw;
+      width: 100vw;
+      max-width: 77vw;
       padding: 20px 40px 0; } }
   .submenu::before {
     position: absolute;
     content: "";
     top: -10px;
-    left: 60px;
+    left: 88px;
     display: block;
     background-image: url(../img/sprite-png.png);
     background-position: -105px -95px;
@@ -6599,21 +6638,16 @@ img {
   white-space: normal;
   display: inline-block;
   vertical-align: top;
-  padding-left: 20px;
+  padding-left: 30px;
   font-size: 14px; }
   @media (min-width: 880px) {
     .submenu__block {
-      width: 18%;
+      width: 190px;
       border-left: 1px solid #e8e8e8; } }
-  @media (min-width: 1390px) {
+  @media (min-width: 1540px) {
     .submenu__block {
-      width: auto; } }
-  @media (min-width: 1440px) {
-    .submenu__block {
-      max-width: 200px; } }
-  @media (min-width: 1600px) {
-    .submenu__block {
-      max-width: 300px; } }
+      width: 250px;
+      max-width: 100%; } }
   .submenu__block:first-child {
     margin-right: 0;
     padding-left: 0;
@@ -6636,10 +6670,8 @@ img {
     border-top: 1px solid #e8e8e8; }
     .submenu__block--full .submenu__title-link {
       color: #000;
-      font-size: 12px; }
-  @media (min-width: 1550px) {
-    .submenu__block {
-      padding-right: 40px; } }
+      font-size: 12px;
+      margin-bottom: 0; }
 
 .submenu__title {
   display: -webkit-box;
@@ -6649,11 +6681,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 0; }
+  padding: 10px 0;
+  margin-bottom: -16px; }
+  .submenu__title:nth-child(n + 2) {
+    margin-top: 33px; }
 
 .submenu__title-link {
   display: inline-block;
   color: #1995c9;
+  margin-bottom: 16px;
   font-size: 11px;
   font-weight: 500;
   text-transform: uppercase;
@@ -9633,22 +9669,22 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-2::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -425px -404px;
+      background-position: -381px -360px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-3::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -381px -360px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -249px -228px;
+      background-position: -425px -404px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -249px -228px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-6::before {
@@ -9658,12 +9694,12 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
   .filter-block__list {
