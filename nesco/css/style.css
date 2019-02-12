@@ -6450,7 +6450,7 @@ img {
   cursor: default; }
   @media (min-width: 1900px) {
     .top-menu {
-      padding-right: 70px; } }
+      padding-right: 40px; } }
   @media (max-width: 1140px) {
     .top-menu.border-before::before {
       display: none; } }
@@ -6845,6 +6845,10 @@ img {
       @media (min-width: 1385px) {
         .additionally__link.button-link {
           margin: 0 20px 0 5px; } }
+      @media (min-width: 1800px) {
+        .additionally__link.button-link {
+          margin: 0 20px 0 5px;
+          padding: 15.5px 22px; } }
   .additionally__icon {
     fill: transparent;
     stroke: #333b3f;
@@ -8920,7 +8924,7 @@ label.filters__item-title {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         background-image: url(../img/sprite-png.png);
-        background-position: -469px -448px;
+        background-position: -249px -228px;
         width: 34px;
         height: 34px; }
   .mobile-catalog__sub {
@@ -9669,12 +9673,12 @@ label.filters__item-title {
                 transform: translateY(-50%); }
     .filter-block__title--icon-1::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -469px -448px;
+      background-position: -249px -228px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-2::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -381px -360px;
+      background-position: -469px -448px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-3::before {
@@ -9684,17 +9688,17 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -381px -360px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -249px -228px;
+      background-position: -205px -184px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-6::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -205px -184px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-7::before {
