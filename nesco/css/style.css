@@ -4521,8 +4521,10 @@ img {
     -webkit-transition: 1s;
     transition: 1s;
     border: 1px solid #1c97cf; }
-  .button-link--catalog svg {
-    fill: #333b3f; }
+  .button-link--catalog {
+    border: 1px solid #1c97cf; }
+    .button-link--catalog svg {
+      fill: #333b3f; }
   @media (min-width: 769px) {
     .button-link {
       padding: 13px 20px;
@@ -9638,12 +9640,12 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -249px -228px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -249px -228px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-6::before {
