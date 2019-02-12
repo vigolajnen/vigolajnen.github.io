@@ -5837,6 +5837,9 @@ img {
   @media (max-width: 768px) {
     .product.slick-slide {
       margin: 0; } }
+  @media (min-width: 1024px) {
+    .product.slick-slide {
+      margin: 0 15px; } }
   @media (min-width: 1280px) {
     .product.slick-slide {
       margin: 0 17px; } }
@@ -9650,12 +9653,12 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
   .filter-block__list {
