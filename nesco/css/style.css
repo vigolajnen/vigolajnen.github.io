@@ -5191,21 +5191,46 @@ img {
     border: 1px solid transparent; }
     @media (min-width: 769px) {
       .reviews__inner {
-        padding: 50px;
+        padding: 70px 50px;
         border: 1px solid #e8e8e8; } }
   .reviews__user {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px; }
+    @media (max-width: 425px) {
+      .reviews__user {
+        padding: 0 40px; } }
     @media (min-width: 600px) {
       .reviews__user {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
+        padding: 0 80px; } }
+    @media (min-width: 769px) {
+      .reviews__user {
+        padding: 0 100px;
+        margin-bottom: 68px; } }
+    @media (min-width: 1540px) {
+      .reviews__user {
         padding: 0 150px; } }
+  @media (max-width: 425px) {
+    .reviews__user-pic {
+      max-width: 105px;
+      width: 50%;
+      -ms-flex-item-align: start;
+          align-self: flex-start; } }
   .reviews__user-pic img {
-    max-width: 170px;
+    max-width: 256px;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -5213,30 +5238,70 @@ img {
   .reviews__user-info {
     width: 50%;
     margin-left: 20px; }
+    @media (max-width: 425px) {
+      .reviews__user-info {
+        margin-top: 27px;
+        margin-left: 0;
+        width: 100%;
+        text-align: center; } }
+    @media (min-width: 769px) {
+      .reviews__user-info {
+        margin-left: 30px; } }
   .reviews__logo-company {
-    border-bottom: 1px solid #e8e8e8;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid #e8e8e8; }
+    @media (max-width: 425px) {
+      .reviews__logo-company {
+        position: absolute;
+        top: 0;
+        right: 48px;
+        width: 105px;
+        height: 105px;
+        margin: 0;
+        padding: 15px;
+        border: none;
+        -o-object-fit: contain;
+           object-fit: contain;
+        background-color: #f7f7f7; } }
   .reviews__name {
-    margin: 0;
+    margin: 0 0 20px 0;
     color: #000000;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    font-size: 13px;
     font-size: 13px; }
+    @media (min-width: 375px) {
+      .reviews__name {
+        font-size: calc(0.71197vw + 10.3301px); } }
+    @media (min-width: 1920px) {
+      .reviews__name {
+        font-size: 24px; } }
     @media (min-width: 769px) {
       .reviews__name {
-        font-size: 24px;
         font-weight: 700;
         line-height: 32px; } }
   .reviews__position {
+    margin: 0 0 30px 0;
     font-style: normal;
     font-weight: 300;
     line-height: 17px;
     font-size: 11px;
-    color: rgba(0, 0, 0, 0.6); }
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 11px; }
+    @media (min-width: 375px) {
+      .reviews__position {
+        font-size: calc(0.32362vw + 9.78641px); } }
+    @media (min-width: 1920px) {
+      .reviews__position {
+        font-size: 16px; } }
+    @media (max-width: 425px) {
+      .reviews__position {
+        margin-bottom: 0; } }
     @media (min-width: 769px) {
       .reviews__position {
-        font-size: 16px;
         font-weight: 300;
         line-height: 24px; } }
   .reviews__text {
@@ -5247,12 +5312,25 @@ img {
     font-style: normal;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.6);
-    text-align: center; }
+    text-align: center;
+    font-size: 11px; }
+    @media (min-width: 375px) {
+      .reviews__text {
+        font-size: calc(0.58252vw + 8.81553px); } }
+    @media (min-width: 1920px) {
+      .reviews__text {
+        font-size: 20px; } }
+    @media (min-width: 425px) {
+      .reviews__text {
+        margin: 0 30px;
+        line-height: 22px; } }
     @media (min-width: 769px) {
       .reviews__text {
-        font-size: 20px;
+        margin: 0;
         font-weight: 300;
         line-height: 32px; } }
+    .reviews__text p {
+      margin: 0; }
   .reviews__button {
     margin: 20px auto 40px;
     display: block; }
@@ -5260,8 +5338,11 @@ img {
       .reviews__button {
         display: none; } }
   .reviews__slider {
-    max-width: 925px;
+    max-width: 800px;
     width: 100%; }
+    @media (min-width: 1540px) {
+      .reviews__slider {
+        max-width: 925px; } }
   .reviews__btn-prev, .reviews__btn-next {
     position: relative;
     font-size: 0;
@@ -5756,6 +5837,9 @@ img {
   @media (max-width: 768px) {
     .product.slick-slide {
       margin: 0; } }
+  @media (min-width: 1280px) {
+    .product.slick-slide {
+      margin: 0 17px; } }
 
 .product:hover #slider-new-goods > ul {
   -webkit-transform: translateY(10px);
@@ -9546,12 +9630,12 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-3::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -381px -360px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -381px -360px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-5::before {
@@ -9561,12 +9645,12 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-6::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -205px -184px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -205px -184px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-8::before {
