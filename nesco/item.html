@@ -1751,214 +1751,132 @@
 
 
   <section class="item">
-    <div class="item__breadcrumbs breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Каталог</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Вино</a>
-        </li>
-      </ul>
-    </div>
-    <div class="item__title">
-      <h1>Le Grand Noir Cabernet Sauvignon</h1>
-    </div>
-    <div class="item__pic">
-      <img class="picture" src="img/page-item/item.jpg" alt="item">
-    </div>
-    <div class="item__data data">
-      <div class="data__box border-before">
-        <p class="data__title">Производитель:</p>
-        <p class="data__val">Domaine Des Hates</p>
+    <div class="item__column">
+      <div class="item__pic">
+        <img class="picture" src="img/page-item/pr-1.webp" alt="item">
       </div>
-      <div class="data__box">
-        <p class="data__title">Бренд:</p>
-        <p class="data__val">Domaine Des Hates</p>
+    </div>
+    <div class="item__column">
+      <div class="item__breadcrumbs breadcrumbs breadcrumbs--white">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Вино</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link"> Bellus Toscana IGT Girasole 2012</a>
+          </li>
+        </ul>
       </div>
-      <p class="data__stock">В наличии</p>
+      <div class="item__title">
+        <h1>Le Grand Noir Cabernet Sauvignon</h1>
+      </div>
+      <div class="item__data data">
+        <div class="data__box border-before">
+          <p class="data__title">Производитель:</p>
+          <p class="data__val">Domaine Des Hates</p>
+        </div>
+        <div class="data__box">
+          <p class="data__title">Бренд:</p>
+          <p class="data__val">Domaine Des Hates</p>
+        </div>
+        <!-- <p class="data__stock">В наличии</p> -->
+      </div>
+      <div class="item__box">
+        <div class="item__price">
+          <span>2000 P</span>
+        </div>
+        <div class="number button--counter js-square">
+          <span class="minus minus__js js-square-btn"></span>
+          <input type="number" min="1" class="item__counter" value="1" id="buy-3">
+          <span class="plus plus__js js-square-btn"></span>
+        </div>
+        <button class="button button-link">В избранное</button>
+        <p class="">В наличии</p>
+      </div>
+      <div class="item__box">
+        <p class="item__box-name">Миллезимы и литражи:</p>
+        <div class="item__displacement">
+          <button class="button button-link item__displacement-btn">2015 0,75</button>
+          <button class="button button-link item__displacement-btn">2016 0,75</button>
+          <button class="button button-link item__displacement-btn">2017 0,75</button>
+        </div>
+      </div>
+      <!-- <div class="item__price">
+        <span>2000 P</span>
+      </div> -->
+      <section class="item__characteristic characteristic vp-invisible">
+        <table class="characteristic__table">
+          <tbody>
+            <tr>
+              <td>
+                <p class="characteristic__name">Цвет:</p>
+                <p class="characteristic__val">Белое</p>
+              </td>
+              <td>
+                <p class="characteristic__name">Тип:</p>
+                <p class="characteristic__val">Тихое</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="characteristic__name">Страна:</p>
+                <p class="characteristic__val">Франция</p>
+              </td>
+              <td>
+                <p class="characteristic__name">Год:</p>
+                <p class="characteristic__val">2015</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="characteristic__name">Объем:</p>
+                <p class="characteristic__val">0,75</p>
+              </td>
+              <td>
+                <p class="characteristic__name">Регион:</p>
+                <p class="characteristic__val">Бургундия, Шабли</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </div>
-    <div class="item__box">
-      <p class="item__box-name">Миллезимы и литражи:</p>
-    </div>
-    <div class="item__price">
-      <span>2000 P</span>
-    </div>
-    <section class="item__characteristic characteristic vp-invisible">
-      <table class="characteristic__table">
-        <tbody>
-          <tr>
-            <td>
-              <p class="characteristic__name">Цвет:</p>
-              <p class="characteristic__val">Белое</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Тип:</p>
-              <p class="characteristic__val">Тихое</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="characteristic__name">Страна:</p>
-              <p class="characteristic__val">Франция</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Год:</p>
-              <p class="characteristic__val">2015</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="characteristic__name">Объем:</p>
-              <p class="characteristic__val">0,75</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Регион:</p>
-              <p class="characteristic__val">Бургундия, Шабли</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
     <section class="item__map map vp-invisible">
       <h3 class="visually-hidden">Карта</h3>
       <div class="map__wrapper">
-        <div class="map__caption">
-          <h3 class="title title--before">Описание</h3>
-          <p class="map__text text">Обладает тонким и приятным ароматом с преобладанием нот фруктов, в особенности
-            персика и груши.</p>
-        </div>
-        <div class="data">
-          <div class="data__box border-before">
-            <p class="data__title">Рейтинги:</p>
-            <p class="data__val">WS 90 RS 95 RW 85</p>
+        <div class="map__column">
+          <div class="map__caption">
+            <h3 class="title title--before">Описание</h3>
+            <p class="map__text text">Обладает тонким и приятным ароматом с преобладанием нот фруктов, в особенности
+              персика и груши.</p>
           </div>
-          <div class="data__box">
-            <p class="data__title">Сорта винограда:</p>
-            <p class="data__val">Шардоне 100 %</p>
+          <div class="data">
+            <div class="data__box border-before">
+              <p class="data__title">Рейтинги:</p>
+              <p class="data__val">WS 90 RS 95 RW 85</p>
+            </div>
+            <div class="data__box">
+              <p class="data__title">Сорта винограда:</p>
+              <p class="data__val">Шардоне 100 %</p>
+            </div>
           </div>
+          <section class="dishes">
+            <h4 class="dishes__title">Блюда:</h4>
+            <ul class="dishes__list">
+              <li class="dishes__item">1</li>
+              <li class="dishes__item">2</li>
+              <li class="dishes__item">3</li>
+            </ul>
+          </section>
         </div>
-        <section class="dishes">
-          <h4 class="dishes__title">Блюда:</h4>
-          <ul class="dishes__list">
-            <li class="dishes__item">1</li>
-            <li class="dishes__item">2</li>
-            <li class="dishes__item">3</li>
-          </ul>
-        </section>
+        <div class="map__column">
+          <img width="440" src="img/page-item/map.png" alt="map">
+        </div>
       </div>
     </section>
-    <!-- <section class="item__characteristic characteristic vp-invisible">
-      <h3 class="title title--before">Характеристика</h3>
-      <table class="characteristic__table">
-        <tbody>
-          <tr>
-            <td>
-              <p class="characteristic__name">Температура подачи:</p>
-              <p class="characteristic__val">14-16 С</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Категория</p>
-              <p class="characteristic__val">DOCG</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="characteristic__name">Потенциал хранения:</p>
-              <p class="characteristic__val">3-4 года</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Декантация</p>
-              <p class="characteristic__val">Аэрация</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="characteristic__name">Аппеласьон:</p>
-              <p class="characteristic__val">Пти Шабли</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Потенциал хранения:</p>
-              <p class="characteristic__val">3-4 года</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="characteristic__name"> Крепость:</p>
-              <p class="characteristic__val">12,5%</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Кол-во в упаковке:</p>
-              <p class="characteristic__val">12 хранения</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="characteristic__item">
-        <h4 class="characteristic__title">Дегустационные характеристики:</h4>
-        <p class="characteristic__text">Обладает тонким и приятным ароматом с преобладанием нот фруктов, в особенности персика и груши.</p>
-      </div>
-      <div class="characteristic__item">
-        <h4 class="characteristic__title">Состав:</h4>
-        <p class="characteristic__text">Вино, сахар, спирт этиловый ректификованный из пищевого сырья, настои ароматических растений, натуральный ванилин.</p>
-      </div>
-      <div class="characteristic__item">
-        <h4 class="characteristic__title">Цветовая гамма:</h4>
-        <p class="characteristic__text">Обладает бледно-золотистым цветом</p>
-      </div>
-      <div class="characteristic__item">
-        <h4 class="characteristic__title">Виноградники:</h4>
-        <p class="characteristic__text">Расположены в Малиньи, виноградные лозы находятся в самом сердце Premiers Crus Fourchaume</p>
-      </div>
-      <a class="link" href="#">Еще</a>
-    </section>
-    <section class="item__characteristic characteristic vp-invisible">
-      <h3 class="title title--before">Стилистика</h3>
-      <table class="characteristic__table">
-        <tbody>
-          <tr>
-            <td>
-              <p class="characteristic__name">Температура подачи:</p>
-              <p class="characteristic__val">14-16 С</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Категория</p>
-              <p class="characteristic__val">DOCG</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="characteristic__name">Потенциал хранения:</p>
-              <p class="characteristic__val">3-4 года</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Декантация</p>
-              <p class="characteristic__val">Аэрация</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="characteristic__name">Аппеласьон:</p>
-              <p class="characteristic__val">Пти Шабли</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Потенциал хранения:</p>
-              <p class="characteristic__val">3-4 года</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="characteristic__name"> Крепость:</p>
-              <p class="characteristic__val">12,5%</p>
-            </td>
-            <td>
-              <p class="characteristic__name">Кол-во в упаковке:</p>
-              <p class="characteristic__val">12 хранения</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section> -->
 
     <div class="tabs vp-invisible">
       <div class="tabs__wrapper">
@@ -2116,8 +2034,130 @@
         </div>
       </div>
     </div>
-
     <section class="reviews vp-invisible">
+      <div class="reviews__wrapper">
+        <h3 class="title title--before">Отзывы сомелье</h3>
+        <div class="reviews__btn">
+          <button class="reviews__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
+          <button class="reviews__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
+        </div>
+        <div id="slider-reviews" class="reviews__slider">
+          <div class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__user">
+                <div class="reviews__user-pic">
+                  <img src="img/reviews/reviews-photo.jpg" alt="user">
+                </div>
+                <div class="reviews__user-info">
+                  <h4 class="reviews__name">Марк Олдман</h4>
+                </div>
+              </div>
+              <div class="reviews__text">
+                <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела
+                  в 2016 году
+                  эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по
+                  адресу:
+                  Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
+                  Новосаратовка,
+                  Центральное отделение. Комплекс находится радом с развязкой Вантового Моста, ближайшие станции метро
+                  «Пролетарская» и
+                  «Проспект Большевиков».</p>
+                <button class="reviews__button button-link">Оригинал отзыва</button>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__user">
+                <div class="reviews__user-pic">
+                  <img src="img/reviews/reviews-photo.jpg" alt="user">
+                </div>
+                <div class="reviews__user-info grayscale">
+                  <a class="reviews__link" href="#">
+                    <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
+                  </a>
+                  <h4 class="reviews__name">Евгения Грекова</h4>
+                  <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
+                </div>
+              </div>
+              <div class="reviews__text">
+                <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела
+                  в
+                  2016 году
+                  эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по
+                  адресу:
+                  Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
+                  Новосаратовка,
+                  Центральное отделение. Комплекс находится радом с развязкой Вантового Моста, ближайшие станции метро
+                  «Пролетарская» и
+                  «Проспект Большевиков».</p>
+                <button class="reviews__button button-link">Оригинал отзыва</button>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__user">
+                <div class="reviews__user-pic">
+                  <img src="img/reviews/reviews-photo.jpg" alt="user">
+                </div>
+                <div class="reviews__user-info grayscale">
+                  <a class="reviews__link" href="#">
+                    <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
+                  </a>
+                  <h4 class="reviews__name">Евгения Грекова</h4>
+                  <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
+                </div>
+              </div>
+              <div class="reviews__text">
+                <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела
+                  в
+                  2016 году
+                  эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по
+                  адресу:
+                  Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
+                  Новосаратовка,
+                  Центральное отделение. Комплекс находится радом с развязкой Вантового Моста, ближайшие станции метро
+                  «Пролетарская» и
+                  «Проспект Большевиков».</p>
+                <button class="reviews__button button-link">Оригинал отзыва</button>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__user">
+                <div class="reviews__user-pic">
+                  <img src="img/reviews/reviews-photo.jpg" alt="user">
+                </div>
+                <div class="reviews__user-info grayscale">
+                  <a class="reviews__link" href="#">
+                    <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
+                  </a>
+                  <h4 class="reviews__name">Евгения Грекова</h4>
+                  <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
+                </div>
+              </div>
+              <div class="reviews__text">
+                <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела
+                  в
+                  2016 году
+                  эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по
+                  адресу:
+                  Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
+                  Новосаратовка,
+                  Центральное отделение. Комплекс находится радом с развязкой Вантового Моста, ближайшие станции метро
+                  «Пролетарская» и
+                  «Проспект Большевиков».</p>
+                <button class="reviews__button button-link">Оригинал отзыва</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="reviews vp-invisible">
       <div class="reviews__wrapper">
         <h3 class="title title--before">Отзывы сомелье</h3>
         <div class="reviews__btn">
@@ -2191,10 +2231,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="content-box vp-invisible">
       <h3 class="title title--before">О бренде</h3>
-      <img class="picture" src="img/brands/martini.png" alt="martini">
+      <img class="" src="img/brands/brand-logo.jpg" alt="brand-logo">
       <div class="content-box__text">
         <p>La Scolca - культовое и очень светское хозяйство. 90 лет назад хозяйство было основано семьей Сольдати- и
           сегодня их
@@ -2203,14 +2243,14 @@
       </div>
       <a class="button-link" href="#">Смотреть все</a>
     </section>
-    <section class="slider-product vp-invisible">
+    <section class="item__column slider-product vp-invisible">
       <div class="slider-product__wrapper">
-        <h3 class="slider-product__title title title--before">Рекомендуем</h3>
+        <h3 class="slider-product__title title title--before-left">Рекомендуем</h3>
         <div class="slider-product__btn">
           <button class="slider-product__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
           <button class="slider-product__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
         </div>
-        <div id="slider-recommend" class="slider-product__slider">
+        <div id="slider-recommend-2" class="slider-product__slider">
           <div class="product">
             <div class="product__pic-box">
               <div class="showcases">
@@ -2367,12 +2407,179 @@
             </div>
           </div>
         </div>
-        <a class="slider-product__link button-link" href="#">Смотреть все</a>
+
+      </div>
+    </section>
+    <section class="item__column item__column--hidden-mob slider-product vp-invisible">
+      <div class="slider-product__wrapper">
+        <h3 class="slider-product__title title title--before-left">Бокалы и аксессуары:</h3>
+        <div class="slider-product__btn">
+          <button class="slider-product__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
+          <button class="slider-product__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
+        </div>
+        <div id="slider-accessories" class="slider-product__slider">
+          <div class="product">
+            <div class="product__pic-box">
+              <div class="showcases">
+                <a class="showcases__link showcases__link--like" href="#" title="Like">
+                  <svg class="showcases__icon" width="35" height="30">
+                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
+                  </svg>
+                </a>
+                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
+                  <svg class="showcases__icon" width="50" height="40">
+                    <use xlink:href="img/sprite.svg#icon-new"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="product__image">
+                <a class="product__link-img" href="#">
+                  <img class="picture" src="img/goods/product-1.jpg" alt="product">
+                </a>
+              </div>
+            </div>
+            <div class="product__info-box">
+              <div class="product__box">
+                <div class="product__country">Италия</div>
+                <a href="#" class="product__name-link">
+                  <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
+                </a>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="product__price">1300 P</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__pic-box">
+              <div class="showcases">
+                <a class="showcases__link showcases__link--like" href="#" title="Like">
+                  <svg class="showcases__icon" width="35" height="30">
+                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
+                  </svg>
+                </a>
+                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
+                  <svg class="showcases__icon" width="50" height="40">
+                    <use xlink:href="img/sprite.svg#icon-new"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="product__image">
+                <a class="product__link-img" href="#">
+                  <img class="picture" src="img/goods/product-2.jpg" alt="product">
+                </a>
+              </div>
+            </div>
+            <div class="product__info-box">
+              <div class="product__box">
+                <div class="product__country">Италия</div>
+                <a href="#" class="product__name-link">
+                  <h3 class="product__name">Podere Montepulciano d'Abruzzo</h3>
+                </a>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="product__price">4 500 P</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__pic-box">
+              <div class="showcases">
+                <a class="showcases__link showcases__link--like" href="#" title="Like">
+                  <svg class="showcases__icon" width="35" height="30">
+                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
+                  </svg>
+                </a>
+                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
+                  <svg class="showcases__icon" width="50" height="40">
+                    <use xlink:href="img/sprite.svg#icon-new"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="product__image">
+                <a class="product__link-img" href="#">
+                  <img class="picture" src="img/goods/product-3.jpg" alt="product">
+                </a>
+              </div>
+            </div>
+            <div class="product__info-box">
+              <div class="product__box">
+                <div class="product__country">Италия</div>
+                <a href="#" class="product__name-link">
+                  <h3 class="product__name">Le Grand Noir Cabernet Sauvignon</h3>
+                </a>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="product__price">4 200 P</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__pic-box">
+              <div class="showcases">
+                <a class="showcases__link showcases__link--like" href="#" title="Like">
+                  <svg class="showcases__icon" width="35" height="30">
+                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
+                  </svg>
+                </a>
+                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
+                  <svg class="showcases__icon" width="50" height="40">
+                    <use xlink:href="img/sprite.svg#icon-new"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="product__image">
+                <a class="product__link-img" href="#">
+                  <img class="picture" src="img/goods/product-4.jpg" alt="product">
+                </a>
+              </div>
+            </div>
+            <div class="product__info-box">
+              <div class="product__box">
+                <div class="product__country">Италия</div>
+                <a href="#" class="product__name-link">
+                  <h3 class="product__name">Remole</h3>
+                </a>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="product__price">2 500 P</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__pic-box">
+              <div class="showcases">
+                <a class="showcases__link showcases__link--like" href="#" title="Like">
+                  <svg class="showcases__icon" width="35" height="30">
+                    <use xlink:href="img/sprite.svg#icon-like-2"></use>
+                  </svg>
+                </a>
+                <a class="showcases__link showcases__link--new" href="#" title="Новинки">
+                  <svg class="showcases__icon" width="50" height="40">
+                    <use xlink:href="img/sprite.svg#icon-new"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="product__image">
+                <a class="product__link-img" href="#">
+                  <img class="picture" src="img/goods/product-1.jpg" alt="product">
+                </a>
+              </div>
+            </div>
+            <div class="product__info-box">
+              <div class="product__box">
+                <div class="product__country">Италия</div>
+                <a href="#" class="product__name-link">
+                  <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
+                </a>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="product__price">1300 P</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
     <section class="slider-product vp-invisible">
       <div class="slider-product__wrapper">
-        <h3 class="slider-product__title title title--before">Вы ранее просматривали</h3>
+        <h3 class="slider-product__title title title--before-left">Вы ранее просматривали</h3>
         <div class="slider-product__btn">
           <button class="slider-product__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
           <button class="slider-product__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
@@ -2534,49 +2741,235 @@
             </div>
           </div>
         </div>
-        <a class="slider-product__link button-link" href="#">Смотреть все</a>
-      </div>
-    </section>
-    <section class="advantages vp-invisible">
-      <div class="advantages__wrapper">
-        <h3 class="visually-hidden">Преимущества</h3>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="100" height="100">
-              <use xlink:href="img/sprite.svg#icon-advantages-8"></use>
-            </svg>
-            <h4 class="advantages__name">Ассортимент</h4>
-            <p class="advantages__text">Всегда в наличии более 900 наименований алкогольных позиций</p>
-            <a class="advantages__link link" href="#">Подробнее</a>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="100" height="100">
-              <use xlink:href="img/sprite.svg#icon-advantages-6"></use>
-            </svg>
-            <h4 class="advantages__name">Гарантии</h4>
-            <p class="advantages__text">Все напитки по прямым контрактам с производителями</p>
-            <a class="advantages__link link" href="#">Подробнее</a>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="100" height="100">
-              <use xlink:href="img/sprite.svg#icon-advantages-7"></use>
-            </svg>
-            <h4 class="advantages__name">Доставка </h4>
-            <p class="advantages__text">Доставляем товар в день оформления заказа или в любой удобный для вас время</p>
-            <a class="advantages__link link" href="#">Подробнее</a>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__icon" width="100" height="100">
-              <use xlink:href="img/sprite.svg#icon-advantages-5"></use>
-            </svg>
-            <h4 class="advantages__name">Качество </h4>
-            <p class="advantages__text">Реализуем принципы управления качеством в соответствии с ISO 9001:2015</p>
-            <a class="advantages__link link" href="#">Подробнее</a>
-          </li>
-        </ul>
+
       </div>
     </section>
   </section>
+  <section class="advantages vp-invisible">
+    <div class="advantages__wrapper">
+      <h3 class="visually-hidden">Преимущества</h3>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <svg class="advantages__icon" width="100" height="100">
+            <use xlink:href="img/sprite.svg#icon-advantages-8"></use>
+          </svg>
+          <h4 class="advantages__name">Ассортимент</h4>
+          <p class="advantages__text">Всегда в наличии более 900 наименований алкогольных позиций</p>
+          <a class="advantages__link link" href="#">Подробнее</a>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon" width="100" height="100">
+            <use xlink:href="img/sprite.svg#icon-advantages-6"></use>
+          </svg>
+          <h4 class="advantages__name">Гарантии</h4>
+          <p class="advantages__text">Все напитки по прямым контрактам с производителями</p>
+          <a class="advantages__link link" href="#">Подробнее</a>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon" width="100" height="100">
+            <use xlink:href="img/sprite.svg#icon-advantages-7"></use>
+          </svg>
+          <h4 class="advantages__name">Доставка </h4>
+          <p class="advantages__text">Доставляем товар в день оформления заказа или в любой удобный для вас время</p>
+          <a class="advantages__link link" href="#">Подробнее</a>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon" width="100" height="100">
+            <use xlink:href="img/sprite.svg#icon-advantages-5"></use>
+          </svg>
+          <h4 class="advantages__name">Качество </h4>
+          <p class="advantages__text">Реализуем принципы управления качеством в соответствии с ISO 9001:2015</p>
+          <a class="advantages__link link" href="#">Подробнее</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="page-footer page-footer--bg">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__top">
+        <div class="page-footer__item page-footer__item--before">
+          <div class="page-footer__box">
+            <div class="page-footer__title">Главная</div>
+            <div class="page-footer__nav">
+              <a class="page-footer__link" href="#">О Nesco</a>
+              <a class="page-footer__link" href="#">Контакты</a>
+              <a class="page-footer__link" href="#">Блог</a>
+              <a class="page-footer__link" href="#">Карьера</a>
+              <a class="page-footer__link" href="#">Вакансии</a>
+              <a class="page-footer__link" href="#">Новости</a>
+              <a class="page-footer__link" href="#">Отзывы клиентов</a>
+              <a class="page-footer__link" href="#">Политика в области качества</a>
+              <a class="page-footer__link" href="#">Политика конфидециальности</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__item page-footer__item--before">
+          <div class="page-footer__box">
+            <div class="page-footer__title">Клиентам</div>
+            <div class="page-footer__nav">
+              <a class="page-footer__link" href="#">Ресторанам</a>
+              <a class="page-footer__link" href="#">Магазинам</a>
+              <a class="page-footer__link" href="#">Корпоративным клиентам</a>
+              <a class="page-footer__link" href="#">Частным клиентам</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__item page-footer__item--before">
+          <div class="page-footer__box">
+            <div class="page-footer__title">Сервис</div>
+            <div class="page-footer__nav">
+              <a class="page-footer__link" href="#">Прием заказов</a>
+              <a class="page-footer__link" href="#">Резерв товара</a>
+              <a class="page-footer__link" href="#">Условия оплаты</a>
+              <a class="page-footer__link" href="#">Доставка</a>
+              <a class="page-footer__link" href="#">Возврат товара</a>
+              <a class="page-footer__link" href="#">Режим работы</a>
+              <a class="page-footer__link" href="#">Гарантии</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__item page-footer__item--before">
+          <div class="page-footer__box">
+            <div class="page-footer__title">Каталог</div>
+            <div class="page-footer__nav">
+              <a class="page-footer__link" href="#">Вино</a>
+              <a class="page-footer__link" href="#">Крепкий алкоголь</a>
+              <a class="page-footer__link" href="#">Игристое вино</a>
+              <a class="page-footer__link" href="#">Пиво</a>
+              <a class="page-footer__link" href="#">Вода</a>
+              <a class="page-footer__link" href="#">Сиропы</a>
+              <a class="page-footer__link" href="#">Стекло</a>
+              <a class="page-footer__link" href="#">Аксессуары</a>
+              <a class="page-footer__link link-btn" href="#">Каталог</a>
+              <button class="button-link button">Скачать каталог</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__item">
+          <div class="page-footer__box">
+            <div class="page-footer__title">Города</div>
+            <div class="page-footer__cities">
+              <div class="page-footer__city">
+                <div class="page-footer__city-name">Архангельск</div>
+                <div class="page-footer__city-phone">+7 812 123-45-67</div>
+              </div>
+              <div class="page-footer__city">
+                <div class="page-footer__city-name">Великий Новгород</div>
+                <div class="page-footer__city-phone">+7 812 123-45-67</div>
+              </div>
+              <div class="page-footer__city">
+                <div class="page-footer__city-name">Калининград</div>
+                <div class="page-footer__city-phone">+7 812 123-45-67</div>
+              </div>
+              <div class="page-footer__city">
+                <div class="page-footer__city-name">Мурманск</div>
+                <div class="page-footer__city-phone">+7 812 123-45-67</div>
+              </div>
+              <div class="page-footer__city">
+                <div class="page-footer__city-name">Санкт-Петербург</div>
+                <div class="page-footer__city-phone">+7 812 123-45-67</div>
+              </div>
+              <div class="page-footer__city">
+                <div class="page-footer__city-name">Петрозаводск</div>
+                <div class="page-footer__city-phone">+7 812 123-45-67</div>
+              </div>
+              <div class="page-footer__city">
+                <div class="page-footer__city-name">Псков</div>
+                <div class="page-footer__city-phone">+7 812 123-45-67</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__bottom">
+        <div class="page-footer__item">
+          <div class="page-footer__box">
+            <p class="page-footer__copyright">© Nesco 2018</p>
+          </div>
+        </div>
+        <div class="page-footer__item">
+          <div class="page-footer__box">
+            <a href="#" rel="nofollow" class="page-footer__social" target="_blank">
+              <svg class="page-footer__social-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-inst"></use>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+        <div class="page-footer__item">
+          <div class="page-footer__box">
+            <div class="page-footer__caption">Офис:</div>
+            <p class="page-footer__address">Санкт-Петербург,
+              Партизанская, 27</p>
+          </div>
+        </div>
+        <div class="page-footer__item">
+          <div class="page-footer__box">
+            <div class="page-footer__caption">Склад:</div>
+            <p class="page-footer__address">Лен. обл., Всеволожский р-н, Свердловское гор-е п., в р-не д. Новосаратовка</p>
+          </div>
+        </div>
+        <div class="page-footer__item">
+          <div class="page-footer__box">
+            <div class="page-footer__dev">Сделано в <a href="#" rel="nofollow" target="_blank">its.agency</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__mobile">
+        <div class="mobile-footer">
+          <div class="mobile-footer__item">
+            <div class="mobile-footer__title">Города</div>
+            <div class="mobile-footer__cities">
+              <ul class="cities">
+                <li class="cities__item">
+                  <button class="cities__btn button">Санкт-Петербург</button>
+                </li>
+                <li class="cities__item">
+                  <button class="cities__btn button">Москва</button>
+                </li>
+                <li class="cities__item">
+                  <button class="cities__btn button">Петрозаводск</button>
+                </li>
+                <li class="cities__item">
+                  <button class="cities__btn button">Архангельск</button>
+                </li>
+              </ul>
+            </div>
+            <a class="phone phone--icon" href="tel:89233409271">8(923) 340-92-71</a>
+          </div>
+          <div class="mobile-footer__item">
+            <div class="mobile-footer__box">
+              <div class="mobile-footer__caption">Офис:</div>
+              <p class="mobile-footer__address">Санкт-Петербург,
+                Партизанская, 27</p>
+            </div>
+            <div class="mobile-footer__box">
+              <div class="mobile-footer__caption">Склад:</div>
+              <p class="mobile-footer__address">Лен. обл., Всеволожский р-н, Свердловское гор-е п., в р-не д.
+                Новосаратовка</p>
+            </div>
+          </div>
+          <div class="mobile-footer__item">
+            <div class="social">
+              <a href="#" rel="nofollow" class="social__link" target="_blank">
+                <svg class="page-footer__social-icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-inst"></use>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+            <div class="mobile-footer__studio">Сделано в <a href="#" rel="nofollow" target="_blank">its.agency</a></div>
+          </div>
+          <div class="mobile-footer__item">
+            <p class="copyright">© Nesco 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
   <div id="city-popup" class="popup popup-city white-popup-block mfp-hide">
     <div class="popup__wrapper popup-city__wrapper">
       <button class="popup-modal-dismiss" aria-label="Закрыть окно">
