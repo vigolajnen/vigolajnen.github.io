@@ -1996,10 +1996,11 @@ html {
       padding-right: 15vw;
       margin-top: 20vh;
       min-height: auto;
-      height: 80vh; } }
+      height: 60vh; } }
   @media (min-width: 1540px) {
     .advantages {
-      padding-right: 15vw; } }
+      padding-right: 15vw;
+      height: 80vh; } }
   .advantages__title {
     width: auto;
     padding: 50px 15px; }
@@ -2195,7 +2196,7 @@ html {
     line-height: 110px;
     font-size: 248px;
     color: #f1eee9;
-    padding-top: 30px;
+    margin-top: 30px;
     margin-bottom: 0; }
     @media (max-width: 1580px) {
       .advantages__number {
@@ -2212,14 +2213,16 @@ html {
       -webkit-transform: rotate(-90deg);
               transform: rotate(-90deg);
       display: block; }
+      @media (min-width: 1024px) {
+        .advantages__number--text {
+          top: -40px; } }
       @media (min-width: 1600px) {
         .advantages__number--text {
           right: -20px;
-          top: -40px; } }
-      @media (min-width: 1960px) {
+          top: -72px; } }
+      @media (min-width: 2200px) {
         .advantages__number--text {
-          right: -24px;
-          top: -41px; } }
+          top: -72px; } }
   .advantages__year {
     margin: 0 auto 40px;
     line-height: 22px;
@@ -2331,7 +2334,8 @@ html {
     padding-left: 120px;
     padding-top: 0; }
   .advantages__number {
-    padding-top: 60px; }
+    padding-top: 60px;
+    margin-top: 0; }
     .advantages__number--text {
       top: 20px; } }
 
@@ -2357,7 +2361,8 @@ html {
       margin-top: 3px; } }
   @media (min-width: 1440px) {
     .advantages__svg--three {
-      height: 70px; }
+      height: 70px;
+      margin-top: 8px; }
     .advantages__svg--four {
       height: 70px;
       margin-top: 0; } }
