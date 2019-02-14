@@ -2125,13 +2125,22 @@ html {
       width: 100vw;
       border: none; }
       @media (min-width: 1024px) {
-        .advantages__item--red .advantages__box {
-          margin-bottom: 0; }
-        .advantages__item--red .advantages__year {
-          margin: 0 auto 20px; } }
+        .advantages__item--red {
+          padding: 20px 0; }
+          .advantages__item--red .advantages__box {
+            margin-bottom: 0; }
+          .advantages__item--red .advantages__year {
+            margin: 20px auto; } }
       @media (min-width: 1140px) {
         .advantages__item--red {
+          padding: 0;
           width: 17vw; } }
+      @media (min-width: 1600px) {
+        .advantages__item--red .advantages__year {
+          margin: 40px auto 20px; } }
+      @media (min-width: 1960px) {
+        .advantages__item--red .advantages__year {
+          margin: 40px auto 20px; } }
   .advantages__name {
     margin: 0;
     margin-bottom: 20px;
@@ -2195,32 +2204,22 @@ html {
     @media (max-width: 768px) {
       .advantages__number {
         line-height: 100px; } }
-    @media (min-width: 1900px) {
-      .advantages__number {
-        padding-top: 50px; } }
-    .advantages__number::before {
-      position: absolute;
-      content: "";
-      top: 45%;
-      right: 30px;
-      background-image: url(../img/sprite-png.png);
-      background-position: -92px -88px;
-      width: 43px;
-      height: 43px; }
-      @media (min-width: 769px) {
-        .advantages__number::before {
-          top: 20%;
-          right: 40px; } }
-      @media (min-width: 1140px) {
-        .advantages__number::before {
-          top: 25%; } }
     .advantages__number--text {
-      font-size: 38px;
-      position: relative;
-      right: 30px; }
-      @media (min-width: 1140px) {
+      font-size: 24px;
+      position: absolute;
+      right: 0;
+      top: -10px;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      display: block; }
+      @media (min-width: 1600px) {
         .advantages__number--text {
-          right: 40px; } }
+          right: -20px;
+          top: -40px; } }
+      @media (min-width: 1960px) {
+        .advantages__number--text {
+          right: -24px;
+          top: -41px; } }
   .advantages__year {
     margin: 0 auto 40px;
     line-height: 22px;
@@ -2332,7 +2331,9 @@ html {
     padding-left: 120px;
     padding-top: 0; }
   .advantages__number {
-    padding-top: 80px; } }
+    padding-top: 60px; }
+    .advantages__number--text {
+      top: 20px; } }
 
 .advantages__icon {
   height: 70px; }
