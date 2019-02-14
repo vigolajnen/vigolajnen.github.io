@@ -2428,7 +2428,8 @@ html {
     background-image: url("../img/promo/promo-dark.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    background-color: #202022; }
     @media (min-width: 1140px) {
       .promo__item--info {
         width: 64%; } }
