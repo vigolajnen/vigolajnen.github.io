@@ -1108,7 +1108,8 @@ html {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    height: 100%; }
   .page-header__button {
     position: relative;
     width: 108px;
@@ -1337,11 +1338,13 @@ html {
 
 @media (min-width: 769px) {
   .navigation__wrapper {
+    height: 100%;
     margin: 0 auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
   .navigation__list {
     position: relative;
+    height: 100%;
     z-index: 1;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1355,10 +1358,11 @@ html {
   .navigation__toggle {
     display: none; }
   .navigation__link {
-    padding: 15px 0; }
+    height: 100%;
+    padding: 12px 0; }
   .navigation__item {
     width: auto;
-    height: auto;
+    height: 100%;
     border-bottom-color: transparent; }
   .navigation--nojs .navigation__toggle {
     display: none; } }
@@ -1806,9 +1810,6 @@ html {
         height: 70vh; } }
   .section__box {
     height: 15vh; }
-    @media (min-width: 1140px) {
-      .section__box {
-        height: 10vh; } }
     @media (min-width: 1439px) {
       .section__box {
         height: 15vh; } }
@@ -1942,6 +1943,18 @@ html {
 .title.title--white {
   color: #ffffff; }
 
+#advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .advantages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1950,6 +1963,9 @@ html {
       flex-wrap: wrap;
   overflow: hidden;
   min-height: 100vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 0; }
   @media (min-width: 769px) {
     .advantages {
@@ -1959,21 +1975,12 @@ html {
           -ms-flex-direction: row;
               flex-direction: row;
       margin-left: 13vw;
-      min-height: 80vh; } }
-  @media (min-width: 1140px) {
-    .advantages {
-      padding-right: 15vw;
-      margin-top: 20vh;
-      min-height: 65vh; } }
-  @media (min-width: 1140px) {
-    .advantages {
-      padding-right: 5vw;
-      min-height: 70vh; } }
+      min-height: 60vh; } }
   @media (min-width: 1440px) {
     .advantages {
       padding-right: 15vw;
       margin-top: 20vh;
-      min-height: 65vh; } }
+      min-height: auto; } }
   @media (min-width: 1540px) {
     .advantages {
       padding-right: 15vw; } }
@@ -2049,11 +2056,11 @@ html {
     @media (min-width: 1141px) {
       .advantages__item {
         width: 18vw;
-        height: calc(70vh / 2); } }
+        height: 50%; } }
     @media (min-width: 1440px) {
       .advantages__item {
         width: 17vw;
-        height: calc(65vh / 2); } }
+        height: 50%; } }
     @media (min-width: 1900px) {
       .advantages__item {
         padding-top: 40px; }
