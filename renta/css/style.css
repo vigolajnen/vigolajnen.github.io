@@ -1423,7 +1423,7 @@ html {
     overflow: hidden; }
     @media (min-width: 769px) {
       .slider-task__wrapper {
-        width: calc(90% - 79px);
+        width: calc(100% - 79px);
         margin-left: 79px; } }
     @media (min-width: 1440px) {
       .slider-task__wrapper {
@@ -1668,6 +1668,9 @@ html {
 .slider-task .slick-list {
   height: 100%;
   width: 100%; }
+  @media (min-width: 1365px) and (max-width: 1366px) {
+    .slider-task .slick-list {
+      width: 100%; } }
 
 @media (min-width: 1024px) {
   .slider-task__item.slick-slide {
@@ -2580,7 +2583,11 @@ html {
 
 @media (max-height: 900px) and (min-width: 1280px) {
   .promo__item--info {
-    width: 62.2%; } }
+    width: 64.5%; } }
+
+@media (max-height: 900px) and (min-width: 1300px) {
+  .promo__item--info {
+    width: 64.7%; } }
 
 @media (min-height: 900px) and (min-width: 1280px) {
   .promo__item--info {
@@ -2665,6 +2672,11 @@ html {
       @media (min-width: 769px) {
         .feedback__item:last-child {
           width: 45%; } }
+    .feedback__item .title {
+      margin-top: 8px; }
+      @media (min-width: 1540px) {
+        .feedback__item .title {
+          margin-top: 0; } }
     .feedback__item p {
       margin-top: 40px;
       max-width: 300px;
