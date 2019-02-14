@@ -1929,7 +1929,10 @@ html {
   color: #B22A2E; }
   @media (min-width: 375px) {
     .title {
-      font-size: calc(2.8479vw + 13.32039px); } }
+      font-size: calc(2.62361vw + 14.16145px); } }
+  @media (min-width: 1366) {
+    .title {
+      font-size: calc(3.2491vw + 5.61733px); } }
   @media (min-width: 1920px) {
     .title {
       font-size: 68px; } }
