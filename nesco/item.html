@@ -1753,7 +1753,7 @@
   <section class="item">
     <div class="item__column">
       <div class="item__pic">
-        <img class="picture" src="img/page-item/pr-1.webp" alt="item">
+        <img class="picture" src="img/page-item/pr-1.jpg" alt="item">
       </div>
     </div>
     <div class="item__column">
@@ -1773,7 +1773,7 @@
       <div class="item__title">
         <h1>Le Grand Noir Cabernet Sauvignon</h1>
       </div>
-      <div class="item__data data">
+      <div class="item__data item__data--dt data">
         <div class="data__box border-before">
           <p class="data__title">Производитель:</p>
           <p class="data__val">Domaine Des Hates</p>
@@ -1786,7 +1786,10 @@
       </div>
       <div class="item__box">
         <div class="item__price">
-          <span>2000 P</span>
+          <span>974</span>
+          <svg class="item__price-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-ruble"></use>
+          </svg>
         </div>
         <div class="number button--counter js-square">
           <span class="minus minus__js js-square-btn"></span>
@@ -1794,12 +1797,12 @@
           <span class="plus plus__js js-square-btn"></span>
         </div>
         <button class="button button-link">В избранное</button>
-        <p class="">В наличии</p>
+        <a class="item__stock">В наличии</a>
       </div>
       <div class="item__box">
         <p class="item__box-name">Миллезимы и литражи:</p>
         <div class="item__displacement">
-          <button class="button button-link item__displacement-btn">2015 0,75</button>
+          <button class="button button-link item__displacement-btn item__displacement-btn-active">2015 0,75</button>
           <button class="button button-link item__displacement-btn">2016 0,75</button>
           <button class="button button-link item__displacement-btn">2017 0,75</button>
         </div>
@@ -1808,7 +1811,7 @@
         <span>2000 P</span>
       </div> -->
       <section class="item__characteristic characteristic vp-invisible">
-        <table class="characteristic__table">
+        <table class="characteristic__table characteristic__table--dt">
           <tbody>
             <tr>
               <td>
@@ -1866,9 +1869,9 @@
           <section class="dishes">
             <h4 class="dishes__title">Блюда:</h4>
             <ul class="dishes__list">
-              <li class="dishes__item">1</li>
-              <li class="dishes__item">2</li>
-              <li class="dishes__item">3</li>
+              <li class="dishes__item dishes__item--fruits"><span class="visually-hidden">1</span></li>
+              <li class="dishes__item dishes__item--pasta"><span class="visually-hidden">2</span></li>
+              <li class="dishes__item dishes__item--pizza"><span class="visually-hidden">3</span></li>
             </ul>
           </section>
         </div>
@@ -1882,7 +1885,7 @@
       <div class="tabs__wrapper">
         <ul id="tabs-links" class="tabs__list">
           <li class="tabs__item">
-            <a class="tabs__link" href="#characteristic">Характеристика</a>
+            <a class="tabs__link" href="#characteristic">Характеристики</a>
           </li>
           <li class="tabs__item">
             <a class="tabs__link" href="#statistic">Стилистика</a>
@@ -1890,7 +1893,7 @@
         </ul>
         <div id="tabs-container" class="tabs__container">
           <div id="characteristic" class="tabs__content">
-            <h3 class="tabs__content-title title title--before">Характеристика</h3>
+            <h3 class="tabs__content-title title title--before-full">Характеристики</h3>
             <section class="item__characteristic characteristic vp-invisible">
               <table class="characteristic__table">
                 <tbody>
@@ -1936,7 +1939,7 @@
                   </tr>
                 </tbody>
               </table>
-              <div class="characteristic__block">
+              <div class="characteristic__block border-before">
                 <div class="characteristic__item">
                   <h4 class="characteristic__title">Дегустационные характеристики:</h4>
                   <p class="characteristic__text">Обладает тонким и приятным ароматом с преобладанием нот фруктов, в
@@ -1982,7 +1985,7 @@
             </section>
           </div>
           <div id="statistic" class="tabs__content">
-            <h3 class="tabs__content-title title title--before">Стилистика</h3>
+            <h3 class="tabs__content-title title title--before-full">Стилистика</h3>
             <section class="item__characteristic characteristic vp-invisible">
               <table class="characteristic__table">
                 <tbody>
@@ -2029,7 +2032,6 @@
                 </tbody>
               </table>
             </section>
-            <a class="button-link" href="#">Показать все</a>
           </div>
         </div>
       </div>
@@ -2072,18 +2074,13 @@
                 <div class="reviews__user-pic">
                   <img src="img/reviews/reviews-photo.jpg" alt="user">
                 </div>
-                <div class="reviews__user-info grayscale">
-                  <a class="reviews__link" href="#">
-                    <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
-                  </a>
-                  <h4 class="reviews__name">Евгения Грекова</h4>
-                  <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
+                <div class="reviews__user-info">
+                  <h4 class="reviews__name">Марк Олдман</h4>
                 </div>
               </div>
               <div class="reviews__text">
                 <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела
-                  в
-                  2016 году
+                  в 2016 году
                   эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по
                   адресу:
                   Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
@@ -2101,18 +2098,13 @@
                 <div class="reviews__user-pic">
                   <img src="img/reviews/reviews-photo.jpg" alt="user">
                 </div>
-                <div class="reviews__user-info grayscale">
-                  <a class="reviews__link" href="#">
-                    <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
-                  </a>
-                  <h4 class="reviews__name">Евгения Грекова</h4>
-                  <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
+                <div class="reviews__user-info">
+                  <h4 class="reviews__name">Марк Олдман</h4>
                 </div>
               </div>
               <div class="reviews__text">
                 <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела
-                  в
-                  2016 году
+                  в 2016 году
                   эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по
                   адресу:
                   Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
@@ -2130,18 +2122,13 @@
                 <div class="reviews__user-pic">
                   <img src="img/reviews/reviews-photo.jpg" alt="user">
                 </div>
-                <div class="reviews__user-info grayscale">
-                  <a class="reviews__link" href="#">
-                    <img class="reviews__logo-company" src="img/reviews/reviews-company.jpg" alt="company">
-                  </a>
-                  <h4 class="reviews__name">Евгения Грекова</h4>
-                  <p class="reviews__position">Коммерческий директор ресторанов Zimaлето</p>
+                <div class="reviews__user-info">
+                  <h4 class="reviews__name">Марк Олдман</h4>
                 </div>
               </div>
               <div class="reviews__text">
                 <p>С целью повышения качества обслуживания клиентов, компания ЗАО «НЕСКО САНКТ-ПЕТЕРБУРГ» построила и ввела
-                  в
-                  2016 году
+                  в 2016 году
                   эксплуатацию новый складской комплекс класса А, общей площадью более 7 000 м2, который находится по
                   адресу:
                   Ленинградская область, Всеволожский муниципальный район, Свердловское городское поселение, в районе д.
@@ -2157,91 +2144,21 @@
       </div>
     </section>
 
-    <!-- <section class="reviews vp-invisible">
-      <div class="reviews__wrapper">
-        <h3 class="title title--before">Отзывы сомелье</h3>
-        <div class="reviews__btn">
-          <button class="reviews__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
-          <button class="reviews__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
+    <section class="item__brand content-box vp-invisible">
+      <h3 class="title title--before">Бренд</h3>
+      <div class="item__brand-box">
+        <a href="#">
+          <img class="" src="img/brands/brand-logo.jpg" alt="brand-logo">
+        </a>
+        <div class="content-box__text">
+          <p>La Scolca - культовое и очень светское хозяйство. 90 лет назад хозяйство было основано семьей Сольдати- и
+            сегодня их
+            потомки в лице Джорджо, Луизы и их дочери Кьяры владеют этим старейшим семейным домом в коммуне Гави,
+            которая
+            находится в сердце зоны Gavi. Главная награда для самих Сольдати - их вина, узнаваемые на всех континентах.</p>
         </div>
-        <div id="slider-reviews" class="reviews__slider">
-          <div class="reviews__item">
-            <div class="reviews__inner">
-              <div class="reviews__user">
-                <div class="reviews__user-pic">
-                  <img src="img/reviews/reviews-photo.jpg" alt="user">
-                </div>
-              </div>
-              <div class="reviews__user-info">
-                <h4 class="reviews__name">Марк Олдман</h4>
-              </div>
-              <div class="reviews__text">
-                <p>La Scolca - культовое и очень светское хозяйство. 90 лет назад хозяйство бы ло основано семьей
-                  Сольдати- и сегодня
-                  их потомки в лице Джорджо, Луизы и их дочери Кьяры владеют этим старейшим семейным домом в коммуне
-                  Гави, которая
-                  находится в сердце зоны Gavi. Главная награда для самих Сольдати - их вина, узнаваемые на всех
-                  континентах.</p>
-              </div>
-            </div>
-          </div>
-          <div class="reviews__item">
-            <div class="reviews__inner">
-              <div class="reviews__user">
-                <div class="reviews__user-pic">
-                  <img src="img/reviews/reviews-photo.jpg" alt="user">
-                </div>
-              </div>
-              <div class="reviews__user-info">
-                <h4 class="reviews__name">Марк Олдман</h4>
-              </div>
-              <div class="reviews__text">
-                <p>La Scolca - культовое и очень светское хозяйство. 90 лет назад хозяйство бы ло основано семьей
-                  Сольдати- и
-                  сегодня
-                  их потомки в лице Джорджо, Луизы и их дочери Кьяры владеют этим старейшим семейным домом в коммуне
-                  Гави,
-                  которая
-                  находится в сердце зоны Gavi. Главная награда для самих Сольдати - их вина, узнаваемые на всех
-                  континентах.</p>
-              </div>
-            </div>
-          </div>
-          <div class="reviews__item">
-            <div class="reviews__inner">
-              <div class="reviews__user">
-                <div class="reviews__user-pic">
-                  <img src="img/reviews/reviews-photo.jpg" alt="user">
-                </div>
-              </div>
-              <div class="reviews__user-info">
-                <h4 class="reviews__name">Марк Олдман</h4>
-              </div>
-              <div class="reviews__text">
-                <p>La Scolca - культовое и очень светское хозяйство. 90 лет назад хозяйство бы ло основано семьей
-                  Сольдати- и
-                  сегодня
-                  их потомки в лице Джорджо, Луизы и их дочери Кьяры владеют этим старейшим семейным домом в коммуне
-                  Гави,
-                  которая
-                  находится в сердце зоны Gavi. Главная награда для самих Сольдати - их вина, узнаваемые на всех
-                  континентах.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <a class="button-link" href="#">Смотреть все</a>
       </div>
-    </section> -->
-    <section class="content-box vp-invisible">
-      <h3 class="title title--before">О бренде</h3>
-      <img class="" src="img/brands/brand-logo.jpg" alt="brand-logo">
-      <div class="content-box__text">
-        <p>La Scolca - культовое и очень светское хозяйство. 90 лет назад хозяйство было основано семьей Сольдати- и
-          сегодня их
-          потомки в лице Джорджо, Луизы и их дочери Кьяры владеют этим старейшим семейным домом в коммуне Гави, которая
-          находится в сердце зоны Gavi. Главная награда для самих Сольдати - их вина, узнаваемые на всех континентах.</p>
-      </div>
-      <a class="button-link" href="#">Смотреть все</a>
     </section>
     <section class="item__column slider-product vp-invisible">
       <div class="slider-product__wrapper">
