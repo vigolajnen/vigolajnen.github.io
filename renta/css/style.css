@@ -2447,7 +2447,9 @@ html {
 
 @media (max-height: 1050px) and (min-width: 1400px) {
   .advantages__item {
-    height: calc(55vh / 2); } }
+    height: calc(61vh / 2); }
+  .advantages__item--red .advantages__year {
+    margin-top: 10px; } }
 
 @media (max-height: 1050px) and (min-width: 1600px) {
   .advantages__item {
