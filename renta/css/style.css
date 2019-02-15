@@ -2362,13 +2362,15 @@ html {
   fill: transparent; }
   @media (min-width: 1024px) {
     .advantages__svg--three {
-      height: 60px; }
+      height: 60px;
+      margin-top: 5px; }
     .advantages__svg--four {
       height: 60px;
       margin-top: 3px; } }
   @media (min-width: 1440px) {
     .advantages__svg--three {
-      height: 70px; }
+      height: 70px;
+      margin-top: 7px; }
     .advantages__svg--four {
       height: 70px;
       margin-top: 0; } }
