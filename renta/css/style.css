@@ -2490,7 +2490,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #edeced; }
+  background-color: #eae9ea; }
 
 .promo__item {
   display: -webkit-box;
@@ -2594,7 +2594,7 @@ html {
   line-height: 25px;
   font-size: 22px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-animation-name: itemBlock;
           animation-name: itemBlock;
   -webkit-animation-duration: 1s;
@@ -2610,7 +2610,7 @@ html {
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   -webkit-animation-name: itemBlock;
           animation-name: itemBlock;
