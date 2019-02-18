@@ -118,7 +118,7 @@
         <div class="mobile-menu__dop">
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">Бренды</a>
+              <a class="mobile-menu__link" href="brands.html">Бренды</a>
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="#">Новинки</a>
@@ -179,7 +179,7 @@
               <a class="mobile-menu__link" href="#">Контакты</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">Блог</a>
+              <a class="mobile-menu__link" href="blog.html">Блог</a>
             </li>
           </ul>
         </div>
@@ -282,16 +282,16 @@
                   </div>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link navigation__arrow" href="#">Частным лицам</a>
+                  <a class="navigation__link navigation__arrow" href="clients.html">Частным лицам</a>
                 </li>
                 <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">корпоративным клиентам</a>
                 </li>
                 <li class="navigation__item navigation__item--hidden">
-                  <a class="navigation__link" href="#">Контакты</a>
+                  <a class="navigation__link" href="contacts.html">Контакты</a>
                 </li>
                 <li class="navigation__item navigation__item--hidden">
-                  <a class="navigation__link" href="#">блог</a>
+                  <a class="navigation__link" href="blog.html">блог</a>
                 </li>
                 <li class="navigation__item navigation__item--hidden">
                   <a class="navigation__link" href="#">сервис</a>
@@ -338,7 +338,7 @@
     <div id="header-fixed" class="page-header__bottom fixed">
       <div class=" page-header__box">
         <div class="page-header__logo logo">
-          <a class="logo__link">
+          <a class="logo__link" href="index.html">
             <img class="logo__pic" src="img/header/logo.png" width="126" height="31" alt="логотип Nesco">
           </a>
         </div>
@@ -1734,7 +1734,7 @@
           </ul>
         </nav>
         <div class="additionally">
-          <a class="additionally__link" href="#">Бренды</a>
+          <a class="additionally__link" href="brands.html">Бренды</a>
           <a class="additionally__link" href="#">Новинки</a>
           <a class="additionally__link button-link" href="#">
             <svg class="additionally__icon" width="20" height="15">
@@ -1750,13 +1750,8 @@
   </header>
 
 
-  <section class="item">
-    <div class="item__column">
-      <div class="item__pic">
-        <img class="picture" src="img/page-item/pr-1.jpg" alt="item">
-      </div>
-    </div>
-    <div class="item__column">
+  <section class="item wrapper wrapper--top">
+    <div class="item__header">
       <div class="item__breadcrumbs breadcrumbs breadcrumbs--white">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
@@ -1770,9 +1765,6 @@
           </li>
         </ul>
       </div>
-      <div class="item__title">
-        <h1>Le Grand Noir Cabernet Sauvignon</h1>
-      </div>
       <div class="item__data item__data--dt data">
         <div class="data__box border-before">
           <p class="data__title">Производитель:</p>
@@ -1785,6 +1777,12 @@
         <!-- <p class="data__stock">В наличии</p> -->
       </div>
       <div class="item__box">
+        <div class="item__title">
+          <h1>Le Grand Noir Cabernet Sauvignon</h1>
+        </div>
+        <div class="item__pic">
+          <img class="picture" src="img/page-item/pr-1.jpg" alt="item">
+        </div>
         <div class="item__price">
           <span>974</span>
           <svg class="item__price-icon" width="20" height="20">
@@ -1798,19 +1796,18 @@
         </div>
         <button class="button button-link">В избранное</button>
         <a class="item__stock">В наличии</a>
-      </div>
-      <div class="item__box">
-        <p class="item__box-name">Миллезимы и литражи:</p>
-        <div class="item__displacement">
-          <button class="button button-link item__displacement-btn item__displacement-btn-active">2015 0,75</button>
-          <button class="button button-link item__displacement-btn">2016 0,75</button>
-          <button class="button button-link item__displacement-btn">2017 0,75</button>
+
+        <div class="item__box displacement">
+          <p class="item__box-name">Миллезимы и литражи:</p>
+          <div class="item__displacement">
+            <button class="button button-link item__displacement-btn item__displacement-btn-active">2015 0,75</button>
+            <button class="button button-link item__displacement-btn">2016 0,75</button>
+            <button class="button button-link item__displacement-btn">2017 0,75</button>
+          </div>
         </div>
       </div>
-      <!-- <div class="item__price">
-        <span>2000 P</span>
-      </div> -->
-      <section class="item__characteristic characteristic vp-invisible">
+
+      <section class="item__characteristic characteristic">
         <table class="characteristic__table characteristic__table--dt">
           <tbody>
             <tr>
@@ -1894,7 +1891,7 @@
         <div id="tabs-container" class="tabs__container">
           <div id="characteristic" class="tabs__content">
             <h3 class="tabs__content-title title title--before-full">Характеристики</h3>
-            <section class="item__characteristic characteristic vp-invisible">
+            <section class="item__characteristic characteristic">
               <table class="characteristic__table">
                 <tbody>
                   <tr>
@@ -1986,7 +1983,7 @@
           </div>
           <div id="statistic" class="tabs__content">
             <h3 class="tabs__content-title title title--before-full">Стилистика</h3>
-            <section class="item__characteristic characteristic vp-invisible">
+            <section class="item__characteristic characteristic">
               <table class="characteristic__table">
                 <tbody>
                   <tr>
@@ -2148,7 +2145,7 @@
       <h3 class="title title--before">Бренд</h3>
       <div class="item__brand-box">
         <a href="#">
-          <img class="" src="img/brands/brand-logo.jpg" alt="brand-logo">
+          <img class="item__brand-logo" src="img/brands/brand-logo.jpg" alt="brand-logo">
         </a>
         <div class="content-box__text">
           <p>La Scolca - культовое и очень светское хозяйство. 90 лет назад хозяйство было основано семьей Сольдати- и
