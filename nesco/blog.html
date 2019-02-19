@@ -2192,42 +2192,44 @@
       </div>
     </div>
     <section class="subscription">
-    <h3 class="subscription__title title title--before">Подпишитесь на наши статьи
-    </h3>
-    <p class="subscription__caption">Мы будем присылать только интересные материалы</p>
-    <form action="/" class="subscription__form">
-      <div class="subscription__item">
-        <input class="subscription__input" type="text" id="subscription-email" name="subscription-email" placeholder="Email">
-        <label class=" visually-hidden" for="subscription-email">Email</label>
-      </div>
-      <div class="subscription__item">
-        <input class="visually-hidden" id="article-all" type="checkbox" name="article-all" value="Хочу получать все статьи">
-        <label class="subscription__label" for="article-all">Хочу получать все статьи</label>
-      </div>
-      <div class="subscription__item">
-        <input class="visually-hidden" id="article-like" type="checkbox" name="article-like" value="Интересуют статьи отдельных категорий" checked="">
-        <label class="subscription__label" for="article-like">Интересуют статьи отдельных категорий</label>
-      </div>
-      <div class="subscription__box">
+      <h3 class="subscription__title title title--before">Подпишитесь на наши статьи
+      </h3>
+      <p class="subscription__caption">Мы будем присылать только интересные материалы</p>
+      <form action="/" class="subscription__form">
         <div class="subscription__item">
-          <input class="visually-hidden subscription__radio" id="radio-1" type="radio" name="radio" value="О напитках">
-          <label class="subscription__label" for="radio-1">О напитках</label>
+          <label class="subscription__email" for="subscription-email">Email</label>
+          <input class="subscription__input" type="text" id="subscription-email" name="subscription-email" placeholder="Email">
         </div>
         <div class="subscription__item">
-          <input class="visually-hidden subscription__radio" id="radio-2" type="radio" name="radio" value="Виноград" checked>
-          <label class="subscription__label" for="radio-2">Виноград</label>
+          <input class="visually-hidden subscription__radio" id="article-all" type="radio" name="radio" value="Хочу получать все статьи">
+          <label class="subscription__label" for="article-all">Хочу получать все статьи</label>
         </div>
         <div class="subscription__item">
-          <input class="visually-hidden subscription__radio" id="radio-3" type="radio" name="radio" value="Сочетания" >
-          <label class="subscription__label" for="radio-3">Сочетания</label>
+          <input class="visually-hidden subscription__radio" id="article-like" type="radio" name="radio" value="Интересуют статьи отдельных категорий"
+            checked="">
+          <label class="subscription__label" for="article-like">Интересуют статьи отдельных категорий</label>
         </div>
-      </div>
-      <button class="button button-link" type="submit">Отправить</button>
-    </form>
+        <div class="subscription__box">
+          <div class="subscription__item">
+            <input class="visually-hidden" id="checkbox-1" type="checkbox" name="checkbox-1" value="О напитках">
+            <label class="subscription__label" for="checkbox-1">О напитках</label>
+          </div>
+          <div class="subscription__item">
+            <input class="visually-hidden" id="checkbox-2" type="checkbox" name="checkbox-2" value="Виноград" checked>
+            <label class="subscription__label" for="checkbox-2">Виноград</label>
+          </div>
+          <div class="subscription__item">
+            <input class="visually-hidden" id="checkbox-3" type="checkbox" name="checkbox-3" value="Сочетания">
+            <label class="subscription__label" for="checkbox-3">Сочетания</label>
+          </div>
+        </div>
+        <button class="button button-link" type="submit">Отправить</button>
+      </form>
     </section>
+
   </div>
 
-  <section class="advantages vp-invisible">
+  <section class="advantages advantages--border vp-invisible">
     <div class="advantages__wrapper">
       <h3 class="visually-hidden">Преимущества</h3>
       <ul class="advantages__list">
@@ -2266,6 +2268,7 @@
       </ul>
     </div>
   </section>
+
   <footer class="page-footer page-footer--bg">
     <div class="page-footer__wrapper">
       <div class="page-footer__top">

@@ -1750,13 +1750,8 @@
   </header>
 
 
-  <section class="item wrapper wrapper--top wrapper--no-pdmg">
-    <div class="item__column">
-      <div class="item__pic">
-        <img class="picture" src="img/page-item/pr-1.jpg" alt="item">
-      </div>
-    </div>
-    <div class="item__column">
+  <section class="item wrapper wrapper--top">
+    <div class="item__header">
       <div class="item__breadcrumbs breadcrumbs breadcrumbs--white">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
@@ -1770,21 +1765,24 @@
           </li>
         </ul>
       </div>
-      <div class="item__title">
-        <h1>Le Grand Noir Cabernet Sauvignon</h1>
-      </div>
       <div class="item__data item__data--dt data">
         <div class="data__box border-before">
-          <p class="data__title">Производитель:</p>
-          <p class="data__val">Domaine Des Hates</p>
+          <a class="data__title" href="#">Производитель:</a>
+          <a class="data__val" href="#">Domaine Des Hates</a>
         </div>
         <div class="data__box">
-          <p class="data__title">Бренд:</p>
-          <p class="data__val">Domaine Des Hates</p>
+          <a class="data__title" href="#">Бренд:</a>
+          <a class="data__val" href="#">Domaine Des Hates</a>
         </div>
         <!-- <p class="data__stock">В наличии</p> -->
       </div>
       <div class="item__box">
+        <div class="item__title">
+          <h1>Le Grand Noir Cabernet Sauvignon</h1>
+        </div>
+        <div class="item__pic">
+          <img class="picture" src="img/page-item/pr-1.jpg" alt="item">
+        </div>
         <div class="item__price">
           <span>974</span>
           <svg class="item__price-icon" width="20" height="20">
@@ -1798,49 +1796,48 @@
         </div>
         <button class="button button-link">В избранное</button>
         <a class="item__stock">В наличии</a>
-      </div>
-      <div class="item__box">
-        <p class="item__box-name">Миллезимы и литражи:</p>
-        <div class="item__displacement">
-          <button class="button button-link item__displacement-btn item__displacement-btn-active">2015 0,75</button>
-          <button class="button button-link item__displacement-btn">2016 0,75</button>
-          <button class="button button-link item__displacement-btn">2017 0,75</button>
+
+        <div class="item__box displacement">
+          <p class="item__box-name">Миллезимы и литражи:</p>
+          <div class="item__displacement">
+            <button class="button button-link item__displacement-btn item__displacement-btn-active">2015</button>
+            <button class="button button-link item__displacement-btn">2016</button>
+            <button class="button button-link item__displacement-btn">2017</button>
+          </div>
         </div>
       </div>
-      <!-- <div class="item__price">
-        <span>2000 P</span>
-      </div> -->
-      <section class="item__characteristic characteristic vp-invisible">
+
+      <section class="item__characteristic characteristic">
         <table class="characteristic__table characteristic__table--dt">
           <tbody>
             <tr>
               <td>
-                <p class="characteristic__name">Цвет:</p>
-                <p class="characteristic__val">Белое</p>
+                <a class="characteristic__name" href="#">Цвет:</a>
+                <a class="characteristic__val" href="#">Белое</a>
               </td>
               <td>
-                <p class="characteristic__name">Тип:</p>
-                <p class="characteristic__val">Тихое</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p class="characteristic__name">Страна:</p>
-                <p class="characteristic__val">Франция</p>
-              </td>
-              <td>
-                <p class="characteristic__name">Год:</p>
-                <p class="characteristic__val">2015</p>
+                <a class="characteristic__name" href="#">Тип:</a>
+                <a class="characteristic__val" href="#">Тихое</a>
               </td>
             </tr>
             <tr>
               <td>
-                <p class="characteristic__name">Объем:</p>
-                <p class="characteristic__val">0,75</p>
+                <a class="characteristic__name" href="#">Страна:</a>
+                <a class="characteristic__val" href="#">Франция</a>
               </td>
               <td>
-                <p class="characteristic__name">Регион:</p>
-                <p class="characteristic__val">Бургундия, Шабли</p>
+                <a class="characteristic__name" href="#">Год:</a>
+                <a class="characteristic__val" href="#">2015</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a class="characteristic__name" href="#">Объем:</a>
+                <a class="characteristic__val" href="#">0,75</a>
+              </td>
+              <td>
+                <a class="characteristic__name" href="#">Регион:</a>
+                <a class="characteristic__val" href="#">Бургундия, Шабли</a>
               </td>
             </tr>
           </tbody>
@@ -1869,9 +1866,18 @@
           <section class="dishes">
             <h4 class="dishes__title">Блюда:</h4>
             <ul class="dishes__list">
-              <li class="dishes__item dishes__item--fruits"><span class="visually-hidden">1</span></li>
-              <li class="dishes__item dishes__item--pasta"><span class="visually-hidden">2</span></li>
-              <li class="dishes__item dishes__item--pizza"><span class="visually-hidden">3</span></li>
+              <li class="dishes__item dishes__item--fruits">
+                <a class="dishes__link dishes__link--fruits" href="#"></a>
+                <svg></svg>
+              </li>
+              <li class="dishes__item dishes__item--pasta">
+                <a class="dishes__link dishes__link--pasta" href="#"></a>
+                <svg></svg>
+              </li>
+              <li class="dishes__item dishes__item--pizza">
+                <a class="dishes__link dishes__link--pizza" href="#"></a>
+                <svg></svg>
+              </li>
             </ul>
           </section>
         </div>
@@ -1894,7 +1900,7 @@
         <div id="tabs-container" class="tabs__container">
           <div id="characteristic" class="tabs__content">
             <h3 class="tabs__content-title title title--before-full">Характеристики</h3>
-            <section class="item__characteristic characteristic vp-invisible">
+            <section class="item__characteristic characteristic">
               <table class="characteristic__table">
                 <tbody>
                   <tr>
@@ -1986,7 +1992,7 @@
           </div>
           <div id="statistic" class="tabs__content">
             <h3 class="tabs__content-title title title--before-full">Стилистика</h3>
-            <section class="item__characteristic characteristic vp-invisible">
+            <section class="item__characteristic characteristic">
               <table class="characteristic__table">
                 <tbody>
                   <tr>
@@ -2148,7 +2154,7 @@
       <h3 class="title title--before">Бренд</h3>
       <div class="item__brand-box">
         <a href="#">
-          <img class="" src="img/brands/brand-logo.jpg" alt="brand-logo">
+          <img class="item__brand-logo" src="img/brands/brand-logo.jpg" alt="brand-logo">
         </a>
         <div class="content-box__text">
           <p>La Scolca - культовое и очень светское хозяйство. 90 лет назад хозяйство было основано семьей Сольдати- и
