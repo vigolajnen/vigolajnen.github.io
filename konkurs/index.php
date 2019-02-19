@@ -1,9 +1,12 @@
+<?
+require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.php");
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <title>Page</title>
+  <title>Конкурс проектов от «Евромобайл»</title>
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -22,11 +25,67 @@
 </head>
 
 <body>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function () {
+              try {
+                  w.yaCounter26116248 = new Ya.Metrika({
+                      id: 26116248,
+                      clickmap: true,
+                      trackLinks: true,
+                      accurateTrackBounce: true,
+                      webvisor: true
+                  });
+              } catch (e) {
+              }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+                  s = d.createElement("script"),
+                  f = function () {
+                      n.parentNode.insertBefore(s, n);
+                  };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+              f();
+          }
+      })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+  <div><img src="https://mc.yandex.ru/watch/26116248" style="position:absolute; left:-9999px;" alt=""/></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- Google Analytics counter start -->
+  <script>
+      (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+                  m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-54599179-1', 'auto');
+      ga('send', 'pageview');
+
+  </script>
+  <!-- Google Analytics counter end -->
   <div class="wrapper">
     <header id="header-fixed" class="page-header">
       <div class="page-header__box">
         <div class="page-header__logo">
-          <a class="logo" href="#" target="_blank">
+          <a class="logo" href="https://iot.ru" target="_blank">
             <svg class="logo__pic" width="18" height="18">
               <use xlink:href="img/sprite.svg#icon-iot-logo"></use>
             </svg>
@@ -48,9 +107,6 @@
               </li>
               <li class="navigation__item">
                 <a class="navigation__link js-conditions" href="#conditions">условия участия</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="tel:+78122417237"> +7 (812) 241-72-37</a>
               </li>
             </ul>
           </div>
@@ -82,7 +138,7 @@
             <p>Компания «ЕвроМобайл» уже 15 лет находится на гребне инновационной волны и реализует бизнес-проекты,
               которые работают по всей России. Если вы хотите встать в один ряд с профессионалом рынка интернета вещей
               и
-              дать жизнь совему изобретению, то вы – на правильном пути!</p>
+              дать жизнь своему изобретению, то вы – на правильном пути!</p>
             <p>Нашими проектами пользуются: РЖД, Сбербанк, МТС, Горэлектротранс, Штадлер и другие крупнейшие
               государственные и частные компании из таких областей как: машиностроение транспорт, банковская сфера,
               ЖКХ,
@@ -170,7 +226,7 @@
             <p>Предпочтение отдаётся дорожной, ЖКХ и энергетической отраслям, а также программному обеспечению, которое
               разрабатывается для задач телематики, систем видеонаблюдения, интернета вещей.</p>
             <p>Организаторы конкурса будут рассматривать и те проекты, имеющие потенциал для развития любой другой
-              отрасли, но по каким-либо причинам не получившие дельнейшего развития.</p>
+              отрасли, но по каким-либо причинам не получившие дальнейшего развития.</p>
             <h4 class="box__title-h4">Ваша заявка* будет принята к рассмотрению, если она соответствует следующим
               требованиям:</h4>
             <ul class="list-numb">
@@ -198,32 +254,34 @@
         </div>
       </div>
     </section>
-    <div class="popup-overlay">
+    <div class="popup-overlay" id="form">
       <section class="popup popup-order">
         <button class="button popup-close" aria-label="Закрыть окно"></button>
-        <div class="popup-order__wrapper">
+        <div class="popup-order__wrapper" id="form-body">
           <h3 class="popup-order__title title">Заявка</h3>
-          <form class="popup-order__form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="popup-order__form" action="<?= $APPLICATION->GetCurPage(); ?>" method="post">
             <ul class="popup-order__list">
               <li class="popup-order__item">
                 <label class="visually-hidden" for="name">ФИО</label>
-                <input class="popup-order__input" id="name" type="text" name="name" placeholder="ФИО*" required="">
+                <input class="popup-order__input" id="name" type="text" name="FIO" placeholder="ФИО*" required="">
               </li>
               <li class="popup-order__item">
                 <label class="visually-hidden" for="phone">Контактный телефон*</label>
-                <input class="popup-order__input" id="phone" name="phone" type="tel" placeholder="Контактный телефон*" required="">
+                <input class="popup-order__input" id="phone" name="PHONE" type="tel" placeholder="Контактный телефон*"
+                  required="">
               </li>
               <li class="popup-order__item">
                 <label class="visually-hidden" for="email">E-mail</label>
-                <input class="popup-order__input" id="email" name="email" type="email" placeholder="E-mail*" required="">
+                <input class="popup-order__input" id="email" name="EMAIL" type="email" placeholder="E-mail*" required="">
               </li>
               <li class="popup-order__item">
                 <label class="visually-hidden" for="message">Комментарий</label>
-                <textarea class="popup-order__textarea" name="message" id="message" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                <textarea class="popup-order__textarea" name="COMMENT" id="message" cols="30" rows="10" placeholder="Комментарий"></textarea>
               </li>
               <li class="popup-order__item">
                 <label for="myfile" class="popup-order__chous">Прикрепить файл (jpg, pdf, excel, word, zip, rar)</label>
-                <input type="file" class="popup-order__input popup-order__input--file" id="myfile" name="myfile" multiple="multiple">
+                <input type="file" class="popup-order__input popup-order__input--file" id="myfile" name="myfile"
+                  multiple="multiple">
               </li>
             </ul>
             <div class="popup-order__bottom">
@@ -233,15 +291,21 @@
             </div>
           </form>
         </div>
+        <div class="popup-order__wrapper" hidden id="form-success">
+            <p>Спасибо, ваша заявка на участие в конкурсе отправлена.</p>
+        </div>
       </section>
     </div>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/form.js"></script>
   <script>
     svg4everybody();
-
   </script>
 </body>
 
 </html>
+<?
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/epilog_after.php");
+?>
