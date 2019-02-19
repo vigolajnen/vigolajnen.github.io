@@ -1822,81 +1822,83 @@
         </ul>
       </div>
     </article>
-
-    <div class="blog">
-    <h3 class="blog__title title title--before">Другие статьи</h3>
-      <div class="blog__inner">
-        <a class="blog__item" href="#">
-          <div class="blog__box-pic box-pic-hover">
-            <img class="blog__pic picture" src="img/blog/blog-preview-3.jpg" alt="blog">
-          </div>
-          <div class="blog__info">
-            <span class="blog__marker">о напитках</span>
-            <div class="blog__title">Дегустация белых вин в магазине Joia</div>
-            <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-          </div>
-        </a>
-        <a class="blog__item" href="#">
-          <div class="blog__box-pic box-pic-hover">
-            <img class="blog__pic picture" src="img/blog/blog-preview-4.jpg" alt="blog">
-          </div>
-          <div class="blog__info">
-            <span class="blog__marker">о напитках</span>
-            <div class="blog__title">Дегустация белых вин в магазине Joia</div>
-            <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-          </div>
-        </a>
-        <a class="blog__item" href="#">
-          <div class="blog__box-pic box-pic-hover">
-            <img class="blog__pic picture" src="img/blog/blog-preview-5.jpg" alt="blog">
-          </div>
-          <div class="blog__info">
-            <span class="blog__marker">о напитках</span>
-            <div class="blog__title">Дегустация белых вин в магазине Joia</div>
-            <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
-          </div>
-        </a>
+    <div class="article__bottom">
+      <div class="blog">
+      <h3 class="blog__title title title--before">Другие статьи</h3>
+        <div class="blog__inner">
+          <a class="blog__item" href="#">
+            <div class="blog__box-pic box-pic-hover">
+              <img class="blog__pic picture" src="img/blog/blog-preview-3.jpg" alt="blog">
+            </div>
+            <div class="blog__info">
+              <span class="blog__marker">о напитках</span>
+              <div class="blog__title">Дегустация белых вин в магазине Joia</div>
+              <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
+            </div>
+          </a>
+          <a class="blog__item" href="#">
+            <div class="blog__box-pic box-pic-hover">
+              <img class="blog__pic picture" src="img/blog/blog-preview-4.jpg" alt="blog">
+            </div>
+            <div class="blog__info">
+              <span class="blog__marker">о напитках</span>
+              <div class="blog__title">Дегустация белых вин в магазине Joia</div>
+              <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
+            </div>
+          </a>
+          <a class="blog__item" href="#">
+            <div class="blog__box-pic box-pic-hover">
+              <img class="blog__pic picture" src="img/blog/blog-preview-5.jpg" alt="blog">
+            </div>
+            <div class="blog__info">
+              <span class="blog__marker">о напитках</span>
+              <div class="blog__title">Дегустация белых вин в магазине Joia</div>
+              <p class="blog__text">2 дня испытаний пролетели как один миг для участников конкурса- сомелье ресторанов</p>
+            </div>
+          </a>
+        </div>
+        <a class="button-link" href="#">Показать все</a>
       </div>
-      <a class="button-link" href="#">Показать все</a>
+
     </div>
-
-    <section class="subscription">
-      <h3 class="subscription__title title title--before">Подпишитесь на наши статьи
-      </h3>
-      <p class="subscription__caption">Мы будем присылать только интересные материалы</p>
-      <form action="/" class="subscription__form">
-        <div class="subscription__item">
-          <input class="subscription__input" type="text" id="subscription-email" name="subscription-email" placeholder="Email">
-          <label class=" visually-hidden" for="subscription-email">Email</label>
-        </div>
-        <div class="subscription__item">
-          <input class="visually-hidden subscription__radio" id="article-all" type="radio" name="radio" value="Хочу получать все статьи">
-          <label class="subscription__label" for="article-all">Хочу получать все статьи</label>
-        </div>
-        <div class="subscription__item">
-          <input class="visually-hidden subscription__radio" id="article-like" type="radio" name="radio" value="Интересуют статьи отдельных категорий"
-            checked="">
-          <label class="subscription__label" for="article-like">Интересуют статьи отдельных категорий</label>
-        </div>
-        <div class="subscription__box">
+    <div class="article__form">
+      <section class="subscription">
+        <h3 class="subscription__title title title--before">Подпишитесь на наши статьи
+        </h3>
+        <p class="subscription__caption">Мы будем присылать только интересные материалы</p>
+        <form action="/" class="subscription__form">
           <div class="subscription__item">
-            <input class="visually-hidden" id="checkbox-1" type="checkbox" name="checkbox-1" value="О напитках">
-            <label class="subscription__label" for="checkbox-1">О напитках</label>
+            <label class="subscription__email" for="subscription-email">Email</label>
+            <input class="subscription__input" type="text" id="subscription-email" name="subscription-email" placeholder="Email">
           </div>
           <div class="subscription__item">
-            <input class="visually-hidden" id="checkbox-2" type="checkbox" name="checkbox-2" value="Виноград" checked>
-            <label class="subscription__label" for="checkbox-2">Виноград</label>
+            <input class="visually-hidden subscription__radio" id="article-all" type="radio" name="radio" value="Хочу получать все статьи">
+            <label class="subscription__label" for="article-all">Хочу получать все статьи</label>
           </div>
           <div class="subscription__item">
-            <input class="visually-hidden" id="checkbox-3" type="checkbox" name="checkbox-3" value="Сочетания">
-            <label class="subscription__label" for="checkbox-3">Сочетания</label>
+            <input class="visually-hidden subscription__radio" id="article-like" type="radio" name="radio" value="Интересуют статьи отдельных категорий"
+              checked="">
+            <label class="subscription__label" for="article-like">Интересуют статьи отдельных категорий</label>
           </div>
-        </div>
-        <button class="button button-link" type="submit">Отправить</button>
-      </form>
-    </section>
+          <div class="subscription__box">
+            <div class="subscription__item">
+              <input class="visually-hidden" id="checkbox-1" type="checkbox" name="checkbox-1" value="О напитках">
+              <label class="subscription__label" for="checkbox-1">О напитках</label>
+            </div>
+            <div class="subscription__item">
+              <input class="visually-hidden" id="checkbox-2" type="checkbox" name="checkbox-2" value="Виноград" checked>
+              <label class="subscription__label" for="checkbox-2">Виноград</label>
+            </div>
+            <div class="subscription__item">
+              <input class="visually-hidden" id="checkbox-3" type="checkbox" name="checkbox-3" value="Сочетания">
+              <label class="subscription__label" for="checkbox-3">Сочетания</label>
+            </div>
+          </div>
+          <button class="button button-link" type="submit">Отправить</button>
+        </form>
+      </section>
 
-
+    </div>
   </div>
 
   <section class="advantages advantages--border vp-invisible">
