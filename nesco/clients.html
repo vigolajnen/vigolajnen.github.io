@@ -1795,7 +1795,7 @@
       </div>
     </div>
     <div class="blog">
-    <h3 class="blog__title title title--before">Другие статьи</h3>
+      <h3 class="blog__name title title--before">Другие статьи</h3>
       <div class="blog__inner">
         <a class="blog__item" href="#">
           <div class="blog__box-pic box-pic-hover">
@@ -1835,12 +1835,19 @@
     <form action="" class="form form--feedback" method="post">
       <ul class="form__list">
         <li class="form__list-item">
-          <label for="feedback-1" class="form__label">Тема сообщения</label>
-          <select class="form__input" name="" id="feedback-1">
+          <label for="select-4" class="form__label">Тема сообщения</label>
+          <!-- <select class="form__input" name="" id="feedback-1">
             <option value="Жалобы и предложения">Жалобы и предложения</option>
             <option value="Жалобы и предложения-1">Жалобы и предложения-1</option>
             <option value="Жалобы и предложения-2">Жалобы и предложения-2</option>
-          </select>
+          </select> -->
+          <div id="select-4" class="form__input">
+            <select class="custom-select js-size select select-4">
+              <option name="value" value="Санкт-Петербург">Жалобы и предложения-1</option>
+              <option name="value" value="Санкт-Петербург">2Жалобы и предложения-1</option>
+              <option name="value" value="Санкт-Петербург">3Жалобы и предложения-1</option>
+            </select>
+          </div>
         </li>
         <li class="form__list-item">
           <label for="feedback-2" class="form__label">Номер телефона</label>
@@ -1861,7 +1868,7 @@
           <textarea class="form__textarea" name="" id="feedback-5" cols="30" rows="10" placeholder="Сообщение"></textarea>
         </li>
         <li class="form__list-item form__list-item--full">
-          <input class="visually-hidden" id="feedback-6" type="checkbox" name="feedback-6" value="Виноград" checked>
+          <input class="visually-hidden" id="feedback-6" type="checkbox" name="feedback-6" value="Виноград" checked="">
           <label class="form__label form__label--checkbox" for="feedback-6">Согласие на обработку персональных данных</label>
           <button class="button button-link" type="submit">Отправить</button>
         </li>

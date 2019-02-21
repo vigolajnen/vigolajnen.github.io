@@ -1786,21 +1786,21 @@
     <div class="page__content">
       <main class="page__main">
         <div class="page__header">
-            <h1 class="title">Вакансии</h1>
-            <p class="page__intro">Компания NESCO имеет прямые контракты с импортёрами и производителями-лидерами
-              алкогольного рынка России и
-              предлагает оптовым алкогольным компаниям индивидуальные условия сотрудничества в зависимости от объёма и
-              ассортимента, а так же формы оплаты и условий доставки товара.</p>
-            <!-- выбор города - локации -->
-            <div class="page__city">
-              <div id="select-3" class="filters__item">
-                <select class="custom-select js-size select select-3">
-                  <option name="value" value="Санкт-Петербург">Санкт-Петербург</option>
-                  <option name="value" value="Санкт-Петербург">2Санкт-Петербург</option>
-                  <option name="value" value="Санкт-Петербург">3Санкт-Петербург</option>
-                </select>
-              </div>
+          <h1 class="title title--lg">Вакансии</h1>
+          <p class="page__intro">Компания NESCO имеет прямые контракты с импортёрами и производителями-лидерами
+            алкогольного рынка России и
+            предлагает оптовым алкогольным компаниям индивидуальные условия сотрудничества в зависимости от объёма и
+            ассортимента, а так же формы оплаты и условий доставки товара.</p>
+          <!-- выбор города - локации -->
+          <div class="page__city">
+            <div id="select-3" class="filters__item">
+              <select class="custom-select js-size select select-3">
+                <option name="value" value="Санкт-Петербург">Санкт-Петербург</option>
+                <option name="value" value="Санкт-Петербург">2Санкт-Петербург</option>
+                <option name="value" value="Санкт-Петербург">3Санкт-Петербург</option>
+              </select>
             </div>
+          </div>
         </div>
         <div class="page__acc acc">
           <ul class="acc__list">
@@ -1947,12 +1947,19 @@
         <form action="" class="form form--feedback" method="post">
           <ul class="form__list">
             <li class="form__list-item">
-              <label for="feedback-1" class="form__label">Тема сообщения</label>
-              <select class="form__input" name="" id="feedback-1">
+              <label for="select-4" class="form__label">Тема сообщения</label>
+              <!-- <select class="form__input" name="" id="feedback-1">
                 <option value="Жалобы и предложения">Жалобы и предложения</option>
                 <option value="Жалобы и предложения-1">Жалобы и предложения-1</option>
                 <option value="Жалобы и предложения-2">Жалобы и предложения-2</option>
-              </select>
+              </select> -->
+              <div id="select-4" class="form__input">
+                <select class="custom-select js-size select select-4">
+                  <option name="value" value="Санкт-Петербург">Жалобы и предложения-1</option>
+                  <option name="value" value="Санкт-Петербург">2Жалобы и предложения-1</option>
+                  <option name="value" value="Санкт-Петербург">3Жалобы и предложения-1</option>
+                </select>
+              </div>
             </li>
             <li class="form__list-item">
               <label for="feedback-2" class="form__label">Номер телефона</label>
@@ -1973,7 +1980,7 @@
               <textarea class="form__textarea" name="" id="feedback-5" cols="30" rows="10" placeholder="Сообщение"></textarea>
             </li>
             <li class="form__list-item form__list-item--full">
-              <input class="visually-hidden" id="feedback-6" type="checkbox" name="feedback-6" value="Виноград" checked>
+              <input class="visually-hidden" id="feedback-6" type="checkbox" name="feedback-6" value="Виноград" checked="">
               <label class="form__label form__label--checkbox" for="feedback-6">Согласие на обработку персональных данных</label>
               <button class="button button-link" type="submit">Отправить</button>
             </li>
