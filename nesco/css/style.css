@@ -8120,7 +8120,8 @@ input[type=number] {
           width: 50%; }
         .item__header .data__box {
           width: 50%;
-          padding-left: 0; }
+          padding: 0;
+          margin-bottom: 25px; }
         .item__header .item__pic {
           height: 100%;
           position: absolute;
@@ -8226,7 +8227,7 @@ input[type=number] {
             order: 1; }
     @media (min-width: 769px) {
       .item__breadcrumbs {
-        margin-bottom: 0; } }
+        margin-bottom: 30px; } }
   .item__pic {
     max-width: 700px;
     -webkit-box-ordinal-group: 3;
@@ -8590,7 +8591,7 @@ input[type=number] {
         display: block; } }
     @media (min-width: 768px) {
       .data__title {
-        margin-right: 20px; } }
+        margin-right: 15px; } }
   .data__val {
     margin: 0;
     font-style: normal;
@@ -10043,7 +10044,7 @@ label.filters__item-title {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         background-image: url(../img/sprite-png.png);
-        background-position: -249px -228px;
+        background-position: -469px -448px;
         width: 34px;
         height: 34px; }
   .mobile-catalog__sub {
@@ -11038,42 +11039,42 @@ label.filters__item-title {
                 transform: translateY(-50%); }
     .filter-block__title--icon-1::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -249px -228px;
+      background-position: -469px -448px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-2::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -381px -360px;
+      background-position: -205px -184px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-3::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -425px -404px;
+      background-position: -381px -360px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -469px -448px;
+      background-position: -249px -228px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-6::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -205px -184px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -425px -404px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
   .filter-block__list {
