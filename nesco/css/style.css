@@ -8378,6 +8378,11 @@ input[type=number] {
             -ms-flex-order: 0;
                 order: 0;
         margin-bottom: 0; } }
+  .item input[type="number"] {
+    -moz-appearance: textfield; }
+  .item input::-webkit-outer-spin-button,
+  .item input::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
   .item__stock {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
@@ -11038,12 +11043,12 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-2::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-3::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -469px -448px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-4::before {
@@ -11058,17 +11063,17 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-6::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -205px -184px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -469px -448px;
+      background-position: -205px -184px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
   .filter-block__list {
