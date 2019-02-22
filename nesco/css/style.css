@@ -5392,7 +5392,7 @@ input[type=number] {
             justify-content: space-between; } }
 
 .reviews {
-  margin-bottom: 80px; }
+  margin-bottom: 60px; }
   @media (min-width: 769px) {
     .reviews {
       margin: 0 auto;
@@ -5467,6 +5467,9 @@ input[type=number] {
       width: 50%;
       -ms-flex-item-align: start;
           align-self: flex-start; } }
+  @media (max-width: 425px) {
+    .reviews__user-pic--lg {
+      max-width: 142px; } }
   .reviews__user-pic img {
     max-width: 256px;
     width: 100%;
@@ -8531,6 +8534,9 @@ input[type=number] {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4; }
+    @media (max-width: 768px) {
+      .item .slider-product:last-child .slider-product__wrapper {
+        margin-bottom: 0; } }
   .item .slider-product__wrapper {
     padding: 0; }
     @media (min-width: 769px) {
@@ -8892,7 +8898,7 @@ input[type=number] {
     position: relative;
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto 80px;
+    margin: 0 auto 60px;
     overflow: hidden;
     text-align: center;
     display: -webkit-box;
@@ -9151,7 +9157,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 80px; }
+  margin-bottom: 60px; }
   .content-box .title {
     margin-bottom: 40px; }
     @media (min-width: 769px) {
@@ -10272,6 +10278,10 @@ label.filters__item-title {
     line-height: 17px;
     font-size: 11px;
     color: #000000; }
+    @media (max-width: 768px) {
+      .mobile-footer__studio {
+        padding: 6px 16px;
+        background-color: #EEFAFF; } }
     .mobile-footer__studio a {
       color: #000000;
       text-decoration: none;
@@ -11186,7 +11196,7 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-3::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -381px -360px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-4::before {
@@ -11201,17 +11211,17 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-6::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -381px -360px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -425px -404px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -425px -404px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
   .filter-block__list {
