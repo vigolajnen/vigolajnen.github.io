@@ -5715,6 +5715,9 @@ input[type=number] {
   @media (min-width: 1920px) {
     .title--lg {
       font-size: 48px; } }
+  @media (min-width: 1140px) {
+    .title--lg {
+      line-height: 64px; } }
 
 .title--form {
   font-size: 16px; }
@@ -11069,12 +11072,12 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -425px -404px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -425px -404px;
       width: 34px;
       height: 34px; }
   .filter-block__list {
@@ -11330,6 +11333,7 @@ label.filters__item-title {
   color: #000000;
   font-size: 12px;
   font-weight: 500;
+  line-height: normal;
   text-transform: uppercase;
   letter-spacing: 1.71px;
   color: #656565; }
@@ -11365,7 +11369,7 @@ label.filters__item-title {
       width: calc(100% / 7); } }
   @media (min-width: 1920px) {
     .page-brands .brands__item {
-      width: calc(100%/6 - 34px); } }
+      width: calc(100% / 6 - 34px); } }
 
 .page-intro {
   position: relative;
@@ -11852,7 +11856,7 @@ input.subscription__radio:checked + .subscription__label::before {
         .article__bottom .blog__name {
           font-size: 36px; } }
     .article__bottom .title--before::before {
-      bottom: -20px; }
+      bottom: -10px; }
     .article__bottom .button-link {
       margin-right: 20px;
       display: block;
