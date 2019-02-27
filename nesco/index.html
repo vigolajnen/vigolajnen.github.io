@@ -298,7 +298,7 @@
                 </li>
                 <li class="navigation__item navigation__item-more">
                   <a class="navigation__link navigation__arrow" href="#">Еще</a>
-                  <div class="submenu animated fadeInUpSmall">
+                  <div class="submenu submenu--more animated fadeInUpSmall">
                     <ul class="submenu__sub">
                       <li class="submenu__sub-item">
                         <a href="" class="submenu__sub-link">
@@ -1784,14 +1784,16 @@
       </div>
     </div>
   </div>
-  <section class="new-goods vp-invisible">
-    <div class="new-goods__wrapper">
-      <h3 class="new-goods__title title title--before">Новинки</h3>
-      <div class="new-goods__btn">
-        <button class="new-goods__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
-        <button class="new-goods__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
+  <section class="new-goods slider-base vp-invisible">
+    <div class="slider-base__wrapper">
+      <h3 class="slider-base__title title title--before">Новинки</h3>
+      <div class="slider-base__btn">
+        <button id="slider-base__btn-prev-new-goods" class="slider-base__btn-prev slick-arrow button" aria-label="Previous"
+          type="button">Previous</button>
+        <button id="slider-base__btn-next-new-goods" class="slider-base__btn-next slick-arrow button" aria-label="Next"
+          type="button">Next</button>
       </div>
-      <div id="slider-new-goods" class="new-goods__slider">
+      <div id="slider-new-goods" class="slider-base__slider">
         <div class="product">
           <div class="product__pic-box">
             <div class="showcases">
@@ -1948,17 +1950,19 @@
           </div>
         </div>
       </div>
-      <a class="new-goods__link button-link" href="#">В каталог</a>
+      <a class="button-link" href="#">В каталог</a>
     </div>
   </section>
-  <section class="brands vp-invisible">
-    <div class="brands__wrapper">
-      <h3 class="brands__title title title--before">Эксклюзивные бренды</h3>
-      <div class="brands__btn">
-        <button class="brands__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
-        <button class="brands__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
+  <section class="brands slider-base vp-invisible">
+    <div class="slider-base__wrapper">
+      <h3 class="slider-base__title title title--before">Эксклюзивные бренды</h3>
+      <div class="slider-base__btn">
+        <button id="slider-base__btn-prev-brands" class="slider-base__btn-prev slick-arrow button" aria-label="Previous"
+          type="button">Previous</button>
+        <button id="slider-base__btn-next-brands" class="slider-base__btn-next slick-arrow button" aria-label="Next"
+          type="button">Next</button>
       </div>
-      <div id="slider-brands" class="brands__slider">
+      <div id="slider-brands" class="slider-base__slider">
         <div class="brands__row">
           <a class="brands__item grayscale" href="#">
             <img class="brands__pic picture" src="img/brands/martini-hover.png" alt="brands-1">
@@ -2035,14 +2039,16 @@
     </div>
   </section>
 
-  <section class="popular-goods vp-invisible">
-    <div class="popular-goods__wrapper">
-      <h3 class="popular-goods__title title title--before">Популярные товары</h3>
-      <div class="popular-goods__btn">
-        <button class="popular-goods__btn-prev slick-arrow button" aria-label="Previous" type="button">Previous</button>
-        <button class="popular-goods__btn-next slick-arrow button" aria-label="Next" type="button">Next</button>
+  <section class="popular-goods slider-base vp-invisible">
+    <div class="slider-base__wrapper">
+      <h3 class="slider-base__title title title--before">Популярные товары</h3>
+      <div class="slider-base__btn">
+        <button id="slider-base__btn-prev-popular-goods" class="slider-base__btn-prev slick-arrow button"
+          aria-label="Previous" type="button">Previous</button>
+        <button id="slider-base__btn-next-popular-goods" class="slider-base__btn-next slick-arrow button"
+          aria-label="Next" type="button">Next</button>
       </div>
-      <div id="slider-popular-goods" class="popular-goods__slider">
+      <div id="slider-popular-goods" class="slider-base__slider">
         <div class="product">
           <div class="product__pic-box">
             <div class="showcases">
@@ -2058,7 +2064,7 @@
               </a>
             </div>
             <div class="product__image">
-              <a class="product__link-img" href="#">
+              <a class="product__link-img" href="item.html">
                 <img class="picture" src="img/goods/product-1.jpg" alt="product">
               </a>
             </div>
@@ -2066,7 +2072,7 @@
           <div class="product__info-box">
             <div class="product__box">
               <div class="product__country">Италия</div>
-              <a href="#" class="product__name-link">
+              <a href="item.html" class="product__name-link">
                 <h3 class="product__name">Valpolicella Classico Superiore Ripasso La Casetta</h3>
               </a>
               <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -2199,7 +2205,7 @@
           </div>
         </div>
       </div>
-      <a class="popular-goods__link button-link" href="#">В каталог</a>
+      <a class="button-link" href="#">В каталог</a>
     </div>
   </section>
   <section class="approach vp-invisible">
@@ -2525,7 +2531,7 @@
       </div>
     </div>
   </div>
-  <section class="advantages vp-invisible">
+  <section class="advantages wrapper vp-invisible">
     <div class="advantages__wrapper">
       <h3 class="visually-hidden">Преимущества</h3>
       <ul class="advantages__list">
@@ -2564,6 +2570,7 @@
       </ul>
     </div>
   </section>
+
   <footer class="page-footer page-footer--bg">
     <div class="page-footer__wrapper">
       <div class="page-footer__top">

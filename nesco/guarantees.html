@@ -298,7 +298,7 @@
                 </li>
                 <li class="navigation__item navigation__item-more">
                   <a class="navigation__link navigation__arrow" href="#">Еще</a>
-                  <div class="submenu animated fadeInUpSmall">
+                  <div class="submenu submenu--more animated fadeInUpSmall">
                     <ul class="submenu__sub">
                       <li class="submenu__sub-item">
                         <a href="" class="submenu__sub-link">
@@ -1783,7 +1783,7 @@
         </ul>
       </nav>
     </aside>
-    <div class="page__content">
+    <div class="page__content page__content--mt">
       <main class="page__main">
         <div class="page__header">
           <h1 class="title">Гарантии</h1>
@@ -1793,9 +1793,34 @@
             <p>получить ваш товар, кто его примет и по какому договору мы с вами работаем. если у нас с вами еще не
               заключен договор, обратитесь у менеджеру соответствующего отдела.</p>
           </div>
+
+          <ul class="list-number">
+            <li class="list-number__item">
+              <div class="list-number__inner">
+                <div class="list-number__number">1.</div>
+                <h3 class="list-number__title">Сертификаты от поставщиков</h3>
+                <p class="list-number__text">У нас есть сертификаты на всю продукцию, которую мы продаем.</p>
+              </div>
+            </li>
+            <li class="list-number__item">
+              <div class="list-number__inner">
+                <div class="list-number__number">2.</div>
+                <h3 class="list-number__title">Только проверенные партнеры</h3>
+                <p class="list-number__text">С каждым клиентом работает менеджер: </p>
+              </div>
+            </li>
+            <li class="list-number__item">
+              <div class="list-number__inner">
+                <div class="list-number__number">3.</div>
+                <h3 class="list-number__title">Персональный менеджер</h3>
+                <p class="list-number__text">С каждым клиентом работает менеджер: помогает со всеми задачами и
+                  вопросами</p>
+              </div>
+            </li>
+          </ul>
         </div>
         <section class="page__guarantees">
-          <h2 class="title title--before-left">Подтверждение от наших партнеров</h2>
+          <h2 class="title title--before-left">Подтверждение <span>от наших партнеров</span></h2>
           <div class="page-guarantees__wrapper">
             <div class="page-guarantees__item">
               <div class="page-guarantees__info">
@@ -1809,8 +1834,9 @@
                   алкогольных напитков российскими потребителями, снижения алкоголизма и укрепления здоровья нации.
                 </p>
               </div>
-              <div class="page-guarantees__pic">
-                <img class="" src="img/page-guarantees/1.jpg" alt="pic">
+              <div class="page-guarantees__origin">
+                <img class="page-guarantees__pic" src="img/page-guarantees/1.jpg" alt="pic">
+                <button class="page-guarantees__btn button button-link">Оригинал отзыва</button>
               </div>
             </div>
             <div class="page-guarantees__item">
@@ -1825,8 +1851,9 @@
                   алкогольных напитков российскими потребителями, снижения алкоголизма и укрепления здоровья нации.
                 </p>
               </div>
-              <div class="page-guarantees__pic">
-                <img class="" src="img/page-guarantees/2.jpg" alt="pic">
+              <div class="page-guarantees__origin">
+                <img class="page-guarantees__pic" src="img/page-guarantees/2.jpg" alt="pic">
+                <button class="page-guarantees__btn button button-link">Оригинал отзыва</button>
               </div>
             </div>
             <div class="page-guarantees__item">
@@ -1841,14 +1868,15 @@
                   алкогольных напитков российскими потребителями, снижения алкоголизма и укрепления здоровья нации.
                 </p>
               </div>
-              <div class="page-guarantees__pic">
-                <img class="" src="img/page-guarantees/3.jpg" alt="pic">
+              <div class="page-guarantees__origin">
+                <img class="page-guarantees__pic" src="img/page-guarantees/3.jpg" alt="pic">
+                <button class="page-guarantees__btn button button-link">Оригинал отзыва</button>
               </div>
             </div>
           </div>
         </section>
         <div class="page-guarantees__contacts">
-          <h2 class="title title--before-left">Контакты отдела по работе с дистрибьюторами</h2>
+          <h2 class="title title--before-left">Контакты <span>Отдел HoReCa</span></h2>
           <div class="contacts">
             <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
             <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
@@ -1898,6 +1926,7 @@
           </div>
         </div>
         <div class="page-guarantees__form">
+          <h3 class="title--form-2">Написать нам</h3>
           <form action="" class="form form--feedback" method="post">
             <ul class="form__list">
               <li class="form__list-item">

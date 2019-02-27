@@ -25,6 +25,10 @@
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.min.css">
+
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+
 </head>
 
 <body>
@@ -298,7 +302,7 @@
                 </li>
                 <li class="navigation__item navigation__item-more">
                   <a class="navigation__link navigation__arrow" href="#">Еще</a>
-                  <div class="submenu animated fadeInUpSmall">
+                  <div class="submenu submenu--more animated fadeInUpSmall">
                     <ul class="submenu__sub">
                       <li class="submenu__sub-item">
                         <a href="" class="submenu__sub-link">
@@ -1749,94 +1753,359 @@
     </div>
   </header>
 
-  <div class="wrapper wrapper--top">
+  <div class="page-contacts page-brands wrapper wrapper--top">
     <h1 class="title title--center">Контакты</h1>
-    <div class="map">
-
-    </div>
-    <h2 class="title title--center title--before">Контакты отделов</h2>
-    <div class="tabs vp-invisible">
-      <div class="tabs__wrapper">
-        <ul id="tabs-links" class="tabs__list">
-          <li class="tabs__item">
-            <a class="tabs__link" href="#tab-1">HoReCa</a>
-          </li>
-          <li class="tabs__item">
-            <a class="tabs__link" href="#tab-2">Магазинам</a>
-          </li>
-          <li class="tabs__item">
-            <a class="tabs__link" href="#tab-3">Корпоративным клиентам</a>
-          </li>
-          <li class="tabs__item">
-            <a class="tabs__link" href="#tab-4">Дистрибьюторам</a>
-          </li>
-        </ul>
-        <div id="tabs-container" class="tabs__container">
-          <div id="tab-1" class="tabs__content">
-            1
-
+    <div class="page-contacts__map">
+      <div class="page-contacts__address">
+        <div class="page-contacts__address-city">
+          <div id="select-3" class="filters__item">
+            <select class="custom-select js-size select select-3">
+              <option name="value" value="Санкт-Петербург">Санкт-Петербург</option>
+              <option name="value" value="Санкт-Петербург">2Санкт-Петербург</option>
+              <option name="value" value="Санкт-Петербург">3Санкт-Петербург</option>
+            </select>
           </div>
-          <div id="tab-2" class="tabs__content">
-            2
-
+        </div>
+        <div class="page-contacts__address__wrapper">
+          <div class="page-contacts__address-item">
+            <h3>Офис:</h3>
+            <p>195248 г. Санкт-Петербург, ул.Партизанская, д.27</p>
+            <a href="tel:+78126769800">8 (812) 676-98-00</a>
+            <a href="tel:+78126769801">8 (812) 676-98-01</a>
+            <a href="mailto:mail@nescospb.ru">mail@nescospb.ru</a>
           </div>
-          <div id="tab-3" class="tabs__content">
-            3
-
-          </div>
-          <div id="tab-4" class="tabs__content">
-            4
-
+          <div class="page-contacts__address-item">
+            <h3>Склад:</h3>
+            <p>188681, Лен. обл., Всеволожский р-н, Свердловское гор-е п., в р-не д. Новосаратовка</p>
+            <a href="tel:+78124163093">8 (812) 416-30-93</a>
+            <a href="mailto:skladspb@nescospb.ru">skladspb@nescospb.ru</a>
+            <a href="mailto:logistika@nescospb.ru">logistika@nescospb.ru</a>
           </div>
         </div>
       </div>
+      <span class="metadata-marker" style="display: none;" data-region_tag="html-body"></span>
+      <div id="map"></div>
     </div>
-    <h3 class="title title--before title--center">Написать нам</h3>
-    <form action="" class="form form--feedback" method="post">
-      <ul class="form__list">
-        <li class="form__list-item">
-          <label for="select-4" class="form__label">Тема сообщения</label>
-          <!-- <select class="form__input" name="" id="feedback-1">
-            <option value="Жалобы и предложения">Жалобы и предложения</option>
-            <option value="Жалобы и предложения-1">Жалобы и предложения-1</option>
-            <option value="Жалобы и предложения-2">Жалобы и предложения-2</option>
-          </select> -->
-          <div id="select-4" class="form__input">
-            <select class="custom-select js-size select select-4">
-              <option name="value" value="Санкт-Петербург">Жалобы и предложения-1</option>
-              <option name="value" value="Санкт-Петербург">2Жалобы и предложения-1</option>
-              <option name="value" value="Санкт-Петербург">3Жалобы и предложения-1</option>
-            </select>
+    <h2 class="title title--center title--before">Контакты отделов</h2>
+    <div class="page-contacts__tabs">
+      <div class="tabs vp-invisible">
+        <div class="tabs__wrapper">
+          <ul id="js-tabs-list-2" class="tabs__list">
+            <li class="tabs__item tabs__item--border">
+              <a class="tabs__link tabs__link--full" href="#tab-1">Horeca</a>
+            </li>
+            <li class="tabs__item tabs__item--border">
+              <a class="tabs__link tabs__link--full" href="#tab-2">Магазинам</a>
+            </li>
+            <li class="tabs__item tabs__item--border">
+              <a class="tabs__link tabs__link--full" href="#tab-3">Корпоротивным клиентам</a>
+            </li>
+            <li class="tabs__item tabs__item--border">
+              <a class="tabs__link tabs__link--full" href="#tab-4">Дистрибьюторам</a>
+            </li>
+          </ul>
+          <div id="tabs-container" class="tabs__container">
+            <div id="tab-1" class="tabs__content">
+              <div class="contacts">
+                <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+              </div>
+              <div class="employees">
+                <div id="js-slider-contacts" class="employees__wrapper">
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/1.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Андрей Деменчук</h3>
+                      <p class="employees__position">Руководитель отдела по работе с ключевыми клиентами HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/2.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Елена Миронец</h3>
+                      <p class="employees__position">Руководитель отдела</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/3.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Наталья Кряжева</h3>
+                      <p class="employees__position">Руководитель территориального подразделения HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/3.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Наталья Кряжева</h3>
+                      <p class="employees__position">Руководитель территориального подразделения HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tabs__content">
+              2
+              <div class="contacts">
+                <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+              </div>
+              <div class="employees">
+                <div id="js-slider-contacts" class="employees__wrapper">
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/1.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Андрей Деменчук</h3>
+                      <p class="employees__position">Руководитель отдела по работе с ключевыми клиентами HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/2.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Елена Миронец</h3>
+                      <p class="employees__position">Руководитель отдела</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/3.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Наталья Кряжева</h3>
+                      <p class="employees__position">Руководитель территориального подразделения HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/3.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Наталья Кряжева</h3>
+                      <p class="employees__position">Руководитель территориального подразделения HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-3" class="tabs__content">
+              3
+              <div class="contacts">
+                <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+              </div>
+              <div class="employees">
+                <div id="js-slider-contacts" class="employees__wrapper">
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/1.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Андрей Деменчук</h3>
+                      <p class="employees__position">Руководитель отдела по работе с ключевыми клиентами HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/2.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Елена Миронец</h3>
+                      <p class="employees__position">Руководитель отдела</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/3.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Наталья Кряжева</h3>
+                      <p class="employees__position">Руководитель территориального подразделения HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/3.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Наталья Кряжева</h3>
+                      <p class="employees__position">Руководитель территориального подразделения HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-4" class="tabs__content">
+              4
+              <div class="contacts">
+                <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+              </div>
+              <div class="employees">
+                <div id="js-slider-contacts" class="employees__wrapper">
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/1.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Андрей Деменчук</h3>
+                      <p class="employees__position">Руководитель отдела по работе с ключевыми клиентами HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/2.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Елена Миронец</h3>
+                      <p class="employees__position">Руководитель отдела</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/3.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Наталья Кряжева</h3>
+                      <p class="employees__position">Руководитель территориального подразделения HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees__item">
+                    <div class="employees__pic">
+                      <img class="picture" src="img/employees/3.jpg" alt="pic">
+                    </div>
+                    <div class="employees__info">
+                      <h3 class="employees__name">Наталья Кряжева</h3>
+                      <p class="employees__position">Руководитель территориального подразделения HoReCa</p>
+                      <div class="employees__contacts contacts">
+                        <a class="contacts__item" href="tel:+7(812)1234567">+7 (812) 123 45 67</a>
+                        <a class="contacts__item" href="mailto:mail@nesco.ru">mail@nesco.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </li>
-        <li class="form__list-item">
-          <label for="feedback-2" class="form__label">Номер телефона</label>
-          <input id="feedback-2" type="tel" class="form__input">
-        </li>
-        <li class="form__list-item">
-          <label for="feedback-3" class="form__label">Имя</label>
-          <input id="feedback-3" type="text" class="form__input">
-        </li>
-        <li class="form__list-item">
-          <label for="feedback-4" class="form__label">E-mail</label>
-          <input id="feedback-4" type="email" class="form__input">
-        </li>
-        <li class="form__list-item form__list-item--full">
-          <p class="form__text">Сообщение будет отправлено руководителю соответствующего отдела и генеральному директору
-            Nesco.</p>
-          <label for="feedback-5" class="form__label visually-hidden">Сообщение</label>
-          <textarea class="form__textarea" name="" id="feedback-5" cols="30" rows="10" placeholder="Сообщение"></textarea>
-        </li>
-        <li class="form__list-item form__list-item--full">
-          <input class="visually-hidden" id="feedback-6" type="checkbox" name="feedback-6" value="Виноград" checked="">
-          <label class="form__label form__label--checkbox" for="feedback-6">Согласие на обработку персональных данных</label>
-          <button class="button button-link" type="submit">Отправить</button>
-        </li>
-      </ul>
+        </div>
+        <h3 class="title title--before title--center">Написать нам</h3>
+        <form action="" class="form form--feedback" method="post">
+          <ul class="form__list">
+            <li class="form__list-item">
+              <label for="select-4" class="form__label">Тема сообщения</label>
+              <!-- <select class="form__input" name="" id="feedback-1">
+                <option value="Жалобы и предложения">Жалобы и предложения</option>
+                <option value="Жалобы и предложения-1">Жалобы и предложения-1</option>
+                <option value="Жалобы и предложения-2">Жалобы и предложения-2</option>
+              </select> -->
+              <div id="select-4" class="form__input">
+                <select class="custom-select js-size select select-4">
+                  <option name="value" value="Санкт-Петербург">Жалобы и предложения-1</option>
+                  <option name="value" value="Санкт-Петербург">2Жалобы и предложения-1</option>
+                  <option name="value" value="Санкт-Петербург">3Жалобы и предложения-1</option>
+                </select>
+              </div>
+            </li>
+            <li class="form__list-item">
+              <label for="feedback-2" class="form__label">Номер телефона</label>
+              <input id="feedback-2" type="tel" class="form__input">
+            </li>
+            <li class="form__list-item">
+              <label for="feedback-3" class="form__label">Имя</label>
+              <input id="feedback-3" type="text" class="form__input">
+            </li>
+            <li class="form__list-item">
+              <label for="feedback-4" class="form__label">E-mail</label>
+              <input id="feedback-4" type="email" class="form__input">
+            </li>
+            <li class="form__list-item form__list-item--full">
+              <p class="form__text">Сообщение будет отправлено руководителю соответствующего отдела и генеральному директору
+                Nesco.</p>
+              <label for="feedback-5" class="form__label visually-hidden">Сообщение</label>
+              <textarea class="form__textarea" name="" id="feedback-5" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            </li>
+            <li class="form__list-item form__list-item--full">
+              <input class="visually-hidden" id="feedback-6" type="checkbox" name="feedback-6" value="Виноград" checked="">
+              <label class="form__label form__label--checkbox" for="feedback-6">Согласие на обработку персональных данных</label>
+              <button class="button button-link" type="submit">Отправить</button>
+            </li>
+          </ul>
 
-    </form>
+        </form>
 
 
+      </div>
+    </div>
   </div>
 
   <section class="advantages advantages--border vp-invisible">
@@ -2241,6 +2510,137 @@
   <script src="js/main.min.js"></script>
   <script>
     svg4everybody();
+  </script>
+
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5yUe9FAKioTSGs8OXzRMBPUMtzWNjHx4&callback=initMap"
+    async defer></script>
+  <script>
+    function initMap() {
+      // Styles a map in night mode.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: 59.9479071,
+          lng: 30.439998
+        },
+        zoom: 12,
+        styles: [{
+            "featureType": "landscape",
+            "stylers": [{
+                "hue": "#FFBB00"
+              },
+              {
+                "saturation": 43.400000000000006
+              },
+              {
+                "lightness": 37.599999999999994
+              },
+              {
+                "gamma": 1
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "stylers": [{
+                "hue": "#FFC200"
+              },
+              {
+                "saturation": -61.8
+              },
+              {
+                "lightness": 45.599999999999994
+              },
+              {
+                "gamma": 1
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "stylers": [{
+                "hue": "#FF0300"
+              },
+              {
+                "saturation": -100
+              },
+              {
+                "lightness": 51.19999999999999
+              },
+              {
+                "gamma": 1
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "stylers": [{
+                "hue": "#FF0300"
+              },
+              {
+                "saturation": -100
+              },
+              {
+                "lightness": 52
+              },
+              {
+                "gamma": 1
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "stylers": [{
+                "hue": "#0078FF"
+              },
+              {
+                "saturation": -13.200000000000003
+              },
+              {
+                "lightness": 2.4000000000000057
+              },
+              {
+                "gamma": 1
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "stylers": [{
+                "hue": "#00FF6A"
+              },
+              {
+                "saturation": -1.0989010989011234
+              },
+              {
+                "lightness": 11.200000000000017
+              },
+              {
+                "gamma": 1
+              }
+            ]
+          }
+        ]
+      });
+    }
+
+    var markers = locations.map(function (location, i) {
+      return new google.maps.Marker({
+        position: location,
+        label: labels[i % labels.length]
+      });
+    });
+
+    // Add a marker clusterer to manage the markers.
+    var markerCluster = new MarkerClusterer(map, markers, {
+      imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+    });
+
+    var locations = [{
+      lat: 59.9479071,
+      lng: 30.439998
+    }]
+
   </script>
 </body>
 
