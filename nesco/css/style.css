@@ -4184,10 +4184,12 @@ img {
   .page-header__nav {
     position: relative;
     width: 100%;
-    min-height: 57px; }
+    min-height: 57px;
+    height: 60px; }
     @media (min-width: 769px) {
       .page-header__nav {
-        width: 45%; } }
+        width: 45%;
+        height: auto; } }
     @media (min-width: 1024px) {
       .page-header__nav {
         width: 60%; } }
@@ -4550,6 +4552,7 @@ img {
 
 .logo {
   height: auto;
+  width: 65px;
   margin: 0 auto;
   padding: 15px 0; }
 
@@ -4775,7 +4778,7 @@ input[type=number] {
 
 .navigation--closed .navigation__toggle {
   position: absolute;
-  top: 24px;
+  top: 16px;
   right: 0;
   z-index: 2;
   width: 30px;
@@ -4790,7 +4793,7 @@ input[type=number] {
 
 .navigation--opened .navigation__toggle {
   position: absolute;
-  top: 24px;
+  top: 16px;
   right: 0;
   z-index: 5;
   width: 30px;
@@ -6858,7 +6861,7 @@ input[type=number] {
     background: none; }
 
 .top-menu__icon {
-  margin-right: 10px;
+  margin-right: 25px;
   margin-top: 8px; }
 
 .top-menu.border-before::before {
