@@ -6031,8 +6031,9 @@ input[type=number] {
   border: 1px solid transparent;
   -webkit-transition: 1s;
   transition: 1s; }
-  .product:hover {
-    border: 1px solid #d0d0d0; }
+  @media (min-width: 769px) {
+    .product:hover {
+      border: 1px solid #d0d0d0; } }
   .product__box {
     display: block;
     min-height: 90px; }
