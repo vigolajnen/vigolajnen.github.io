@@ -4168,10 +4168,12 @@ img {
             justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    padding: 0 4.6875%; }
+    padding: 0 4.6875%;
+    border-bottom: 1px solid #E8E8E8; }
     @media (min-width: 769px) {
       .page-header__box {
-        padding: 0 1.6875%; } }
+        padding: 0 1.6875%;
+        border-bottom: 1px solid transparent; } }
     @media (min-width: 1540px) {
       .page-header__box {
         padding: 0 4.6875%; } }
@@ -10487,9 +10489,7 @@ label.filters__item-title {
   transition: top .2s ease-out 0s; }
   @media (min-width: 769px) {
     .fixed {
-      top: 60px; } }
-  @media (min-width: 960px) {
-    .fixed {
+      top: 60px;
       height: 81px; } }
 
 .fixed-top {
