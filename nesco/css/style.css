@@ -4034,6 +4034,15 @@ img {
           transform: translate3d(0, 0, 0);
   visibility: visible !important; }
 
+.paranja {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99; }
+
 .grayscale img {
   -webkit-filter: grayscale(100%);
   /* Webkit Nightlies & Google Chrome Canary */
@@ -7738,7 +7747,7 @@ input[type=number] {
   top: -70px;
   padding-bottom: 0;
   padding-top: 0;
-  z-index: 13;
+  z-index: 100;
   will-change: transform;
   -webkit-transform: translate3d(-100%, 70px, 0);
           transform: translate3d(-100%, 70px, 0);
@@ -7753,7 +7762,6 @@ input[type=number] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.4);
   -webkit-overflow-scrolling: touch; }
   .mobile-menu::-webkit-scrollbar {
     width: 0; }
@@ -9917,7 +9925,7 @@ label.filters__item-title {
   top: -70px;
   padding-bottom: 0;
   padding-top: 0;
-  z-index: 13;
+  z-index: 100;
   will-change: transform;
   -webkit-transform: translate3d(-100%, 70px, 0);
           transform: translate3d(-100%, 70px, 0);
@@ -9932,7 +9940,6 @@ label.filters__item-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.4);
   -webkit-overflow-scrolling: touch; }
   .mobile-menu::-webkit-scrollbar {
     width: 0; }
@@ -10213,7 +10220,7 @@ label.filters__item-title {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         background-image: url(../img/sprite-png.png);
-        background-position: -293px -272px;
+        background-position: -249px -228px;
         width: 34px;
         height: 34px; }
   .mobile-catalog__sub {
@@ -11291,12 +11298,12 @@ label.filters__item-title {
                 transform: translateY(-50%); }
     .filter-block__title--icon-1::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -249px -228px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-2::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -381px -360px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-3::before {
@@ -11306,27 +11313,27 @@ label.filters__item-title {
       height: 34px; }
     .filter-block__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -381px -360px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -249px -228px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-6::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -425px -404px;
+      background-position: -205px -184px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -205px -184px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
     .filter-block__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -425px -404px;
       width: 34px;
       height: 34px; }
   .filter-block__list {
