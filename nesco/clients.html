@@ -1760,48 +1760,53 @@
   </header>
 
   <div class="page-clients wrapper wrapper--top">
-    <h1 class="title title--center">Частным клиентам</h1>
+    <h1 class="title title--lg title--center">Частным клиентам</h1>
     <p class="caption">В данный момент работа с частными клиентами невозможна. Но мы движемся в этом направлении.
       Оставьте
       нам ваш электронный адрес, и мы уведомим вас, как только это изменится.</p>
     <form class="form form--mb" action="" method="post">
       <div class="form__item">
-        <label for="form-email" class="visually-hidden">Email</label>
+        <label for="form-email" class="form__lb">Email</label>
         <input id="form-email" class="form__input" type="email" placeholder="Email">
       </div>
       <div class="form__item">
-        <button class="button button-link" type="submit">Подписаться</button>
+        <button class="button button-link" type="submit">Отправить</button>
       </div>
     </form>
     <h2 class="title title--mw title--center title--before">Вы можете приобрести наши напитки в магазинах-партнерах.</h2>
     <div class="box">
-      <div class="box__item border-before">
-        <h3>JOIA<br>wine store</h3>
-        <p>Большая Зеленина ул., 6
-          Тел.: 8 (812) 676-98-00
-          Время работы: 10:00-22:00
-          Интернет-магазин: joia.ru</p>
-      </div>
-      <div class="box__item border-before">
-        <h3>Сеть гипермаркетов<br>
-          "ЛЕНТА"</h3>
-        <p>Тел.: 8 (812) 676-00-00
-          Время работы: 10:00-22:00
-          Сайт: lenta.ru</p>
-      </div>
-      <div class="box__item border-before">
-        <h3>Сеть супермаркетов<br>
-          L&Лэнд</h3>
-        <p>Тел.: 8 (812) 676-00-00
-          Время работы: 10:00-22:00
-          Интернет-магазин: land.ru</p>
+      <div class="box__item">
+        <div class="shop">
+          <h3 class="shop__title">JOIA <span>wine store</span></h3>
+          <address class="shop__address">Большая Зеленина ул., 6
+            Тел.: 8 (812) 676-98-00
+            Время работы: 10:00-22:00</address>
+          <div class="shop__link">Интернет-магазин: <a class="link-blue" href="#" target="_blank">joia.ru</a></div>
+        </div>
       </div>
       <div class="box__item">
-        <h3>Сеть алкомаркетов<br>
-          "НЕТТО"</h3>
-        <p>Тел.: 8 (812) 676-98-00
-          Время работы: 10:00-22:00
-          Интернет-магазин: netto.ru</p>
+        <div class="shop">
+          <h3 class="shop__title">Сеть гипермаркетов <span>"ЛЕНТА"</span></h3>
+          <address class="shop__address">Тел.: 8 (812) 676-00-00
+            Время работы: 10:00-22:00</address>
+          <div class="shop__link">Сайт: <a class="link-blue" href="#" target="_blank">lenta.ru</a></div>
+        </div>
+      </div>
+      <div class="box__item">
+        <div class="shop">
+          <h3 class="shop__title">Сеть супермаркетов <span>L&Лэнд</span></h3>
+          <address class="shop__address">Тел.: 8 (812) 676-00-00
+            Время работы: 10:00-22:00</address>
+          <div class="shop__link">Интернет-магазин: <a class="link-blue" href="#" target="_blank">land.ru</a></div>
+        </div>
+      </div>
+      <div class="box__item">
+        <div class="shop">
+          <h3 class="shop__title">Сеть алкомаркетов <span>"НЕТТО"</span></h3>
+          <address class="shop__address">Тел.: 8 (812) 676-98-00
+            Время работы: 10:00-22:00</address>
+          <div class="shop__link">Интернет-магазин: <a class="link-blue" href="#" target="_blank">netto.ru</a></div>
+        </div>
       </div>
     </div>
     <div class="blog">
@@ -1838,10 +1843,11 @@
           </div>
         </a>
       </div>
-      <a class="button-link" href="#">Показать все</a>
+      <a class="button-link" href="#">Показать еще</a>
     </div>
 
     <h3 class="title title--before title--center">Написать нам</h3>
+
     <form action="" class="form form--feedback" method="post">
       <ul class="form__list">
         <li class="form__list-item">
@@ -1885,6 +1891,7 @@
       </ul>
 
     </form>
+
 
 
   </div>
