@@ -7601,7 +7601,7 @@ input[type=number] {
   @media (min-width: 1920px) {
     .link--arrow {
       font-size: 14px; } }
-  .link--arrow::before {
+  .link--arrow::after {
     position: absolute;
     content: "";
     top: 50%;
@@ -10317,7 +10317,7 @@ label.filters__item-title {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         background-image: url(../img/sprite-png.png);
-        background-position: -469px -448px;
+        background-position: -249px -228px;
         width: 34px;
         height: 34px; }
   .mobile-catalog__sub {
@@ -10693,6 +10693,25 @@ label.filters__item-title {
     @media (max-width: 768px) {
       .page-catalog__sort {
         margin-bottom: 40px; } }
+  .page-catalog .button-link {
+    font-size: 11px;
+    color: #2c2c2c;
+    font-size: 8px; }
+    @media (min-width: 375px) {
+      .page-catalog .button-link {
+        font-size: calc(0.19417vw + 7.27184px); } }
+    @media (min-width: 1920px) {
+      .page-catalog .button-link {
+        font-size: 11px; } }
+
+.page-catalog-2 .title {
+  display: block;
+  margin-bottom: 40px;
+  text-align: center; }
+  @media (min-width: 769px) {
+    .page-catalog-2 .title {
+      margin-bottom: 80px;
+      text-align: left; } }
 
 .page-catalog-2 .slider-base__wrapper {
   margin-bottom: 0; }
@@ -10803,6 +10822,8 @@ label.filters__item-title {
       .form-filters__item-name {
         line-height: normal; } }
   .form-filters__item-caption {
+    margin: 0;
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -10824,6 +10845,7 @@ label.filters__item-title {
             flex-direction: column;
     padding: 0;
     margin: 0;
+    margin-bottom: 35px;
     list-style: none; }
   .form-filters__box-item {
     margin-bottom: 20px; }
@@ -10860,20 +10882,6 @@ label.filters__item-title {
       border-color: #1995c9; }
     .form-filters__box-label:focus::before {
       border-color: #c7c7c7; }
-    .form-filters__box-label .counter {
-      font-size: 18px;
-      line-height: 20px;
-      color: #8f8f8f;
-      font-size: 14px; }
-      @media (min-width: 375px) {
-        .form-filters__box-label .counter {
-          font-size: calc(0.28169vw + 12.94366px); } }
-      @media (min-width: 1440px) {
-        .form-filters__box-label .counter {
-          font-size: calc(0.20833vw + 14px); } }
-      @media (min-width: 1920px) {
-        .form-filters__box-label .counter {
-          font-size: 18px; } }
 
 .form-filters__link--all {
   display: none; }
@@ -10912,7 +10920,7 @@ label.filters__item-title {
 .form-filters__lb-vol-left {
   position: absolute;
   left: 8px;
-  bottom: 33px;
+  bottom: 36px;
   z-index: 5;
   font-size: 18px;
   line-height: 20px;
@@ -10931,7 +10939,7 @@ label.filters__item-title {
 .form-filters__lb-vol-right {
   position: absolute;
   right: 90px;
-  bottom: 33px;
+  bottom: 36px;
   z-index: 5;
   font-size: 18px;
   line-height: 20px;
@@ -11009,18 +11017,6 @@ label.filters__item-title {
       display: flex;
       margin: 0;
       padding: 15px; } }
-
-.counter {
-  font-size: 18px;
-  line-height: 20px;
-  color: #8f8f8f;
-  font-size: 16px; }
-  @media (min-width: 375px) {
-    .counter {
-      font-size: calc(0.12945vw + 15.51456px); } }
-  @media (min-width: 1920px) {
-    .counter {
-      font-size: 18px; } }
 
 .form-filters__box-i-search {
   width: 100%;
@@ -11335,7 +11331,7 @@ label.filters__item-title {
   margin-top: 5px;
   padding: 15px 15px 15px 30px;
   border-radius: 0;
-  border: 1px solid #a6a6a6;
+  border: 1px solid #d3d3d3;
   cursor: pointer;
   display: inline-block;
   text-align: center;
@@ -11381,9 +11377,6 @@ label.filters__item-title {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
-  @media (min-width: 1540px) {
-    .cat-2-filter {
-      margin-bottom: 130px; } }
   .cat-2-filter__box {
     width: 100%;
     display: -webkit-box;
@@ -11395,6 +11388,16 @@ label.filters__item-title {
     @media (min-width: 769px) {
       .cat-2-filter__box {
         width: 49%;
+        margin-bottom: 10px; }
+        .cat-2-filter__box:not(:nth-child(even)) {
+          margin-right: 10px; } }
+    @media (min-width: 1140px) {
+      .cat-2-filter__box {
+        margin-bottom: 20px; }
+        .cat-2-filter__box:not(:nth-child(even)) {
+          margin-right: 20px; } }
+    @media (min-width: 1540px) {
+      .cat-2-filter__box {
         margin-bottom: 30px; }
         .cat-2-filter__box:not(:nth-child(even)) {
           margin-right: 30px; } }
@@ -11420,8 +11423,10 @@ label.filters__item-title {
       .cat-2-filter__wrapper {
         padding-right: 130px; } }
   .cat-2-filter__title {
+    position: relative;
     margin: 0;
     margin-bottom: 20px;
+    padding-right: 20px;
     line-height: normal;
     text-decoration: none;
     font-size: 16px;
@@ -11433,6 +11438,17 @@ label.filters__item-title {
     @media (min-width: 1920px) {
       .cat-2-filter__title {
         font-size: 28px; } }
+    .cat-2-filter__title::after {
+      position: absolute;
+      content: ">";
+      top: 50%;
+      right: 0;
+      font-size: 20px;
+      font-weight: 300;
+      color: #49b4e4;
+      width: 15px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
     @media (min-width: 769px) {
       .cat-2-filter__title {
         margin-bottom: 10px;
@@ -11452,42 +11468,42 @@ label.filters__item-title {
                 transform: translateY(-50%); }
     .cat-2-filter__title--icon-1::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -469px -448px;
+      background-position: -249px -228px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-2::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -425px -404px;
+      background-position: -381px -360px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-3::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -249px -228px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -469px -448px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -425px -404px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-6::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -381px -360px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -205px -184px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -205px -184px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
   .cat-2-filter__list {
@@ -11616,7 +11632,7 @@ label.filters__item-title {
 .polzunok-input-9-right,
 .polzunok-input-10-left,
 .polzunok-input-10-right {
-  height: 32px;
+  height: 40px;
   background: #fff;
   border: 1px solid #57b2db;
   text-align: center;
@@ -11624,7 +11640,7 @@ label.filters__item-title {
   line-height: 20px;
   font-weight: 500;
   width: 46%;
-  margin-top: -60px;
+  margin-top: -70px;
   font-size: 12px; }
   @media (min-width: 375px) {
     .polzunok-input-5-left,
@@ -13997,6 +14013,9 @@ input.subscription__radio:checked + .subscription__label::before {
     .favorites .caption {
       line-height: 24px; } }
 
+.favorites .form {
+  padding: 0; }
+
 .favorites .form__list {
   margin-top: 0; }
 
@@ -14788,3 +14807,17 @@ input.subscription__radio:checked + .subscription__label::before {
   @media (min-width: 769px) {
     .sidebar__btn-mob {
       display: none; } }
+
+.counter {
+  line-height: 20px;
+  color: #8f8f8f;
+  font-size: 14px; }
+  @media (min-width: 375px) {
+    .counter {
+      font-size: calc(0.28169vw + 12.94366px); } }
+  @media (min-width: 1440px) {
+    .counter {
+      font-size: calc(0.20833vw + 14px); } }
+  @media (min-width: 1920px) {
+    .counter {
+      font-size: 18px; } }
