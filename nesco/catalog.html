@@ -91,7 +91,7 @@
         </div>
         <div class="mobile-menu__buttom">
           <ul class="mobile-menu__list mobile-menu__list--gray">
-            <li class="mobile-menu__item">
+            <li class="mobile-menu__item mobile-menu__item--active">
               <a class="mobile-menu__link mobile-menu__link--icon" href="#">О компании</a>
               <ul class="mobile-submenu">
                 <li class="mobile-submenu__item">
@@ -201,6 +201,52 @@
         </ul>
       </div>
     </nav>
+
+    <!-- <nav class="mobile-filter">
+      <div class="mobile-filter__wrapper">
+        <div class="mobile-filter__header">
+          <span class="mobile-filter__name">Фильтры</span>
+          <button class="mobile-filter__close button button-close" aria-label="закрыть каталог">
+          </button>
+        </div>
+        <ul class="mobile-filter__list">
+          <li class="mobile-filter__item">
+            <a class="mobile-filter__link mobile-filter__link--icon" href="#">Цена, Р</a>
+            <div class="mobile-filter__sub">
+              slider
+            </div>
+          </li>
+          <li class="mobile-filter__item">
+            <a class="mobile-filter__link mobile-filter__link--icon" href="#">Цвет</a>
+            <div class="mobile-filter__sub">
+              <ul class="mobile-filter__sub-list">
+                <li class="mobile-filter__sub-item">Белое <span class="counter">(213)</span></li>
+                <li class="mobile-filter__sub-item">Красное <span class="counter">(213)</span></li>
+                <li class="mobile-filter__sub-item">Розовое <span class="counter">(213)</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mobile-filter__item">
+            <a class="mobile-filter__link mobile-filter__link--icon" href="#">Шампанское и игристое</a>
+          </li>
+          <li class="mobile-filter__item">
+            <a class="mobile-filter__link mobile-filter__link--icon" href="#">Пиво</a>
+          </li>
+          <li class="mobile-filter__item">
+            <a class="mobile-filter__link mobile-filter__link--icon" href="#">Вода</a>
+          </li>
+          <li class="mobile-filter__item">
+            <a class="mobile-filter__link mobile-filter__link--icon" href="#">Сиропы</a>
+          </li>
+          <li class="mobile-filter__item">
+            <a class="mobile-filter__link mobile-filter__link--icon" href="#">Стекло</a>
+          </li>
+          <li class="mobile-filter__item">
+            <a class="mobile-filter__link mobile-filter__link--icon" href="#">Аксессуары</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
   </div>
 
   <header class="page-header">
@@ -208,7 +254,7 @@
       <div class="page-header__box">
         <div class="page-header__nav">
           <a class="logo" href="index.html">
-            <img class="logo__pic" src="img/header/logo.png" width="126" height="31" alt="логотип Nesco">
+            <img class="logo__pic" src="img/Logo.svg" width="126" height="31" alt="логотип Nesco">
           </a>
           <a class="phone" aria-label="Сделать звонок" href="tel:+78125556644">
             <svg class="top-menu__icon" width="15" height="15">
@@ -304,7 +350,7 @@
       <div class=" page-header__box">
         <div class="page-header__logo logo">
           <a class="logo__link" href="index.html">
-            <img class="logo__pic" src="img/header/logo.png" width="126" height="31" alt="логотип Nesco">
+            <img class="logo__pic" src="img/Logo.svg" width="126" height="31" alt="логотип Nesco">
           </a>
         </div>
         <nav class="main-nav">
@@ -1716,11 +1762,11 @@
 
   <div class="page-catalog wrapper wrapper--top">
     <aside class="page-catalog__bar">
-      <form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
+      <form class="form-filters" method="post" action="/">
         <ul class="form-filters__list">
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Цена, Р </div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Цена, Р </p>
               <div class="polzunok-container-5">
                 <div class="polzunok-5"></div>
                 <label class="form-filters__lb-vol-left" for="polzunok-input-5-left">от</label>
@@ -1731,8 +1777,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Цвет</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Цвет</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="colors1" type="checkbox" name="colors1" value="Белое"
@@ -1752,8 +1798,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Сахар</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Сахар</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="sugar1" type="checkbox" name="sugar1" value="Сухое"
@@ -1777,8 +1823,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Страна</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Страна</p>
               <div class="form-filters__item-search">
                 <input class="form-filters__box-i-search" type="text" id="country-search" name="country-search" placeholder="Поиск">
                 <label class="form-filters__box-lb-search visually-hidden" for="country-search">Поиск</label>
@@ -1871,8 +1917,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Регион</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Регион</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="region1" type="checkbox" name="region1" value="Бордо"
@@ -1911,8 +1957,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Аппеласьон</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Аппеласьон</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="appellation1" type="checkbox" name="appellation1"
@@ -1954,8 +2000,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Год</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Год</p>
               <div class="polzunok-container-6">
                 <div class="polzunok-6"></div>
                 <label class="form-filters__lb-vol-left" for="polzunok-input-6-left">от</label>
@@ -1966,8 +2012,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Обьем,л</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Обьем,л</p>
               <div class="polzunok-container-7">
                 <div class="polzunok-7"></div>
                 <label class="form-filters__lb-vol-left" for="polzunok-input-7-left">от</label>
@@ -1978,8 +2024,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Виногдад</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Виногдад</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="grapes1" type="checkbox" name="grapes1" value="Аликанте (83)"
@@ -2018,8 +2064,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Производитель</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Производитель</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="manufacturer1" type="checkbox" checked="" name="manufacturer1"
@@ -2056,8 +2102,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Наличие наград</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Наличие наград</p>
               <p class="form-filters__item-caption">RP</p>
               <div class="polzunok-container-8">
                 <div class="polzunok-8"></div>
@@ -2077,8 +2123,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Рекоммендуемые блюда</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Рекоммендуемые блюда</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="dishes1" type="checkbox" checked="" name="dishes1"
@@ -2094,8 +2140,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Стилистика</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Стилистика</p>
               <p class="form-filters__item-caption">Сладость</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
@@ -2161,8 +2207,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Декантация</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Декантация</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="decantation1" type="checkbox" name="decantation1"
@@ -2183,8 +2229,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Способ выдержки</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Способ выдержки</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="excerpt1" type="checkbox" name="excerpt1" value="Бочка">
@@ -2203,8 +2249,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Срок выдержки</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Срок выдержки</p>
               <div class="polzunok-container-10">
                 <div class="polzunok-10"></div>
                 <label class="form-filters__lb-vol-left" for="polzunok-input-10-left">от</label>
@@ -2215,8 +2261,8 @@
             </div>
           </li>
           <li class="form-filters__item">
+            <div class="form-filters__item-name">Категория</div>
             <div class="form-filters__box">
-              <p class="form-filters__item-name">Категория</p>
               <ul class="form-filters__box-list">
                 <li class="form-filters__box-item">
                   <input class="form-filters__box-input visually-hidden" id="cat1" type="checkbox" checked="" name="cat1"
@@ -3065,7 +3111,6 @@
               <a class="page-footer__link" href="#">Сиропы</a>
               <a class="page-footer__link" href="#">Стекло</a>
               <a class="page-footer__link" href="#">Аксессуары</a>
-              <a class="page-footer__link link-btn" href="#">Каталог</a>
               <button class="button-link button">Скачать каталог</button>
             </div>
           </div>
