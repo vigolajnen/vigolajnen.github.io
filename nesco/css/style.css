@@ -10454,7 +10454,7 @@ label.filters__item-title {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         background-image: url(../img/sprite-png.png);
-        background-position: -337px -316px;
+        background-position: -293px -272px;
         width: 34px;
         height: 34px; }
   .mobile-catalog__sub {
@@ -11516,7 +11516,7 @@ label.filters__item-title {
   background-image: url("../img/icons/icon-square.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover; }
+  background-size: 70%; }
 
 #select-4 {
   padding-left: 0;
@@ -11558,13 +11558,13 @@ label.filters__item-title {
     content: "";
     top: 50%;
     right: 10px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+            transform: translateY(-50%) rotate(-180deg);
+    width: 20px;
+    height: 25px;
     background-image: url("../img/icons/icon-input-file.svg");
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: 120%; }
   @media (max-width: 768px) {
     .form__label--file {
       height: 40px; } }
@@ -11677,7 +11677,7 @@ label.filters__item-title {
                 transform: translateY(-50%); }
     .cat-2-filter__title--icon-1::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-2::before {
@@ -11687,32 +11687,32 @@ label.filters__item-title {
       height: 34px; }
     .cat-2-filter__title--icon-3::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -205px -184px;
+      background-position: -381px -360px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -381px -360px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -425px -404px;
+      background-position: -205px -184px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-6::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -249px -228px;
+      background-position: -425px -404px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -513px -492px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -513px -492px;
+      background-position: -249px -228px;
       width: 34px;
       height: 34px; }
   .cat-2-filter__list {
