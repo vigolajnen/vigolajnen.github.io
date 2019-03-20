@@ -5894,15 +5894,15 @@ input[type=number] {
   background-repeat: no-repeat;
   background-position: center; }
   .promo-bg--training {
-    background-image: url("../../img/page-learn/header.jpg"); }
+    background-image: url("../img/page-learn/header.jpg"); }
     @media (max-width: 425px) {
       .promo-bg--training {
-        background-image: url("../../img/page-learn/header-mob.jpg"); } }
+        background-image: url("../img/page-learn/header-mob.jpg"); } }
   .promo-bg--corp {
-    background-image: url("../../img/page-corp/header.jpg"); }
+    background-image: url("../img/page-corp/header.jpg"); }
     @media (max-width: 425px) {
       .promo-bg--corp {
-        background-image: url("../../img/page-corp/header-mob.jpg"); } }
+        background-image: url("../img/page-corp/header-mob.jpg"); } }
 
 .promo__item {
   display: -webkit-box;
