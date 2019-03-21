@@ -12554,12 +12554,12 @@ label.filters__item-title {
       height: 34px; }
     .cat-2-filter__title--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -337px -316px;
+      background-position: -293px -272px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -293px -272px;
+      background-position: -337px -316px;
       width: 34px;
       height: 34px; }
     .cat-2-filter__title--icon-6::before {
@@ -15355,6 +15355,8 @@ input.subscription__radio:checked + .subscription__label::before {
   margin: 0 auto; }
 
 .favorites__icon {
+  width: 15px;
+  height: 15px;
   fill: #1995c9;
   stroke-width: 4px; }
 
@@ -16428,7 +16430,7 @@ input.subscription__radio:checked + .subscription__label::before {
 
 .page-2 .promo__info .link-btn {
   margin: 0 auto;
-  padding: 13px 25px; }
+  padding: 18px 25px; }
 
 .page-2__probation .list-number-sq__item {
   width: 100%;
@@ -16497,14 +16499,17 @@ input.subscription__radio:checked + .subscription__label::before {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-top: 40px; }
   @media (min-width: 1140px) {
     .fotos {
       margin-top: 60px; } }
   .fotos__item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 49%;
     max-height: 44.5vw;
     min-height: 44.5vw;
