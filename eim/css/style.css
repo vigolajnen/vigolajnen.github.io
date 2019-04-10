@@ -1386,16 +1386,18 @@ img {
           justify-content: space-between; }
 
 .about__left {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 40px; }
   @media (min-width: 768px) {
     .about__left {
-      width: 45%; } }
+      width: 39%;
+      margin-bottom: 0; } }
 
 .about__right {
   width: 100%; }
   @media (min-width: 768px) {
     .about__right {
-      width: 50%; } }
+      width: 55%; } }
   .about__right .picture {
     height: 100%; }
     @media (max-width: 991px) {
@@ -1403,12 +1405,31 @@ img {
         -o-object-position: 100%;
            object-position: 100%; } }
 
+.about__title-sub {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Exo", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: #38383d;
+  font-size: 14px; }
+  @media (min-width: 375px) {
+    .about__title-sub {
+      font-size: calc(0.37559vw + 12.59155px); } }
+  @media (min-width: 1440px) {
+    .about__title-sub {
+      font-size: 18px; } }
+
 .about ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
   font-family: "Exo", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
-  color: #38383D;
+  color: #38383d;
   font-size: 14px; }
   @media (min-width: 375px) {
     .about ul {
@@ -1471,7 +1492,7 @@ img {
   .form-order__input {
     width: 100%;
     padding: 20px;
-    font-family: Exo;
+    font-family: "Exo", "Arial", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -1562,14 +1583,14 @@ img {
   .list-pic__text {
     margin: 0;
     margin-bottom: 15px;
-    font-family: Exo;
+    font-family: "Exo", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     color: #5F5757; }
   .list-pic__link {
-    font-family: Exo;
+    font-family: "Exo", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     line-height: 29px;
@@ -1616,7 +1637,10 @@ img {
     bottom: 0;
     left: 0;
     z-index: 1;
-    min-height: 100%; }
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
     @media (min-width: 992px) {
       .list-pic__picture {
         min-height: 250px; } }
@@ -1673,7 +1697,7 @@ img {
   .list-pic-2__text {
     margin: 0;
     margin-bottom: 15px;
-    font-family: Exo;
+    font-family: "Exo", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
