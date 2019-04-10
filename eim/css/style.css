@@ -1163,14 +1163,24 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
-  background-image: url("../img/promo/promo-bg.jpg");
   background-color: #0E224F;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-image: url("../img/promo/promo-768.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center; }
+  @media (min-width: 768px) {
+    .promo {
+      background-image: url("../img/promo/promo-768.jpg"); } }
+  @media (min-width: 992px) {
+    .promo {
+      background-image: url("../img/promo/promo-bg.jpg"); } }
   .promo__info {
     position: relative;
     width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 0 0;
     text-align: left; }
     @media (min-width: 576px) {
       .promo__info {
