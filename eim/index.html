@@ -28,7 +28,7 @@
 </head>
 
 <body>
-
+  <div class="paranja"></div>
   <header class="page-header">
     <div class="wrapper">
       <div class="page-header__left">
@@ -54,7 +54,7 @@
               <li class="navigation__item">
                 <a class="navigation__link" href="#">Преимущества</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item navigation__item--active">
                 <a class="navigation__link" href="#">О компании</a>
               </li>
               <li class="navigation__item">
@@ -63,7 +63,24 @@
               <li class="navigation__item">
                 <a class="navigation__link" href="#">Контакты</a>
               </li>
+              <li class="navigation__item">
+                <div class="navigation__call-mobile">
+                  <ul class="contact-list">
+                    <li class="contact-list__item">
+                      <a class="contact-list__link" href="tel:+78122009365">
+                        <svg class="contact-list__icon" width="16" height="19">
+                          <use xlink:href="img/sprite.svg#icon-phone-dark"></use>
+                        </svg>
+                        +7 (812) 200 93 65</a>
+                    </li>
+                    <li class="contact-list__item">
+                      <a class="contact-list__link button button--yellow" href="#contact">Заказать звонок</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
+          
           </div>
         </nav>
       </div>
@@ -77,7 +94,7 @@
               +7 (812) 200 93 65</a>
           </li>
           <li class="contact-list__item contact-list__item--btn-white">
-            <a class="contact-list__link" href="#">Заказать звонок</a>
+            <a class="contact-list__link" href="#contact">Заказать звонок</a>
           </li>
         </ul>
       </div>
@@ -193,146 +210,167 @@
   </section>
 
   <div class="content-block">
-    <div class="wrapper">
+    <div class="">
       <div class="content-block__item">
-        <figure class="content-block__figure content-block__figure--542">
-          <img class="picture" width="542" src="img/content/pic-1.jpg" alt="pic">
-        </figure>
+        <div class="wrapper">
+          <div class="content-block__inner">
+            <figure class="content-block__figure content-block__figure--542">
+              <img class="picture" width="542" src="img/content/pic-1.jpg" alt="pic">
+            </figure>
 
-        <div class="content-block__info">
-          <p class="content-block__text content-block__text--bold">ООО «ЕИМ инжениринг» изготавливает кресло-пульты
-            управления на заказ
-            по чертежам и эскизам Заказчика.</p>
-          <p class="content-block__text">ООО «ЕИМ инжениринг» предоставляет своим Заказчикам полный спектр услуг по
-            поставке кресло-пультов управления, включающих проектирование, изготовление, поставку, демонтаж старого
-            кресло-пульта, монтаж, пусконаладку, гарантийное и послегарантийное обслуживание поставленного
-            оборудования.</p>
-        </div>
-      </div>
-      <div class="content-block__item">
-        <div class="content-block__inner">
-          <div class="content-block__info content-block__info--lg">
-            <div class="content-block__text">
-              <p>При изготовлении кресло-пультов управления применяются высококачественные комплектующие ведущих
-                отечественных и зарубежных производителей:</p>
-              <ul>
-                <li>Командоконтроллеры и переключатели Gessmann;</li>
-                <li>Аппаратура сигнализации и управления Eaton;</li>
-                <li>Клеммные соединения и маркировка Klemsan.</li>
-              </ul>
-              <p>Возможно применение оборудования других производителей по желанию Заказчика. Технические данные
-                кресло-пультов управления КПУ:</p>
-              <ul>
-                <li>Температура эксплуатации –40…+60°С;</li>
-                <li>Температура хранения –50…+80°С;</li>
-                <li>Степень защиты IP54;</li>
-                <li>Толщина металла колонок кресло-пульта 1,5 мм;</li>
-                <li>Порошковая окраска RAL7032.</li>
-              </ul>
+            <div class="content-block__info">
+              <p class="content-block__text content-block__text--bold">ООО «ЕИМ инжениринг» изготавливает кресло-пульты
+                управления на заказ
+                по чертежам и эскизам Заказчика.</p>
+              <p class="content-block__text">ООО «ЕИМ инжениринг» предоставляет своим Заказчикам полный спектр услуг по
+                поставке кресло-пультов управления, включающих проектирование, изготовление, поставку, демонтаж старого
+                кресло-пульта, монтаж, пусконаладку, гарантийное и послегарантийное обслуживание поставленного
+                оборудования.</p>
             </div>
           </div>
-          <figure class="content-block__figure content-block__figure--sm">
-            <img class="picture" src="img/content/pic-7.jpg" alt="pic">
-            <figcaption class="content-block__caption">Кресло-пульт КПУ-Б в кабине портального крана «Кондор», левая
-              рукоятка командоконтроллера управления механизмами подъема и замыкания с кнопками управления поворотной
-              крюковой подвеской.</figcaption>
-          </figure>
         </div>
-        <section class="advantages">
-          <h3 class="advantages__title title">Преимущества</h3>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <svg class="advantages__icon" width="57" height="57">
-                <use xlink:href="img/sprite.svg#icon-support"></use>
-              </svg>
-              <div class="advantages__text">Качественный сервис</div>
-            </li>
-            <li class="advantages__item">
-              <svg class="advantages__icon" width="57" height="57">
-                <use xlink:href="img/sprite.svg#icon-auto-repair-service"></use>
-              </svg>
-              <div class="advantages__text">Сборка из лучших комплектующих</div>
-            </li>
-            <li class="advantages__item">
-              <svg class="advantages__icon" width="57" height="57">
-                <use xlink:href="img/sprite.svg#icon-save-money"></use>
-              </svg>
-              <div class="advantages__text">Лучшая цена на современном рынке</div>
-            </li>
-          </ul>
-        </section>
-        <div class="content-block__inner">
-          <figure class="content-block__figure content-block__figure--sm">
-            <img class="picture" src="img/content/pic-3.jpg" alt="pic">
-            <figcaption class="content-block__caption">Командоконтроллер механизма подъема Gessmann в правой колонке
-              кресло-пульта КПУ-А</figcaption>
-          </figure>
-          <div class="content-block__info content-block__info--lg">
-            <p class="content-block__text">Стандартный кресло-пульт управления КПУ-А с шириной колонок 210 мм широко
-              применяется при замене штатных кресло-пультов на портальных кранах «Альбатрос» и «Сокол» производства
-              Kranbau
-              Eberswalde (TAKRAF), а также на мостовых и козловых кранах. Популярность кресло-пульта управления КПУ-А
-              обусловлена оптимальными габаритными размерами, удобством эксплуатации и технического обслуживания. В
-              комплекте с креслом крановщика KFS 4 кресло-пульт управления КПУ-А легко устанавливается в большинство типов
-              кабин, а за счет механизма складывания кресла обеспечивается проход крановщика на рабочее место между
-              колонками кресло-пульта, что особенно актуально для узких кабин мостовых и портальных кранов.Для применения
-              на
-              контейнерных кранах ООО «ЕИМ инжениринг» разработан стандартный кресло-пульт управления КПУ-Б с шириной
-              колонок 290 мм. Кресло-пульт КПУ-Б широко применяется при замене штатных кресло-пультов на портальных кранах
-              «Кондор» производства Kranbau Eberswalde (TAKRAF).</p>
-          </div>
 
-        </div>
-        <div class="content-block__inner">
-          <div class="content-block__info content-block__info--lg">
-            <p class="content-block__text">ООО «ЕИМ инжениринг» изготовлено и поставлено клиентам более 80 кресло-пультов
-              управления. Основываясь на большом опыте проектирования и изготовления кресло-пультов специалистами ООО «ЕИМ
-              инжениринг» отработана оптимальная конструкция колонок кресло-пультов и схема размещения оборудования
-              управления и сигнализации. При проектировании кресло-пульта за основу берется штатная электрическая схема
-              крана, сохраняются схемы соединений и маркировка электрических проводов, таким образом в большинстве случаев
-              замена штатного кресло-пульта на кресло-пульт производства ООО «ЕИМ инжениринг» без труда выполняется
-              специалистами Заказчика. Комплектность поставки кресло-пультов управления КПУ: </p>
+      </div>
+      <div class="content-block__item content-block__item--bg-right">
+        <div class="wrapper">
+          <div class="content-block__inner">
+            <div class="content-block__info content-block__info--lg">
+              <div class="content-block__text">
+                <p>При изготовлении кресло-пультов управления применяются высококачественные комплектующие ведущих
+                  отечественных и зарубежных производителей:</p>
+                <ul>
+                  <li>Командоконтроллеры и переключатели Gessmann;</li>
+                  <li>Аппаратура сигнализации и управления Eaton;</li>
+                  <li>Клеммные соединения и маркировка Klemsan.</li>
+                </ul>
+                <p>Возможно применение оборудования других производителей по желанию Заказчика. Технические данные
+                  кресло-пультов управления КПУ:</p>
+                <ul>
+                  <li>Температура эксплуатации –40…+60°С;</li>
+                  <li>Температура хранения –50…+80°С;</li>
+                  <li>Степень защиты IP54;</li>
+                  <li>Толщина металла колонок кресло-пульта 1,5 мм;</li>
+                  <li>Порошковая окраска RAL7032.</li>
+                </ul>
+              </div>
+            </div>
+            <figure class="content-block__figure content-block__figure--sm">
+              <img class="picture" src="img/content/pic-7.jpg" alt="pic">
+              <figcaption class="content-block__caption">Кресло-пульт КПУ-Б в кабине портального крана «Кондор», левая
+                рукоятка командоконтроллера управления механизмами подъема и замыкания с кнопками управления поворотной
+                крюковой подвеской.</figcaption>
+            </figure>
+          </div>
+          <section class="advantages">
+            <h3 class="advantages__title title">Преимущества</h3>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <svg class="advantages__icon" width="57" height="57">
+                  <use xlink:href="img/sprite.svg#icon-support"></use>
+                </svg>
+                <div class="advantages__text">Качественный сервис</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__icon" width="57" height="57">
+                  <use xlink:href="img/sprite.svg#icon-auto-repair-service"></use>
+                </svg>
+                <div class="advantages__text">Сборка из лучших комплектующих</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__icon" width="57" height="57">
+                  <use xlink:href="img/sprite.svg#icon-save-money"></use>
+                </svg>
+                <div class="advantages__text">Лучшая цена на современном рынке</div>
+              </li>
+            </ul>
+          </section>
+          <div class="content-block__inner">
+            <figure class="content-block__figure content-block__figure--sm">
+              <img class="picture" src="img/content/pic-3.jpg" alt="pic">
+              <figcaption class="content-block__caption">Командоконтроллер механизма подъема Gessmann в правой колонке
+                кресло-пульта КПУ-А</figcaption>
+            </figure>
+            <div class="content-block__info content-block__info--lg">
+              <p class="content-block__text">Стандартный кресло-пульт управления КПУ-А с шириной колонок 210 мм широко
+                применяется при замене штатных кресло-пультов на портальных кранах «Альбатрос» и «Сокол» производства
+                Kranbau
+                Eberswalde (TAKRAF), а также на мостовых и козловых кранах. Популярность кресло-пульта управления КПУ-А
+                обусловлена оптимальными габаритными размерами, удобством эксплуатации и технического обслуживания. В
+                комплекте с креслом крановщика KFS 4 кресло-пульт управления КПУ-А легко устанавливается в большинство
+                типов
+                кабин, а за счет механизма складывания кресла обеспечивается проход крановщика на рабочее место между
+                колонками кресло-пульта, что особенно актуально для узких кабин мостовых и портальных кранов.Для
+                применения
+                на
+                контейнерных кранах ООО «ЕИМ инжениринг» разработан стандартный кресло-пульт управления КПУ-Б с шириной
+                колонок 290 мм. Кресло-пульт КПУ-Б широко применяется при замене штатных кресло-пультов на портальных
+                кранах
+                «Кондор» производства Kranbau Eberswalde (TAKRAF).</p>
+            </div>
+
+          </div>
+          <div class="content-block__inner">
+            <div class="content-block__info content-block__info--lg">
+              <p class="content-block__text">ООО «ЕИМ инжениринг» изготовлено и поставлено клиентам более 80
+                кресло-пультов
+                управления. Основываясь на большом опыте проектирования и изготовления кресло-пультов специалистами ООО
+                «ЕИМ
+                инжениринг» отработана оптимальная конструкция колонок кресло-пультов и схема размещения оборудования
+                управления и сигнализации. При проектировании кресло-пульта за основу берется штатная электрическая схема
+                крана, сохраняются схемы соединений и маркировка электрических проводов, таким образом в большинстве
+                случаев
+                замена штатного кресло-пульта на кресло-пульт производства ООО «ЕИМ инжениринг» без труда выполняется
+                специалистами Заказчика. Комплектность поставки кресло-пультов управления КПУ: </p>
               <ul class="list-nomark">
                 <li>Левая и правая колонки;</li>
                 <li>Плита-основание;</li>
                 <li>Кресло крановщика.</li>
               </ul>
+            </div>
+            <figure class="content-block__figure content-block__figure--sm">
+              <img class="picture" src="img/content/pic-2.jpg" alt="pic">
+              <figcaption class="content-block__caption">Командоконтроллер механизма передвижения Gessmann в правой
+                колонке
+                кресло-пульта КПУ-А</figcaption>
+            </figure>
+            <div class="content-block__text content-block__text--full">Кресло-пульты производства ООО «ЕИМ инжениринг»
+              изготовлены в соответствии с техническими условиями ТУ 3458-001-13824760-2016. Нашими клиентами являются
+              морские
+              и речные порты, металлургические комбинаты, машиностроительные и краностроительные заводы.</div>
           </div>
-          <figure class="content-block__figure content-block__figure--sm">
-            <img class="picture" src="img/content/pic-2.jpg" alt="pic">
-            <figcaption class="content-block__caption">Командоконтроллер механизма передвижения Gessmann в правой колонке
-              кресло-пульта КПУ-А</figcaption>
-          </figure>
-          <div class="content-block__text content-block__text--full">Кресло-пульты производства ООО «ЕИМ инжениринг»
-            изготовлены в соответствии с техническими условиями ТУ 3458-001-13824760-2016. Нашими клиентами являются
-            морские
-            и речные порты, металлургические комбинаты, машиностроительные и краностроительные заводы.</div>
         </div>
+
       </div>
-      <div class="content-block__item">
-        <ul class="list-pic-2">
-          <li class="list-pic-2__item">
-            <div class="list-pic-2__inner">
-              <img class="list-pic-2__picture" src="img/content/pic-6.jpg" alt="pic">
-              <div class="list-pic-2__text">Кресло-пульт управления КПУ-А предназначен для установки на портальных кранах
-                «Альбатрос» ...</div>
-            </div>
-          </li>
-          <li class="list-pic-2__item">
-            <div class="list-pic-2__inner">
-              <img class="list-pic-2__picture" src="img/content/pic-5.jpg" alt="pic">
-              <div class="list-pic-2__text">Кресло-пульт управления КПУ-Б предназначен для установки на портальных кранах
-                «Кондор» ...</div>
-            </div>
-          </li>
-          <li class="list-pic-2__item">
-            <div class="list-pic-2__inner">
-              <img class="list-pic-2__picture" src="img/content/pic-4.jpg" alt="pic">
-              <div class="list-pic-2__text">Кресло-пульт управления КПУ-В предназначен для установки на кранах всех типов,
-                включая мостовые и козловые краны...</div>
-            </div>
-          </li>
-        </ul>
+      <div class="content-block__item content-block__item--bg-left">
+        <div class="wrapper">
+          <ul class="list-pic-2">
+            <li class="list-pic-2__item">
+              <div class="list-pic-2__inner">
+                <img class="list-pic-2__picture" src="img/content/pic-6.jpg" alt="pic">
+                <div class="list-pic-2__text">Кресло-пульт управления КПУ-А предназначен для установки на портальных
+                  кранах
+                  «Альбатрос» ...</div>
+              </div>
+            </li>
+            <li class="list-pic-2__item">
+              <div class="list-pic-2__inner">
+                <img class="list-pic-2__picture" src="img/content/pic-5.jpg" alt="pic">
+                <div class="list-pic-2__text">Кресло-пульт управления КПУ-Б предназначен для установки на портальных
+                  кранах
+                  «Кондор» ...</div>
+              </div>
+            </li>
+            <li class="list-pic-2__item">
+              <div class="list-pic-2__inner">
+                <img class="list-pic-2__picture" src="img/content/pic-4.jpg" alt="pic">
+                <div class="list-pic-2__text">Кресло-пульт управления КПУ-В предназначен для установки на кранах всех
+                  типов,
+                  включая мостовые и козловые краны...</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
