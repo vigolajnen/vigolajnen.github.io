@@ -1165,20 +1165,6 @@ img {
   text-align: left;
   background-color: #0E224F;
   min-height: 100vh; }
-  .promo--bg {
-    background-image: url("../img/promo/promo-375.jpg");
-    background-color: #0E224F;
-    background-repeat: no-repeat;
-    mix-blend-mode: color;
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: 50%; }
-    @media (min-width: 768px) {
-      .promo--bg {
-        background-image: url("../img/promo/promo-768.jpg"); } }
-    @media (min-width: 992px) {
-      .promo--bg {
-        background-image: url("../img/promo/promo-bg.jpg"); } }
   .promo__info {
     z-index: 3;
     position: relative;
