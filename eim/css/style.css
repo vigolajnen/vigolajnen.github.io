@@ -1838,7 +1838,7 @@ img {
     content: "";
     top: -15%;
     right: -35%;
-    background-image: url("../../img/content/circle-bg.svg");
+    background-image: url("../img/content/circle-bg.svg");
     background-repeat: no-repeat;
     -webkit-background-size: 35% 35%;
             background-size: 35%;
