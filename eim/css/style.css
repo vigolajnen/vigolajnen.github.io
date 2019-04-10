@@ -1163,14 +1163,27 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
+  background-image: url("../img/promo/promo-bg.jpg");
   background-color: #0E224F;
   min-height: 100vh; }
   .promo__info {
-    z-index: 3;
     position: relative;
+    width: 100%;
     display: block;
     margin: 0 auto;
     text-align: left; }
+    @media (min-width: 576px) {
+      .promo__info {
+        max-width: 440px; } }
+    @media (min-width: 769px) {
+      .promo__info {
+        max-width: 570px; } }
+    @media (min-width: 992px) {
+      .promo__info {
+        max-width: 670px; } }
+    @media (min-width: 1300px) {
+      .promo__info {
+        max-width: 850px; } }
   .promo__title {
     margin-bottom: 20px;
     font-family: "Montserrat", "Arial", sans-serif;
