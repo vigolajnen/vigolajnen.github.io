@@ -983,7 +983,7 @@ img {
     top: 0;
     right: 0;
     position: absolute; }
-    .navigation__item.logo:hover {
+    .navigation__item.logo a:hover {
       background-color: transparent; } }
 
 @media (min-width: 576px) {
