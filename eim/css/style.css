@@ -975,7 +975,7 @@ img {
 
 @media (max-width: 575px) {
   .navigation.navigation--opened .navigation__list {
-    height: 100vh;
+    min-height: 100vh;
     position: relative; } }
 
 @media (max-width: 575px) {
