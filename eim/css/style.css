@@ -685,6 +685,7 @@ img {
   font-size: 10px; }
   @media (min-width: 375px) {
     .page-footer__right.copyright {
+      font-size: -webkit-calc(0.56338vw + 7.88732px);
       font-size: calc(0.56338vw + 7.88732px); } }
   @media (min-width: 1440px) {
     .page-footer__right.copyright {
@@ -720,6 +721,7 @@ img {
   font-size: 16px; }
   @media (min-width: 375px) {
     .button--yellow {
+      font-size: -webkit-calc(0vw + 16px);
       font-size: calc(0vw + 16px); } }
   @media (min-width: 1440px) {
     .button--yellow {
@@ -740,6 +742,7 @@ img {
   font-size: 16px; }
   @media (min-width: 375px) {
     .button--blue-dark {
+      font-size: -webkit-calc(0.37559vw + 14.59155px);
       font-size: calc(0.37559vw + 14.59155px); } }
   @media (min-width: 1440px) {
     .button--blue-dark {
@@ -899,6 +902,7 @@ img {
   font-size: 14px; }
   @media (min-width: 375px) {
     .navigation__link {
+      font-size: -webkit-calc(0.18779vw + 13.29577px);
       font-size: calc(0.18779vw + 13.29577px); } }
   @media (min-width: 1440px) {
     .navigation__link {
@@ -1131,6 +1135,7 @@ img {
   font-size: 24px; }
   @media (min-width: 375px) {
     .title {
+      font-size: -webkit-calc(1.03286vw + 20.12676px);
       font-size: calc(1.03286vw + 20.12676px); } }
   @media (min-width: 1440px) {
     .title {
@@ -1146,6 +1151,7 @@ img {
   font-size: 20px; }
   @media (min-width: 375px) {
     .title-form {
+      font-size: -webkit-calc(1.40845vw + 14.71831px);
       font-size: calc(1.40845vw + 14.71831px); } }
   @media (min-width: 1440px) {
     .title-form {
@@ -1224,9 +1230,11 @@ img {
     font-size: 35px; }
     @media (min-width: 375px) {
       .promo__title {
+        font-size: -webkit-calc(2.34742vw + 26.19718px);
         font-size: calc(2.34742vw + 26.19718px); } }
     @media (min-width: 1440px) {
       .promo__title {
+        font-size: -webkit-calc(10vw - 84px);
         font-size: calc(10vw - 84px); } }
     @media (min-width: 1540px) {
       .promo__title {
@@ -1280,6 +1288,7 @@ img {
     font-size: 20px; }
     @media (min-width: 375px) {
       .promo__intro-item {
+        font-size: -webkit-calc(0.93897vw + 16.47887px);
         font-size: calc(0.93897vw + 16.47887px); } }
     @media (min-width: 1440px) {
       .promo__intro-item {
@@ -1310,6 +1319,7 @@ img {
     font-size: 18px; }
     @media (min-width: 480px) {
       .promo__text {
+        font-size: -webkit-calc(0.42254vw + 15.97183px);
         font-size: calc(0.42254vw + 15.97183px); } }
     @media (min-width: 1900px) {
       .promo__text {
@@ -1431,6 +1441,7 @@ img {
   font-size: 14px; }
   @media (min-width: 375px) {
     .about__title-sub {
+      font-size: -webkit-calc(0.37559vw + 12.59155px);
       font-size: calc(0.37559vw + 12.59155px); } }
   @media (min-width: 1440px) {
     .about__title-sub {
@@ -1448,6 +1459,7 @@ img {
   font-size: 14px; }
   @media (min-width: 375px) {
     .about ul {
+      font-size: -webkit-calc(0.37559vw + 12.59155px);
       font-size: calc(0.37559vw + 12.59155px); } }
   @media (min-width: 1440px) {
     .about ul {
@@ -1567,6 +1579,7 @@ img {
     margin-bottom: 20px; }
     @media (min-width: 768px) {
       .list-pic__item {
+        width: -webkit-calc(100% / 3 - 20px);
         width: calc(100% / 3 - 20px);
         margin-bottom: 30px; } }
   .list-pic__inner {
@@ -1591,6 +1604,7 @@ img {
     font-size: 14px; }
     @media (min-width: 375px) {
       .list-pic__title {
+        font-size: -webkit-calc(0.37559vw + 12.59155px);
         font-size: calc(0.37559vw + 12.59155px); } }
     @media (min-width: 1440px) {
       .list-pic__title {
@@ -1614,6 +1628,7 @@ img {
     text-decoration: none; }
     @media (min-width: 375px) {
       .list-pic__link {
+        font-size: -webkit-calc(0.18779vw + 13.29577px);
         font-size: calc(0.18779vw + 13.29577px); } }
     @media (min-width: 1440px) {
       .list-pic__link {
@@ -1681,6 +1696,7 @@ img {
     margin-bottom: 20px; }
     @media (min-width: 576px) {
       .list-pic-2__item {
+        width: -webkit-calc(100% / 3 - 20px);
         width: calc(100% / 3 - 20px);
         margin-bottom: 30px; } }
   .list-pic-2__inner {
@@ -1705,6 +1721,7 @@ img {
     font-size: 14px; }
     @media (min-width: 375px) {
       .list-pic-2__title {
+        font-size: -webkit-calc(0.37559vw + 12.59155px);
         font-size: calc(0.37559vw + 12.59155px); } }
     @media (min-width: 1440px) {
       .list-pic-2__title {
@@ -1778,6 +1795,7 @@ img {
     font-size: 12px; }
     @media (min-width: 375px) {
       .content-block__caption {
+        font-size: -webkit-calc(0.18779vw + 11.29577px);
         font-size: calc(0.18779vw + 11.29577px); } }
     @media (min-width: 1440px) {
       .content-block__caption {
@@ -1816,6 +1834,7 @@ img {
     font-size: 14px; }
     @media (min-width: 375px) {
       .content-block__text {
+        font-size: -webkit-calc(0.18779vw + 13.29577px);
         font-size: calc(0.18779vw + 13.29577px); } }
     @media (min-width: 1440px) {
       .content-block__text {
@@ -1914,6 +1933,7 @@ img {
   font-size: 14px; }
   @media (min-width: 375px) {
     .contact-block__address-item {
+      font-size: -webkit-calc(0.18779vw + 13.29577px);
       font-size: calc(0.18779vw + 13.29577px); } }
   @media (min-width: 1440px) {
     .contact-block__address-item {
@@ -1934,6 +1954,7 @@ img {
   font-size: 14px; }
   @media (min-width: 375px) {
     .contact-block__address-link {
+      font-size: -webkit-calc(0.18779vw + 13.29577px);
       font-size: calc(0.18779vw + 13.29577px); } }
   @media (min-width: 1440px) {
     .contact-block__address-link {
@@ -1950,6 +1971,7 @@ img {
   font-size: 16px; }
   @media (min-width: 375px) {
     .contact-block__text {
+      font-size: -webkit-calc(0.37559vw + 14.59155px);
       font-size: calc(0.37559vw + 14.59155px); } }
   @media (min-width: 1440px) {
     .contact-block__text {
@@ -2010,6 +2032,7 @@ img {
   font-size: 14px; }
   @media (min-width: 375px) {
     .form-contact__field {
+      font-size: -webkit-calc(0.18779vw + 13.29577px);
       font-size: calc(0.18779vw + 13.29577px); } }
   @media (min-width: 1440px) {
     .form-contact__field {
@@ -2078,6 +2101,7 @@ img {
     margin-bottom: 20px; }
     @media (min-width: 576px) {
       .advantages__item {
+        width: -webkit-calc(100% / 3 - 30px);
         width: calc(100% / 3 - 30px);
         margin-bottom: 0; } }
   .advantages__icon {
@@ -2108,6 +2132,7 @@ img {
   font-size: 10px; }
   @media (min-width: 375px) {
     .phone {
+      font-size: -webkit-calc(0.56338vw + 7.88732px);
       font-size: calc(0.56338vw + 7.88732px); } }
   @media (min-width: 1440px) {
     .phone {
