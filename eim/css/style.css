@@ -859,7 +859,7 @@ img {
           box-sizing: border-box; }
   @media (max-width: 425px) {
     .navigation__item:nth-child(2) {
-      margin-top: 60px; } }
+      margin-top: 80px; } }
   @media (min-width: 880px) {
     .navigation__item {
       margin-right: 15px; } }
