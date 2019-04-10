@@ -1389,6 +1389,10 @@ img {
             box-shadow: inset 0px 4px 4px rgba(194, 156, 1, 0.15);
     -webkit-border-radius: 5px;
             border-radius: 5px; }
+  @media (max-width: 767px) {
+    .form-order__btn {
+      display: block;
+      margin: 0 auto; } }
 
 .equipment__wrapper {
   max-width: 1180px;
@@ -1806,6 +1810,10 @@ img {
   padding: 20px 40px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  @media (max-width: 767px) {
+    .form-contact__button {
+      display: block;
+      margin: 0 auto; } }
 
 .advantages {
   display: block;

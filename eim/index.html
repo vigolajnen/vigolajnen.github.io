@@ -128,18 +128,18 @@
   <section class="form-order">
     <div class="form-order__wrapper wrapper">
       <h3 class="form-order__title title-form">Заполните форму обратной связи</h3>
-      <form action="" class="form-order__form">
+      <form class="form-order__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-order__item">
           <label for="form-name" class="visually-hidden">Ваше имя</label>
-          <input id="form-name" class="form-order__input" type="text" placeholder="Ваше имя">
+          <input id="form-name" class="form-order__input" name="form-name" type="text" placeholder="Ваше имя" required="">
         </div>
         <div class="form-order__item">
           <label for="form-surname" class="visually-hidden">Фамилия</label>
-          <input id="form-surname" class="form-order__input" type="text" placeholder="Фамилия">
+          <input id="form-surname" class="form-order__input" name="form-surname" type="text" placeholder="Фамилия" required="">
         </div>
         <div class="form-order__item">
           <label for="form-phone" class="visually-hidden">Номер телефона</label>
-          <input id="form-phone" class="form-order__input" type="tel" placeholder="Номер телефона">
+          <input id="form-phone" class="form-order__input" name="form-phone" type="tel" placeholder="Номер телефона" required="">
         </div>
         <div class="form-order__item">
           <button class="form-order__btn button button--blue-dark" type="submit">Отправить</button>
@@ -379,19 +379,22 @@
         </div>
         <div class="contact-block__form">
           <p class="contact-block__text">Остались вопросы? Напишите нам</p>
-          <form class="form-contact" action="" method="POST">
+          <form class="form-contact" action="https://echo.htmlacademy.ru" method="post">
             <ul class="form-contact__list">
               <li class="form-contact__item">
                 <label for="fc-name" class="visually-hidden">Ваше имя</label>
-                <input class="form-contact__field" id="fc-name" type="text" placeholder="Ваше имя">
+                <input class="form-contact__field" id="fc-name" name="fc-name" type="text" placeholder="Ваше имя"
+                  required="">
               </li>
               <li class="form-contact__item">
                 <label for="fc-surname" class="visually-hidden">Фамилия</label>
-                <input class="form-contact__field" id="fc-surname" type="text" placeholder="Фамилия">
+                <input class="form-contact__field" id="fc-surname" name="fc-surname" type="text" placeholder="Фамилия"
+                  required="">
               </li>
               <li class="form-contact__item">
                 <label for="fc-phone" class="visually-hidden">Номер телефона</label>
-                <input class="form-contact__field" id="fc-phone" type="tel" placeholder="Номер телефона">
+                <input class="form-contact__field" id="fc-phone" name="fc-phone" type="tel" placeholder="Номер телефона"
+                  required="">
               </li>
               <li class="form-contact__item">
                 <label for="fc-message" class="visually-hidden">Текст вопроса</label>
