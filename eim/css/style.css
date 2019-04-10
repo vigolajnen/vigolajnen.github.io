@@ -963,9 +963,10 @@ img {
     width: 100%;
     overflow: hidden; }
   .navigation.navigation--opened .navigation__list {
-    height: auto;
+    height: 100%;
     width: 327px;
     max-width: 100%;
+    overflow-y: scroll;
     background: -webkit-gradient(linear, left top, left bottom, from(#E7F0FC), to(#FFFFFF));
     background: -webkit-linear-gradient(top, #E7F0FC 0%, #FFFFFF 100%);
     background: -o-linear-gradient(top, #E7F0FC 0%, #FFFFFF 100%);
