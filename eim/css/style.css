@@ -1663,6 +1663,11 @@ img {
     @media (min-width: 1440px) {
       .list-pic__link {
         font-size: 16px; } }
+    .list-pic__link:hover {
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      text-decoration: underline; }
   .list-pic__box-picture {
     position: relative;
     max-height: 300px;
@@ -2261,6 +2266,9 @@ img {
       .popup-order__button {
         margin-left: auto; } }
     .popup-order__button:hover {
+      -webkit-transition: 0.7s;
+      -o-transition: 0.7s;
+      transition: 0.7s;
       -webkit-box-shadow: none;
               box-shadow: none; }
   .popup-order__bottom {
