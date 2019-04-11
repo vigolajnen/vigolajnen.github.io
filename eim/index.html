@@ -17,7 +17,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="">
   <meta name="twitter:title" content="">
-  <link rel="icon" href="img/favicon.png" type="image/x-icon">
   <!-- 
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -123,8 +122,7 @@
       <h2 class="title">О компании</h2>
       <div class="about__inner">
         <div class="about__left">
-          <h3 class="about__title-sub">ООО «ЕИМ инжениринг» является изготовителем кресло-пультов управления для всех
-            типов кранов, в том числе:
+          <h3 class="about__title-sub">ООО «ЕИМ инжениринг» является изготовителем кресло-пультов управления для всех типов кранов, в том числе:
           </h3>
           <ul>
             <li>Перегрузочные краны;</li>
@@ -139,15 +137,7 @@
           </ul>
         </div>
         <div class="about__right">
-          <!-- <img class="picture" src="img/about/about.jpg" alt="pic"> -->
-
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 769px)" srcset="img/about/about.webp">
-            <source type="image/webp" srcset="img/about/about-mob.webp"> -->
-
-            <source media="(min-width: 769px)" srcset="img/about/about.jpg">
-            <img class="picture" src="img/about/about-mob.jpg" alt="pic">
-          </picture>
+          <img class="picture" src="img/about/about.jpg" alt="pic">
         </div>
       </div>
     </div>
@@ -185,6 +175,7 @@
               <div class="list-pic__box-picture list-pic__box-picture--one">
                 <img class="list-pic__picture" src="img/equipment/equipment-1.png" alt="equipment">
               </div>
+
               <a class="list-pic__title" href="#">Кресло-пульт управления КПУ-А</a>
               <div class="list-pic__text">Кресло-пульт управления КПУ-А предназначен для установки на портальных кранах
                 «Альбатрос» ...</div>
@@ -436,13 +427,12 @@
         </ul>
       </div>
       <div class="contact-block__map-and-form">
-        <div class="contact-block__map map">
-          <div id="map"></div>
-          <!-- <div class="">
+        <div class="contact-block__map">
+          <div class="">
             <iframe class="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2236.6934196040456!2d37.521111015808884!3d55.902676087890455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b539d1829338b7%3A0xbe0b668487b17a2b!2s127644!5e0!3m2!1sru!2sru!4v1554817740661!5m2!1sru!2sru"
               width="600" height="550" style="border:0" allowfullscreen></iframe>
-          </div> -->
+          </div>
         </div>
         <div class="contact-block__form">
           <p class="contact-block__text">Остались вопросы? Напишите нам</p>
@@ -492,18 +482,18 @@
 
   <div class="popup-overlay">
     <section class="popup popup-order">
+      <button class="button popup-close" aria-label="Закрыть окно"></button>
       <div class="popup-order__wrapper">
-        <button class="button popup-close" aria-label="Закрыть окно"></button>
-        <h3 class="popup-order__title">Закажите обратный звонок</h3>
+        <h3 class="popup-order__title title">Закажите обратный звонок</h3>
         <form class="popup-order__form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="popup-order__list">
             <li class="popup-order__item">
-              <label class="visually-hidden" for="name">Ваше имя</label>
-              <input class="popup-order__input" id="name" type="text" name="name" placeholder="Ваше имя" required>
+              <label class="visually-hidden" for="name">ФИО</label>
+              <input class="popup-order__input" id="name" type="text" name="name" placeholder="ФИО*" required>
             </li>
             <li class="popup-order__item">
-                <label class="visually-hidden" for="surname">Фамилия</label>
-                <input class="popup-order__input" id="surname" type="text" name="surname" placeholder="Фамилия" required>
+                <label class="visually-hidden" for="name">ФИО</label>
+                <input class="popup-order__input" id="name" type="text" name="name" placeholder="ФИО*" required>
               </li>
             <li class="popup-order__item">
               <label class="visually-hidden" for="phone">Контактный телефон*</label>
@@ -514,8 +504,7 @@
           <div class="popup-order__bottom">
             <!-- <p class="policy-text">Отправляя заявку, я подтверждаю,что ознакомлен и согласен с <a href="#">Политикой
                 конфиденциальности</a> данного сайта</p> -->
-            <button class="button button--blue-dark button-order popup-order__button" type="submit">Отправить</button>
-            <div class="popup-order__text">Мы Вам перезвоним</div>
+            <button class="button button--yellow button-order popup-order__button" type="submit">Отправить заявку</button>
           </div>
         </form>
       </div>
@@ -527,13 +516,6 @@
   <script>
     svg4everybody();
   </script>
-
-  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5yUe9FAKioTSGs8OXzRMBPUMtzWNjHx4&callback=initMap"
-    async defer></script>
-
-  <script src="js/map.min.js"></script>
 
 </body>
 
