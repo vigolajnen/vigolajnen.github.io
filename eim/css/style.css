@@ -1709,6 +1709,13 @@ img {
     @media (min-width: 992px) {
       .list-pic__picture {
         min-height: 250px; } }
+    .list-pic__picture:hover {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
 
 .list-pic-2 {
   padding: 0;
