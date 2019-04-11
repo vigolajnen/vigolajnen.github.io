@@ -1896,7 +1896,7 @@ img {
   .content-block__item--bg-left .wrapper::before {
     position: absolute;
     content: "";
-    top: -23%;
+    top: -20%;
     right: -99%;
     background-image: url("../img/content/circle-bg.png");
     background-repeat: no-repeat;
