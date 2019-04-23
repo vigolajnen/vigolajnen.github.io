@@ -998,7 +998,7 @@ img {
     top: -15px;
     left: 0;
     background-image: url(../img/sprite-png.png);
-    background-position: -925px -922px;
+    background-position: -959px -956px;
     width: 24px;
     height: 24px; }
 
@@ -1057,7 +1057,7 @@ img {
     left: 0;
     z-index: 1;
     background-image: url(../img/sprite-png.png);
-    background-position: -1109px -1106px;
+    background-position: -1065px -1062px;
     width: 34px;
     height: 34px;
     -webkit-transform: rotate(90deg) translateY(-50%);
@@ -1877,7 +1877,7 @@ img {
       left: 0;
       width: 100%;
       height: 13px;
-      background-image: url("../../img/product/pr-br-top.png"); }
+      background-image: url("../img/product/pr-br-top.png"); }
     .product--br::after {
       position: absolute;
       content: "";
@@ -1885,7 +1885,7 @@ img {
       left: 0;
       width: 100%;
       height: 17px;
-      background-image: url("../../img/product/pr-br-bm.png"); }
+      background-image: url("../img/product/pr-br-bm.png"); }
   .product--br-blue {
     position: relative;
     background-color: #f7faff; }
@@ -1896,7 +1896,7 @@ img {
       left: 0;
       width: 100%;
       height: 13px;
-      background-image: url("../../img/product/pr-br-top-2.png"); }
+      background-image: url("../img/product/pr-br-top-2.png"); }
     .product--br-blue::after {
       position: absolute;
       content: "";
@@ -1904,7 +1904,7 @@ img {
       left: 0;
       width: 100%;
       height: 17px;
-      background-image: url("../../img/product/pr-br-bm-2.png"); }
+      background-image: url("../img/product/pr-br-bm-2.png"); }
   .product__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1928,7 +1928,7 @@ img {
         left: -16px;
         width: 10px;
         height: 104%;
-        background-image: url("../../img/product/pr-br-left.png");
+        background-image: url("../img/product/pr-br-left.png");
         background-repeat: repeat-y;
         -webkit-background-size: cover;
                 background-size: cover; }
@@ -1939,7 +1939,7 @@ img {
         right: -12px;
         height: 104%;
         width: 10px;
-        background-image: url("../../img/product/pr-br-right.png");
+        background-image: url("../img/product/pr-br-right.png");
         background-repeat: repeat-y;
         -webkit-background-size: cover;
                 background-size: cover; }
@@ -1952,7 +1952,7 @@ img {
         left: -16px;
         width: 10px;
         height: 104%;
-        background-image: url("../../img/product/pr-br-left-2.png");
+        background-image: url("../img/product/pr-br-left-2.png");
         background-repeat: repeat-y;
         -webkit-background-size: cover;
                 background-size: cover; }
@@ -1963,7 +1963,7 @@ img {
         right: -12px;
         height: 104%;
         width: 10px;
-        background-image: url("../../img/product/pr-br-right-2.png");
+        background-image: url("../img/product/pr-br-right-2.png");
         background-repeat: repeat-y;
         -webkit-background-size: cover;
                 background-size: cover; }
@@ -2173,7 +2173,7 @@ img {
   @media (min-width: 769px) {
     .navigation-promo__link--icon-1::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -627px -624px;
+      background-position: -659px -656px;
       width: 22px;
       height: 22px; } }
 
@@ -2185,7 +2185,7 @@ img {
   @media (min-width: 769px) {
     .navigation-promo__link--icon-2::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -531px -528px;
+      background-position: -691px -688px;
       width: 22px;
       height: 22px; } }
 
@@ -2197,19 +2197,19 @@ img {
   @media (min-width: 769px) {
     .navigation-promo__link--icon-3::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -499px -496px;
+      background-position: -403px -400px;
       width: 22px;
       height: 22px; } }
 
 .navigation-promo__link--icon-4::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -3036px -3006px;
+  background-position: -2826px -2796px;
   width: 60px;
   height: 60px; }
   @media (min-width: 769px) {
     .navigation-promo__link--icon-4::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -467px -464px;
+      background-position: -435px -432px;
       width: 22px;
       height: 22px; } }
 
@@ -2221,13 +2221,13 @@ img {
   @media (min-width: 769px) {
     .navigation-promo__link--icon-5::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -435px -432px;
+      background-position: -467px -464px;
       width: 22px;
       height: 22px; } }
 
 .navigation-promo__link--icon-6::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -3176px -3146px;
+  background-position: -2966px -2936px;
   width: 60px;
   height: 60px; }
   @media (min-width: 769px) {
@@ -2239,25 +2239,25 @@ img {
 
 .navigation-promo__link--icon-7::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -2826px -2796px;
+  background-position: -3176px -3146px;
   width: 60px;
   height: 60px; }
   @media (min-width: 769px) {
     .navigation-promo__link--icon-7::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -723px -720px;
+      background-position: -595px -592px;
       width: 22px;
       height: 22px; } }
 
 .navigation-promo__link--icon-8::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -2966px -2936px;
+  background-position: -3036px -3006px;
   width: 60px;
   height: 60px; }
   @media (min-width: 769px) {
     .navigation-promo__link--icon-8::before {
       background-image: url(../img/sprite-png.png);
-      background-position: -659px -656px;
+      background-position: -627px -624px;
       width: 22px;
       height: 22px; } }
 
@@ -2460,73 +2460,73 @@ img {
 
 .social__link--vk::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1503px -1500px;
+  background-position: -1453px -1450px;
   width: 40px;
   height: 40px; }
 
 .social__link--inst::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1603px -1600px;
+  background-position: -1653px -1650px;
   width: 40px;
   height: 40px; }
 
 .social__link--fb::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1403px -1400px;
+  background-position: -1353px -1350px;
   width: 40px;
   height: 40px; }
 
 .social__link--wp::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1703px -1700px;
+  background-position: -1503px -1500px;
   width: 40px;
   height: 40px; }
 
 .social__link--phone::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1303px -1300px;
+  background-position: -1253px -1250px;
   width: 40px;
   height: 40px; }
 
 .social__link--telegram::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1353px -1350px;
+  background-position: -1703px -1700px;
   width: 40px;
   height: 40px; }
 
 .social__link--vk:hover::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1553px -1550px;
+  background-position: -1303px -1300px;
   width: 40px;
   height: 40px; }
 
 .social__link--inst:hover::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1653px -1650px;
+  background-position: -1603px -1600px;
   width: 40px;
   height: 40px; }
 
 .social__link--fb:hover::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1453px -1450px;
+  background-position: -1153px -1150px;
   width: 40px;
   height: 40px; }
 
 .social__link--wp:hover::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1253px -1250px;
+  background-position: -1403px -1400px;
   width: 40px;
   height: 40px; }
 
 .social__link--phone:hover::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1203px -1200px;
+  background-position: -1553px -1550px;
   width: 40px;
   height: 40px; }
 
 .social__link--telegram:hover::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -1153px -1150px;
+  background-position: -1203px -1200px;
   width: 40px;
   height: 40px; }
 
@@ -2679,7 +2679,7 @@ img {
           -ms-transform: rotate(180deg) translateY(50%);
               transform: rotate(180deg) translateY(50%);
       background-image: url(../img/sprite-png.png);
-      background-position: -82px -78px;
+      background-position: -60px -56px;
       width: 12px;
       height: 12px; }
   .popup-order__bottom {
@@ -2859,7 +2859,7 @@ img {
           -ms-transform: rotate(180deg) translateY(50%);
               transform: rotate(180deg) translateY(50%);
       background-image: url(../img/sprite-png.png);
-      background-position: -82px -78px;
+      background-position: -60px -56px;
       width: 12px;
       height: 12px; }
   .form__bottom {
@@ -3243,7 +3243,7 @@ img {
 
 .block-order__item--icon-1::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -8286px -7430px;
+  background-position: -7686px -6830px;
   width: 190px;
   height: 190px; }
 
@@ -3255,19 +3255,19 @@ img {
 
 .block-order__item--icon-3::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -7886px -7030px;
+  background-position: -8286px -7430px;
   width: 190px;
   height: 190px; }
 
 .block-order__item--icon-4::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -7686px -6830px;
+  background-position: -8086px -7230px;
   width: 190px;
   height: 190px; }
 
 .block-order__item--icon-5::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -8086px -7230px;
+  background-position: -7886px -7030px;
   width: 190px;
   height: 190px; }
 
@@ -3554,37 +3554,37 @@ img {
 
 .advantages__item--icon-1::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -6266px -5610px;
+  background-position: -7026px -6370px;
   width: 180px;
   height: 180px; }
 
 .advantages__item--icon-2::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -7026px -6370px;
+  background-position: -6646px -5990px;
   width: 180px;
   height: 180px; }
 
 .advantages__item--icon-3::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -6076px -5420px;
+  background-position: -6266px -5610px;
   width: 180px;
   height: 180px; }
 
 .advantages__item--icon-4::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -6836px -6180px;
+  background-position: -6076px -5420px;
   width: 180px;
   height: 180px; }
 
 .advantages__item--icon-5::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -6456px -5800px;
+  background-position: -6836px -6180px;
   width: 180px;
   height: 180px; }
 
 .advantages__item--icon-6::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -6646px -5990px;
+  background-position: -6456px -5800px;
   width: 180px;
   height: 180px; }
 
@@ -3624,7 +3624,7 @@ img {
     left: 0;
     width: 100%;
     height: 10px;
-    background-image: url("../../img/stock/br-top.png"); }
+    background-image: url("../img/stock/br-top.png"); }
   .stock__inner::after {
     position: absolute;
     content: "";
@@ -3632,7 +3632,7 @@ img {
     left: 0;
     width: 100%;
     height: 10px;
-    background-image: url("../../img/stock/br-bm.png"); }
+    background-image: url("../img/stock/br-bm.png"); }
   @media (min-width: 768px) {
     .stock__inner {
       padding-bottom: 130px; } }
@@ -3660,7 +3660,7 @@ img {
     left: -8px;
     width: 10px;
     height: 100%;
-    background-image: url("../../img/stock/br-left.png");
+    background-image: url("../img/stock/br-left.png");
     background-repeat-y: repeat; }
   .stock__inner-br::after {
     position: absolute;
@@ -3669,7 +3669,7 @@ img {
     right: -6px;
     width: 10px;
     height: 100%;
-    background-image: url("../../img/stock/br-right.png");
+    background-image: url("../img/stock/br-right.png");
     background-repeat-y: repeat; }
 
 .stock__info {
