@@ -43,7 +43,7 @@
         </svg>
         <span class="visually-hidden">ссылка назад</span>
       </a>
-      <div class="mobile-header__title title">Лендинг за 48 часов</div>
+      <div class="mobile-header__title">Лендинг за 48 часов</div>
     </div>
   </header>
 
@@ -191,9 +191,48 @@
           <p>Изготовление лендинга для любой отрасли на платформе битрикс за 48 часов.</p>
         </div>
         <div class="item__links">
-          <div class="item__raiting"></div>
-          <div class="item__review"></div>
-          <div class="item__order"></div>
+          <div class="item__rating">
+            <ul class="rating">
+              <li class="rating__item rating__item--active" data-rate="1">
+                <svg class="rating__icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="rating__item" data-rate="2">
+                <svg class="rating__icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="rating__item" data-rate="3">
+                <svg class="rating__icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="rating__item" data-rate="4">
+                <svg class="rating__icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="rating__item" data-rate="5">
+                <svg class="rating__icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <div class="item__rating-counter">
+              <span class="item__rating-num">5.0</span> (40 голосов)</div>
+          </div>
+          <div class="item__review">
+            <a href="" class="item__review-link">Отзывы</a>
+          </div>
+          <div class="item__order">
+            <a class="item__order-link" href="#">
+              <svg class="item__order-icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <div><span class="item__order-counter">20</span> заказов</div>
+            </a>
+          </div>
         </div>
         <div class="item__markers">
           <div class="item__marker">
@@ -217,11 +256,24 @@
         </div>
         <div class="item__price">
           <ul class="item__price-list">
-            <li class="item__price-item">Цена предложения: <span class="item__price-val item__price-val--old">135.000
-                руб.</span></li>
-            <li class="item__price-item">Цена со скидкой: <span class="item__price-val item__price-val--sale">110.000
-                руб.</span></li>
-            <li class="item__price-item">Срок изготовления: <span class="item__price-val">2 рабочих дня</span></li>
+            <li class="item__price-item">
+              <div class="item__price-name">Цена предложения:</div>
+              <div class="item__price-val item__price-val--old">135.000 руб.</div>
+            </li>
+            <li class="item__price-item">
+              <div class="item__price-name">Цена со скидкой:</div>
+              <div class="item__price-val">
+                <div class="item__price-num">110.000 руб.</div>
+                <div class="item__price-info">
+                  <div class="item__price-text">Скидка: <b>25 000 р.</b></div>
+                  <div class="item__price-day">Осталось: 3 дня</div>
+                </div>
+              </div>
+            </li>
+            <li class="item__price-item">
+              <div class="item__price-name">Срок изготовления:</div>
+              <div class="item__price-val">2 рабочих дня</div>
+            </li>
           </ul>
         </div>
         <div class="item__buttons">
@@ -824,7 +876,7 @@
           <div class="block-order__text">Мы гарантируем получение результата в указанный в услуге срок</div>
         </li>
       </ul>
-      <a class="block-order__link link-button link-button--green" href="#">Перейти в каталог</a>
+      <a class="block-order__link link-button link-button--green" href="catalog.html">Перейти в каталог</a>
     </div>
   </section>
 
