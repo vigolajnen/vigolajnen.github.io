@@ -122,36 +122,23 @@
         <form class="search-form" action="">
           <div class="search-form__item">
             <label for="search" class="visually-hidden">Поиск</label>
-            <input
-              class="search-form__val"
-              type="text"
-              name="search"
-              id="search"
-              placeholder="Начните вводить текст..."
-            />
-          </div>
-          <div class="search-form__item" id="select-4">
-            <select
-              class="search-form__select custom-select js-size select select-4"
-              aria-placeholder="Все категории"
-            >
-              <option value="Все категории">Все категории</option>
-              <option value="Дизайн и Арт">Дизайн и Арт</option>
-              <option value="Разработка сайтов">Разработка сайтов</option>
-              <option value="Программирование">Программирование</option>
-              <option value="Реклама и продвижение">Реклама и продвижение</option>
-              <option value="Полиграфия">Полиграфия</option>
-              <option value="Мобильные приложения">Мобильные приложения</option>
-              <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
-              <option value="Производство видео">Производство видео</option>
-            </select>
+            <input class="search-form__val" type="text" name="search" id="search" placeholder="Начните вводить текст..." />
           </div>
           <div class="search-form__item">
-            <button
-              class="search-form__button button"
-              type="search"
-              aria-label="Поиск"
-            >
+            <div id="select-4">
+              <select class="search-form__select custom-select js-size select select-4" aria-placeholder="Все категории">
+                <option value="Все категории">Все категории</option>
+                <option value="Дизайн и Арт">Дизайн и Арт</option>
+                <option value="Разработка сайтов">Разработка сайтов</option>
+                <option value="Программирование">Программирование</option>
+                <option value="Реклама и продвижение">Реклама и продвижение</option>
+                <option value="Полиграфия">Полиграфия</option>
+                <option value="Мобильные приложения">Мобильные приложения</option>
+                <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
+                <option value="Производство видео">Производство видео</option>
+              </select>
+            </div>
+            <button class="search-form__button button" type="search" aria-label="Поиск">
               <svg class="search-form__icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-022-musica-searcher"></use>
               </svg>
