@@ -44,7 +44,7 @@
         </svg>
         <span class="visually-hidden">ссылка назад</span>
       </a>
-      <div class="mobile-header__title title">Мои подарки</div>
+      <div class="mobile-header__title">Мои подарки</div>
     </div>
   </header>
 
@@ -91,7 +91,7 @@
       <div class="page-header__item">
         <div class="logo">
           <a class="logo__link" href="index.html">
-            <img class="logo__pic" src="img/logo.svg" alt="логотип" />
+            <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="логотип" />
           </a>
         </div>
       </div>
@@ -105,16 +105,14 @@
               <a class="navigation-top__link" href="#">Помощь</a>
             </li>
             <li class="navigation-top__item">
-              <a class="navigation-top__link" href="about-project.html"
-                >О проекте</a>
+              <a class="navigation-top__link" href="about-project.html">О проекте</a>
             </li>
             <li class="navigation-top__item phone">
               <a class="phone__link" href="tel:+78008887766">
                 <svg class="phone__icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
                 </svg>
-                <span>+7 800 888 77 66</span></a
-              >
+                <span>+7 800 888 77 66</span></a>
             </li>
           </ul>
         </nav>
@@ -122,22 +120,23 @@
         <form class="search-form" action="">
           <div class="search-form__item">
             <label for="search" class="visually-hidden">Поиск</label>
-            <input class="search-form__val" type="text" name="search" id="search" placeholder="Начните вводить текст..." />
+            <input class="search-form__val" type="text" name="search" id="search"
+              placeholder="Начните вводить текст..." />
           </div>
-          <div class="search-form__item">
-            <div id="select-4">
-              <select class="search-form__select custom-select js-size select select-4" aria-placeholder="Все категории">
-                <option value="Все категории">Все категории</option>
-                <option value="Дизайн и Арт">Дизайн и Арт</option>
-                <option value="Разработка сайтов">Разработка сайтов</option>
-                <option value="Программирование">Программирование</option>
-                <option value="Реклама и продвижение">Реклама и продвижение</option>
-                <option value="Полиграфия">Полиграфия</option>
-                <option value="Мобильные приложения">Мобильные приложения</option>
-                <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
-                <option value="Производство видео">Производство видео</option>
-              </select>
-            </div>
+          <div class="search-form__item" id="select-4">
+
+            <select class="search-form__select custom-select js-size select select-4" aria-placeholder="Все категории">
+              <option value="Все категории">Все категории</option>
+              <option value="Дизайн и Арт">Дизайн и Арт</option>
+              <option value="Разработка сайтов">Разработка сайтов</option>
+              <option value="Программирование">Программирование</option>
+              <option value="Реклама и продвижение">Реклама и продвижение</option>
+              <option value="Полиграфия">Полиграфия</option>
+              <option value="Мобильные приложения">Мобильные приложения</option>
+              <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
+              <option value="Производство видео">Производство видео</option>
+            </select>
+
             <button class="search-form__button button" type="search" aria-label="Поиск">
               <svg class="search-form__icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-022-musica-searcher"></use>
@@ -167,9 +166,7 @@
             </svg>
             <div class="cabinet-user__inner">
               <a class="cabinet-user__login" href="login.html">Войти</a>
-              <a class="cabinet-user__reg" href="registration.html"
-                >Регистрация</a
-              >
+              <a class="cabinet-user__reg" href="registration.html">Регистрация</a>
             </div>
           </div>
         </div>
@@ -183,18 +180,27 @@
     <div class="promo-inner">
       <nav class="promo-inner__nav navigation-promo">
         <ul class="navigation-promo__list">
-          <li class="navigation-promo__item">
+          <li class="navigation-promo__item navigation-promo__item--active">
             <a class="navigation-promo__link navigation-promo__link--icon-1" href="cabinet.html">
+              <svg class="navigation-promo__icon navigation-promo__icon--pink" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-user-1"></use>
+              </svg>
               <span class="navigation-promo__name">Общая информация</span>
             </a>
           </li>
           <li class="navigation-promo__item">
             <a class="navigation-promo__link navigation-promo__link--icon-2" href="cabinet.2.html">
+              <svg class="navigation-promo__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-024-document"></use>
+              </svg>
               <span class="navigation-promo__name">Мои заказы</span>
             </a>
           </li>
-          <li class="navigation-promo__item navigation-promo__item--active">
+          <li class="navigation-promo__item">
             <a class="navigation-promo__link navigation-promo__link--icon-3" href="cabinet.1.html">
+              <svg class="navigation-promo__icon navigation-promo__icon--orange" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-013-gift"></use>
+              </svg>
               <span class="navigation-promo__name">Мои подарки</span>
             </a>
           </li>
@@ -206,8 +212,10 @@
           <a class="breadcrumbs__link">Личный кабинет</a>
           <a class="breadcrumbs__link">Мои подарки</a>
         </div>
-        <h1 class="promo-inner__title title-inner">Личный кабинет</h1>
-        <h2 class="">Мои подарки</h2>
+        <div class="promo-inner__header">
+          <h1 class="promo-inner__title title-inner">Личный кабинет</h1>
+          <h2 class="">Мои подарки</h2>
+        </div>
         <section class="presents">
           <div class="presents__inner">
             <div class="presents__header">
@@ -251,7 +259,7 @@
                     <div class="present__price">0 Р</div>
                   </div>
                   <div class="present__status">
-                    <button class="button button--green" data-id="js-popup-btn-mob">Получить</button>
+                    <button class="button link-button link-button--green" data-id="js-popup-btn-mob">Получить</button>
                   </div>
                 </div>
 
@@ -269,7 +277,7 @@
     <div class="page-footer__wrapper wrapper">
       <div class="page-footer__item">
         <a class="page-footer__logo logo" href="#">
-          <img class="logo__pic" src="img/logo.svg" alt="logo">
+          <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="logo">
         </a>
         <div class="page-footer__phone phone">
           <a class="phone__link" href="tel:+78008887766">
@@ -405,7 +413,7 @@
           <ul class="popup-order__list">
             <li class="popup-order__item">
               <label class="visually-hidden" for="select-1">Выберите модуль</label>
-              <div class="search-form__item" id="select-1">
+              <div class="popup-order__select" id="select-1">
                 <select class="search-form__select custom-select js-size select select-1">
                   <option value="Все категории">Выберите модуль</option>
                   <option value="Дизайн и Арт">Дизайн и Арт</option>
@@ -421,7 +429,7 @@
             </li>
             <li class="popup-order__item">
               <label class="visually-hidden" for="select-2">Выберите сайт для установки</label>
-              <div class="search-form__item" id="select-2">
+              <div class="popup-order__select" id="select-2">
                 <select class="search-form__select custom-select js-size select select-2">
                   <option value="Все категории">Выберите сайт для установки</option>
                   <option value="Дизайн и Арт">Дизайн и Арт</option>
@@ -437,7 +445,7 @@
             </li>
           </ul>
           <div class="popup-order__bottom">
-            <button class="button button--blue popup-order__button" type="submit">Получить</button>
+            <button class="button link-button popup-order__button" type="submit">Получить</button>
             <button class="button popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
           </div>
         </form>
