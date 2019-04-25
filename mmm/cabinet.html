@@ -212,14 +212,15 @@
           <a class="breadcrumbs__link">Личный кабинет</a>
         </div>
         <div class="promo-inner__header">
-          <h1 class="promo-inner__title title-inner">Личный кабинет</h1>
+          <h1 class="promo-inner__title title">Личный кабинет</h1>
         </div>
 
 
         <div class="profile">
           <div class="profile__pic">
             <img class="profile__img" src="img/profile/user.png" alt="pic">
-            <input class="profile__foto" type="file" placeholder="Загрузить фото">
+            <!-- <input class="profile__foto" type="file" placeholder="Загрузить фото"> -->
+            <a class="profile__link" href="#">Загрузить фото</a>
           </div>
           <div class="profile__info">
             <div class="profile__title">Информация о пользователе</div>
@@ -245,7 +246,7 @@
           </div>
           <div class="profile__company">
             <h3 class="profile__title-2">Мои компании</h3>
-            <table class="profile__table table">
+            <table class="profile__table table table-company">
               <thead class="table__head">
                 <tr class="table__row">
                   <td class="table__title">Компания, Бернд</td>
@@ -258,17 +259,17 @@
               </thead>
               <tbody>
                 <tr class="table__row">
-                  <td class="table__val">ООО Авалон</td>
-                  <td class="table__val">
+                  <td class="table__val" data-name="Компания, Бернд:">ООО Авалон</td>
+                  <td class="table__val" data-name="Юр. название компании:">
                     <a class="table__link" href="#">ИП Островский</a>
                   </td>
-                  <td class="table__val">
+                  <td class="table__val" data-name="Сайт:">
                     <a class="table__link" href="www.avalon.spb.ru" target="_blank">www.avalon.spb.ru</a>
                   </td>
-                  <td class="table__val">Санкт-Петербург, ул. Красновская, 23</td>
-                  <td class="table__val table__val--tel">+7 (495) 2308900</td>
-                  <td class="table__val">
-                    <button class="button" type="button" aria-label="Редактировать компанию">
+                  <td class="table__val" data-name="Адрес:">Санкт-Петербург, ул. Красновская, 23</td>
+                  <td class="table__val table__val--tel" data-name="Телефон:">+7 (495) 2308900</td>
+                  <td class="table__val" data-name="Действия:">
+                    <button class="button" type="button" aria-label="Редактировать компанию" data-id="js-popup-btn-mob">
                       <svg class="button__icon" width="20" height="20">
                         <use xlink:href="img/sprite.svg#icon-018-pencil-edit-button"></use>
                       </svg>
@@ -281,16 +282,16 @@
                   </td>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__val">ООО Авалон</td>
-                  <td class="table__val">
+                  <td class="table__val" data-name="Компания, Бернд:">ООО Авалон</td>
+                  <td class="table__val" data-name="Юр. название компании:">
                     <a class="table__link" href="#">ИП Островский</a>
                   </td>
-                  <td class="table__val">
+                  <td class="table__val" data-name="Сайт:">
                     <a class="table__link" href="www.avalon.spb.ru" target="_blank">www.avalon.spb.ru</a>
                   </td>
-                  <td class="table__val">Санкт-Петербург, ул. Красновская, 23</td>
-                  <td class="table__val table__val--tel">+7 (495) 2308900</td>
-                  <td class="table__val">
+                  <td class="table__val" data-name="Адрес:">Санкт-Петербург, ул. Красновская, 23</td>
+                  <td class="table__val table__val--tel" data-name="Телефон:">+7 (495) 2308900</td>
+                  <td class="table__val" data-name="Действия:">
                     <button class="button" type="button" aria-label="Редактировать компанию">
                       <svg class="button__icon" width="20" height="20">
                         <use xlink:href="img/sprite.svg#icon-018-pencil-edit-button"></use>
@@ -305,7 +306,7 @@
                 </tr>
               </tbody>
             </table>
-            <button class="button button--blue" type="button">Добавить компанию</button>
+            <a class="link-button" href="add-company.html">Добавить компанию</a>
           </div>
         </div>
 
@@ -314,135 +315,221 @@
     </div>
   </div>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper wrapper">
-      <div class="page-footer__item">
-        <a class="page-footer__logo logo" href="#">
-          <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="logo">
-        </a>
-        <div class="page-footer__phone phone">
-          <a class="phone__link" href="tel:+78008887766">
-            <svg class="phone__icon" width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
-            </svg>
-            <span>+7 800 888 77 66</span>
+
+    <footer class="page-footer page-footer--br">
+      <div class="page-footer__wrapper wrapper">
+        <div class="page-footer__item">
+          <a class="page-footer__logo logo" href="#">
+            <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="logo">
           </a>
+          <div class="page-footer__phone phone">
+            <a class="phone__link" href="tel:+78008887766">
+              <svg class="phone__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
+              </svg>
+              <span>+7 800 888 77 66</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="page-footer__item">
-        <nav class="page-footer__nav nav-footer">
-          <div class="nav-footer__item">
-            <a class="nav-footer__title" href="#">Каталог</a>
-            <div class="nav-footer__box">
+        <div class="page-footer__item">
+          <nav class="page-footer__nav nav-footer">
+            <div class="nav-footer__item">
+              <a class="nav-footer__title" href="#">Каталог</a>
+              <div class="nav-footer__box">
+                <ul class="nav-footer__list">
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Дизайн и Арт</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Разработка сайтов</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Программирование</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Реклама и продвижение</a>
+                  </li>
+                </ul>
+                <ul class="nav-footer__list">
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Полиграфия</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Мобильные приложения</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Автоматизация бизнеса</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-footer__item">
+              <a class="nav-footer__title" href="#">Магазин</a>
               <ul class="nav-footer__list">
                 <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Дизайн и Арт</a>
+                  <a class="nav-footer__list-link" href="#">Гарантии</a>
                 </li>
                 <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Разработка сайтов</a>
+                  <a class="nav-footer__list-link" href="#">Помощь покупателю</a>
                 </li>
                 <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Программирование</a>
+                  <a class="nav-footer__list-link" href="#">О проекте</a>
                 </li>
                 <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Реклама и продвижение</a>
-                </li>
-              </ul>
-              <ul class="nav-footer__list">
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Полиграфия</a>
-                </li>
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Мобильные приложения</a>
-                </li>
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Автоматизация бизнеса</a>
+                  <a class="nav-footer__list-link" href="#">Войти / Регистрация</a>
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="nav-footer__item">
-            <a class="nav-footer__title" href="#">Магазин</a>
-            <ul class="nav-footer__list">
-              <li class="nav-footer__list-item">
-                <a class="nav-footer__list-link" href="#">Гарантии</a>
+          </nav>
+        </div>
+        <div class="page-footer__item">
+          <div class="page-footer__social social">
+            <div class="social__title">Мы в соц.сетях и мессенджерах</div>
+            <ul class="social__list">
+              <li class="social__item">
+                  <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">vk</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-001-vk-social-logotype"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="nav-footer__list-item">
-                <a class="nav-footer__list-link" href="#">Помощь покупателю</a>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">inst</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-003-instagram-logo"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="nav-footer__list-item">
-                <a class="nav-footer__list-link" href="#">О проекте</a>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">fb</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-002-facebook-logo-button"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="nav-footer__list-item">
-                <a class="nav-footer__list-link" href="#">Войти / Регистрация</a>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">wp</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-005-phone-symbol-of-an-auricular-inside-a-circle"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">phone</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-010-telephone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">telegram</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-004-telegram"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
-      <div class="page-footer__item">
-        <div class="page-footer__social social">
-          <div class="social__title">Мы в соц.сетях и мессенджерах</div>
-          <ul class="social__list">
-            <li class="social__item">
-                <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">vk</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-001-vk-social-logotype"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">inst</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-003-instagram-logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">fb</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-002-facebook-logo-button"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">wp</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-005-phone-symbol-of-an-auricular-inside-a-circle"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">phone</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-010-telephone"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">telegram</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-004-telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <a class="page-footer__email email" href="mailto:mgr_clients@gmail.com">
+            <svg class="email__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-017-envelope"></use>
+              </svg>
+            <span>mgr_clients@gmail.com</span></a>
         </div>
-        <a class="page-footer__email email" href="mailto:mgr_clients@gmail.com">
-          <svg class="email__icon" width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-017-envelope"></use>
-            </svg>
-          <span>mgr_clients@gmail.com</span></a>
       </div>
-    </div>
-  </footer>
+    </footer>
 
+
+
+  <div class="popup-overlay">
+    <section class="popup popup-order">
+      <div class="popup__wrapper">
+        <div class="popup__header">
+          <header class="mobile-header">
+            <div class="mobile-header__inner">
+              <a class="mobile-header__link" href="index.html">
+                <svg class="mobile-header__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
+                </svg>
+                <span class="visually-hidden">ссылка назад</span>
+              </a>
+              <div class="mobile-header__title">Реквизиты ООО Авалон</div>
+            </div>
+            <div class="mobile-header__buttons">
+              <a class="button" href="add-company.html" aria-label="Редактировать компанию" data-id="js-popup-btn-mob">
+                <svg class="button__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-018-pencil-edit-button"></use>
+                </svg>
+              </a>
+              <button class="button" type="button" aria-label="Удалить компанию">
+                <svg class="button__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-019-garbage"></use>
+                </svg>
+              </button>
+            </div>
+          </header>
+        </div>
+        <div class="popup__inner">
+          <h3 class="popup__title">Реквизиты ООО Авалон</h3>
+          <div class="requisites">
+            <div class="requisites__warning">Общество с ограниченной ответственностью «Авалон»</div>
+            <p>Сокращенное наименование: <span class="requisites__warning">ООО «Авалон»</span></p>
+            <ul class="requisites__list">
+              <li class="requisites__item">
+                <div class="requisites__name">ИНН:</div>
+                <div class="requisites__val">7804507731</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">КПП:</div>
+                <div class="requisites__val">780401001</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">Р/с:</div>
+                <div class="requisites__val">40702810006000003787 в Ст.-Петербургском ф-ле ПАО «Промсвязьбанк»,
+                  г.Санкт-Петербург</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">БИК:</div>
+                <div class="requisites__val">044030920</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">К/с:</div>
+                <div class="requisites__val">30101810000000000920</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">ОГРН:</div>
+                <div class="requisites__val">1137847168678</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">Юридический адрес</div>
+                <div class="requisites__val">195269, г. Санкт-Петербург, ул. Учительская, д. 18, к.1, 1
+                  этаж,
+                  офис 100-Н</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">Телефон</div>
+                <div class="requisites__val">+7 (812) 643-346-0</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">Генеральный директор:</div>
+                <div class="requisites__val">Ермолаев Дмитрий Сергеевич</div>
+              </li>
+            </ul>
+          </div>
+          <div class="popup__bottom popup__bottom--hidden-sm">
+            <a class="link-button popup__button" href="add-company.html">Редактировать</a>
+            <button class="button popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 
   <script src="js/vendor.min.js"></script>
