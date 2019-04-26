@@ -1843,7 +1843,7 @@ img {
     left: 0;
     z-index: 1;
     background-image: url(../img/sprite-png.png);
-    background-position: -658px -659px;
+    background-position: -614px -615px;
     width: 34px;
     height: 34px;
     -webkit-transform: rotate(90deg) translateY(-50%);
@@ -1973,8 +1973,10 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    overflow-x: scroll; }
+    width: 100%; }
+    @media (max-width: 991px) {
+      .tabs-2__list {
+        overflow-x: scroll; } }
   .tabs-2__item {
     padding-right: 10px;
     white-space: nowrap; }
@@ -3062,6 +3064,9 @@ img {
 .navigation-promo__item--active .navigation-promo__link {
   color: #008dca; }
 
+.navigation-promo__item .navigation-promo__link:hover {
+  color: #008dca; }
+
 .nav-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4004,7 +4009,7 @@ img {
 
 .block-order__item--icon-1::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -5018px -4633px;
+  background-position: -5218px -4833px;
   width: 190px;
   height: 190px; }
 
@@ -4016,7 +4021,7 @@ img {
 
 .block-order__item--icon-3::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -5218px -4833px;
+  background-position: -5018px -4633px;
   width: 190px;
   height: 190px; }
 
