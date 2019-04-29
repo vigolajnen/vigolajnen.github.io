@@ -45,158 +45,162 @@
 </head>
 
 <body>
-
-
-  <div class="paranja"></div>
-  <header class="mobile-header">
-    <div class="mobile-header__inner">
-      <a class="mobile-header__link" href="index.html">
-        <svg class="mobile-header__icon" width="20" height="20">
-          <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
-        </svg>
-        <span class="visually-hidden">ссылка назад</span>
-      </a>
-      <div class="mobile-header__title">Ошибка 404</div>
-    </div>
-  </header>
-
-  <nav class="navigation-mob">
-    <ul class="navigation-mob__list">
-      <li class="navigation-mob__item navigation-mob__item--active">
-        <a class="navigation-mob__link" href="index.html">
-          <svg class="navigation-mob__icon" width="45" height="45">
-            <use xlink:href="img/sprite.svg#icon-home"></use>
-          </svg>
-          <span class="navigation-mob__name">Главная</span>
-        </a>
-      </li>
-      <li class="navigation-mob__item">
-        <a class="navigation-mob__link" href="catalog.html">
-          <svg class="navigation-mob__icon" width="45" height="45">
-            <use xlink:href="img/sprite.svg#icon-layer"></use>
-          </svg>
-          <span class="navigation-mob__name">Каталог</span>
-        </a>
-      </li>
-      <li class="navigation-mob__item">
-        <a class="navigation-mob__link" href="cart.html">
-          <svg class="navigation-mob__icon" width="45" height="45">
-            <use xlink:href="img/sprite.svg#icon-cart"></use>
-          </svg>
-          <span class="navigation-mob__name">Корзина</span>
-        </a>
-      </li>
-      <li class="navigation-mob__item">
-        <a class="navigation-mob__link" href="cabinet.html">
-          <svg class="navigation-mob__icon" width="45" height="45">
-            <use xlink:href="img/sprite.svg#icon-007-user"></use>
-          </svg>
-          <span class="navigation-mob__name">Профиль</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-  <header class="page-header">
-    <div class="page-header__wrapper wrapper">
-      <div class="page-header__item">
-        <div class="logo">
-          <a class="logo__link" href="index.html">
-            <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="логотип" />
+  <div class="preloader"></div>
+  <div class="wrap">
+    <div class="content">
+      <!-- контент -->
+      <header class="mobile-header">
+        <div class="mobile-header__inner">
+          <a class="mobile-header__link" href="index.html">
+            <svg class="mobile-header__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
+            </svg>
+            <span class="visually-hidden">ссылка назад</span>
           </a>
+          <div class="mobile-header__title">Ошибка 404</div>
         </div>
-      </div>
-      <div class="page-header__item">
-        <nav class="page-header__nav navigation-top">
-          <ul class="navigation-top__list">
-            <li class="navigation-top__item">
-              <a class="navigation-top__link" href="#">Гарантии</a>
-            </li>
-            <li class="navigation-top__item">
-              <a class="navigation-top__link" href="#">Помощь</a>
-            </li>
-            <li class="navigation-top__item">
-              <a class="navigation-top__link" href="about-project.html">О проекте</a>
-            </li>
-            <li class="navigation-top__item phone">
-              <a class="phone__link" href="tel:+78008887766">
-                <svg class="phone__icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
-                </svg>
-                <span>+7 800 888 77 66</span></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- выбор категории -->
-        <form class="search-form" action="">
-          <div class="search-form__item">
-            <label for="search" class="visually-hidden">Поиск</label>
-            <input class="search-form__val" type="text" name="search" id="search"
-              placeholder="Начните вводить текст..." />
-          </div>
-          <div class="search-form__item" id="select-4">
+      </header>
 
-            <select class="search-form__select custom-select js-size select select-4" aria-placeholder="Все категории">
-              <option value="Все категории">Все категории</option>
-              <option value="Дизайн и Арт">Дизайн и Арт</option>
-              <option value="Разработка сайтов">Разработка сайтов</option>
-              <option value="Программирование">Программирование</option>
-              <option value="Реклама и продвижение">Реклама и продвижение</option>
-              <option value="Полиграфия">Полиграфия</option>
-              <option value="Мобильные приложения">Мобильные приложения</option>
-              <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
-              <option value="Производство видео">Производство видео</option>
-            </select>
-
-            <button class="search-form__button button" type="search" aria-label="Поиск">
-              <svg class="search-form__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#icon-022-musica-searcher"></use>
+      <nav class="navigation-mob">
+        <ul class="navigation-mob__list">
+          <li class="navigation-mob__item navigation-mob__item--active">
+            <a class="navigation-mob__link" href="index.html">
+              <svg class="navigation-mob__icon" width="45" height="45">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
               </svg>
-            </button>
-          </div>
-        </form>
-        <p class="page-header__caption">
-          <span class="page-header__caption--black">Например,</span> 100 лидов
-          лендинг 10 постов 30 отзывов
-        </p>
-      </div>
-      <div class="page-header__item">
-        <div class="page-header__basket-and-user">
-          <div class="basket">
-            <svg class="basket__icon" width="45" height="45">
-              <use xlink:href="img/sprite.svg#icon-021-cart"></use>
-            </svg>
-            <div class="basket__info">
-              В корзине:
-              <span class="basket__count">0 товаров</span>
+              <span class="navigation-mob__name">Главная</span>
+            </a>
+          </li>
+          <li class="navigation-mob__item">
+            <a class="navigation-mob__link" href="catalog.html">
+              <svg class="navigation-mob__icon" width="45" height="45">
+                <use xlink:href="img/sprite.svg#icon-layer"></use>
+              </svg>
+              <span class="navigation-mob__name">Каталог</span>
+            </a>
+          </li>
+          <li class="navigation-mob__item">
+            <a class="navigation-mob__link" href="cart.html">
+              <svg class="navigation-mob__icon" width="45" height="45">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="navigation-mob__name">Корзина</span>
+            </a>
+          </li>
+          <li class="navigation-mob__item">
+            <a class="navigation-mob__link" href="cabinet.html">
+              <svg class="navigation-mob__icon" width="45" height="45">
+                <use xlink:href="img/sprite.svg#icon-007-user"></use>
+              </svg>
+              <span class="navigation-mob__name">Профиль</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="page-header">
+        <div class="page-header__wrapper wrapper">
+          <div class="page-header__item">
+            <div class="logo">
+              <a class="logo__link" href="index.html">
+                <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="логотип" />
+              </a>
             </div>
           </div>
-          <div class="cabinet-user">
-            <svg class="cabinet-user__icon" width="45" height="45">
-              <use xlink:href="img/sprite.svg#icon-007-user"></use>
-            </svg>
-            <div class="cabinet-user__inner">
-              <a class="cabinet-user__login" href="login.html">Войти</a>
-              <a class="cabinet-user__reg" href="registration.html">Регистрация</a>
+          <div class="page-header__item">
+            <nav class="page-header__nav navigation-top">
+              <ul class="navigation-top__list">
+                <li class="navigation-top__item">
+                  <a class="navigation-top__link" href="#">Гарантии</a>
+                </li>
+                <li class="navigation-top__item">
+                  <a class="navigation-top__link" href="#">Помощь</a>
+                </li>
+                <li class="navigation-top__item">
+                  <a class="navigation-top__link" href="about-project.html">О проекте</a>
+                </li>
+                <li class="navigation-top__item phone">
+                  <a class="phone__link" href="tel:+78008887766">
+                    <svg class="phone__icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
+                    </svg>
+                    <span>+7 800 888 77 66</span></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- выбор категории -->
+            <form class="search-form" action="">
+              <div class="search-form__item">
+                <label for="search" class="visually-hidden">Поиск</label>
+                <input class="search-form__val" type="text" name="search" id="search"
+                  placeholder="Начните вводить текст..." />
+              </div>
+              <div class="search-form__item" id="select-4">
+
+                <select class="search-form__select custom-select js-size select select-4" aria-placeholder="Все категории">
+                  <option value="Все категории">Все категории</option>
+                  <option value="Дизайн и Арт">Дизайн и Арт</option>
+                  <option value="Разработка сайтов">Разработка сайтов</option>
+                  <option value="Программирование">Программирование</option>
+                  <option value="Реклама и продвижение">Реклама и продвижение</option>
+                  <option value="Полиграфия">Полиграфия</option>
+                  <option value="Мобильные приложения">Мобильные приложения</option>
+                  <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
+                  <option value="Производство видео">Производство видео</option>
+                </select>
+
+                <button class="search-form__button button" type="search" aria-label="Поиск">
+                  <svg class="search-form__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-022-musica-searcher"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <p class="page-header__caption">
+              <span class="page-header__caption--black">Например,</span> 100 лидов
+              лендинг 10 постов 30 отзывов
+            </p>
+          </div>
+          <div class="page-header__item">
+            <div class="page-header__basket-and-user">
+              <div class="basket">
+                <svg class="basket__icon" width="45" height="45">
+                  <use xlink:href="img/sprite.svg#icon-021-cart"></use>
+                </svg>
+                <div class="basket__info">
+                  В корзине:
+                  <span class="basket__count">0 товаров</span>
+                </div>
+              </div>
+              <div class="cabinet-user">
+                <svg class="cabinet-user__icon" width="45" height="45">
+                  <use xlink:href="img/sprite.svg#icon-007-user"></use>
+                </svg>
+                <div class="cabinet-user__inner">
+                  <a class="cabinet-user__login" href="login.html">Войти</a>
+                  <a class="cabinet-user__reg" href="registration.html">Регистрация</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
+      </header>
 
-  <div class="container">
-    <div class="page page-inner page-404">
 
-      <div class="page-404__info">
-        <div class="page__title title-inner">Упс...</div>
-        <p class="page__text">Такая страница не найдена на нашем сайте!</p>
-        <a class="link-button" href="index.html">На главную</a>
-      </div>
-      <div class="page-404__pic">
-        <img class="picture" src="img/404.svg" alt="pic">
+      <div class="page page-inner page-404">
+
+        <div class="page-404__info">
+          <div class="page__title title-inner">Упс...</div>
+          <p class="page__text">Такая страница не найдена на нашем сайте!</p>
+          <a class="link-button" href="index.html">На главную</a>
+        </div>
+        <div class="page-404__pic">
+          <img class="picture" src="img/404.svg" alt="pic">
+        </div>
+
       </div>
 
+      <!-- контент -->
     </div>
 
     <footer class="page-footer page-footer--br">
@@ -327,7 +331,6 @@
         </div>
       </div>
     </footer>
-
 
   </div>
 

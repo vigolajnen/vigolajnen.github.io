@@ -47,534 +47,546 @@
 <body>
 
   <div class="preloader"></div>
-  <header class="mobile-header">
-    <div class="mobile-header__inner">
-      <a class="mobile-header__link" href="index.html">
-        <svg class="mobile-header__icon" width="20" height="20">
-          <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
-        </svg>
-        <span class="visually-hidden">ссылка назад</span>
-      </a>
-      <div class="mobile-header__title">Пример работы дизайн и арт</div>
-    </div>
-  </header>
-
-  <nav class="navigation-mob">
-    <ul class="navigation-mob__list">
-      <li class="navigation-mob__item navigation-mob__item--active">
-        <a class="navigation-mob__link" href="index.html">
-          <svg class="navigation-mob__icon" width="45" height="45">
-            <use xlink:href="img/sprite.svg#icon-home"></use>
-          </svg>
-          <span class="navigation-mob__name">Главная</span>
-        </a>
-      </li>
-      <li class="navigation-mob__item">
-        <a class="navigation-mob__link" href="catalog.html">
-          <svg class="navigation-mob__icon" width="45" height="45">
-            <use xlink:href="img/sprite.svg#icon-layer"></use>
-          </svg>
-          <span class="navigation-mob__name">Каталог</span>
-        </a>
-      </li>
-      <li class="navigation-mob__item">
-        <a class="navigation-mob__link" href="cart.html">
-          <svg class="navigation-mob__icon" width="45" height="45">
-            <use xlink:href="img/sprite.svg#icon-cart"></use>
-          </svg>
-          <span class="navigation-mob__name">Корзина</span>
-        </a>
-      </li>
-      <li class="navigation-mob__item">
-        <a class="navigation-mob__link" href="cabinet.html">
-          <svg class="navigation-mob__icon" width="45" height="45">
-            <use xlink:href="img/sprite.svg#icon-007-user"></use>
-          </svg>
-          <span class="navigation-mob__name">Профиль</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-
-  <header class="page-header">
-    <div class="page-header__wrapper wrapper">
-      <div class="page-header__item">
-        <div class="logo">
-          <a class="logo__link" href="index.html">
-            <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="логотип" />
+  <div class="wrap">
+    <div class="content">
+      <!-- контент -->
+      <header class="mobile-header">
+        <div class="mobile-header__inner">
+          <a class="mobile-header__link" href="index.html">
+            <svg class="mobile-header__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
+            </svg>
+            <span class="visually-hidden">ссылка назад</span>
           </a>
+          <div class="mobile-header__title">Пример работы дизайн и арт</div>
         </div>
-      </div>
-      <div class="page-header__item">
-        <nav class="page-header__nav navigation-top">
-          <ul class="navigation-top__list">
-            <li class="navigation-top__item">
-              <a class="navigation-top__link" href="#">Гарантии</a>
-            </li>
-            <li class="navigation-top__item">
-              <a class="navigation-top__link" href="#">Помощь</a>
-            </li>
-            <li class="navigation-top__item">
-              <a class="navigation-top__link" href="about-project.html">О проекте</a>
-            </li>
-            <li class="navigation-top__item phone">
-              <a class="phone__link" href="tel:+78008887766">
-                <svg class="phone__icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
-                </svg>
-                <span>+7 800 888 77 66</span></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- выбор категории -->
-        <form class="search-form" action="">
-          <div class="search-form__item">
-            <label for="search" class="visually-hidden">Поиск</label>
-            <input class="search-form__val" type="text" name="search" id="search"
-              placeholder="Начните вводить текст..." />
-          </div>
-          <div class="search-form__item" id="select-4">
+      </header>
 
-            <select class="search-form__select custom-select js-size select select-4" aria-placeholder="Все категории">
-              <option value="Все категории">Все категории</option>
-              <option value="Дизайн и Арт">Дизайн и Арт</option>
-              <option value="Разработка сайтов">Разработка сайтов</option>
-              <option value="Программирование">Программирование</option>
-              <option value="Реклама и продвижение">Реклама и продвижение</option>
-              <option value="Полиграфия">Полиграфия</option>
-              <option value="Мобильные приложения">Мобильные приложения</option>
-              <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
-              <option value="Производство видео">Производство видео</option>
-            </select>
-
-            <button class="search-form__button button" type="search" aria-label="Поиск">
-              <svg class="search-form__icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#icon-022-musica-searcher"></use>
+      <nav class="navigation-mob">
+        <ul class="navigation-mob__list">
+          <li class="navigation-mob__item navigation-mob__item--active">
+            <a class="navigation-mob__link" href="index.html">
+              <svg class="navigation-mob__icon" width="45" height="45">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
               </svg>
-            </button>
-          </div>
-        </form>
-        <p class="page-header__caption">
-          <span class="page-header__caption--black">Например,</span> 100 лидов
-          лендинг 10 постов 30 отзывов
-        </p>
-      </div>
-      <div class="page-header__item">
-        <div class="page-header__basket-and-user">
-          <div class="basket">
-            <svg class="basket__icon" width="45" height="45">
-              <use xlink:href="img/sprite.svg#icon-021-cart"></use>
-            </svg>
-            <div class="basket__info">
-              В корзине:
-              <span class="basket__count">0 товаров</span>
-            </div>
-          </div>
-          <div class="cabinet-user">
-            <svg class="cabinet-user__icon" width="45" height="45">
-              <use xlink:href="img/sprite.svg#icon-007-user"></use>
-            </svg>
-            <div class="cabinet-user__inner">
-              <a class="cabinet-user__login" href="login.html">Войти</a>
-              <a class="cabinet-user__reg" href="registration.html">Регистрация</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-  <main class="page-cat">
-    <div class="wrapper">
-      <div class="page-cat__header">
-        <aside class="page-cat__nav">
-          <nav class="navigation-promo">
-            <ul class="navigation-promo__list">
-              <li class="navigation-promo__item">
-                <a
-                  class="navigation-promo__link"
-                  href="cat-1.html"
-                >
-                  <svg class="navigation-promo__icon navigation-promo__icon--pink" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-015-paintbrush"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Дизайн и Арт</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link" href="#">
-                  <svg class="navigation-promo__icon" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-website"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Разработка сайтов</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link" href="#">
-                  <svg class="navigation-promo__icon navigation-promo__icon--orange" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-014-code"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Программирование</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link" href="#">
-                  <svg class="navigation-promo__icon navigation-promo__icon--blue" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-016-megaphone"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Реклама и продвижение</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link" href="#">
-                  <svg class="navigation-promo__icon navigation-promo__icon--green" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-011-picture"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Полиграфия</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link" href="#">
-                  <svg class="navigation-promo__icon navigation-promo__icon--blue-2" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-006-smartphone"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Мобильные приложения</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link" href="#">
-                  <svg class="navigation-promo__icon navigation-promo__icon--pink-2" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-briefcase"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Автоматизация бизнеса</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link" href="#">
-                  <svg class="navigation-promo__icon navigation-promo__icon--purple" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-play"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Производство видео</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-        </aside>
-        <div class="page-cat__info">
-          <div class="breadcrumbs">
-            <a class="breadcrumbs__link" href="index.html">Главная</a>
-            <a class="breadcrumbs__link">Пример работ</a>
-            <a class="breadcrumbs__link">Пример работы дизайн и арт</a>
-          </div>
-          <div class="page-cat__text">
-            <h1 class="title title--cat">Пример работы дизайн и арт</h1>
-            <div class="page-cat__text-col page-cat__text-col--pic">
-              <img src="img/example/pic.jpg" alt="pic">
-            </div>
-            <div class="page-cat__text-col">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur similique vel libero omnis
-                facere dolorum
-                recusandae quod officia earum.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sapiente, dolore perferendis iste
-                maxime at odio
-                quae quis impedit mollitia recusandae corporis quo porro commodi velit. Tempore atque aliquid officiis
-                rem? Fugiat
-                accusamus quidem iste nisi consectetur est suscipit soluta odit quisquam, unde veritatis, sit
-                exercitationem quo</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sapiente, dolore perferendis iste
-                maxime at odio
-                quae quis impedit mollitia recusandae corporis quo porro commodi velit. Tempore atque aliquid officiis
-              </p>
-
-              <button class="button link-button">Хочу также!</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <div class="bl-bg bl-bg--blue">
-    <section class="project-team">
-      <div class="wrapper">
-        <h2 class="project-team__title title title--line-blue">Кто работал над проектом?</h2>
-        <ul class="project-team__list">
-          <li class="project-team__item">
-            <div class="project-team__inner">
-              <img class="project-team__pic" src="img/project-team/pr-team.png" alt="pic">
-              <div class="project-team__info">
-                <div class="project-team__position project-team__position--blue">Персональный менеджер</div>
-                <div class="project-team__text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Aenean euismod bibendum laoreet. Proin gravida
-                    dolor sit amet lacus accumsan et viverra justo
-                    commodo.</p>
-                </div>
-              </div>
-            </div>
+              <span class="navigation-mob__name">Главная</span>
+            </a>
           </li>
-          <li class="project-team__item">
-            <div class="project-team__inner">
-              <img class="project-team__pic" src="img/project-team/pr-team.png" alt="pic">
-              <div class="project-team__info">
-                <div class="project-team__position">Дизайнер</div>
-                <div class="project-team__text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Aenean euismod bibendum laoreet. Proin gravida
-                    dolor sit amet lacus accumsan et viverra justo
-                    commodo.</p>
-                </div>
-              </div>
-            </div>
+          <li class="navigation-mob__item">
+            <a class="navigation-mob__link" href="catalog.html">
+              <svg class="navigation-mob__icon" width="45" height="45">
+                <use xlink:href="img/sprite.svg#icon-layer"></use>
+              </svg>
+              <span class="navigation-mob__name">Каталог</span>
+            </a>
           </li>
-          <li class="project-team__item">
-            <div class="project-team__inner">
-              <img class="project-team__pic" src="img/project-team/pr-team.png" alt="pic">
-              <div class="project-team__info">
-                <div class="project-team__position">Программист</div>
-                <div class="project-team__text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Aenean euismod bibendum laoreet. Proin gravida
-                    dolor sit amet lacus accumsan et viverra justo
-                    commodo.</p>
-                </div>
-              </div>
-            </div>
+          <li class="navigation-mob__item">
+            <a class="navigation-mob__link" href="cart.html">
+              <svg class="navigation-mob__icon" width="45" height="45">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="navigation-mob__name">Корзина</span>
+            </a>
           </li>
-          <li class="project-team__item">
-            <div class="project-team__inner">
-              <img class="project-team__pic" src="img/project-team/pr-team.png" alt="pic">
-              <div class="project-team__info">
-                <div class="project-team__position">Верстальщик</div>
-                <div class="project-team__text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Aenean euismod bibendum laoreet. Proin gravida
-                    dolor sit amet lacus accumsan et viverra justo
-                    commodo.</p>
-                </div>
-              </div>
-            </div>
+          <li class="navigation-mob__item">
+            <a class="navigation-mob__link" href="cabinet.html">
+              <svg class="navigation-mob__icon" width="45" height="45">
+                <use xlink:href="img/sprite.svg#icon-007-user"></use>
+              </svg>
+              <span class="navigation-mob__name">Профиль</span>
+            </a>
           </li>
         </ul>
-      </div>
-    </section>
-  </div>
-  <section class="result">
-    <div class="wrapper">
-      <h3 class="title title--line">какие результаты получил клиент</h3>
-      <ul class="result__list">
-        <li class="result__item">
-          <div class="result__num">1 500</div>
-          <div class="result__info">Новых клиентов</div>
-        </li>
-        <li class="result__item">
-          <div class="result__num">20 500</div>
-          <div class="result__info">Покупок за месяц</div>
-        </li>
-        <li class="result__item">
-          <div class="result__num">950</div>
-          <div class="result__info">Заходов на сайт в день</div>
-        </li>
-      </ul>
-    </div>
-  </section>
+      </nav>
 
 
-  <section class="reviews bl-bg">
-    <div class="wrapper">
-      <h3 class="reviews__title title title--line">Отзыв клиента</h3>
-      <blockquote class="review">
-        <div class="review__top">
-          <div class="review__icon">
-            <img class="review__pic picture" src="../img/icons/icon-ava_2.png" alt="icon" />
-            <!-- <svg class="review__svg" width="24" height="24">
-                      <use xlink:href="img/sprite.svg#icon-ava-1"></use>
-                    </svg> -->
-          </div>
-          <div class="review__name">Злой Рекламодатель</div>
-          <div class="review__stars">
-            <ul class="rating">
-              <li class="rating__item rating__item--active" data-rate="5">
-                <svg class="rating__icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#icon-star"></use>
-                </svg>
-              </li>
-              <li class="rating__item" data-rate="4">
-                <svg class="rating__icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#icon-star"></use>
-                </svg>
-              </li>
-              <li class="rating__item" data-rate="3">
-                <svg class="rating__icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#icon-star"></use>
-                </svg>
-              </li>
-              <li class="rating__item" data-rate="2">
-                <svg class="rating__icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#icon-star"></use>
-                </svg>
-              </li>
-              <li class="rating__item" data-rate="1">
-                <svg class="rating__icon" width="24" height="24">
-                  <use xlink:href="img/sprite.svg#icon-star"></use>
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="review__date">02.03.2019</div>
-        </div>
-        <div class="review__text">
-          <p>Достали дебилы менеджеры агентств с безумными тз, срыв сроков и
-          выбивание денег назад с потом и кровью (моей). Вот поэтому я здесь.
-          Сроки не срывают, глупых звонков не задают, позвонили один раз. Ура,
-          нервы в порядке, времени больше. Работы кстати тоже очень
-          качественные!</p>
-          <p>Достали дебилы менеджеры агентств с безумными тз, срыв сроков и
-            выбивание денег назад с потом и кровью (моей). Вот поэтому я здесь.
-            Сроки не срывают, глупых звонков не задают, позвонили один раз. Ура,
-            нервы в порядке, времени больше. Работы кстати тоже очень
-            качественные!</p>
-        </div>
-      </blockquote>
-      <a class="reviews__link link-button link-button--orange" href="#"
-        >Хочу также!</a
-      >
-    </div>
-  </section>
-
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper wrapper">
-      <div class="page-footer__item">
-        <a class="page-footer__logo logo" href="#">
-          <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="logo">
-        </a>
-        <div class="page-footer__phone phone">
-          <a class="phone__link" href="tel:+78008887766">
-            <svg class="phone__icon" width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
-            </svg>
-            <span>+7 800 888 77 66</span>
-          </a>
-        </div>
-      </div>
-      <div class="page-footer__item">
-        <nav class="page-footer__nav nav-footer">
-          <div class="nav-footer__item">
-            <a class="nav-footer__title" href="#">Каталог</a>
-            <div class="nav-footer__box">
-              <ul class="nav-footer__list">
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Дизайн и Арт</a>
-                </li>
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Разработка сайтов</a>
-                </li>
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Программирование</a>
-                </li>
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Реклама и продвижение</a>
-                </li>
-              </ul>
-              <ul class="nav-footer__list">
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Полиграфия</a>
-                </li>
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Мобильные приложения</a>
-                </li>
-                <li class="nav-footer__list-item">
-                  <a class="nav-footer__list-link" href="#">Автоматизация бизнеса</a>
-                </li>
-              </ul>
+      <header class="page-header">
+        <div class="page-header__wrapper wrapper">
+          <div class="page-header__item">
+            <div class="logo">
+              <a class="logo__link" href="index.html">
+                <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="логотип" />
+              </a>
             </div>
           </div>
-          <div class="nav-footer__item">
-            <a class="nav-footer__title" href="#">Магазин</a>
-            <ul class="nav-footer__list">
-              <li class="nav-footer__list-item">
-                <a class="nav-footer__list-link" href="#">Гарантии</a>
+          <div class="page-header__item">
+            <nav class="page-header__nav navigation-top">
+              <ul class="navigation-top__list">
+                <li class="navigation-top__item">
+                  <a class="navigation-top__link" href="#">Гарантии</a>
+                </li>
+                <li class="navigation-top__item">
+                  <a class="navigation-top__link" href="#">Помощь</a>
+                </li>
+                <li class="navigation-top__item">
+                  <a class="navigation-top__link" href="about-project.html">О проекте</a>
+                </li>
+                <li class="navigation-top__item phone">
+                  <a class="phone__link" href="tel:+78008887766">
+                    <svg class="phone__icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
+                    </svg>
+                    <span>+7 800 888 77 66</span></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- выбор категории -->
+            <form class="search-form" action="">
+              <div class="search-form__item">
+                <label for="search" class="visually-hidden">Поиск</label>
+                <input class="search-form__val" type="text" name="search" id="search"
+                  placeholder="Начните вводить текст..." />
+              </div>
+              <div class="search-form__item" id="select-4">
+
+                <select class="search-form__select custom-select js-size select select-4" aria-placeholder="Все категории">
+                  <option value="Все категории">Все категории</option>
+                  <option value="Дизайн и Арт">Дизайн и Арт</option>
+                  <option value="Разработка сайтов">Разработка сайтов</option>
+                  <option value="Программирование">Программирование</option>
+                  <option value="Реклама и продвижение">Реклама и продвижение</option>
+                  <option value="Полиграфия">Полиграфия</option>
+                  <option value="Мобильные приложения">Мобильные приложения</option>
+                  <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
+                  <option value="Производство видео">Производство видео</option>
+                </select>
+
+                <button class="search-form__button button" type="search" aria-label="Поиск">
+                  <svg class="search-form__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-022-musica-searcher"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <p class="page-header__caption">
+              <span class="page-header__caption--black">Например,</span> 100 лидов
+              лендинг 10 постов 30 отзывов
+            </p>
+          </div>
+          <div class="page-header__item">
+            <div class="page-header__basket-and-user">
+              <div class="basket">
+                <svg class="basket__icon" width="45" height="45">
+                  <use xlink:href="img/sprite.svg#icon-021-cart"></use>
+                </svg>
+                <div class="basket__info">
+                  В корзине:
+                  <span class="basket__count">0 товаров</span>
+                </div>
+              </div>
+              <div class="cabinet-user">
+                <svg class="cabinet-user__icon" width="45" height="45">
+                  <use xlink:href="img/sprite.svg#icon-007-user"></use>
+                </svg>
+                <div class="cabinet-user__inner">
+                  <a class="cabinet-user__login" href="login.html">Войти</a>
+                  <a class="cabinet-user__reg" href="registration.html">Регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <main class="page-cat">
+        <div class="wrapper">
+          <div class="page-cat__header">
+            <aside class="page-cat__nav">
+              <nav class="navigation-promo">
+                <ul class="navigation-promo__list">
+                  <li class="navigation-promo__item">
+                    <a
+                      class="navigation-promo__link"
+                      href="cat-1.html"
+                    >
+                      <svg class="navigation-promo__icon navigation-promo__icon--pink" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-015-paintbrush"></use>
+                      </svg>
+                      <span class="navigation-promo__name">Дизайн и Арт</span>
+                    </a>
+                  </li>
+                  <li class="navigation-promo__item">
+                    <a class="navigation-promo__link" href="#">
+                      <svg class="navigation-promo__icon" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-website"></use>
+                      </svg>
+                      <span class="navigation-promo__name">Разработка сайтов</span>
+                    </a>
+                  </li>
+                  <li class="navigation-promo__item">
+                    <a class="navigation-promo__link" href="#">
+                      <svg class="navigation-promo__icon navigation-promo__icon--orange" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-014-code"></use>
+                      </svg>
+                      <span class="navigation-promo__name">Программирование</span>
+                    </a>
+                  </li>
+                  <li class="navigation-promo__item">
+                    <a class="navigation-promo__link" href="#">
+                      <svg class="navigation-promo__icon navigation-promo__icon--blue" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-016-megaphone"></use>
+                      </svg>
+                      <span class="navigation-promo__name">Реклама и продвижение</span>
+                    </a>
+                  </li>
+                  <li class="navigation-promo__item">
+                    <a class="navigation-promo__link" href="#">
+                      <svg class="navigation-promo__icon navigation-promo__icon--green" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-011-picture"></use>
+                      </svg>
+                      <span class="navigation-promo__name">Полиграфия</span>
+                    </a>
+                  </li>
+                  <li class="navigation-promo__item">
+                    <a class="navigation-promo__link" href="#">
+                      <svg class="navigation-promo__icon navigation-promo__icon--blue-2" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-006-smartphone"></use>
+                      </svg>
+                      <span class="navigation-promo__name">Мобильные приложения</span>
+                    </a>
+                  </li>
+                  <li class="navigation-promo__item">
+                    <a class="navigation-promo__link" href="#">
+                      <svg class="navigation-promo__icon navigation-promo__icon--pink-2" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-briefcase"></use>
+                      </svg>
+                      <span class="navigation-promo__name">Автоматизация бизнеса</span>
+                    </a>
+                  </li>
+                  <li class="navigation-promo__item">
+                    <a class="navigation-promo__link" href="#">
+                      <svg class="navigation-promo__icon navigation-promo__icon--purple" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-play"></use>
+                      </svg>
+                      <span class="navigation-promo__name">Производство видео</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+            </aside>
+            <div class="page-cat__info">
+              <div class="breadcrumbs">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+                <a class="breadcrumbs__link">Пример работ</a>
+                <a class="breadcrumbs__link">Пример работы дизайн и арт</a>
+              </div>
+              <div class="page-cat__text">
+                <h1 class="title title--cat">Пример работы дизайн и арт</h1>
+                <div class="page-cat__text-col page-cat__text-col--pic">
+                  <img src="img/example/pic.jpg" alt="pic">
+                </div>
+                <div class="page-cat__text-col">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur similique vel libero
+                    omnis
+                    facere dolorum
+                    recusandae quod officia earum.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sapiente, dolore perferendis
+                    iste
+                    maxime at odio
+                    quae quis impedit mollitia recusandae corporis quo porro commodi velit. Tempore atque aliquid
+                    officiis
+                    rem? Fugiat
+                    accusamus quidem iste nisi consectetur est suscipit soluta odit quisquam, unde veritatis, sit
+                    exercitationem quo</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sapiente, dolore perferendis
+                    iste
+                    maxime at odio
+                    quae quis impedit mollitia recusandae corporis quo porro commodi velit. Tempore atque aliquid
+                    officiis
+                  </p>
+
+                  <button class="button link-button">Хочу также!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="bl-bg bl-bg--blue">
+        <section class="project-team">
+          <div class="wrapper">
+            <h2 class="project-team__title title title--line-blue">Кто работал над проектом?</h2>
+            <ul class="project-team__list">
+              <li class="project-team__item">
+                <div class="project-team__inner">
+                  <img class="project-team__pic" src="img/project-team/pr-team.png" alt="pic">
+                  <div class="project-team__info">
+                    <div class="project-team__position project-team__position--blue">Персональный менеджер</div>
+                    <div class="project-team__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra justo
+                        commodo.</p>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="nav-footer__list-item">
-                <a class="nav-footer__list-link" href="#">Помощь покупателю</a>
+              <li class="project-team__item">
+                <div class="project-team__inner">
+                  <img class="project-team__pic" src="img/project-team/pr-team.png" alt="pic">
+                  <div class="project-team__info">
+                    <div class="project-team__position">Дизайнер</div>
+                    <div class="project-team__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra justo
+                        commodo.</p>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="nav-footer__list-item">
-                <a class="nav-footer__list-link" href="#">О проекте</a>
+              <li class="project-team__item">
+                <div class="project-team__inner">
+                  <img class="project-team__pic" src="img/project-team/pr-team.png" alt="pic">
+                  <div class="project-team__info">
+                    <div class="project-team__position">Программист</div>
+                    <div class="project-team__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra justo
+                        commodo.</p>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="nav-footer__list-item">
-                <a class="nav-footer__list-link" href="#">Войти / Регистрация</a>
+              <li class="project-team__item">
+                <div class="project-team__inner">
+                  <img class="project-team__pic" src="img/project-team/pr-team.png" alt="pic">
+                  <div class="project-team__info">
+                    <div class="project-team__position">Верстальщик</div>
+                    <div class="project-team__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra justo
+                        commodo.</p>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
-        </nav>
+        </section>
       </div>
-      <div class="page-footer__item">
-        <div class="page-footer__social social">
-          <div class="social__title">Мы в соц.сетях и мессенджерах</div>
-          <ul class="social__list">
-            <li class="social__item">
-                <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">vk</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-001-vk-social-logotype"></use>
-                </svg>
-              </a>
+      <section class="result">
+        <div class="wrapper">
+          <h3 class="title title--line">какие результаты получил клиент</h3>
+          <ul class="result__list">
+            <li class="result__item">
+              <div class="result__num">1 500</div>
+              <div class="result__info">Новых клиентов</div>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">inst</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-003-instagram-logo"></use>
-                </svg>
-              </a>
+            <li class="result__item">
+              <div class="result__num">20 500</div>
+              <div class="result__info">Покупок за месяц</div>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">fb</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-002-facebook-logo-button"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">wp</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-005-phone-symbol-of-an-auricular-inside-a-circle"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">phone</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-010-telephone"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <span class="visually-hidden">telegram</span>
-                <svg class="social__svg" width="40" height="40">
-                  <use xlink:href="img/sprite.svg#icon-004-telegram"></use>
-                </svg>
-              </a>
+            <li class="result__item">
+              <div class="result__num">950</div>
+              <div class="result__info">Заходов на сайт в день</div>
             </li>
           </ul>
         </div>
-        <a class="page-footer__email email" href="mailto:mgr_clients@gmail.com">
-          <svg class="email__icon" width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-017-envelope"></use>
-            </svg>
-          <span>mgr_clients@gmail.com</span></a>
-      </div>
-    </div>
-  </footer>
+      </section>
 
+
+      <section class="reviews bl bl--bg">
+        <div class="wrapper">
+          <h3 class="reviews__title title title--line">Отзыв клиента</h3>
+          <blockquote class="review">
+            <div class="review__top">
+              <div class="review__icon">
+                <img class="review__pic picture" src="../img/icons/icon-ava_2.png" alt="icon" />
+                <!-- <svg class="review__svg" width="24" height="24">
+                          <use xlink:href="img/sprite.svg#icon-ava-1"></use>
+                        </svg> -->
+              </div>
+              <div class="review__name">Злой Рекламодатель</div>
+              <div class="review__stars">
+                <ul class="rating">
+                  <li class="rating__item rating__item--active" data-rate="5">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating__item" data-rate="4">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating__item" data-rate="3">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating__item" data-rate="2">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating__item" data-rate="1">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="review__date">02.03.2019</div>
+            </div>
+            <div class="review__text">
+              <p>Достали дебилы менеджеры агентств с безумными тз, срыв сроков и
+              выбивание денег назад с потом и кровью (моей). Вот поэтому я здесь.
+              Сроки не срывают, глупых звонков не задают, позвонили один раз. Ура,
+              нервы в порядке, времени больше. Работы кстати тоже очень
+              качественные!</p>
+              <p>Достали дебилы менеджеры агентств с безумными тз, срыв сроков и
+                выбивание денег назад с потом и кровью (моей). Вот поэтому я здесь.
+                Сроки не срывают, глупых звонков не задают, позвонили один раз. Ура,
+                нервы в порядке, времени больше. Работы кстати тоже очень
+                качественные!</p>
+            </div>
+          </blockquote>
+          <a class="reviews__link link-button link-button--orange" href="#"
+            >Хочу также!</a
+          >
+        </div>
+      </section>
+
+
+      <!-- контент -->
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper wrapper">
+        <div class="page-footer__item">
+          <a class="page-footer__logo logo" href="#">
+            <img class="logo__pic" src="img/logo.svg" width="200" height="150" alt="logo">
+          </a>
+          <div class="page-footer__phone phone">
+            <a class="phone__link" href="tel:+78008887766">
+              <svg class="phone__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-009-call-answer"></use>
+              </svg>
+              <span>+7 800 888 77 66</span>
+            </a>
+          </div>
+        </div>
+        <div class="page-footer__item">
+          <nav class="page-footer__nav nav-footer">
+            <div class="nav-footer__item">
+              <a class="nav-footer__title" href="#">Каталог</a>
+              <div class="nav-footer__box">
+                <ul class="nav-footer__list">
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Дизайн и Арт</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Разработка сайтов</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Программирование</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Реклама и продвижение</a>
+                  </li>
+                </ul>
+                <ul class="nav-footer__list">
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Полиграфия</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Мобильные приложения</a>
+                  </li>
+                  <li class="nav-footer__list-item">
+                    <a class="nav-footer__list-link" href="#">Автоматизация бизнеса</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-footer__item">
+              <a class="nav-footer__title" href="#">Магазин</a>
+              <ul class="nav-footer__list">
+                <li class="nav-footer__list-item">
+                  <a class="nav-footer__list-link" href="#">Гарантии</a>
+                </li>
+                <li class="nav-footer__list-item">
+                  <a class="nav-footer__list-link" href="#">Помощь покупателю</a>
+                </li>
+                <li class="nav-footer__list-item">
+                  <a class="nav-footer__list-link" href="#">О проекте</a>
+                </li>
+                <li class="nav-footer__list-item">
+                  <a class="nav-footer__list-link" href="#">Войти / Регистрация</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="page-footer__item">
+          <div class="page-footer__social social">
+            <div class="social__title">Мы в соц.сетях и мессенджерах</div>
+            <ul class="social__list">
+              <li class="social__item">
+                  <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">vk</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-001-vk-social-logotype"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">inst</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-003-instagram-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">fb</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-002-facebook-logo-button"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">wp</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-005-phone-symbol-of-an-auricular-inside-a-circle"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">phone</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-010-telephone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="visually-hidden">telegram</span>
+                  <svg class="social__svg" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-004-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="page-footer__email email" href="mailto:mgr_clients@gmail.com">
+            <svg class="email__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-017-envelope"></use>
+              </svg>
+            <span>mgr_clients@gmail.com</span></a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
 
   
 
