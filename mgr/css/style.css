@@ -2997,11 +2997,11 @@ img {
     color: #333333;
     font-weight: 700;
     line-height: normal;
-    font-size: 18px; }
+    font-size: 16px; }
     @media (min-width: 375px) {
       .product__price {
-        font-size: -webkit-calc(0.77348vw + 15.09945px);
-        font-size: calc(0.77348vw + 15.09945px); } }
+        font-size: -webkit-calc(0.99448vw + 12.27072px);
+        font-size: calc(0.99448vw + 12.27072px); } }
     @media (min-width: 1280px) {
       .product__price {
         font-size: 25px; } }
