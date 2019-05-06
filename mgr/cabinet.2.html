@@ -461,83 +461,87 @@
   <div class="popup-overlay">
     <section class="popup popup-order">
       <div class="popup__wrapper">
-        <div class="popup__header">
-  <header class="mobile-header">
-    <div class="mobile-header__inner">
-      <a class="mobile-header__link" href="index.html">
-        <svg class="mobile-header__icon" width="20" height="20">
-          <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
-        </svg>
-        <span class="visually-hidden">ссылка назад</span>
-      </a>
-      <div class="mobile-header__title">Оставить отзыв</div>
-    </div>
-  </header>
-        </div>
-        <h3 class="popup__title">Оставить отзыв</h3>
-        <h4 class="popup__subtitle">Лендинг за 48 часов. Шаблон «Лес 1»</h4>
-        <form class="popup__form form-review" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="popup__list">
-            <li class="popup__item form-review__item">
-              <label class="form-review__label" for="name">Ваше имя:</label>
-              <input class="form-review__input" id="name" type="text" placeholder="Виталий">
-            </li>
-            <li class="popup__item form-review__item">
-              <label class="form-review__label form-review__label--full" for="rating">Ваша оценка:</label>
-              <ul class="rating">
-                <li class="rating__item rating__item--active" data-rate="1">
-                  <svg class="rating__icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#icon-star"></use>
+        <div class="popup__content-scroll">
+          <div class="popup__header">
+            <header class="mobile-header">
+              <div class="mobile-header__inner">
+                <a class="mobile-header__link" href="index.html">
+                  <svg class="mobile-header__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
                   </svg>
-                </li>
-                <li class="rating__item" data-rate="2">
-                  <svg class="rating__icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="rating__item" data-rate="3">
-                  <svg class="rating__icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="rating__item" data-rate="4">
-                  <svg class="rating__icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-                <li class="rating__item" data-rate="5">
-                  <svg class="rating__icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#icon-star"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li class="popup__item form-review__item">
-              <label class="form-review__label form-review__label--full" for="review">Ваш отзыв:</label>
-              <textarea class="form-review__textarea" name="reviews" id="reviews"></textarea>
-            </li>
-            <li class="popup__item form-review__item">
-              <div class="form-review__file">
-                <label class="form-review__input-file link-button link-button--green" for="file">Загрузить фото</label>
-                <input id="file" type="file" placeholder="Загрузить фото" accept="image/*">
-                <label for="myfile" class="popup-order__chous">Прикрепить файл (jpg, pdf, excel, word, zip, rar)</label>
-                <input type="file" class="popup-order__input popup-order__input--file" id="myfile" name="myfile" multiple="multiple" />
+                  <span class="visually-hidden">ссылка назад</span>
+                </a>
+                <div class="mobile-header__title">Оставить отзыв</div>
               </div>
-            </li>
-
-            <li class="popup__item form-review__item">
-              <div class="form-review__text">Дата отзыва: <span class="form-review__text--bold">23.03.2019</span></div>
-              <div class="form-review__text">Нажимая на кнопку «Продолжить», я подтверждаю свое
-              согласие на «<a href="#">Политику в отношении обработки
-              персональных данных</a>» и принимаю «<a href="#">Пользовательское
-              соглашение</a>»</div>
-            </li>
-          </ul>
-          <div class="popup__bottom">
-            <button class="button link-button popup__button" type="submit">Отправить</button>
-            <button class="button popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+            </header>
           </div>
-        </form>
+          <h3 class="popup__title">Оставить отзыв</h3>
+          <h4 class="popup__subtitle">Лендинг за 48 часов. Шаблон «Лес 1»</h4>
+          <form class="popup__form form-review" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="popup__list">
+              <li class="popup__item form-review__item">
+                <label class="form-review__label" for="name">Ваше имя:</label>
+                <input class="form-review__input" id="name" type="text" placeholder="Виталий">
+              </li>
+              <li class="popup__item form-review__item">
+                <label class="form-review__label form-review__label--full" for="rating">Ваша оценка:</label>
+                <ul class="rating">
+                  <li class="rating__item rating__item--active" data-rate="1">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating__item" data-rate="2">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating__item" data-rate="3">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating__item" data-rate="4">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating__item" data-rate="5">
+                    <svg class="rating__icon" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="popup__item form-review__item">
+                <label class="form-review__label form-review__label--full" for="review">Ваш отзыв:</label>
+                <textarea class="form-review__textarea" name="reviews" id="reviews"></textarea>
+              </li>
+              <li class="popup__item form-review__item">
+                <div class="form-review__file">
+                  <label class="form-review__input-file link-button link-button--green" for="file">Загрузить фото</label>
+                  <input id="file" type="file" placeholder="Загрузить фото" accept="image/*">
+                  <label for="myfile" class="popup-order__chous">Прикрепить файл (jpg, pdf, excel, word, zip, rar)</label>
+                  <input type="file" class="popup-order__input popup-order__input--file" id="myfile" name="myfile"
+                    multiple="multiple" />
+                </div>
+              </li>
+
+              <li class="popup__item form-review__item">
+                <div class="form-review__text">Дата отзыва: <span class="form-review__text--bold">23.03.2019</span></div>
+                <div class="form-review__text">Нажимая на кнопку «Продолжить», я подтверждаю свое
+                  согласие на «<a href="#">Политику в отношении обработки
+                    персональных данных</a>» и принимаю «<a href="#">Пользовательское
+                    соглашение</a>»</div>
+              </li>
+            </ul>
+            <div class="popup__bottom">
+              <button class="button link-button popup__button" type="submit">Отправить</button>
+              <button class="button popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </section>
   </div>
