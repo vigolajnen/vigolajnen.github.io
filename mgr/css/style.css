@@ -2955,6 +2955,38 @@ img {
       .main-goods__item:nth-child(5n) {
         padding-right: 0; } }
 
+@media (min-width: 992px) {
+  #js-slider-project-2 .main-goods__item {
+    width: -webkit-calc(100% / 4);
+    width: calc(100% / 4);
+    padding-right: 1.5625rem; }
+    #js-slider-project-2 .main-goods__item:nth-child(3n) {
+      padding-right: 1.5625rem; }
+    #js-slider-project-2 .main-goods__item:nth-child(4n) {
+      padding-right: 1.5625rem; } }
+
+@media (min-width: 1100px) {
+  #js-slider-project-2 .main-goods__item {
+    width: -webkit-calc(100% / 4);
+    width: calc(100% / 4);
+    padding-right: 1.5625rem; }
+    #js-slider-project-2 .main-goods__item:nth-child(3n) {
+      padding-right: 1.5625rem; }
+    #js-slider-project-2 .main-goods__item:nth-child(4n) {
+      padding-right: 0; } }
+
+@media (min-width: 1300px) {
+  #js-slider-project-2 .main-goods__item {
+    width: -webkit-calc(100% / 5);
+    width: calc(100% / 5);
+    padding-right: 1.5625rem; }
+    #js-slider-project-2 .main-goods__item:nth-child(3n) {
+      padding-right: 1.5625rem; }
+    #js-slider-project-2 .main-goods__item:nth-child(4n) {
+      padding-right: 1.5625rem; }
+    #js-slider-project-2 .main-goods__item:nth-child(5n) {
+      padding-right: 0; } }
+
 .product {
   padding: 0.625rem;
   margin-bottom: 2.1875rem;
@@ -4233,19 +4265,19 @@ img {
 
 .block-order__item--icon-2::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -5218px -4833px;
+  background-position: -4818px -4433px;
   width: 190px;
   height: 190px; }
 
 .block-order__item--icon-3::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -4818px -4433px;
+  background-position: -4618px -4233px;
   width: 190px;
   height: 190px; }
 
 .block-order__item--icon-4::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -4618px -4233px;
+  background-position: -5218px -4833px;
   width: 190px;
   height: 190px; }
 
@@ -6285,13 +6317,15 @@ img {
   height: 8px;
   background-color: rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 50%;
-          border-radius: 50%; }
+          border-radius: 50%;
+  border: 2px solid #ccbcaa; }
 
 .slider-base .slick-dots li button:before {
   font-size: 0; }
 
 .slider-base .slick-dots li.slick-active button {
-  background-color: #57b2db; }
+  background-color: #57b2db;
+  border-color: transparent; }
 
 .slider-base .slick-slide {
   margin: 0 5px auto; }
