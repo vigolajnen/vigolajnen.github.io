@@ -58,46 +58,9 @@
             </svg>
             <span class="visually-hidden">ссылка назад</span>
           </a>
-          <div class="mobile-header__title">Мои компании</div>
+          <div class="mobile-header__title">Корзина</div>
         </div>
       </header>
-
-      <nav class="navigation-mob">
-        <ul class="navigation-mob__list">
-          <li class="navigation-mob__item navigation-mob__item--active">
-            <a class="navigation-mob__link" href="index.html">
-              <svg class="navigation-mob__icon" width="45" height="45">
-                <use xlink:href="img/sprite.svg#icon-home"></use>
-              </svg>
-              <span class="navigation-mob__name">Главная</span>
-            </a>
-          </li>
-          <li class="navigation-mob__item">
-            <a class="navigation-mob__link" href="catalog.html">
-              <svg class="navigation-mob__icon" width="45" height="45">
-                <use xlink:href="img/sprite.svg#icon-layer"></use>
-              </svg>
-              <span class="navigation-mob__name">Каталог</span>
-            </a>
-          </li>
-          <li class="navigation-mob__item">
-            <a class="navigation-mob__link" href="cart.html">
-              <svg class="navigation-mob__icon" width="45" height="45">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
-              </svg>
-              <span class="navigation-mob__name">Корзина</span>
-            </a>
-          </li>
-          <li class="navigation-mob__item">
-            <a class="navigation-mob__link" href="cabinet.html">
-              <svg class="navigation-mob__icon" width="45" height="45">
-                <use xlink:href="img/sprite.svg#icon-007-user"></use>
-              </svg>
-              <span class="navigation-mob__name">Профиль</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
 
       <header class="page-header">
         <div class="wrapper">
@@ -190,88 +153,165 @@
 
       </header>
 
-      <div class="wrapper">
 
-        <div class="promo-inner">
-          <nav class="promo-inner__nav navigation-promo">
-            <ul class="navigation-promo__list">
-              <li class="navigation-promo__item navigation-promo__item--active">
-                <a class="navigation-promo__link navigation-promo__link--icon-1" href="cabinet.html">
-                  <svg class="navigation-promo__icon navigation-promo__icon--pink" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-user-1"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Общая информация</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link navigation-promo__link--icon-2" href="cabinet.2.html">
-                  <svg class="navigation-promo__icon" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-024-document"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Мои заказы</span>
-                </a>
-              </li>
-              <li class="navigation-promo__item">
-                <a class="navigation-promo__link navigation-promo__link--icon-3" href="cabinet.1.html">
-                  <svg class="navigation-promo__icon navigation-promo__icon--orange" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-013-gift"></use>
-                  </svg>
-                  <span class="navigation-promo__name">Мои подарки</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <section class="promo-inner__info">
-            <div class="breadcrumbs">
-              <a class="breadcrumbs__link" href="index.html">Главная</a>
-              <a class="breadcrumbs__link" href="cabinet.html">Личный кабинет</a>
-              <a class="breadcrumbs__link">Редактирование профиля</a>
+      <div class="wrapper cart">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+          <a class="breadcrumbs__link">Корзина</a>
+        </div>
+        <h1 class="title">Корзина заказа</h1>
+
+        <div class="cart__steps steps">
+          <ul class="steps__list">
+            <li class="steps__item steps__item--active steps__item--hidden-sm">
+              <span class="steps__number">1</span>
+              <span class="steps__name">Список услуг</span>
+            </li>
+            <li class="steps__item steps__item--active steps__item--hidden-sm">
+              <span class="steps__number">2</span>
+              <span class="steps__name">Регистрация</span>
+            </li>
+            <li class="steps__item steps__item--active steps__item--hidden-sm">
+              <span class="steps__number">3</span>
+              <span class="steps__name">Заполнение брифа</span>
+            </li>
+            <li class="steps__item steps__item--active">
+              <span class="steps__number">4</span>
+              <span class="steps__name">Завершение</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cart__info-order">
+          <div class="text">
+            <h3>Дорогой клиент! Огромное спасибо Вам за заказ.</h3>
+            <p>С 10:00 до 18:00 по московскому времени с Вами свяжется наш менеджер для уточнения деталей, а пока вы
+              можете оплатить счет. Это поможет ускорить выполнение вашего задания.</p>
+            <p>Статус Вашего заказа можете просмотреть в <a class="link" href="cabinet.html">личном кабинете.</a></p>
+
+            <h3>Счет на оплату</h3>
+          </div>
+
+          <div class="">
+
+            <img class="picture" src="img/cart/st-4.jpg" alt="Счет на оплату">
+            <div class="cart__links">
+              <a class="link" href="#" download="">Скачать</a>
+              <a class="link" href="#">Распечатать</a>
+              <a class="link" href="#">Отправить на email</a>
+              <a href="index.html" class="link-button">Перейти на главную</a>
             </div>
-            <div class="promo-inner__header">
-              <h1 class="promo-inner__title title">Личный кабинет</h1>
-              <h2 class="">Редактировать личные данные</h2>
-            </div>
-
-            <section class="form">
-              <div class="form__wrapper">
-                <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
-                  <div class="form__col">
-                    <div class="form__item">
-                      <label for="form-name" class="visually-hidden">Ваше имя</label>
-                      <input id="form-name" class="form__input" name="form-name" type="text" placeholder="Ваше имя"
-                        required="">
-                    </div>
-                    <div class="form__item">
-                      <label for="form-phone" class="visually-hidden">Ваш телефон</label>
-                      <input id="form-phone" class="form__input" name="form-phone" type="tel"
-                        placeholder="+7(945) 4506789" pattern="+7([0-9]{3}) [0-9]{7}" required="">
-                    </div>
-                    <div class="form__item">
-                      <label for="form-web" class="visually-hidden">Ваш email</label>
-                      <input id="form-web" class="form__input" name="form-web" type="email" placeholder="test@gmail.com"
-                        required="">
-                    </div>
-                    <div class="form__item">
-                      <label for="form-company-3" class="visually-hidden">Адрес</label>
-                      <input id="form-company-3" class="form__input" name="form-company-3" type="text"
-                        placeholder="Адрес" required="">
-                    </div>
-                  </div>
-
-                  <div class="form__item">
-                    <button class="form__btn button link-button" type="submit">Сохранить</button>
-                  </div>
-                </form>
-              </div>
-            </section>
+          </div>
 
         </div>
 
       </div>
 
+      <section class="main-goods bl bl--bg">
+        <div class="wrapper slider-base">
+          <h2 class="title title--line">Рекомендуем также добавить</h2>
+          <div class="main-goods__wrapper slider-base__wrapper">
+            <div id="slider-main-goods" class="main-goods__list slider-base__slider">
+              <div class="main-goods__item">
+                <div class="product product--br">
+                  <div class="product__wrapper product__wrapper--br">
+                    <a class="product__pic" href="item.html">
+                      <img class="picture" src="img/product/pr-1.jpg" alt="pic">
+                      <div class="product__icon marker">
+                        <div class="marker__num">48</div> часов
+                      </div>
+                    </a>
+                    <a class="product__name" href="item.html">Сайт под ключ за 48 часов</a>
+                    <p class="product__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <div class="product__price">110.000 руб.</div>
+                    <button class="product__button button link-button link-button--blue-light-bsh">Заказать</button>
+                  </div>
+                </div>
 
+              </div>
+              <div class="main-goods__item">
+                <div class="product product--br">
+                  <div class="product__wrapper product__wrapper--br">
+                    <a class="product__pic" href="item.html">
+                      <img class="picture" src="img/product/pr-1.jpg" alt="pic">
+                      <div class="product__icon marker">
+                        <div class="marker__num">48</div> часов
+                      </div>
+                    </a>
+                    <a class="product__name" href="item.html">Сайт под ключ за 48 часов</a>
+                    <p class="product__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <div class="product__price">110.000 руб.</div>
+                    <button class="product__button button link-button link-button--blue-light-bsh">Заказать</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="main-goods__item">
+                <div class="product product--br">
+                  <div class="product__wrapper product__wrapper--br">
+                    <a class="product__pic" href="item.html">
+                      <img class="picture" src="img/product/pr-1.jpg" alt="pic">
+                      <div class="product__icon marker">
+                        <div class="marker__num">48</div> часов
+                      </div>
+                    </a>
+                    <a class="product__name" href="item.html">Сайт под ключ за 48 часов</a>
+                    <p class="product__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <div class="product__price">110.000 руб.</div>
+                    <button class="product__button button link-button link-button--blue-light-bsh">Заказать</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="main-goods__item">
+                <div class="product product--br">
+                  <div class="product__wrapper product__wrapper--br">
+                    <a class="product__pic" href="item.html">
+                      <img class="picture" src="img/product/pr-1.jpg" alt="pic">
+                      <div class="product__icon marker">
+                        <div class="marker__num">48</div> часов
+                      </div>
+                    </a>
+                    <a class="product__name" href="item.html">Сайт под ключ за 48 часов</a>
+                    <p class="product__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <div class="product__price">110.000 руб.</div>
+                    <button class="product__button button link-button link-button--blue-light-bsh">Заказать</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="main-goods__item">
+                <div class="product product--br">
+                  <div class="product__wrapper product__wrapper--br">
+                    <a class="product__pic" href="item.html">
+                      <img class="picture" src="img/product/pr-1.jpg" alt="pic">
+                      <div class="product__icon marker">
+                        <div class="marker__num">48</div> часов
+                      </div>
+                    </a>
+                    <a class="product__name" href="item.html">Сайт под ключ за 48 часов</a>
+                    <p class="product__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <div class="product__price">110.000 руб.</div>
+                    <button class="product__button button link-button link-button--blue-light-bsh">Заказать</button>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+            <a class="link-button link-button--orange" href="#">Смотреть все услуги</a>
+          </div>
+        </div>
+      </section>
       <!-- контент -->
     </div>
+
     <footer class="page-footer page-footer--br">
       <div class="wrapper">
         <div class="page-footer__wrapper">
@@ -405,6 +445,46 @@
     </footer>
 
   </div>
+
+  <nav class="navigation-mob">
+    <ul class="navigation-mob__list">
+      <li class="navigation-mob__item navigation-mob__item--active">
+        <a class="navigation-mob__link" href="index.html">
+          <svg class="navigation-mob__icon" width="45" height="45">
+            <use xlink:href="img/sprite.svg#icon-home"></use>
+          </svg>
+          <span class="navigation-mob__name">Главная</span>
+        </a>
+      </li>
+      <li class="navigation-mob__item">
+        <a class="navigation-mob__link" href="catalog.html">
+          <svg class="navigation-mob__icon" width="45" height="45">
+            <use xlink:href="img/sprite.svg#icon-layer"></use>
+          </svg>
+          <span class="navigation-mob__name">Каталог</span>
+        </a>
+      </li>
+      <li class="navigation-mob__item">
+        <a class="navigation-mob__link" href="cart.html">
+          <svg class="navigation-mob__icon" width="45" height="45">
+            <use xlink:href="img/sprite.svg#icon-cart"></use>
+          </svg>
+          <span class="navigation-mob__name">Корзина</span>
+        </a>
+      </li>
+      <li class="navigation-mob__item">
+        <a class="navigation-mob__link" href="cabinet.html">
+          <svg class="navigation-mob__icon" width="45" height="45">
+            <use xlink:href="img/sprite.svg#icon-007-user"></use>
+          </svg>
+          <span class="navigation-mob__name">Профиль</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

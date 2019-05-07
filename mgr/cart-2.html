@@ -163,11 +163,11 @@
 
         <div class="cart__steps steps">
           <ul class="steps__list">
-            <li class="steps__item steps__item--active">
+            <li class="steps__item steps__item--active steps__item--hidden-sm">
               <span class="steps__number">1</span>
               <span class="steps__name">Список услуг</span>
             </li>
-            <li class="steps__item steps__item--hidden-sm">
+            <li class="steps__item steps__item--active">
               <span class="steps__number">2</span>
               <span class="steps__name">Регистрация</span>
             </li>
@@ -182,68 +182,46 @@
           </ul>
         </div>
 
-        <div class="cart__table">
-          <table class="cart-table">
-            <thead class="cart-table__head">
-              <tr class="cart-table__row">
-                <td class="cart-table__name">Фото</td>
-                <td class="cart-table__name">Услуга</td>
-                <td class="cart-table__name">Цена услуги</td>
-                <td class="cart-table__name">Убрать из заказа</td>
-              </tr>
-            </thead>
-            <tbody class="cart-table__body">
-              <tr class="cart-table__row">
-                <td class="cart-table__val">
-                  <img class="picture" src="img/product/pr-1.jpg" alt="pic">
-                </td>
-                <td class="cart-table__val">
-                  <div class="cart-table__text text">
-                    <a class="link" data-name="Услуга">Лендинг за 48 часов. Шаблон «Лес 1».</a>
-                    <p class="text__hidden-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, atque.
-                    </p>
+        <div class="cart__login">
+          <div class="cart__login-head">
+            <b>Уже зарегистрированы?</b>
+            <a class="link" href="login.html">Войти</a>
+          </div>
+          <div class="cart__login-form">
+            <div class="form">
+              <div class="form__wrapper">
+                <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="form__item">
+                    <label for="form-cart-name" class="visually-hidden">Ваше имя</label>
+                    <input id="form-cart-name" class="form__input" name="form-login" type="text" placeholder="Имя"
+                      required="">
                   </div>
-                </td>
-                <td class="cart-table__val cart-table__val--price">
-                  <div class="cart-table__price" data-name="Цена услуги">110. 000 руб.</div>
-                </td>
-                <td class="cart-table__val">
-                  <button class="button" type="button" aria-label="Удалить компанию">
-                    <svg class="button__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-019-garbage"></use>
-                    </svg>
-                  </button>
-                </td>
-              </tr>
-              <tr class="cart-table__row">
-                <td class="cart-table__val">
-                  <img class="picture" src="img/product/pr-1.jpg" alt="pic">
-                </td>
-                <td class="cart-table__val">
-                  <div class="cart-table__text text">
-                    <a class="link" data-name="Услуга">Лендинг за 48 часов. Шаблон «Лес 1».</a>
-                    <p class="text__hidden-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, atque.
-                    </p>
+                  <div class="form__item">
+                    <label for="form-cart-tel" class="visually-hidden">Ваш телефон</label>
+                    <input id="form-cart-tel" class="form__input" name="form-login" type="tel" placeholder="Телефон" required="">
                   </div>
-                </td>
-                <td class="cart-table__val cart-table__val--price">
-                  <div class="cart-table__price" data-name="Цена услуги">110. 000 руб.</div>
-                </td>
-                <td class="cart-table__val">
-                  <button class="button" type="button" aria-label="Удалить компанию">
-                    <svg class="button__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-019-garbage"></use>
-                    </svg>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  <div class="form__item">
+                    <label for="form-cart-mail" class="visually-hidden">Ваша почта</label>
+                    <input id="form-cart-mail" class="form__input" name="form-login" type="text" placeholder="Электронная почта (логин)" required="">
+                  </div>
+                  <div class="form__item">
+                    <label for="form-cart-pass" class="visually-hidden">Ваш пароль</label>
+                    <input id="form-cart-pass" class="form__input" name="form-pass" type="password" placeholder="Пароль" required="">
+                  </div>
+                  <div class="form__item">
+                    <p>Нажимая на кнопку «Продолжить», я подтверждаю свое согласие на <a class="link" href="#">«Политику в отношении обработки персональных данных</a>
+                    и принимаю <a class="link" href="#">«Пользовательское соглашение</a> </p>
+                  </div>
+                  <div class="form__item">
+                    <a class="link-button link-button--gray" href="cart-3.html">Продолжить</a>
+                    <a class="link" href="cart.html">Вернуться на шаг назад</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <a href="cart-2.html" class="link-button">Продолжить</a>
       </div>
-
 
       <section class="main-goods bl bl--bg">
         <div class="wrapper slider-base">
@@ -426,9 +404,6 @@
           </div>
         </div>
       </section>
-
-
-
       <!-- контент -->
     </div>
 

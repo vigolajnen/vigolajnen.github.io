@@ -163,15 +163,15 @@
 
         <div class="cart__steps steps">
           <ul class="steps__list">
-            <li class="steps__item steps__item--active">
+            <li class="steps__item steps__item--active steps__item--hidden-sm">
               <span class="steps__number">1</span>
               <span class="steps__name">Список услуг</span>
             </li>
-            <li class="steps__item steps__item--hidden-sm">
+            <li class="steps__item steps__item--active steps__item--hidden-sm">
               <span class="steps__number">2</span>
               <span class="steps__name">Регистрация</span>
             </li>
-            <li class="steps__item steps__item--hidden-sm">
+            <li class="steps__item steps__item--active">
               <span class="steps__number">3</span>
               <span class="steps__name">Заполнение брифа</span>
             </li>
@@ -182,14 +182,14 @@
           </ul>
         </div>
 
-        <div class="cart__table">
+        <div class="cart__table cart-table--step-3">
           <table class="cart-table">
             <thead class="cart-table__head">
               <tr class="cart-table__row">
                 <td class="cart-table__name">Фото</td>
                 <td class="cart-table__name">Услуга</td>
                 <td class="cart-table__name">Цена услуги</td>
-                <td class="cart-table__name">Убрать из заказа</td>
+                <td class="cart-table__name">Заполнение брифа</td>
               </tr>
             </thead>
             <tbody class="cart-table__body">
@@ -200,19 +200,21 @@
                 <td class="cart-table__val">
                   <div class="cart-table__text text">
                     <a class="link" data-name="Услуга">Лендинг за 48 часов. Шаблон «Лес 1».</a>
-                    <p class="text__hidden-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, atque.
-                    </p>
                   </div>
                 </td>
                 <td class="cart-table__val cart-table__val--price">
                   <div class="cart-table__price" data-name="Цена услуги">110. 000 руб.</div>
                 </td>
                 <td class="cart-table__val">
-                  <button class="button" type="button" aria-label="Удалить компанию">
-                    <svg class="button__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-019-garbage"></use>
-                    </svg>
-                  </button>
+                  <div class="cart-table__range-btn">
+                    <div class="range">
+                      <input class="range__input" type="range" min="1" max="100" value="100" data-rangeslider>
+                      <output class="range__number"></output>
+                    </div>
+                    <div class="cart-table__btn">
+                      <button class="button link">Просмотреть бриф</button>
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr class="cart-table__row">
@@ -222,28 +224,31 @@
                 <td class="cart-table__val">
                   <div class="cart-table__text text">
                     <a class="link" data-name="Услуга">Лендинг за 48 часов. Шаблон «Лес 1».</a>
-                    <p class="text__hidden-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, atque.
-                    </p>
                   </div>
                 </td>
                 <td class="cart-table__val cart-table__val--price">
                   <div class="cart-table__price" data-name="Цена услуги">110. 000 руб.</div>
                 </td>
                 <td class="cart-table__val">
-                  <button class="button" type="button" aria-label="Удалить компанию">
-                    <svg class="button__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-019-garbage"></use>
-                    </svg>
-                  </button>
+                  <div class="cart-table__range-btn">
+                    <div class="range">
+                      <input class="range__input" type="range" min="1" max="100" value="20" data-rangeslider>
+                      <output class="range__number"></output>
+                    </div>
+                    <div class="cart-table__btn">
+                      <button class="button link-button link-button--green">Заполнить бриф</button>
+                      <button class="button link">Не хочу заполнять</button>
+                    </div>
+
+                  </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <a href="cart-2.html" class="link-button">Продолжить</a>
+        <a href="cart-4.html" class="link-button">Продолжить</a>
       </div>
-
 
       <section class="main-goods bl bl--bg">
         <div class="wrapper slider-base">
@@ -426,9 +431,6 @@
           </div>
         </div>
       </section>
-
-
-
       <!-- контент -->
     </div>
 
