@@ -8218,8 +8218,8 @@ img {
 .steps {
   display: block;
   margin-right: auto;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
   color: #333333; }
   .steps__list {
     list-style: none;
@@ -8233,6 +8233,10 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  @media (min-width: 769px) {
+    .steps {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem; } }
   .steps__item {
     padding: 1.25rem 0; }
     .steps__item:not(:last-child) {
@@ -8308,14 +8312,42 @@ img {
     vertical-align: top; }
     .cart-table__val:not(:nth-child(2)) {
       text-align: center; }
+    @media (max-width: 768px) {
+      .cart-table__val:nth-child(1) {
+        width: 30%; }
+      .cart-table__val:nth-child(2) {
+        width: 60%; }
+      .cart-table__val:nth-child(4) {
+        margin-top: 1.25rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .cart-table__val--del {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px; } }
     @media (min-width: 769px) {
       .cart-table__val {
         vertical-align: middle; } }
     @media (max-width: 768px) {
       .cart-table__val--price {
         position: absolute;
-        left: 42%;
-        width: 50%; } }
+        left: 31%;
+        width: 50%;
+        margin-top: 10px; } }
+    @media (max-width: 575px) {
+      .cart-table__val--price {
+        position: absolute;
+        left: 33%; } }
   .cart-table__price {
     font-weight: 600;
     font-size: 20px; }
@@ -8341,6 +8373,16 @@ img {
         min-width: 150px; } }
   .cart-table__row {
     position: relative; }
+    @media (max-width: 768px) {
+      .cart-table__row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        min-height: 7.8125rem; } }
   .cart-table__text {
     max-width: 25rem; }
   .cart-table__range-btn {
@@ -8372,6 +8414,11 @@ img {
       .cart-table .picture {
         width: 100%;
         padding: 0.9375rem; } }
+  @media (max-width: 768px) {
+    .cart-table .range {
+      position: absolute;
+      top: 20%;
+      right: 0; } }
   .cart-table__btn {
     width: 100%;
     display: -webkit-box;
@@ -8385,23 +8432,21 @@ img {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    @media (max-width: 768px) {
-      .cart-table__btn {
-        position: absolute;
-        left: 0; } }
     @media (min-width: 769px) {
       .cart-table__btn {
         width: 60%;
         padding-left: 0; } }
     .cart-table__btn .button {
       width: 100%;
+      margin-bottom: 1.25rem;
       font-size: 15px; }
       @media (max-width: 768px) {
         .cart-table__btn .button {
           width: 45%; } }
       @media (min-width: 1280px) {
         .cart-table__btn .button {
-          width: 48%; } }
+          width: 48%;
+          margin-bottom: 0; } }
       @media (min-width: 375px) {
         .cart-table__btn .button {
           font-size: -webkit-calc(1.33333vw + 10px);
@@ -8579,29 +8624,3 @@ img {
     height: 1px; }
   .range .rangeslider__fill {
     background-color: #a3b806; }
-    @media (max-width: 768px) {
-      .range .rangeslider__fill {
-        position: absolute;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        white-space: nowrap;
-        border: 0;
-        -webkit-clip-path: inset(100%);
-                clip-path: inset(100%); } }
-  @media (max-width: 768px) {
-    .range .rangeslider {
-      position: absolute;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      white-space: nowrap;
-      border: 0;
-      -webkit-clip-path: inset(100%);
-              clip-path: inset(100%); } }
