@@ -5225,6 +5225,7 @@ img {
         -ms-flex-align: center;
             align-items: center; }
   .navigation-mob__link {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5258,6 +5259,18 @@ img {
       .navigation-mob__icon {
         width: 2.8125rem;
         height: 2.8125rem; } }
+  .navigation-mob__cart-count {
+    position: absolute;
+    top: -0.3125rem;
+    right: 0.3125rem;
+    height: 0.9375rem;
+    font-size: 0.625rem;
+    line-height: 0.9375rem;
+    padding: 0rem 0.3125rem;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    color: #fff;
+    background: red; }
 
 .navigation-mob__link:hover {
   color: #1f9bd1; }
