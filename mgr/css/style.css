@@ -8166,7 +8166,7 @@ img {
 .mobile-header {
   position: relative;
   padding: 0.9375rem 0.9375rem 1.5625rem 0.9375rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
   background-color: #f7faff; }
   .mobile-header::after {
     content: "";
@@ -8181,6 +8181,9 @@ img {
     background-image: url("../img/header/header-border.png");
     -webkit-background-size: 1.875rem 1.875rem;
             background-size: 1.875rem; }
+  @media (min-width: 480px) {
+    .mobile-header {
+      margin-bottom: 2.5rem; } }
   @media (min-width: 576px) {
     .mobile-header {
       margin-bottom: 0; } }
@@ -8269,7 +8272,7 @@ img {
 .steps {
   display: block;
   margin-right: auto;
-  margin-top: 1.25rem;
+  margin-top: 0;
   margin-bottom: 0;
   color: #333333; }
   .steps__list {
@@ -8677,3 +8680,124 @@ img {
     height: 1px; }
   .range .rangeslider__fill {
     background-color: #a3b806; }
+
+.form-brief {
+  margin-top: 20px;
+  padding-bottom: 20px; }
+  .form-brief__label {
+    position: relative;
+    font-size: 16px;
+    line-height: normal; }
+    @media (min-width: 375px) {
+      .form-brief__label {
+        font-size: -webkit-calc(1.06667vw + 12px);
+        font-size: calc(1.06667vw + 12px); } }
+    @media (min-width: 750px) {
+      .form-brief__label {
+        font-size: 20px; } }
+    .form-brief__label::before {
+      position: absolute;
+      content: "*";
+      top: -2px;
+      right: -7px;
+      color: red; }
+  .form-brief__text {
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    height: 100px;
+    width: 95%;
+    resize: none;
+    padding: 15px;
+    margin-top: 10px; }
+  .form-brief__sublist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .form-brief__subitem {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal; }
+    .form-brief__subitem:not(:last-child) {
+      margin-right: 20px; }
+    @media (min-width: 375px) {
+      .form-brief__subitem {
+        font-size: -webkit-calc(1.06667vw + 12px);
+        font-size: calc(1.06667vw + 12px); } }
+    @media (min-width: 750px) {
+      .form-brief__subitem {
+        font-size: 20px; } }
+  .form-brief__sublabel {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    cursor: pointer; }
+    .form-brief__sublabel::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -1px;
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      background: transparent;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      border: 2px solid #97a0b2; }
+    .form-brief__sublabel:hover::after {
+      border-color: #008dca; }
+    .form-brief__sublabel:focus::after {
+      border-color: #c7c7c7; }
+  .form-brief__sublabel-check {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    cursor: pointer; }
+    .form-brief__sublabel-check::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -1px;
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      background: transparent;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 2px solid #97a0b2; }
+    .form-brief__sublabel-check:hover::after {
+      border-color: #008dca; }
+    .form-brief__sublabel-check:focus::after {
+      border-color: #c7c7c7; }
+
+.form-brief__radio:checked + .form-brief__sublabel::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  background: #008dca;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.form-brief__checkbox:checked + .form-brief__sublabel-check::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -1px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icons/icon-button_check_a.png");
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border-color: #008dca; }

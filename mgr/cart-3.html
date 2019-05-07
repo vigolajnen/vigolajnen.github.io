@@ -159,7 +159,7 @@
           <a class="breadcrumbs__link" href="index.html">Главная</a>
           <a class="breadcrumbs__link">Корзина</a>
         </div>
-        <h1 class="title">Корзина заказа</h1>
+        <h1 class="title title--hidden-sm">Корзина заказа</h1>
 
         <div class="cart__steps steps">
           <ul class="steps__list">
@@ -236,7 +236,7 @@
                       <output class="range__number"></output>
                     </div>
                     <div class="cart-table__btn">
-                      <button class="button link-button link-button--green">Заполнить бриф</button>
+                      <button class="button link-button link-button--green" data-id="js-popup-btn-mob">Заполнить бриф</button>
                       <button class="button link">Не хочу заполнять</button>
                     </div>
 
@@ -609,6 +609,87 @@
   </nav>
 
   
+
+  <div class="popup-overlay">
+    <section class="popup popup-order">
+      <div class="popup__wrapper">
+        <div class="popup__content-scroll">
+          <div class="popup__header">
+            <header class="mobile-header">
+              <div class="mobile-header__inner">
+                <a class="mobile-header__link" href="cart-2.html">
+                  <svg class="mobile-header__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
+                  </svg>
+                  <span class="visually-hidden">ссылка назад</span>
+                </a>
+                <div class="mobile-header__title">Бриф. Заполнен на 90%</div>
+              </div>
+            </header>
+          </div>
+          <h3 class="popup__title">Лендинг за 48 часов. Шаблон «Лес 1»</h3>
+          <form class="popup__form form-brief" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="popup__list">
+              <li class="popup__item form-brief__item">
+                <label class="form-brief__label" for="field-1">Сфера деятельности</label>
+                <textarea class="form-brief__text" name="field-1" id="field-1" cols="30" rows="10"
+                  placeholder="Укажите области, в которых работаете"></textarea>
+              </li>
+              <li class="popup__item form-brief__item">
+                <label class="form-brief__label" for="field-2">Сфера деятельности</label>
+                <textarea class="form-brief__text" name="field-2" id="field-2" cols="30" rows="10"
+                  placeholder="Укажите области, в которых работаете"></textarea>
+              </li>
+              <li class="popup__item form-brief__item">
+                <label class="form-brief__label" for="field-3">Сфера деятельности</label>
+                <textarea class="form-brief__text" name="field-3" id="field-3" cols="30" rows="10"
+                  placeholder="Укажите области, в которых работаете"></textarea>
+              </li>
+              <li class="popup__item form-brief__item">
+                <label class="form-brief__label" for="field-4">Сфера деятельности</label>
+                <textarea class="form-brief__text" name="field-4" id="field-4" cols="30" rows="10"
+                  placeholder="Укажите области, в которых работаете"></textarea>
+              </li>
+              <li class="popup__item form-brief__item">
+                <ul class="form-brief__sublist">
+                  <li class="form-brief__subitem">
+                    <input class="form-brief__checkbox visually-hidden" id="brief-check-1" type="checkbox">
+                    <label class="form-brief__sublabel-check" for="brief-check-1">Услуга 1</label>
+                  </li>
+                  <li class="form-brief__subitem">
+                    <input class="form-brief__checkbox visually-hidden" id="brief-check-2" type="checkbox">
+                    <label class="form-brief__sublabel-check" for="brief-check-2">Услуга 2</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="popup__item form-brief__item">
+                <ul class="form-brief__sublist">
+                  <li class="form-brief__subitem">
+                    <input class="form-brief__radio visually-hidden" id="brief-radio-1" type="radio" name="brief-radio">
+                    <label class="form-brief__sublabel" for="brief-radio-1">Услуга 1</label>
+                  </li>
+                  <li class="form-brief__subitem">
+                    <input class="form-brief__radio visually-hidden" id="brief-radio-2" type="radio" name="brief-radio">
+                    <label class="form-brief__sublabel" for="brief-radio-2">Услуга 2</label>
+                  </li>
+                  <li class="form-brief__subitem">
+                    <input class="form-brief__radio visually-hidden" id="brief-radio-3" type="radio" name="brief-radio">
+                    <label class="form-brief__sublabel" for="brief-radio-3">Услуга 3</label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="popup__bottom">
+              <button class="button link-button popup__button" type="submit">Сохранить</button>
+              <button class="button popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
