@@ -2002,7 +2002,7 @@ img {
     left: 0;
     z-index: 1;
     background-image: url(../img/sprite-png.png);
-    background-position: -614px -615px;
+    background-position: -358px -359px;
     width: 34px;
     height: 34px;
     -webkit-transform: rotate(90deg) translateY(-50%);
@@ -2798,7 +2798,7 @@ img {
         left: 0;
         display: block;
         background-image: url(../img/sprite-png.png);
-        background-position: -2005px -2032px;
+        background-position: -1189px -1216px;
         width: 122px;
         height: 122px; }
 
@@ -3800,6 +3800,44 @@ img {
   .form__item {
     margin-bottom: 24px;
     width: 100%; }
+    .form__item--links {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      @media (min-width: 576px) {
+        .form__item--links {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: start;
+          -webkit-justify-content: flex-start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start; } }
+      .form__item--links .link {
+        margin-top: 1.25rem; }
+        @media (min-width: 576px) {
+          .form__item--links .link {
+            margin-top: 0;
+            margin-left: 1.25rem; } }
   .form__input {
     width: 100%;
     padding: 15px;
@@ -4259,31 +4297,31 @@ img {
 
 .block-order__item--icon-1::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -5018px -4633px;
+  background-position: -3602px -3217px;
   width: 190px;
   height: 190px; }
 
 .block-order__item--icon-2::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -4818px -4433px;
+  background-position: -4002px -3617px;
   width: 190px;
   height: 190px; }
 
 .block-order__item--icon-3::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -4618px -4233px;
+  background-position: -4202px -3817px;
   width: 190px;
   height: 190px; }
 
 .block-order__item--icon-4::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -5218px -4833px;
+  background-position: -3802px -3417px;
   width: 190px;
   height: 190px; }
 
 .block-order__item--icon-5::before {
   background-image: url(../img/sprite-png.png);
-  background-position: -4418px -4033px;
+  background-position: -4402px -4017px;
   width: 190px;
   height: 190px; }
 
@@ -4803,7 +4841,7 @@ img {
         top: 0.3125rem;
         left: -0.625rem;
         background-image: url(../img/sprite-png.png);
-        background-position: -4148px -3963px;
+        background-position: -3332px -3147px;
         width: 260px;
         height: 60px; } }
   @media (min-width: 1300px) {
@@ -6409,7 +6447,7 @@ img {
           transform: translate(-50%, -50%); }
 
 .marker {
-  padding: 0.9375rem;
+  padding: 0.5rem 0.625rem;
   font-family: "Crowd Funded", "Arial", sans-serif;
   line-height: normal;
   text-align: center;
@@ -8334,7 +8372,9 @@ img {
         position: absolute;
         top: 0;
         right: 0;
-        width: 50px; } }
+        width: 50px; }
+      .cart-table__val--btn {
+        width: 100%; } }
     @media (min-width: 769px) {
       .cart-table__val {
         vertical-align: middle; } }
@@ -8442,7 +8482,7 @@ img {
       font-size: 15px; }
       @media (max-width: 768px) {
         .cart-table__btn .button {
-          width: 45%; } }
+          width: auto; } }
       @media (min-width: 1280px) {
         .cart-table__btn .button {
           width: 48%;
