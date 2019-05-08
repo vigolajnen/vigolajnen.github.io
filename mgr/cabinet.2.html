@@ -549,23 +549,23 @@
 
 
   <div class="popup-overlay popup-js-akt">
-    <section class="popup popup-order form">
-      <div class="popup-order__wrapper">
-        <h3 class="">Запрос закрывающих документов</h3>
-        <form class="popup-order__form form__form" action="" method="post">
-          <ul class="popup-order__list">
-            <li class="popup-order__item form__item">
+    <section class="popup form">
+      <div class="popup__wrapper">
+        <h3 class="popup__title">Запрос закрывающих документов</h3>
+        <form class="popup__form form__form" action="" method="post">
+          <ul class="popup__list">
+            <li class="popup__item form__item">
               <label class="visually-hidden" for="mail">Выберите email</label>
-              <input id="mail" class="form__input" type="email" placeholder="Email для отправки электронных актов">
+              <input id="mail" class="form__input" type="email" placeholder="Email для отправки электронных актов" required>
             </li>
-            <li class="popup-order__item form__item">
+            <li class="popup__item form__item">
               <label class="visually-hidden" for="mail">Выберите адрес</label>
-              <input id="address" class="form__input" type="address" placeholder="Адрес для отправки оригиналов">
+              <input id="address" class="form__input" type="address" placeholder="Адрес для отправки оригиналов" required>
             </li>
           </ul>
-          <div class="popup-order__bottom">
+          <div class="popup__bottom">
             <button class="button link-button" type="submit">Отправить</button>
-            <button class="button popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+            <button class="button link popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
           </div>
         </form>
       </div>

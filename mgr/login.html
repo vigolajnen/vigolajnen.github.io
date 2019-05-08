@@ -371,20 +371,20 @@
   </div>
 
   <div class="popup-overlay">
-    <section class="popup popup-order form">
-      <div class="popup-order__wrapper">
-        <h3 class="">Востановление пароля</h3>
+    <section class="popup form">
+      <div class="popup__wrapper">
+        <h3 class="popup__title">Востановление пароля</h3>
         <div>введите email, который использовался при регистрации и мы вышлем на него новый пароль.</div>
-        <form class="popup-order__form form__form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="popup-order__list">
-            <li class="popup-order__item form__item">
+        <form class="popup__form form__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="popup__list">
+            <li class="popup__item form__item">
               <label class="visually-hidden" for="mail">Выберите модуль</label>
-              <input id="mail" class="form__input" type="email" placeholder="Электронная почта">
+              <input id="mail" class="form__input" type="email" placeholder="Электронная почта" required>
             </li>
           </ul>
-          <div class="popup-order__bottom">
+          <div class="popup__bottom">
             <button class="button link-button" type="submit">Отправить</button>
-            <button class="button popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+            <button class="button link popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
           </div>
         </form>
       </div>
