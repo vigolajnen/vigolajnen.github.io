@@ -373,20 +373,39 @@
   <div class="popup-overlay">
     <section class="popup form">
       <div class="popup__wrapper">
-        <h3 class="popup__title">Востановление пароля</h3>
-        <div>введите email, который использовался при регистрации и мы вышлем на него новый пароль.</div>
-        <form class="popup__form form__form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="popup__list">
-            <li class="popup__item form__item">
-              <label class="visually-hidden" for="mail">Выберите модуль</label>
-              <input id="mail" class="form__input" type="email" placeholder="Электронная почта" required>
-            </li>
-          </ul>
-          <div class="popup__bottom">
-            <button class="button link-button" type="submit">Отправить</button>
-            <button class="button link popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+        <div class="popup__content">
+          <div class="popup__header">
+            <header class="mobile-header">
+              <div class="mobile-header__inner">
+                <a class="mobile-header__link" href="login.html">
+                  <svg class="mobile-header__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
+                  </svg>
+                  <span class="visually-hidden">ссылка назад</span>
+                </a>
+                <div class="mobile-header__title">Востановление пароля</div>
+              </div>
+            </header>
           </div>
-        </form>
+          <div class="popup__body">
+            <h3 class="popup__title">Востановление пароля</h3>
+            <div>введите email, который использовался при регистрации и мы вышлем на него новый пароль.</div>
+            <form class="popup__form form__form" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="popup__list">
+                <li class="popup__item form__item">
+                  <label class="visually-hidden" for="mail">Выберите модуль</label>
+                  <input id="mail" class="form__input" type="email" placeholder="Электронная почта" required>
+                </li>
+              </ul>
+              <div class="popup__bottom">
+                <button class="button link-button" type="submit">Отправить</button>
+                <button class="button link popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
       </div>
     </section>
   </div>

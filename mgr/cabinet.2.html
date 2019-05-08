@@ -549,24 +549,43 @@
   <div class="popup-overlay popup-js-akt">
     <section class="popup form">
       <div class="popup__wrapper">
-        <h3 class="popup__title">Запрос закрывающих документов</h3>
-        <form class="popup__form form__form" action="" method="post">
-          <ul class="popup__list">
-            <li class="popup__item form__item">
-              <label class="visually-hidden" for="mail">Выберите email</label>
-              <input id="mail" class="form__input" type="email" placeholder="Email для отправки электронных актов" required>
-            </li>
-            <li class="popup__item form__item">
-              <label class="visually-hidden" for="mail">Выберите адрес</label>
-              <input id="address" class="form__input" type="address" placeholder="Адрес для отправки оригиналов" required>
-            </li>
-          </ul>
-          <div class="popup__bottom">
-            <button class="button link-button" type="submit">Отправить</button>
-            <button class="button link popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+        <div class="popup__content">
+          <div class="popup__header">
+            <header class="mobile-header">
+              <div class="mobile-header__inner">
+                <a class="mobile-header__link" href="cabinet.2.html">
+                  <svg class="mobile-header__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
+                  </svg>
+                  <span class="visually-hidden">ссылка назад</span>
+                </a>
+                <div class="mobile-header__title">Запрос закрывающих документов</div>
+              </div>
+            </header>
+            <div class="popup__body">
+              <h3 class="popup__title">Запрос закрывающих документов</h3>
+              <form class="popup__form form__form" action="" method="post">
+                <ul class="popup__list">
+                  <li class="popup__item form__item">
+                    <label class="visually-hidden" for="mail">Выберите email</label>
+                    <input id="mail" class="form__input" type="email" placeholder="Email для отправки электронных актов"
+                      required>
+                  </li>
+                  <li class="popup__item form__item">
+                    <label class="visually-hidden" for="mail">Выберите адрес</label>
+                    <input id="address" class="form__input" type="address" placeholder="Адрес для отправки оригиналов"
+                      required>
+                  </li>
+                </ul>
+                <div class="popup__bottom">
+                  <button class="button link-button" type="submit">Отправить</button>
+                  <button class="button link popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
+                </div>
+              </form>
+            </div>
           </div>
-        </form>
-      </div>
+
+        </div>
     </section>
   </div>
 

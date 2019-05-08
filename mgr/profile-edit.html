@@ -58,7 +58,7 @@
             </svg>
             <span class="visually-hidden">ссылка назад</span>
           </a>
-          <div class="mobile-header__title">Мои компании</div>
+          <div class="mobile-header__title">Информация о пользователе</div>
         </div>
       </header>
 
@@ -233,6 +233,14 @@
               <h2 class="">Редактировать личные данные</h2>
             </div>
 
+            <div class="profile profile--hidden-lg">
+              <div class="profile__pic">
+                <img class="profile__img" src="img/profile/user.png" alt="pic">
+                <!-- <input class="profile__foto" type="file" placeholder="Загрузить фото"> -->
+                <a class="profile__link" href="#">Загрузить фото</a>
+              </div>
+            </div>
+
             <section class="form">
               <div class="form__wrapper">
                 <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
@@ -261,6 +269,7 @@
 
                   <div class="form__item">
                     <button class="form__btn button link-button" type="submit">Сохранить</button>
+                    <button class="button link hidden hidden--sm" type="reset" aria-label="Сбросить текст">Отмена</button>
                   </div>
                 </form>
               </div>
