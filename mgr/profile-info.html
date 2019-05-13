@@ -194,113 +194,86 @@
       </header>
 
 
-
       <div class="wrapper">
-        <div class="profile">
-          <aside class="profile__sidebar profile__sidebar--hidden-sm">
-            <nav class="profile__nav navigation-profile">
-              <div class="navigation-profile__caption">Личный кабинет</div>
-              <ul class="navigation-profile__list">
-                <li class="navigation-profile__item navigation-profile__item--active">
-                  <a class="navigation-profile__link navigation-profile__link--icon-1" href="cabinet.html">
-                    <svg class="navigation-profile__icon navigation-profile__icon--pink" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-user-1"></use>
-                    </svg>
-                    <span class="navigation-profile__name">Общая информация</span>
-                  </a>
-                </li>
-                <li class="navigation-profile__item">
-                  <a class="navigation-profile__link navigation-profile__link--icon-2" href="cabinet.2.html">
-                    <svg class="navigation-profile__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-024-document"></use>
-                    </svg>
-                    <span class="navigation-profile__name">Мои заказы</span>
-                  </a>
-                </li>
-                <li class="navigation-profile__item">
-                  <a class="navigation-profile__link navigation-profile__link--icon-3" href="cabinet.1.html">
-                    <svg class="navigation-profile__icon navigation-profile__icon--orange" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-013-gift"></use>
-                    </svg>
-                    <span class="navigation-profile__name">Мои подарки</span>
-                  </a>
-                </li>
-                <li class="navigation-profile__item">
-                  <a class="navigation-profile__link navigation-profile__link--icon-4" href="cabinet.1.html">
-                    <svg class="navigation-profile__icon navigation-profile__icon--blue-3" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-briefcase"></use>
-                    </svg>
-                    <span class="navigation-profile__name">Мои компании</span>
-                  </a>
-                </li>
-                <li class="navigation-profile__item">
-                  <a class="navigation-profile__link navigation-profile__link--icon-5" href="profile-info.html">
-                    <svg class="navigation-profile__icon navigation-profile__icon--pink-2" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-user-1"></use>
-                    </svg>
-                    <span class="navigation-profile__name">Информация о пользователе</span>
-                  </a>
-                </li>
-              </ul>
-              <div class="hidden hidden--sm">
-                <div class="navigation-profile__caption">Магазин</div>
-                <ul class="navigation-profile__list">
 
-                  <li class="navigation-profile__item">
-                    <a class="navigation-profile__link" href="#">
-                      <span class="navigation-profile__name">Помощь покупателю</span>
-                    </a>
-                  </li>
-                  <li class="navigation-profile__item">
-                    <a class="navigation-profile__link" href="about-project.html">
-                      <span class="navigation-profile__name">О проекте</span>
-                    </a>
-                  </li>
-                  <li class="navigation-profile__item">
-                    <a class="navigation-profile__link" href="#">
-                      <span class="navigation-profile__name">Контактная информация</span>
-                    </a>
-                  </li>
-                  <li class="navigation-profile__item navigation-profile__item--active">
-                    <a class="navigation-profile__link" href="#">
-                      <span class="navigation-profile__name">Гарантии</span>
-                    </a>
-                  </li>
-                </ul>
+        <div class="page-inner">
+          <nav class="page-inner__nav navigation-promo">
+            <ul class="navigation-promo__list">
+              <li class="navigation-promo__item navigation-promo__item--active">
+                <a class="navigation-promo__link navigation-promo__link--icon-1" href="cabinet.html">
+                  <svg class="navigation-promo__icon navigation-promo__icon--pink" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-user-1"></use>
+                  </svg>
+                  <span class="navigation-promo__name">Общая информация</span>
+                </a>
+              </li>
+              <li class="navigation-promo__item">
+                <a class="navigation-promo__link navigation-promo__link--icon-2" href="cabinet.2.html">
+                  <svg class="navigation-promo__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-024-document"></use>
+                  </svg>
+                  <span class="navigation-promo__name">Мои заказы</span>
+                </a>
+              </li>
+              <li class="navigation-promo__item">
+                <a class="navigation-promo__link navigation-promo__link--icon-3" href="cabinet.1.html">
+                  <svg class="navigation-promo__icon navigation-promo__icon--orange" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-013-gift"></use>
+                  </svg>
+                  <span class="navigation-promo__name">Мои подарки</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <section class="page-inner__info">
+            <div class="breadcrumbs">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+              <a class="breadcrumbs__link" href="cabinet.html">Личный кабинет</a>
+              <a class="breadcrumbs__link">Информация о пользователе</a>
+            </div>
+            <div class="page-inner__header">
+              <h1 class="page-inner__title title">Личный кабинет</h1>
+              <h2 class="">Информация о пользователе</h2>
+            </div>
+
+            <div class="profile">
+
+              <div class="profile__content">
+                <div class="profile__pic">
+                  <img class="profile__img" src="img/profile/user.png" alt="pic">
+                  <!-- <input class="profile__foto" type="file" placeholder="Загрузить фото"> -->
+                  <a class="profile__link" href="#">Загрузить фото</a>
+                </div>
+                <div class="profile__info">
+                  <div class="profile__title">Информация о пользователе</div>
+                  <ul class="profile__list">
+                    <li class="profile__item">
+                      <span class="profile__name">ФИО:</span>
+                      <span class="profile__val">Островский Виталий Романович</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="profile__name">Телефон:</span>
+                      <span class="profile__val">+7 (945) 3490765</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="profile__name">Email:</span>
+                      <span class="profile__val">vitaliy_ostriy@gmail.com</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="profile__name">Адрес:</span>
+                      <span class="profile__val">Санкт-Петербург, ул. Красновская, 23</span>
+                    </li>
+                  </ul>
+                  <a class="profile__link" href="profile-edit.html">Редактировать профиль</a>
+                </div>
               </div>
-            </nav>
-          </aside>
-          <div class="profile__content">
-            <div class="profile__pic">
-              <img class="profile__img" src="img/profile/user.png" alt="pic">
-              <!-- <input class="profile__foto" type="file" placeholder="Загрузить фото"> -->
-              <a class="profile__link" href="#">Загрузить фото</a>
             </div>
-            <div class="profile__info">
-              <div class="profile__title">Информация о пользователе</div>
-              <ul class="profile__list">
-                <li class="profile__item">
-                  <span class="profile__name">ФИО:</span>
-                  <span class="profile__val">Островский Виталий Романович</span>
-                </li>
-                <li class="profile__item">
-                  <span class="profile__name">Телефон:</span>
-                  <span class="profile__val">+7 (945) 3490765</span>
-                </li>
-                <li class="profile__item">
-                  <span class="profile__name">Email:</span>
-                  <span class="profile__val">vitaliy_ostriy@gmail.com</span>
-                </li>
-                <li class="profile__item">
-                  <span class="profile__name">Адрес:</span>
-                  <span class="profile__val">Санкт-Петербург, ул. Красновская, 23</span>
-                </li>
-              </ul>
-              <a class="profile__link" href="profile-edit.html">Редактировать профиль</a>
-            </div>
-          </div>
+
+
         </div>
+
       </div>
+
 
 
       <!-- контент -->

@@ -6380,6 +6380,12 @@ img {
     @media (min-width: 992px) {
       .page-inner__nav {
         width: 25%; } }
+    .page-inner__nav.navigation-promo {
+      display: none; }
+      @media (min-width: 992px) {
+        .page-inner__nav.navigation-promo {
+          width: 25%;
+          display: block; } }
   .page-inner__info {
     width: 100%; }
     @media (min-width: 576px) {
@@ -6625,6 +6631,12 @@ img {
     @media (min-width: 992px) {
       .page-inner__nav {
         width: 25%; } }
+    .page-inner__nav.navigation-promo {
+      display: none; }
+      @media (min-width: 992px) {
+        .page-inner__nav.navigation-promo {
+          width: 25%;
+          display: block; } }
   .page-inner__info {
     width: 100%; }
     @media (min-width: 576px) {
