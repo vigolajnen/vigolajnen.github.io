@@ -1418,7 +1418,6 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 /*************** SCROLLBAR BASE CSS ***************/
 .scroll-wrapper {
   overflow: hidden !important;
-  padding: 0 !important;
   position: relative; }
 
 .scroll-wrapper > .scroll-content {
@@ -4427,7 +4426,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  padding-bottom: 4.375rem; }
+  padding-bottom: 2.5rem; }
   .popup__wrapper {
     position: relative;
     width: 100%;
@@ -4456,7 +4455,13 @@ img {
     .popup__body {
       padding: 0 0.9375rem; } }
   .popup__inner {
-    padding: 0 1em 2em; }
+    padding: 0 1em; }
+    @media (max-width: 768px) {
+      .popup__inner {
+        padding-bottom: 8.75rem; } }
+    @media (max-width: 575px) {
+      .popup__inner {
+        padding-bottom: 4.375rem; } }
   .popup__title {
     margin-bottom: 20px; }
     @media (max-width: 768px) {
@@ -4495,7 +4500,7 @@ img {
     cursor: pointer; }
     .popup .select__gap::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 50%;
       right: 1.25rem;
       -webkit-transform: rotate(180deg) translateY(50%);
@@ -4516,7 +4521,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-    padding-bottom: 1.25rem; }
+    padding-bottom: 2.5rem; }
     @media (min-width: 769px) {
       .popup__bottom {
         -webkit-box-pack: start;
@@ -4558,20 +4563,20 @@ img {
 
 .popup__wrapper.scrollbar-inner > .scroll-element.scroll-y {
   height: 95%;
-  right: 5px;
-  top: 15px;
-  width: 6px;
+  right: 0.3125rem;
+  top: 0.9375rem;
+  width: 0.375rem;
   opacity: 0.5; }
   @media (min-width: 769px) {
     .popup__wrapper.scrollbar-inner > .scroll-element.scroll-y {
       opacity: 1;
-      height: 85%;
-      right: 15px;
-      top: 85px; } }
+      height: 75%;
+      right: 0.9375rem;
+      top: 5.3125rem; } }
 
-@media (min-width: 769px) {
-  .popup__wrapper.scroll-wrapper > .scroll-content {
-    padding: 2.1875rem 2.5rem; } }
+.popup__wrapper.scroll-wrapper > .scroll-content {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .popup__wrapper.scrollbar-inner > .scroll-element .scroll-element_track {
   background-color: transparent; }
@@ -6800,6 +6805,12 @@ img {
     text-decoration: none; }
   .table__link[target="_blank"] {
     color: #333333; }
+
+.table-company .table__val[data-name] {
+  padding-left: 20%; }
+  @media (min-width: 768px) {
+    .table-company .table__val[data-name] {
+      padding-left: 0; } }
 
 .presents__title {
   margin-bottom: 40px; }
