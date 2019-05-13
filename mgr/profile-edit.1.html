@@ -52,21 +52,19 @@
 
       <header class="mobile-header">
         <div class="mobile-header__inner">
-          <a class="mobile-header__link" href="cabinet.html">
+          <a class="mobile-header__link" href="index.html">
             <svg class="mobile-header__icon" width="20" height="20">
               <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
             </svg>
             <span class="visually-hidden">ссылка назад</span>
           </a>
-          <div class="mobile-header__title">Мои подарки</div>
+          <div class="mobile-header__title">Информация о пользователе</div>
         </div>
       </header>
 
-      
-
       <nav class="navigation-mob">
         <ul class="navigation-mob__list">
-          <li class="navigation-mob__item">
+          <li class="navigation-mob__item navigation-mob__item--active">
             <a class="navigation-mob__link" href="index.html">
               <svg class="navigation-mob__icon" width="45" height="45">
                 <use xlink:href="img/sprite.svg#icon-home"></use>
@@ -91,7 +89,7 @@
               <!-- <span class="navigation-mob__cart-count">2</span> -->
             </a>
           </li>
-          <li class="navigation-mob__item navigation-mob__item--active">
+          <li class="navigation-mob__item">
             <a class="navigation-mob__link" href="cabinet.html">
               <svg class="navigation-mob__icon" width="45" height="45">
                 <use xlink:href="img/sprite.svg#icon-007-user"></use>
@@ -193,11 +191,10 @@
 
       </header>
 
-
-
       <div class="wrapper">
-        <div class="page-inner">
-          <nav class="page-inner__nav navigation-promo">
+
+        <div class="promo-inner">
+          <nav class="promo-inner__nav navigation-promo">
             <ul class="navigation-promo__list">
               <li class="navigation-promo__item navigation-promo__item--active">
                 <a class="navigation-promo__link navigation-promo__link--icon-1" href="cabinet.html">
@@ -225,76 +222,66 @@
               </li>
             </ul>
           </nav>
-          <section class="page-inner__info">
+          <section class="promo-inner__info">
             <div class="breadcrumbs">
               <a class="breadcrumbs__link" href="index.html">Главная</a>
               <a class="breadcrumbs__link" href="cabinet.html">Личный кабинет</a>
-              <a class="breadcrumbs__link">Мои подарки</a>
+              <a class="breadcrumbs__link">Редактирование профиля</a>
             </div>
-            <div class="page-inner__header">
-              <h1 class="page-inner__title title-inner">Личный кабинет</h1>
-              <h2 class="">Мои подарки</h2>
+            <div class="promo-inner__header">
+              <h1 class="promo-inner__title title">Личный кабинет</h1>
+              <h2 class="">Редактировать личные данные</h2>
             </div>
-            <section class="presents">
-              <div class="presents__inner">
-                <div class="presents__header">
-                  <div class="presents__name">Подарок</div>
-                  <div class="presents__name">Статус</div>
-                </div>
-                <div class="presents__body">
-                  <div class="presents__item">
-                    <div class="present">
-                      <img class="present__pic" src="img/present/present-1.jpg" alt="pic">
-                      <div class="present__info">
-                        <a class="present__link" href="#">Установка любого из указанных модулей на ваш сайт</a>
-                        <p class="present__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor.</p>
-                        <div class="present__price">0 Р</div>
-                      </div>
-                      <div class="present__status present__status--green">Подарок запрошен, ожидайте звонка менеджера</div>
+
+            <div class="profile profile--hidden-lg">
+              <div class="profile__pic">
+                <img class="profile__img" src="img/profile/user.png" alt="pic">
+                <!-- <input class="profile__foto" type="file" placeholder="Загрузить фото"> -->
+                <a class="profile__link" href="#">Загрузить фото</a>
+              </div>
+            </div>
+
+            <section class="form">
+              <div class="form__wrapper">
+                <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="form__col">
+                    <div class="form__item">
+                      <label for="form-name" class="visually-hidden">Ваше имя</label>
+                      <input id="form-name" class="form__input" name="form-name" type="text" placeholder="Ваше имя"
+                        required="">
                     </div>
-
-                  </div>
-                  <div class="presents__item">
-                    <div class="present">
-                      <img class="present__pic" src="img/present/present-1.jpg" alt="pic">
-                      <div class="present__info">
-                        <a class="present__link" href="#">Установка любого из указанных модулей на ваш сайт</a>
-                        <p class="present__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor.</p>
-                        <div class="present__price">0 Р</div>
-                      </div>
-                      <div class="present__status">Получен</div>
+                    <div class="form__item">
+                      <label for="form-phone" class="visually-hidden">Ваш телефон</label>
+                      <input id="form-phone" class="form__input" name="form-phone" type="tel"
+                        placeholder="+7(945) 4506789" pattern="+7([0-9]{3}) [0-9]{7}" required="">
                     </div>
-
-                  </div>
-                  <div class="presents__item">
-                    <div class="present">
-                      <img class="present__pic" src="img/present/present-1.jpg" alt="pic">
-                      <div class="present__info">
-                        <a class="present__link" href="#">Установка любого из указанных модулей на ваш сайт</a>
-                        <p class="present__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor.</p>
-                        <div class="present__price">0 Р</div>
-                      </div>
-                      <div class="present__status">
-                        <button class="button link-button link-button--green" data-id="js-popup-btn-mob">Получить</button>
-                      </div>
+                    <div class="form__item">
+                      <label for="form-web" class="visually-hidden">Ваш email</label>
+                      <input id="form-web" class="form__input" name="form-web" type="email" placeholder="test@gmail.com"
+                        required="">
                     </div>
-
+                    <div class="form__item">
+                      <label for="form-company-3" class="visually-hidden">Адрес</label>
+                      <input id="form-company-3" class="form__input" name="form-company-3" type="text"
+                        placeholder="Адрес" required="">
+                    </div>
                   </div>
-                </div>
 
+                  <div class="form__item">
+                    <button class="form__btn button link-button" type="submit">Сохранить</button>
+                    <button class="button link hidden hidden--sm" type="reset" aria-label="Сбросить текст">Отмена</button>
+                  </div>
+                </form>
               </div>
             </section>
 
-          </section>
         </div>
+
       </div>
+
 
       <!-- контент -->
     </div>
-
     <footer class="page-footer page-footer--br">
       <div class="wrapper">
         <div class="page-footer__wrapper">
@@ -428,73 +415,6 @@
     </footer>
 
   </div>
-
-
-  <div class="popup-overlay">
-    <section class="popup">
-      <div class="popup__wrapper">
-        <div class="popup__content">
-          <div class="popup__header">
-            <header class="mobile-header">
-              <div class="mobile-header__inner">
-                <a class="mobile-header__link" href="login.html">
-                  <svg class="mobile-header__icon" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
-                  </svg>
-                  <span class="visually-hidden">ссылка назад</span>
-                </a>
-                <div class="mobile-header__title">Бесплатная установка модуля на сайт</div>
-              </div>
-            </header>
-          </div>
-          <div class="popup__body">
-            <h3 class="popup__title popup__title--hidden-sm">Бесплатная установка модуля на сайт</h3>
-            <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
-              <ul class="popup__list">
-                <li class="popup__item">
-                  <label class="visually-hidden" for="select-1">Выберите модуль</label>
-                  <div class="popup__select" id="select-1">
-                    <select class="search-form__select custom-select js-size select select-1">
-                      <option value="Все категории">Выберите модуль</option>
-                      <option value="Дизайн и Арт">Дизайн и Арт</option>
-                      <option value="Разработка сайтов">Разработка сайтов</option>
-                      <option value="Программирование">Программирование</option>
-                      <option value="Реклама и продвижение">Реклама и продвижение</option>
-                      <option value="Полиграфия">Полиграфия</option>
-                      <option value="Мобильные приложения">Мобильные приложения</option>
-                      <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
-                      <option value="Производство видео">Производство видео</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="popup__item">
-                  <label class="visually-hidden" for="select-2">Выберите сайт для установки</label>
-                  <div class="popup__select" id="select-2">
-                    <select class="search-form__select custom-select js-size select select-2">
-                      <option value="Все категории">Выберите сайт для установки</option>
-                      <option value="Дизайн и Арт">Дизайн и Арт</option>
-                      <option value="Разработка сайтов">Разработка сайтов</option>
-                      <option value="Программирование">Программирование</option>
-                      <option value="Реклама и продвижение">Реклама и продвижение</option>
-                      <option value="Полиграфия">Полиграфия</option>
-                      <option value="Мобильные приложения">Мобильные приложения</option>
-                      <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
-                      <option value="Производство видео">Производство видео</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <div class="popup__bottom">
-                <button class="button link-button popup__button" type="submit">Получить</button>
-                <button class="button link popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

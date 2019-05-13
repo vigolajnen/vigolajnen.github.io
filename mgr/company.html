@@ -58,7 +58,7 @@
             </svg>
             <span class="visually-hidden">ссылка назад</span>
           </a>
-          <div class="mobile-header__title">Мои подарки</div>
+          <div class="mobile-header__title">Мои компании</div>
         </div>
       </header>
 
@@ -228,66 +228,78 @@
           <section class="page-inner__info">
             <div class="breadcrumbs">
               <a class="breadcrumbs__link" href="index.html">Главная</a>
-              <a class="breadcrumbs__link" href="cabinet.html">Личный кабинет</a>
+              <a class="breadcrumbs__link">Личный кабинет</a>
               <a class="breadcrumbs__link">Мои подарки</a>
             </div>
             <div class="page-inner__header">
               <h1 class="page-inner__title title-inner">Личный кабинет</h1>
-              <h2 class="">Мои подарки</h2>
+              <h2 class="">Мои компании</h2>
             </div>
-            <section class="presents">
-              <div class="presents__inner">
-                <div class="presents__header">
-                  <div class="presents__name">Подарок</div>
-                  <div class="presents__name">Статус</div>
-                </div>
-                <div class="presents__body">
-                  <div class="presents__item">
-                    <div class="present">
-                      <img class="present__pic" src="img/present/present-1.jpg" alt="pic">
-                      <div class="present__info">
-                        <a class="present__link" href="#">Установка любого из указанных модулей на ваш сайт</a>
-                        <p class="present__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor.</p>
-                        <div class="present__price">0 Р</div>
-                      </div>
-                      <div class="present__status present__status--green">Подарок запрошен, ожидайте звонка менеджера</div>
-                    </div>
-
-                  </div>
-                  <div class="presents__item">
-                    <div class="present">
-                      <img class="present__pic" src="img/present/present-1.jpg" alt="pic">
-                      <div class="present__info">
-                        <a class="present__link" href="#">Установка любого из указанных модулей на ваш сайт</a>
-                        <p class="present__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor.</p>
-                        <div class="present__price">0 Р</div>
-                      </div>
-                      <div class="present__status">Получен</div>
-                    </div>
-
-                  </div>
-                  <div class="presents__item">
-                    <div class="present">
-                      <img class="present__pic" src="img/present/present-1.jpg" alt="pic">
-                      <div class="present__info">
-                        <a class="present__link" href="#">Установка любого из указанных модулей на ваш сайт</a>
-                        <p class="present__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor.</p>
-                        <div class="present__price">0 Р</div>
-                      </div>
-                      <div class="present__status">
-                        <button class="button link-button link-button--green" data-id="js-popup-btn-mob">Получить</button>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </section>
-
+            <div class="company">
+              <table class="table table-company">
+                <thead class="table__head">
+                  <tr class="table__row">
+                    <td class="table__title">Компания, Бернд</td>
+                    <td class="table__title">Юр. название компании</td>
+                    <td class="table__title">Сайт</td>
+                    <td class="table__title">Адрес</td>
+                    <td class="table__title">Телефон</td>
+                    <td class="table__title">Действия</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__row">
+                    <td class="table__val" data-name="Компания, Бернд:">ООО Авалон</td>
+                    <td class="table__val" data-name="Юр. название компании:">
+                      <a class="table__link" href="#">ИП Островский</a>
+                    </td>
+                    <td class="table__val" data-name="Сайт:">
+                      <a class="table__link" href="www.avalon.spb.ru" target="_blank">www.avalon.spb.ru</a>
+                    </td>
+                    <td class="table__val" data-name="Адрес:">Санкт-Петербург, ул. Красновская, 23</td>
+                    <td class="table__val table__val--tel" data-name="Телефон:">+7 (495) 2308900</td>
+                    <td class="table__val" data-name="Действия:">
+                      <button class="button" type="button" aria-label="Редактировать компанию"
+                        data-id="js-popup-btn-mob">
+                        <svg class="button__icon" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-018-pencil-edit-button"></use>
+                        </svg>
+                      </button>
+                      <button class="button" type="button" aria-label="Удалить компанию">
+                        <svg class="button__icon" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-019-garbage"></use>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__val" data-name="Компания, Бернд:">ООО Авалон</td>
+                    <td class="table__val" data-name="Юр. название компании:">
+                      <a class="table__link" href="#">ИП Островский</a>
+                    </td>
+                    <td class="table__val" data-name="Сайт:">
+                      <a class="table__link" href="www.avalon.spb.ru" target="_blank">www.avalon.spb.ru</a>
+                    </td>
+                    <td class="table__val" data-name="Адрес:">Санкт-Петербург, ул. Красновская, 23</td>
+                    <td class="table__val table__val--tel" data-name="Телефон:">+7 (495) 2308900</td>
+                    <td class="table__val" data-name="Действия:">
+                      <button class="button" type="button" aria-label="Редактировать компанию"
+                        data-id="js-popup-btn-mob">
+                        <svg class="button__icon" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-018-pencil-edit-button"></use>
+                        </svg>
+                      </button>
+                      <button class="button" type="button" aria-label="Удалить компанию">
+                        <svg class="button__icon" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-019-garbage"></use>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="link-button" href="add-company.html">Добавить компанию</a>
+            </div>
           </section>
         </div>
       </div>
@@ -431,64 +443,83 @@
 
 
   <div class="popup-overlay">
-    <section class="popup">
-      <div class="popup__wrapper">
-        <div class="popup__content">
-          <div class="popup__header">
-            <header class="mobile-header">
-              <div class="mobile-header__inner">
-                <a class="mobile-header__link" href="login.html">
-                  <svg class="mobile-header__icon" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
-                  </svg>
-                  <span class="visually-hidden">ссылка назад</span>
-                </a>
-                <div class="mobile-header__title">Бесплатная установка модуля на сайт</div>
-              </div>
-            </header>
+    <section class="popup popup-order">
+      <div class="popup__wrapper scrollbar-inner">
+        <div class="popup__header">
+          <header class="mobile-header">
+            <div class="mobile-header__inner">
+              <a class="mobile-header__link" href="index.html">
+                <svg class="mobile-header__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-023-arrow-point-to-right"></use>
+                </svg>
+                <span class="visually-hidden">ссылка назад</span>
+              </a>
+              <div class="mobile-header__title">Реквизиты ООО Авалон</div>
+            </div>
+            <div class="mobile-header__buttons">
+              <a class="button" href="add-company.html" aria-label="Редактировать компанию" data-id="js-popup-btn-mob">
+                <svg class="button__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-018-pencil-edit-button"></use>
+                </svg>
+              </a>
+              <button class="button" type="button" aria-label="Удалить компанию">
+                <svg class="button__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-019-garbage"></use>
+                </svg>
+              </button>
+            </div>
+          </header>
+        </div>
+        <div class="popup__inner">
+          <h3 class="popup__title">Реквизиты ООО Авалон</h3>
+          <div class="requisites">
+            <div class="requisites__warning">Общество с ограниченной ответственностью «Авалон»</div>
+            <p>Сокращенное наименование: <span class="requisites__warning">ООО «Авалон»</span></p>
+            <ul class="requisites__list">
+              <li class="requisites__item">
+                <div class="requisites__name">ИНН:</div>
+                <div class="requisites__val">7804507731</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">КПП:</div>
+                <div class="requisites__val">780401001</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">Р/с:</div>
+                <div class="requisites__val">40702810006000003787 в Ст.-Петербургском ф-ле ПАО «Промсвязьбанк»,
+                  г.Санкт-Петербург</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">БИК:</div>
+                <div class="requisites__val">044030920</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">К/с:</div>
+                <div class="requisites__val">30101810000000000920</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">ОГРН:</div>
+                <div class="requisites__val">1137847168678</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">Юридический адрес</div>
+                <div class="requisites__val">195269, г. Санкт-Петербург, ул. Учительская, д. 18, к.1, 1
+                  этаж,
+                  офис 100-Н</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">Телефон</div>
+                <div class="requisites__val">+7 (812) 643-346-0</div>
+              </li>
+              <li class="requisites__item">
+                <div class="requisites__name">Генеральный директор:</div>
+                <div class="requisites__val">Ермолаев Дмитрий Сергеевич</div>
+              </li>
+            </ul>
           </div>
-          <div class="popup__body">
-            <h3 class="popup__title popup__title--hidden-sm">Бесплатная установка модуля на сайт</h3>
-            <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
-              <ul class="popup__list">
-                <li class="popup__item">
-                  <label class="visually-hidden" for="select-1">Выберите модуль</label>
-                  <div class="popup__select" id="select-1">
-                    <select class="search-form__select custom-select js-size select select-1">
-                      <option value="Все категории">Выберите модуль</option>
-                      <option value="Дизайн и Арт">Дизайн и Арт</option>
-                      <option value="Разработка сайтов">Разработка сайтов</option>
-                      <option value="Программирование">Программирование</option>
-                      <option value="Реклама и продвижение">Реклама и продвижение</option>
-                      <option value="Полиграфия">Полиграфия</option>
-                      <option value="Мобильные приложения">Мобильные приложения</option>
-                      <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
-                      <option value="Производство видео">Производство видео</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="popup__item">
-                  <label class="visually-hidden" for="select-2">Выберите сайт для установки</label>
-                  <div class="popup__select" id="select-2">
-                    <select class="search-form__select custom-select js-size select select-2">
-                      <option value="Все категории">Выберите сайт для установки</option>
-                      <option value="Дизайн и Арт">Дизайн и Арт</option>
-                      <option value="Разработка сайтов">Разработка сайтов</option>
-                      <option value="Программирование">Программирование</option>
-                      <option value="Реклама и продвижение">Реклама и продвижение</option>
-                      <option value="Полиграфия">Полиграфия</option>
-                      <option value="Мобильные приложения">Мобильные приложения</option>
-                      <option value="Автоматизация бизнеса">Автоматизация бизнеса</option>
-                      <option value="Производство видео">Производство видео</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <div class="popup__bottom">
-                <button class="button link-button popup__button" type="submit">Получить</button>
-                <button class="button link popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
-              </div>
-            </form>
+          <div class="popup__bottom popup__bottom--hidden-sm">
+            <a class="link-button popup__button" href="add-company.html">Редактировать</a>
+            <button class="button popup-close" type="button" aria-label="Закрыть окно">Отмена</button>
           </div>
         </div>
       </div>
