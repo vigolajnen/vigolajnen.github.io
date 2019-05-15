@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>К</title>
   <meta http-equiv="x-ua-compatible" content="IE=edge">
-  <meta name="viewport" content="width=800">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
 
   <link rel="preload" href="fonts/Robotolight.woff2" as="font" />
@@ -19,10 +19,91 @@
     <div class="content page">
       <!-- контент -->
 
-      <div class="container-list empty">
+      <!-- <div class="container-list empty">
         <div class="block-add">
           <div class="block-add__plus">
-            <button class="button button--plus" data-id="js-popup-btn">
+            <button class="button button--plus js-bl-modal-btn" data-modal="1">
+              <svg class="block-add__icon" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-plus"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+
+      <div class="container-list">
+        <div class="block-w">
+          <div class="container-fluid">
+            <div class="component-bg bg-image">
+              <div class="bg-image__box">
+                <div class="bg-image__pic" style="background-image: url('img/bg/w-bg.jpg')"></div>
+              </div>
+            </div>
+            <div class="compotent-bl-text bl-text">
+              <div class="bl-text__inner">
+                <h1 class="title">Какой отпуск вам подходит?</h1>
+                <p class="bl-text__intro">Пройдите тест, чтобы определить какой тур вам придется по душе сейчас больше
+                  всего.</p>
+                <a class="link link--white-btn" href="#">Пройти тест</a>
+              </div>
+            </div>
+          </div>
+          <div class="block-control">
+            <div class="block-control__group">
+              <div class="block-control__item">
+                <svg class="block-control__icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                </svg>
+              </div>
+              <div class="block-control__item">
+                <div class="block-control__box-icon">
+                  <svg class="block-control__icon block-control__icon--1" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                  <svg class="block-control__icon" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="block-control__item">
+                <svg class="block-control__icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-settings"></use>
+                </svg>
+              </div>
+              <div class="block-control__item active">
+                <svg class="block-control__icon block-control__icon--dots" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#icon-dots"></use>
+                </svg>
+                <div class="block-control__dropdown dropdown">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item">
+                      <svg class="dropdown__icon" width="15" height="15">
+                        <use xlink:href="img/sprite.svg#icon-eye"></use>
+                      </svg>
+                      <span class="dropdown__name">Отключить</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <svg class="dropdown__icon" width="15" height="15">
+                        <use xlink:href="img/sprite.svg#icon-copy"></use>
+                      </svg>
+                      <span class="dropdown__name">Скопировать</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <svg class="dropdown__icon" width="15" height="15">
+                        <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                      </svg>
+                      <span class="dropdown__name">Удалить</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-add">
+          <div class="block-add__plus">
+            <button class="button button--plus js-bl-modal-btn" data-modal="1">
               <svg class="block-add__icon" width="15" height="15">
                 <use xlink:href="img/sprite.svg#icon-plus"></use>
               </svg>
@@ -31,14 +112,6 @@
         </div>
       </div>
 
-
-      <!-- <div class="container-list">
-        <div class="block-w">
-          <div class="container-fluid">
-
-          </div>
-        </div>
-      </div> -->
 
 
 
@@ -49,13 +122,13 @@
       <div class="page-footer__inner">
         <div class="main-bar">
           <div class="main-bar__left">
-            <button class="button main-bar__link">
+            <button class="button main-bar__btn js-bl-modal-btn" data-modal="4">
               <svg class="main-bar__icon" width="15" height="15">
                 <use xlink:href="img/sprite.svg#icon-menu-list"></use>
               </svg>
               <span class="main-bar__name">Структура</span>
             </button>
-            <button class="button main-bar__link" data-id="js-popup-code-open">
+            <button class="button main-bar__btn js-bl-modal-btn" data-modal="2">
               <svg class="main-bar__icon" width="15" height="15">
                 <use xlink:href="img/sprite.svg#icon-code"></use>
               </svg>
@@ -63,7 +136,7 @@
             </button>
           </div>
           <div class="main-bar__right">
-            <button class="button main-bar__link">
+            <button class="button main-bar__btn js-bl-modal-btn" data-modal="3">
               <svg class="main-bar__icon" width="15" height="15">
                 <use xlink:href="img/sprite.svg#icon-settings"></use>
               </svg>
@@ -71,12 +144,12 @@
             </button>
             <div class="main-bar__devices devices">
               <div class="devices__links">
-                <button class="button devices__link" aria-label="Телефон">
+                <button class="button devices__link js-bl-modal-btn" data-modal="5" aria-label="Телефон">
                   <svg class="main-bar__icon" width="15" height="15">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                 </button>
-                <button class="button devices__link" aria-label="Планшет">
+                <button class="button devices__link js-bl-modal-btn" data-modal="6" aria-label="Планшет">
                   <svg class="main-bar__icon" width="15" height="15">
                     <use xlink:href="img/sprite.svg#icon-tablet"></use>
                   </svg>
@@ -105,8 +178,8 @@
               <div class="history__caption">История</div>
             </div>
             <div class="main-bar__actions">
-              <button class="main-bar__btn button button--gray">Просмотр</button>
-              <button class="main-bar__btn button button--turquoise">Сохранить</button>
+              <button class="main-bar__btn-action button button--gray">Просмотр</button>
+              <button class="main-bar__btn-action button button--turquoise">Сохранить</button>
             </div>
           </div>
         </div>
@@ -114,172 +187,168 @@
     </footer>
 
 
-    <div class="overlay-area" tabindex="0">
-      <div class="bl-modal">
-        <div class="bl-modal__overlay">
-          <div class="bl-modal__header">
-            <span class="bl-modal__title">Добавление виджета</span>
-            <button class="button bl-modal__close" aria-label="Закрыть" data-id="js-popup-close">
-              <svg class="bl-modal__icon" width="15" height="15">
-                <use xlink:href="img/sprite.svg#icon-close"></use>
+    <div class="bl-modal" data-modal="1">
+      <div class="bl-modal__header">
+        <span class="bl-modal__title">Добавление виджета</span>
+        <button class="button bl-modal__close js-bl-modal-close" aria-label="Закрыть">
+          <svg class="bl-modal__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="bl-modal__body bl-modal__body--no-pg bl-widgets">
+        <div class="bl-widgets__sidebar">
+          <ul class="bl-widgets__list">
+            <li class="bl-widgets__item" data-group="header">
+              <span class="bl-widgets__name">Шапка</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
               </svg>
-            </button>
-          </div>
-          <div class="bl-modal__body bl-widgets">
-            <div class="bl-widgets__sidebar">
-              <ul class="bl-widgets__list">
-                <li class="bl-widgets__item" data-group="header">
-                  <span class="bl-widgets__name">Шапка</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="menu">
-                  <span class="bl-widgets__name">Меню</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="cover">
-                  <span class="bl-widgets__name">Обложка</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item active" data-group="bl-text">
-                  <span class="bl-widgets__name">Текстовый блок</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="forms">
-                  <span class="bl-widgets__name">Формы</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="goods">
-                  <span class="bl-widgets__name">Товары</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="galery">
-                  <span class="bl-widgets__name">Галлерея</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="content">
-                  <span class="bl-widgets__name">Контент</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="speech">
-                  <span class="bl-widgets__name">Прямая речь</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="price">
-                  <span class="bl-widgets__name">Прайсы</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="partners">
-                  <span class="bl-widgets__name">Партнеры</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="tariffs">
-                  <span class="bl-widgets__name">Тарифы</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="reviews">
-                  <span class="bl-widgets__name">Отзывы</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="contacts">
-                  <span class="bl-widgets__name">Контакты</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="footer">
-                  <span class="bl-widgets__name">Подвал</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-                <li class="bl-widgets__item" data-group="other">
-                  <span class="bl-widgets__name">Прочее</span>
-                  <svg class="bl-widgets__icon only-active" width="15" height="15">
-                    <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
-                  </svg>
-                </li>
-              </ul>
-            </div>
-            <div class="bl-widgets__content">
-              <div class="bl-widgets__group scroll-content">
-                <div class="bl-widgets__group-item active visible" data-group-id="bl-text">
-                  <div class="bl-widgets__inner">
-                    <section class="widget-preview" data-preview="text:1">
-                      <div class="widget-preview__header">
-                        <div class="widget-preview__title">id_блока</div>
-                      </div>
-                      <div class="widget-preview__image">
-                        <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
-                      </div>
-                    </section>
-                    <section class="widget-preview" data-preview="text:2">
-                      <div class="widget-preview__header">
-                        <div class="widget-preview__title">id_блока</div>
-                      </div>
-                      <div class="widget-preview__image">
-                        <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
-                      </div>
-                    </section>
-                    <section class="widget-preview" data-preview="text:3">
-                      <div class="widget-preview__header">
-                        <div class="widget-preview__title">id_блока</div>
-                      </div>
-                      <div class="widget-preview__image">
-                        <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
-                      </div>
-                    </section>
-                    <section class="widget-preview" data-preview="text:4">
-                      <div class="widget-preview__header">
-                        <div class="widget-preview__title">id_блока</div>
-                      </div>
-                      <div class="widget-preview__image">
-                        <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
-                      </div>
-                    </section>
-                    <section class="widget-preview" data-preview="text:3">
-                      <div class="widget-preview__header">
-                        <div class="widget-preview__title">id_блока</div>
-                      </div>
-                      <div class="widget-preview__image">
-                        <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
-                      </div>
-                    </section>
-                    <section class="widget-preview" data-preview="text:4">
-                      <div class="widget-preview__header">
-                        <div class="widget-preview__title">id_блока</div>
-                      </div>
-                      <div class="widget-preview__image">
-                        <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
-                      </div>
-                    </section>
+            </li>
+            <li class="bl-widgets__item" data-group="menu">
+              <span class="bl-widgets__name">Меню</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="cover">
+              <span class="bl-widgets__name">Обложка</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item active" data-group="bl-text">
+              <span class="bl-widgets__name">Текстовый блок</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="forms">
+              <span class="bl-widgets__name">Формы</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="goods">
+              <span class="bl-widgets__name">Товары</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="galery">
+              <span class="bl-widgets__name">Галлерея</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="content">
+              <span class="bl-widgets__name">Контент</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="speech">
+              <span class="bl-widgets__name">Прямая речь</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="price">
+              <span class="bl-widgets__name">Прайсы</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="partners">
+              <span class="bl-widgets__name">Партнеры</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="tariffs">
+              <span class="bl-widgets__name">Тарифы</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="reviews">
+              <span class="bl-widgets__name">Отзывы</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="contacts">
+              <span class="bl-widgets__name">Контакты</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="footer">
+              <span class="bl-widgets__name">Подвал</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="other">
+              <span class="bl-widgets__name">Прочее</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="bl-widgets__content">
+          <div class="bl-widgets__group">
+            <div class="bl-widgets__group-item active visible" data-group-id="bl-text">
+              <div class="bl-widgets__inner">
+                <section class="widget-preview" data-preview="text:1">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
                   </div>
-                </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:2">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:3">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:4">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:3">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:4">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
               </div>
             </div>
           </div>
@@ -287,53 +356,52 @@
       </div>
     </div>
 
-    <div class="overlay-area" tabindex="0">
-      <div class="bl-modal" data-id="js-popup-code">
-        <div class="bl-modal__overlay bl-modal__overlay--gray">
-          <div class="bl-modal__body bl-modal__body--sm">
-            <div class="tabs">
-              <div class="tabs__box">
-                <ul class="tabs__list">
-                  <li class="tabs__item active">
-                    <button class="button tabs__link">Шаблон страницы</button>
-                  </li>
-                  <li class="tabs__item">
-                    <button class="button tabs__link">CSS страницы</button>
-                  </li>
-                  <li class="tabs__item">
-                    <button class="button tabs__link">JS страницы</button>
-                  </li>
-                  <li class="tabs__item">
-                    <button class="button tabs__link">CSS сайта</button>
-                  </li>
-                </ul>
-                <div class="tabs__btn-box">
-                  <button class="tabs__btn button button--turquoise" type="button">Сохранить</button>
-                  <button class="tabs__btn button button--white" type="button" data-id="js-popup-close">Отмена</button>
-                </div>
-              </div>
+    <div class="bl-modal bl-modal--sm" data-modal="2">
+      <div class="bl-modal__body bl-modal__body--no-pg bl-modal__body--height">
+        <div class="tabs">
+          <div class="tabs__box">
+            <ul class="tabs__list">
+              <li class="tabs__item active">
+                <button class="button tabs__link">Шаблон страницы</button>
+              </li>
+              <li class="tabs__item">
+                <button class="button tabs__link">CSS страницы</button>
+              </li>
+              <li class="tabs__item">
+                <button class="button tabs__link">JS страницы</button>
+              </li>
+              <li class="tabs__item">
+                <button class="button tabs__link">CSS сайта</button>
+              </li>
+            </ul>
+            <div class="tabs__btn-box">
+              <button class="tabs__btn button button--turquoise" type="button">Сохранить</button>
+              <button class="tabs__btn button button--white js-bl-modal-close">Отмена</button>
+            </div>
+          </div>
+          <div class="tabs__content scroll-content">
+            <div class="tabs__panel active" data-index="0">
+              <div class="tabs__content-inner">
+                1
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem perferendis magnam, repellendus pariatur aperiam incidunt rerum sequi, accusantium illum quod consequuntur, tempore quam recusandae assumenda quisquam. Possimus ad error molestiae dignissimos quaerat, illo itaque. Numquam sapiente inventore quae vitae corrupti quidem ipsum, iusto autem a dolor! Corrupti dolore beatae explicabo porro consequatur iusto ad impedit id delectus, repellat ex? Quaerat totam aliquam laborum aspernatur vero mollitia enim modi illo fugit recusandae quasi eaque perferendis magnam a rem necessitatibus nemo ducimus, magni esse. Reiciendis facere mollitia accusantium consequuntur rem nemo eaque. Consectetur aliquam sed suscipit optio officiis debitis magni? Nesciunt eum iusto, facilis praesentium repudiandae sapiente cumque recusandae harum! Sit, illo in aperiam aut natus reiciendis veniam, cumque hic deserunt eius praesentium perspiciatis dolorum consectetur repellendus ratione nisi atque, vitae alias? Harum quod maxime totam deleniti ab, asperiores iure expedita earum deserunt explicabo qui officia hic sapiente placeat est assumenda aperiam quo? Quia, doloremque error consectetur ex dolorem est, corrupti consequuntur facilis tempore earum explicabo beatae nostrum dignissimos, qui eum reprehenderit delectus aperiam officiis eaque nulla nisi. Dignissimos quam, soluta enim quos consequatur ea tempore. Tempore repellendus ipsum mollitia totam tempora reprehenderit, esse velit, vel itaque voluptas, ex voluptatem porro.
 
-              <div class="tabs__content scroll-content">
-                <div class="tabs__panel active" data-index="0">
-                  <div class="tabs__content-inner">
-                    1
-                  </div>
-                </div>
-                <div class="tabs__panel" data-index="1">
-                  <div class="tabs__content-inner">
-                    2
-                  </div>
-                </div>
-                <div class="tabs__panel" data-index="2">
-                  <div class="tabs__content-inner">
-                    3
-                  </div>
-                </div>
-                <div class="tabs__panel" data-index="3">
-                  <div class="tabs__content-inner">
-                    4
-                  </div>
-                </div>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat recusandae eveniet corporis. Officia velit sapiente dolores omnis ut corrupti quae laudantium, eveniet dolore beatae fuga perspiciatis ratione provident sint? Ipsa ipsam dolor facilis? Illum aperiam mollitia voluptates perspiciatis laborum aliquam soluta accusantium voluptate veniam velit blanditiis tenetur nesciunt enim possimus delectus, id qui fugit eaque corporis omnis accusamus veritatis. Neque consequatur corporis similique molestiae et, veritatis laboriosam nam maxime dolore illum iure aliquid pariatur optio qui dolores assumenda eos? Voluptatem repellat, aliquam ducimus in voluptates eos minus, quod explicabo reiciendis qui doloribus deserunt officiis! Hic quaerat adipisci minus culpa officia dolor voluptas ipsa autem sunt voluptatum eius reiciendis eveniet, minima illo ad quidem? Temporibus animi vitae quas exercitationem, corporis vero numquam ea unde illum. Possimus officia inventore sit nemo ipsam dicta a magni, vitae nisi veniam hic enim perferendis distinctio quos deserunt dolorum obcaecati error exercitationem? Vel suscipit nostrum saepe nisi dolorum ipsum iste placeat eius sunt libero molestiae, amet dolores quis excepturi tempora blanditiis? Repudiandae ad delectus at cupiditate quasi nesciunt in impedit neque inventore nostrum eaque, dicta quam nihil aut provident optio nemo asperiores praesentium eius consequuntur voluptate? Voluptates maiores assumenda dicta. Reprehenderit nisi eum exercitationem similique necessitatibus atque perferendis fugiat magni voluptates animi voluptate, nesciunt natus obcaecati culpa reiciendis? Blanditiis, facere quibusdam cupiditate error autem, quae quasi obcaecati, hic fugit vero necessitatibus magnam unde. Quia sequi eum, deleniti veritatis laudantium officiis obcaecati distinctio vero porro! Sapiente, natus, doloribus doloremque dolorum veniam sed aut velit consequuntur modi excepturi, fugit consequatur necessitatibus quibusdam delectus recusandae animi error ipsa commodi amet provident assumenda autem facilis? Doloremque atque quia suscipit veniam praesentium nam ipsam, sunt consequatur qui voluptatum! Porro rerum officia a aliquam. Amet blanditiis animi aperiam recusandae accusamus, incidunt perspiciatis autem dolorem sed rerum dolorum est! Enim assumenda architecto rerum.
+              </div>
+            </div>
+            <div class="tabs__panel" data-index="1">
+              <div class="tabs__content-inner">
+                2
+              </div>
+            </div>
+            <div class="tabs__panel" data-index="2">
+              <div class="tabs__content-inner">
+                3
+              </div>
+            </div>
+            <div class="tabs__panel" data-index="3">
+              <div class="tabs__content-inner">
+                4
               </div>
             </div>
           </div>
@@ -341,6 +409,372 @@
       </div>
     </div>
 
+    <div class="bl-modal bl-modal--sm" data-modal="3">
+      <div class="bl-modal__body bl-modal__body--no-pg bl-modal__body--height">
+        <div class="tabs">
+          <div class="tabs__box">
+            <ul class="tabs__list">
+              <li class="tabs__item active">
+                <button class="button tabs__link">Основной текст</button>
+              </li>
+              <li class="tabs__item">
+                <button class="button tabs__link">Аннотация</button>
+              </li>
+              <li class="tabs__item">
+                <button class="button tabs__link">SEO</button>
+              </li>
+              <li class="tabs__item">
+                <button class="button tabs__link">Свойства</button>
+              </li>
+              <li class="tabs__item">
+                <button class="button tabs__link">Доступ</button>
+              </li>
+            </ul>
+            <div class="tabs__btn-box">
+              <button class="tabs__btn button button--turquoise" type="button">Сохранить</button>
+              <button class="tabs__btn button button--white js-bl-modal-close">Отмена</button>
+            </div>
+          </div>
+          <div class="tabs__content scroll-content">
+            <div class="tabs__panel active" data-index="0">
+              <div class="tabs__content-inner">
+                <div class="tabs__settings">
+                  <ul class="tabs__settings-list">
+                    <li class="tabs__settings-item">
+                      <input class="tabs__settings-val tabs__settings-val--icon-1" id="support-1" type="text">
+                      <label class="visually-hidden" for="support-1">support</label>
+                    </li>
+                    <li class="tabs__settings-item">
+                      <input class="tabs__settings-val tabs__settings-val--icon-2" id="support-2" type="text">
+                      <label class="visually-hidden" for="support-2">support</label>
+                    </li>
+                    <li class="tabs__settings-item">
+                      <input class="tabs__settings-val tabs__settings-val--icon-3" id="support-3" type="text">
+                      <label class="visually-hidden" for="support-3">support</label>
+                    </li>
+                  </ul>
+                  <ul class="tabs__settings-list">
+                    <li class="tabs__settings-item">
+                      <input class="tabs__settings-checkbox visually-hidden" id="checkbox-1" type="checkbox">
+                      <label class="tabs__settings-label" for="checkbox-1">Отключить страницу</label>
+                    </li>
+                    <li class="tabs__settings-item">
+                      <input class="tabs__settings-checkbox visually-hidden" id="checkbox-2" type="checkbox" checked>
+                      <label class="tabs__settings-label" for="checkbox-2">Не отображать в меню</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="editor">
+                  <iframe src="" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel" data-index="1">
+              <div class="tabs__content-inner">
+                2
+              </div>
+            </div>
+            <div class="tabs__panel" data-index="2">
+              <div class="tabs__content-inner">
+                3
+              </div>
+            </div>
+            <div class="tabs__panel" data-index="3">
+              <div class="tabs__content-inner">
+                4
+              </div>
+            </div>
+            <div class="tabs__panel" data-index="4">
+              <div class="tabs__content-inner">
+                5
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bl-modal bl-modal--xs" data-modal="4">
+      <div class="bl-modal__header">
+        <div class="bl-modal__title">
+          <svg class="bl-modal__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-layers"></use>
+          </svg>
+          <span>Страница сайта</span>
+        </div>
+        <button class="button bl-modal__close js-bl-modal-close" aria-label="Закрыть">
+          <svg class="bl-modal__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="bl-modal__body">
+        1
+      </div>
+    </div>
+
+    <div class="bl-modal bl-modal--sm" data-modal="5">
+      <div class="bl-modal__body bl-modal__body--no-pg bl-modal__body--height">
+        <div class="tabs">
+          <div class="tabs__box">
+            <ul class="tabs__list">
+              <li class="tabs__item active">
+                <button class="button tabs__link">Мои изображения</button>
+              </li>
+              <li class="tabs__item">
+                <button class="button tabs__link">Библиотека изображений</button>
+              </li>
+            </ul>
+            <div class="tabs__btn-box">
+              <button class="tabs__btn button button--turquoise" type="button">Выбрать</button>
+              <button class="tabs__btn button button--white js-bl-modal-close">Отмена</button>
+            </div>
+          </div>
+          <div class="tabs__content scroll-content">
+            <div class="tabs__panel active" data-index="0">
+              <div class="tabs__content-inner">
+                <div class="bl-gallery">
+                  <div class="bl-gallery__sidebar">
+                    список
+                  </div>
+                  <div class="bl-gallery__grid">
+                    <div class="bl-gallery__item">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bl-gallery__item active">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bl-gallery__item">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bl-gallery__item">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bl-gallery__item">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bl-gallery__item">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bl-gallery__item">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bl-gallery__item">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bl-gallery__item">
+                      <div class="box-pic-preview" style="background-image: url('img/widget-preview/preview-text-bl.jpg')">
+                        <div class="box-pic-preview__inner">
+                          <button class="button box-pic-preview__btn" aria-label="Удалить">
+                            <svg class="box-pic-preview__icon" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                            </svg>
+                          </button>
+                          <div class="box-pic-preview__info">
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__name">form3_band.jpg</div>
+                              <div class="box-pic-preview__format">1920x540 px</div>
+                            </div>
+                            <div class="box-pic-preview__item">
+                              <div class="box-pic-preview__size">4 107 KB</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel" data-index="1">
+              <div class="tabs__content-inner">
+                2
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bl-modal bl-modal--sm" data-modal="6">
+      <div class="bl-modal__header">
+        <span class="bl-modal__title">Редактирование блока id_блока</span>
+        <div class="bl-modal__btn-box">
+          <button class="bl-modal__btn button button--turquoise" type="button">Выбрать</button>
+          <button class="bl-modal__btn button button--white js-bl-modal-close">Отмена</button>
+        </div>
+      </div>
+      <div class="bl-modal__body scroll-content">
+        <form class="bl-edit-form" action="">
+          <div class="bl-edit-form__item">
+            <label for="bl-edit-form-1" class="bl-edit-form__field">Название блока</label>
+            <input id="bl-edit-form-1" type="text" class="bl-edit-form__val">
+          </div>
+          <div class="bl-edit-form__item">
+            <div class="bl-edit-form__field">Текст блока</div>
+            <textarea class="bl-edit-form__textarea"></textarea>
+          </div>
+          <div class="bl-edit-form__item">
+            <label for="bl-edit-form-3" class="bl-edit-form__field">Название подблока 1</label>
+            <input id="bl-edit-form-3" type="text" class="bl-edit-form__val">
+          </div>
+          <div class="bl-edit-form__item">
+            <div class="bl-edit-form__field">Картинка подблока 1</div>
+            <div class="bl-edit-form__box">
+              <img class="bl-edit-form__pic" src="img/widget-preview/preview-text-bl.jpg" alt="pic">
+              <div class="bl-edit-form__actions">
+                <a href="#" class="link link--turquoise-btn">Выбрать изображение</a>
+                <button class="button button--red" type="button">Удалить</button>
+              </div>
+            </div>
+          </div>
+          <div class="bl-edit-form__item">
+            <label for="bl-edit-form-5" class="bl-edit-form__field">Параметр подблока 2</label>
+            <input id="bl-edit-form-5" type="text" class="bl-edit-form__val">
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-bl-modal"></div>
 
   </div>
 
