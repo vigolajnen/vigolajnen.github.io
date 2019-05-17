@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>К</title>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <link rel="preload" href="fonts/Robotolight.woff2" as="font" />
+  <link rel="preload" href="fonts/Robotomedium.woff2" as="font" />
+  <link rel="preload" href="fonts/opensans.woff2" as="font" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="bl-modal bl-modal--xs" data-modal="4">
+      <div class="bl-modal__header">
+        <div class="bl-modal__title">
+          <svg class="bl-modal__title-icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-layers"></use>
+          </svg>
+          <span>Страница сайта</span>
+        </div>
+        <button class="button bl-modal__close js-bl-modal-close" aria-label="Закрыть">
+          <svg class="bl-modal__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="bl-modal__body">
+        1
+      </div>
+    </div>
+
+
+
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-bl-modal"></div>
+
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+
+</body>
+
+</html>

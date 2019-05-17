@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>К</title>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <link rel="preload" href="fonts/Robotolight.woff2" as="font" />
+  <link rel="preload" href="fonts/Robotomedium.woff2" as="font" />
+  <link rel="preload" href="fonts/opensans.woff2" as="font" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="bl-modal" data-modal="1">
+      <div class="bl-modal__header">
+        <span class="bl-modal__title">Добавление виджета</span>
+        <button class="button bl-modal__close js-bl-modal-close" aria-label="Закрыть">
+          <svg class="bl-modal__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="bl-modal__body bl-modal__body--no-pg bl-widgets">
+        <div class="bl-widgets__sidebar">
+          <ul class="bl-widgets__list">
+            <li class="bl-widgets__item" data-group="header">
+              <span class="bl-widgets__name">Шапка</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="menu">
+              <span class="bl-widgets__name">Меню</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="cover">
+              <span class="bl-widgets__name">Обложка</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item active" data-group="bl-text">
+              <span class="bl-widgets__name">Текстовый блок</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="forms">
+              <span class="bl-widgets__name">Формы</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="goods">
+              <span class="bl-widgets__name">Товары</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="galery">
+              <span class="bl-widgets__name">Галлерея</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="content">
+              <span class="bl-widgets__name">Контент</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="speech">
+              <span class="bl-widgets__name">Прямая речь</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="price">
+              <span class="bl-widgets__name">Прайсы</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="partners">
+              <span class="bl-widgets__name">Партнеры</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="tariffs">
+              <span class="bl-widgets__name">Тарифы</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="reviews">
+              <span class="bl-widgets__name">Отзывы</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="contacts">
+              <span class="bl-widgets__name">Контакты</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="footer">
+              <span class="bl-widgets__name">Подвал</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+            <li class="bl-widgets__item" data-group="other">
+              <span class="bl-widgets__name">Прочее</span>
+              <svg class="bl-widgets__icon only-active" width="15" height="15">
+                <use xlink:href="img/sprite.svg#icon-double-arrow"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="bl-widgets__content">
+          <div class="bl-widgets__group scroll-content">
+            <div class="bl-widgets__group-item active visible" data-group-id="bl-text">
+              <div class="bl-widgets__inner">
+                <section class="widget-preview" data-preview="text:1">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:2">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:3">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:4">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:3">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+                <section class="widget-preview" data-preview="text:4">
+                  <div class="widget-preview__header">
+                    <div class="widget-preview__title">id_блока</div>
+                  </div>
+                  <div class="widget-preview__image">
+                    <img class="picture" src="img/widget-preview/preview-text-bl.jpg" alt="preview">
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-bl-modal"></div>
+
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+
+</body>
+
+</html>
