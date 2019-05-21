@@ -1667,7 +1667,8 @@ img {
   background-image: url("../img/bl/bl-bg-xs.png");
   background-repeat: repeat;
   -webkit-background-size: 105% 105%;
-          background-size: 105%; }
+          background-size: 105%;
+  background-attachment: fixed; }
   @media (min-width: 769px) {
     .bl {
       background-image: url("../img/bl/bl-bg-md.png"); } }
@@ -1762,7 +1763,8 @@ img {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   @media (min-width: 769px) {
     .promo {
       background-image: url("../img/promo/promo-bg-md.jpg"); } }
@@ -1870,7 +1872,8 @@ img {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  background-attachment: fixed; }
   @media (min-width: 769px) {
     .door-types {
       background-image: url("../img/door-types/door-types-bg-2-md.png"); } }
@@ -1991,7 +1994,8 @@ img {
   position: relative;
   min-height: 500px;
   padding: 2.5rem 0;
-  background-image: url("../img/regulations/regulations-bg-xs.jpg"); }
+  background-image: url("../img/regulations/regulations-bg-xs.jpg");
+  background-attachment: fixed; }
   @media (min-width: 769px) {
     .regulations {
       padding: 6.25rem 0;
@@ -2208,7 +2212,8 @@ img {
   position: relative;
   min-height: 500px;
   padding: 6.25rem 0;
-  background-image: url("../img/advantages/advantages-bg-xs.jpg"); }
+  background-image: url("../img/advantages/advantages-bg-xs.jpg");
+  background-attachment: fixed; }
   @media (min-width: 769px) {
     .advantages {
       background-image: url("../img/advantages/advantages-bg-md.jpg");
