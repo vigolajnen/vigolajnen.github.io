@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>К</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
 
-<head>
-  <meta charset="utf-8" />
-  <title>К</title>
-  <meta http-equiv="x-ua-compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
+    <link rel="preload" href="fonts/Robotolight.woff2" as="font" />
+    <link rel="preload" href="fonts/Robotomedium.woff2" as="font" />
+    <link rel="preload" href="fonts/opensans.woff2" as="font" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-  <link rel="preload" href="fonts/Robotolight.woff2" as="font" />
-  <link rel="preload" href="fonts/Robotomedium.woff2" as="font" />
-  <link rel="preload" href="fonts/opensans.woff2" as="font" />
-  <link rel="stylesheet" href="css/style.min.css" />
-</head>
-
-<body>
-  <div class="wrapper">
-
-    <div class="bl-modal bl-modal--sm" data-modal="6">
-      <div class="bl-modal__header">
-        <span class="bl-modal__title">Редактирование блока id_блока</span>
-        <div class="bl-modal__btn-box">
-          <button class="bl-modal__btn button button--turquoise" type="button">Выбрать</button>
-          <button class="bl-modal__btn button button--white js-bl-modal-close">Отмена</button>
+  <body>
+    <div class="wrapper">
+      <div class="bl-modal bl-modal--sm" data-modal="6">
+        <div class="bl-modal__header">
+          <span class="bl-modal__title">Редактирование блока id_блока</span>
+          <div class="bl-modal__btn-box">
+            <button class="bl-modal__btn button button--turquoise" type="button">Выбрать</button>
+            <button class="bl-modal__btn button button--white js-bl-modal-close">Отмена</button>
+          </div>
         </div>
-      </div>
-      <div class="bl-modal__body scroll-content">
-        <form class="bl-edit-form" action="">
-          <div class="bl-edit-form__item">
-            <label for="bl-edit-form-1" class="bl-edit-form__field">Название блока</label>
-            <input id="bl-edit-form-1" type="text" class="bl-edit-form__val">
-          </div>
-          <div class="bl-edit-form__item">
-            <div class="bl-edit-form__field">Текст блока</div>
-            <textarea class="bl-edit-form__textarea"></textarea>
-          </div>
-          <div class="bl-edit-form__item">
-            <label for="bl-edit-form-3" class="bl-edit-form__field">Название подблока 1</label>
-            <input id="bl-edit-form-3" type="text" class="bl-edit-form__val">
-          </div>
-          <div class="bl-edit-form__item">
-            <div class="bl-edit-form__field">Картинка подблока 1</div>
-            <div class="bl-edit-form__box">
-              <img class="bl-edit-form__pic" src="img/widget-preview/preview-text-bl.jpg" alt="pic">
-              <div class="bl-edit-form__actions">
-                <!-- <a href="#" class="link link--turquoise-btn">Выбрать изображение</a> -->
-                <button class="button button--turquoise js-bl-modal-btn" type="button" data-modal="5">Выбрать изображение</button>
-                <button class="button button--red" type="button">Удалить</button>
+        <div class="bl-modal__body scroll-content">
+          <form class="bl-edit-form" action="">
+            <div class="bl-edit-form__item">
+              <label for="bl-edit-form-1" class="bl-edit-form__field">Название блока</label>
+              <input id="bl-edit-form-1" type="text" class="bl-edit-form__val">
+            </div>
+            <div class="bl-edit-form__item">
+              <div class="bl-edit-form__field">Текст блока</div>
+              <textarea class="bl-edit-form__textarea"></textarea>
+            </div>
+            <div class="bl-edit-form__item">
+              <label for="bl-edit-form-3" class="bl-edit-form__field">Название подблока 1</label>
+              <input id="bl-edit-form-3" type="text" class="bl-edit-form__val">
+            </div>
+            <div class="bl-edit-form__item">
+              <div class="bl-edit-form__field">Картинка подблока 1</div>
+              <div class="bl-edit-form__box">
+                <img class="bl-edit-form__pic" src="img/widget-preview/preview-text-bl.jpg" alt="pic">
+                <div class="bl-edit-form__actions">
+                  <!-- <a href="#" class="link link--turquoise-btn">Выбрать изображение</a> -->
+                  <button class="button button--turquoise js-bl-modal-btn" type="button" data-modal="5">Выбрать изображение</button>
+                  <button class="button button--red" type="button">Удалить</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="bl-edit-form__item">
-            <label for="bl-edit-form-5" class="bl-edit-form__field">Параметр подблока 2</label>
-            <input id="bl-edit-form-5" type="text" class="bl-edit-form__val">
-          </div>
-        </form>
+            <div class="bl-edit-form__item">
+              <label for="bl-edit-form-5" class="bl-edit-form__field">Параметр подблока 2</label>
+              <input id="bl-edit-form-5" type="text" class="bl-edit-form__val">
+            </div>
+          </form>
+        </div>
       </div>
+
+
+      <!-- Подложка под модальным окном -->
+      <div class="overlay js-overlay-bl-modal"></div>
     </div>
 
+    
 
-    <!-- Подложка под модальным окном -->
-    <div class="overlay js-overlay-bl-modal"></div>
-
-  </div>
-
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script>
-    svg4everybody();
-  </script>
-
-</body>
-
+    <script src="js/tabs.min.js"></script>
+    <script src="js/iframes/edit.min.js"></script>
+  </body>
 </html>
