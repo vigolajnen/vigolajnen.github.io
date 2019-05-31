@@ -6783,3 +6783,11 @@ img {
   .video__link {
     max-height: 500px;
     max-width: 100%; }
+
+.info svg {
+  width: 50px;
+  height: 50px; }
+  @media (min-width: 768px) {
+    .info svg {
+      width: 100px;
+      height: 100px; } }
