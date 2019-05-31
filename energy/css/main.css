@@ -5658,6 +5658,10 @@ img {
     .h1, .h2, .h3, .h4, .h5, .h6 {
       font-size: 160%; } }
 
+@media (max-width: 767px) {
+  .h4, .h5, .h6 {
+    font-size: 120%; } }
+
 .btn {
   font-family: "CenturyGothic-Bold";
   text-transform: uppercase; }
@@ -5837,14 +5841,14 @@ img {
 .tab-pane.active {
   display: block; }
 
-.promo__slider.col-12 {
-  padding: 0; }
-
-.promo__slider .swiper-slide {
-  opacity: 0 !important; }
-
-.promo__slider .swiper-slide.swiper-slide-active {
-  opacity: 1 !important; }
+.promo__slider {
+  background-color: #278f60; }
+  .promo__slider.col-12 {
+    padding: 0; }
+  .promo__slider .swiper-slide {
+    opacity: 0 !important; }
+  .promo__slider .swiper-slide.swiper-slide-active {
+    opacity: 1 !important; }
 
 .promo__content {
   padding-top: 6.25rem;
@@ -5982,14 +5986,16 @@ img {
   .block-news .container {
     max-width: 1000px;
     margin: 0 auto; }
-  .block-news .row {
-    width: 100%; }
+  @media (min-width: 576px) {
+    .block-news .row {
+      width: 100%; } }
   .block-news .h3 {
     -ms-flex-item-align: start;
         align-self: flex-start; }
   .block-news__item {
     position: relative;
     display: block;
+    overflow: hidden;
     min-height: 25rem;
     color: #000;
     border: 1px solid #e8e8e8;
@@ -6012,6 +6018,9 @@ img {
   .block-news__title {
     font-family: "CenturyGothic-Bold";
     padding-bottom: 0.625rem; }
+
+.page-content .block-news .row {
+  width: 100%; }
 
 .block-projects .container {
   max-width: 1000px;
