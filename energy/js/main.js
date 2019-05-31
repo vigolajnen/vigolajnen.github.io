@@ -23921,13 +23921,13 @@ $(document).ready(function() {
 // });
 
 
-ScrollReveal().reveal(".block-news__item", { delay: 500 });
-ScrollReveal().reveal(".block-projects__item", { delay: 500 });
-ScrollReveal().reveal(".block-about__item", { delay: 500 });
-ScrollReveal().reveal(".block-progress", { delay: 500 });
-ScrollReveal().reveal(".partners", { delay: 500 });
-ScrollReveal().reveal(".block-map", { delay: 500 });
-ScrollReveal().reveal(".page__content", { delay: 500 });
+ScrollReveal().reveal(".block-news", { delay: 200 });
+ScrollReveal().reveal(".block-projects", { delay: 200 });
+ScrollReveal().reveal(".block-about__item", { delay: 200 });
+ScrollReveal().reveal(".block-progress", { delay: 200 });
+ScrollReveal().reveal(".partners", { delay: 200 });
+ScrollReveal().reveal(".block-map", { delay: 200 });
+ScrollReveal().reveal(".page__content", { delay: 200 });
 
 })();
 
@@ -23946,7 +23946,7 @@ var marker;
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 16,
-    center: { lat: 55.7465072, lng: 37.5341161 }
+    center: { lat: 55.7471, lng: 37.5345083 }
   });
 
   var image =
@@ -23958,7 +23958,7 @@ function initMap() {
     title: "Москва г, наб.Пресненская, д.10, пом.18",
     draggable: true,
     animation: google.maps.Animation.DROP,
-    position: { lat: 55.7465072, lng: 37.5341161 }
+    position: { lat: 55.7471, lng: 37.5345083 }
   });
   marker.addListener("click", toggleBounce);
 }

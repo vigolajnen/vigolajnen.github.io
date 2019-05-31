@@ -5840,6 +5840,8 @@ img {
 
 .tab-pane.active {
   display: block; }
+  .tab-pane.active .block-news {
+    opacity: 1 !important; }
 
 .promo__slider {
   background-color: #278f60; }
@@ -6220,7 +6222,7 @@ img {
     -ms-flex-direction: column;
         flex-direction: column;
     height: 100%; }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .page-footer__item {
         -ms-flex-align: center;
             align-items: center; } }
