@@ -23946,7 +23946,7 @@ var marker;
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 16,
-    center: { lat: 55.7471, lng: 37.5345083 }
+    center: { lat: 55.746596, lng: 37.537445 } // 55.7473047,37.5369322
   });
 
   var image =
@@ -23958,7 +23958,7 @@ function initMap() {
     title: "Москва г, наб.Пресненская, д.10, пом.18",
     draggable: true,
     animation: google.maps.Animation.DROP,
-    position: { lat: 55.7471, lng: 37.5345083 }
+    position: { lat: 55.746596, lng: 37.537445 }
   });
   marker.addListener("click", toggleBounce);
 }
