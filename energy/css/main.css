@@ -6457,6 +6457,8 @@ img {
     background-color: #278f60; } }
 
 .logo {
+  position: relative;
+  z-index: 2;
   max-width: 250px; }
 
 @media (min-width: 992px) {
