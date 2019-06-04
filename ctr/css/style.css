@@ -341,7 +341,6 @@ body {
 
 body {
   position: relative;
-  min-width: 768px;
   margin: 0;
   padding: 0;
   font-family: "Roboto light", "Arial", sans-serif;
@@ -499,6 +498,18 @@ img {
     -webkit-box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
             box-shadow: 0 0 0 40px rgba(0, 0, 0, 0); } }
 
+.container-xs {
+  width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff; }
+
+.container-sm {
+  width: 768px;
+  min-width: 768px;
+  margin: 0 auto;
+  background-color: #ffffff; }
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -609,6 +620,7 @@ img {
 .title {
   margin: 0 0 40px 0;
   font-weight: 600;
+  line-height: 1;
   font-family: "Roboto Medium";
   font-size: 40px; }
   @media (min-width: 1280px) {
