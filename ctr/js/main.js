@@ -198,6 +198,29 @@ if (controlsWrapper) {
   });
 
   window.addEventListener("message", function(evt) {
+    if (evt.data.target == 1) {
+      parent.document
+        .querySelector(".bl-modal[data-index='1']")
+        .classList.add("active");
+      parent.document
+        .querySelector(".bl-modal[data-index='1']")
+        .parentElement.classList.add("active");
+    } else if (evt.data.target == 6) {
+      parent.document
+        .querySelector(".bl-modal[data-index='6']")
+        .classList.add("active");
+      parent.document
+        .querySelector(".bl-modal[data-index='6']")
+        .parentElement.classList.add("active");
+    }
+    // else if (evt.data.target == 10) {
+    //   parent.document
+    //     .querySelector(".bl-modal[data-index='10']")
+    //     .classList.add("active");
+    //   parent.document
+    //     .querySelector(".bl-modal[data-index='10']")
+    //     .parentElement.classList.add("active");
+    // }
     var openIframes = document.querySelectorAll(".js-btn");
     openIframes.forEach(function(btn) {
       btn.addEventListener("click", function(evt) {
