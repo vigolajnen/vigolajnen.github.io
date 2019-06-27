@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>К</title>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>Стартовая страница</title>
+  <link rel="preload" href="fonts/Robotolight.woff2" as="font" />
+  <link rel="preload" href="fonts/Robotomedium.woff2" as="font" />
+  <link rel="preload" href="fonts/opensans.woff2" as="font" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="bl-modal bl-modal--sm active" data-index="2">
+      <div class="bl-modal__body bl-modal__body--no-pg bl-modal__body--height">
+        <div class="tabs">
+          <div class="tabs__box">
+            <ul class="tabs__list">
+              <li class="tabs__item js-tab-trigger active" data-tab="1">
+                <button class="button tabs__link">Шаблон страницы</button>
+              </li>
+              <li class="tabs__item js-tab-trigger" data-tab="2">
+                <button class="button tabs__link">CSS страницы</button>
+              </li>
+              <li class="tabs__item js-tab-trigger" data-tab="3">
+                <button class="button tabs__link">JS страницы</button>
+              </li>
+              <li class="tabs__item js-tab-trigger" data-tab="4">
+                <button class="button tabs__link">CSS сайта</button>
+              </li>
+            </ul>
+            <div class="tabs__btn-box">
+              <button class="tabs__btn button button--turquoise js-bl-modal-save" type="button">
+                Сохранить
+              </button>
+              <button class="tabs__btn button button--white js-btn-close">
+                Отмена
+              </button>
+            </div>
+          </div>
+          <div class="tabs__content scroll-content">
+            <div class="tabs__panel js-tab-content active" data-tab="1">
+              <div class="tabs__content-inner">
+                1
+              </div>
+            </div>
+            <div class="tabs__panel js-tab-content" data-tab="2">
+              <div class="tabs__content-inner">
+                <div class="subtabs">
+                  <div class="subtabs__box">
+                    <ul class="subtabs__list">
+                      <li class="subtabs__item js-subtab-trigger active" data-subtab="4">
+                        <button class="button subtabs__link">CSS 1</button>
+                      </li>
+                      <li class="subtabs__item js-subtab-trigger" data-subtab="5">
+                        <button class="button subtabs__link">CSS 2</button>
+                      </li>
+                      <li class="subtabs__item js-subtab-trigger" data-subtab="6">
+                        <button class="button subtabs__link">CSS 3</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="subtabs__content">
+                    <div class="subtabs__panel js-subtab-content active" data-subtab="4">
+                      <div class="subtabs__content-inner">
+                        1
+                      </div>
+                    </div>
+                    <div class="subtabs__panel js-subtab-content" data-subtab="5">
+                      <div class="subtabs__content-inner">
+                        2
+                      </div>
+                    </div>
+                    <div class="subtabs__panel js-subtab-content" data-subtab="6">
+                      <div class="subtabs__content-inner">
+                        3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel js-tab-content" data-tab="3">
+              <div class="tabs__content-inner">
+                3
+              </div>
+            </div>
+            <div class="tabs__panel js-tab-content" data-tab="4">
+              <div class="tabs__content-inner">
+                4
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="js/main.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+</body>
+
+</html>
