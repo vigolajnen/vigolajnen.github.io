@@ -47,8 +47,8 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
     target: 2
   });
 
-  if (document.querySelector(".js-bl-modal-close")) {
-    document.querySelector(".js-bl-modal-close").addEventListener("click", function(evt) {
+  if (document.querySelector(".js-btn-close")) {
+    document.querySelector(".js-btn-close").addEventListener("click", function(evt) {
       parent.postMessage({
         source: 2,
         type: "close",
@@ -56,7 +56,7 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
       });
     });
   }
-  
+
 })();
 (function() {
   parent.postMessage({
@@ -64,8 +64,8 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
     type: "properties page",
     target: 10
   });
-  if (document.querySelector(".js-bl-modal-close")) {
-    document.querySelector(".js-bl-modal-close").addEventListener("click", function(evt) {
+  if (document.querySelector(".js-btn-close")) {
+    document.querySelector(".js-btn-close").addEventListener("click", function(evt) {
       parent.postMessage({
         source: 10,
         type: "close",
@@ -73,7 +73,7 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
       });
     });
   }
-  
+
 })();
 
 "use strict";
@@ -117,68 +117,6 @@ window.matchMedia||(window.matchMedia=function(){"use strict";var a=window.style
     });
   });
 })();
-// модальные окна
-(function () {
-  document.addEventListener("DOMContentLoaded", function() {
-    
-    var modalButtons = document.querySelectorAll(".js-bl-modal-btn"),
-      overlay = document.querySelector(".js-overlay-bl-modal"),
-      closeButtons = document.querySelectorAll(".js-bl-modal-close");
-
-    modalButtons.forEach(function(item) {
-      item.addEventListener("click", function(e) {
-        e.preventDefault();
-
-        var modalId = this.getAttribute("data-index");
-        if (modalId) {
-          var modalElem = document.querySelector(
-            '.bl-modal[data-index="' + modalId + '"]'
-          );
-        }
-        
-        if (modalElem) {
-          modalElem.classList.add("active");
-          overlay.classList.add("active");
-        }
-        
-      });
-    });
-
-    closeButtons.forEach(function(item) {
-      item.addEventListener("click", function(e) {
-        var parentModal = this.closest(".bl-modal");
-
-        parentModal.classList.remove("active");
-        if (overlay) {
-          overlay.classList.remove("active");
-        }
-        
-      });
-    });
-
-    document.body.addEventListener(
-      "keyup",
-      function(e) {
-        var key = e.keyCode;
-
-        if (key == 27) {
-          document.querySelector(".bl-modal.active").classList.remove("active");
-          document
-            .querySelector(".bl-modal__overlay")
-            .classList.remove("active");
-        }
-      },
-      false
-    );
-
-    if (overlay) {
-      overlay.addEventListener("click", function() {
-        document.querySelector(".bl-modal.active").classList.remove("active");
-        this.classList.remove("active");
-      });
-    }
-  });
-})();
 "use strict";
 
 // 
@@ -201,49 +139,97 @@ if (controlsWrapper) {
 
 (function() {
   document.addEventListener("DOMContentLoaded", function() {
-    var openIframes = document.querySelectorAll(".js-bl-modal-btn");
+    var openIframes = document.querySelectorAll(".js-btn");
+
     openIframes.forEach(function(btn) {
       btn.addEventListener("click", function(evt) {
         evt.preventDefault();
         var idBtn = this.getAttribute("data-index");
-        // console.log(idBtn);
-        if (idBtn == 7) {
-          document.querySelector(".wrapper").classList.add("container-xs");
-          document.querySelector(".wrapper").classList.remove("container-sm");
-        } else if (idBtn == 8) {
-          document.querySelector(".wrapper").classList.add("container-sm");
-          document.querySelector(".wrapper").classList.remove("container-xs");
-        } else if (idBtn == 9) {
-          document.querySelector(".wrapper").classList.remove("container-xs");
-          document.querySelector(".wrapper").classList.remove("container-sm");
-        } else if (idBtn == 2) {
-          parent.document.querySelector("iframe[name='code']").classList.toggle("active");
-          document.querySelector("iframe[name='code']").contentWindow.document.querySelector(".bl-modal").classList.add("active");
-        }  else if (idBtn == 10) {
-          parent.document.querySelector("iframe[name='properties']").classList.toggle("active");
-          parent.document.querySelector("iframe[name='properties']").contentWindow.document.querySelector(".bl-modal").classList.add("active");
+        var blockEdit = document.querySelector(
+          ".w-edit[data-index='" + idBtn + "']"
+        );
+
+        if (blockEdit) {
+          blockEdit.classList.add("active");
+          blockEdit.parentElement.classList.add("active");
         }
 
+        var blClose = document.querySelectorAll(".w-close");
+        blClose.forEach(function(bl) {
+          bl.classList.remove("active");
+          bl.parentElement.classList.remove("active");
+        });
+
+        if (idBtn == 7) {
+          document.querySelector(".wrapper").classList.add("wrapper-xs");
+          document.querySelector(".wrapper").classList.remove("wrapper-sm");
+        } else if (idBtn == 8) {
+          document.querySelector(".wrapper").classList.add("wrapper-sm");
+          document.querySelector(".wrapper").classList.remove("wrapper-xs");
+        } else if (idBtn == 9) {
+          document.querySelector(".wrapper").classList.remove("wrapper-xs");
+          document.querySelector(".wrapper").classList.remove("wrapper-sm");
+        }
+      });
+    });
+
+    var closeButtons = document.querySelectorAll(".js-btn-close");
+    closeButtons.forEach(function(item) {
+      item.addEventListener("click", function(e) {
+        var parentModal = this.closest(".bl-modal");
+
+        parentModal.classList.remove("active");
+        parentModal.parentElement.classList.remove("active");
+      });
+    });
+
+    var subBtn = document.querySelector(".js-btn-sub");
+    if (subBtn) {
+      subBtn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        document
+          .querySelector(".w-edit[data-index='5']")
+          .classList.add("active");
+        document
+          .querySelector(".w-edit[data-index='5']")
+          .parentElement.classList.add("active");
+      });
+    }
+  });
+
+  window.addEventListener("message", function(evt) {
+    var openIframes = document.querySelectorAll(".js-btn");
+    openIframes.forEach(function(btn) {
+      btn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        var idBtn = this.getAttribute("data-index");
+        var blockEditFrame = parent.document.querySelector(
+          ".w-edit[data-index='" + idBtn + "']"
+        );
+
+        if (blockEditFrame) {
+          blockEditFrame.classList.add("active");
+          blockEditFrame.parentElement.classList.add("active");
+
+          if (blockEditFrame.classList.contains("js-iframe")) {
+            var closeBtnFrame = blockEditFrame.contentDocument.querySelector(
+              ".js-btn-close"
+            );
+
+            if (closeBtnFrame) {
+              closeBtnFrame.addEventListener("click", function(evt) {
+                evt.preventDefault();
+                blockEditFrame.classList.remove("active");
+                blockEditFrame.parentElement.classList.remove("active");
+                blockEditFrame.contentDocument
+                  .querySelector(".bl-modal")
+                  .classList.add("active");
+              });
+            }
+          }
+        }
       });
     });
   });
 
-  window.addEventListener("message", function (evt) {
-    // console.log(evt);
-    if (evt.data.target == 6 && evt.data.source == 0) {
-      parent.document.querySelector(".bl-modal[data-index='6']").classList.add("active");
-    } else if (evt.data.target == 1 && evt.data.source == 0) {
-      parent.document.querySelector(".bl-modal[data-index='1']").classList.add("active");
-    } else if (evt.data.type == "close" && evt.data.target == 2) {
-      parent.document.querySelector("iframe[name='code']").classList.remove("active");
-      document.querySelector("iframe[name='code']").contentWindow.document.querySelector(".bl-modal").classList.remove("active");
-      
-    } else if (evt.data.type == "close" && evt.data.target == 3) {
-      parent.document.querySelector("iframe[name='settings']").classList.remove("active");
-      document.querySelector("iframe[name='settings']").contentWindow.document.querySelector(".bl-modal").classList.remove("active");
-    } else if (evt.data.type == "close" && evt.data.target == 10) {
-      parent.document.querySelector("iframe[name='properties']").classList.remove("active");
-      document.querySelector("iframe[name='properties']").contentWindow.document.querySelector(".bl-modal").classList.remove("active");
-    }
-  });
 })();

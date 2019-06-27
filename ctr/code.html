@@ -19,7 +19,7 @@
 <body>
   <div class="wrapper">
 
-    <div class="bl-modal bl-modal--sm" data-index="2">
+    <div class="bl-modal bl-modal--sm active" data-index="2">
       <div class="bl-modal__body bl-modal__body--no-pg bl-modal__body--height">
         <div class="tabs">
           <div class="tabs__box">
@@ -38,10 +38,10 @@
               </li>
             </ul>
             <div class="tabs__btn-box">
-              <button class="tabs__btn button button--turquoise" type="button">
+              <button class="tabs__btn button button--turquoise js-bl-modal-save" type="button">
                 Сохранить
               </button>
-              <button class="tabs__btn button button--white js-bl-modal-close">
+              <button class="tabs__btn button button--white js-btn-close">
                 Отмена
               </button>
             </div>
@@ -57,10 +57,7 @@
                 <div class="subtabs">
                   <div class="subtabs__box">
                     <ul class="subtabs__list">
-                      <li
-                        class="subtabs__item js-subtab-trigger active"
-                        data-subtab="4"
-                      >
+                      <li class="subtabs__item js-subtab-trigger active" data-subtab="4">
                         <button class="button subtabs__link">CSS 1</button>
                       </li>
                       <li class="subtabs__item js-subtab-trigger" data-subtab="5">
@@ -72,10 +69,7 @@
                     </ul>
                   </div>
                   <div class="subtabs__content">
-                    <div
-                      class="subtabs__panel js-subtab-content active"
-                      data-subtab="4"
-                    >
+                    <div class="subtabs__panel js-subtab-content active" data-subtab="4">
                       <div class="subtabs__content-inner">
                         1
                       </div>
@@ -109,9 +103,6 @@
       </div>
     </div>
 
-
-    <!-- Подложка под модальным окном -->
-    <div class="overlay js-overlay-bl-modal"></div>
 
   </div>
 
