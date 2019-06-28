@@ -1,4 +1,5 @@
 
+"use strict";
 
 // Импортируем другие js-файлы
 (function() {
@@ -17,30 +18,63 @@
       );
     });
   }
-  
-  if (document.querySelector("button[data-index='1']")) {
-    document.querySelector("button[data-index='1']").addEventListener('click', function (evt) {
-        console.log(evt);
-      evt.preventDefault();
 
+  if (document.querySelector("button[data-index='1']")) {
+    document
+      .querySelector("button[data-index='1']")
+      .addEventListener("click", function(evt) {
+        console.log(evt);
+        evt.preventDefault();
+
+        parent.postMessage(
+          {
+            source: 0,
+            type: "widget",
+            target: 1
+          },
+          "*"
+        );
+      });
+  } else if (document.querySelector("span[data-index='10']")) {
+    document
+      .querySelector("span[data-index='10']")
+      .addEventListener("click", function(evt) {
+        console.log(evt);
+        evt.preventDefault();
+
+        parent.postMessage(
+          {
+            source: 0,
+            type: "properties",
+            target: 10
+          },
+          "*"
+        );
+      });
+  }
+})();
+(function() {
+  // parent.postMessage({
+  //   source: 2,
+  //   type: "code page",
+  //   target: 2
+  // });
+
+  var codeButton = document.querySelector("span[data-index='2']");
+  if (codeButton) {
+    codeButton.addEventListener("click", function(evt) {
+      console.log(evt);
+      evt.preventDefault();
       parent.postMessage(
         {
-          source: 0,
-          type: "widget",
-          target: 1
+          source: 2,
+          type: "code page",
+          target: 2
         },
         "*"
       );
     });
   }
-  
-})();
-(function() {
-  parent.postMessage({
-    source: 2,
-    type: "code page",
-    target: 2
-  });
 
   if (document.querySelector(".js-btn-close")) {
     document.querySelector(".js-btn-close").addEventListener("click", function(evt) {
@@ -54,24 +88,39 @@
 
 })();
 (function() {
-  parent.postMessage({
-    source: 10,
-    type: "properties page",
-    target: 10
-  });
-  if (document.querySelector(".js-btn-close")) {
-    document.querySelector(".js-btn-close").addEventListener("click", function(evt) {
-      parent.postMessage({
-        source: 10,
-        type: "close",
-        target: 10
-      });
+  // parent.postMessage({
+  //   source: 10,
+  //   type: "properties page",
+  //   target: 10
+  // });
+
+  var propertiasButton = document.querySelector("span[data-index='10']");
+  if (propertiasButton) {
+    propertiasButton.addEventListener("click", function(evt) {
+      console.log(evt);
+      evt.preventDefault();
+      parent.postMessage(
+        {
+          source: 10,
+          type: "properties page",
+          target: 10
+        },
+        "*"
+      );
     });
   }
-
+  if (document.querySelector(".js-btn-close")) {
+    document
+      .querySelector(".js-btn-close")
+      .addEventListener("click", function(evt) {
+        parent.postMessage({
+          source: 10,
+          type: "close",
+          target: 10
+        });
+      });
+  }
 })();
-
-"use strict";
 
 (function() {
   var jsTriggers = document.querySelectorAll(".js-tab-trigger");
@@ -112,34 +161,17 @@
     });
   });
 })();
-"use strict";
 
-// 
-var controlsWrapper = document.querySelector(".block-control");
-var controlItems = document.querySelectorAll(".block-control__btn");
-
-if (controlsWrapper) {
-  controlsWrapper.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    var activeItem = evt.target;
-    if (activeItem.tagName != "SPAN") return;
-
-    for (var i = 0; i < controlItems.length; i++) {
-      controlItems[i].parentNode.classList.remove("active");
-    }
-
-    activeItem.parentNode.classList.add("active");
-  });
-}
 
 (function() {
   document.addEventListener("DOMContentLoaded", function() {
-    var openIframes = document.querySelectorAll(".js-btn");
+    var navButtons = document.querySelectorAll(".js-btn");
 
-    openIframes.forEach(function(btn) {
+    navButtons.forEach(function(btn) {
       btn.addEventListener("click", function(evt) {
         evt.preventDefault();
         var idBtn = this.getAttribute("data-index");
+
         var blockEdit = document.querySelector(
           ".w-edit[data-index='" + idBtn + "']"
         );
@@ -149,10 +181,10 @@ if (controlsWrapper) {
           blockEdit.parentElement.classList.add("active");
         }
 
-        var blClose = document.querySelectorAll(".w-close");
-        blClose.forEach(function(bl) {
-          bl.classList.remove("active");
-          bl.parentElement.classList.remove("active");
+        var blockClose = document.querySelectorAll(".w-close");
+        blockClose.forEach(function(item) {
+          item.classList.remove("active");
+          item.parentElement.classList.remove("active");
         });
 
         if (idBtn == 7) {
@@ -167,6 +199,8 @@ if (controlsWrapper) {
         }
       });
     });
+
+
 
     var closeButtons = document.querySelectorAll(".js-btn-close");
     closeButtons.forEach(function(item) {
@@ -192,11 +226,9 @@ if (controlsWrapper) {
     }
   });
 
-
-  console.log(event);
+  console.log(event || window.event);
 
   window.addEventListener("message", function(evt) {
-
     if (evt.data.target == 1) {
       parent.document
         .querySelector(".bl-modal[data-index='1']")
@@ -220,8 +252,8 @@ if (controlsWrapper) {
     //     .querySelector(".bl-modal[data-index='10']")
     //     .parentElement.classList.add("active");
     // }
-    var openIframes = document.querySelectorAll(".js-btn");
-    openIframes.forEach(function(btn) {
+    var openEditBlocks = document.querySelectorAll(".js-btn");
+    openEditBlocks.forEach(function(btn) {
       btn.addEventListener("click", function(evt) {
         evt.preventDefault();
         var idBtn = this.getAttribute("data-index");
@@ -250,6 +282,26 @@ if (controlsWrapper) {
             }
           }
         }
+      });
+    });
+  });
+})();
+(function() {
+  document.addEventListener("DOMContentLoaded", function() {
+    var controlBlocks = document.querySelectorAll(".block-control__item");
+    var controlItems = document.querySelectorAll(".block-control__btn");
+
+    controlItems.forEach(function(item) {
+      item.addEventListener("click", function(evt) {
+        evt.preventDefault();
+
+        controlBlocks.forEach(function(item) {
+          if (item.classList.contains("active")) {
+            item.classList.remove("active");
+          }
+        });
+
+        item.parentElement.classList.add("active");
       });
     });
   });
