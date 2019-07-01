@@ -55,18 +55,17 @@
       btn.addEventListener("click", function(evt) {
         evt.preventDefault();
         var idBtn = this.getAttribute("data-index");
-        console.log(btn);
 
         var blockEdit = document.querySelector(
           ".w-edit[data-index='" + idBtn + "']"
         );
 
-        console.log(blockEdit);
-
         if (blockEdit) {
           blockEdit.classList.add("active");
           blockEdit.parentElement.classList.add("active");
-          blockEdit.contentWindow.document.querySelector(".bl-modal").classList.add("active");;
+          blockEdit.contentWindow.document
+            .querySelector(".bl-modal")
+            .classList.add("active");
         }
 
         if (idBtn == 7) {
@@ -96,11 +95,16 @@
           top.document
             .querySelector(".js-iframe[name='code']")
             .classList.remove("active");
+
+          top.document
+            .querySelector(".js-iframe[data-index='10']")
+            .parentElement.classList.remove("active");
+          top.document
+            .querySelector(".js-iframe[data-index='10']")
+            .classList.remove("active");
         });
       });
     }
-
-    console.log(event);
 
     var subBtn = document.querySelector(".js-btn-sub");
     if (subBtn) {
@@ -132,12 +136,16 @@
         .querySelector(".bl-modal[data-index='6']")
         .parentElement.classList.add("active");
     } else if (evt.data.target == 10) {
-      parent.document
-        .querySelector(".bl-modal[data-index='10']")
+      top.document
+        .querySelector(".js-iframe[data-index='10']")
         .classList.add("active");
-      parent.document
-        .querySelector(".bl-modal[data-index='10']")
+      top.document
+        .querySelector(".js-iframe[data-index='10']")
         .parentElement.classList.add("active");
+      top.document
+        .querySelector(".js-iframe[data-index='10']")
+        .contentDocument.querySelector(".bl-modal")
+        .classList.add("active");
     }
   });
 })();
@@ -151,7 +159,7 @@
   var codeButton = document.querySelector("span[data-index='2']");
   if (codeButton) {
     codeButton.addEventListener("click", function(evt) {
-      console.log(evt);
+
       evt.preventDefault();
       parent.postMessage(
         {
@@ -199,7 +207,7 @@
   if (widgetButtons2) {
     widgetButtons2.forEach(function(widgetButton) {
       widgetButton.addEventListener("click", function(evt) {
-        console.log(evt);
+
         evt.preventDefault();
         parent.postMessage(
           {
@@ -238,7 +246,7 @@
   var propertiasButton = document.querySelector("span[data-index='10']");
   if (propertiasButton) {
     propertiasButton.addEventListener("click", function(evt) {
-      console.log(evt);
+
       evt.preventDefault();
       parent.postMessage(
         {
