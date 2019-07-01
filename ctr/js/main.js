@@ -86,7 +86,7 @@
         item.addEventListener("click", function(evt) {
           evt.preventDefault();
           var parentModal = this.closest(".bl-modal");
-          parentModal.classList.remove("active");
+          // parentModal.classList.remove("active");
           parentModal.parentElement.classList.remove("active");
 
           top.document
