@@ -66,9 +66,11 @@
         if (blockEdit) {
           blockEdit.classList.add("active");
           blockEdit.parentElement.classList.add("active");
-          blockEdit.contentWindow.document
-            .querySelector(".bl-modal")
-            .classList.add("active");;
+          if (blockEdit.classList.contains(".js-iframe")) {
+            blockEdit.contentWindow.document
+              .querySelector(".bl-modal")
+              .classList.add("active");
+          }
         }
 
         if (idBtn == 7) {
