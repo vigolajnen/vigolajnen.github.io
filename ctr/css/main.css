@@ -1710,6 +1710,12 @@ img {
     color: #1a1a1a;
     font-weight: 600; }
 
+.page-footer__inner {
+  min-height: 3.125rem; }
+
+.page {
+  height: calc(100vh - 55px); }
+
 .popup {
   display: -webkit-box;
   display: -ms-flexbox;

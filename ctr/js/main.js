@@ -166,51 +166,71 @@
 (function() {
   document.addEventListener("DOMContentLoaded", function() {
     var navButtons = document.querySelectorAll(".js-btn");
+    var closeButtons = document.querySelectorAll(".js-btn-close");
+    var wrapper = document.querySelector(".wrapper");
 
     navButtons.forEach(function(btn) {
       btn.addEventListener("click", function(evt) {
         evt.preventDefault();
         var idBtn = this.getAttribute("data-index");
+        console.log(idBtn);
 
         var blockEdit = document.querySelector(
           ".w-edit[data-index='" + idBtn + "']"
         );
+
+        console.log(blockEdit);
 
         if (blockEdit) {
           blockEdit.classList.add("active");
           blockEdit.parentElement.classList.add("active");
         }
 
-        var blockClose = document.querySelectorAll(".w-close");
-        blockClose.forEach(function(item) {
-          item.classList.remove("active");
-          item.parentElement.classList.remove("active");
+        blockEdit.addEventListener("load", function() {
+          if (
+            blockEdit.classList.contains("js-iframe") &&
+            blockEdit.contentWindow
+          ) {
+            var closeBtnFrame = blockEdit.contentDocument.querySelector(
+              ".js-btn-close"
+            );
+
+            if (closeBtnFrame) {
+              closeBtnFrame.addEventListener("click", function(evt) {
+                evt.preventDefault();
+                blockEdit.classList.remove("active");
+                blockEdit.parentElement.classList.remove("active");
+                blockEdit.contentDocument
+                  .querySelector(".bl-modal")
+                  .classList.add("active");
+              });
+            }
+          }
         });
 
         if (idBtn == 7) {
-          document.querySelector(".wrapper").classList.add("wrapper-xs");
-          document.querySelector(".wrapper").classList.remove("wrapper-sm");
+          wrapper.classList.add("wrapper-xs");
+          wrapper.classList.remove("wrapper-sm");
         } else if (idBtn == 8) {
-          document.querySelector(".wrapper").classList.add("wrapper-sm");
-          document.querySelector(".wrapper").classList.remove("wrapper-xs");
+          wrapper.classList.add("wrapper-sm");
+          wrapper.classList.remove("wrapper-xs");
         } else if (idBtn == 9) {
-          document.querySelector(".wrapper").classList.remove("wrapper-xs");
-          document.querySelector(".wrapper").classList.remove("wrapper-sm");
+          wrapper.classList.remove("wrapper-xs");
+          wrapper.classList.remove("wrapper-sm");
         }
       });
     });
 
-
-
-    var closeButtons = document.querySelectorAll(".js-btn-close");
     closeButtons.forEach(function(item) {
-      item.addEventListener("click", function(e) {
+      item.addEventListener("click", function(evt) {
+        evt.preventDefault();
         var parentModal = this.closest(".bl-modal");
-
         parentModal.classList.remove("active");
         parentModal.parentElement.classList.remove("active");
       });
     });
+
+    console.log(event);
 
     var subBtn = document.querySelector(".js-btn-sub");
     if (subBtn) {
@@ -242,39 +262,6 @@
         .querySelector(".bl-modal[data-index='6']")
         .parentElement.classList.add("active");
     }
-
-    var openEditBlocks = document.querySelectorAll(".js-btn");
-    openEditBlocks.forEach(function(btn) {
-      btn.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        var idBtn = this.getAttribute("data-index");
-        var blockEditFrame = parent.document.querySelector(
-          ".w-edit[data-index='" + idBtn + "']"
-        );
-
-        if (blockEditFrame) {
-          blockEditFrame.classList.add("active");
-          blockEditFrame.parentElement.classList.add("active");
-
-          if (blockEditFrame.classList.contains("js-iframe")) {
-            var closeBtnFrame = blockEditFrame.contentDocument.querySelector(
-              ".js-btn-close"
-            );
-
-            if (closeBtnFrame) {
-              closeBtnFrame.addEventListener("click", function(evt) {
-                evt.preventDefault();
-                blockEditFrame.classList.remove("active");
-                blockEditFrame.parentElement.classList.remove("active");
-                blockEditFrame.contentDocument
-                  .querySelector(".bl-modal")
-                  .classList.add("active");
-              });
-            }
-          }
-        }
-      });
-    });
   });
 })();
 (function() {
