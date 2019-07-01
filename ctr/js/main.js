@@ -89,11 +89,12 @@
           parentModal.classList.remove("active");
           parentModal.parentElement.classList.remove("active");
 
-          if (top.document.querySelector(".js-iframe[name='code']")) {
-            var frame = this.closest(".js-iframe[name='code']");
-            frame.classList.remove("active");
-            frame.parentElement.classList.remove("active");
-          }
+          top.document
+            .querySelector(".js-iframe[name='code']")
+            .parentElement.classList.remove("active");
+          top.document
+            .querySelector(".js-iframe[name='code']")
+            .classList.remove("active");
         });
       });
     }
