@@ -2,125 +2,7 @@
 "use strict";
 
 // Импортируем другие js-файлы
-(function() {
-  var widgetButton = document.querySelector("span[data-index='6']");
-  if (widgetButton) {
-    widgetButton.addEventListener("click", function(evt) {
-      console.log(evt);
-      evt.preventDefault();
-      parent.postMessage(
-        {
-          source: 0,
-          type: "edit",
-          target: 6
-        },
-        "*"
-      );
-    });
-  }
 
-  if (document.querySelector("button[data-index='1']")) {
-    document
-      .querySelector("button[data-index='1']")
-      .addEventListener("click", function(evt) {
-        console.log(evt);
-        evt.preventDefault();
-
-        parent.postMessage(
-          {
-            source: 0,
-            type: "widget",
-            target: 1
-          },
-          "*"
-        );
-      });
-  } else if (document.querySelector("span[data-index='10']")) {
-    document
-      .querySelector("span[data-index='10']")
-      .addEventListener("click", function(evt) {
-        console.log(evt);
-        evt.preventDefault();
-
-        parent.postMessage(
-          {
-            source: 0,
-            type: "properties",
-            target: 10
-          },
-          "*"
-        );
-      });
-  }
-})();
-(function() {
-  // parent.postMessage({
-  //   source: 2,
-  //   type: "code page",
-  //   target: 2
-  // });
-
-  var codeButton = document.querySelector("span[data-index='2']");
-  if (codeButton) {
-    codeButton.addEventListener("click", function(evt) {
-      console.log(evt);
-      evt.preventDefault();
-      parent.postMessage(
-        {
-          source: 2,
-          type: "code page",
-          target: 2
-        },
-        "*"
-      );
-    });
-  }
-
-  if (document.querySelector(".js-btn-close")) {
-    document.querySelector(".js-btn-close").addEventListener("click", function(evt) {
-      parent.postMessage({
-        source: 2,
-        type: "close",
-        target: 2
-      });
-    });
-  }
-
-})();
-(function() {
-  // parent.postMessage({
-  //   source: 10,
-  //   type: "properties page",
-  //   target: 10
-  // });
-
-  var propertiasButton = document.querySelector("span[data-index='10']");
-  if (propertiasButton) {
-    propertiasButton.addEventListener("click", function(evt) {
-      console.log(evt);
-      evt.preventDefault();
-      parent.postMessage(
-        {
-          source: 10,
-          type: "properties page",
-          target: 10
-        },
-        "*"
-      );
-    });
-  }
-  if (document.querySelector(".js-btn-close")) {
-    document
-      .querySelector(".js-btn-close")
-      .addEventListener("click", function(evt) {
-        parent.postMessage({
-          source: 10,
-          type: "close",
-          target: 10
-        });
-      });
-  }
-})();
 
 (function() {
   var jsTriggers = document.querySelectorAll(".js-tab-trigger");
@@ -173,7 +55,7 @@
       btn.addEventListener("click", function(evt) {
         evt.preventDefault();
         var idBtn = this.getAttribute("data-index");
-        console.log(idBtn);
+        console.log(btn);
 
         var blockEdit = document.querySelector(
           ".w-edit[data-index='" + idBtn + "']"
@@ -185,28 +67,6 @@
           blockEdit.classList.add("active");
           blockEdit.parentElement.classList.add("active");
         }
-
-        blockEdit.addEventListener("load", function() {
-          if (
-            blockEdit.classList.contains("js-iframe") &&
-            blockEdit.contentWindow
-          ) {
-            var closeBtnFrame = blockEdit.contentDocument.querySelector(
-              ".js-btn-close"
-            );
-
-            if (closeBtnFrame) {
-              closeBtnFrame.addEventListener("click", function(evt) {
-                evt.preventDefault();
-                blockEdit.classList.remove("active");
-                blockEdit.parentElement.classList.remove("active");
-                blockEdit.contentDocument
-                  .querySelector(".bl-modal")
-                  .classList.add("active");
-              });
-            }
-          }
-        });
 
         if (idBtn == 7) {
           wrapper.classList.add("wrapper-xs");
@@ -221,14 +81,22 @@
       });
     });
 
-    closeButtons.forEach(function(item) {
-      item.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        var parentModal = this.closest(".bl-modal");
-        parentModal.classList.remove("active");
-        parentModal.parentElement.classList.remove("active");
+    if (closeButtons) {
+      closeButtons.forEach(function(item) {
+        item.addEventListener("click", function(evt) {
+          evt.preventDefault();
+          var parentModal = this.closest(".bl-modal");
+          parentModal.classList.remove("active");
+          parentModal.parentElement.classList.remove("active");
+
+          if (top.document.querySelector(".js-iframe[name='code']")) {
+            var frame = this.closest(".js-iframe[name='code']");
+            frame.classList.remove("active");
+            frame.parentElement.classList.remove("active");
+          }
+        });
       });
-    });
+    }
 
     console.log(event);
 
@@ -261,8 +129,136 @@
       parent.document
         .querySelector(".bl-modal[data-index='6']")
         .parentElement.classList.add("active");
+    } else if (evt.data.target == 10) {
+      parent.document
+        .querySelector(".bl-modal[data-index='10']")
+        .classList.add("active");
+      parent.document
+        .querySelector(".bl-modal[data-index='10']")
+        .parentElement.classList.add("active");
     }
   });
+})();
+(function() {
+  // parent.postMessage({
+  //   source: 2,
+  //   type: "code page",
+  //   target: 2
+  // });
+
+  var codeButton = document.querySelector("span[data-index='2']");
+  if (codeButton) {
+    codeButton.addEventListener("click", function(evt) {
+      console.log(evt);
+      evt.preventDefault();
+      parent.postMessage(
+        {
+          source: 2,
+          type: "code page",
+          target: 2
+        },
+        "*"
+      );
+    });
+  }
+
+  // if (document.querySelector(".js-btn-close")) {
+  //   document.querySelector(".js-btn-close").addEventListener("click", function(evt) {
+  //     parent.postMessage({
+  //       source: 2,
+  //       type: "close",
+  //       target: 2
+  //     });
+  //   });
+  // }
+
+})();
+(function() {
+
+  var widgetButtons = document.querySelectorAll("span[data-index='6']");
+  if (widgetButtons) {
+    widgetButtons.forEach(function(widgetButton) {
+      widgetButton.addEventListener("click", function(evt) {
+        console.log(evt);
+        evt.preventDefault();
+        parent.postMessage(
+          {
+            source: 0,
+            type: "edit",
+            target: 6
+          },
+          "*"
+        );
+      });
+    });
+  }
+
+  var widgetButtons2 = document.querySelectorAll("span[data-index='10']");
+  if (widgetButtons2) {
+    widgetButtons2.forEach(function(widgetButton) {
+      widgetButton.addEventListener("click", function(evt) {
+        console.log(evt);
+        evt.preventDefault();
+        parent.postMessage(
+          {
+            source: 0,
+            type: "properties",
+            target: 10
+          },
+          "*"
+        );
+      });
+    });
+  }
+
+  if (document.querySelector("button[data-index='1']")) {
+    document.querySelector("button[data-index='1']").addEventListener("click", function(evt) {
+      console.log(evt);
+      evt.preventDefault();
+      parent.postMessage(
+        {
+          source: 0,
+          type: "widget",
+          target: 1
+        },
+        "*"
+      );
+    });
+  }
+})();
+(function() {
+  // parent.postMessage({
+  //   source: 10,
+  //   type: "properties page",
+  //   target: 10
+  // });
+
+  var propertiasButton = document.querySelector("span[data-index='10']");
+  if (propertiasButton) {
+    propertiasButton.addEventListener("click", function(evt) {
+      console.log(evt);
+      evt.preventDefault();
+      parent.postMessage(
+        {
+          source: 10,
+          type: "properties page",
+          target: 10
+        },
+        "*"
+      );
+    });
+  }
+  // if (document.querySelector(".js-btn-close")) {
+  //   document
+  //     .querySelector(".js-btn-close")
+  //     .addEventListener("click", function(evt) {
+  //       parent.postMessage({
+  //         source: 10,
+  //         type: "close",
+  //         target: 10
+  //       });
+  //     });
+  // }
 })();
 (function() {
   document.addEventListener("DOMContentLoaded", function() {
