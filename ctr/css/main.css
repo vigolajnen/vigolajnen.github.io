@@ -704,7 +704,7 @@ img {
             transform: translateX(0%); } }
 
 .block-add {
-  position: absolute;
+  position: relative;
   z-index: 32;
   display: -webkit-box;
   display: -ms-flexbox;
