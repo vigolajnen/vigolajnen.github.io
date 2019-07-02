@@ -63,11 +63,12 @@
         if (blockEdit) {
           blockEdit.classList.add("active");
           blockEdit.parentElement.classList.add("active");
+
+        } else if (blockEdit && blockEdit.classList.contains("js-iframe")) {
           blockEdit.contentWindow.document
             .querySelector(".bl-modal")
             .classList.add("active");
         }
-
         if (idBtn == 7) {
           wrapper.classList.add("wrapper-xs");
           wrapper.classList.remove("wrapper-sm");
@@ -150,12 +151,6 @@
   });
 })();
 (function() {
-  // parent.postMessage({
-  //   source: 2,
-  //   type: "code page",
-  //   target: 2
-  // });
-
   var codeButton = document.querySelector("span[data-index='2']");
   if (codeButton) {
     codeButton.addEventListener("click", function(evt) {
@@ -171,17 +166,6 @@
       );
     });
   }
-
-  // if (document.querySelector(".js-btn-close")) {
-  //   document.querySelector(".js-btn-close").addEventListener("click", function(evt) {
-  //     parent.postMessage({
-  //       source: 2,
-  //       type: "close",
-  //       target: 2
-  //     });
-  //   });
-  // }
-
 })();
 (function() {
 
@@ -237,12 +221,6 @@
   }
 })();
 (function() {
-  // parent.postMessage({
-  //   source: 10,
-  //   type: "properties page",
-  //   target: 10
-  // });
-
   var propertiasButton = document.querySelector("span[data-index='10']");
   if (propertiasButton) {
     propertiasButton.addEventListener("click", function(evt) {
@@ -258,17 +236,6 @@
       );
     });
   }
-  // if (document.querySelector(".js-btn-close")) {
-  //   document
-  //     .querySelector(".js-btn-close")
-  //     .addEventListener("click", function(evt) {
-  //       parent.postMessage({
-  //         source: 10,
-  //         type: "close",
-  //         target: 10
-  //       });
-  //     });
-  // }
 })();
 (function() {
   document.addEventListener("DOMContentLoaded", function() {
