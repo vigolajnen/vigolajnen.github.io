@@ -613,7 +613,8 @@ img {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row; } }
+                flex-direction: row;
+        padding-right: .9375rem; } }
     .bl-widgets__inner .widget-preview {
       overflow: hidden;
       width: 95%;
@@ -647,6 +648,8 @@ img {
     @media (min-width: 1920px) {
       .bl-widgets__item {
         padding: 0.9375rem 0; } }
+  .bl-widgets__group-item {
+    display: none; }
   .bl-widgets__name {
     font-family: "Roboto Medium", "Arial", sans-serif;
     font-weight: 500;
@@ -664,6 +667,9 @@ img {
   .bl-widgets__icon {
     fill: #32c5d2; }
 
+.bl-widgets__group-item.active {
+  display: block; }
+
 .bl-widgets__item .bl-widgets__icon {
   opacity: 0; }
 
@@ -671,7 +677,9 @@ img {
 .bl-widgets__item:hover .bl-widgets__name,
 .bl-widgets__item:active .bl-widgets__name {
   color: #000000;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-animation: name-show 1s forwards;
+          animation: name-show 1s forwards; }
 
 .bl-widgets__item:focus .bl-widgets__icon,
 .bl-widgets__item:hover .bl-widgets__icon,
@@ -708,6 +716,26 @@ img {
     opacity: 1;
     -webkit-transform: translateX(0%);
             transform: translateX(0%); } }
+
+@-webkit-keyframes name-show {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%); } }
+
+@keyframes name-show {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%); } }
 
 .block-add {
   position: relative;
@@ -1372,19 +1400,25 @@ img {
   -webkit-transition: 1s;
   transition: 1s; }
   .button--gray {
-    padding: 0.3125rem 0.625rem;
+    padding: 0.3125rem;
     background: #333333;
     color: #ffffff; }
     .button--gray:focus, .button--gray:hover {
       background: #1b1b1b; }
+    @media (min-width: 1300px) {
+      .button--gray {
+        padding: 0.3125rem 0.625rem; } }
   .button--plus {
     background: transparent; }
   .button--turquoise {
-    padding: 0.3125rem 0.625rem;
+    padding: 0.3125rem;
     background: #32c5d2;
     color: #ffffff; }
     .button--turquoise:focus, .button--turquoise:hover {
       background: #1aadba; }
+    @media (min-width: 1300px) {
+      .button--turquoise {
+        padding: 0.3125rem 0.625rem; } }
   .button--white {
     padding: 0.3125rem 0.625rem;
     background: #ffffff;
@@ -1463,7 +1497,7 @@ img {
     -webkit-transition: 1s;
     transition: 1s; }
   .main-bar__btn-action {
-    margin: 0 0.3125rem;
+    margin: 0;
     font-size: 12px; }
     @media (min-width: 1280px) {
       .main-bar__btn-action {
@@ -1474,6 +1508,9 @@ img {
     .main-bar__btn-action:focus, .main-bar__btn-action:hover {
       -webkit-transition: 0.5s;
       transition: 0.5s; }
+    @media (min-width: 1300px) {
+      .main-bar__btn-action {
+        margin: 0 0.3125rem; } }
   .main-bar__icon {
     width: 1.875rem;
     height: 1.875rem;
