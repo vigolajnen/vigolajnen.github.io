@@ -178,7 +178,6 @@
   }
 })();
 (function() {
-
   var widgetButtons = document.querySelectorAll("span[data-index='6']");
   if (widgetButtons) {
     widgetButtons.forEach(function(widgetButton) {
@@ -201,7 +200,6 @@
   if (widgetButtons2) {
     widgetButtons2.forEach(function(widgetButton) {
       widgetButton.addEventListener("click", function(evt) {
-
         evt.preventDefault();
         parent.postMessage(
           {
@@ -215,39 +213,22 @@
     });
   }
 
-    var widgetButtons3 = document.querySelectorAll(
-      "button[data-index='1']"
-    );
-    if (widgetButtons3) {
-      widgetButtons3.forEach(function(widgetButton) {
-        widgetButton.addEventListener("click", function(evt) {
-          evt.preventDefault();
-          parent.postMessage(
-            {
-              source: 0,
-              type: "widget",
-              target: 1
-            },
-            "*"
-          );
-        });
+  var widgetButtons3 = document.querySelectorAll("button[data-index='1']");
+  if (widgetButtons3) {
+    widgetButtons3.forEach(function(widgetButton) {
+      widgetButton.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        parent.postMessage(
+          {
+            source: 0,
+            type: "widget",
+            target: 1
+          },
+          "*"
+        );
       });
-    }
-
-  // if (document.querySelector("button[data-index='1']")) {
-  //   document.querySelector("button[data-index='1']").addEventListener("click", function(evt) {
-  //     console.log(evt);
-  //     evt.preventDefault();
-  //     parent.postMessage(
-  //       {
-  //         source: 0,
-  //         type: "widget",
-  //         target: 1
-  //       },
-  //       "*"
-  //     );
-  //   });
-  // }
+    });
+  }
 })();
 (function() {
   var propertiasButton = document.querySelector("span[data-index='10']");

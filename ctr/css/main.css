@@ -836,7 +836,8 @@ img {
 .block-w {
   position: relative;
   height: calc(100vh - 200px);
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #ffffff; }
   .block-w .container-fluid {
     opacity: 1;
     -webkit-transition: opacity 0.3s ease;
