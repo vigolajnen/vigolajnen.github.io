@@ -60,15 +60,23 @@
           ".w-edit[data-index='" + idBtn + "']"
         );
 
+        var blockClose = document.querySelectorAll(".w-close");
+        blockClose.forEach(function(item) {
+          item.classList.remove("active");
+          item.parentElement.classList.remove("active");
+        });
+
         if (blockEdit) {
           blockEdit.classList.add("active");
           blockEdit.parentElement.classList.add("active");
-
         } else if (blockEdit && blockEdit.classList.contains("js-iframe")) {
           blockEdit.contentWindow.document
             .querySelector(".bl-modal")
             .classList.add("active");
         }
+
+
+
         if (idBtn == 7) {
           wrapper.classList.add("wrapper-xs");
           wrapper.classList.remove("wrapper-sm");
@@ -81,6 +89,8 @@
         }
       });
     });
+
+
 
     if (closeButtons) {
       closeButtons.forEach(function(item) {
