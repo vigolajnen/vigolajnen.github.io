@@ -8946,7 +8946,8 @@ img {
 
 .block-w {
   position: relative;
-  height: calc(100vh - 200px);
+  height: auto;
+  min-height: 100px;
   overflow: hidden;
   background-color: #ffffff; }
   .block-w .container-fluid {
