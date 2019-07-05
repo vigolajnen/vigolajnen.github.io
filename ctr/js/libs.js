@@ -12299,11 +12299,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
-
 // Импортируем необходимые js-файлы Bootstrap 4
-
-
 /*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
