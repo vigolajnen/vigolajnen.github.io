@@ -8946,7 +8946,12 @@ img {
 
 .block-w {
   position: relative;
+<<<<<<< HEAD
   min-height: 6.25rem;
+=======
+  height: auto;
+  min-height: 100px;
+>>>>>>> 75be584d46538ddd597640d828e1e220873b2d42
   overflow: hidden;
   background-color: #ffffff; }
   .block-w::after {
