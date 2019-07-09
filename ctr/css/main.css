@@ -8156,8 +8156,8 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto; }
-  .wrapper--mb-100 {
-    margin-bottom: 100px; }
+  .wrapper--mb-50 {
+    margin-bottom: 50px; }
 
 .wrapper-place {
   display: -webkit-box;
