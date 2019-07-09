@@ -21,7 +21,7 @@
 .block-add {
   position: absolute;
   z-index: 3200;
-  bottom: 30px;
+  bottom: -23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
