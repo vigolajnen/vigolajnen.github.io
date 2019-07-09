@@ -4,9 +4,24 @@
 /**
  * Usages
  */
+.block-name {
+  position: absolute;
+  top: .625rem;
+  left: .625rem;
+  max-width: 12.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  font-size: 75%;
+  color: #ffffff;
+  border-radius: 5px;
+  opacity: 0; }
+  .block-name__text {
+    margin-right: .3125rem; }
+
 .block-add {
-  position: relative;
-  z-index: 32;
+  position: absolute;
+  z-index: 3200;
+  bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,8 +32,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-top: -50px;
-  bottom: -23px; }
+  margin-top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out; }
   .block-add--center {
     height: 100%;
     top: 0;
@@ -41,6 +58,7 @@
     height: 2.8125rem; }
 
 .block-control {
+  opacity: 0;
   position: absolute;
   top: 0;
   right: 0; }
