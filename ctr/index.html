@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/Robotolight.woff2" as="font" />
   <link rel="preload" href="fonts/Robotomedium.woff2" as="font" />
   <link rel="preload" href="fonts/opensans.woff2" as="font" />
-  
+  <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
@@ -648,9 +648,20 @@
           </svg>
         </button>
       </div>
-      <div class="bl-modal__body">
+      <div class="bl-modal__body bl-modal__body--flex">
         1
+        <div class="bl-modal__footer">
+          <form class="bl-form" action="">
+            <div class="bl-form__item">
+              <label for="bl-form-1" class="visually-hidden">Введите адрес страницы для перехода</label>
+              <input id="bl-form-1" type="text" class="bl-form__val" placeholder="Введите адрес страницы для перехода">
+            </div>
+            <button id="" class="button button--turquoise" type="submit">ок</button>
+          </form>
+  
+        </div>
       </div>
+  
     </div>
   </div>
   <div class="overlay js-overlay">
