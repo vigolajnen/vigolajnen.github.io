@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>Стартовая страница</title>
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body class="page">
+  <div class="side-elements">
+    <div class="side-elements__inner sidemenu">
+      <div class="sidemenu__mob">
+        <button class="" area-label="Кнопка меню">
+          <svg class="sidemenu__btn-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-add"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="sidemenu__container">
+        <div class="sidemenu__logo">
+          <a class="logo" href="#">
+            <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+          </a>
+        </div>
+        <nav class="sidemenu__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item active" data-item="about">
+              <a class="navigation__link" href="about.html">
+                <svg class="navigation__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_about"></use>
+                </svg>
+                О компании
+              </a>
+            </li>
+            <li class="navigation__item" data-item="service">
+              <a class="navigation__link" href="service.html">
+                <svg class="navigation__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_services"></use>
+                </svg>
+                Услуги
+              </a>
+            </li>
+            <li class="navigation__item" data-item="projects">
+              <a class="navigation__link" href="#">
+                <svg class="navigation__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_projects"></use>
+                </svg>
+                Проекты
+              </a>
+            </li>
+            <li class="navigation__item" data-item="contacts">
+              <a class="navigation__link" href="contacts.html">
+                <svg class="navigation__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+                </svg>
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidemenu__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+78126433460">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+                </svg>
+                +7(812) 643-34-60
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+78007003460">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+                </svg>
+                +7 (800) 700-34-60</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@webdom.net">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_mail"></use>
+                </svg>
+                info@webdom.net</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:support@webdom.net">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_mail"></use>
+                </svg>
+                support@webdom.net</a>
+            </li>
+          </ul>
+        </div>
+        <button class="button" data-target="popup-call">Заказать звонок</button>
+        <div class="sidemenu__lang lang">
+          <a class="lang__link" href="/en">
+            <!-- svg -->
+            English
+          </a>
+        </div>
+        <div class="sidemenu__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" area-label="Ссылка на fb">
+                <svg class="social__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" area-label="Ссылка на ins">
+                <svg class="social__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-ins"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" area-label="Ссылка на you">
+                <svg class="social__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-you"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidemenu__inner">
+        <button class="sidemenu__btn-close js-btn-close" area-label="Кнопка закрыть меню">
+          <svg class="sidemenu__btn-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-add"></use>
+          </svg>
+        </button>
+  
+        <div class="sidemenu__inner-menu" data-item="about">
+          <div class="sidemenu__inner-container">
+            <div class="sidemenu__inner-overlay">
+              <ul class="sidemenu__inner-list">
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-компания</a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Интернет-магазин</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Порталы и сервисы</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Для органов гос.власти</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-компания</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-компания</a>
+                </li>
+              </ul>
+              <div class="sidemenu__inner-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidemenu__inner-menu" data-item="service">
+          <div class="sidemenu__inner-container">
+            <div class="sidemenu__inner-overlay">
+              <ul class="sidemenu__inner-list">
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
+                </li>
+              </ul>
+              <div class="sidemenu__inner-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidemenu__inner-menu" data-item="projects">
+          <div class="sidemenu__inner-container">
+            <div class="sidemenu__inner-overlay">
+              <ul class="sidemenu__inner-list">
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Разработка сайтов
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Интернет-магазин</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Порталы и сервисы</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Для органов гос.власти</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Дизайн и фирстиль
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Съемка фото и видео
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Мобильные приложения
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Автоматизация бизнеса
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Интернет-маркетенг
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="sidemenu__inner-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidemenu__inner-menu" data-item="contacts">
+          <div class="sidemenu__inner-container">
+            <div class="sidemenu__inner-overlay">
+              <ul class="sidemenu__inner-list">
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
+                </li>
+              </ul>
+              <div class="sidemenu__inner-overlay"></div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+    </div>
+  
+  </div>
+  <div class="wrapper">
+    <div class="content">
+      <div class="page__content">
+        <div class="container">
+          <h1>Услуги</h1>
+        </div>
+        
+        <section class="page-contacts page-contacts--bg-pic">
+          <div class="page-contacts__inner container">
+            <div class="page-contacts__item">
+              <div class="page-contacts__box">
+                <div class="title">Обращайтесь!</div>
+                <p>Наши менеджеры будут рады проконсультировать Вас по всем вопросам.</p>
+              </div>
+              <div class="page-contacts__box">
+                <ul class="page-contacts__list page-contacts__list--fl">
+                  <li class="page-contacts__list-col-50">
+                    <img class="page-contacts__pic" src="img/service/s-pic-2.jpg" alt="pic">
+                    <div class="page-contacts__info">
+                      <div class="page-contacts__info-name">Вадим Галатов</div>
+                      <div class="page-contacts__info-contacts">
+                        <a class="link" href="mailto:vadim@webdom.net">vadim@webdom.net</a>
+                        <a class="link" href="tel:+78126433460">(812) 643-346-0, доб. 222</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="page-contacts__list-col-50">
+                    <img class="page-contacts__pic" src="img/service/s-pic-2.jpg" alt="pic">
+                    <div class="page-contacts__info">
+                      <div class="page-contacts__info-name">Гацкевич Виктория</div>
+                      <div class="page-contacts__info-contacts">
+                        <a class="link" href="mailto:gatskevich.vika@proweb.ru">gatskevich.vika@proweb.ru</a>
+                        <a class="link" href="tel:+78126433460">(812) 643-346-0, доб. 102</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="page-contacts__list-col-50">
+                    <img class="page-contacts__pic" src="img/service/s-pic-2.jpg" alt="pic">
+                    <div class="page-contacts__info">
+                      <div class="page-contacts__info-name">Вячеслав Варенька</div>
+                      <div class="page-contacts__info-contacts">
+                        <a class="link" href="mailto:varenka@webdom.net">varenka@webdom.net</a>
+                        <a class="link" href="tel:+78126433460">(812) 643-346-0, доб. 300</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-contacts__item">
+              <form class="page-form" action="">
+                <fieldset class="page-form__inner">
+                  <legend class="page-form__title title">Отправить заявку</legend>
+                  <ul class="page-form__list">
+                    <li class="page-form__item">
+                      <label class="visually-hidden" for="page-form-theme">Выберите тему обращения</label>
+                      <select id="page-form-theme" class="page-form__field" name="theme">
+
+                      </select>
+                    </li>
+                    <li class="page-form__item">
+                      <label class="visually-hidden" for="page-form-name">Введите имя</label>
+                      <input id="page-form-name" class="page-form__field" type="text" name="name"
+                        placeholder="Введите имя">
+                    </li>
+                    <li class="page-form__item">
+                      <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
+                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel"
+                        placeholder="Введите телефон">
+                    </li>
+                    <li class="page-form__item">
+                      <label class="visually-hidden" for="page-form-mail">Введите email</label>
+                      <input id="page-form-mail" class="page-form__field" type="mail" name="mail"
+                        placeholder="Введите email">
+                    </li>
+                    <li class="page-form__item page-form__item--full">
+                      <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
+                      <textarea id="page-form-comment" class="page-form__comment" name="comment"
+                        placeholder="Ввендите текст сообщения"></textarea>
+                    </li>
+                    <li class="page-form__item">
+                      <input type="file" value="Загрузить файл">
+                    </li>
+                    <li class="page-form__item">
+                      <button class="button" type="submit">Отправить сообщение</button>
+                    </li>
+                  </ul>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__inner container">
+        <ul class="page-footer__list">
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Компания
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Партнерам</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Новости</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Отзывы</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">История</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Партнеры</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Наш офис</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Корпоративы</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Вакансии</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Канал на youtube.com</a>
+              </li>
+            </ul>
+    
+          </li>
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Услуги
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Разработка версии сайта для слабовидящих</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Фирменный сить</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Хостинг и домены</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Мультимедиа презентации</a>
+              </li>
+            </ul>
+          </li>
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Портфолио
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Сайты</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Лэндинги</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Интернет-магазины</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Фирменный стиль</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Дизайн и мультимедиа</a>
+              </li>
+            </ul>
+          </li>
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Контакты
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Санкт-Петербург</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Москва</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Краснодар</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Казань</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Новосибирс</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Нижний Новгород</a>
+              </li>
+            </ul>
+          </li>
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Полезные ссылки
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Служба поддержки</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Анкета на регистрацию домена</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#" download="">Скачать портфолио</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#" data-target="popup">Задать вопрос</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Запросить коммерческое предложение</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Написать директору</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="page-footer__footer">
+          <a class="logo" href="#">
+            <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+          </a>
+          <div class="page-footer__copyright">© 1999 - 2018 Компания Вебдом</div>
+          <a class="page-footer__policy" href="#">Политика в отношении обработки персональных данных</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+</body>
+
+</html>

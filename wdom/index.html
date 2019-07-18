@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>Стартовая страница</title>
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body class="page">
+  <div class="side-elements">
+    <div class="side-elements__inner sidemenu">
+      <div class="sidemenu__mob">
+        <button class="" area-label="Кнопка меню">
+          <svg class="sidemenu__btn-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-add"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="sidemenu__container">
+        <div class="sidemenu__logo">
+          <a class="logo" href="#">
+            <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+          </a>
+        </div>
+        <nav class="sidemenu__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item active" data-item="about">
+              <a class="navigation__link" href="about.html">
+                <svg class="navigation__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_about"></use>
+                </svg>
+                О компании
+              </a>
+            </li>
+            <li class="navigation__item" data-item="service">
+              <a class="navigation__link" href="service.html">
+                <svg class="navigation__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_services"></use>
+                </svg>
+                Услуги
+              </a>
+            </li>
+            <li class="navigation__item" data-item="projects">
+              <a class="navigation__link" href="#">
+                <svg class="navigation__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_projects"></use>
+                </svg>
+                Проекты
+              </a>
+            </li>
+            <li class="navigation__item" data-item="contacts">
+              <a class="navigation__link" href="contacts.html">
+                <svg class="navigation__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+                </svg>
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidemenu__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+78126433460">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+                </svg>
+                +7(812) 643-34-60
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+78007003460">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+                </svg>
+                +7 (800) 700-34-60</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@webdom.net">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_mail"></use>
+                </svg>
+                info@webdom.net</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:support@webdom.net">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_mail"></use>
+                </svg>
+                support@webdom.net</a>
+            </li>
+          </ul>
+        </div>
+        <button class="button" data-target="popup-call">Заказать звонок</button>
+        <div class="sidemenu__lang lang">
+          <a class="lang__link" href="/en">
+            <!-- svg -->
+            English
+          </a>
+        </div>
+        <div class="sidemenu__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" area-label="Ссылка на fb">
+                <svg class="social__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" area-label="Ссылка на ins">
+                <svg class="social__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-ins"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" area-label="Ссылка на you">
+                <svg class="social__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-you"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidemenu__inner">
+        <button class="sidemenu__btn-close js-btn-close" area-label="Кнопка закрыть меню">
+          <svg class="sidemenu__btn-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-add"></use>
+          </svg>
+        </button>
+  
+        <div class="sidemenu__inner-menu" data-item="about">
+          <div class="sidemenu__inner-container">
+            <div class="sidemenu__inner-overlay">
+              <ul class="sidemenu__inner-list">
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-компания</a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Интернет-магазин</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Порталы и сервисы</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Для органов гос.власти</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-компания</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-компания</a>
+                </li>
+              </ul>
+              <div class="sidemenu__inner-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidemenu__inner-menu" data-item="service">
+          <div class="sidemenu__inner-container">
+            <div class="sidemenu__inner-overlay">
+              <ul class="sidemenu__inner-list">
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
+                </li>
+              </ul>
+              <div class="sidemenu__inner-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidemenu__inner-menu" data-item="projects">
+          <div class="sidemenu__inner-container">
+            <div class="sidemenu__inner-overlay">
+              <ul class="sidemenu__inner-list">
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Разработка сайтов
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Интернет-магазин</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Порталы и сервисы</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Для органов гос.власти</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Дизайн и фирстиль
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Съемка фото и видео
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Мобильные приложения
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Автоматизация бизнеса
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">
+                    Интернет-маркетенг
+                  </a>
+                  <ul class="sidemenu__sub-list">
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
+                    </li>
+                    <li class="sidemenu__sub-item">
+                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="sidemenu__inner-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidemenu__inner-menu" data-item="contacts">
+          <div class="sidemenu__inner-container">
+            <div class="sidemenu__inner-overlay">
+              <ul class="sidemenu__inner-list">
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
+                </li>
+                <li class="sidemenu__inner-item">
+                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
+                </li>
+              </ul>
+              <div class="sidemenu__inner-overlay"></div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+    </div>
+  
+  </div>
+  <div class="wrapper">
+    <div class="content">
+      <section class="page-section">
+        <div class="container">
+          <h3 class="title"><span class="title__count">01.</span> Разработка сайтов</h3>
+      
+          <!-- Swiper -->
+          <div id="js-slider-web" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture swiper-lazy"
+                      src="img/website/website-1.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Корпоративный сайт компании "Ирлайн" <span
+                        class="block-preview__marker">Бизнес</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture swiper-lazy"
+                      src="img/website/website-1.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Корпоративный сайт компании "Ирлайн" <span
+                        class="block-preview__marker">Бизнес</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture swiper-lazy"
+                      src="img/website/website-1.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Корпоративный сайт компании "Ирлайн" <span
+                        class="block-preview__marker">Бизнес</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture swiper-lazy"
+                      src="img/website/website-1.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Корпоративный сайт компании "Ирлайн" <span
+                        class="block-preview__marker">Бизнес</span></h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+      
+          <a class="page-section__link" href="website.html">
+            <span>Все сайты</span>
+            <svg class="page-section__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-menu_arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="container">
+          <h3 class="title"><span class="title__count">02.</span> Съемка фото и видео</h3>
+      
+          <!-- Swiper -->
+          <div id="js-slider-video" class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- page-section__item page-section__item--x2 -->
+              <div class="swiper-slide page-section__item page-section__item--x2">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture swiper-lazy"
+                      src="https://avatars.mds.yandex.net/get-pdb/788379/1bfafa86-d6e6-4570-bfdf-1e43066fb20d/s1200" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Video <span class="block-preview__marker">Сотовая
+                        связь</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture swiper-lazy"
+                      src="https://avatars.mds.yandex.net/get-pdb/788379/1bfafa86-d6e6-4570-bfdf-1e43066fb20d/s1200" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Video <span class="block-preview__marker">Сотовая
+                        связь</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture swiper-lazy"
+                      src="https://avatars.mds.yandex.net/get-pdb/788379/1bfafa86-d6e6-4570-bfdf-1e43066fb20d/s1200" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Video <span class="block-preview__marker">Сотовая
+                        связь</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture swiper-lazy"
+                      src="https://avatars.mds.yandex.net/get-pdb/788379/1bfafa86-d6e6-4570-bfdf-1e43066fb20d/s1200" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Video <span class="block-preview__marker">Сотовая
+                        связь</span></h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+          </div>
+      
+          <a class="page-section__link" href="">
+            <span>Все работы</span>
+            <svg class="page-section__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-menu_arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="container">
+          <h3 class="title"><span class="title__count">03.</span> Дизан и фирмстиль</h3>
+      
+          <!-- Swiper -->
+          <div id="js-slider-design" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--middle">
+                    <img class="picture swiper-lazy"
+                      src="https://avatars.mds.yandex.net/get-pdb/788379/1bfafa86-d6e6-4570-bfdf-1e43066fb20d/s1200" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Разработка логотипа для Ростелекома <span class="block-preview__marker">Сотовая
+                        связь</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--middle">
+                    <img class="picture swiper-lazy"
+                      src="https://avatars.mds.yandex.net/get-pdb/788379/1bfafa86-d6e6-4570-bfdf-1e43066fb20d/s1200" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Разработка логотипа для Ростелекома <span class="block-preview__marker">Сотовая
+                        связь</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--middle">
+                    <img class="picture swiper-lazy"
+                      src="https://avatars.mds.yandex.net/get-pdb/788379/1bfafa86-d6e6-4570-bfdf-1e43066fb20d/s1200" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Разработка логотипа для Ростелекома <span class="block-preview__marker">Сотовая
+                        связь</span></h3>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--middle">
+                    <img class="picture swiper-lazy"
+                      src="https://avatars.mds.yandex.net/get-pdb/788379/1bfafa86-d6e6-4570-bfdf-1e43066fb20d/s1200" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Разработка логотипа для Ростелекома <span class="block-preview__marker">Сотовая
+                        связь</span></h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+          </div>
+      
+          <a class="page-section__link" href="">
+            <span>Все работы</span>
+            <svg class="page-section__icon" width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-menu_arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="container">
+          <h3 class="title">Новости</h3>
+      
+          <!-- Swiper -->
+          <div id="js-slider-news" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide page-section__item page-section__item--x2">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--small">
+                    <img class="picture swiper-lazy"
+                      src="img/news/news-1.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Презентация проекта для ЦРПП в Ленэкспо</h3>
+                    <div class="block-preview__date">22 апреля 2018</div>
+                    <p class="block-preview__text">В рамках форума субъектов малого и среднего предпринимательства Санкт-Петербурга
+                      2018,
+                      проходимого в ЛенЭкспо с участием и о ...</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide page-section__item">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--small">
+                    <img class="picture swiper-lazy"
+                      src="img/news/news-1.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Презентация проекта для ЦРПП в Ленэкспо</h3>
+                    <div class="block-preview__date">22 апреля 2018</div>
+                    <p class="block-preview__text">В рамках форума субъектов малого и среднего предпринимательства Санкт-Петербурга
+                      2018,
+                      проходимого в ЛенЭкспо с участием и о ...</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide page-section__item">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--small">
+                    <img class="picture swiper-lazy"
+                      src="img/news/news-1.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Презентация проекта для ЦРПП в Ленэкспо</h3>
+                    <div class="block-preview__date">22 апреля 2018</div>
+                    <p class="block-preview__text">В рамках форума субъектов малого и среднего предпринимательства Санкт-Петербурга
+                      2018,
+                      проходимого в ЛенЭкспо с участием и о ...</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide page-section__item">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--small">
+                    <img class="picture swiper-lazy"
+                      src="img/news/news-1.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Презентация проекта для ЦРПП в Ленэкспо</h3>
+                    <div class="block-preview__date">22 апреля 2018</div>
+                    <p class="block-preview__text">В рамках форума субъектов малого и среднего предпринимательства Санкт-Петербурга
+                      2018,
+                      проходимого в ЛенЭкспо с участием и о ...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+          </div>
+      
+          <a class="page-section__link" href="">
+            <span>Все новости</span>
+          <svg class="page-section__icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-menu_arrow"></use>
+          </svg>
+        </a>
+        </div>
+      </section>
+      <section class="page-contacts page-contacts--bg">
+        <canvas id="nokey">
+          Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+        </canvas>
+        <div class="container">
+          <h3 class="title">Контактная информация</h3>
+          <div class="page-contacts__inner">
+            <div class="page-contacts__item">
+              <ul class="page-contacts__list">
+                <li class="page-contacts__list-item">
+                  <svg class="page-contacts__icon" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-address"></use>
+                  </svg>
+                  <div class="page-contacts__text">195269, г.Санкт-Петербург, ул.Учительская, д. 18, к.1, 1 этаж, офис 50Н
+                  </div>
+                </li>
+                <li class="page-contacts__list-item">
+                  <svg class="page-contacts__icon" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-time"></use>
+                  </svg>
+                  <div class="page-contacts__text">
+                    Отдел по работе с клиентами работает: <b>с понедельника по пятницу с 10:00 до 19:00</b>
+                  </div>
+                </li>
+                <li class="page-contacts__list-item">
+                  <svg class="page-contacts__icon" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <div class="page-contacts__text">
+                    Многокональный телефон в Санкт-Петербурге: <a class="page-contacts__link" href="tel:+78126433460">+7(812)
+                      643-346-0</a>
+                  </div>
+                </li>
+                <li class="page-contacts__list-item">
+                  <svg class="page-contacts__icon" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <div class="page-contacts__text">
+                    Бесплатный телефон для звонков из других городов России: <a class="page-contacts__link"
+                      href="tel:+78007003460">8 800 700-346-0</a>
+                  </div>
+                </li>
+                <li class="page-contacts__list-item">
+                  <div class="page-contacts__list-col-50">
+                    <svg class="page-contacts__icon" width="50" height="50">
+                      <use xlink:href="img/sprite.svg#icon-support"></use>
+                    </svg>
+                    <div class="page-contacts__text">
+                      Техническая поддержка: <a class="page-contacts__link"
+                        href="mailto:support@webdom.net">support@webdom.net</a>
+                    </div>
+                  </div>
+                  <div class="page-contacts__list-col-50">
+                    <svg class="page-contacts__icon" width="50" height="50">
+                      <use xlink:href="img/sprite.svg#icon-support_tech"></use>
+                    </svg>
+                    <div class="page-contacts__text">
+                      Заявки, предложения: <a class="page-contacts__link" href="mailto:info@webdom.net">info@webdom.net</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="page-contacts__item">
+              <form class="page-form" action="">
+                <fieldset class="page-form__inner">
+                  <legend class="page-form__title title">Отправить сообщение</legend>
+                  <ul class="page-form__list">
+                    <li class="page-form__item page-form__item--full">
+                      <label class="visually-hidden" for="page-form-name">Введите имя</label>
+                      <input id="page-form-name" class="page-form__field" type="text" name="name" placeholder="Введите имя">
+                    </li>
+                    <li class="page-form__item">
+                      <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
+                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel" placeholder="Введите телефон">
+                    </li>
+                    <li class="page-form__item">
+                      <label class="visually-hidden" for="page-form-mail">Введите email</label>
+                      <input id="page-form-mail" class="page-form__field" type="mail" name="mail" placeholder="Введите email">
+                    </li>
+                    <li class="page-form__item page-form__item--full">
+                      <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
+                      <textarea id="page-form-comment" class="page-form__comment" name="comment" placeholder="Ввендите текст сообщения"></textarea>
+                    </li>
+                    <li class="page-form__item">
+                      <input type="file" value="Загрузить файл">
+                    </li>
+                    <li class="page-form__item">
+                      <button class="button" type="submit">Отправить сообщение</button>
+                    </li>
+                  </ul>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="container">
+          <h3 class="title">Вакансии</h3>
+          <!-- Swiper -->
+          <div id="js-slider-jobs" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture" src="img/jobs/seo.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Seo специалист / Контент-менеджер</h3>
+                    <p class="block-preview__text">Зарплата от 45 000 руб.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture" src="img/jobs/seo.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Seo специалист / Контент-менеджер</h3>
+                    <p class="block-preview__text">Зарплата от 45 000 руб.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="block-preview" href="#">
+                  <div class="block-preview__pic block-preview__pic--large">
+                    <img class="picture" src="img/jobs/seo.jpg" alt="pic">
+                  </div>
+                  <div class="block-preview__info">
+                    <h3 class="block-preview__title">Seo специалист / Контент-менеджер</h3>
+                    <p class="block-preview__text">Зарплата от 45 000 руб.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="block-preview block-preview--form" href="#">
+                  <div class="block-preview__info">
+                    <div class="block-preview__title">Ты супер-пупер талант?</div>
+                    <button class="button button--uppercase" data-target="popup-jobs">Напишите нам</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__inner container">
+        <ul class="page-footer__list">
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Компания
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Партнерам</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Новости</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Отзывы</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">История</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Партнеры</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Наш офис</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Корпоративы</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Вакансии</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Канал на youtube.com</a>
+              </li>
+            </ul>
+    
+          </li>
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Услуги
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Разработка версии сайта для слабовидящих</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Фирменный сить</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Хостинг и домены</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Мультимедиа презентации</a>
+              </li>
+            </ul>
+          </li>
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Портфолио
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Сайты</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Лэндинги</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Интернет-магазины</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Фирменный стиль</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Дизайн и мультимедиа</a>
+              </li>
+            </ul>
+          </li>
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Контакты
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Санкт-Петербург</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Москва</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Краснодар</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Казань</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Новосибирс</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Нижний Новгород</a>
+              </li>
+            </ul>
+          </li>
+          <li class="page-footer__list-item active">
+            <a class="page-footer__list-link" href="#">Полезные ссылки
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-open_list"></use>
+              </svg>
+            </a>
+            <ul class="page-footer__sublist">
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Служба поддержки</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Анкета на регистрацию домена</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#" download="">Скачать портфолио</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#" data-target="popup">Задать вопрос</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Запросить коммерческое предложение</a>
+              </li>
+              <li class="page-footer__sublist-item">
+                <a class="page-footer__sublist-link" href="#">Написать директору</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="page-footer__footer">
+          <a class="logo" href="#">
+            <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+          </a>
+          <div class="page-footer__copyright">© 1999 - 2018 Компания Вебдом</div>
+          <a class="page-footer__policy" href="#">Политика в отношении обработки персональных данных</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+</body>
+
+</html>
