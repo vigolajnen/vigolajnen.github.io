@@ -13,15 +13,223 @@
 </head>
 
 <body class="page">
+  <nav class="mob-navigation">
+    <div class="mob-navigation__header">
+      <button class="mob-navigation__toggle mob-navigation__toggle--closed button button--link" type="button" aria-label="Открыть меню">
+        <svg width="25" viewbox="0 0 10 10" fill="#d8d8d8">
+          <rect width="10" height="1.5" x="0" y="0" />
+          <rect width="10" height="1.5" x="0" y="3" />
+          <rect width="10" height="1.5" x="0" y="6" />
+        </svg>
+      </button>
+      <a class="mob-navigation__logo logo" href="index.html">
+        <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+      </a>
+      <a class="mob-navigation__phone phone" href="tel:+78126433460" aria-label="Позвонить в компанию">
+        <svg class="mob-navigation__icon" width="20" height="17">
+          <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="mob-navigation__inner">
+      <button class="mob-navigation__closed button button--link" type="button"
+        aria-label="Открыть меню">
+        <svg width="25" viewbox="0 0 10 10" fill="#d8d8d8">
+          <rect width="10" height="1.5" x="0" y="0" />
+          <rect width="10" height="1.5" x="0" y="3" />
+          <rect width="10" height="1.5" x="0" y="6" />
+        </svg>
+      </button>
+      <ul class="mob-navigation__list">
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="about.html">
+            <svg class="mob-navigation__icon" width="20" height="17">
+              <use xlink:href="img/sprite.svg#icon-menu_about"></use>
+            </svg>
+            О компании</a>
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="service.html">
+            <svg class="mob-navigation__icon" width="20" height="17">
+              <use xlink:href="img/sprite.svg#icon-menu_services"></use>
+            </svg>
+            Услуги</a>
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="#">
+            <svg class="mob-navigation__icon" width="20" height="17">
+              <use xlink:href="img/sprite.svg#icon-menu_projects"></use>
+            </svg>
+            Проекты</a>
+          <div class="mobmenu-inner">
+            <ul class="mobmenu-inner__list">
+              <li class="mobmenu-inner__item">
+                <a class="mobmenu-inner__link" href="#">
+                  Разработка сайтов
+                </a>
+                <ul class="mobmenu-inner__sub-list">
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Одностраничный сайт</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Корпоративный сайт</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Интернет-магазин</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Порталы и сервисы</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Для органов гос.власти</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobmenu-inner__item">
+                <a class="mobmenu-inner__link" href="#">
+                  Дизайн и фирстиль
+                </a>
+                <ul class="mobmenu-inner__sub-list">
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Одностраничный сайт</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Корпоративный сайт</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobmenu-inner__item">
+                <a class="mobmenu-inner__link" href="#">
+                  Съемка фото и видео
+                </a>
+                <ul class="mobmenu-inner__sub-list">
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Одностраничный сайт</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Корпоративный сайт</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobmenu-inner__item">
+                <a class="mobmenu-inner__link" href="#">
+                  Мобильные приложения
+                </a>
+                <ul class="mobmenu-inner__sub-list">
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Одностраничный сайт</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Корпоративный сайт</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobmenu-inner__item">
+                <a class="mobmenu-inner__link" href="#">
+                  Автоматизация бизнеса
+                </a>
+                <ul class="mobmenu-inner__sub-list">
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Одностраничный сайт</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Корпоративный сайт</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobmenu-inner__item">
+                <a class="mobmenu-inner__link" href="#">
+                  Интернет-маркетенг
+                </a>
+                <ul class="mobmenu-inner__sub-list">
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Одностраничный сайт</a>
+                  </li>
+                  <li class="mobmenu-inner__sub-item">
+                    <a class="mobmenu-inner__sub-link" href="#">Корпоративный сайт</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+  
+        </li>
+        <li class="mob-navigation__item">
+          <a class="mob-navigation__link" href="contacts.html">
+            <svg class="mob-navigation__icon" width="20" height="17">
+              <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+            </svg>
+            Контакты</a>
+        </li>
+      </ul>
+      <div class="mob-navigation__footer">
+        <div class="mob-navigation__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+78126433460">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+                </svg>
+                +7(812) 643-34-60
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+78007003460">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_contacts"></use>
+                </svg>
+                +7 (800) 700-34-60</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@webdom.net">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_mail"></use>
+                </svg>
+                info@webdom.net</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:support@webdom.net">
+                <svg class="contacts__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-menu_mail"></use>
+                </svg>
+                support@webdom.net</a>
+            </li>
+          </ul>
+          <button class="button" data-target="popup-call">Заказать звонок</button>
+        </div>
+        <div class="mob-navigation__lang lang">
+          <a class="lang__link" href="/en">English</a>
+        </div>
+        <div class="mob-navigation__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Наш фейсбук" target="_blank">
+                <svg class="social__icon" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Наш инстаграм" target="_blank">
+                <svg class="social__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-ins"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Наш ютуб" target="_blank">
+                <svg class="social__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-you"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   <div class="side-elements">
     <div class="side-elements__inner sidemenu">
-      <div class="sidemenu__mob">
-        <button class="" area-label="Кнопка меню">
-          <svg class="sidemenu__btn-icon" width="20" height="20">
-            <use xlink:href="img/sprite.svg#icon-add"></use>
-          </svg>
-        </button>
-      </div>
       <div class="sidemenu__container">
         <div class="sidemenu__logo">
           <a class="logo" href="#">
@@ -96,32 +304,31 @@
                 support@webdom.net</a>
             </li>
           </ul>
+          <button class="button js-popup-btn" data-target="popup-call">Заказать звонок</button>
+  
         </div>
-        <button class="button" data-target="popup-call">Заказать звонок</button>
+  
         <div class="sidemenu__lang lang">
-          <a class="lang__link" href="/en">
-            <!-- svg -->
-            English
-          </a>
+          <a class="lang__link" href="/en">English</a>
         </div>
         <div class="sidemenu__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#" area-label="Ссылка на fb">
+              <a class="social__link" href="#" aria-label="Наш фейсбук" target="_blank">
                 <svg class="social__icon" width="20" height="17">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#" area-label="Ссылка на ins">
+              <a class="social__link" href="#" aria-label="Наш инстаграм" target="_blank">
                 <svg class="social__icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-ins"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#" area-label="Ссылка на you">
+              <a class="social__link" href="#" aria-label="Наш ютуб" target="_blank">
                 <svg class="social__icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-you"></use>
                 </svg>
@@ -131,65 +338,13 @@
         </div>
       </div>
       <div class="sidemenu__inner">
-        <button class="sidemenu__btn-close js-btn-close" area-label="Кнопка закрыть меню">
+        <button class="sidemenu__btn-close js-btn-close" aria-label="Кнопка закрыть меню">
           <svg class="sidemenu__btn-icon" width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-add"></use>
           </svg>
         </button>
   
-        <div class="sidemenu__inner-menu" data-item="about">
-          <div class="sidemenu__inner-container">
-            <div class="sidemenu__inner-overlay">
-              <ul class="sidemenu__inner-list">
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-компания</a>
-                  <ul class="sidemenu__sub-list">
-                    <li class="sidemenu__sub-item">
-                      <a class="sidemenu__sub-link" href="#">Одностраничный сайт</a>
-                    </li>
-                    <li class="sidemenu__sub-item">
-                      <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
-                    </li>
-                    <li class="sidemenu__sub-item">
-                      <a class="sidemenu__sub-link" href="#">Интернет-магазин</a>
-                    </li>
-                    <li class="sidemenu__sub-item">
-                      <a class="sidemenu__sub-link" href="#">Порталы и сервисы</a>
-                    </li>
-                    <li class="sidemenu__sub-item">
-                      <a class="sidemenu__sub-link" href="#">Для органов гос.власти</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-компания</a>
-                </li>
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-компания</a>
-                </li>
-              </ul>
-              <div class="sidemenu__inner-overlay"></div>
-            </div>
-          </div>
-        </div>
-        <div class="sidemenu__inner-menu" data-item="service">
-          <div class="sidemenu__inner-container">
-            <div class="sidemenu__inner-overlay">
-              <ul class="sidemenu__inner-list">
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
-                </li>
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
-                </li>
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-услуги</a>
-                </li>
-              </ul>
-              <div class="sidemenu__inner-overlay"></div>
-            </div>
-          </div>
-        </div>
+  
         <div class="sidemenu__inner-menu" data-item="projects">
           <div class="sidemenu__inner-container">
             <div class="sidemenu__inner-overlay">
@@ -280,24 +435,6 @@
                       <a class="sidemenu__sub-link" href="#">Корпоративный сайт</a>
                     </li>
                   </ul>
-                </li>
-              </ul>
-              <div class="sidemenu__inner-overlay"></div>
-            </div>
-          </div>
-        </div>
-        <div class="sidemenu__inner-menu" data-item="contacts">
-          <div class="sidemenu__inner-container">
-            <div class="sidemenu__inner-overlay">
-              <ul class="sidemenu__inner-list">
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
-                </li>
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
-                </li>
-                <li class="sidemenu__inner-item">
-                  <a class="sidemenu__inner-link" href="#">1-контакты</a>
                 </li>
               </ul>
               <div class="sidemenu__inner-overlay"></div>
@@ -534,7 +671,7 @@
           <!-- Swiper -->
           <div id="js-slider-news" class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide page-section__item page-section__item--x2">
+              <div class="swiper-slide page-section__item">
                 <a class="block-preview" href="#">
                   <div class="block-preview__pic block-preview__pic--small">
                     <img class="picture swiper-lazy"
@@ -545,7 +682,7 @@
                     <div class="block-preview__date">22 апреля 2018</div>
                     <p class="block-preview__text">В рамках форума субъектов малого и среднего предпринимательства Санкт-Петербурга
                       2018,
-                      проходимого в ЛенЭкспо с участием и о ...</p>
+                      проходимого в ЛенЭкспо с участием и о Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur rerum sit, itaque voluptate quisquam minima necessitatibus sequi deleniti modi in?</p>
                   </div>
                 </a>
               </div>
@@ -560,7 +697,7 @@
                     <div class="block-preview__date">22 апреля 2018</div>
                     <p class="block-preview__text">В рамках форума субъектов малого и среднего предпринимательства Санкт-Петербурга
                       2018,
-                      проходимого в ЛенЭкспо с участием и о ...</p>
+                      проходимого в ЛенЭкспо с участием и о Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur rerum sit, itaque voluptate quisquam minima necessitatibus sequi deleniti modi in?</p>
                   </div>
                 </a>
               </div>
@@ -575,7 +712,7 @@
                     <div class="block-preview__date">22 апреля 2018</div>
                     <p class="block-preview__text">В рамках форума субъектов малого и среднего предпринимательства Санкт-Петербурга
                       2018,
-                      проходимого в ЛенЭкспо с участием и о ...</p>
+                      проходимого в ЛенЭкспо с участием и о Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur rerum sit, itaque voluptate quisquam minima necessitatibus sequi deleniti modi in?</p>
                   </div>
                 </a>
               </div>
@@ -590,7 +727,7 @@
                     <div class="block-preview__date">22 апреля 2018</div>
                     <p class="block-preview__text">В рамках форума субъектов малого и среднего предпринимательства Санкт-Петербурга
                       2018,
-                      проходимого в ЛенЭкспо с участием и о ...</p>
+                      проходимого в ЛенЭкспо с участием и о Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur rerum sit, itaque voluptate quisquam minima necessitatibus sequi deleniti modi in?</p>
                   </div>
                 </a>
               </div>
@@ -680,19 +817,22 @@
                   <ul class="page-form__list">
                     <li class="page-form__item page-form__item--full">
                       <label class="visually-hidden" for="page-form-name">Введите имя</label>
-                      <input id="page-form-name" class="page-form__field" type="text" name="name" placeholder="Введите имя">
+                      <input id="page-form-name" class="page-form__field" type="text" name="page-form-name" placeholder="Введите имя">
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
-                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel" placeholder="Введите телефон">
+                      <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
+                        placeholder="Введите телефон">
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-mail">Введите email</label>
-                      <input id="page-form-mail" class="page-form__field" type="mail" name="mail" placeholder="Введите email">
+                      <input id="page-form-mail" class="page-form__field" type="mail" name="page-form-mail"
+                        placeholder="Введите email">
                     </li>
                     <li class="page-form__item page-form__item--full">
                       <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
-                      <textarea id="page-form-comment" class="page-form__comment" name="comment" placeholder="Ввендите текст сообщения"></textarea>
+                      <textarea id="page-form-comment" class="page-form__comment" name="page-form-comment "
+                        placeholder="Ввендите текст сообщения"></textarea>
                     </li>
                     <li class="page-form__item">
                       <input type="file" value="Загрузить файл">
@@ -750,7 +890,7 @@
                 <div class="block-preview block-preview--form" href="#">
                   <div class="block-preview__info">
                     <div class="block-preview__title">Ты супер-пупер талант?</div>
-                    <button class="button button--uppercase" data-target="popup-jobs">Напишите нам</button>
+                    <button class="js-popup-btn button button--uppercase" data-target="popup-jobs">Напишите нам</button>
                   </div>
                 </div>
               </div>
@@ -918,7 +1058,96 @@
   </div>
 
 
-
+  <div class="popup-overlay">
+    <section class="popup" data-target="popup-call">
+      <button class="button button--link popup-close" aria-label="Закрыть окно">
+        <svg width="25" viewbox="0 0 10 10" fill="#d8d8d8">
+          <rect width="10" height="1.5" x="0" y="0" />
+          <rect width="10" height="1.5" x="0" y="3" />
+          <rect width="10" height="1.5" x="0" y="6" />
+        </svg>
+      </button>
+      <div class="popup-order__wrapper">
+        <form class="page-form" action="">
+          <fieldset class="page-form__inner">
+            <legend class="page-form__title title">Отправить сообщение</legend>
+            <ul class="page-form__list">
+              <li class="page-form__item page-form__item--full">
+                <label class="visually-hidden" for="page-form-name">Введите имя</label>
+                <input id="page-form-name" class="page-form__field" type="text" name="page-form-name" placeholder="Введите имя">
+              </li>
+              <li class="page-form__item">
+                <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
+                <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
+                  placeholder="Введите телефон">
+              </li>
+              <li class="page-form__item">
+                <label class="visually-hidden" for="page-form-mail">Введите email</label>
+                <input id="page-form-mail" class="page-form__field" type="mail" name="page-form-mail"
+                  placeholder="Введите email">
+              </li>
+              <li class="page-form__item page-form__item--full">
+                <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
+                <textarea id="page-form-comment" class="page-form__comment" name="page-form-comment "
+                  placeholder="Ввендите текст сообщения"></textarea>
+              </li>
+              <li class="page-form__item">
+                <input type="file" value="Загрузить файл">
+              </li>
+              <li class="page-form__item">
+                <button class="button" type="submit">Отправить сообщение</button>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="popup-overlay">
+    <section class="popup" data-target="popup-jobs">
+      <button class="button button--link popup-close" aria-label="Закрыть окно">
+        <svg width="25" viewbox="0 0 10 10" fill="#d8d8d8">
+          <rect width="10" height="1.5" x="0" y="0" />
+          <rect width="10" height="1.5" x="0" y="3" />
+          <rect width="10" height="1.5" x="0" y="6" />
+        </svg>
+      </button>
+      <div class="popup-order__wrapper">
+        <form class="page-form" action="">
+          <fieldset class="page-form__inner">
+            <legend class="page-form__title title">Отправить сообщение</legend>
+            <ul class="page-form__list">
+              <li class="page-form__item page-form__item--full">
+                <label class="visually-hidden" for="page-form-name">Введите имя</label>
+                <input id="page-form-name" class="page-form__field" type="text" name="page-form-name" placeholder="Введите имя">
+              </li>
+              <li class="page-form__item">
+                <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
+                <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
+                  placeholder="Введите телефон">
+              </li>
+              <li class="page-form__item">
+                <label class="visually-hidden" for="page-form-mail">Введите email</label>
+                <input id="page-form-mail" class="page-form__field" type="mail" name="page-form-mail"
+                  placeholder="Введите email">
+              </li>
+              <li class="page-form__item page-form__item--full">
+                <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
+                <textarea id="page-form-comment" class="page-form__comment" name="page-form-comment "
+                  placeholder="Ввендите текст сообщения"></textarea>
+              </li>
+              <li class="page-form__item">
+                <input type="file" value="Загрузить файл">
+              </li>
+              <li class="page-form__item">
+                <button class="button" type="submit">Отправить сообщение</button>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </div>
   <script src="js/libs.min.js"></script>
   <script src="js/main.min.js"></script>
   <script>
