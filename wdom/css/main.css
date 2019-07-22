@@ -1698,6 +1698,17 @@ img {
     color: #1b608e;
     text-transform: inherit; }
 
+.service__slide-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 900px) {
+    .service__slide-header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
 .service .parallax-bg {
   width: 100%;
   position: relative;
@@ -1740,7 +1751,7 @@ img {
       bottom: auto;
       left: auto;
       top: 0;
-      right: -100px; } }
+      right: -80px; } }
 
 .list {
   list-style: none;
@@ -1768,6 +1779,7 @@ img {
   line-height: normal; }
 
 .number {
+  margin-right: .625rem;
   font-size: 100%;
   font-weight: 600;
   line-height: normal;
