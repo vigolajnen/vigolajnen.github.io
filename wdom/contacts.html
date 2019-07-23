@@ -195,7 +195,7 @@
                 support@webdom.net</a>
             </li>
           </ul>
-          <button class="button" data-target="popup-call">Заказать звонок</button>
+          <button class="button js-popup-btn" data-target="popup-call">Заказать звонок</button>
         </div>
         <div class="mob-navigation__lang lang">
           <a class="lang__link" href="/en">English</a>
@@ -450,65 +450,71 @@
   </div>
   <div class="wrapper">
     <div class="content">
-      <div class="page__content container">
-        <h1>Контакты</h1>
+      <div class="page__content">
+        <div class="container">
+          <h1>Контакты</h1>
+        </div>
         <section class="page-contacts page-contacts--bg-map">
-          <div class="page-contacts__inner">
+          <div class="page-contacts__inner container">
             <div class="page-contacts__item">
               <ul class="page-contacts__list">
                 <li class="page-contacts__list-item">
-                  <svg class="page-contacts__icon" width="50" height="50">
-                    <use xlink:href="img/sprite.svg#icon-address"></use>
-                  </svg>
-                  <div class="page-contacts__text">195269, г.Санкт-Петербург, ул.Учительская, д. 18, к.1, 1 этаж, офис
-                    50Н
-                  </div>
-                </li>
-                <li class="page-contacts__list-item">
-                  <svg class="page-contacts__icon" width="50" height="50">
-                    <use xlink:href="img/sprite.svg#icon-time"></use>
-                  </svg>
-                  <div class="page-contacts__text">
-                    Отдел по работе с клиентами работает: <b>с понедельника по пятницу с 10:00 до 19:00</b>
-                  </div>
-                </li>
-                <li class="page-contacts__list-item">
-                  <svg class="page-contacts__icon" width="50" height="50">
+                  <svg class="page-contacts__icon page-contacts__icon--small" width="50" height="50">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                   <div class="page-contacts__text">
-                    Многокональный телефон в Санкт-Петербурге: <a class="page-contacts__link"
+                    Многокональный телефон в Санкт-Петербурге: <a class="page-contacts__link page-contacts__link--phone"
                       href="tel:+78126433460">+7(812)
                       643-346-0</a>
                   </div>
                 </li>
                 <li class="page-contacts__list-item">
-                  <svg class="page-contacts__icon" width="50" height="50">
+                  <svg class="page-contacts__icon page-contacts__icon--small" width="50" height="50">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                   <div class="page-contacts__text">
-                    Бесплатный телефон для звонков из других городов России: <a class="page-contacts__link"
-                      href="tel:+78007003460">8 800 700-346-0</a>
+                    Бесплатный телефон для звонков из других городов России: <a
+                      class="page-contacts__link page-contacts__link--phone" href="tel:+78007003460">8 800 700-346-0</a>
                   </div>
                 </li>
                 <li class="page-contacts__list-item">
                   <div class="page-contacts__list-col-50">
-                    <svg class="page-contacts__icon" width="50" height="50">
-                      <use xlink:href="img/sprite.svg#icon-support"></use>
-                    </svg>
-                    <div class="page-contacts__text">
-                      Техническая поддержка: <a class="page-contacts__link"
-                        href="mailto:support@webdom.net">support@webdom.net</a>
-                    </div>
-                  </div>
-                  <div class="page-contacts__list-col-50">
-                    <svg class="page-contacts__icon" width="50" height="50">
+                    <svg class="page-contacts__icon page-contacts__icon--small" width="50" height="50">
                       <use xlink:href="img/sprite.svg#icon-support_tech"></use>
                     </svg>
                     <div class="page-contacts__text">
-                      Заявки, предложения: <a class="page-contacts__link"
+                      Заявки, предложения: <a class="page-contacts__link page-contacts__link--mail"
                         href="mailto:info@webdom.net">info@webdom.net</a>
                     </div>
+                  </div>
+                  <div class="page-contacts__list-col-50">
+                    <svg class="page-contacts__icon page-contacts__icon--small" width="50" height="50">
+                      <use xlink:href="img/sprite.svg#icon-support"></use>
+                    </svg>
+                    <div class="page-contacts__text">
+                      Техническая поддержка: <a class="page-contacts__link page-contacts__link--mail"
+                        href="mailto:support@webdom.net">support@webdom.net</a>
+                    </div>
+                  </div>
+
+                </li>
+              </ul>
+              <hr>
+              <ul class="page-contacts__list">
+                <li class="page-contacts__list-item">
+                  <svg class="page-contacts__icon page-contacts__icon--small" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-address"></use>
+                  </svg>
+                  <div class="page-contacts__text">Мы находимся: <b>195269, г.Санкт-Петербург, ул.Учительская, д. 18,
+                      к.1, 1 этаж, офис 50Н</b>
+                  </div>
+                </li>
+                <li class="page-contacts__list-item">
+                  <svg class="page-contacts__icon page-contacts__icon--small" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-time"></use>
+                  </svg>
+                  <div class="page-contacts__text">
+                    Отдел по работе с клиентами работает: <b>с понедельника по пятницу с 10:00 до 19:00</b>
                   </div>
                 </li>
               </ul>
@@ -517,12 +523,9 @@
           </div>
 
         </section>
-        <section class="page-contacts">
-          <canvas id="nokey">
-            Your Browser Don't Support Canvas, Please Download Chrome ^_^``
-          </canvas>
+        <section class="page-contacts page-contacts--bg-pic page-contacts--bg-white">
 
-          <div class="page-contacts__inner">
+          <div class="page-contacts__inner container">
             <div class="page-contacts__item">
               <div class="page-contacts__box">
                 <div class="title">Хотите узнать больше о webdom?</div>
@@ -531,6 +534,38 @@
               <div class="page-contacts__box">
                 <div class="title">Обращайтесь!</div>
                 <p>Наши менеджеры будут рады проконсультировать Вас по всем вопросам.</p>
+                <ul class="page-contacts__list page-contacts__list--fl">
+                  <li class="page-contacts__list-col-50">
+                    <img class="page-contacts__pic" src="img/service/s-pic-2.jpg" alt="pic">
+                    <div class="page-contacts__info">
+                      <div class="page-contacts__info-name">Вадим Галатов</div>
+                      <div class="page-contacts__info-contacts">
+                        <a class="link" href="mailto:vadim@webdom.net">vadim@webdom.net</a>
+                        <a class="link" href="tel:+78126433460">(812) 643-346-0, доб. 222</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="page-contacts__list-col-50">
+                    <img class="page-contacts__pic" src="img/service/s-pic-2.jpg" alt="pic">
+                    <div class="page-contacts__info">
+                      <div class="page-contacts__info-name">Гацкевич Виктория</div>
+                      <div class="page-contacts__info-contacts">
+                        <a class="link" href="mailto:gatskevich.vika@proweb.ru">gatskevich.vika@proweb.ru</a>
+                        <a class="link" href="tel:+78126433460">(812) 643-346-0, доб. 102</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="page-contacts__list-col-50">
+                    <img class="page-contacts__pic" src="img/service/s-pic-2.jpg" alt="pic">
+                    <div class="page-contacts__info">
+                      <div class="page-contacts__info-name">Вячеслав Варенька</div>
+                      <div class="page-contacts__info-contacts">
+                        <a class="link" href="mailto:varenka@webdom.net">varenka@webdom.net</a>
+                        <a class="link" href="tel:+78126433460">(812) 643-346-0, доб. 300</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="page-contacts__item">
@@ -539,25 +574,48 @@
                   <legend class="page-form__title title">Отправить заявку</legend>
                   <ul class="page-form__list">
                     <li class="page-form__item">
-                      <label class="visually-hidden" for="page-form-theme">Выберите тему обращения</label>
+                      <!-- <label class="visually-hidden" for="page-form-theme">Выберите тему обращения</label>
                       <select id="page-form-theme" class="page-form__field" name="theme">
-
-                      </select>
+              
+                      </select> -->
+              
+                      <!-- Лейбел, при клике на который открывается селект -->
+                      <label for="select" class="select">
+                        <!-- Этот инпут отвечает за закрытие селекта при клике за его пределами. Также этот инпут является стандартным значением нашего селекта -->
+                        <input type="radio" name="list" value="not_changed" id="bg" checked />
+                        <!-- Этот инпут является переключателем селекта в состояние "открыт" -->
+                        <input type="radio" name="list" value="not_changed" id="select">
+                        <!-- Этот лейбел используется для создания подложки, клик по которой приводит к закрытию селекта -->
+                        <label class="bg" for="bg"></label>
+                        <!-- Этот див - список параметров селекта, где #text - то, что выводится, когда ничего не выбрано -->
+                        <div class="items page-form__field">
+                          <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта -->
+                          <input type="radio" name="list" value="first_value" id="list[0]">
+                          <!-- Название параметра -->
+                          <label for="list[0]">Реклама</label>
+                          <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+                          <input type="radio" name="list" value="second_value" id="list[1]">
+                          <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+                          <label for="list[1]">Разработка</label>
+                          <input type="radio" name="list" value="second_value" id="list[2]">
+                          <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
+                          <label for="list[2]">Заявка</label>
+                          <!-- Текст селекта по умолчанию. Выводится тогда, когда ничего не выбрано -->
+                          <span id="text">Выберите тему обращения</span>
+                        </div>
+                      </label>
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-name">Введите имя</label>
-                      <input id="page-form-name" class="page-form__field" type="text" name="name"
-                        placeholder="Введите имя">
+                      <input id="page-form-name" class="page-form__field" type="text" name="name" placeholder="Введите имя">
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
-                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel"
-                        placeholder="Введите телефон">
+                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel" placeholder="Введите телефон">
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-mail">Введите email</label>
-                      <input id="page-form-mail" class="page-form__field" type="mail" name="mail"
-                        placeholder="Введите email">
+                      <input id="page-form-mail" class="page-form__field" type="mail" name="mail" placeholder="Введите email">
                     </li>
                     <li class="page-form__item page-form__item--full">
                       <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
@@ -565,7 +623,8 @@
                         placeholder="Ввендите текст сообщения"></textarea>
                     </li>
                     <li class="page-form__item">
-                      <input type="file" value="Загрузить файл">
+               <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                      <label for="file">Загрузить файл</label>
                     </li>
                     <li class="page-form__item">
                       <button class="button" type="submit">Отправить сообщение</button>
@@ -767,7 +826,8 @@
                   placeholder="Ввендите текст сообщения"></textarea>
               </li>
               <li class="page-form__item">
-                <input type="file" value="Загрузить файл">
+         <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                <label for="file">Загрузить файл</label>
               </li>
               <li class="page-form__item">
                 <button class="button" type="submit">Отправить сообщение</button>

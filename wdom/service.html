@@ -195,7 +195,7 @@
                 support@webdom.net</a>
             </li>
           </ul>
-          <button class="button" data-target="popup-call">Заказать звонок</button>
+          <button class="button js-popup-btn" data-target="popup-call">Заказать звонок</button>
         </div>
         <div class="mob-navigation__lang lang">
           <a class="lang__link" href="/en">English</a>
@@ -514,33 +514,30 @@
                     <div class="page-contacts__item">
                       <form class="page-form" action="">
                         <fieldset class="page-form__inner">
-                          <legend class="page-form__title title">Отправить заявку</legend>
+                          <legend class="page-form__title title">Отправить сообщение</legend>
                           <ul class="page-form__list">
-                            <li class="page-form__item">
-                              <label class="visually-hidden" for="page-form-theme">Выберите тему обращения</label>
-                              <select id="page-form-theme" class="page-form__field" name="theme">
-                
-                              </select>
-                            </li>
-                            <li class="page-form__item">
+                            <li class="page-form__item page-form__item--full">
                               <label class="visually-hidden" for="page-form-name">Введите имя</label>
-                              <input id="page-form-name" class="page-form__field" type="text" name="name" placeholder="Введите имя">
+                              <input id="page-form-name" class="page-form__field" type="text" name="page-form-name" placeholder="Введите имя">
                             </li>
                             <li class="page-form__item">
                               <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
-                              <input id="page-form-tel" class="page-form__field" type="tel" name="tel" placeholder="Введите телефон">
+                              <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
+                                placeholder="Введите телефон">
                             </li>
                             <li class="page-form__item">
                               <label class="visually-hidden" for="page-form-mail">Введите email</label>
-                              <input id="page-form-mail" class="page-form__field" type="mail" name="mail" placeholder="Введите email">
+                              <input id="page-form-mail" class="page-form__field" type="mail" name="page-form-mail"
+                                placeholder="Введите email">
                             </li>
                             <li class="page-form__item page-form__item--full">
                               <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
-                              <textarea id="page-form-comment" class="page-form__comment" name="comment"
+                              <textarea id="page-form-comment" class="page-form__comment" name="page-form-comment "
                                 placeholder="Ввендите текст сообщения"></textarea>
                             </li>
                             <li class="page-form__item">
-                              <input type="file" value="Загрузить файл">
+                       <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                              <label for="file">Загрузить файл</label>
                             </li>
                             <li class="page-form__item">
                               <button class="button" type="submit">Отправить сообщение</button>
@@ -572,6 +569,7 @@
                         <li><b>Порталы и сервисы</b></li>
                         <li><b>Для органов гос. власти</b></li>
                       </ul>
+                      <a class="link link--btn link--uppercase" href="website.html">Ознакомиться детальнее</a>
                     </div>
                   </div>
                 </section>
@@ -595,6 +593,7 @@
                         <li><b>Порталы и сервисы</b></li>
                         <li><b>Для органов гос. власти</b></li>
                       </ul>
+                      <a class="link link--btn link--uppercase" href="website.html">Ознакомиться детальнее</a>
                     </div>
                   </div>
                 </section>
@@ -618,6 +617,7 @@
                         <li><b>Порталы и сервисы</b></li>
                         <li><b>Для органов гос. власти</b></li>
                       </ul>
+                      <a class="link link--btn link--uppercase" href="website.html">Ознакомиться детальнее</a>
                     </div>
                   </div>
                 </section>
@@ -641,6 +641,7 @@
                         <li><b>Порталы и сервисы</b></li>
                         <li><b>Для органов гос. власти</b></li>
                       </ul>
+                      <a class="link link--btn link--uppercase" href="website.html">Ознакомиться детальнее</a>
                     </div>
                   </div>
                 </section>
@@ -664,6 +665,7 @@
                         <li><b>Порталы и сервисы</b></li>
                         <li><b>Для органов гос. власти</b></li>
                       </ul>
+                      <a class="link link--btn link--uppercase" href="website.html">Ознакомиться детальнее</a>
                     </div>
                   </div>
                 </section>
@@ -687,6 +689,7 @@
                         <li><b>Порталы и сервисы</b></li>
                         <li><b>Для органов гос. власти</b></li>
                       </ul>
+                      <a class="link link--btn link--uppercase" href="website.html">Ознакомиться детальнее</a>
                     </div>
                   </div>
                 </section>
@@ -889,7 +892,8 @@
                   placeholder="Ввендите текст сообщения"></textarea>
               </li>
               <li class="page-form__item">
-                <input type="file" value="Загрузить файл">
+         <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                <label for="file">Загрузить файл</label>
               </li>
               <li class="page-form__item">
                 <button class="button" type="submit">Отправить сообщение</button>

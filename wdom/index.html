@@ -195,7 +195,7 @@
                 support@webdom.net</a>
             </li>
           </ul>
-          <button class="button" data-target="popup-call">Заказать звонок</button>
+          <button class="button js-popup-btn" data-target="popup-call">Заказать звонок</button>
         </div>
         <div class="mob-navigation__lang lang">
           <a class="lang__link" href="/en">English</a>
@@ -760,7 +760,7 @@
                   <svg class="page-contacts__icon" width="50" height="50">
                     <use xlink:href="img/sprite.svg#icon-address"></use>
                   </svg>
-                  <div class="page-contacts__text">195269, г.Санкт-Петербург, ул.Учительская, д. 18, к.1, 1 этаж, офис 50Н
+                  <div class="page-contacts__text"><b>195269, г.Санкт-Петербург, ул.Учительская, д. 18, к.1, 1 этаж, офис 50Н</b>
                   </div>
                 </li>
                 <li class="page-contacts__list-item">
@@ -835,7 +835,8 @@
                         placeholder="Ввендите текст сообщения"></textarea>
                     </li>
                     <li class="page-form__item">
-                      <input type="file" value="Загрузить файл">
+               <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                      <label for="file">Загрузить файл</label>
                     </li>
                     <li class="page-form__item">
                       <button class="button" type="submit">Отправить сообщение</button>
@@ -1092,7 +1093,8 @@
                   placeholder="Ввендите текст сообщения"></textarea>
               </li>
               <li class="page-form__item">
-                <input type="file" value="Загрузить файл">
+         <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                <label for="file">Загрузить файл</label>
               </li>
               <li class="page-form__item">
                 <button class="button" type="submit">Отправить сообщение</button>
@@ -1137,7 +1139,8 @@
                   placeholder="Ввендите текст сообщения"></textarea>
               </li>
               <li class="page-form__item">
-                <input type="file" value="Загрузить файл">
+         <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                <label for="file">Загрузить файл</label>
               </li>
               <li class="page-form__item">
                 <button class="button" type="submit">Отправить сообщение</button>
