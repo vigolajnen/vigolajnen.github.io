@@ -606,15 +606,15 @@
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-name">Введите имя</label>
-                      <input id="page-form-name" class="page-form__field" type="text" name="name" placeholder="Введите имя">
+                      <input id="page-form-name" class="page-form__field" type="text" name="name" placeholder="Введите имя" required>
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
-                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel" placeholder="Введите телефон" pattern="(\+?\d[- .]*){7,13}">
+                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel" placeholder="Введите телефон" pattern="(\+?\d[- .]*){7,13}" required>
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-mail">Введите email</label>
-                      <input id="page-form-mail" class="page-form__field" type="mail" name="email" placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                      <input id="page-form-mail" class="page-form__field" type="mail" name="email" placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
                     </li>
                     <li class="page-form__item page-form__item--full">
                       <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
@@ -807,17 +807,17 @@
             <ul class="page-form__list">
               <li class="page-form__item page-form__item--full">
                 <label class="visually-hidden" for="page-form-name">Введите имя</label>
-                <input id="page-form-name" class="page-form__field" type="text" name="page-form-name" placeholder="Введите имя">
+                <input id="page-form-name" class="page-form__field" type="text" name="page-form-name" placeholder="Введите имя" required>
               </li>
               <li class="page-form__item">
                 <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
                 <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel" placeholder="Введите телефон"
-                  pattern="(\+?\d[- .]*){7,13}">
+                  pattern="(\+?\d[- .]*){7,13}" required>
               </li>
               <li class="page-form__item">
                 <label class="visually-hidden" for="page-form-mail">Введите email</label>
                 <input id="page-form-mail" class="page-form__field" type="email" name="page-form-mail"
-                  placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                  placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
               </li>
               <li class="page-form__item page-form__item--full">
                 <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
@@ -825,8 +825,9 @@
                   placeholder="Ввендите текст сообщения"></textarea>
               </li>
               <li class="page-form__item">
-                <input type="file" name="file" id="file" class="page-form__inputfile"
-                  data-multiple-caption="{count} files selected" multiple />
+                <!-- <input type="file" name="file" id="file" class="page-form__inputfile"
+                  data-multiple-caption="{count} files selected" multiple /> -->
+                <input type="file" name="file" id="file" class="page-form__inputfile">
                 <label for="file">Загрузить файл</label>
               </li>
               <li class="page-form__item">

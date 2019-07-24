@@ -147,23 +147,24 @@
 })();
 
 // Form
-var inputs = document.querySelectorAll('.page-form__inputfile');
-Array.prototype.forEach.call(inputs, function(input){
-  var label	 = input.nextElementSibling,
-      labelVal = label.innerText;
-  input.addEventListener('change', function(e){
-    var fileName = '';
-    if( this.files && this.files.length > 1 )
-      fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-    else
-      fileName = e.target.value.split( '\\' ).pop();
-		if( fileName )
-      label .innerText = fileName;
-    else
-      label.innerText = labelVal;
-	});
-  input.addEventListener('focus', function(){ input.classList.add( 'has-focus' ); });
-  input.addEventListener('blur', function(){ input.classList.remove( 'has-focus' ); });
+var inputs = document.querySelectorAll(".page-form__inputfile");
+inputs.forEach(function(input) {
+  var label = input.nextElementSibling,
+    labelVal = label.innerText;
+  input.addEventListener("change", function(e) {
+    var fileName = "";
+    if (this.files && this.files.length > 1)
+      fileName = "".replace("{count}", this.files.length);
+    else fileName = e.target.value.split("\\").pop();
+    if (fileName) label.innerText = fileName;
+    else label.innerText = labelVal;
+  });
+  input.addEventListener("focus", function() {
+    input.classList.add("has-focus");
+  });
+  input.addEventListener("blur", function() {
+    input.classList.remove("has-focus");
+  });
 });
 
 
@@ -199,30 +200,6 @@ popupOpenBtns.forEach(function(btn) {
     }
   });
 });
-
-// // var popupForm = popup.querySelector('form');
-// var inputName = popup.querySelector("[id=name]");
-// // var inputPhone = popup.querySelector('[id=phone]');
-// // var inputEmail = popup.querySelector('[id=email]');
-
-// wrapper.addEventListener("click", function(evt) {
-//   var target = evt.target;
-//   if (target.className != "button button-order popup-btn") return;
-//   popupOverlay.classList.add("popup-show");
-//   document.querySelector("body").classList.add("overlay");
-//   inputName.focus();
-// });
-
-// $(".popup-order__input--file").change(function() {
-//   if ($(this).val() != "")
-//     $(this)
-//       .prev()
-//       .text("Выбрано файлов: " + $(this)[0].files.length);
-//   else
-//     $(this)
-//       .prev()
-//       .text("Прикрепить файл (jpg, pdf, excel, word, zip, rar)");
-// });
 (function() {
   var sliderAll = [
     {
@@ -472,6 +449,12 @@ popupOpenBtns.forEach(function(btn) {
       });
     }
   };
+
+  // keep an eye on viewport size changes
+  breakpoint.addListener(breakpointChecker);
+
+  // kickstart
+  breakpointChecker();
 
   var jsTriggers = document.querySelectorAll(".js-tab-trigger");
   jsTriggers.forEach(function(trigger) {
