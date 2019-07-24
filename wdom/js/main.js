@@ -183,9 +183,12 @@ popupOpenBtns.forEach(function(btn) {
       popups[i].classList.remove("popup-show");
       var namePopup = popups[i].getAttribute("data-target");
 
+      var inputName = popups[i].querySelector("[id=page-form-name]");
+
       if (nameBtn == namePopup) {
         popupOverlay.classList.add("popup-show");
         document.querySelector("body").classList.add("overlay");
+        inputName.focus();
 
         popupBtnClose.addEventListener("click", function(evt) {
           evt.preventDefault();
@@ -269,6 +272,45 @@ popupOpenBtns.forEach(function(btn) {
       slidesPerView320: 1,
       slidesPerView640: 1,
       slidesPerView1200: 1
+    }
+  ];
+
+  var sliderWebAll = [
+    {
+      id: "#js-slider-web-1",
+      slidesPerView: 4,
+      slidesPerViewMob: 2,
+      spaceBetweenMob: 10
+    },
+    {
+      id: "#js-slider-web-2",
+      slidesPerView: 4,
+      slidesPerViewMob: 1.5,
+      spaceBetweenMob: 20
+    },
+    {
+      id: "#js-slider-web-3",
+      slidesPerView: 4,
+      slidesPerViewMob: 1.5,
+      spaceBetweenMob: 20
+    },
+    {
+      id: "#js-slider-web-4",
+      slidesPerView: 4,
+      slidesPerViewMob: 1.5,
+      spaceBetweenMob: 20
+    },
+    {
+      id: "#js-slider-web-5",
+      slidesPerView: 4,
+      slidesPerViewMob: 1.5,
+      spaceBetweenMob: 20
+    },
+    {
+      id: "#js-slider-web-6",
+      slidesPerView: 4,
+      slidesPerViewMob: 1.5,
+      spaceBetweenMob: 20
     }
   ];
 
@@ -368,111 +410,69 @@ popupOpenBtns.forEach(function(btn) {
     }
   });
 
-  var sliderWebAll = [
-    {
-      id: "#js-slider-web-1",
-      slidesPerView: 4,
-      slidesPerViewMob: 1.5,
-      spaceBetweenMob: 20
-    },
-    {
-      id: "#js-slider-web-2",
-      slidesPerView: 4,
-      slidesPerViewMob: 1.5,
-      spaceBetweenMob: 20
-    },
-    {
-      id: "#js-slider-web-3",
-      slidesPerView: 4,
-      slidesPerViewMob: 1.5,
-      spaceBetweenMob: 20
-    },
-    {
-      id: "#js-slider-web-4",
-      slidesPerView: 4,
-      slidesPerViewMob: 1.5,
-      spaceBetweenMob: 20
-    },
-    {
-      id: "#js-slider-web-5",
-      slidesPerView: 4,
-      slidesPerViewMob: 1.5,
-      spaceBetweenMob: 20
-    },
-    {
-      id: "#js-slider-web-6",
-      slidesPerView: 4,
-      slidesPerViewMob: 1.5,
-      spaceBetweenMob: 20
+  // breakpoint where swiper will be destroyed
+  // and switches to a dual-column layout
+  var breakpoint = window.matchMedia("(min-width:992px)");
+
+  // keep track of swiper instances to destroy later
+  var mySwiper;
+
+  var breakpointChecker = function() {
+    // if larger viewport and multi-row layout needed
+    if (breakpoint.matches === true) {
+      // clean up old instances and inline styles when available
+      if (mySwiper !== undefined) mySwiper.destroy(true, true);
+
+      // or/and do nothing
+      return;
+
+      // else if a small viewport and single column layout needed
+    } else if (breakpoint.matches === false) {
+      // fire small viewport version of swiper
+      return enableSwiper();
     }
-  ];
+  };
 
-  for (var i = 0; i < sliderWebAll.length; i++) {
-    var slider = sliderWebAll[i];
+  var enableSwiper = function() {
+    for (var i = 0; i < sliderWebAll.length; i++) {
+      var slider = sliderWebAll[i];
 
-    var swiperWeb = undefined;
-    var initSwiper = function() {
-      if (window.outerWidth < 992 && swiperWeb == undefined) {
-        swiperWeb = new Swiper(slider.id, {
-          direction: "horizontal",
-          slidesPerView: sliderWebAll.slidesPerView,
-          spaceBetween: 15,
-          loop: false,
-          freeMode: true,
+      mySwiper = new Swiper(slider.id, {
+        direction: "horizontal",
+        slidesPerView: slider.slidesPerView,
+        spaceBetween: 15,
+        loop: false,
+        freeMode: true,
 
-          speed: 700,
-          loopedSlides: 1,
-          // Responsive breakpoints
-          breakpoints: {
-            // when window width is <= 320px
-            320: {
-              slidesPerView: sliderWebAll.slidesPerViewMob,
-              spaceBetween: sliderWebAll.spaceBetweenMob
-            },
-            // when window width is <= 480px
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 20
-            },
-            // when window width is <= 640px
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 15
-            },
-            // when window width is <= 1200px
-            1200: {
-              slidesPerView: 3,
-              spaceBetween: 15
-            }
+        speed: 700,
+        loopedSlides: 1,
+        breakpoints: {
+          320: {
+            slidesPerView: slider.slidesPerViewMob,
+            spaceBetween: slider.spaceBetweenMob
           },
-          autoHeight: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20
           },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 15
           }
-        });
-      } else if (window.outerWidth > 991 && swiperWeb != undefined) {
-        swiperWeb.destroy();
-        swiperWeb = undefined;
-        document.querySelector(".swiper-wrapper").removeAttr("style");
-        document.querySelector(".swiper-slide").removeAttr("style");
-      }
-    };
+        },
+        autoHeight: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    }
+  };
 
-    //Swiper plugin initialization
-    initSwiper();
-
-    //Swiper plugin initialization on window resize
-    window.onresize = function() {
-      initSwiper();
-    };
-  }
-})();
-(function() {
   var jsTriggers = document.querySelectorAll(".js-tab-trigger");
   jsTriggers.forEach(function(trigger) {
     trigger.addEventListener("click", function() {
@@ -483,6 +483,12 @@ popupOpenBtns.forEach(function(btn) {
         activeTrigger = document.querySelector(".js-tab-trigger.active"),
         activeContent = document.querySelector(".js-tab-content.active");
 
+      // keep an eye on viewport size changes
+      breakpoint.addListener(breakpointChecker);
+
+      // kickstart
+      breakpointChecker();
+
       activeTrigger.classList.remove("active");
       trigger.classList.add("active");
 
@@ -490,4 +496,25 @@ popupOpenBtns.forEach(function(btn) {
       content.classList.add("active");
     });
   });
-})();
+})(); /* IIFE end */
+// (function() {
+//   var jsTriggers = document.querySelectorAll(".js-tab-trigger");
+//   jsTriggers.forEach(function(trigger) {
+//     trigger.addEventListener("click", function() {
+//       var id = this.getAttribute("data-tab"),
+//         content = document.querySelector(
+//           '.js-tab-content[data-tab="' + id + '"]'
+//         ),
+//         activeTrigger = document.querySelector(".js-tab-trigger.active"),
+//         activeContent = document.querySelector(".js-tab-content.active");
+
+//         enableSwiper();
+
+//       activeTrigger.classList.remove("active");
+//       trigger.classList.add("active");
+
+//       activeContent.classList.remove("active");
+//       content.classList.add("active");
+//     });
+//   });
+// })();

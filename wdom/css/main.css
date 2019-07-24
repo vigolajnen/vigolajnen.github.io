@@ -112,6 +112,30 @@ img {
   background-size: cover;
   background-position: center; }
 
+@-webkit-keyframes open-opacity {
+  0% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes open-opacity {
+  0% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes close-opacity {
+  0% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes close-opacity {
+  0% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
 .popup {
   position: relative;
   width: 100%;
@@ -136,7 +160,10 @@ img {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 50%;
-  opacity: 0; }
+  -webkit-animation-name: close-opacity;
+          animation-name: close-opacity;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
 
 .popup-overlay > * {
   -webkit-transform: translateZ(0px);
@@ -156,9 +183,10 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 1;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  -webkit-animation-name: open-opacity;
+          animation-name: open-opacity;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
 
 .popup-close {
   position: absolute;
@@ -1100,6 +1128,8 @@ img {
       .page-footer__list-link {
         pointer-events: none;
         font-size: 160%; } }
+    .page-footer__list-link:focus, .page-footer__list-link:hover {
+      color: #f08518; }
   .page-footer__icon {
     opacity: 1;
     position: absolute;
@@ -1142,6 +1172,8 @@ img {
     color: #ffffff;
     text-decoration: none;
     line-height: normal; }
+    .page-footer__sublist-link:focus, .page-footer__sublist-link:hover {
+      color: #f08518; }
 
 .page-footer__list-item.active .page-footer__sublist {
   opacity: 1;
@@ -1377,14 +1409,14 @@ img {
     @media (max-width: 599px) {
       .page-form .button {
         margin: auto; } }
-  .page-form .select {
+  .page-form .page-form__select {
     display: inline-block;
     width: 100%;
     position: relative;
     min-height: 2.25rem;
     font-family: "GoogleSans-Bold";
     font-weight: 600; }
-    .page-form .select::before {
+    .page-form .page-form__select::before {
       content: ">";
       display: inline-block;
       position: absolute;
@@ -1402,9 +1434,9 @@ img {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
       cursor: pointer; }
-    .page-form .select input {
+    .page-form .page-form__select input {
       display: none; }
-    .page-form .select #text {
+    .page-form .page-form__select .page-form__select-text {
       position: absolute;
       display: block;
       top: 0;
@@ -1415,75 +1447,86 @@ img {
       font-family: "GoogleSans-Bold";
       font-weight: 600; }
 
-.select input[name="list"]:not(:checked) ~ #text {
-  color: black;
-  background: white;
+.page-form__select input[name="list"]:not(:checked) ~ .page-form__select-text {
   font-family: "GoogleSans-Bold";
   font-size: 14px;
-  font-weight: 600; }
+  font-weight: 600;
+  background: #ffffff; }
 
-.select input[name="list"]:checked ~ #text {
-  background: transparent;
-  color: transparent;
+.page-form__select input[name="list"]:checked ~ .page-form__select-text {
   z-index: 2;
   font-family: "GoogleSans-Bold";
-  font-weight: 600; }
+  font-weight: 600;
+  color: transparent;
+  background: transparent; }
 
 /* Стилизация выключенного селекта */
-#select:disabled ~ .items #text {
-  background: #eee; }
+.page-form__select-close:disabled
+~ .page-form__select-content
+.page-form__select-text {
+  background: #eeeeee;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 
 /* Стилизация блока с опциями. min-height сделана для фикса высоты при абсолютном позиционировании, overflow же сделан для фиксированной высоты(см. ниже) */
-.items {
-  display: block;
-  min-height: 36px;
+.page-form__select-content {
   position: absolute;
+  display: block;
+  padding-bottom: 0;
+  min-height: 36px;
+  font-family: GoogleSans-Bold;
+  border: 1px solid #ddd;
   overflow: hidden;
   cursor: pointer;
-  font-family: "GoogleSans-Bold"; }
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 
-/* Если наш селект закрыт, то он имеет высоту 30px(сделано для того, чтобы слишком большие надписи не растягивали его в высоту)  */
-#select:not(:checked) ~ .items {
-  height: 36px; }
+/* Если наш селект закрыт, то он имеет высоту 36px(сделано для того, чтобы слишком большие надписи не растягивали его в высоту)  */
+.page-form__select-close:not(:checked) ~ .page-form__select-content {
+  height: 36px;
+  -webkit-transition: all 0s;
+  transition: all 0s; }
 
 /* Все лейбелы(названия опций) изначально скрыты */
-.items label {
-  border-top: 2px solid #ddd;
+.page-form__select-field {
   display: none;
-  width: 100%;
-  min-width: 300px;
-  height: 36px;
   margin-left: -20px;
   padding: 5px 5px 5px 20px;
+  width: 100%;
+  min-width: 500px;
+  height: 36px;
   font-family: "GoogleSans-Bold";
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  background: white; }
+  background: white;
+  border-top: 1px solid #ddd; }
 
 /* Тут много объяснять не надо - просто выделение при наведении */
-.items label:hover {
+.page-form__select-field:hover {
   background: #eee;
   cursor: pointer; }
 
 /* Опять же фикс из-за абсолютного позиционирования */
-#select:checked ~ .items {
+.page-form__select-close:checked ~ .page-form__select-content {
   padding-top: 36px;
   width: 100%; }
 
 /* Если наш селект открыт, то надо сделать все опции видимыми */
-#select:checked ~ .items label {
+.page-form__select-close:checked
+~ .page-form__select-content
+.page-form__select-field {
   display: block; }
 
 /* Если какая-либо опция была выбрана, то сделать ее видимой(при выборе селект автоматически закроется) */
-.items input:checked + label {
-  display: block !important;
+.page-form__select-content input:checked + .page-form__select-field {
+  display: block;
   margin-top: -10px;
   border: none;
   background: white; }
 
 /* При открытии селекта создать подложку во весь экран, при клике на которую селект закроется, а значение останется пустым. background сделан для наглядности */
-#select:checked ~ .bg {
+.page-form__select-close:checked ~ .page-form__select-bg {
   position: fixed;
   top: 0;
   left: 0;

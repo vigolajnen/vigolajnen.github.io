@@ -23,7 +23,7 @@
         </svg>
       </button>
       <a class="mob-navigation__logo logo" href="index.html">
-        <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+        <img class="logo__pic" src="img/logo.png" alt="Логотип компании Webdom">
       </a>
       <a class="mob-navigation__phone phone" href="tel:+78126433460" aria-label="Позвонить в компанию">
         <svg class="mob-navigation__icon" width="20" height="17">
@@ -228,12 +228,12 @@
       </div>
     </div>
   </nav>
-  <div class="side-elements">
+  <aside class="side-elements">
     <div class="side-elements__inner sidemenu">
       <div class="sidemenu__container">
         <div class="sidemenu__logo">
           <a class="logo" href="index.html">
-            <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+            <img class="logo__pic" src="img/logo.png" alt="Логотип компании Webdom">
           </a>
         </div>
         <nav class="sidemenu__navigation navigation">
@@ -446,10 +446,9 @@
   
       </div>
     </div>
-  
-  </div>
+  </aside>
   <div class="wrapper">
-    <div class="content">
+    <main class="content">
       <div class="page__content">
         <div class="container">
           <h1>Контакты</h1>
@@ -580,28 +579,28 @@
                       </select> -->
               
                       <!-- Лейбел, при клике на который открывается селект -->
-                      <label for="select" class="select">
+                      <label for="select" class="page-form__select">
                         <!-- Этот инпут отвечает за закрытие селекта при клике за его пределами. Также этот инпут является стандартным значением нашего селекта -->
                         <input type="radio" name="list" value="not_changed" id="bg" checked />
                         <!-- Этот инпут является переключателем селекта в состояние "открыт" -->
-                        <input type="radio" name="list" value="not_changed" id="select">
+                        <input class="page-form__select-close" type="radio" name="list" value="not_changed" id="select">
                         <!-- Этот лейбел используется для создания подложки, клик по которой приводит к закрытию селекта -->
-                        <label class="bg" for="bg"></label>
+                        <label class="page-form__select-bg" for="bg"></label>
                         <!-- Этот див - список параметров селекта, где #text - то, что выводится, когда ничего не выбрано -->
-                        <div class="items page-form__field">
+                        <div class="page-form__select-content items page-form__field">
                           <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта -->
                           <input type="radio" name="list" value="first_value" id="list[0]">
                           <!-- Название параметра -->
-                          <label for="list[0]">Реклама</label>
+                          <label for="list[0]" class="page-form__select-field">Реклама</label>
                           <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
                           <input type="radio" name="list" value="second_value" id="list[1]">
                           <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
-                          <label for="list[1]">Разработка</label>
+                          <label for="list[1]" class="page-form__select-field">Разработка</label>
                           <input type="radio" name="list" value="second_value" id="list[2]">
                           <!-- Инпут, при клике на который происходит выбор параметра и сворачивание селекта[1] -->
-                          <label for="list[2]">Заявка</label>
+                          <label for="list[2]" class="page-form__select-field">Заявка</label>
                           <!-- Текст селекта по умолчанию. Выводится тогда, когда ничего не выбрано -->
-                          <span id="text">Выберите тему обращения</span>
+                          <span class="page-form__select-text">Выберите тему обращения</span>
                         </div>
                       </label>
                     </li>
@@ -611,11 +610,11 @@
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
-                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel" placeholder="Введите телефон">
+                      <input id="page-form-tel" class="page-form__field" type="tel" name="tel" placeholder="Введите телефон" pattern="(\+?\d[- .]*){7,13}">
                     </li>
                     <li class="page-form__item">
                       <label class="visually-hidden" for="page-form-mail">Введите email</label>
-                      <input id="page-form-mail" class="page-form__field" type="mail" name="mail" placeholder="Введите email">
+                      <input id="page-form-mail" class="page-form__field" type="mail" name="email" placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
                     </li>
                     <li class="page-form__item page-form__item--full">
                       <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
@@ -637,7 +636,7 @@
 
         </section>
       </div>
-    </div>
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__inner container">
@@ -812,13 +811,13 @@
               </li>
               <li class="page-form__item">
                 <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
-                <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
-                  placeholder="Введите телефон">
+                <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel" placeholder="Введите телефон"
+                  pattern="(\+?\d[- .]*){7,13}">
               </li>
               <li class="page-form__item">
                 <label class="visually-hidden" for="page-form-mail">Введите email</label>
-                <input id="page-form-mail" class="page-form__field" type="mail" name="page-form-mail"
-                  placeholder="Введите email">
+                <input id="page-form-mail" class="page-form__field" type="email" name="page-form-mail"
+                  placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
               </li>
               <li class="page-form__item page-form__item--full">
                 <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
@@ -826,7 +825,8 @@
                   placeholder="Ввендите текст сообщения"></textarea>
               </li>
               <li class="page-form__item">
-         <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                <input type="file" name="file" id="file" class="page-form__inputfile"
+                  data-multiple-caption="{count} files selected" multiple />
                 <label for="file">Загрузить файл</label>
               </li>
               <li class="page-form__item">

@@ -23,7 +23,7 @@
         </svg>
       </button>
       <a class="mob-navigation__logo logo" href="index.html">
-        <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+        <img class="logo__pic" src="img/logo.png" alt="Логотип компании Webdom">
       </a>
       <a class="mob-navigation__phone phone" href="tel:+78126433460" aria-label="Позвонить в компанию">
         <svg class="mob-navigation__icon" width="20" height="17">
@@ -228,12 +228,12 @@
       </div>
     </div>
   </nav>
-  <div class="side-elements">
+  <aside class="side-elements">
     <div class="side-elements__inner sidemenu">
       <div class="sidemenu__container">
         <div class="sidemenu__logo">
           <a class="logo" href="index.html">
-            <img class="logo__pic" src="img/footer/logo-footer.png" alt="Логотип компании Webdom">
+            <img class="logo__pic" src="img/logo.png" alt="Логотип компании Webdom">
           </a>
         </div>
         <nav class="sidemenu__navigation navigation">
@@ -446,12 +446,10 @@
   
       </div>
     </div>
-  
-  </div>
+  </aside>
   <div class="wrapper">
 
-    <div class="content">
-
+    <main class="content">
       <div class="page__content">
 
 
@@ -522,13 +520,13 @@
                             </li>
                             <li class="page-form__item">
                               <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
-                              <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
-                                placeholder="Введите телефон">
+                              <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel" placeholder="Введите телефон"
+                                pattern="(\+?\d[- .]*){7,13}">
                             </li>
                             <li class="page-form__item">
                               <label class="visually-hidden" for="page-form-mail">Введите email</label>
-                              <input id="page-form-mail" class="page-form__field" type="mail" name="page-form-mail"
-                                placeholder="Введите email">
+                              <input id="page-form-mail" class="page-form__field" type="email" name="page-form-mail"
+                                placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
                             </li>
                             <li class="page-form__item page-form__item--full">
                               <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
@@ -536,7 +534,8 @@
                                 placeholder="Ввендите текст сообщения"></textarea>
                             </li>
                             <li class="page-form__item">
-                       <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                              <input type="file" name="file" id="file" class="page-form__inputfile"
+                                data-multiple-caption="{count} files selected" multiple />
                               <label for="file">Загрузить файл</label>
                             </li>
                             <li class="page-form__item">
@@ -574,37 +573,13 @@
                   </div>
                 </section>
               </div>
-              <div class="swiper-slide">3
+              <div class="swiper-slide">
                 <section class="service__slide">
                   <div class="parallax-bg" style="background-image:url(img/about/result-pic.png" data-swiper-parallax="-23%"></div>
                   <div class="service__slide-inner">
                     <div class="service__slide-header">
-                      <div class="number">01.</div>
-                      <div class="title">Разработка сайтов</div>
-                    </div>
-                    <div class="service__slide-info">
-                      <p class="text">
-                        Мы разрабатываем сайты для клиентов со всей России и ближнего зарубежья с 1999 года. За 17 лет работы компании накоплен огромный опыт и разработаны собственные технологии создания сайтов.
-                      </p>
-                      <ul class="list">
-                        <li><b>Одностраницный сайт</b></li>
-                        <li><b>Корпоративный сайт</b></li>
-                        <li><b>Интернет-магазин</b></li>
-                        <li><b>Порталы и сервисы</b></li>
-                        <li><b>Для органов гос. власти</b></li>
-                      </ul>
-                      <a class="link link--btn link--uppercase" href="website.html">Ознакомиться детальнее</a>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div class="swiper-slide">4
-                <section class="service__slide">
-                  <div class="parallax-bg" style="background-image:url(img/about/result-pic.png" data-swiper-parallax="-23%"></div>
-                  <div class="service__slide-inner">
-                    <div class="service__slide-header">
-                      <div class="number">01.</div>
-                      <div class="title">Разработка сайтов</div>
+                      <div class="number">02.</div>
+                      <div class="title">Съемка фото и видео</div>
                     </div>
                     <div class="service__slide-info">
                       <p class="text">
@@ -627,8 +602,8 @@
                   <div class="parallax-bg" style="background-image:url(img/about/result-pic.png" data-swiper-parallax="-23%"></div>
                   <div class="service__slide-inner">
                     <div class="service__slide-header">
-                      <div class="number">01.</div>
-                      <div class="title">Разработка сайтов</div>
+                      <div class="number">03.</div>
+                      <div class="title">Дизайн и фирстиль</div>
                     </div>
                     <div class="service__slide-info">
                       <p class="text">
@@ -646,41 +621,17 @@
                   </div>
                 </section>
               </div>
-              <div class="swiper-slide">3
+              <div class="swiper-slide">
                 <section class="service__slide">
                   <div class="parallax-bg" style="background-image:url(img/about/result-pic.png" data-swiper-parallax="-23%"></div>
                   <div class="service__slide-inner">
                     <div class="service__slide-header">
-                      <div class="number">01.</div>
-                      <div class="title">Разработка сайтов</div>
+                      <div class="number">04.</div>
+                      <div class="title">Мобильное приложение</div>
                     </div>
                     <div class="service__slide-info">
                       <p class="text">
                         Мы разрабатываем сайты для клиентов со всей России и ближнего зарубежья с 1999 года. За 17 лет работы компании накоплен огромный опыт и разработаны собственные технологии создания сайтов.
-                      </p>
-                      <ul class="list">
-                        <li><b>Одностраницный сайт</b></li>
-                        <li><b>Корпоративный сайт</b></li>
-                        <li><b>Интернет-магазин</b></li>
-                        <li><b>Порталы и сервисы</b></li>
-                        <li><b>Для органов гос. власти</b></li>
-                      </ul>
-                      <a class="link link--btn link--uppercase" href="website.html">Ознакомиться детальнее</a>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div class="swiper-slide">4
-                <section class="service__slide">
-                  <div class="parallax-bg" style="background-image:url(img/about/result-pic.png" data-swiper-parallax="-23%"></div>
-                  <div class="service__slide-inner">
-                    <div class="service__slide-header">
-                      <div class="number">01.</div>
-                      <div class="title">Разработка сайтов</div>
-                    </div>
-                    <div class="service__slide-info">
-                      <p class="text">
-                        Мы разрабатываем сайты для клиентов со всей России и ближнего зарубежья с 1999 года. За 17 лет работы компании накоплен огромный опыт и разработаны собствен��ые технологии создания сайтов.
                       </p>
                       <ul class="list">
                         <li><b>Одностраницный сайт</b></li>
@@ -703,7 +654,7 @@
         </div>
 
       </div>
-    </div>
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__inner container">
@@ -878,13 +829,13 @@
               </li>
               <li class="page-form__item">
                 <label class="visually-hidden" for="page-form-tel">Введите телефон</label>
-                <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
-                  placeholder="Введите телефон">
+                <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel" placeholder="Введите телефон"
+                  pattern="(\+?\d[- .]*){7,13}">
               </li>
               <li class="page-form__item">
                 <label class="visually-hidden" for="page-form-mail">Введите email</label>
-                <input id="page-form-mail" class="page-form__field" type="mail" name="page-form-mail"
-                  placeholder="Введите email">
+                <input id="page-form-mail" class="page-form__field" type="email" name="page-form-mail"
+                  placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
               </li>
               <li class="page-form__item page-form__item--full">
                 <label class="visually-hidden" for="page-form-comment">Ввендите текст сообщения:</label>
@@ -892,7 +843,8 @@
                   placeholder="Ввендите текст сообщения"></textarea>
               </li>
               <li class="page-form__item">
-         <input type="file" name="file" id="file" class="page-form__inputfile" data-multiple-caption="{count} files selected" multiple />
+                <input type="file" name="file" id="file" class="page-form__inputfile"
+                  data-multiple-caption="{count} files selected" multiple />
                 <label for="file">Загрузить файл</label>
               </li>
               <li class="page-form__item">
