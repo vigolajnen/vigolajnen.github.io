@@ -607,7 +607,8 @@ img {
 
 .tabs__panel.active {
   display: block;
-  height: 100%; }
+  height: 100%;
+  padding-top: 15px; }
 
 .tabs__panel p + div {
   margin-top: 0.9375rem; }
@@ -721,6 +722,7 @@ img {
           flex-direction: column;
   max-width: 100%;
   height: 100%;
+  margin-top: -15px;
   overflow: hidden; }
   .subtabs__box {
     display: -webkit-box;
@@ -814,7 +816,8 @@ img {
 .subtabs__panel.active {
   display: block;
   overflow: auto;
-  height: 100%; }
+  height: 100%;
+  padding-top: 15px; }
 
 .subtabs__panel p + div {
   margin-top: 0.9375rem; }

@@ -1629,6 +1629,7 @@ img {
           flex-direction: column;
   max-width: 100%;
   height: 100%;
+  margin-top: -15px;
   overflow: hidden; }
   .subtabs__box {
     display: -webkit-box;
@@ -1722,7 +1723,8 @@ img {
 .subtabs__panel.active {
   display: block;
   overflow: auto;
-  height: 100%; }
+  height: 100%;
+  padding-top: 15px; }
 
 .subtabs__panel p + div {
   margin-top: 0.9375rem; }
@@ -1934,7 +1936,8 @@ img {
 
 .tabs__panel.active {
   display: block;
-  height: 100%; }
+  height: 100%;
+  padding-top: 15px; }
 
 .tabs__panel p + div {
   margin-top: 0.9375rem; }
@@ -2095,6 +2098,7 @@ img {
     line-height: normal; }
 
 .tree {
+  height: 100%;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -2152,3 +2156,7 @@ img {
   .tree .isLast {
     background-image: url(../img/i_half.gif);
     background-repeat: no-repeat; }
+
+.tree-wrapper {
+  height: calc(100% - 100px);
+  overflow-y: auto; }

@@ -374,9 +374,9 @@ img {
       -webkit-transition: 0.5s;
       transition: 0.5s; }
   .block-add__icon {
-    fill: #32c5d2;
-    width: 2.8125rem;
-    height: 2.8125rem; }
+    width: 45px;
+    height: 45px;
+    fill: #32c5d2; }
 
 .block-control {
   opacity: 0;
@@ -390,8 +390,8 @@ img {
   .block-control__item {
     position: relative;
     margin: 0.625rem 0.3125rem;
-    height: 2.5rem;
-    width: 2.5rem; }
+    height: 40px;
+    width: 40px; }
     .block-control__item.active {
       opacity: 1; }
   .block-control__icon {

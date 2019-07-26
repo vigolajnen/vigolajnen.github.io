@@ -649,108 +649,31 @@
         </button>
       </div>
       <div class="bl-modal__body bl-modal__body--flex">
-        <form method="post">
-          <input id="open_branch" type="hidden" value="">
-          <ul class="tree" id="tree">
-            <li class="isLast expand-open">
-              <img src="img/root.gif" style="float: left;">
-              <div class="tree__inner">
-                <div id="a1" class="tree__box">
-                  <a class="btn" href="#">
-                    <svg class="tree__icon-add" width="15" height="15">
-                      <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                    </svg>
-                  </a>
-                  <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">Главная</a>
-                  <img id="module_img_1" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+        <div class="tree-wrapper">
+          <form method="post">
+            <input id="open_branch" type="hidden" value="">
+        
+            <ul class="tree" id="tree">
+              <li class="isLast expand-open">
+                <div class="tree__inner">
+                  <div id="a1" class="tree__box">
+                    <a class="btn" href="#">
+                      <svg class="tree__icon-add" width="15" height="15">
+                        <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                      </svg>
+                    </a>
+                    <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">Главная</a>
+                    <img id="module_img_1" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                  </div>
                 </div>
-              </div>
         
-              <ul class="tree__list">
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-leaf">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/o_proekte">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;О проекте&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <a class="btn" href="#">
-                          <svg class="tree__icon-del" width="24" height="19">
-                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                          </svg>
-                        </a>
-        
-                        <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">О проекте</a>
-        
-                    </div>
-                  </div>
-        
-                </li>
-        
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-leaf">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/pomosch_i_garantii">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Помощь и гарантии&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <svg class="tree__icon-del" width="24" height="19">
-                          <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                        </svg>
-                      </a>
-        
-                      <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">Помощь и гарантии</a>
-        
-                    </div>
-                  </div>
-        
-                </li>
-        
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-closed">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/all_albums">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Альбомы&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <svg class="tree__icon-del" width="24" height="19">
-                          <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                        </svg>
-                      </a>
-        
-                      <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">(Альбомы)</a>
-        
-                      <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
-                    </div>
-                  </div>
-        
-                  <ul class="tree__list">
-                    <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                    <li id="{id}" class="node expand-leaf IsLast">
-                      <div class="expand"></div>
+                <ul class="tree__list">
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-leaf">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
                       <div id="a{id}">
-                        <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/o_proekte">
                         <img id="move_{id}" src="img/icon-move.gif">
                         <a class="btn" href="#">
                           <svg class="tree__icon-add" width="15" height="15">
@@ -758,17 +681,26 @@
                           </svg>
                         </a>
                         <a class="btn" href="#"
-                          onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
-                          <svg class="tree__icon-del" width="24" height="19">
-                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                          </svg>
-                        </a>
-                        <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;О проекте&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <a class="btn" href="#">
+                            <svg class="tree__icon-del" width="24" height="19">
+                              <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                            </svg>
+                          </a>
+        
+                          <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">О проекте</a>
+        
                       </div>
-                    </li>
-                    <li id="{id}" class="node expand-leaf isLast">
-                      <div class="expand"></div>
-                      <div id="a{id}"> <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                    </div>
+        
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-leaf">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/pomosch_i_garantii">
                         <img id="move_{id}" src="img/icon-move.gif">
                         <a class="btn" href="#">
                           <svg class="tree__icon-add" width="15" height="15">
@@ -776,253 +708,649 @@
                           </svg>
                         </a>
                         <a class="btn" href="#"
-                          onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Помощь и гарантии&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
                           <svg class="tree__icon-del" width="24" height="19">
                             <use xlink:href="img/sprite.svg#icon-t-del"></use>
                           </svg>
                         </a>
-                        <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+        
+                        <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">Помощь и гарантии</a>
+        
                       </div>
-                    </li>
-                    <li id="{id}" class="node expand-closed">
-                      <div class="expand"></div>
+                    </div>
+        
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
                       <div id="a{id}">
-                        <input id="linkwatch_{id}" type="hidden" value="/catalog/3">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/all_albums">
+                        <img id="move_{id}" src="img/icon-move.gif">
                         <a class="btn" href="#">
                           <svg class="tree__icon-add" width="15" height="15">
                             <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
                           </svg>
                         </a>
-                        <a class="tree__title" href="#" title="{id}" id="title_menu_{id}">Разработка сайтов</a>
-                        <img id="module_img_{id}" src="img/module_str_icon.gif">
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Альбомы&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">(Альбомы)</a>
+        
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
                       </div>
-                      <ul class="tree__list">
-                        <li id="{id}" class="node expand-leaf IsLast">
-                          <div class="expand"></div>
-                          <div id="a{id}">
-                            <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
-                            <img id="move_{id}" src="img/icon-move.gif">
-                            <a class="btn" href="#">
-                              <svg class="tree__icon-add" width="15" height="15">
-                                <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                              </svg>
-                            </a>
-                            <a class="btn" href="#"
-                              onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
-                              <svg class="tree__icon-del" width="24" height="19">
-                                <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                              </svg>
-                            </a>
-                            <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
-                          </div>
-                        </li>
-                        <li id="{id}" class="node expand-leaf IsLast">
-                          <div class="expand"></div>
-                          <div id="a{id}">
-                            <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
-                            <img id="move_{id}" src="img/icon-move.gif">
-                            <a class="btn" href="#">
-                              <svg class="tree__icon-add" width="15" height="15">
-                                <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                              </svg>
-                            </a>
-                            <a class="btn" href="#"
-                              onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
-                              <svg class="tree__icon-del" width="24" height="19">
-                                <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                              </svg>
-                            </a>
-                            <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-        
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-closed">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/catalog">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Каталог готовых результатов&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <svg class="tree__icon-del" width="24" height="19">
-                          <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                        </svg>
-                      </a>
-        
-                      <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">Каталог</a>
-                      <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
-                    </div>
-                  </div>
-                  <ul class="tree__list"></ul>
-                </li>
-        
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-closed">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/contacts">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Контакты&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <svg class="tree__icon-del" width="24" height="19">
-                          <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                        </svg>
-                      </a>
-        
-                      <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">Контакты</a>
-        
-                    </div>
-                  </div>
-                  <ul class="tree__list"></ul>
-                </li>
-        
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-leaf">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-        
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/news">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Новости&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <svg class="tree__icon-del" width="24" height="19">
-                          <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                        </svg>
-                      </a>
-        
-                      <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Новости)</a>
-                      <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
                     </div>
         
-                  </div>
-                </li>
+                    <ul class="tree__list">
+                      <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                      <li id="{id}" class="node expand-leaf IsLast">
+                        <div class="expand"></div>
+                        <div id="a{id}">
+                          <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                          <img id="move_{id}" src="img/icon-move.gif">
+                          <a class="btn" href="#">
+                            <svg class="tree__icon-add" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                            </svg>
+                          </a>
+                          <a class="btn" href="#"
+                            onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                            <svg class="tree__icon-del" width="24" height="19">
+                              <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                            </svg>
+                          </a>
+                          <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                        </div>
+                      </li>
+                      <li id="{id}" class="node expand-leaf isLast">
+                        <div class="expand"></div>
+                        <div id="a{id}"> <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                          <img id="move_{id}" src="img/icon-move.gif">
+                          <a class="btn" href="#">
+                            <svg class="tree__icon-add" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                            </svg>
+                          </a>
+                          <a class="btn" href="#"
+                            onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                            <svg class="tree__icon-del" width="24" height="19">
+                              <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                            </svg>
+                          </a>
+                          <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                        </div>
+                      </li>
+                      <li id="{id}" class="node expand-closed">
+                        <div class="expand"></div>
+                        <div id="a{id}">
+                          <input id="linkwatch_{id}" type="hidden" value="/catalog/3">
+                          <a class="btn" href="#">
+                            <svg class="tree__icon-add" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                            </svg>
+                          </a>
+                          <a class="tree__title" href="#" title="{id}" id="title_menu_{id}">Разработка сайтов</a>
+                          <img id="module_img_{id}" src="img/module_str_icon.gif">
+                        </div>
+                        <ul class="tree__list">
+                          <li id="{id}" class="node expand-leaf IsLast">
+                            <div class="expand"></div>
+                            <div id="a{id}">
+                              <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                              <img id="move_{id}" src="img/icon-move.gif">
+                              <a class="btn" href="#">
+                                <svg class="tree__icon-add" width="15" height="15">
+                                  <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                                </svg>
+                              </a>
+                              <a class="btn" href="#"
+                                onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                                <svg class="tree__icon-del" width="24" height="19">
+                                  <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                                </svg>
+                              </a>
+                              <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                            </div>
+                          </li>
+                          <li id="{id}" class="node expand-leaf IsLast">
+                            <div class="expand"></div>
+                            <div id="a{id}">
+                              <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                              <img id="move_{id}" src="img/icon-move.gif">
+                              <a class="btn" href="#">
+                                <svg class="tree__icon-add" width="15" height="15">
+                                  <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                                </svg>
+                              </a>
+                              <a class="btn" href="#"
+                                onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                                <svg class="tree__icon-del" width="24" height="19">
+                                  <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                                </svg>
+                              </a>
+                              <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
         
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-leaf">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/compare">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Сравнение&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <svg class="tree__icon-del" width="24" height="19">
-                          <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                        </svg>
-                      </a>
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/catalog">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Каталог готовых результатов&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
         
-                      <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Сравнение)</a>
-                      <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">Каталог</a>
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
                     </div>
-                  </div>
+                    <ul class="tree__list"></ul>
+                  </li>
         
-                </li>
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/contacts">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Контакты&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
         
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-closed">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/sp">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Справочники&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <svg class="tree__icon-del" width="24" height="19">
-                          <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                        </svg>
-                      </a>
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">Контакты</a>
         
-                      <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Справочники)</a>
-                      <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
                     </div>
-                  </div>
-                  <ul class="tree__list">
+                    <ul class="tree__list"></ul>
+                  </li>
         
-                  </ul>
-                </li>
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-leaf">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
         
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-closed">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/forms">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a class="btn" href="#"
-                        onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Формы&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
-                        <svg class="tree__icon-del" width="24" height="19">
-                          <use xlink:href="img/sprite.svg#icon-t-del"></use>
-                        </svg>
-                      </a>
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/news">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Новости&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
         
-                      <a id="title_menu_{id}" href="#" class="tree__title" title="{id}">(Формы)</a>
-        
-                    </div>
-                  </div>
-                  <ul class="tree__list"></ul>
-                </li>
-        
-                <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
-                <li id="{id}" class="node expand-closed IsLast">
-                  <div class="expand"></div>
-                  <div class="tree__inner">
-                    <div id="a{id}">
-                      <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/s">
-                      <img id="move_{id}" src="img/icon-move.gif">
-                      <a class="btn" href="#">
-                        <svg class="tree__icon-add" width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
-                        </svg>
-                      </a>
-                      <a id="title_menu_{id}" href="#" class="tree__title" title="{id}">(Служебные)</a>
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Новости)</a>
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
         
                     </div>
-                  </div>
-                  <ul class="tree__list">
+                  </li>
         
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </form>
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-leaf">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/compare">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Сравнение&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Сравнение)</a>
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
+                    </div>
+        
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/sp">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Справочники&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Справочники)</a>
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
+                    </div>
+                    <ul class="tree__list">
+        
+                    </ul>
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/forms">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Формы&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a id="title_menu_{id}" href="#" class="tree__title" title="{id}">(Формы)</a>
+        
+                      </div>
+                    </div>
+                    <ul class="tree__list"></ul>
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed IsLast">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/s">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a id="title_menu_{id}" href="#" class="tree__title" title="{id}">(Служебные)</a>
+        
+                      </div>
+                    </div>
+                    <ul class="tree__list">
+        
+                    </ul>
+                  </li>
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-leaf">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/pomosch_i_garantii">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Помощь и гарантии&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">Помощь и гарантии</a>
+        
+                      </div>
+                    </div>
+        
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/all_albums">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Альбомы&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">(Альбомы)</a>
+        
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
+                    </div>
+        
+                    <ul class="tree__list">
+                      <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                      <li id="{id}" class="node expand-leaf IsLast">
+                        <div class="expand"></div>
+                        <div id="a{id}">
+                          <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                          <img id="move_{id}" src="img/icon-move.gif">
+                          <a class="btn" href="#">
+                            <svg class="tree__icon-add" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                            </svg>
+                          </a>
+                          <a class="btn" href="#"
+                            onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                            <svg class="tree__icon-del" width="24" height="19">
+                              <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                            </svg>
+                          </a>
+                          <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                        </div>
+                      </li>
+                      <li id="{id}" class="node expand-leaf isLast">
+                        <div class="expand"></div>
+                        <div id="a{id}"> <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                          <img id="move_{id}" src="img/icon-move.gif">
+                          <a class="btn" href="#">
+                            <svg class="tree__icon-add" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                            </svg>
+                          </a>
+                          <a class="btn" href="#"
+                            onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                            <svg class="tree__icon-del" width="24" height="19">
+                              <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                            </svg>
+                          </a>
+                          <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                        </div>
+                      </li>
+                      <li id="{id}" class="node expand-closed">
+                        <div class="expand"></div>
+                        <div id="a{id}">
+                          <input id="linkwatch_{id}" type="hidden" value="/catalog/3">
+                          <a class="btn" href="#">
+                            <svg class="tree__icon-add" width="15" height="15">
+                              <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                            </svg>
+                          </a>
+                          <a class="tree__title" href="#" title="{id}" id="title_menu_{id}">Разработка сайтов</a>
+                          <img id="module_img_{id}" src="img/module_str_icon.gif">
+                        </div>
+                        <ul class="tree__list">
+                          <li id="{id}" class="node expand-leaf IsLast">
+                            <div class="expand"></div>
+                            <div id="a{id}">
+                              <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                              <img id="move_{id}" src="img/icon-move.gif">
+                              <a class="btn" href="#">
+                                <svg class="tree__icon-add" width="15" height="15">
+                                  <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                                </svg>
+                              </a>
+                              <a class="btn" href="#"
+                                onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                                <svg class="tree__icon-del" width="24" height="19">
+                                  <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                                </svg>
+                              </a>
+                              <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                            </div>
+                          </li>
+                          <li id="{id}" class="node expand-leaf IsLast">
+                            <div class="expand"></div>
+                            <div id="a{id}">
+                              <input id="linkwatch_{id}" type="hidden" value="/all_albums/con3">
+                              <img id="move_{id}" src="img/icon-move.gif">
+                              <a class="btn" href="#">
+                                <svg class="tree__icon-add" width="15" height="15">
+                                  <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                                </svg>
+                              </a>
+                              <a class="btn" href="#"
+                                onclick="if (confirm('Вы действительно хотите удалить страницу «con3»?')) { f=document.getElementById('del'); f.id.value='{id}'; f.submit(); };return false;">
+                                <svg class="tree__icon-del" width="24" height="19">
+                                  <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                                </svg>
+                              </a>
+                              <a id="title_menu_{id}" class="tree__title" href="#" title="{id}">con3</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/catalog">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Каталог готовых результатов&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">Каталог</a>
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
+                    </div>
+                    <ul class="tree__list"></ul>
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/contacts">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Контакты&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">Контакты</a>
+        
+                      </div>
+                    </div>
+                    <ul class="tree__list"></ul>
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-leaf">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+        
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/news">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Новости&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Новости)</a>
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
+        
+                    </div>
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-leaf">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/compare">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Сравнение&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Сравнение)</a>
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
+                    </div>
+        
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/sp">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Справочники&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a href="#" class="tree__title" title="{id}" id="title_menu_{id}">(Справочники)</a>
+                        <img id="module_img_{id}" src='img/module_str_icon.gif' alt='Подключен модуль' title='Подключен модуль'>
+                      </div>
+                    </div>
+                    <ul class="tree__list">
+        
+                    </ul>
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/forms">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a class="btn" href="#"
+                          onclick="if (confirm('Вы действительно хотите удалить страницу &laquo;Формы&raquo;?')) { var f=document.getElementById('del'); f.id.value='{id}'; f.submit(); }">
+                          <svg class="tree__icon-del" width="24" height="19">
+                            <use xlink:href="img/sprite.svg#icon-t-del"></use>
+                          </svg>
+                        </a>
+        
+                        <a id="title_menu_{id}" href="#" class="tree__title" title="{id}">(Формы)</a>
+        
+                      </div>
+                    </div>
+                    <ul class="tree__list"></ul>
+                  </li>
+        
+                  <img id="line_bg_{id}" src="img/line_bg_over.gif" style="display: none;">
+                  <li id="{id}" class="node expand-closed IsLast">
+                    <div class="expand"></div>
+                    <div class="tree__inner">
+                      <div id="a{id}">
+                        <input id="linkwatch_{id}" name="linkwatch" type="hidden" value="/s">
+                        <img id="move_{id}" src="img/icon-move.gif">
+                        <a class="btn" href="#">
+                          <svg class="tree__icon-add" width="15" height="15">
+                            <use xlink:href="img/sprite.svg#icon-t-add-1"></use>
+                          </svg>
+                        </a>
+                        <a id="title_menu_{id}" href="#" class="tree__title" title="{id}">(Служебные)</a>
+        
+                      </div>
+                    </div>
+                    <ul class="tree__list">
+        
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+        
+          </form>
+        </div>
         <div class="bl-modal__footer">
           <form class="bl-form" action="">
             <div class="bl-form__item">

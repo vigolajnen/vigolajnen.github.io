@@ -607,7 +607,8 @@ img {
 
 .tabs__panel.active {
   display: block;
-  height: 100%; }
+  height: 100%;
+  padding-top: 15px; }
 
 .tabs__panel p + div {
   margin-top: 0.9375rem; }
