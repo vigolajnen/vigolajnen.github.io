@@ -386,6 +386,51 @@ popupOpenBtns.forEach(function(btn) {
       prevEl: ".swiper-button-prev"
     }
   });
+  var swiperNews = new Swiper("#js-slider-news-2", {
+    direction: "horizontal",
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: false,
+    freeMode: true,
+
+    spaceBetween: 10,
+    speed: 700,
+    loopedSlides: 1,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 15
+      },
+      // when window width is <= 1200px
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 15
+      }
+    },
+    effect: "fade",
+    parallax: true,
+    autoplay: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
 
   // breakpoint where swiper will be destroyed
   // and switches to a dual-column layout
