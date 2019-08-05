@@ -223,7 +223,7 @@ popupOpenBtns.forEach(function(btn) {
       slideCount: "auto",
       loopedSlidesCount: 3,
       slidesPerView320: 1.5,
-      slidesPerView640: 3,
+      slidesPerView640: 2,
       slidesPerView1200: 4
     },
     {

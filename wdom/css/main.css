@@ -1164,7 +1164,6 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: "GoogleSans-Bold";
     opacity: 0;
     -webkit-transform: translate3d(0, -2rem, 0);
             transform: translate3d(0, -2rem, 0);
@@ -1793,6 +1792,9 @@ img {
   width: 17vw; }
   .slider-video .swiper-slide:first-child {
     width: 40vw; }
+    @media (min-width: 1800px) {
+      .slider-video .swiper-slide:first-child {
+        width: 42vw; } }
 
 .history__list {
   list-style: none;
