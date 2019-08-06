@@ -220,11 +220,11 @@ popupOpenBtns.forEach(function(btn) {
     },
     {
       id: "#js-slider-video",
-      slideCount: "auto",
-      loopedSlidesCount: 3,
+      slideCount: "3",
+      loopedSlidesCount: 1,
       slidesPerView320: 1.5,
       slidesPerView640: 2,
-      slidesPerView1200: 4
+      slidesPerView1200: 2
     },
     {
       id: "#js-slider-news",
@@ -324,7 +324,7 @@ popupOpenBtns.forEach(function(btn) {
         // when window width is <= 1200px
         1200: {
           slidesPerView: sliderAll.slidesPerView1200,
-          spaceBetween: 15
+          spaceBetween: 20
         }
       },
       pagination: {

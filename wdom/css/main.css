@@ -1189,6 +1189,7 @@ img {
   .page-footer__sublist-link {
     display: block;
     padding-left: var(--padding-and-margin);
+    font-weight: 300;
     color: #ffffff;
     text-decoration: none;
     line-height: normal; }
@@ -1790,8 +1791,14 @@ img {
 
 .slider-video .swiper-slide {
   width: 17vw; }
+  @media (min-width: 1200px) {
+    .slider-video .swiper-slide {
+      width: 25% !important; } }
   .slider-video .swiper-slide:first-child {
     width: 40vw; }
+    @media (min-width: 1200px) {
+      .slider-video .swiper-slide:first-child {
+        width: 50% !important; } }
     @media (min-width: 1800px) {
       .slider-video .swiper-slide:first-child {
         width: 42vw; } }
