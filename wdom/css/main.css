@@ -452,7 +452,7 @@ img {
         margin-bottom: calc(var(--padding-and-margin) * 4); } }
     @media (min-width: 1800px) {
       .page__inner {
-        margin-bottom: 0; } }
+        margin-bottom: 1.25rem; } }
   .page__title {
     margin-bottom: 1.5rem;
     font-size: 25px;
