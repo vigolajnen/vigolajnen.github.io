@@ -1059,6 +1059,14 @@ img {
   cursor: pointer;
   border: none;
   outline: none; }
+  .navigation--opened svg rect:first-child {
+    -webkit-transform: rotate(0deg) translateX(0);
+            transform: rotate(0deg) translateX(0); }
+  .navigation--opened svg rect:nth-child(2) {
+    opacity: 1; }
+  .navigation--opened svg rect:nth-child(3) {
+    -webkit-transform: rotate(0deg) translateX(0);
+            transform: rotate(0deg) translateX(0); }
 
 .navigation__list {
   display: -webkit-box;
