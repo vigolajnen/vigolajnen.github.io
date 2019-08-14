@@ -189,7 +189,9 @@ popupOpenBtns.forEach(function(btn) {
       evt.preventDefault();
       var text = item.nextElementSibling;
       text.style.maxHeight = text.scrollHeight + 'px';
-      text.classList.add('active');
+      text.classList.toggle('active');
+
+      if (!text.classList.contains('active')) text.style.maxHeight = "0";
 
     });
   });

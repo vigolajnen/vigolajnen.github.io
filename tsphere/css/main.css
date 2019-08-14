@@ -34,13 +34,6 @@
   font-style: normal; }
 
 @font-face {
-  font-family: "Google Sans Medium", Arial, sans-serif;
-  font-display: auto;
-  src: url("../fonts/GoogleSans-Medium.woff2") format("woff2"), url("../fonts/GoogleSans-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
   font-family: "Google Sans Bold", Arial, sans-serif;
   font-display: auto;
   src: url("../fonts/GoogleSans-Bold.woff2") format("woff2"), url("../fonts/GoogleSans-Bold.woff") format("woff");
@@ -454,11 +447,14 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding: 1.25rem 0; }
+  padding: 1.25rem 0;
+  margin-bottom: 1.25rem; }
   .accordion--bg {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    padding: 1.25rem; }
   .accordion--bg-2 {
-    background-color: #f5feff; }
+    background-color: #f5feff;
+    padding: 1.25rem; }
   .accordion__item-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2623,7 +2619,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: var(--padding-and-margin) 0;
+  padding: calc(var(--padding-and-margin) * 2) 0;
   font-family: "Google Sans Bold", Arial, sans-serif;
   font-weight: 600; }
   .page-error__inner {
