@@ -180,58 +180,29 @@ popupOpenBtns.forEach(function(btn) {
     });
   });
 })();
-if (document.readyState !== "loading") {
-  console.log("ready!");
-  ready();
-} else {
-  document.addEventListener("DOMContentLoaded", ready);
-}
+(function(){
+  var openBtns = document.querySelectorAll(".accordion__item-title"),
+    closeBtns = document.querySelectorAll(".accordion__btn-close");
 
-function ready() {
-  var accordion = document.querySelectorAll(".accordion__title");
+  openBtns.forEach(function(item){
+    item.addEventListener('click', function(evt){
+      evt.preventDefault();
+      var text = item.nextElementSibling;
+      text.style.maxHeight = text.scrollHeight + 'px';
+      text.classList.add('active');
 
-  for (var i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener("click", function() {
-      accordionClick(event);
     });
-  }
-}
+  });
 
-var accordionClick = function(eventHappened) {
-
-  var targetClicked = event.target;
-  var classClicked = targetClicked.classList;
-
-  while (classClicked[0] != "accordion__title") {
-    targetClicked = targetClicked.parentElement;
-    classClicked = targetClicked.classList;
-  }
-  var description = targetClicked.nextElementSibling;
-  var expander = targetClicked.children[0];
-  if (description.style.maxHeight) {
-    description.style.maxHeight = null;
-    description.style.paddingTop = null;
-    expander.innerHTML = '<svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-block_arrow"></use></svg>';
-  } else {
-    var allDescriptions = document.querySelectorAll(
-      ".accordion__description"
-    );
-    for (var i = 0; i < allDescriptions.length; i++) {
-
-      if (allDescriptions[i].style.maxHeight) {
-
-        allDescriptions[i].style.maxHeight = null;
-        allDescriptions[i].style.paddingTop = null;
-        allDescriptions[i].previousElementSibling.children[0].innerHTML =
-          '<svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-block_arrow"></use></svg>';
-      }
-    }
-    description.style.maxHeight = description.scrollHeight + "px";
-    description.style.paddingTop = 20 + "px";
-    expander.innerHTML =
-      '<svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-block_arrow"></use></svg>';
-  }
-};
+  closeBtns.forEach(function(item) {
+    item.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      var text = item.parentElement;
+      text.style.maxHeight = "0";
+      text.classList.remove("active");
+    });
+  });
+})();
 (function() {
   var btns = document.querySelectorAll(".js-btn-more");
   btns.forEach(function(btn){
