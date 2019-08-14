@@ -152,33 +152,33 @@ popupOpenBtns.forEach(function(btn) {
   //     content.classList.add("active");
   //   });
   // });
-  var items = document.querySelectorAll(".js-tab-trigger");
-  var contents = document.querySelectorAll(".js-tab-content");
+  // var items = document.querySelectorAll(".js-tab-trigger");
+  // var contents = document.querySelectorAll(".js-tab-content");
 
-  items.forEach(function(item) {
-    item.addEventListener("click", function(evt) {
-      evt.preventDefault();
+  // items.forEach(function(item) {
+  //   item.addEventListener("click", function(evt) {
+  //     evt.preventDefault();
 
-      for (var i = 0; i < items.length; i++) {
-        items[i].classList.remove("active");
-      }
-      for (var i = 0; i < contents.length; i++) {
-        contents[i].classList.remove("active");
-      }
+  //     for (var i = 0; i < items.length; i++) {
+  //       items[i].classList.remove("active");
+  //     }
+  //     for (var i = 0; i < contents.length; i++) {
+  //       contents[i].classList.remove("active");
+  //     }
 
-      var tabName = this.getAttribute("data-tab");
+  //     var tabName = this.getAttribute("data-tab");
 
-      var activeItem = document.querySelector(
-        ".tabs__item[data-tab='" + tabName + "']"
-      );
-      var activeContent = document.querySelector(
-        ".tabs__panel[data-tab='" + tabName + "']"
-      );
+  //     var activeItem = document.querySelector(
+  //       ".tabs__item[data-tab='" + tabName + "']"
+  //     );
+  //     var activeContent = document.querySelector(
+  //       ".tabs__panel[data-tab='" + tabName + "']"
+  //     );
 
-      activeItem.classList.add("active");
-      activeContent.classList.add("active");
-    });
-  });
+  //     activeItem.classList.add("active");
+  //     activeContent.classList.add("active");
+  //   });
+  // });
 })();
 (function(){
   var openBtns = document.querySelectorAll(".accordion__item-title"),
@@ -217,8 +217,38 @@ popupOpenBtns.forEach(function(btn) {
       btn.classList.toggle('active');
       content.classList.toggle('active');
       // content.classList.toggle('closed');
+
+      var items = document.querySelectorAll(".js-tab-trigger");
+      var contents = document.querySelectorAll(".js-tab-content");
+
+      items.forEach(function(item) {
+        item.addEventListener("click", function(evt) {
+          evt.preventDefault();
+
+          for (var i = 0; i < items.length; i++) {
+            items[i].classList.remove("active");
+          }
+          for (var i = 0; i < contents.length; i++) {
+            contents[i].classList.remove("active");
+          }
+
+          var tabName = this.getAttribute("data-tab");
+
+          var activeItem = document.querySelector(
+            ".tabs__item[data-tab='" + tabName + "']"
+          );
+          var activeContent = document.querySelector(
+            ".tabs__panel[data-tab='" + tabName + "']"
+          );
+
+          activeItem.classList.add("active");
+          activeContent.classList.add("active");
+        });
+      });
     });
-  })
+  });
+
+  
 })();
 (function() {
   CardInfo.setDefaultOptions({
