@@ -1032,7 +1032,7 @@ img {
   left: 20px;
   z-index: 99;
   width: 30px;
-  height: 20px;
+  height: 25px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -1053,7 +1053,7 @@ img {
   left: 20px;
   z-index: 5;
   width: 30px;
-  height: 20px;
+  height: 25px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
