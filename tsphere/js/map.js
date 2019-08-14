@@ -33,7 +33,7 @@ function setMarkers(map) {
   // Origins, anchor positions and coordinates of the marker increase in the X
   // direction to the right and in the Y direction down.
   var image = {
-    url: '/img/marker.png',
+    url: 'img/marker.png',
     // This marker is 20 pixels wide by 32 pixels high.
     size: new google.maps.Size(63, 73),
     // The origin for this image is (0, 0).
