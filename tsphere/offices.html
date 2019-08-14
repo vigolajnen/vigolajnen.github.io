@@ -27,7 +27,7 @@
             </svg>
           </button>
           <div class="navigation__logo-and-phone">
-            <a class="logo" href="index.html">
+            <a class="navigation__logo logo" href="index.html">
               <img class="img-full" src="img/logo.png" alt="логотип компании">
             </a>
             <a class="navigation__phone phone" href="tel:+78126433406">
@@ -72,17 +72,15 @@
     </div>
     <main class="main container">
       <h1 class="page__title">Офисы продаж</h1>
-      <div class="page__map">
+      <div class="page__map map">
 
-        <div class="offices-map">
-          <div id="map"></div>
-        </div>
+        <div id="map"></div>
 
       </div>
       <div class="offices-address">
         <ul class="offices-address__list">
           <li class="offices-address__item office-address">
-            <div class="offices-address__inner">
+            <div class="office-address__inner office-address__inner--border">
               <a class="office-address__title link" href="office-item.html">ТУРСФЕРА у Просвещения</a>
               <div class="office-address__stations">
                 <div class="metro-station metro-station--blue">
@@ -112,7 +110,7 @@
       
           </li>
           <li class="offices-address__item office-address">
-            <div class="offices-address__inner">
+            <div class="office-address__inner office-address__inner--border">
               <a class="office-address__title link" href="#">ТУРСФЕРА в центре</a>
               <div class="office-address__stations">
                 <div class="metro-station">
@@ -154,7 +152,7 @@
       
           </li>
           <li class="offices-address__item office-address">
-            <div class="offices-address__inner">
+            <div class="office-address__inner office-address__inner--border">
               <a class="office-address__title link" href="#">ТУРСФЕРА на Московской</a>
               <div class="office-address__stations">
                 <div class="metro-station metro-station--blue">
@@ -190,7 +188,7 @@
       
           </li>
           <li class="offices-address__item office-address">
-            <div class="offices-address__inner">
+            <div class="office-address__inner office-address__inner--border">
               <a class="office-address__title link" href="#">ТУРСФЕРА у Просвещения</a>
               <div class="office-address__stations">
                 <div class="metro-station metro-station--blue">
@@ -220,7 +218,7 @@
       
           </li>
           <li class="offices-address__item office-address">
-            <div class="offices-address__inner">
+            <div class="office-address__inner office-address__inner--border">
               <a class="office-address__title link" href="#">ТУРСФЕРА в центре</a>
               <div class="office-address__stations">
                 <div class="metro-station">
@@ -262,7 +260,7 @@
       
           </li>
           <li class="offices-address__item office-address">
-            <div class="offices-address__inner">
+            <div class="office-address__inner office-address__inner--border">
               <a class="office-address__title link" href="#">ТУРСФЕРА на Московской</a>
               <div class="office-address__stations">
                 <div class="metro-station metro-station--blue">
@@ -451,6 +449,10 @@
   <script>
     svg4everybody();
   </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5yUe9FAKioTSGs8OXzRMBPUMtzWNjHx4&callback=initMap" async
+    defer></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>

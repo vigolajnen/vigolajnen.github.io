@@ -188,7 +188,7 @@ if (document.readyState !== "loading") {
 }
 
 function ready() {
-  var accordion = document.getElementsByTagName("dt");
+  var accordion = document.querySelectorAll(".accordion__title");
 
   for (var i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function() {
@@ -198,39 +198,38 @@ function ready() {
 }
 
 var accordionClick = function(eventHappened) {
-  console.log(eventHappened);
+
   var targetClicked = event.target;
-  console.log(targetClicked);
   var classClicked = targetClicked.classList;
-  console.log("target clicked: " + targetClicked);
-  console.log(classClicked[0]);
+
   while (classClicked[0] != "accordion__title") {
-    console.log("parent element: " + targetClicked.parentElement);
     targetClicked = targetClicked.parentElement;
     classClicked = targetClicked.classList;
-    console.log("target clicked while in loop:" + targetClicked);
-    console.log("class clicked while in loop: " + classClicked);
   }
   var description = targetClicked.nextElementSibling;
-  console.log(description);
   var expander = targetClicked.children[0];
   if (description.style.maxHeight) {
     description.style.maxHeight = null;
+    description.style.paddingTop = null;
     expander.innerHTML = '<svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-block_arrow"></use></svg>';
   } else {
-    var allDescriptions = document.getElementsByTagName("dd");
+    var allDescriptions = document.querySelectorAll(
+      ".accordion__description"
+    );
     for (var i = 0; i < allDescriptions.length; i++) {
-      console.log("current description: " + allDescriptions[i]);
+
       if (allDescriptions[i].style.maxHeight) {
-        console.log("there is a description already open");
+
         allDescriptions[i].style.maxHeight = null;
+        allDescriptions[i].style.paddingTop = null;
         allDescriptions[i].previousElementSibling.children[0].innerHTML =
           '<svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-block_arrow"></use></svg>';
       }
     }
     description.style.maxHeight = description.scrollHeight + "px";
+    description.style.paddingTop = 20 + "px";
     expander.innerHTML =
-      '<svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-list_blue_close"></use></svg>';
+      '<svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-block_arrow"></use></svg>';
   }
 };
 (function() {

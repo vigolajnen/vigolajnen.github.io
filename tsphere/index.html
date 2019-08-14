@@ -28,7 +28,7 @@
             </svg>
           </button>
           <div class="navigation__logo-and-phone">
-            <a class="logo" href="index.html">
+            <a class="navigation__logo logo" href="index.html">
               <img class="img-full" src="img/logo.png" alt="логотип компании">
             </a>
             <a class="navigation__phone phone" href="tel:+78126433406">
@@ -85,8 +85,13 @@
               <li class="search-form__item">
                 <div class="search-form__field">
                   <label class="search-form__title" for="search-form-where-from">Откуда</label>
-                  <input id="search-form-where-from" class="search-form__val search-form__val--icon-one" type="text"
+                  <input id="search-form-where-from" class="search-form__val" type="text"
                     name="js-field-where-from" placeholder="Город">
+                    <button class="button search-form__btn" aria-label="Кнопка очистки результата">
+                    <svg class="search-form__btn-icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-search_where"></use>
+                    </svg>
+                  </button>
                 </div>
                 <div class="search-form__options closed" tabindex="0">
                   <ul class="search-form__options-list" tabindex="0">
@@ -116,9 +121,13 @@
               <li class="search-form__item">
                 <div class="search-form__field">
                   <label class="search-form__title" for="search-form-where">Куда</label>
-                  <input id="search-form-where" class="search-form__val search-form__val--icon--two" type="text"
+                  <input id="search-form-where" class="search-form__val" type="text"
                     name="js-field-where" placeholder="Направление">
-        
+                  <button class="button search-form__btn" aria-label="Кнопка очистки результата">
+                    <svg class="search-form__btn-icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-search_where"></use>
+                    </svg>
+                  </button>
                 </div>
                 <div class="search-form__options closed" tabindex="0">
                   <ul class="search-form__options-list" tabindex="0">
@@ -192,15 +201,25 @@
                     <li class="search-form__group-item">
                       <div class="search-form__group-field">
                         <label class="visually-hidden" for="search-form-1">Взрослые</label>
-                        <input id="search-form-1" class="search-form__val search-form__val--icon-adlt" type="number"
+                        <input id="search-form-1" class="search-form__val" type="number"
                           name="search-form-1" placeholder="0">
+                          <button class="button search-form__btn" aria-label="Кнопка очистки результата">
+                          <svg class="search-form__btn-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-search_adlt"></use>
+                          </svg>
+                        </button>
                       </div>
                     </li>
                     <li class="search-form__group-item">
                       <div class="search-form__group-field">
                         <label class="visually-hidden" for="search-form-1">Дети</label>
-                        <input id="search-form-1" class="search-form__val search-form__val--icon--kids" type="number"
+                        <input id="search-form-1" class="search-form__val" type="number"
                           name="search-form-1" placeholder="0">
+                          <button class="button search-form__btn" aria-label="Кнопка очистки результата">
+                          <svg class="search-form__btn-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-search_kids"></use>
+                          </svg>
+                        </button>
                       </div>
                     </li>
                   </ul>
@@ -1058,6 +1077,7 @@
 
     </section>
     <section class="page-section page-section--bg-6 page-section--contacts">
+      <div id="map"></div>
       <div class="container">
         <div class="page-section__row">
           <div class="page-section__info-contacts">
@@ -1068,7 +1088,7 @@
               <div class="offices-address offices-address--index-block">
                 <ul class="offices-address__list">
                   <li class="offices-address__item office-address">
-                    <div class="offices-address__inner">
+                    <div class="office-address__inner">
                       <a class="office-address__title link" href="office-item.html">ТУРСФЕРА у Просвещения</a>
                       <div class="office-address__stations">
                         <div class="metro-station metro-station--blue">
@@ -1090,7 +1110,7 @@
               
                   </li>
                   <li class="offices-address__item office-address">
-                    <div class="offices-address__inner">
+                    <div class="office-address__inner">
                       <a class="office-address__title link" href="#">ТУРСФЕРА в центре</a>
                       <div class="office-address__stations">
                         <div class="metro-station">
@@ -1124,7 +1144,7 @@
               
                   </li>
                   <li class="offices-address__item office-address">
-                    <div class="offices-address__inner">
+                    <div class="office-address__inner">
                       <a class="office-address__title link" href="#">ТУРСФЕРА на Московской</a>
                       <div class="office-address__stations">
                         <div class="metro-station metro-station--blue">
@@ -1152,7 +1172,7 @@
               
                   </li>
                   <li class="offices-address__item office-address">
-                    <div class="offices-address__inner">
+                    <div class="office-address__inner">
                       <a class="office-address__title link" href="#">ТУРСФЕРА у Просвещения</a>
                       <div class="office-address__stations">
                         <div class="metro-station metro-station--blue">
@@ -1174,7 +1194,7 @@
               
                   </li>
                   <li class="offices-address__item office-address">
-                    <div class="offices-address__inner">
+                    <div class="office-address__inner">
                       <a class="office-address__title link" href="#">ТУРСФЕРА в центре</a>
                       <div class="office-address__stations">
                         <div class="metro-station">
@@ -1208,7 +1228,7 @@
               
                   </li>
                   <li class="offices-address__item office-address">
-                    <div class="offices-address__inner">
+                    <div class="office-address__inner">
                       <a class="office-address__title link" href="#">ТУРСФЕРА на Московской</a>
                       <div class="office-address__stations">
                         <div class="metro-station metro-station--blue">
@@ -1238,12 +1258,8 @@
                 </ul>
               </div>
 
+          </div>
 
-          </div>
-          <div class="page-section__map-contacts">
-            <!-- map -->
-            <div id="map"></div>
-          </div>
         </div>
       </div>
 
@@ -1455,6 +1471,11 @@
     svg4everybody();
   </script>
   <script src="js/form.min.js"></script>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5yUe9FAKioTSGs8OXzRMBPUMtzWNjHx4&callback=initMap" async
+    defer></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>
