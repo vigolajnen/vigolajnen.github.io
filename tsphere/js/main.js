@@ -36,6 +36,17 @@
 })();
 
 // Form
+(function() {
+  var fieldCode = document.querySelector("#page-form-code");
+  var btn = document.querySelector(".button[disabled]");
+  btn.disabled = true;
+  if (fieldCode) {
+    fieldCode.addEventListener("change", function() {
+      if (fieldCode.value !== "") btn.disabled = false;
+      else btn.disabled = true;
+    });
+  }
+})();
 
 // var popup = document.querySelector(".popup");
 var popups = document.querySelectorAll(".popup");
@@ -58,7 +69,10 @@ popupOpenBtns.forEach(function(btn) {
       if (nameBtn == namePopup) {
         popupOverlay.classList.add("popup-show");
         document.querySelector("body").classList.add("overlay");
-        inputName.focus();
+
+        // inputName.focus();
+
+        stepsPopup();
 
         popupBtnClose.addEventListener("click", function(evt) {
           evt.preventDefault();
@@ -69,6 +83,27 @@ popupOpenBtns.forEach(function(btn) {
     }
   });
 });
+
+var stepsPopup = function() {
+  var stepPopupOne = document.querySelector(".step-registration");
+  var stepPopupTwo = document.querySelector(".step-authorization");
+
+  stepPopupOne.style.maxHeight = stepPopupTwo.scrollHeight + "px";
+  stepPopupOne.style.overflow = "visible";
+
+  stepPopupTwo.style.maxHeight = "0";
+  stepPopupTwo.style.overflow = "hidden";
+
+
+  document.querySelector(".step-registration__btn").addEventListener('click', function(evt){
+    evt.preventDefault();
+    stepPopupOne.style.maxHeight = "0";
+    stepPopupOne.style.overflow = "hidden";
+    stepPopupTwo.style.maxHeight = stepPopupTwo.scrollHeight + "px";
+    stepPopupTwo.style.overflow = "visible";
+  });
+
+};
 (function() {
   var sliderAll = [
     {
