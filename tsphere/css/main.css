@@ -1322,9 +1322,9 @@ img {
       flex-wrap: wrap; }
 
 .payment__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 1;
-          flex: 0 0 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-right: 1.25rem; }
 
 .payment__icon {
