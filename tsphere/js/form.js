@@ -255,27 +255,28 @@ return k({},n(this))}function Bc(){return n(this).overflow}function Cc(){return{
   });
 })(); /* IIFE end */
 (function() {
-  var searchForm = document.querySelector(".search-form");
-  var fields = searchForm.querySelectorAll('input[name^="js-"]');
-  var focused = document.hasFocus();
+  // var searchForm = document.querySelector(".search-form");
+  var fields = document.querySelectorAll('input[name^="js-"]');
+  // var focused = document.hasFocus();
 
-  fields.forEach(function(field) {
-
-    field.addEventListener("focus", function(evt) {
-      field.focused = true;
-      var listOptions = field.parentElement.nextElementSibling;
-      console.log(listOptions);
-      listOptions.classList.add("active");
-      listOptions.classList.remove("closed");
+  if (fields) {
+    fields.forEach(function(field) {
+      field.addEventListener("focus", function(evt) {
+        field.focused = true;
+        var listOptions = field.parentElement.nextElementSibling;
+        console.log(listOptions);
+        listOptions.classList.add("active");
+        listOptions.classList.remove("closed");
+      });
+      field.addEventListener("blur", function(evt) {
+        field.focused = false;
+        var listOptions = field.parentElement.nextElementSibling;
+        if (field.focused == false) {
+          listOptions.classList.remove("active");
+          listOptions.classList.add("closed");
+        }
+        console.log(listOptions);
+      });
     });
-    field.addEventListener("blur", function(evt) {
-      field.focused = false;
-      var listOptions = field.parentElement.nextElementSibling;
-      if (field.focused == false) {
-        listOptions.classList.remove("active");
-        listOptions.classList.add("closed");
-      }
-      console.log(listOptions);
-    });
-  });
+  }
 })();

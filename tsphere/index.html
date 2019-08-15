@@ -1700,7 +1700,7 @@
             </button>
           </div>
           <div class="popup__body">
-            <section class="step-registration">
+            <section class="step-registration" data-step="step-registration">
               <h3 class="step-registration__title">Соглашение с пользователем</h3>
               <div class="step-registration__inner">
                 <div class="content">
@@ -1786,7 +1786,7 @@
               </div>
               <button class="step-registration__btn button" type="button">Я согласен с правилами сервиса</button>
             </section>
-            <div class="step-authorization step-authorization--popup">
+            <div class="step-authorization step-authorization--popup" data-step="step-authorization">
               <ul class="step-authorization__list">
                 <li class="step-authorization__item">
                   <div class="step-authorization__title">1. Введите свой номер телефона</div>
@@ -1799,7 +1799,7 @@
                           placeholder="Ваш номер телефона" pattern="(\+?\d[- .]*){7,13}" required>
                       </li>
                       <li class="page-form__item">
-                        <button class="button button--uppercase" type="submit">Отправить код</button>
+                        <button id="js-btn-code" class="button button--uppercase" type="button">Отправить код</button>
                       </li>
                     </ul>
                   </form>
@@ -1815,13 +1815,143 @@
                           placeholder="Введите код" required>
                       </li>
                       <li class="page-form__item">
-                        <button class="button button--uppercase" type="submit" disabled>Подтвердить</button>
+                        <button id="js-btn-confirm" class="button button--uppercase" type="button" disabled>Подтвердить</button>
                       </li>
                     </ul>
                   </form>
                 </li>
             
               </ul>
+            </div>
+            <div id="cards" class="step-cards" data-step="step-cards">
+              <div id="front" class="step-cards__front">
+                <a target="_blank" href="#" id="bank-link"></a>
+                <img src="/" alt="brand-logo" id="brand-logo">
+                <div id="front-fields">
+                  <input class="field" id="number" type="text" placeholder="0000 0000 0000 0000">
+                  <label class="label">Valid thru</label>
+                  <input class="field expired" id="mm" type="text" placeholder="MM">
+                  <input class="field expired" id="yy" type="text" placeholder="YY">
+                </div>
+              </div>
+              <div id="back">
+                <input class="field" id="code" type="password" placeholder="">
+                <label id="code-label" class="label">Safety code</label>
+              </div>
+            </div>
+            <div class="step-price" data-step="step-price">
+            
+              <div class="step-price__card">
+                <a class="card link" href="#">
+                  <div class="card__inner">
+                    <div class="card__header">
+                      <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+                      <svg class="card__icon-hot" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-hot_price"></use>
+                      </svg>
+                    </div>
+                    <div class="card__info">
+                      <div class="card__title">Турция ждет!</div>
+                      <ul class="card__info-list">
+                        <li class="card__info-item">
+                          <svg class="card__info-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-fly"></use>
+                          </svg>
+                          <span class="card__info-val">Pegas</span>
+                        </li>
+                        <li class="card__info-item">
+                          <svg class="card__info-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-date"></use>
+                          </svg>
+                          <span class="card__info-val">29 Июл 2019</span>
+                        </li>
+                        <li class="card__info-item">
+                          <svg class="card__info-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-nights"></use>
+                          </svg>
+                          <span class="card__info-val">10 ночей</span>
+                        </li>
+                        <li class="card__info-item">
+                          <svg class="card__info-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-food"></use>
+                          </svg>
+                          <span class="card__info-val">Все включено</span>
+                        </li>
+                        <li class="card__info-item">
+                          <svg class="card__info-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-room_type"></use>
+                          </svg>
+                          <span class="card__info-val">DBL</span>
+                        </li>
+                        <li class="card__info-item">
+                          <svg class="card__info-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-adlt"></use>
+                          </svg>
+                          <span class="card__info-val">2</span>
+                        </li>
+                        <li class="card__info-item">
+                          <svg class="card__info-icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-price"></use>
+                          </svg>
+                          <span class="card__info-val card__info-val--price">135 000 Р</span>
+                        </li>
+                      </ul>
+                      <!-- <button class="card__button button" href="#">Предложить свою цену</button> -->
+                    </div>
+                
+                  </div>
+                </a>
+              </div>
+            
+              <div class="step-price__info-and-form">
+                <div class="step-price__info">
+                  <div class="step-price__info-header">
+                    <div class="step-price__info-rating">
+                      <div class="rating-block">
+                        <input name="rating" value="5" id="rating_5" type="radio" />
+                        <label for="rating_5" class="label_rating"></label>
+                       
+                        <input name="rating" value="4" id="rating_4" type="radio" />
+                        <label for="rating_4" class="label_rating"></label>
+                       
+                        <input name="rating" value="3" id="rating_3" type="radio" />
+                        <label for="rating_3" class="label_rating"></label>
+                       
+                        <input name="rating" value="2" id="rating_2" type="radio" />
+                        <label for="rating_2" class="label_rating"></label>
+                       
+                        <input name="rating" value="1" id="rating_1" type="radio" />
+                        <label for="rating_1" class="label_rating"></label>
+                      </div>
+                    </div>
+                    <div class="step-price__info-name">РGS Hotels Kiris Resort 5</div>
+                    <div class="step-price__info-address">Турция, Анталья, 30 м до моря</div>
+                  </div>
+                  <div class="step-price__info-text">
+                    Отель PGS KIRIS RESORT построен в 1994 году прямо на морском побережье у подножья Торосских гор, где
+                    жарким днем голубое, без единого облачка небо, сливается с лазурной синевой моря. Реновация отеля
+                    осуществлялась в 2013 году...
+                  </div>
+                  <div class="step-price__info-price">
+                    Стоимость тура:
+                    <span class="step-price__info-count">135 000 Р</span>
+                  </div>
+                </div>
+                <div class="step-price__form">
+                  <p>Предложите вашу цену, руб.</p>
+                  <div class="page-form">
+                    <div class="page-form__item">
+                      <label class="visually-hidden" for="page-form-price">Введите цену</label>
+                      <input id="page-form-price" class="page-form__field" type="text" name="page-form-price"
+                        placeholder="Введите цену" required>
+                    </div>
+                    <div class="page-form__item">
+                      <button class="button button--uppercase" type="button">Предложите свою цену </button>
+                    </div>
+                  </div>
+            
+                </div>
+              </div>
             </div>
           </div>
         </div>
