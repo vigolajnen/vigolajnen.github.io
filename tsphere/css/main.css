@@ -2020,7 +2020,8 @@ img {
     background-image: url("../img/bg/bg-3.jpg");
     background-repeat: repeat;
     background-size: contain;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    overflow: hidden; }
     @media (min-width: 900px) {
       .page-section--bg-3 {
         background-repeat: no-repeat;
