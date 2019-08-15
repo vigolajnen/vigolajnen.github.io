@@ -100,7 +100,7 @@
         <!-- //= template/module/_step-registration.html -->
         <!-- //= template/module/_step-cards.html -->
         <!-- //= template/module/_step-price.html -->
-        <div class="step-making" data-step="step-making">
+        <div class="step-making">
           <div class="step-making__header">
             <div class="step-making__title">Ваша предложение принято!</div>
             <p>Для оформления путевки введите данные туристов:</p>
@@ -136,7 +136,8 @@
                         <legend class="page-form__title">Загранпаспорт</legend>
                         <ul class="page-form__list">
                           <li class="page-form__item">
-                            <input class="page-form__field" id="passport-1" type="number" name="passport-1" placeholder="Серия">
+                            <input class="page-form__field" id="passport-1" type="number" name="passport-1" placeholder="Серия"
+                              checked="">
                             <label class="visually-hidden" for="passport-1">Серия</label>
                           </li>
                           <li class="page-form__item">
@@ -170,7 +171,8 @@
                         <legend class="page-form__title">Пол</legend>
                         <ul class="page-form__list">
                           <li class="page-form__item">
-                            <input class="page-form__field visually-hidden" id="gender-1" type="radio" name="gender" checked>
+                            <input class="page-form__field visually-hidden" id="gender-1" type="radio" name="gender"
+                              placeholder="Муж." checked>
                             <label class="page-form__label" for="gender-1">
               
                               <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
@@ -182,7 +184,8 @@
               
                           </li>
                           <li class="page-form__item">
-                            <input class="page-form__field visually-hidden" id="gender-2" type="radio" name="gender">
+                            <input class="page-form__field visually-hidden" id="gender-2" type="radio" name="gender"
+                              placeholder="Жен.">
                             <label class="page-form__label" for="gender-2">
               
                               <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
@@ -201,23 +204,23 @@
                       <ul class="page-form__list">
                         <li class="page-form__item">
                           <label class="page-form__label" for="page-form-country">Страна</label>
-                          <select id="page-form-name" class="custom-select page-form__field" name="page-form-country" data-placeholder="Россия" required>
-                            <option value="Россия">Россия</option>
-                            <option value="Англия">Англия</option>
-                            <option value="Северная Ирландия">Северная Ирландия</option>
-                            <option value="Шотландия">Шотландия</option>
-                            <option value="Уэльс">Уэльс</option>
+                          <select id="page-form-name" class="custom-select page-form__field" name="page-form-country" placeholder="Россия" required>
+                            <option>Россия</option>
+                            <option>Англия</option>
+                            <option>Северная Ирландия</option>
+                            <option>Шотландия</option>
+                            <option>Уэльс</option>
                           </select>
                         </li>
                         <li class="page-form__item">
                           <label class="page-form__label" for="page-form-gr">Гражданство</label>
               
-                          <select id="page-form-gr" class="custom-select page-form__field" name="page-form-gr" data-placeholder="Россия" required>
-                            <option value="Россия">Россия</option>
-                            <option value="Англия">Англия</option>
-                            <option value="Северная Ирландия">Северная Ирландия</option>
-                            <option value="Шотландия">Шотландия</option>
-                            <option value="Уэльс">Уэльс</option>
+                          <select id="page-form-gr" class="custom-select page-form__field" name="page-form-gr" placeholder="Россия" required>
+                            <option>Россия</option>
+                            <option>Англия</option>
+                            <option>Северная Ирландия</option>
+                            <option>Шотландия</option>
+                            <option>Уэльс</option>
                           </select>
                         </li>
                       </ul>
@@ -263,7 +266,8 @@
                         <legend class="page-form__title">Загранпаспорт</legend>
                         <ul class="page-form__list">
                           <li class="page-form__item">
-                            <input class="page-form__field" id="passport-1" type="number" name="passport-1" placeholder="Серия">
+                            <input class="page-form__field" id="passport-1" type="number" name="passport-1" placeholder="Серия"
+                              checked="">
                             <label class="visually-hidden" for="passport-1">Серия</label>
                           </li>
                           <li class="page-form__item">
@@ -297,7 +301,8 @@
                         <legend class="page-form__title">Пол</legend>
                         <ul class="page-form__list">
                           <li class="page-form__item">
-                            <input class="page-form__field visually-hidden" id="gender-3" type="radio" name="gender-2" checked>
+                            <input class="page-form__field visually-hidden" id="gender-3" type="radio" name="gender-2"
+                              placeholder="Муж." checked>
                             <label class="page-form__label" for="gender-3">
               
                               <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
@@ -309,7 +314,8 @@
               
                           </li>
                           <li class="page-form__item">
-                            <input class="page-form__field visually-hidden" id="gender-4" type="radio" name="gender-2">
+                            <input class="page-form__field visually-hidden" id="gender-4" type="radio" name="gender-2"
+                              placeholder="Жен.">
                             <label class="page-form__label" for="gender-4">
               
                               <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
@@ -328,23 +334,23 @@
                       <ul class="page-form__list">
                         <li class="page-form__item">
                           <label class="page-form__label" for="page-form-country">Страна</label>
-                          <select id="page-form-name" class="custom-select page-form__field" name="page-form-country" data-placeholder="Россия" required>
-                            <option value="Россия">Россия</option>
-                            <option value="Англия">Англия</option>
-                            <option value="Северная Ирландия">Северная Ирландия</option>
-                            <option value="Шотландия">Шотландия</option>
-                            <option value="Уэльс">Уэльс</option>
+                          <select id="page-form-name" class="custom-select page-form__field" name="page-form-country" placeholder="Россия" required>
+                            <option>Россия</option>
+                            <option>Англия</option>
+                            <option>Северная Ирландия</option>
+                            <option>Шотландия</option>
+                            <option>Уэльс</option>
                           </select>
                         </li>
                         <li class="page-form__item">
                           <label class="page-form__label" for="page-form-gr">Гражданство</label>
               
-                          <select id="page-form-gr" class="custom-select page-form__field" name="page-form-gr" data-placeholder="Россия" required>
-                            <option value="Россия">Россия</option>
-                            <option value="Англия">Англия</option>
-                            <option value="Северная Ирландия">Северная Ирландия</option>
-                            <option value="Шотландия">Шотландия</option>
-                            <option value="Уэльс">Уэльс</option>
+                          <select id="page-form-gr" class="custom-select page-form__field" name="page-form-gr" placeholder="Россия" required>
+                            <option>Россия</option>
+                            <option>Англия</option>
+                            <option>Северная Ирландия</option>
+                            <option>Шотландия</option>
+                            <option>Уэльс</option>
                           </select>
                         </li>
                       </ul>
@@ -374,7 +380,7 @@
         <div class="page-footer__left">
           <div class="page-footer__logo-and-copyright">
             <a class="logo" href="index.html">
-              <img src="img/logo.png" alt="логотип компании">
+              <img class="img-full" src="img/logo.png" alt="логотип компании">
             </a>
             <div class="page-footer__copyright">Сеть турагентств «Турсфера»</div>
           </div>

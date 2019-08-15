@@ -86,18 +86,6 @@ img {
   overflow-y: auto;
   height: 100%; }
 
-.active {
-  max-height: auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow: visible; }
-
-.closed {
-  max-height: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow: hidden; }
-
 .swiper-container {
   width: 100%; }
 
@@ -381,18 +369,9 @@ img {
               justify-content: center; } }
   .popup__wrapper {
     padding: 1.25rem;
-    margin-top: auto;
-    margin-bottom: auto;
     width: 100%;
     background-color: #f7f7f8;
     border-radius: 5px; }
-    @media (max-width: 599px) {
-      .popup__wrapper {
-        height: 100%;
-        min-height: 100vh;
-        border-radius: 0; } }
-  .popup__header {
-    position: relative; }
 
 .popup-overlay {
   display: none;
@@ -443,7 +422,9 @@ img {
   .popup-close svg rect:first-child {
     -webkit-transform: rotate(45deg) translateX(1.5px);
             transform: rotate(45deg) translateX(1.5px); }
-  .popup-close svg rect:last-child {
+  .popup-close svg rect:nth-child(2) {
+    opacity: 0; }
+  .popup-close svg rect:nth-child(3) {
     -webkit-transform: rotate(-45deg) translateX(-5.5px);
             transform: rotate(-45deg) translateX(-5.5px); }
 
@@ -557,7 +538,7 @@ img {
   .accordion__description {
     position: relative;
     max-height: 0;
-    line-height: normal;
+    line-height: normalgulp;
     color: #1a1a1a;
     overflow: hidden;
     -webkit-transition: max-height 0.2s ease-out;
@@ -1335,9 +1316,9 @@ img {
       flex-wrap: wrap; }
 
 .payment__item {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1;
+          flex: 0 0 1;
   margin-right: 1.25rem; }
 
 .payment__icon {
@@ -2766,20 +2747,6 @@ img {
     text-align: center;
     color: #e6e6e6; }
   .steps__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
     margin: 1.25rem 0;
     padding: 1.25rem;
     background-color: #f7f7f8;
@@ -2790,25 +2757,37 @@ img {
               align-items: center; }
 
 .step-authorization {
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%; }
-  @media (min-width: 769px) {
-    .step-authorization {
-      width: 66.66667%; } }
-  @media (min-width: 900px) {
-    .step-authorization {
-      width: 50%; } }
-  .step-authorization--popup {
+  padding-top: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .step-authorization__list {
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%; }
-  .step-authorization__list {
     width: 100%;
+    margin-left: 0%;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center; }
+    @media (min-width: 769px) {
+      .step-authorization__list {
+        width: 66.66667%; } }
+    @media (min-width: 900px) {
+      .step-authorization__list {
+        width: 50%; } }
+    @media (min-width: 769px) {
+      .step-authorization__list {
+        margin-left: 16.66667%; } }
+    @media (min-width: 900px) {
+      .step-authorization__list {
+        margin-left: 25%; } }
   .step-authorization__title {
     margin-bottom: calc(var(--padding-and-margin) / 2);
     font-family: "Google Sans Bold", Arial, sans-serif;
@@ -3503,28 +3482,6 @@ ul {
     font-family: "Google Sans Bold", Arial, sans-serif;
     font-weight: 600;
     line-height: normal; }
-  .purchase-stages__path-plane {
-    position: absolute;
-    top: 0;
-    right: -80px; }
-    .purchase-stages__path-plane::before {
-      content: "";
-      position: absolute;
-      z-index: 4;
-      top: 60px;
-      right: 70%;
-      width: 200px;
-      height: 2px;
-      border: 2px dashed #1a1a1a; }
-    .purchase-stages__path-plane::after {
-      content: "";
-      position: absolute;
-      top: 38px;
-      right: 68.5%;
-      width: 50px;
-      height: 50px;
-      background-repeat: no-repeat;
-      background-image: url("../img/icons/icon-path_plane.svg"); }
 
 .search-form {
   position: relative;
