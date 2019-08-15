@@ -36,6 +36,17 @@
 })();
 
 // Form
+(function() {
+  var fieldCode = document.querySelector("#page-form-code");
+  var btn = document.querySelector(".button[disabled]");
+  if (btn) btn.disabled = true;
+  if (fieldCode) {
+    fieldCode.addEventListener("change", function() {
+      if (fieldCode.value !== "") btn.disabled = false;
+      else btn.disabled = true;
+    });
+  }
+})();
 
 // var popup = document.querySelector(".popup");
 var popups = document.querySelectorAll(".popup");
@@ -58,7 +69,10 @@ popupOpenBtns.forEach(function(btn) {
       if (nameBtn == namePopup) {
         popupOverlay.classList.add("popup-show");
         document.querySelector("body").classList.add("overlay");
-        inputName.focus();
+
+        // inputName.focus();
+
+        stepsPopup();
 
         popupBtnClose.addEventListener("click", function(evt) {
           evt.preventDefault();
@@ -69,6 +83,61 @@ popupOpenBtns.forEach(function(btn) {
     }
   });
 });
+
+var stepsPopup = function() {
+  var popupSteps = document.querySelectorAll("[data-step^=step]");
+
+  if (popupSteps) {
+    popupSteps.forEach(function(step) {
+      var name = step.getAttribute("data-step");
+
+      step.classList.remove("active");
+      step.classList.add("closed");
+
+      if (name == "step-registration") {
+        step.classList.add("active");
+        step.classList.remove("closed");
+
+        document
+          .querySelector(".step-registration__btn")
+          .addEventListener("click", function(evt) {
+            evt.preventDefault();
+
+            step.classList.remove("active");
+            step.classList.add("closed");
+
+            var activeStep = step.nextElementSibling;
+
+            activeStep.classList.remove("closed");
+            activeStep.classList.add("active");
+
+            document
+              .querySelector("#js-btn-confirm")
+              .addEventListener("click", function(evt) {
+                evt.preventDefault();
+
+                activeStep.classList.remove("active");
+                activeStep.classList.add("closed");
+
+                activeStep.nextElementSibling.classList.remove("closed");
+                activeStep.nextElementSibling.classList.add("active");
+              });
+          });
+      }
+    });
+  }
+};
+
+// var activeStep = function(step) {
+//   document.querySelectorAll("[data-step^=step]").forEach(function(step) {
+//     step.classList.remove("active");
+//     step.classList.add("closed");
+
+//     step.nextElementSibling.classList.remove("closed");
+//     step.nextElementSibling.classList.add("active");
+//     return step;
+//   });
+// };
 (function() {
   var sliderAll = [
     {
@@ -320,7 +389,7 @@ $(".custom-select").each(function() {
   var template = '<div class="' + classes + '">';
   template +=
     '<span class="custom-select-trigger">' +
-    $(this).attr("placeholder") +
+    $(this).attr("data-placeholder") +
     "</span>";
   template += '<div class="custom-options">';
   $(this)
