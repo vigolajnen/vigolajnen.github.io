@@ -80,11 +80,11 @@
             <span class="steps__number">2</span>
             <span class="steps__title">Регистрация</span>
           </li>
-          <li class="steps__item active">
+          <li class="steps__item active steps__item--hidden-sm">
             <span class="steps__number">3</span>
             <span class="steps__title">Предложить цену</span>
           </li>
-          <li class="steps__item steps__item--hidden-sm">
+          <li class="steps__item active">
             <span class="steps__number">4</span>
             <span class="steps__title">Оформление путевки</span>
           </li>
@@ -96,11 +96,173 @@
       </div>
 
       <div class="steps__content">
-        <!-- //= template/module/_step-authorization.html -->
-        <!-- //= template/module/_step-registration.html -->
-        <!-- //= template/module/_step-cards.html -->
-        <!-- //= template/module/_step-price.html -->
-        <div class="step-making" data-step="step-making">
+        <div id="js-step-four-1" class="step-making" data-step="step-four-1">
+          <div class="step-making__row">
+            <div class="step-making__card">
+              <a class="card link" href="#">
+                <div class="card__inner">
+                  <div class="card__header">
+                    <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+                    <svg class="card__icon-hot" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-hot_price"></use>
+                    </svg>
+                  </div>
+                  <div class="card__info">
+                    <div class="card__title">Турция ждет!</div>
+                    <ul class="card__info-list">
+                      <li class="card__info-item">
+                        <svg class="card__info-icon" width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-fly"></use>
+                        </svg>
+                        <span class="card__info-val">Pegas</span>
+                      </li>
+                      <li class="card__info-item">
+                        <svg class="card__info-icon" width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-date"></use>
+                        </svg>
+                        <span class="card__info-val">29 Июл 2019</span>
+                      </li>
+                      <li class="card__info-item">
+                        <svg class="card__info-icon" width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-nights"></use>
+                        </svg>
+                        <span class="card__info-val">10 ночей</span>
+                      </li>
+                      <li class="card__info-item">
+                        <svg class="card__info-icon" width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-food"></use>
+                        </svg>
+                        <span class="card__info-val">Все включено</span>
+                      </li>
+                      <li class="card__info-item">
+                        <svg class="card__info-icon" width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-room_type"></use>
+                        </svg>
+                        <span class="card__info-val">DBL</span>
+                      </li>
+                      <li class="card__info-item">
+                        <svg class="card__info-icon" width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-adlt"></use>
+                        </svg>
+                        <span class="card__info-val">2</span>
+                      </li>
+                      <li class="card__info-item">
+                        <svg class="card__info-icon" width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-price"></use>
+                        </svg>
+                        <span class="card__info-val card__info-val--price">135 000 Р</span>
+                      </li>
+                    </ul>
+                    <!-- <button class="card__button button" href="#">Предложить свою цену</button> -->
+                  </div>
+              
+                </div>
+              </a>
+            </div>
+        
+            <div class="step-making__content">
+              <div style="margin-bottom: 20px; font-size: 1.25rem;">
+                <p><b>Ваша ставка не принята продавцом</b></p>
+                <p style="color: red;"><b>Ваша цена не устроила продовца, в сделке отказано</b></p>
+              </div>
+              <div style="margin-bottom: 20px;">
+                <p style="margin-bottom: 20px;"><b>1. Предложите более высокую цену</b></p>
+                <button class="button button--uppercase">Увеличить цену</button>
+              </div>
+              <div style="margin-bottom: 20px;">
+                <p style="margin-bottom: 20px;"><b>2. Оставьте цену, дайте продавцу время подумать</b></p>
+                <button class="button button--uppercase">Цена с ожиданием</button>
+              </div>
+              <div style="margin-bottom: 20px;">
+                <p style="margin-bottom: 20px;"><b>3. Если не хотите ждать или увеличмвать цену, откажитесь от сделки</b></p>
+                <button class="button button--uppercase">Отказаться от сделки</button>
+              </div>
+            </div>
+          </div>
+          <div class="step-making__footer">
+            <a class="link link--button link--uppercase" href="#" data-btn="js-step-more">Далее</a>
+          </div>
+        </div>
+        <div id="js-step-four-2" class="row steps__content-row step-price" data-step="step-four-2">
+          <div class="step-price__card">
+            <a class="card link" href="#">
+              <div class="card__inner">
+                <div class="card__header">
+                  <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+                  <svg class="card__icon-hot" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-hot_price"></use>
+                  </svg>
+                </div>
+                <div class="card__info">
+                  <div class="card__title">Турция ждет!</div>
+                  <ul class="card__info-list">
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-fly"></use>
+                      </svg>
+                      <span class="card__info-val">Pegas</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-date"></use>
+                      </svg>
+                      <span class="card__info-val">29 Июл 2019</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-nights"></use>
+                      </svg>
+                      <span class="card__info-val">10 ночей</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-food"></use>
+                      </svg>
+                      <span class="card__info-val">Все включено</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-room_type"></use>
+                      </svg>
+                      <span class="card__info-val">DBL</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-adlt"></use>
+                      </svg>
+                      <span class="card__info-val">2</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-price"></use>
+                      </svg>
+                      <span class="card__info-val card__info-val--price">135 000 Р</span>
+                    </li>
+                  </ul>
+                  <!-- <button class="card__button button" href="#">Предложить свою цену</button> -->
+                </div>
+            
+              </div>
+            </a>
+          </div>
+          <div class="step-price__info-and-form content">
+            <p class=""><b>Укажите срок, который вы готовы подождать, чтобы дать продавцу подумать.
+            Возможно, он согласится принять вашу цену позже.</b></p>
+            <div class="">
+              <button class="button button--uppercase" type="button">1 день</button>
+              <button class="button button--uppercase" type="button">2 день</button>
+              <button class="button button--uppercase" type="button">3 день</button>
+              <button class="button button--uppercase" type="button">4 день</button>
+            </div>
+            <div class="">
+              <button class="button button--tabs button--uppercase" type="button">Отмена</button>
+            </div>
+          </div>
+          <div class="step-making__footer">
+            <a class="link link--button link--uppercase" href="cabinet-5.html">Далее</a>
+          </div>
+        </div>
+        <div id="js-step-four-3" class="step-making" data-step="step-four-3">
           <div class="step-making__header">
             <div class="step-making__title">Ваша предложение принято!</div>
             <p>Для оформления путевки введите данные туристов:</p>
@@ -361,9 +523,13 @@
               </div>
             </div>
           </div>
+          <div class="step-making__footer">
         
+            <button class="button button--uppercase" type="button" data-btn="js-step-more-2">Далее</button>
+          </div>
         
         </div>
+
 
       </div>
 
@@ -445,9 +611,10 @@
               </li>
               <li class="payment__item">
                 <a class="payment__link" href="#" aria-label="Uniteller">
-                  <svg class="payment__icon" width="25" height="54">
+                  <!-- <svg class="payment__icon" width="25" height="54">
                     <use xlink:href="img/sprite.svg#icon-uniteller"></use>
-                  </svg>
+                  </svg> -->
+                  <img class="payment__icon" src="../../img/icons/icon-uniteller.svg" alt="uniteller">
                 </a>
               </li>
             </ul>

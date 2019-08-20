@@ -255,7 +255,8 @@ return k({},n(this))}function Bc(){return n(this).overflow}function Cc(){return{
   });
 })(); /* IIFE end */
 (function() {
-  var fields = document.querySelectorAll('input[name^="js-"]');
+  var fields = document.querySelectorAll('input[name^="js-"]'),
+    submitBtn = document.querySelector(".search-form__btn-submit");
 
   if (fields) {
     fields.forEach(function(field) {
@@ -281,4 +282,11 @@ return k({},n(this))}function Bc(){return n(this).overflow}function Cc(){return{
       });
     });
   }
+  if (submitBtn) {
+    submitBtn.addEventListener('click', function(evt){
+      evt.preventDefault();
+      document.location.href = "hotels.html";
+    });
+  }
+
 })();

@@ -48,6 +48,7 @@
   }
 })();
 
+
 // var popup = document.querySelector(".popup");
 var popups = document.querySelectorAll(".popup");
 var popupOverlay = document.querySelector(".popup-overlay");
@@ -84,49 +85,7 @@ popupOpenBtns.forEach(function(btn) {
   });
 });
 
-var stepsPopup = function() {
-  var popupSteps = document.querySelectorAll("[data-step^=step]");
 
-  if (popupSteps) {
-    popupSteps.forEach(function(step) {
-      var name = step.getAttribute("data-step");
-
-      step.classList.remove("active");
-      step.classList.add("closed");
-
-      if (name == "step-registration") {
-        step.classList.add("active");
-        step.classList.remove("closed");
-
-        document
-          .querySelector(".step-registration__btn")
-          .addEventListener("click", function(evt) {
-            evt.preventDefault();
-
-            step.classList.remove("active");
-            step.classList.add("closed");
-
-            var activeStep = step.nextElementSibling;
-
-            activeStep.classList.remove("closed");
-            activeStep.classList.add("active");
-
-            document
-              .querySelector("#js-btn-confirm")
-              .addEventListener("click", function(evt) {
-                evt.preventDefault();
-
-                activeStep.classList.remove("active");
-                activeStep.classList.add("closed");
-
-                activeStep.nextElementSibling.classList.remove("closed");
-                activeStep.nextElementSibling.classList.add("active");
-              });
-          });
-      }
-    });
-  }
-};
 
 // var activeStep = function(step) {
 //   document.querySelectorAll("[data-step^=step]").forEach(function(step) {
@@ -251,11 +210,18 @@ var stepsPopup = function() {
 })();
 (function(){
   var openBtns = document.querySelectorAll(".accordion__item-title"),
-    closeBtns = document.querySelectorAll(".accordion__btn-close");
+    closeBtns = document.querySelectorAll(".accordion__btn-close"),
+    descItems = document.querySelectorAll(".accordion__desc");
 
   openBtns.forEach(function(item){
     item.addEventListener('click', function(evt){
       evt.preventDefault();
+
+      descItems.forEach(function(desc) {
+        desc.classList.remove("active");
+        desc.style.maxHeight = "0";
+      });
+
       var text = item.nextElementSibling;
       text.style.maxHeight = text.scrollHeight + 'px';
       text.classList.toggle('active');
@@ -276,48 +242,90 @@ var stepsPopup = function() {
 })();
 (function() {
   var btns = document.querySelectorAll(".js-btn-more");
-  btns.forEach(function(btn){
-    btn.addEventListener('click', function(evt) {
+  btns.forEach(function(btn) {
+    btn.addEventListener("click", function(evt) {
       evt.preventDefault();
       var content =
-        btn.parentNode.parentNode.parentNode.nextElementSibling;
-      console.log(content);
+        btn.parentElement.parentElement.parentElement.nextElementSibling;
 
-      btn.classList.toggle('active');
-      content.classList.toggle('active');
-      // content.classList.toggle('closed');
+      btn.classList.toggle("active");
+      content.classList.toggle("active");
+    });
 
-      var items = document.querySelectorAll(".js-tab-trigger");
-      var contents = document.querySelectorAll(".js-tab-content");
+    var items = document.querySelectorAll(".js-tab-trigger");
+    var contents = document.querySelectorAll(".js-tab-content");
 
-      items.forEach(function(item) {
-        item.addEventListener("click", function(evt) {
-          evt.preventDefault();
+    for (var i = 0; i < items.length; i++) {
+      var tabName = items[i].getAttribute("data-tab");
+      items[i].setAttribute("data-tab", tabName + "-" + i);
+    }
+    for (var i = 0; i < contents.length; i++) {
+      var tabName = contents[i].getAttribute("data-tab");
+      contents[i].setAttribute("data-tab", tabName + "-" + i);
+    }
 
-          for (var i = 0; i < items.length; i++) {
-            items[i].classList.remove("active");
-          }
-          for (var i = 0; i < contents.length; i++) {
-            contents[i].classList.remove("active");
-          }
+    items.forEach(function(item) {
+      item.addEventListener("click", function(evt) {
+        evt.preventDefault();
 
-          var tabName = this.getAttribute("data-tab");
+        var contentAll = document.querySelectorAll(".hotel-item__content");
 
-          var activeItem = document.querySelector(
-            ".tabs__item[data-tab='" + tabName + "']"
-          );
-          var activeContent = document.querySelector(
-            ".tabs__panel[data-tab='" + tabName + "']"
-          );
+        for (var i = 0; i < contentAll.length; i++) {
+          contentAll[i].classList.remove("active");
+        }
 
-          activeItem.classList.add("active");
-          activeContent.classList.add("active");
-        });
+        var content = this.parentElement.parentElement.parentElement
+          .parentElement.nextElementSibling;
+
+        content.classList.add("active");
+
+        for (var i = 0; i < items.length; i++) {
+          items[i].classList.remove("active");
+        }
+        for (var i = 0; i < contents.length; i++) {
+          contents[i].classList.remove("active");
+        }
+
+        var tabName = this.getAttribute("data-tab");
+
+        var activeItem = document.querySelector(
+          ".tabs__item[data-tab='" + tabName + "']"
+        );
+        var activeContent = document.querySelector(
+          ".tabs__panel[data-tab='" + tabName + "']"
+        );
+
+        activeItem.classList.add("active");
+        activeContent.classList.add("active");
       });
     });
   });
 
-  
+  // сортировка по цене
+  // 1. массив цен
+  var priceHotels = document.querySelectorAll(".hotel-item__info-price");
+  var arrHotelPrices = [].map.call(priceHotels, function(obj) {
+    return obj.innerText
+      .slice(0, -1)
+      .replace(/\s/g, "")
+      .split(",");
+  });
+
+  for (var i = 0; i < arrHotelPrices.length; i++) {
+    arrHotelPrices[i] = +arrHotelPrices[i];
+  }
+
+  function compareNumeric(a, b) {
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
+  }
+
+
+  arrHotelPrices.sort(compareNumeric);
+
+
+  console.log(arrHotelPrices);
 })();
 (function() {
   CardInfo.setDefaultOptions({
@@ -449,3 +457,140 @@ $(".custom-option").on("click", function() {
     .find(".custom-select-trigger")
     .text($(this).text());
 });
+var stepsForm = function() {
+  var steps = document.querySelectorAll("[data-step^=step]");
+
+  if (steps) {
+    steps.forEach(function(step) {
+      var name = step.getAttribute("data-step");
+
+      step.classList.remove("active");
+      step.classList.add("closed");
+
+      if (name == "step-registration") {
+        step.classList.add("active");
+        step.classList.remove("closed");
+
+        document
+          .querySelector(".step-registration__btn")
+          .addEventListener("click", function(evt) {
+            evt.preventDefault();
+
+            step.classList.remove("active");
+            step.classList.add("closed");
+
+            var activeStep = step.nextElementSibling;
+
+            activeStep.classList.remove("closed");
+            activeStep.classList.add("active");
+
+            document
+              .querySelector("#js-btn-confirm")
+              .addEventListener("click", function(evt) {
+                evt.preventDefault();
+
+                document.location.href = "/cabinet-2.html";
+
+                // activeStep.classList.remove("active");
+                // activeStep.classList.add("closed");
+
+                // activeStep.nextElementSibling.classList.remove("closed");
+                // activeStep.nextElementSibling.classList.add("active");
+              });
+          });
+      }
+
+      if (document.querySelector("#js-btn-step-price")) {
+        document
+          .querySelector("#js-btn-step-price")
+          .addEventListener("click", function(evt) {
+            evt.preventDefault();
+
+            document.location.href = "/cabinet-4.html";
+          });
+      }
+
+      // 4 шаг
+
+      if (name == "step-four-1") {
+        step.classList.add("active");
+        step.classList.remove("closed");
+
+        var activeStep = step.nextElementSibling;
+
+        activeStep.classList.remove("closed");
+        activeStep.classList.add("active");
+
+        var moreBtns = document.querySelectorAll("[data-btn^=js]");
+        moreBtns.forEach(function(btn) {
+          btn.addEventListener("click", function(evt) {
+            evt.preventDefault();
+
+            step.classList.remove("active");
+            step.classList.add("closed");
+
+            // document.location.href = "/cabinet-2.html";
+
+            activeStep.classList.remove("active");
+            activeStep.classList.add("closed");
+
+            activeStep.nextElementSibling.classList.remove("closed");
+            activeStep.nextElementSibling.classList.add("active");
+          });
+        });
+
+
+
+        document
+          .querySelector("[data-btn=js-step-more-2]")
+          .addEventListener("click", function(evt) {
+            evt.preventDefault();
+
+            step.classList.remove("active");
+            step.classList.add("closed");
+
+            // document.location.href = "/cabinet-2.html";
+
+            activeStep.classList.remove("active");
+            activeStep.classList.add("closed");
+
+            activeStep.nextElementSibling.classList.remove("closed");
+            activeStep.nextElementSibling.classList.add("active");
+          });
+      }
+    });
+  }
+};
+
+stepsForm();
+
+
+(function() {
+  var links = document.querySelectorAll(".page-section__link span");
+  links.forEach(function(link) {
+    if (link && window.outerWidth < 600) {
+      link.innerHTML = "Ещё";
+    }
+  });
+
+
+  function up(smooth) {
+    var top = Math.max(
+      document.body.scrollTop,
+      document.documentElement.scrollTop
+    );
+    if (top > 0) {
+      var behavior = smooth ? "smooth" : "auto";
+      window.scrollBy({ behavior: behavior, top: 700, left: 0 });
+    }
+    return false;
+  }
+
+  var scrollBtns = document.querySelectorAll(".page-section__btn");
+  scrollBtns.forEach(function(btn) {
+    btn.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      up(true);
+    });
+  });
+})();

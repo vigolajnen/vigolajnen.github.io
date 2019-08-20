@@ -95,21 +95,27 @@
       <div class="steps__content">
         <!-- //= template/module/_step-authorization.html -->
         <!-- //= template/module/_step-registration.html -->
-        <div id="cards" class="step-cards" data-step="step-cards">
-          <div id="front" class="step-cards__front">
-            <a target="_blank" href="#" id="bank-link"></a>
-            <img src="/" alt="brand-logo" id="brand-logo">
-            <div id="front-fields">
-              <input class="field" id="number" type="text" placeholder="0000 0000 0000 0000">
-              <label class="label">Valid thru</label>
-              <input class="field expired" id="mm" type="text" placeholder="MM">
-              <input class="field expired" id="yy" type="text" placeholder="YY">
+        <div id="cards" class="step-cards">
+          <div class="step-cards__body">
+            <div id="front" class="step-cards__front">
+              <a target="_blank" href="#" id="bank-link"></a>
+              <img src="/" alt="brand-logo" id="brand-logo">
+              <div id="front-fields">
+                <input class="field" id="number" type="text" placeholder="0000 0000 0000 0000">
+                <label class="label">Valid thru</label>
+                <input class="field expired" id="mm" type="text" placeholder="MM">
+                <input class="field expired" id="yy" type="text" placeholder="YY">
+              </div>
+            </div>
+            <div id="back">
+              <input class="field" id="code" type="password" placeholder="">
+              <label id="code-label" class="label">Safety code</label>
             </div>
           </div>
-          <div id="back">
-            <input class="field" id="code" type="password" placeholder="">
-            <label id="code-label" class="label">Safety code</label>
+          <div class="step-cards__footer">
+            <a class="link link--button" href="cabinet-3.html">Далее</a>
           </div>
+        
         </div>
       </div>
 
@@ -191,9 +197,10 @@
               </li>
               <li class="payment__item">
                 <a class="payment__link" href="#" aria-label="Uniteller">
-                  <svg class="payment__icon" width="25" height="54">
+                  <!-- <svg class="payment__icon" width="25" height="54">
                     <use xlink:href="img/sprite.svg#icon-uniteller"></use>
-                  </svg>
+                  </svg> -->
+                  <img class="payment__icon" src="../../img/icons/icon-uniteller.svg" alt="uniteller">
                 </a>
               </li>
             </ul>

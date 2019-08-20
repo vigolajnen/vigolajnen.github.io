@@ -63,7 +63,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #1a1a1a; }
+  color: #1a1a1a;
+  scroll-behavior: smooth; }
 
 img {
   max-width: 100%;
@@ -481,6 +482,9 @@ img {
             align-items: flex-start;
     width: 100%;
     text-align: left; }
+    .accordion__item-title--border {
+      margin-bottom: calc(var(--padding-and-margin) / 2);
+      border-bottom: 1px solid #dcdfe6; }
   .accordion__desc {
     position: relative;
     max-height: 0;
@@ -489,6 +493,7 @@ img {
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
     .accordion__desc.active {
+      max-height: auto;
       opacity: 1;
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
@@ -500,6 +505,9 @@ img {
       fill: #0075ab; }
   .accordion__text {
     padding: 1.25rem 0; }
+    .accordion__text--border {
+      margin-bottom: calc(var(--padding-and-margin) / 2);
+      border-bottom: 1px solid #dcdfe6; }
   .accordion__title {
     position: relative;
     margin-right: auto;
@@ -527,7 +535,7 @@ img {
   .accordion__pic {
     width: 3rem;
     height: 3rem;
-    margin-right: .625rem; }
+    margin-right: 0.625rem; }
   .accordion .expand-collapse {
     position: absolute;
     top: 0;
@@ -546,6 +554,24 @@ img {
       position: absolute;
       top: 0;
       right: 5px; }
+  .accordion__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 3.625rem; }
+  .accordion__list-item {
+    margin-bottom: calc(var(--padding-and-margin) / 2); }
+  .accordion__list-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "Google Sans Bold", Arial, sans-serif;
+    font-weight: 600; }
+  .accordion__list-price {
+    color: #1a1a1a; }
 
 .page-header {
   position: relative;
@@ -1451,12 +1477,29 @@ img {
       .panel__sidebar {
         width: 25%; } }
   .panel__main {
+    max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     @media (min-width: 769px) {
       .panel__main {
         width: 75%; } }
+  .panel__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .panel__items-item {
+      margin-bottom: calc(var(--padding-and-margin) * 2); }
+      .panel__items-item-text {
+        margin-right: var(--padding-and-margin);
+        font-family: "Google Sans Bold", Arial, sans-serif;
+        font-weight: 600; }
 
 .sidemenu {
   list-style: none;
@@ -1903,6 +1946,57 @@ img {
 .custom-option:hover,
 .custom-option.selection {
   background: #f9f9f9; }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  overflow-x: auto; }
+  .table__header {
+    background-color: #f5feff; }
+    @media (max-width: 599px) {
+      .table__header {
+        display: none; } }
+  .table__body .table__row {
+    border-bottom: 1px solid #dcdfe6; }
+  .table__row {
+    position: relative;
+    max-width: 100%; }
+    @media (max-width: 599px) {
+      .table__row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 1.25rem; } }
+  .table__title {
+    padding: 1.25rem;
+    color: #808080; }
+  .table__field {
+    position: relative;
+    padding: 1.25rem;
+    padding-bottom: calc(var(--padding-and-margin) * 1.5);
+    vertical-align: top;
+    font-family: "Google Sans Bold", Arial, sans-serif;
+    font-weight: 600; }
+    @media (max-width: 599px) {
+      .table__field {
+        width: 100%;
+        max-width: 12.5rem;
+        padding: 1.25rem 0;
+        font-size: 80%; }
+        .table__field::before {
+          position: absolute;
+          content: attr(data-name);
+          top: 0;
+          left: 0;
+          color: #808080; } }
+    .table__field a {
+      word-break: break-all; }
 
 .page-footer {
   padding: 2.5rem 0;
