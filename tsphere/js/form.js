@@ -259,26 +259,53 @@ return k({},n(this))}function Bc(){return n(this).overflow}function Cc(){return{
     submitBtn = document.querySelector(".search-form__btn-submit");
 
   if (fields) {
-    fields.forEach(function(field) {
-      field.addEventListener("focus", function(evt) {
-        field.focused = true;
+    fields.forEach(function (field) {
 
-        var listOptions = field.parentElement.parentElement.nextElementSibling;
+      function hideHandler(evt) {
+        console.log(evt.target == field);
+        console.log(evt.target == listOptions);
+        if (evt.target == field || evt.target == listOptions) return;
 
-        listOptions.classList.add("active");
-        listOptions.classList.remove("closed");
+        toggleListOptions(false);
+      }
 
-        listOptions.addEventListener("click", function(evt) {
+      function toggleListOptions(isActiv) {
+        if (isActiv) {
+          listOptions.classList.add("active");
+          listOptions.classList.remove("closed");
+          document.addEventListener('click', hideHandler);
+        } else {
+          listOptions.classList.remove("active");
+          listOptions.classList.add("closed");
+          document.removeEventListener('click', hideHandler);
+        }
+      }
+
+      var listOptions = field.parentElement.parentElement.nextElementSibling;
+      listOptions.addEventListener("click", function(evt) {
           evt.preventDefault();
+          evt.stopPropagation();
+
           var targetName = event.target.innerText;
 
           field.value = targetName;
 
-          listOptions.classList.remove("active");
-          listOptions.classList.add("closed");
+          toggleListOptions(false);
 
           return field.value;
-        });
+      });
+      
+      field.addEventListener("focus", function(evt) {
+        field.focused = true;
+
+        var activeOption = document.querySelector('.search-form__options.active');
+        if (activeOption) {
+          activeOption.classList.add('closed');
+          activeOption.classList.remove('active');
+        }
+
+        toggleListOptions(true);
+
       });
     });
   }
@@ -288,5 +315,7 @@ return k({},n(this))}function Bc(){return n(this).overflow}function Cc(){return{
       document.location.href = "hotels.html";
     });
   }
+
+  
 
 })();

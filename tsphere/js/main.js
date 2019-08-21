@@ -208,13 +208,27 @@ popupOpenBtns.forEach(function(btn) {
   //   });
   // });
 })();
-(function(){
+(function() {
   var openBtns = document.querySelectorAll(".accordion__item-title"),
     closeBtns = document.querySelectorAll(".accordion__btn-close"),
     descItems = document.querySelectorAll(".accordion__desc");
 
-  openBtns.forEach(function(item){
-    item.addEventListener('click', function(evt){
+  var accItems = document.querySelectorAll(".accordion");
+
+
+  function firstActiveItem(acc) {
+    var firstItem = acc.querySelector(".accordion__item:first-child"),
+      firstDesc = firstItem.querySelector(".accordion__desc");
+    firstDesc.style.maxHeight = firstDesc.scrollHeight + "px";
+    firstDesc.classList.add("active");
+  }
+
+  accItems.forEach(function(acc) {
+    firstActiveItem(acc);
+  });
+
+  openBtns.forEach(function(item) {
+    item.addEventListener("click", function(evt) {
       evt.preventDefault();
 
       descItems.forEach(function(desc) {
@@ -223,11 +237,10 @@ popupOpenBtns.forEach(function(btn) {
       });
 
       var text = item.nextElementSibling;
-      text.style.maxHeight = text.scrollHeight + 'px';
-      text.classList.toggle('active');
+      text.style.maxHeight = text.scrollHeight + "px";
+      text.classList.toggle("active");
 
-      if (!text.classList.contains('active')) text.style.maxHeight = "0";
-
+      if (!text.classList.contains("active")) text.style.maxHeight = "0";
     });
   });
 
@@ -457,112 +470,91 @@ $(".custom-option").on("click", function() {
     .find(".custom-select-trigger")
     .text($(this).text());
 });
-var stepsForm = function() {
-  var steps = document.querySelectorAll("[data-step^=step]");
+(function() {
+  var stepAuthorization = function() {
+    var stepAgreement = document.querySelector(".agreement");
+    if (stepAgreement)
+      var btn = stepAgreement.querySelector("[data-btn=js-step-btn]");
 
-  if (steps) {
-    steps.forEach(function(step) {
-      var name = step.getAttribute("data-step");
+    var stepPhoneCode = document.querySelector(".step-authorization");
+    if (stepPhoneCode)
+      var confirmBtn = stepPhoneCode.querySelector("[data-btn=js-step-btn]");
 
-      step.classList.remove("active");
-      step.classList.add("closed");
+    if (btn) {
+      btn.addEventListener("click", function(evt) {
+        evt.preventDefault();
 
-      if (name == "step-registration") {
-        step.classList.add("active");
-        step.classList.remove("closed");
+        stepAgreement.classList.remove("active");
+        stepAgreement.classList.add("closed");
+        stepAgreement.parentElement.style.display = "none";
 
-        document
-          .querySelector(".step-registration__btn")
-          .addEventListener("click", function(evt) {
-            evt.preventDefault();
+        stepPhoneCode.classList.add("active");
+        stepPhoneCode.classList.remove("closed");
+        stepPhoneCode.parentElement.style.display = "flex";
+      });
+    }
 
-            step.classList.remove("active");
-            step.classList.add("closed");
+    if (confirmBtn) {
+      confirmBtn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        document.location.href = "cabinet-2.html";
+      });
+    }
+  };
 
-            var activeStep = step.nextElementSibling;
+  var stepOfferPrice = function() {
+    var stepBlock = document.querySelector(".step-offer-price");
+    if (stepBlock) var btn = stepBlock.querySelector("[data-btn=js-step-btn]");
 
-            activeStep.classList.remove("closed");
-            activeStep.classList.add("active");
+    if (btn) {
+      btn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        document.location.href = "cabinet-4.html";
+      });
+    }
+  };
 
-            document
-              .querySelector("#js-btn-confirm")
-              .addEventListener("click", function(evt) {
-                evt.preventDefault();
+  var stepMaking = function() {
+    var rateItem = document.querySelector(".rate");
+    var dataItem = document.querySelector(".data");
+    var tourDurationItem = document.querySelector(".tour-duration");
 
-                document.location.href = "/cabinet-2.html";
+    if (rateItem) var btn = rateItem.querySelector("[data-btn=js-step-btn]");
+    if (dataItem)
+      var dataBtn = dataItem.querySelector("[data-btn=js-step-btn]");
 
-                // activeStep.classList.remove("active");
-                // activeStep.classList.add("closed");
+    if (btn) {
+      btn.addEventListener("click", function(evt) {
+        evt.preventDefault();
 
-                // activeStep.nextElementSibling.classList.remove("closed");
-                // activeStep.nextElementSibling.classList.add("active");
-              });
-          });
-      }
+        rateItem.classList.remove("active");
+        rateItem.classList.add("closed");
+        rateItem.parentElement.style.display = "none";
 
-      if (document.querySelector("#js-btn-step-price")) {
-        document
-          .querySelector("#js-btn-step-price")
-          .addEventListener("click", function(evt) {
-            evt.preventDefault();
+        dataItem.classList.add("active");
+        dataItem.classList.remove("closed");
+        dataItem.parentElement.style.display = "flex";
+      });
+    }
+    if (dataBtn) {
+      dataBtn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        console.log(dataBtn);
+        dataItem.classList.remove("active");
+        dataItem.classList.add("closed");
+        dataItem.parentElement.style.display = "none";
 
-            document.location.href = "/cabinet-4.html";
-          });
-      }
+        tourDurationItem.classList.add("active");
+        tourDurationItem.classList.remove("closed");
+        tourDurationItem.parentElement.style.display = "flex";
+      });
+    }
+  };
 
-      // 4 шаг
-
-      if (name == "step-four-1") {
-        step.classList.add("active");
-        step.classList.remove("closed");
-
-        var activeStep = step.nextElementSibling;
-
-        activeStep.classList.remove("closed");
-        activeStep.classList.add("active");
-
-        var moreBtns = document.querySelectorAll("[data-btn^=js]");
-        moreBtns.forEach(function(btn) {
-          btn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-
-            step.classList.remove("active");
-            step.classList.add("closed");
-
-            // document.location.href = "/cabinet-2.html";
-
-            activeStep.classList.remove("active");
-            activeStep.classList.add("closed");
-
-            activeStep.nextElementSibling.classList.remove("closed");
-            activeStep.nextElementSibling.classList.add("active");
-          });
-        });
-
-
-
-        document
-          .querySelector("[data-btn=js-step-more-2]")
-          .addEventListener("click", function(evt) {
-            evt.preventDefault();
-
-            step.classList.remove("active");
-            step.classList.add("closed");
-
-            // document.location.href = "/cabinet-2.html";
-
-            activeStep.classList.remove("active");
-            activeStep.classList.add("closed");
-
-            activeStep.nextElementSibling.classList.remove("closed");
-            activeStep.nextElementSibling.classList.add("active");
-          });
-      }
-    });
-  }
-};
-
-stepsForm();
+  stepAuthorization();
+  stepOfferPrice();
+  stepMaking();
+})();
 
 
 (function() {
