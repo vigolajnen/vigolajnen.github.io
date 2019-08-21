@@ -609,6 +609,17 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: var(--padding-and-margin) 0; }
+  .page-header__search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: calc(var(--padding-and-margin) * 4) 0;
+    border-top: 1px solid #dcdfe6; }
 
 .phone {
   display: -webkit-box;
@@ -2665,6 +2676,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -2679,6 +2693,24 @@ img {
   .filters .custom-options {
     left: -110px;
     min-width: 11.25rem; }
+  .filters__icon {
+    padding-left: 10px;
+    width: .9375rem;
+    height: .9375rem;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box; }
+  .filters .custom-select-trigger:after {
+    top: 80%;
+    border: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/icon-arrow_sort_up.svg"); }
+  .filters .custom-select.opened .custom-select-trigger:after {
+    -webkit-transform: rotate(0deg) translateY(-150%);
+            transform: rotate(0deg) translateY(-150%); }
 
 .page-error {
   display: -webkit-box;
@@ -3256,6 +3288,10 @@ ul {
   padding: var(--padding-and-margin) 0;
   margin-bottom: var(--padding-and-margin);
   text-align: center; }
+
+.step-contacts__icon {
+  width: 6.25rem;
+  height: 6.25rem; }
 
 .offices-address {
   padding: 1.25rem 0; }

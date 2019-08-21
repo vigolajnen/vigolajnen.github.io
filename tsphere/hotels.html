@@ -7,13 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
 <body class="page">
-  <!-- //= template/module/_mobile-menu.html -->
-
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__container container">
@@ -64,6 +63,230 @@
           </div>
         </nav>
       </div>
+      <div class="page-header__search-form container--center">
+    
+        <div class="search-form">
+          <div class="search-form__inner">
+            <ul class="search-form__list">
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <div class="search-form__field" data-form="form-where-from">
+                    <label class="search-form__title" for="search-form-where-from">Откуда</label>
+                    <input id="search-form-where-from" class="search-form__val" type="text" name="js-field-where-from"
+                      placeholder="Город">
+                    <button class="button search-form__btn" aria-label="Кнопка очистки результата">
+                      <svg class="search-form__btn-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search_where"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+        
+                <div class="search-form__options closed" tabindex="0" data-form="form-where-from">
+                  <ul class="search-form__options-list" tabindex="0">
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Санкт-Петербург, Россия</span>
+                      <span>led</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Самуи, Тайланд</span>
+                      <span>usm</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Салоники, Греция</span>
+                      <span>skg</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Южно-Сахалинск, Россия</span>
+                      <span>uus</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Самара, Россия</span>
+                      <span>kuf</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <div class="search-form__field" data-form="form-where">
+                    <label class="search-form__title" for="search-form-where">Куда</label>
+                    <input id="search-form-where" class="search-form__val" type="text" name="js-field-where"
+                      placeholder="Направление">
+                    <button class="button search-form__btn" aria-label="Кнопка очистки результата">
+                      <svg class="search-form__btn-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search_where"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+        
+                <div class="search-form__options closed" tabindex="0" data-form="form-where">
+                  <ul class="search-form__options-list" tabindex="0">
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Санкт-Петербург, Россия</span>
+                      <span>led</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Самуи, Тайланд</span>
+                      <span>usm</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Салоники, Греция</span>
+                      <span>skg</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Южно-Сахалинск, Россия</span>
+                      <span>uus</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Самара, Россия</span>
+                      <span>kuf</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <div class="search-form__field">
+                    <label class="search-form__title" for="search-form-3">Вылет - Прилет</label>
+                    <input id="search-form-3" class="search-form__val" type="text" name="datefilter"
+                      placeholder="20 Июл - 27 Июл">
+                    <button class="button search-form__btn search-form__btn-del" aria-label="Кнопка очистки результата">
+                      <svg class="search-form__btn-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search_clear"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+        
+              </li>
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <div class="search-form__field" data-form="form-night">
+                    <label class="search-form__title" for="search-form-night">Ночей</label>
+                    <input id="search-form-night" class="search-form__val" type="text" name="js-field-night"
+                      placeholder="6 - 14">
+                    <button class="button search-form__btn" aria-label="Стрелка">
+                      <svg class="search-form__btn-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search_choose_open"></use>
+                      </svg>
+                    </button>
+        
+                  </div>
+                </div>
+        
+                <div class="search-form__options closed" tabindex="0" data-form="form-night">
+                  <ul class="search-form__options-list" tabindex="0">
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>1-2</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>3-4</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>4-6</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>8-10</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <fieldset class="search-form__group">
+                    <legend class="search-form__group-title">Туристы</legend>
+                    <ul class="search-form__group-list">
+                      <li class="search-form__group-item">
+                        <div class="search-form__group-field">
+                          <label class="visually-hidden" for="search-form-adlt">Взрослые</label>
+                          <input id="search-form-adlt" class="search-form__val" type="text" name="search-form-adlt"
+                            placeholder="0">
+                          <button class="button search-form__btn" aria-label="Кнопка очистки результата">
+                            <svg class="search-form__btn-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-search_adlt"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="search-form__group-item">
+                        <div class="search-form__group-field">
+                          <label class="visually-hidden" for="search-form-kids">Дети</label>
+                          <input id="search-form-kids" class="search-form__val" type="text" name="search-form-kids"
+                            placeholder="0">
+                          <button class="button search-form__btn" aria-label="Кнопка очистки результата">
+                            <svg class="search-form__btn-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-search_kids"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+        
+              </li>
+              <li class="search-form__item">
+                <button class="button search-form__btn-submit" type="submit">Найти</button>
+              </li>
+            </ul>
+            <!-- <div class="search-form__inner-options">
+              <div class="search-form__options closed" tabindex="0" data-form="form-where-from">
+                <ul class="search-form__options-list" tabindex="0">
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Санкт-Петербург, Россия</span>
+                    <span>led</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Самуи, Тайланд</span>
+                    <span>usm</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Салоники, Греция</span>
+                    <span>skg</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Южно-Сахалинск, Россия</span>
+                    <span>uus</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Самара, Россия</span>
+                    <span>kuf</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="search-form__options closed" tabindex="0" data-form="form-where">
+                <ul class="search-form__options-list" tabindex="0">
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Санкт-Петербург, Россия</span>
+                    <span>led</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Самуи, Тайланд</span>
+                    <span>usm</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Салоники, Греция</span>
+                    <span>skg</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Южно-Сахалинск, Россия</span>
+                    <span>uus</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Самара, Россия</span>
+                    <span>kuf</span>
+                  </li>
+                </ul>
+              </div>
+        
+            </div> -->
+          </div>
+        </div>
+    
+    
+      </div>
     
     </header>
     <div class="breadcrumb container">
@@ -77,7 +300,7 @@
           <div class="filters">
             <div class="filters__item">
               <label class="filters__label" for="page-form-sort">Сортировать по</label>
-              <select id="page-form-sort" class="custom-select" name="page-form-sort" placeholder="цене">
+              <select id="page-form-sort" class="custom-select" name="page-form-sort" data-placeholder="цене">
                 <option value="цене">цене</option>
                 <option value="цене3">цене3</option>
                 <option value="цене4">цене4</option>
@@ -89,10 +312,16 @@
             <div class="filters__item"></div>
             <div class="filters__item">
               <span>Туроператоры</span>
+              <svg class="filters__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-filter"></use>
+              </svg>
           
             </div>
             <div class="filters__item">
               <span>Следить за ценой</span>
+              <svg class="filters__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-watch"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -1196,6 +1425,7 @@
   <script>
     svg4everybody();
   </script>
+  <script src="js/form.min.js"></script>
 </body>
 
 </html>

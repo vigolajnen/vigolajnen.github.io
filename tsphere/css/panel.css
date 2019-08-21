@@ -587,6 +587,17 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: var(--padding-and-margin) 0; }
+  .page-header__search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: calc(var(--padding-and-margin) * 4) 0;
+    border-top: 1px solid #dcdfe6; }
 
 .mob-navigation {
   padding: 0 0.9375rem;

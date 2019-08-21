@@ -338,7 +338,7 @@ popupOpenBtns.forEach(function(btn) {
   arrHotelPrices.sort(compareNumeric);
 
 
-  console.log(arrHotelPrices);
+
 })();
 (function() {
   CardInfo.setDefaultOptions({
