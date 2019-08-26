@@ -221,6 +221,9 @@ popupOpenBtns.forEach(function(btn) {
       firstDesc = firstItem.querySelector(".accordion__desc");
     firstDesc.style.maxHeight = firstDesc.scrollHeight + "px";
     firstDesc.classList.add("active");
+     firstItem.firstElementChild.lastElementChild.classList.add(
+       "accordion__btn-close"
+     );
   }
 
   accItems.forEach(function(acc) {
@@ -234,7 +237,10 @@ popupOpenBtns.forEach(function(btn) {
       descItems.forEach(function(desc) {
         desc.classList.remove("active");
         desc.style.maxHeight = "0";
+        desc.previousElementSibling.lastElementChild.classList.remove("accordion__btn-close");
       });
+
+      item.lastElementChild.classList.add("accordion__btn-close");
 
       var text = item.nextElementSibling;
       text.style.maxHeight = text.scrollHeight + "px";
@@ -250,6 +256,9 @@ popupOpenBtns.forEach(function(btn) {
       var text = item.parentElement;
       text.style.maxHeight = "0";
       text.classList.remove("active");
+
+      item.lastElementChild.classList.remove("accordion__btn-close");
+
     });
   });
 })();
