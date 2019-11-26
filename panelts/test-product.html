@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Турсфера</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/panel.min.css" />
+</head>
+
+<body class="page">
+
+  <div id="app" class="wrapper">
+    <header id="app-header" class="page-header">
+      <div class="page-header__container container">
+        <nav class="navigation">
+          <button class="navigation__toggle navigation--opened button button--link" type="button" aria-label="Открыть меню">
+            <svg width="25" viewbox="0 0 10 10" fill="#ffcb00">
+              <rect width="10" height="1.5" x="0" y="0" />
+              <rect width="10" height="1.5" x="0" y="3" />
+              <rect width="10" height="1.5" x="0" y="6" />
+            </svg>
+          </button>
+          <div class="navigation__logo-and-phone">
+            <a class="navigation__logo logo" href="index.html">
+              <img class="img-full" src="img/logo.png" alt="логотип компании">
+            </a>
+          </div>
+          <a class="page-header__exit" href="#">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#icon-exit"></use>
+            </svg>
+            <span class="page-header__user-name">Выход / Смирнов В.И.</span>
+          </a>
+    
+        </nav>
+    
+        <!-- <nav class="navigation">
+          <a class="logo" href="index.html">
+            <img class="img-full" src="img/logo.png" alt="логотип компании">
+          </a>
+        </nav>
+    
+        <template id="slidemenu">
+          <div class="menu">
+            <div :class="['menu__burger', {'menu__burger--open': this.open}]" @click="toggleNav">
+              <span class="menu__burger__span"></span>
+            </div>
+            <nav :class="['menu__nav', {'menu__nav--open': this.open}]">
+              <ul class="menu__list">
+                <li class="menu__list__item">
+                  <a href="#" class="menu__link">Link</a>
+                </li>
+                <li class="menu__list__item">
+                  <a href="#" class="menu__link">Link</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </template> -->
+      </div>
+    
+    </header>
+    <div class="panel container main">
+      <div class="panel__inner">
+        <aside class="panel__sidebar sidebar">
+          <ul class="sidemenu">
+            <li class="sidemenu__item">
+              <a class="sidemenu__link link active" href="panel.html">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-buyers"></use>
+                </svg>
+                <span class="sidemenu__item-name">Покупатели</span>
+              </a>
+            </li>
+            <li class="sidemenu__item">
+              <a class="sidemenu__link link" href="panel-2.html">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-goods"></use>
+                </svg>
+                <span class="sidemenu__item-name">Мои товары</span>
+              </a>
+            </li>
+            <li class="sidemenu__item">
+              <a class="sidemenu__link link" href="panel-3.html">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-offer"></use>
+                </svg>
+                <span class="sidemenu__item-name">Оферты с ожиданием</span>
+              </a>
+            </li>
+            <li class="sidemenu__item">
+              <a class="sidemenu__link link" href="panel-4.html">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-finance"></use>
+                </svg>
+                <span class="sidemenu__item-name">Продажи</span>
+              </a>
+            </li>
+            <li class="sidemenu__item">
+              <a class="sidemenu__link link" href="panel-5.html">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-stats"></use>
+                </svg>
+                <span class="sidemenu__item-name">Статистика</span>
+              </a>
+            </li>
+            <li class="sidemenu__item">
+              <a class="sidemenu__link link" href="panel-6.html">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-reports"></use>
+                </svg>
+                <span class="sidemenu__item-name">Отчеты</span>
+              </a>
+            </li>
+            <li class="sidemenu__item">
+              <a class="sidemenu__link link" href="panel-7.html">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-settings"></use>
+                </svg>
+                <span class="sidemenu__item-name">Настройки</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <main class="panel__main">
+          <h1 class="page__title">Тестовый товар</h1>
+          <table class="table">
+            <thead class="table__header">
+              <tr class="table__row">
+                <td class="table__title">Название</td>
+                <td class="table__title">Артикул</td>
+                <td class="table__title">Рег. цена</td>
+                <td class="table__title">Мин. цена</td>
+                <td class="table__title">Мин. мин. цена</td>
+                <td class="table__title">Мин. кол-во</td>
+                <td class="table__title">Кол-во оферт</td>
+                <td class="table__title">На сумму</td>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__field" data-name="Название"><a class="link" href="#">Тестовый товар</a></td>
+                <td class="table__field" data-name="Артикул">100</td>
+                <td class="table__field" data-name="Рег. цена">120000.00</td>
+                <td class="table__field" data-name="Мин. цена">110000.00</td>
+                <td class="table__field" data-name="Мин. мин. цена">110000.00</td>
+                <td class="table__field" data-name="Мин. кол-во">1</td>
+                <td class="table__field" data-name="Кол-во оферт">1</td>
+                <td class="table__field" data-name="На сумму">110.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="panel__row">
+            <div class="date">
+              <div class="date__item">
+                <div class="date__field">
+
+
+                  <div id="range">
+                    <range title="Минимальное кол-во"></range>
+                    <range title="Минимальная цена"></range>
+                  </div>
+
+
+                </div>
+
+              </div>
+              <div class="date__item">
+                <table class="date__table table">
+                  <tbody>
+                    <tr>
+                      <td>Статус пакета оферт</td>
+                      <td>Будут приняты</td>
+                    </tr>
+                    <tr>
+                      <td>Кол-во оферт</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Сумма всех оферт</td>
+                      <td>110</td>
+                    </tr>
+                    <tr>
+                      <td>Средняя цена на товар</td>
+                      <td>55</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="button" type="button">Принять оферты</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="panel__row">
+            <h3>Пакет оферт подходящих под условия отбора</h3>
+            <table class="table">
+              <thead class="table__header">
+                <tr class="table__row">
+                  <td class="table__title">Дата оферты</td>
+                  <td class="table__title">Предложеная цена</td>
+                  <td class="table__title">Срок оферты</td>
+                  <td class="table__title">Дата окончания</td>
+                  <td class="table__title">Статус</td>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__row">
+                  <td class="table__field" data-name="Дата оферты"><span>2019-08-09</span> <span>00:00:00</span></td>
+                  <td class="table__field" data-name="Предложеная цена">100</td>
+                  <td class="table__field" data-name="Срок оферты">78</td>
+                  <td class="table__field" data-name="Дата окончания"><span>2019-08-09</span> <span>00:00:00</span></td>
+                  <td class="table__field" data-name="Статус">Ожидание</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+
+    </div>
+
+
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__logo-and-copyright">
+          <div class="page-footer__copyright">Сеть турагентств «Турсфера»</div>
+          <a class="logo" href="index.html">
+            <img src="img/logo.png" alt="логотип компании">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/libs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+  <script src="js/panel.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+
+</body>
+
+</html>
