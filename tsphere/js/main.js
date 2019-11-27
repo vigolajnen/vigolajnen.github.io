@@ -175,7 +175,13 @@ popupOpenBtns.forEach(function(btn) {
     },
     mousewheel: true,
     breakpoints: {
-      900: {
+      320: {
+        slidesPerView: 10,
+        spaceBetween: 20,
+        slidesPerColumn: 0,
+        direction: 'horizontal',
+      },
+      768: {
         slidesPerView: 10,
         spaceBetween: 20,
         slidesPerColumn: 2,
