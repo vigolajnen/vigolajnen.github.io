@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/panel.min.css" />
 </head>
 
@@ -16,13 +17,13 @@
     <header id="app-header" class="page-header">
       <div class="page-header__container container">
         <nav class="navigation">
-          <button class="navigation__toggle navigation--opened button button--link" type="button" aria-label="Открыть меню">
+          <!-- <button class="navigation__toggle navigation--opened button button--link" type="button" aria-label="Открыть меню">
             <svg width="25" viewbox="0 0 10 10" fill="#ffcb00">
               <rect width="10" height="1.5" x="0" y="0" />
               <rect width="10" height="1.5" x="0" y="3" />
               <rect width="10" height="1.5" x="0" y="6" />
             </svg>
-          </button>
+          </button> -->
           <div class="navigation__logo-and-phone">
             <a class="navigation__logo logo" href="index.html">
               <img class="img-full" src="img/logo.png" alt="логотип компании">
@@ -37,29 +38,6 @@
     
         </nav>
     
-        <!-- <nav class="navigation">
-          <a class="logo" href="index.html">
-            <img class="img-full" src="img/logo.png" alt="логотип компании">
-          </a>
-        </nav>
-    
-        <template id="slidemenu">
-          <div class="menu">
-            <div :class="['menu__burger', {'menu__burger--open': this.open}]" @click="toggleNav">
-              <span class="menu__burger__span"></span>
-            </div>
-            <nav :class="['menu__nav', {'menu__nav--open': this.open}]">
-              <ul class="menu__list">
-                <li class="menu__list__item">
-                  <a href="#" class="menu__link">Link</a>
-                </li>
-                <li class="menu__list__item">
-                  <a href="#" class="menu__link">Link</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </template> -->
       </div>
     
     </header>
@@ -68,7 +46,7 @@
         <aside class="panel__sidebar sidebar">
           <ul class="sidemenu">
             <li class="sidemenu__item">
-              <a class="sidemenu__link link active" href="panel.html">
+              <a class="sidemenu__link link active" href="index.html">
                 <svg width="25" height="25">
                   <use xlink:href="img/sprite.svg#icon-buyers"></use>
                 </svg>
@@ -200,7 +178,7 @@
         <div class="page-footer__logo-and-copyright">
           <div class="page-footer__copyright">Сеть турагентств «Турсфера»</div>
           <a class="logo" href="index.html">
-            <img src="img/logo.png" alt="логотип компании">
+            <img src="img/logo-footer.png" alt="логотип компании">
           </a>
         </div>
       </div>
@@ -209,7 +187,6 @@
   </div>
 
   <script src="js/libs.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
   <script src="js/panel.min.js"></script>
   <script>
     svg4everybody();
