@@ -8,11 +8,12 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
   <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
-<body class="page">
+<body class="page hotel-page">
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__container container">
@@ -292,235 +293,281 @@
     <div class="breadcrumb container">
       <a href="index.html">Главная</a>
       <a href="hotels.html">Отели</a>
+      <a href="hotel.html">Анакопия Клаб</a>
     </div>
     <main class="main container">
-      <h1 class="page__title">Отели</h1>
-      <div class="hotels">
-        <div class="hotels__filters filters">
-          <div class="filters">
-            <div class="filters__item">
-              <label class="filters__label" for="page-form-sort">Сортировать по</label>
-              <select id="page-form-sort" class="custom-select" name="page-form-sort" data-placeholder="цене">
-                <option value="цене">цене</option>
-                <option value="цене3">цене3</option>
-                <option value="цене4">цене4</option>
-                <option value="цене5">цене5</option>
-                <option value="цене6">цене6</option>
-              </select>
-          
-            </div>
-            <div class="filters__item">
-              <span>Туроператоры</span>
-              <!-- <svg class="filters__icon" width="25" height="25">
-                <use xlink:href="img/sprite.svg#icon-filter"></use>
-              </svg> -->
-          
-          
-            </div>
-            <!-- <div class="filters__item">
-              <span>Следить за ценой</span>
-              <svg class="filters__icon" width="25" height="25">
-                <use xlink:href="img/sprite.svg#icon-watch"></use>
-              </svg>
-            </div> -->
-          </div>
+      <h1 class="page__title">Анакопия Клаб</h1>
+      <div class="hotel-page__rating">
+        <div class="rating-block">
+          <input name="rating" value="5" id="rating_5" type="radio" />
+          <label for="rating_5" class="label_rating"></label>
+         
+          <input name="rating" value="4" id="rating_4" type="radio" />
+          <label for="rating_4" class="label_rating"></label>
+         
+          <input name="rating" value="3" id="rating_3" type="radio" />
+          <label for="rating_3" class="label_rating"></label>
+         
+          <input name="rating" value="2" id="rating_2" type="radio" />
+          <label for="rating_2" class="label_rating"></label>
+         
+          <input name="rating" value="1" id="rating_1" type="radio" />
+          <label for="rating_1" class="label_rating"></label>
         </div>
-        <div class="hotels__inner">
-          <div class="hotels__item">
-            <section class="hotel-item">
-              <div class="hotel-item__preview">
-                <div class="hotel-item__pic" style="background-image: url('img/hotel/hotel-1.jpg');">
-                </div>
-                <div class="hotel-item__info">
-                  <div class="hotel-item__info-header">
-                    <div class="hotel-item__info-rating">
-                      <div class="rating-block">
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="label_rating"></label>
-                      </div>
-                      <div class="hotel-rating">
-                        <span class="hotel-rating__text">Рейтинг отеля</span>
-                        <span class="hotel-rating__number">4.8</span>
-                      </div>
-                    </div>
-                    <div class="hotel-item__info-name">РGS Hotels Kiris Resort 5</div>
-                    <div class="hotel-item__info-address">Турция, Анталья, 30 м до моря</div>
-                  </div>
-                  <div class="hotel-item__info-text">
-                    Отель PGS KIRIS RESORT построен в 1994 году прямо на морском побережье у подножья Торосских гор, где
-                    жарким днем голубое, без единого облачка небо, сливается с лазурной синевой моря. Реновация отеля
-                    осуществлялась в 2013 году...
-                  </div>
-                  <div class="hotel-item__info-footer">
-            
-                    <div class="hotel-item__info-price">105 500 руб</div>
-                    <a class="link link--button" href="hotel.html">Показать все цены</a>
-            
-                  </div>
-                </div>
-              </div>
-            
-            </section>
-          </div>
-          <div class="hotels__item">
-            <section class="hotel-item">
-              <div class="hotel-item__preview">
-                <div class="hotel-item__pic" style="background-image: url('img/hotel/hotel-1.jpg');">
-                </div>
-                <div class="hotel-item__info">
-                  <div class="hotel-item__info-header">
-                    <div class="hotel-item__info-rating">
-                      <div class="rating-block">
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="label_rating"></label>
-                      </div>
-                      <div class="hotel-rating">
-                        <span class="hotel-rating__text">Рейтинг отеля</span>
-                        <span class="hotel-rating__number">4.8</span>
-                      </div>
-                    </div>
-                    <div class="hotel-item__info-name">РGS Hotels Kiris Resort 5</div>
-                    <div class="hotel-item__info-address">Турция, Анталья, 30 м до моря</div>
-                  </div>
-                  <div class="hotel-item__info-text">
-                    Отель PGS KIRIS RESORT построен в 1994 году прямо на морском побережье у подножья Торосских гор, где
-                    жарким днем голубое, без единого облачка небо, сливается с лазурной синевой моря. Реновация отеля
-                    осуществлялась в 2013 году...
-                  </div>
-                  <div class="hotel-item__info-footer">
-            
-                    <div class="hotel-item__info-price">105 500 руб</div>
-                    <a class="link link--button" href="hotel.html">Показать все цены</a>
-            
-                  </div>
-                </div>
-              </div>
-            
-            </section>
-          </div>
-          <div class="hotels__item">
-            <section class="hotel-item">
-              <div class="hotel-item__preview">
-                <div class="hotel-item__pic" style="background-image: url('img/hotel/hotel-1.jpg');">
-                </div>
-                <div class="hotel-item__info">
-                  <div class="hotel-item__info-header">
-                    <div class="hotel-item__info-rating">
-                      <div class="rating-block">
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="label_rating"></label>
-                      </div>
-                      <div class="hotel-rating">
-                        <span class="hotel-rating__text">Рейтинг отеля</span>
-                        <span class="hotel-rating__number">4.8</span>
-                      </div>
-                    </div>
-                    <div class="hotel-item__info-name">РGS Hotels Kiris Resort 5</div>
-                    <div class="hotel-item__info-address">Турция, Анталья, 30 м до моря</div>
-                  </div>
-                  <div class="hotel-item__info-text">
-                    Отель PGS KIRIS RESORT построен в 1994 году прямо на морском побережье у подножья Торосских гор, где
-                    жарким днем голубое, без единого облачка небо, сливается с лазурной синевой моря. Реновация отеля
-                    осуществлялась в 2013 году...
-                  </div>
-                  <div class="hotel-item__info-footer">
-            
-                    <div class="hotel-item__info-price">105 500 руб</div>
-                    <a class="link link--button" href="hotel.html">Показать все цены</a>
-            
-                  </div>
-                </div>
-              </div>
-            
-            </section>
-          </div>
-          <div class="hotels__item">
-            <section class="hotel-item">
-              <div class="hotel-item__preview">
-                <div class="hotel-item__pic" style="background-image: url('img/hotel/hotel-1.jpg');">
-                </div>
-                <div class="hotel-item__info">
-                  <div class="hotel-item__info-header">
-                    <div class="hotel-item__info-rating">
-                      <div class="rating-block">
-                        <input name="rating" value="5" id="rating_5" type="radio" />
-                        <label for="rating_5" class="label_rating"></label>
-                       
-                        <input name="rating" value="4" id="rating_4" type="radio" />
-                        <label for="rating_4" class="label_rating"></label>
-                       
-                        <input name="rating" value="3" id="rating_3" type="radio" />
-                        <label for="rating_3" class="label_rating"></label>
-                       
-                        <input name="rating" value="2" id="rating_2" type="radio" />
-                        <label for="rating_2" class="label_rating"></label>
-                       
-                        <input name="rating" value="1" id="rating_1" type="radio" />
-                        <label for="rating_1" class="label_rating"></label>
-                      </div>
-                      <div class="hotel-rating">
-                        <span class="hotel-rating__text">Рейтинг отеля</span>
-                        <span class="hotel-rating__number">4.8</span>
-                      </div>
-                    </div>
-                    <div class="hotel-item__info-name">РGS Hotels Kiris Resort 5</div>
-                    <div class="hotel-item__info-address">Турция, Анталья, 30 м до моря</div>
-                  </div>
-                  <div class="hotel-item__info-text">
-                    Отель PGS KIRIS RESORT построен в 1994 году прямо на морском побережье у подножья Торосских гор, где
-                    жарким днем голубое, без единого облачка небо, сливается с лазурной синевой моря. Реновация отеля
-                    осуществлялась в 2013 году...
-                  </div>
-                  <div class="hotel-item__info-footer">
-            
-                    <div class="hotel-item__info-price">105 500 руб</div>
-                    <a class="link link--button" href="hotel.html">Показать все цены</a>
-            
-                  </div>
-                </div>
-              </div>
-            
-            </section>
-          </div>
+        <div class="hotel-rating">
+          <span class="hotel-rating__text">Рейтинг отеля</span>
+          <span class="hotel-rating__number">4.8</span>
         </div>
       </div>
+      <div class="hotel-page__gallery">
+        <!-- Swiper -->
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(img/hotel/hotel-1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/6.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/7.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/9.jpg)"></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="swiper-container gallery-thumbs swiper-container-scroll">
+          <!-- Add Scroll Bar -->
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(img/hotel/hotel-1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/6.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/7.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/hotel/9.jpg)"></div>
 
+          </div>
+        </div>
+
+      </div>
+      <div class="hotel-page__content">
+        <div class="hotel-page__description">Гостиничный комплекс, расположен в 1,5км. от центра г. Алания , в окружении зелени и гор (2-я береговая
+          линия). Есть
+          развлекательные программы, анимация, детский клуб. Отлично подходит для семейного отдыха</div>
+        <div class="hotel-page__info">
+          <h3>Общая информация</h3>
+          <p>Небольшой городской отель для экономичного отдыха. Представляет собой одно основное 5-ти этажное здание
+            (есть лифт) и
+            одно дополнительное 5-ти этажное здание (без лифта). Расположен через дорогу от песчаного пляжа, очень
+            удобно по
+            отношению к центру Алании, супермаркету, автобусной остановке. Своей территории отель не имеет.</p>
+          <p>Расположен через дорогу от песчаного пляжа, очень удобно по отношению к центру Алании, супермаркету,
+            автобусной
+            остановке. Своей территории отель не имеет.</p>
+          <ul class="no-list">
+            <li>Есть русскоговорящий персонал (на ресепшен)</li>
+            <li>Основан 1985</li>
+            <li>110 км от аэропорта г. Анталья, 500 м от г. Аланья</li>
+            <li>(242) 511 05 99 / 511 05 99</li>
+            <li>www.cleopatraalishotel.com</li>
+          </ul>
+          <h3>Территория отеля</h3>
+          <ul class="no-list">
+            <li>1 ресторан</li>
+            <li>1 бар</li>
+            <li>1 открытый бассейн</li>
+            <li>прачечная</li>
+            <li>лифт</li>
+            <li>Wi-Fi в лобби (бесплатно)</li>
+          </ul>
+
+          <h3>В номере</h3>
+          <ul class="no-list">
+            <li>ТВ с российским каналом</li>
+            <li>кондиционер-сплит</li>
+            <li>сейф (платно)</li>
+            <li>душ</li>
+            <li>фен</li>
+            <li>керамическое покрытие</li>
+            <li>балкон</li>
+            <li>детская кровать (по запросу)</li>
+          </ul>
+          <h3>Типы номеров</h3>
+          <p>Общее количество номеров – 77
+          77 standard rooms (25 м2, макс. 3 чел.)</p>
+          <h3>Для детей</h3>
+          <p>детская площадка</p>
+          <h3>Услуги</h3>
+          <p>детская площадка</p>
+          <h3>Бесплатные услуги</h3>
+          <p>пляжный волейбол</p>
+          <h3>Пляж</h3>
+          <p>пляжный волейбол</p>
+        </div>
+        <section class="hotel-page__reviews">
+          <h3 class="hotel-page__reviews-title">Отзывы</h3>
+
+          <blockquote class="hotel-review">
+            <div class="hotel-review__date">20.06.2015</div>
+            <div class="hotel-review__body">
+              <div class="hotel-review__body-header">
+                <span class="hotel-review__num">5</span>
+                <span class="hotel-review__name">Анна</span>
+                <span class="hotel-review__city">Москва</span>
+              </div>
+              <div class="hotel-review__mark">За эти деньги просто супер!</div>
+              <div class="hotel-review__body-text">
+                Я в шоке от предыдущих комментаторов! Да, отель на окраине города, но до центра максимум 30 минут (садитесь на 152
+                автобус, он самый быстрый до метро). Это единственны минус, если кому-то важно. Для нас это не было проблемой ...
+              </div>
+            </div>
+            <div class="hotel-review__footer">
+              <a class="link link--arrow" href="#">Читать дальше</a>
+            </div>
+          </blockquote>
+          <blockquote class="hotel-review">
+            <div class="hotel-review__date">20.06.2015</div>
+            <div class="hotel-review__body">
+              <div class="hotel-review__body-header">
+                <span class="hotel-review__num">5</span>
+                <span class="hotel-review__name">Анна</span>
+                <span class="hotel-review__city">Москва</span>
+              </div>
+              <div class="hotel-review__mark">За эти деньги просто супер!</div>
+              <div class="hotel-review__body-text">
+                Я в шоке от предыдущих комментаторов! Да, отель на окраине города, но до центра максимум 30 минут (садитесь на 152
+                автобус, он самый быстрый до метро). Это единственны минус, если кому-то важно. Для нас это не было проблемой ...
+              </div>
+            </div>
+            <div class="hotel-review__footer">
+              <a class="link link--arrow" href="#">Читать дальше</a>
+            </div>
+          </blockquote>
+
+          <a class="link link--white" href="#">Все отзывы</a>
+        </section>
+      </div>
+      <section class="hotel-page__map">
+        <h3>Местоположение</h3>
+        <a class="link link--white" href="#">Открыть карту</a>
+        <div class="page__map map">
+
+          <div id="map"></div>
+
+        </div>
+      </section>
+      <section class="hotel-page__price">
+        <h3>Цены</h3>
+        <table class="table-price">
+          <thead class="table-price__head">
+            <tr class="table-price__row">
+              <td class="table-price__title"></td>
+              <td class="table-price__title">Тур / Программа</td>
+              <td class="table-price__title">Номер / Питание</td>
+              <td class="table-price__title">Цена за номер</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-price__row">
+              <td class="table-price__val table-price__val--logo">
+                <img src="img/hotel/pegas.png" alt="логотип турфирмы">
+              </td>
+              <td class="table-price__val table-price__val--tour" data-name="Тур / Программ">
+                <div class=""><b>27 Июл / 6 нч</b></div>
+                <div class="">Санкт-Петербург-Турция, Аланья,
+                  все а/к</div>
+              </td>
+              <td class="table-price__val" data-name="Номер / Питание">
+                <div class=""><b>standart room / 2 взр</b></div>
+                <div class="">НВ - Завтрак, Ужин</div>
+              </td>
+              <td class="table-price__val table-price__val--price" data-name="Цена за номер">
+                <span class="table-price__val-price">105 500 Р</span>
+                <a class="link link--button" href="#">Предложить свою цену
+                  <!-- <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg> -->
+                </a>
+              </td>
+        
+            </tr>
+            <tr class="table-price__row">
+              <td class="table-price__val table-price__val--logo">
+                <img src="img/hotel/pegas.png" alt="логотип турфирмы">
+              </td>
+              <td class="table-price__val table-price__val--tour" data-name="Тур / Программ">
+                <div class=""><b>27 Июл / 6 нч</b></div>
+                <div class="">Санкт-Петербург-Турция, Аланья,
+                  все а/к</div>
+              </td>
+              <td class="table-price__val" data-name="Номер / Питание">
+                <div class=""><b>standart room / 2 взр</b></div>
+                <div class="">НВ - Завтрак, Ужин</div>
+              </td>
+              <td class="table-price__val table-price__val--price" data-name="Цена за номер">
+                <span class="table-price__val-price">106 400 Р</span>
+                <a class="link link--button" href="#">Предложить свою цену
+                  <!-- <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg> -->
+                </a>
+              </td>
+        
+            </tr>
+            <tr class="table-price__row">
+              <td class="table-price__val table-price__val--logo">
+                <img src="img/hotel/pegas.png" alt="логотип турфирмы">
+              </td>
+              <td class="table-price__val table-price__val--tour" data-name="Тур / Программ">
+                <div class=""><b>27 Июл / 6 нч</b></div>
+                <div class="">Санкт-Петербург-Турция, Аланья,
+                  все а/к</div>
+              </td>
+              <td class="table-price__val" data-name="Номер / Питание">
+                <div class=""><b>standart room / 2 взр</b></div>
+                <div class="">НВ - Завтрак, Ужин</div>
+              </td>
+              <td class="table-price__val table-price__val--price" data-name="Цена за номер">
+                <span class="table-price__val-price">107 500 Р</span>
+                <a class="link link--button" href="#">Предложить свою цену
+                  <!-- <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg> -->
+                </a>
+              </td>
+        
+            </tr>
+            <tr class="table-price__row">
+              <td class="table-price__val table-price__val--logo">
+                <img src="img/hotel/pegas.png" alt="логотип турфирмы">
+              </td>
+              <td class="table-price__val table-price__val--tour" data-name="Тур / Программ">
+                <div class=""><b>27 Июл / 6 нч</b></div>
+                <div class="">Санкт-Петербург-Турция, Аланья,
+                  все а/к</div>
+              </td>
+              <td class="table-price__val" data-name="Номер / Питание">
+                <div class=""><b>standart room / 2 взр</b></div>
+                <div class="">НВ - Завтрак, Ужин</div>
+              </td>
+              <td class="table-price__val table-price__val--price" data-name="Цена за номер">
+                <span class="table-price__val-price">110 990 Р</span>
+                <a class="link link--button" href="#">Предложить свою цену
+                  <!-- <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg> -->
+                </a>
+              </td>
+        
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -667,11 +714,17 @@
 
   </div>
 
+
   <script src="js/libs.min.js"></script>
   <script src="js/main.min.js"></script>
   <script>
     svg4everybody();
   </script>
+  <script src="js/form.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5yUe9FAKioTSGs8OXzRMBPUMtzWNjHx4&callback=initMap" async
+    defer></script>
+  <script src="js/map.min.js"></script>
+
 
 </body>
 
