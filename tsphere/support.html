@@ -76,17 +76,21 @@
         <div class="page__col">
           <div class="questions-support">
             <div class="questions-support__acc">
-              <ul class="accordion">
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Часто задаваемые вопросы</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc active">
+              
+              <div class="accordion" id="accordion-4">
+                <div class="card">
+                  <div class="card-header" id="heading-1">
+                    <button class="accordion__item-title button button--link" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                      <span class="accordion__title">Часто задаваемые вопросы</span>
+                      <span class="accordion__btn-open">
+                        <svg width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+              
+                  <div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#accordion-4">
                     <div class="accordion__text content">
                       <h3>Как купить авиабилеты дешево</h3>
                       <p>Мы составили список часто задаваемых вопросов по перёлетам, ответы
@@ -96,112 +100,72 @@
                         билет без банковской карты и многое другое (непременно полезное).</p>
                     </div>
                   </div>
-                </li>
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Как купить авиабилеты дешево</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc">
-                    <div class="accordion__text content">2Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading-2">
+                    <button class="accordion__item-title button button--link collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                      <span class="accordion__title">Как купить авиабилеты дешево</span>
+                      <span class="accordion__btn-icon">
+                        <svg width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                        </svg>
+                      </span>
+                    </button>
                   </div>
-                </li>
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Перелет с ребенком - руководство</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc">
-                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                  <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion-4">
+                    <div class="accordion__text content">2Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
                   </div>
-                </li>
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Чартерный рейс - что это значит?</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc">
-                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading-3">
+                    <button class="accordion__item-title button button--link collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                      <span class="accordion__title">Перелет с ребенком - руководство</span>
+                      <span class="accordion__btn-icon">
+                        <svg width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                        </svg>
+                      </span>
+                    </button>
                   </div>
-                </li>
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Бронирование авиабилетов</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc">
-                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                  <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion-4">
+                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
                   </div>
-                </li>
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Самые дешевые авиабилеты недели</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc">
-                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading-4">
+                    <button class="accordion__item-title button button--link collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                      <span class="accordion__title">Чартерный рейс - что это значит?</span>
+                      <span class="accordion__btn-icon">
+                        <svg width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                        </svg>
+                      </span>
+                    </button>
                   </div>
-                </li>
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Потерялся багаж - что делать?</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc">
-                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                  <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion-4">
+                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
                   </div>
-                </li>
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Как путешествовать с друзьями</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc">
-                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading-5">
+                    <button class="accordion__item-title button button--link collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                      <span class="accordion__title">Бронирование авиабилетов</span>
+                      <span class="accordion__btn-icon">
+                        <svg width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                        </svg>
+                      </span>
+                    </button>
                   </div>
-                </li>
-                <li class="accordion__item">
-                  <button class="accordion__item-title button button--link">
-                    <span class="accordion__title">Как организовать багаж?</span>
-                    <span class="accordion__btn-open">
-                      <svg width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
-                      </svg>
-                    </span>
-                  </button>
-                  <div class="accordion__desc">
-                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                  <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion-4">
+                    <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -414,6 +378,9 @@
   <script src="js/main.min.js"></script>
   <script>
     svg4everybody();
+  </script>
+  <script>
+  $('.collapse').collapse('show');
   </script>
 </body>
 
