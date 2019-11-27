@@ -528,6 +528,19 @@ h1, h2, h3, h4, h5, h6 {
     .accordion__item-title--border {
       margin-bottom: calc(var(--padding-and-margin) / 2);
       border-bottom: 1px solid #dcdfe6; }
+    .accordion__item-title svg {
+      fill: #0075ab;
+      stroke: #ffffff;
+      stroke-width: 0.4;
+      stroke-linejoin: round;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .accordion__item-title.collapsed svg {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg); }
   .accordion__desc {
     position: relative;
     max-height: 0;
@@ -540,7 +553,7 @@ h1, h2, h3, h4, h5, h6 {
       opacity: 1;
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
-  .accordion__btn-open {
+  .accordion__btn-icon {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -554,34 +567,6 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .accordion__btn-open svg {
-      width: 30px;
-      height: 30px;
-      fill: #ffffff;
-      stroke: #0075ab;
-      stroke-width: 0.4;
-      stroke-linejoin: round; }
-  .accordion__btn-close {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    overflow: hidden; }
-    .accordion__btn-close svg {
-      fill: #0075ab;
-      stroke: #ffffff;
-      stroke-width: 0.4;
-      stroke-linejoin: round; }
   .accordion__text {
     padding: 1.25rem 0; }
     .accordion__text--border {
@@ -590,7 +575,6 @@ h1, h2, h3, h4, h5, h6 {
   .accordion__title {
     position: relative;
     margin-right: auto;
-    margin-bottom: 1.25rem;
     max-width: 90%;
     font-size: 16px;
     font-family: "Google Sans Bold", Arial, sans-serif;
