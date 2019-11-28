@@ -3246,11 +3246,14 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    max-height: 300px;
+    max-height: 40vh;
     margin: 1.25rem 0;
     padding: 1.25rem 0.5rem;
     background-color: #f7f7f8;
     overflow: hidden; }
+    @media (min-width: 375px) {
+      .steps__content {
+        max-height: 50vh; } }
     @media (min-width: 900px) {
       .steps__content {
         max-height: 500px;
