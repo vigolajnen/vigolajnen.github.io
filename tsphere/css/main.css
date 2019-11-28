@@ -3289,7 +3289,7 @@ h1, h2, h3, h4, h5, h6 {
               -ms-flex-pack: justify;
                   justify-content: space-between;
           width: 100%;
-          padding: 10px;
+          padding: 20px 10px;
           font-size: 80%;
           background-color: #f7f7f8;
           border-top: 1px solid #dcdfe6; }
@@ -4619,6 +4619,11 @@ ul {
 
 .chat__item {
   margin-bottom: 1.25rem; }
+  .chat__item:nth-child(2n + 2) {
+    text-align: right; }
+    .chat__item:nth-child(2n + 2) .chat__item-text .triangle {
+      right: 30px;
+      left: auto; }
   @media (min-width: 769px) {
     .chat__item .chat__item-text {
       margin-right: 10%; }
