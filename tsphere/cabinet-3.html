@@ -67,146 +67,148 @@
     
     </header>
     <main class="main container">
-      <div class="steps">
-        <ul class="steps__list">
-          <li class="steps__item active  steps__item--hidden-sm">
-            <span class="steps__number">1</span>
-            <span class="steps__title">Авторизация</span>
-          </li>
-          <li class="steps__item active steps__item--hidden-sm">
-            <span class="steps__number">2</span>
-            <span class="steps__title">Регистрация</span>
-          </li>
-          <li class="steps__item active">
-            <span class="steps__number">3</span>
-            <span class="steps__title">Предложить цену</span>
-          </li>
-          <li class="steps__item steps__item--hidden-sm">
-            <span class="steps__number">4</span>
-            <span class="steps__title">Оформление путевки</span>
-          </li>
-          <li class="steps__item steps__item--hidden-sm">
-            <span class="steps__number">5</span>
-            <span class="steps__title">Готово</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="steps__content">
-        <!-- //= template/module/_step-authorization.html -->
-        <!-- //= template/module/_step-registration.html -->
-        <!-- //= template/module/_step-cards.html -->
-        <div class="step-price step-offer-price">
-        
-          <div class="step-price__card">
-            <a class="card link" href="#">
-              <div class="card__inner">
-                <div class="card__header">
-                  <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
-                  <svg class="card__icon-hot" width="25" height="25">
-                    <use xlink:href="img/sprite.svg#icon-hot_price"></use>
-                  </svg>
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3 mt-4 p-0 px-sm-2 px-lg-4">
+          <div class="hotel-preview">
+            <div class="hotel-preview__header">
+              <h2 class="hotel-preview__title">Анакопия Клаб</h2>
+              <div class="hotel-preview__rating">
+                <div class="rating-block">
+                  <input name="rating" value="5" id="rating_5" type="radio" />
+                  <label for="rating_5" class="label_rating"></label>
+                 
+                  <input name="rating" value="4" id="rating_4" type="radio" />
+                  <label for="rating_4" class="label_rating"></label>
+                 
+                  <input name="rating" value="3" id="rating_3" type="radio" />
+                  <label for="rating_3" class="label_rating"></label>
+                 
+                  <input name="rating" value="2" id="rating_2" type="radio" />
+                  <label for="rating_2" class="label_rating"></label>
+                 
+                  <input name="rating" value="1" id="rating_1" type="radio" />
+                  <label for="rating_1" class="label_rating"></label>
                 </div>
-                <div class="card__info">
-                  <div class="card__title">Турция ждет!</div>
-                  <ul class="card__info-list">
-                    <li class="card__info-item">
-                      <svg class="card__info-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-fly"></use>
-                      </svg>
-                      <span class="card__info-val">Pegas</span>
-                    </li>
-                    <li class="card__info-item">
-                      <svg class="card__info-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-date"></use>
-                      </svg>
-                      <span class="card__info-val">29 Июл 2019</span>
-                    </li>
-                    <li class="card__info-item">
-                      <svg class="card__info-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-nights"></use>
-                      </svg>
-                      <span class="card__info-val">10 ночей</span>
-                    </li>
-                    <li class="card__info-item">
-                      <svg class="card__info-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-food"></use>
-                      </svg>
-                      <span class="card__info-val">Все включено</span>
-                    </li>
-                    <li class="card__info-item">
-                      <svg class="card__info-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-room_type"></use>
-                      </svg>
-                      <span class="card__info-val">DBL</span>
-                    </li>
-                    <li class="card__info-item">
-                      <svg class="card__info-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-adlt"></use>
-                      </svg>
-                      <span class="card__info-val">2</span>
-                    </li>
-                    <li class="card__info-item">
-                      <svg class="card__info-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-price"></use>
-                      </svg>
-                      <span class="card__info-val card__info-val--price">135 000 Р</span>
-                    </li>
-                  </ul>
-                  <!-- <button class="card__button button" href="#">Предложить свою цену</button> -->
-                </div>
-            
               </div>
-            </a>
+          
+              <div class="hotel-preview__city">Абхазия</div>
+            </div>
+            <div class="hotel-preview__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+          
+            <div class="hotel-preview__info">
+              <ul class="no-list hotel-preview__list">
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Туроператор:</span>
+                  <span class="hotel-preview__val">Pegas</span>
+                </li>
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Тур:</span>
+                  <span class="hotel-preview__val">14.12.2019 / 7 нч Dubai (Saint Petersburg) - (Emirates) EK</span>
+                </li>
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Номер / Питание:</span>
+                  <span class="hotel-preview__val">standard studio without extra bed / 2 взр BB - Завтрак</span>
+                </li>
+              </ul>
+            </div>
+            <div class="hotel-preview__price">
+              <span class="hotel-preview__price-label">Цена за номер</span>
+              <span class="hotel-preview__price-number">105 500 руб</span>
+            </div>
           </div>
-        
-          <div class="step-price__info-and-form">
-            <div class="step-price__info">
-              <div class="step-price__info-header">
-                <div class="step-price__info-rating">
-                  <div class="rating-block">
-                    <input name="rating" value="5" id="rating_5" type="radio" />
-                    <label for="rating_5" class="label_rating"></label>
-                   
-                    <input name="rating" value="4" id="rating_4" type="radio" />
-                    <label for="rating_4" class="label_rating"></label>
-                   
-                    <input name="rating" value="3" id="rating_3" type="radio" />
-                    <label for="rating_3" class="label_rating"></label>
-                   
-                    <input name="rating" value="2" id="rating_2" type="radio" />
-                    <label for="rating_2" class="label_rating"></label>
-                   
-                    <input name="rating" value="1" id="rating_1" type="radio" />
-                    <label for="rating_1" class="label_rating"></label>
+        </div>
+        <div class="col-xs-12 col-md-8 col-lg-9 p-0">
+          <div class="steps">
+            <ul class="steps__list">
+              <li class="steps__item active  steps__item--hidden-sm">
+                <span class="steps__number">1</span>
+                <span class="steps__title">Авторизация</span>
+              </li>
+              <li class="steps__item active steps__item--hidden-sm">
+                <span class="steps__number">2</span>
+                <span class="steps__title">Регистрация</span>
+              </li>
+              <li class="steps__item active">
+                <span class="steps__number">3</span>
+                <span class="steps__title">Предложить цену</span>
+              </li>
+              <li class="steps__item steps__item--hidden-sm">
+                <span class="steps__number">4</span>
+                <span class="steps__title">Оформление путевки</span>
+              </li>
+              <li class="steps__item steps__item--hidden-sm">
+                <span class="steps__number">5</span>
+                <span class="steps__title">Готово</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="steps__content">
+            <!-- //= template/module/_step-authorization.html -->
+            <!-- //= template/module/_step-registration.html -->
+            <!-- //= template/module/_step-cards.html -->
+            <div class="scroll-content">
+              <div class="chat">
+                <div class="chat__item">
+                  <div class="chat__item-header">
+                    <span class="chat__item-name">Ксения</span>
+                    <span class="chat__item-date">14:47 01.01.2018</span>
                   </div>
+                  <blockquote class="chat__item-text">
+                    <span class="triangle"></span>
+                    Здравствуйте, Виктория! Я готова обсудить с Вами стоимость этого тура. Пожалуйста предложите вашу цену.
+                  </blockquote>
                 </div>
-                <div class="step-price__info-name">РGS Hotels Kiris Resort 5</div>
-                <div class="step-price__info-address">Турция, Анталья, 30 м до моря</div>
-              </div>
-              <div class="step-price__info-text">
-                Отель PGS KIRIS RESORT построен в 1994 году прямо на морском побережье у подножья Торосских гор, где
-                жарким днем голубое, без единого облачка небо, сливается с лазурной синевой моря. Реновация отеля
-                осуществлялась в 2013 году...
-              </div>
-              <div class="step-price__info-price">
-                Стоимость тура:
-                <span class="step-price__info-count">135 000 Р</span>
+                <div class="chat__item">
+                  <div class="chat__item-header">
+                    <span class="chat__item-name">Вы</span>
+                    <span class="chat__item-date">14:47 01.01.2018</span>
+                  </div>
+                  <blockquote class="chat__item-text">
+                    <span class="triangle"></span>
+                    Прелагаю свою цену: 100 рублей.
+                  </blockquote>
+                </div>
+                <div class="chat__item">
+                  <div class="chat__item-header">
+                    <span class="chat__item-name">Ксения</span>
+                    <span class="chat__item-date">14:47 01.01.2018</span>
+                  </div>
+                  <blockquote class="chat__item-text">
+                    <span class="triangle"></span>
+                    К сожалению, Ваша цена слишком низкая. Я не могу согласиться на нее. Пожалуйста увеличьте Вашу цену. Вы так же
+                    можете
+                    настоять на своей цене и предложить мне подумать какое то время. Для этого выберите режим ожадания.
+                  </blockquote>
+                </div>
               </div>
             </div>
-            <div class="step-price__form">
-              <p>Предложите вашу цену, руб.</p>
-              <div class="page-form">
-                <div class="page-form__item">
-                  <label class="visually-hidden" for="page-form-price">Введите цену</label>
-                  <input id="page-form-price" class="page-form__field" type="text" name="page-form-price"
-                    placeholder="Введите цену" required>
-                </div>
-                <div class="page-form__item">
-                  <button class="button button--uppercase" type="button" data-btn="js-step-btn">Предложите свою цену </button>
-                </div>
+            <div class="steps__content-footer">
+              <div class="d-flex align-items-center">
+                <label for="select-day">Я оставлю свое предложение на срок:</label>
+                <select class="form-control" id="select-day">
+                  <option>1 день</option>
+                  <option>2 дня</option>
+                  <option>3 дня</option>
+                  <option>4 дня</option>
+                  <option>5 дней</option>
+                </select>
               </div>
-        
+              <button type="button" class="button text-uppercase">Предложить</button>
+              <button type="button" class="button button--gray text-uppercase">Отказаться от торга</button>
+            </div>
+            <div class="steps__content-footer-mob">
+              <div>
+                <label for="price">Предложите вашу цену
+                <input id="price" class="form-control" type="text" value=""></label>
+                <span>руб</span>
+              </div>
+              <button type="button" class="button text-uppercase">Предложить</button>
+              <button type="button" class="button button--disable text-uppercase">
+                <svg class="" width="25" height="15">
+                    <use xlink:href="img/sprite.svg#icon-disabled"></use>
+                  </svg>
+              </button>
             </div>
           </div>
         </div>
