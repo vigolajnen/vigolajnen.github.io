@@ -3203,15 +3203,15 @@ h1, h2, h3, h4, h5, h6 {
       color: #1a1a1a; }
   .steps__number {
     margin-right: 1.25rem;
-    padding: 0.625rem 0.9375rem;
+    padding: 0.3rem 0.7rem;
     font-weight: 600;
     color: #ffffff;
     background-color: #e6e6e6;
     border-radius: 50%;
-    font-size: 20px; }
+    font-size: 16px; }
     @media (min-width: 375px) {
       .steps__number {
-        font-size: calc(1.33333vw + 15px); } }
+        font-size: calc(2.4vw + 7px); } }
     @media (min-width: 750px) {
       .steps__number {
         font-size: 25px; } }
@@ -3294,7 +3294,7 @@ h1, h2, h3, h4, h5, h6 {
               -ms-flex-pack: justify;
                   justify-content: space-between;
           width: 100%;
-          padding: 20px 10px;
+          padding: 10px;
           font-size: 80%;
           background-color: #f7f7f8;
           border-top: 1px solid #dcdfe6; }
