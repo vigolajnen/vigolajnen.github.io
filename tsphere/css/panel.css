@@ -1033,7 +1033,7 @@ h1, h2, h3, h4, h5, h6 {
       .navigation__items {
         display: none;
         position: absolute;
-        z-index: 9;
+        z-index: 1039;
         background-color: #0075ab;
         padding: 30px 20px;
         top: 0;
@@ -1181,7 +1181,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 99;
+  z-index: 1040;
   width: 30px;
   height: 25px;
   padding: 0;
