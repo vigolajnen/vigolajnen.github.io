@@ -708,7 +708,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: var(--padding-and-margin) 0; }
+    padding: calc(var(--padding-and-margin) / 2) 0; }
   .page-header__search-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1244,7 +1244,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation--closed {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 20px;
   z-index: 99;
   width: 30px;
@@ -1265,7 +1265,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation--opened {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 20px;
   z-index: 5;
   width: 30px;
@@ -4740,6 +4740,7 @@ ul {
 @media (max-width: 767px) {
   .hotel-preview {
     position: relative;
+    padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 5px;
     font-size: 0.8rem;
