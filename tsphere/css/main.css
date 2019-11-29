@@ -1677,6 +1677,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .page {
   position: relative; }
+  @media (max-width: 900px) {
+    .page--mobile-no-footer .page-footer {
+      display: none; } }
   @media (min-width: 900px) {
     .page {
       display: -webkit-box;
@@ -1805,8 +1808,7 @@ h1, h2, h3, h4, h5, h6 {
       color: #808080; }
 
 .page-form {
-  padding: 1.25rem;
-  background-color: #f7f7f8; }
+  padding: 1.25rem; }
   @media (max-width: 599px) {
     .page-form {
       padding: 0.9375rem; } }
@@ -3186,7 +3188,7 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: 769px) and (min-width: 1200px) {
       .steps__item:not(:last-child)::after {
         left: 90%;
-        width: 12rem; } }
+        width: 7rem; } }
     .steps__item--hidden-sm {
       display: block; }
       @media (max-width: 768px) {
@@ -3357,9 +3359,6 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 769px) {
     .step-authorization {
       width: 66.66667%; } }
-  @media (min-width: 900px) {
-    .step-authorization {
-      width: 50%; } }
   .step-authorization--popup {
     padding-left: 15px;
     padding-right: 15px;
@@ -3403,11 +3402,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.25rem;
     text-align: center; }
   .step-registration__inner {
-    padding: 1.25rem;
     margin-bottom: 1.25rem;
     background-color: #ffffff;
-    max-height: 12.5rem;
-    overflow-y: auto; }
+    max-height: 12.5rem; }
     .step-registration__inner .conetnt {
       height: 100%; }
 
@@ -3422,7 +3419,7 @@ h1, h2, h3, h4, h5, h6 {
 #cards {
   width: 19.5em;
   position: relative;
-  margin: 0; }
+  margin: 0 auto; }
 
 #front,
 #back {

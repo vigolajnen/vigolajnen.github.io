@@ -14,9 +14,7 @@
 
 </head>
 
-<body class="page">
-  <!-- //= template/module/_mobile-menu.html -->
-
+<body class="page page--mobile-no-footer">
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__container container">
@@ -70,221 +68,278 @@
     
     </header>
     <main class="main container">
-      <div class="steps">
-        <ul class="steps__list">
-          <li class="steps__item active  steps__item--hidden-sm">
-            <span class="steps__number">1</span>
-            <span class="steps__title">Авторизация</span>
-          </li>
-          <li class="steps__item active steps__item--hidden-sm">
-            <span class="steps__number">2</span>
-            <span class="steps__title">Регистрация</span>
-          </li>
-          <li class="steps__item active steps__item--hidden-sm">
-            <span class="steps__number">3</span>
-            <span class="steps__title">Предложить цену</span>
-          </li>
-          <li class="steps__item active steps__item--hidden-sm">
-            <span class="steps__number">4</span>
-            <span class="steps__title">Оформление путевки</span>
-          </li>
-          <li class="steps__item active">
-            <span class="steps__number">5</span>
-            <span class="steps__title">Готово</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="steps__content">
-        <div class="step-contacts">
-          <div class="step-contacts__header content">
-            <svg class="step-contacts__icon" width="25" height="25">
-              <use xlink:href="img/sprite.svg#icon-order_done"></use>
-            </svg>
-            <p><b>Спасибо за покупку!</b></p>
-            <p>С Вами свяжется менеджер с 10:00 до 22:00</p>
-        
-          </div>
-          <div class="step-contacts__body">
-            <p>Также Вы можете забрать его по следующим адресам в городе Санкт-Петербург:</p>
-            <div class="offices-address offices-address--step-tour-duraion">
-              <ul class="offices-address__list">
-                <li class="offices-address__item office-address">
-                  <div class="office-address__inner">
-                    <a class="office-address__title link" href="office-item.html">ТУРСФЕРА у Просвещения</a>
-                    <div class="office-address__stations">
-                      <div class="metro-station metro-station--blue">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">пр. Просвещения</span>
-                      </div>
-                    </div>
-                    <div class="office-address__contacts">
-                      <a class="office-address__contacts-link link" href="tel:+78127481061">
-                        <svg width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-phone"></use>
-                        </svg>
-                        <span>+7 (812) 748-10-61</span>
-                      </a>
-                    </div>
-                  </div>
-            
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3 mt-md-4 p-0 px-sm-2 px-lg-4">
+          <div class="hotel-preview">
+            <div class="hotel-preview__header">
+              <h2 class="hotel-preview__title">Анакопия Клаб</h2>
+              <div class="hotel-preview__rating">
+                <div class="rating-block">
+                  <input name="rating" value="5" id="rating_5" type="radio" />
+                  <label for="rating_5" class="label_rating"></label>
+                 
+                  <input name="rating" value="4" id="rating_4" type="radio" />
+                  <label for="rating_4" class="label_rating"></label>
+                 
+                  <input name="rating" value="3" id="rating_3" type="radio" />
+                  <label for="rating_3" class="label_rating"></label>
+                 
+                  <input name="rating" value="2" id="rating_2" type="radio" />
+                  <label for="rating_2" class="label_rating"></label>
+                 
+                  <input name="rating" value="1" id="rating_1" type="radio" />
+                  <label for="rating_1" class="label_rating"></label>
+                </div>
+              </div>
+          
+              <div class="hotel-preview__city">Абхазия</div>
+            </div>
+            <div class="hotel-preview__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+          
+            <div class="hotel-preview__info">
+              <ul class="no-list hotel-preview__list">
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Туроператор:</span>
+                  <span class="hotel-preview__val">Pegas</span>
                 </li>
-                <li class="offices-address__item office-address">
-                  <div class="office-address__inner">
-                    <a class="office-address__title link" href="#">ТУРСФЕРА в центре</a>
-                    <div class="office-address__stations">
-                      <div class="metro-station">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Садовая</span>
-                      </div>
-                      <div class="metro-station metro-station--blue">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Сенная</span>
-                      </div>
-                      <div class="metro-station metro-station--yellow">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Спасская</span>
-                      </div>
-                    </div>
-                    <div class="office-address__contacts">
-                      <a class="office-address__contacts-link link" href="tel:+78127481061">
-                        <svg width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-phone"></use>
-                        </svg>
-                        <span>+7 (812) 748-10-61</span>
-                      </a>
-                    </div>
-                  </div>
-            
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Тур:</span>
+                  <span class="hotel-preview__val">14.12.2019 / 7 нч Dubai (Saint Petersburg) - (Emirates) EK</span>
                 </li>
-                <li class="offices-address__item office-address">
-                  <div class="office-address__inner">
-                    <a class="office-address__title link" href="#">ТУРСФЕРА на Московской</a>
-                    <div class="office-address__stations">
-                      <div class="metro-station metro-station--blue">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Московская</span>
-                      </div>
-                      <div class="metro-station">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Ленинский пр</span>
-                      </div>
-                    </div>
-                    <div class="office-address__contacts">
-                      <a class="office-address__contacts-link link" href="tel:+78127481061">
-                        <svg width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-phone"></use>
-                        </svg>
-                        <span>+7 (812) 748-10-61</span>
-                      </a>
-                    </div>
-                  </div>
-            
-                </li>
-                <li class="offices-address__item office-address">
-                  <div class="office-address__inner">
-                    <a class="office-address__title link" href="#">ТУРСФЕРА у Просвещения</a>
-                    <div class="office-address__stations">
-                      <div class="metro-station metro-station--blue">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">пр. Просвещения</span>
-                      </div>
-                    </div>
-                    <div class="office-address__contacts">
-                      <a class="office-address__contacts-link link" href="tel:+78127481061">
-                        <svg width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-phone"></use>
-                        </svg>
-                        <span>+7 (812) 748-10-61</span>
-                      </a>
-                    </div>
-                  </div>
-            
-                </li>
-                <li class="offices-address__item office-address">
-                  <div class="office-address__inner">
-                    <a class="office-address__title link" href="#">ТУРСФЕРА в центре</a>
-                    <div class="office-address__stations">
-                      <div class="metro-station">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Садовая</span>
-                      </div>
-                      <div class="metro-station metro-station--blue">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Сенная</span>
-                      </div>
-                      <div class="metro-station metro-station--yellow">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Спасская</span>
-                      </div>
-                    </div>
-                    <div class="office-address__contacts">
-                      <a class="office-address__contacts-link link" href="tel:+78127481061">
-                        <svg width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-phone"></use>
-                        </svg>
-                        <span>+7 (812) 748-10-61</span>
-                      </a>
-                    </div>
-                  </div>
-            
-                </li>
-                <li class="offices-address__item office-address">
-                  <div class="office-address__inner">
-                    <a class="office-address__title link" href="#">ТУРСФЕРА на Московской</a>
-                    <div class="office-address__stations">
-                      <div class="metro-station metro-station--blue">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Московская</span>
-                      </div>
-                      <div class="metro-station">
-                        <svg class="metro-station__icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-subway_4"></use>
-                        </svg>
-                        <span class="metro-station__name">Ленинский пр</span>
-                      </div>
-                    </div>
-                    <div class="office-address__contacts">
-                      <a class="office-address__contacts-link link" href="tel:+78127481061">
-                        <svg width="15" height="15">
-                          <use xlink:href="img/sprite.svg#icon-phone"></use>
-                        </svg>
-                        <span>+7 (812) 748-10-61</span>
-                      </a>
-                    </div>
-                  </div>
-            
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Номер / Питание:</span>
+                  <span class="hotel-preview__val">standard studio without extra bed / 2 взр BB - Завтрак</span>
                 </li>
               </ul>
             </div>
+            <div class="hotel-preview__price">
+              <span class="hotel-preview__price-label">Цена за номер</span>
+              <span class="hotel-preview__price-number">105 500 руб</span>
+            </div>
           </div>
-          <div class="step-contacts__footer content">
+        </div>
+        <div class="col-xs-12 col-md-8 col-lg-9 p-0">
+          <div class="steps">
+            <ul class="steps__list">
+              <li class="steps__item active  steps__item--hidden-sm">
+                <span class="steps__number">1</span>
+                <span class="steps__title">Авторизация</span>
+              </li>
+              <li class="steps__item active steps__item--hidden-sm">
+                <span class="steps__number">2</span>
+                <span class="steps__title">Регистрация</span>
+              </li>
+              <li class="steps__item active steps__item--hidden-sm">
+                <span class="steps__number">3</span>
+                <span class="steps__title">Предложить цену</span>
+              </li>
+              <li class="steps__item active steps__item--hidden-sm">
+                <span class="steps__number">4</span>
+                <span class="steps__title">Оформление путевки</span>
+              </li>
+              <li class="steps__item active">
+                <span class="steps__number">5</span>
+                <span class="steps__title">Готово</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="steps__content mt-0 mt-md-3 mb-0 mb-md-3 pb-0 pb-md-3">
+            <div class="scroll-content">
+              <div class="step-contacts">
+                <div class="step-contacts__header content">
+                  <svg class="step-contacts__icon" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-order_done"></use>
+                  </svg>
+                  <p><b>Спасибо за покупку!</b></p>
+                  <p>С Вами свяжется менеджер с 10:00 до 22:00</p>
+              
+                </div>
+                <div class="step-contacts__body">
+                  <p>Также Вы можете забрать его по следующим адресам в городе Санкт-Петербург:</p>
+                  <div class="offices-address offices-address--step-tour-duraion">
+                    <ul class="offices-address__list">
+                      <li class="offices-address__item office-address">
+                        <div class="office-address__inner">
+                          <a class="office-address__title link" href="office-item.html">ТУРСФЕРА у Просвещения</a>
+                          <div class="office-address__stations">
+                            <div class="metro-station metro-station--blue">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">пр. Просвещения</span>
+                            </div>
+                          </div>
+                          <div class="office-address__contacts">
+                            <a class="office-address__contacts-link link" href="tel:+78127481061">
+                              <svg width="15" height="15">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                              </svg>
+                              <span>+7 (812) 748-10-61</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                      </li>
+                      <li class="offices-address__item office-address">
+                        <div class="office-address__inner">
+                          <a class="office-address__title link" href="#">ТУРСФЕРА в центре</a>
+                          <div class="office-address__stations">
+                            <div class="metro-station">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Садовая</span>
+                            </div>
+                            <div class="metro-station metro-station--blue">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Сенная</span>
+                            </div>
+                            <div class="metro-station metro-station--yellow">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Спасская</span>
+                            </div>
+                          </div>
+                          <div class="office-address__contacts">
+                            <a class="office-address__contacts-link link" href="tel:+78127481061">
+                              <svg width="15" height="15">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                              </svg>
+                              <span>+7 (812) 748-10-61</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                      </li>
+                      <li class="offices-address__item office-address">
+                        <div class="office-address__inner">
+                          <a class="office-address__title link" href="#">ТУРСФЕРА на Московской</a>
+                          <div class="office-address__stations">
+                            <div class="metro-station metro-station--blue">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Московская</span>
+                            </div>
+                            <div class="metro-station">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Ленинский пр</span>
+                            </div>
+                          </div>
+                          <div class="office-address__contacts">
+                            <a class="office-address__contacts-link link" href="tel:+78127481061">
+                              <svg width="15" height="15">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                              </svg>
+                              <span>+7 (812) 748-10-61</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                      </li>
+                      <li class="offices-address__item office-address">
+                        <div class="office-address__inner">
+                          <a class="office-address__title link" href="#">ТУРСФЕРА у Просвещения</a>
+                          <div class="office-address__stations">
+                            <div class="metro-station metro-station--blue">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">пр. Просвещения</span>
+                            </div>
+                          </div>
+                          <div class="office-address__contacts">
+                            <a class="office-address__contacts-link link" href="tel:+78127481061">
+                              <svg width="15" height="15">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                              </svg>
+                              <span>+7 (812) 748-10-61</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                      </li>
+                      <li class="offices-address__item office-address">
+                        <div class="office-address__inner">
+                          <a class="office-address__title link" href="#">ТУРСФЕРА в центре</a>
+                          <div class="office-address__stations">
+                            <div class="metro-station">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Садовая</span>
+                            </div>
+                            <div class="metro-station metro-station--blue">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Сенная</span>
+                            </div>
+                            <div class="metro-station metro-station--yellow">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Спасская</span>
+                            </div>
+                          </div>
+                          <div class="office-address__contacts">
+                            <a class="office-address__contacts-link link" href="tel:+78127481061">
+                              <svg width="15" height="15">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                              </svg>
+                              <span>+7 (812) 748-10-61</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                      </li>
+                      <li class="offices-address__item office-address">
+                        <div class="office-address__inner">
+                          <a class="office-address__title link" href="#">ТУРСФЕРА на Московской</a>
+                          <div class="office-address__stations">
+                            <div class="metro-station metro-station--blue">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Московская</span>
+                            </div>
+                            <div class="metro-station">
+                              <svg class="metro-station__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icon-subway_4"></use>
+                              </svg>
+                              <span class="metro-station__name">Ленинский пр</span>
+                            </div>
+                          </div>
+                          <div class="office-address__contacts">
+                            <a class="office-address__contacts-link link" href="tel:+78127481061">
+                              <svg width="15" height="15">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                              </svg>
+                              <span>+7 (812) 748-10-61</span>
+                            </a>
+                          </div>
+                        </div>
+                  
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="step-contacts__footer content">
+                  <!-- <p><b>Либо получить документы по электронной почте</b></p>
+                  <button id="js-form-email" class="button button--uppercase" type="button">Отправить на email</button> -->
+                </div>
+              
+              </div>
+            </div>
             <p><b>Либо получить документы по электронной почте</b></p>
             <button id="js-form-email" class="button button--uppercase" type="button">Отправить на email</button>
           </div>
-        
         </div>
       </div>
 
@@ -440,9 +495,6 @@
   <script>
     svg4everybody();
   </script>
-
-
-
 </body>
 
 </html>

@@ -11,9 +11,7 @@
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
-<body class="page">
-  <!-- //= template/module/_mobile-menu.html -->
-
+<body class="page page--mobile-no-footer">
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__container container">
@@ -67,158 +65,226 @@
     
     </header>
     <main class="main container">
-      <div class="steps">
-        <ul class="steps__list">
-          <li class="steps__item active">
-            <span class="steps__number">1</span>
-            <span class="steps__title">Авторизация</span>
-          </li>
-          <li class="steps__item steps__item--hidden-sm">
-            <span class="steps__number">2</span>
-            <span class="steps__title">Регистрация</span>
-          </li>
-          <li class="steps__item steps__item--hidden-sm">
-            <span class="steps__number">3</span>
-            <span class="steps__title">Предложить цену</span>
-          </li>
-          <li class="steps__item steps__item--hidden-sm">
-            <span class="steps__number">4</span>
-            <span class="steps__title">Оформление путевки</span>
-          </li>
-          <li class="steps__item steps__item--hidden-sm">
-            <span class="steps__number">5</span>
-            <span class="steps__title">Готово</span>
-          </li>
-        </ul>
-      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3 mt-md-4 p-0 px-sm-2 px-lg-4">
+          <div class="hotel-preview">
+            <div class="hotel-preview__header">
+              <h2 class="hotel-preview__title">Анакопия Клаб</h2>
+              <div class="hotel-preview__rating">
+                <div class="rating-block">
+                  <input name="rating" value="5" id="rating_5" type="radio" />
+                  <label for="rating_5" class="label_rating"></label>
+                 
+                  <input name="rating" value="4" id="rating_4" type="radio" />
+                  <label for="rating_4" class="label_rating"></label>
+                 
+                  <input name="rating" value="3" id="rating_3" type="radio" />
+                  <label for="rating_3" class="label_rating"></label>
+                 
+                  <input name="rating" value="2" id="rating_2" type="radio" />
+                  <label for="rating_2" class="label_rating"></label>
+                 
+                  <input name="rating" value="1" id="rating_1" type="radio" />
+                  <label for="rating_1" class="label_rating"></label>
+                </div>
+              </div>
+          
+              <div class="hotel-preview__city">Абхазия</div>
+            </div>
+            <div class="hotel-preview__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+          
+            <div class="hotel-preview__info">
+              <ul class="no-list hotel-preview__list">
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Туроператор:</span>
+                  <span class="hotel-preview__val">Pegas</span>
+                </li>
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Тур:</span>
+                  <span class="hotel-preview__val">14.12.2019 / 7 нч Dubai (Saint Petersburg) - (Emirates) EK</span>
+                </li>
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Номер / Питание:</span>
+                  <span class="hotel-preview__val">standard studio without extra bed / 2 взр BB - Завтрак</span>
+                </li>
+              </ul>
+            </div>
+            <div class="hotel-preview__price">
+              <span class="hotel-preview__price-label">Цена за номер</span>
+              <span class="hotel-preview__price-number">105 500 руб</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8 col-lg-9 p-0">
+          <div class="steps">
+            <ul class="steps__list">
+              <li class="steps__item active">
+                <span class="steps__number">1</span>
+                <span class="steps__title">Авторизация</span>
+              </li>
+              <li class="steps__item steps__item--hidden-sm">
+                <span class="steps__number">2</span>
+                <span class="steps__title">Регистрация</span>
+              </li>
+              <li class="steps__item steps__item--hidden-sm">
+                <span class="steps__number">3</span>
+                <span class="steps__title">Предложить цену</span>
+              </li>
+              <li class="steps__item steps__item--hidden-sm">
+                <span class="steps__number">4</span>
+                <span class="steps__title">Оформление путевки</span>
+              </li>
+              <li class="steps__item steps__item--hidden-sm">
+                <span class="steps__number">5</span>
+                <span class="steps__title">Готово</span>
+              </li>
+            </ul>
+          </div>
 
-      <div class="steps__content">
-        <div class="steps__content-item">
-          <section class="step-registration agreement" data-step="step-registration">
-            <h3 class="step-registration__title">Соглашение с пользователем</h3>
-            <div class="step-registration__inner">
-              <div class="content">
-                <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
-                  обучение в
-                  лучших вузах
-                  по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
-                  путешествуют в
-                  рекламные
-                  туры.</p>
-          
-                <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе участвуем
-                  в
-                  семинарах,
-                  тренингах. Ежемесячно все менеджеры проходят аттестацию!
-                  Для нас важно всегда двигаться вперед.</p>
-                <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
-                  обучение в
-                  лучших вузах
-                  по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
-                  путешествуют в
-                  рекламные
-                  туры.</p>
-          
-                <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе участвуем
-                  в
-                  семинарах,
-                  тренингах. Ежемесячно все менеджеры проходят аттестацию!
-                  Для нас важно всегда двигаться вперед.</p>
-                <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
-                  обучение в
-                  лучших вузах
-                  по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
-                  путешествуют в
-                  рекламные
-                  туры.</p>
-          
-                <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе участвуем
-                  в
-                  семинарах,
-                  тренингах. Ежемесячно все менеджеры проходят аттестацию!
-                  Для нас важно всегда двигаться вперед.</p>
-                <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
-                  обучение в
-                  лучших вузах
-                  по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
-                  путешествуют в
-                  рекламные
-                  туры.</p>
-          
-                <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе участвуем
-                  в
-                  семинарах,
-                  тренингах. Ежемесячно все менеджеры проходят аттестацию!
-                  Для нас важно всегда двигаться вперед.</p>
-                <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
-                  обучение в
-                  лучших вузах
-                  по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
-                  путешествуют в
-                  рекламные
-                  туры.</p>
-          
-                <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе участвуем
-                  в
-                  семинарах,
-                  тренингах. Ежемесячно все менеджеры проходят аттестацию!
-                  Для нас важно всегда двигаться вперед.</p>
-                <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
-                  обучение в
-                  лучших вузах
-                  по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
-                  путешествуют в
-                  рекламные
-                  туры.</p>
-          
-                <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе участвуем
-                  в
-                  семинарах,
-                  тренингах. Ежемесячно все менеджеры проходят аттестацию!
-                  Для нас важно всегда двигаться вперед.</p>
+          <div class="steps__content mt-0 mt-md-3 mb-0 mb-md-3 pb-0 pb-md-3">
+            <div class="scroll-content">
+              <div class="steps__content-item">
+                <section class="step-registration agreement" data-step="step-registration">
+                  <h3 class="step-registration__title">Соглашение с пользователем</h3>
+                  <div class="scroll-content">
+                
+                    <div class="step-registration__inner">
+                      <div class="content">
+                        <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
+                          обучение в
+                          лучших вузах
+                          по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
+                          путешествуют в
+                          рекламные
+                          туры.</p>
+                
+                        <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе
+                          участвуем
+                          в
+                          семинарах,
+                          тренингах. Ежемесячно все менеджеры проходят аттестацию!
+                          Для нас важно всегда двигаться вперед.</p>
+                        <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
+                          обучение в
+                          лучших вузах
+                          по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
+                          путешествуют в
+                          рекламные
+                          туры.</p>
+                
+                        <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе
+                          участвуем
+                          в
+                          семинарах,
+                          тренингах. Ежемесячно все менеджеры проходят аттестацию!
+                          Для нас важно всегда двигаться вперед.</p>
+                        <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
+                          обучение в
+                          лучших вузах
+                          по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
+                          путешествуют в
+                          рекламные
+                          туры.</p>
+                
+                        <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе
+                          участвуем
+                          в
+                          семинарах,
+                          тренингах. Ежемесячно все менеджеры проходят аттестацию!
+                          Для нас важно всегда двигаться вперед.</p>
+                        <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
+                          обучение в
+                          лучших вузах
+                          по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
+                          путешествуют в
+                          рекламные
+                          туры.</p>
+                
+                        <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе
+                          участвуем
+                          в
+                          семинарах,
+                          тренингах. Ежемесячно все менеджеры проходят аттестацию!
+                          Для нас важно всегда двигаться вперед.</p>
+                        <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
+                          обучение в
+                          лучших вузах
+                          по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
+                          путешествуют в
+                          рекламные
+                          туры.</p>
+                
+                        <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе
+                          участвуем
+                          в
+                          семинарах,
+                          тренингах. Ежемесячно все менеджеры проходят аттестацию!
+                          Для нас важно всегда двигаться вперед.</p>
+                        <p>Мы заботится о своей команде и считаем, что успешная команда — залог процветания. Наши менеджеры проходили
+                          обучение в
+                          лучших вузах
+                          по специальности туристической деятельности. Помимо этого, они постоянно изучают страны, и дважды в год
+                          путешествуют в
+                          рекламные
+                          туры.</p>
+                
+                        <p>И даже это не самое главное. Мы заботимся о развитии профессионализма команды и поэтому мы все вместе
+                          участвуем
+                          в
+                          семинарах,
+                          тренингах. Ежемесячно все менеджеры проходят аттестацию!
+                          Для нас важно всегда двигаться вперед.</p>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <button class="step-registration__btn button" type="button" data-btn="js-step-btn">Я согласен с правилами
+                    сервиса</button>
+                
+                </section>
+
+              </div>
+              <div class="steps__content-item">
+                <div class="step-authorization" data-step="step-authorization">
+                  <ul class="step-authorization__list">
+                    <li class="step-authorization__item">
+                      <div class="step-authorization__title">1. Введите свой номер телефона</div>
+                      <div class="step-authorization__desc">На этот номер отправим СМС с кодом подтверждения</div>
+                      <form action="" class="page-form">
+                        <ul class="page-form__list">
+                          <li class="page-form__item">
+                            <label class="visually-hidden" for="page-form-tel">Ваш номер телефона</label>
+                            <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
+                              placeholder="Ваш номер телефона" pattern="(\+?\d[- .]*){7,13}" required>
+                          </li>
+                          <li class="page-form__item">
+                            <button class="button button--uppercase" type="submit">Отправить код</button>
+                          </li>
+                        </ul>
+                      </form>
+                    </li>
+                    <li class="step-authorization__item">
+                      <div class="step-authorization__title">2. Введите код подтверждения</div>
+                      <div class="step-authorization__desc">Код, который мы отправили вам на ваш номер телефоне</div>
+                      <form action="" class="page-form">
+                        <ul class="page-form__list">
+                          <li class="page-form__item">
+                            <label class="visually-hidden" for="page-form-tel">Введите код</label>
+                            <input id="page-form-code" class="page-form__field" type="text" name="page-form-code"
+                              placeholder="Введите код" required>
+                          </li>
+                          <li class="page-form__item">
+                            <button class="button button--uppercase" type="submit" data-btn="js-step-btn" disabled>Подтвердить</button>
+                          </li>
+                        </ul>
+                      </form>
+                    </li>
+                
+                  </ul>
+                </div>
               </div>
             </div>
-            <button class="step-registration__btn button" type="button" data-btn="js-step-btn">Я согласен с правилами сервиса</button>
-          </section>
 
-        </div>
-        <div class="steps__content-item">
-          <div class="step-authorization" data-step="step-authorization">
-            <ul class="step-authorization__list">
-              <li class="step-authorization__item">
-                <div class="step-authorization__title">1. Введите свой номер телефона</div>
-                <div class="step-authorization__desc">На этот номер отправим СМС с кодом подтверждения</div>
-                <form action="" class="page-form">
-                  <ul class="page-form__list">
-                    <li class="page-form__item">
-                      <label class="visually-hidden" for="page-form-tel">Ваш номер телефона</label>
-                      <input id="page-form-tel" class="page-form__field" type="tel" name="page-form-tel"
-                        placeholder="Ваш номер телефона" pattern="(\+?\d[- .]*){7,13}" required>
-                    </li>
-                    <li class="page-form__item">
-                      <button class="button button--uppercase" type="submit">Отправить код</button>
-                    </li>
-                  </ul>
-                </form>
-              </li>
-              <li class="step-authorization__item">
-                <div class="step-authorization__title">2. Введите код подтверждения</div>
-                <div class="step-authorization__desc">Код, который мы отправили вам на ваш номер телефоне</div>
-                <form action="" class="page-form">
-                  <ul class="page-form__list">
-                    <li class="page-form__item">
-                      <label class="visually-hidden" for="page-form-tel">Введите код</label>
-                      <input id="page-form-code" class="page-form__field" type="text" name="page-form-code"
-                        placeholder="Введите код" required>
-                    </li>
-                    <li class="page-form__item">
-                      <button class="button button--uppercase" type="submit" data-btn="js-step-btn" disabled>Подтвердить</button>
-                    </li>
-                  </ul>
-                </form>
-              </li>
-          
-            </ul>
           </div>
         </div>
       </div>

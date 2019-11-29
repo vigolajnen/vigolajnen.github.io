@@ -11,9 +11,7 @@
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
-<body class="page">
-  <!-- //= template/module/_mobile-menu.html -->
-
+<body class="page page--mobile-no-footer">
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__container container">
@@ -67,7 +65,58 @@
     
     </header>
     <main class="main container">
-      <div class="steps">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3 mt-md-4 p-0 px-sm-2 px-lg-4">
+          <div class="hotel-preview">
+            <div class="hotel-preview__header">
+              <h2 class="hotel-preview__title">Анакопия Клаб</h2>
+              <div class="hotel-preview__rating">
+                <div class="rating-block">
+                  <input name="rating" value="5" id="rating_5" type="radio" />
+                  <label for="rating_5" class="label_rating"></label>
+                 
+                  <input name="rating" value="4" id="rating_4" type="radio" />
+                  <label for="rating_4" class="label_rating"></label>
+                 
+                  <input name="rating" value="3" id="rating_3" type="radio" />
+                  <label for="rating_3" class="label_rating"></label>
+                 
+                  <input name="rating" value="2" id="rating_2" type="radio" />
+                  <label for="rating_2" class="label_rating"></label>
+                 
+                  <input name="rating" value="1" id="rating_1" type="radio" />
+                  <label for="rating_1" class="label_rating"></label>
+                </div>
+              </div>
+          
+              <div class="hotel-preview__city">Абхазия</div>
+            </div>
+            <div class="hotel-preview__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+          
+            <div class="hotel-preview__info">
+              <ul class="no-list hotel-preview__list">
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Туроператор:</span>
+                  <span class="hotel-preview__val">Pegas</span>
+                </li>
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Тур:</span>
+                  <span class="hotel-preview__val">14.12.2019 / 7 нч Dubai (Saint Petersburg) - (Emirates) EK</span>
+                </li>
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Номер / Питание:</span>
+                  <span class="hotel-preview__val">standard studio without extra bed / 2 взр BB - Завтрак</span>
+                </li>
+              </ul>
+            </div>
+            <div class="hotel-preview__price">
+              <span class="hotel-preview__price-label">Цена за номер</span>
+              <span class="hotel-preview__price-number">105 500 руб</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8 col-lg-9 p-0">
+          <div class="steps">
         <ul class="steps__list">
           <li class="steps__item active  steps__item--hidden-sm">
             <span class="steps__number">1</span>
@@ -92,30 +141,37 @@
         </ul>
       </div>
 
-      <div class="steps__content">
-        <!-- //= template/module/_step-authorization.html -->
-        <!-- //= template/module/_step-registration.html -->
-        <div id="cards" class="step-cards">
-          <div class="step-cards__body">
-            <div id="front" class="step-cards__front">
-              <a target="_blank" href="#" id="bank-link"></a>
-              <img src="/" alt="brand-logo" id="brand-logo">
-              <div id="front-fields">
-                <input class="field" id="number" type="text" placeholder="0000 0000 0000 0000">
-                <label class="label">Valid thru</label>
-                <input class="field expired" id="mm" type="text" placeholder="MM">
-                <input class="field expired" id="yy" type="text" placeholder="YY">
+          <div class="steps__content mt-0 mt-md-3 mb-0 mb-md-3 pb-0 pb-md-3">
+            <div class="scroll-content">
+              <!-- //= template/module/_step-authorization.html -->
+              <!-- //= template/module/_step-registration.html -->
+              <div id="cards" class="step-cards">
+                <div class="step-cards__body">
+                  <div id="front" class="step-cards__front">
+                    <a target="_blank" href="#" id="bank-link"></a>
+                    <img src="/" alt="brand-logo" id="brand-logo">
+                    <div id="front-fields">
+                      <input class="field" id="number" type="text" placeholder="0000 0000 0000 0000">
+                      <label class="label">Valid thru</label>
+                      <input class="field expired" id="mm" type="text" placeholder="MM">
+                      <input class="field expired" id="yy" type="text" placeholder="YY">
+                    </div>
+                  </div>
+                  <div id="back">
+                    <input class="field" id="code" type="password" placeholder="">
+                    <label id="code-label" class="label">Safety code</label>
+                  </div>
+                </div>
+                <div class="step-cards__footer">
+                  
+                </div>
+              
               </div>
             </div>
-            <div id="back">
-              <input class="field" id="code" type="password" placeholder="">
-              <label id="code-label" class="label">Safety code</label>
-            </div>
-          </div>
-          <div class="step-cards__footer">
             <a class="link link--button" href="cabinet-3.html">Далее</a>
+            
+            <!-- //= template/module/_step-price.html -->
           </div>
-        
         </div>
       </div>
 

@@ -462,7 +462,7 @@ $(".custom-option").on("click", function() {
   };
 
   var stepOfferPrice = function() {
-    var stepBlock = document.querySelector(".step-offer-price");
+    var stepBlock = document.querySelector(".steps__content-footer");
     if (stepBlock) var btn = stepBlock.querySelector("[data-btn=js-step-btn]");
 
     if (btn) {
@@ -478,9 +478,16 @@ $(".custom-option").on("click", function() {
     var dataItem = document.querySelector(".data");
     var tourDurationItem = document.querySelector(".tour-duration");
 
+    if (tourDurationItem)
+    tourDurationItem.style.display = "none";
+
     if (rateItem) var btn = rateItem.querySelector("[data-btn=js-step-btn]");
-    if (dataItem)
+    if (dataItem) {
       var dataBtn = dataItem.querySelector("[data-btn=js-step-btn]");
+      dataItem.style.display = "none";
+    }
+
+
 
     if (btn) {
       btn.addEventListener("click", function(evt) {
@@ -488,11 +495,11 @@ $(".custom-option").on("click", function() {
 
         rateItem.classList.remove("active");
         rateItem.classList.add("closed");
-        rateItem.parentElement.style.display = "none";
+        rateItem.style.display = "none";
 
         dataItem.classList.add("active");
         dataItem.classList.remove("closed");
-        dataItem.parentElement.style.display = "flex";
+        dataItem.style.display = "block";
       });
     }
     if (dataBtn) {
@@ -501,11 +508,11 @@ $(".custom-option").on("click", function() {
         console.log(dataBtn);
         dataItem.classList.remove("active");
         dataItem.classList.add("closed");
-        dataItem.parentElement.style.display = "none";
+        dataItem.style.display = "none";
 
         tourDurationItem.classList.add("active");
         tourDurationItem.classList.remove("closed");
-        tourDurationItem.parentElement.style.display = "flex";
+        tourDurationItem.style.display = "flex";
       });
     }
   };

@@ -14,9 +14,7 @@
 
 </head>
 
-<body class="page">
-  <!-- //= template/module/_mobile-menu.html -->
-
+<body class="page page--mobile-no-footer">
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__container container">
@@ -70,473 +68,465 @@
     
     </header>
     <main class="main container">
-      <div class="steps">
-        <ul class="steps__list">
-          <li class="steps__item active  steps__item--hidden-sm">
-            <span class="steps__number">1</span>
-            <span class="steps__title">Авторизация</span>
-          </li>
-          <li class="steps__item active steps__item--hidden-sm">
-            <span class="steps__number">2</span>
-            <span class="steps__title">Регистрация</span>
-          </li>
-          <li class="steps__item active steps__item--hidden-sm">
-            <span class="steps__number">3</span>
-            <span class="steps__title">Предложить цену</span>
-          </li>
-          <li class="steps__item active">
-            <span class="steps__number">4</span>
-            <span class="steps__title">Оформление путевки</span>
-          </li>
-          <li class="steps__item steps__item--hidden-sm">
-            <span class="steps__number">5</span>
-            <span class="steps__title">Готово</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="steps__content">
-        <div class="steps__content-item">
-          <div class="step-making rate">
-            <div class="step-making__row">
-              <div class="step-making__card">
-                <a class="card link" href="#">
-                  <div class="card__inner">
-                    <div class="card__header">
-                      <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
-                      <svg class="card__icon-hot" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-hot_price"></use>
-                      </svg>
-                    </div>
-                    <div class="card__info">
-                      <div class="card__title">Турция ждет!</div>
-                      <ul class="card__info-list">
-                        <li class="card__info-item">
-                          <svg class="card__info-icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icon-fly"></use>
-                          </svg>
-                          <span class="card__info-val">Pegas</span>
-                        </li>
-                        <li class="card__info-item">
-                          <svg class="card__info-icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icon-date"></use>
-                          </svg>
-                          <span class="card__info-val">29 Июл 2019</span>
-                        </li>
-                        <li class="card__info-item">
-                          <svg class="card__info-icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icon-nights"></use>
-                          </svg>
-                          <span class="card__info-val">10 ночей</span>
-                        </li>
-                        <li class="card__info-item">
-                          <svg class="card__info-icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icon-food"></use>
-                          </svg>
-                          <span class="card__info-val">Все включено</span>
-                        </li>
-                        <li class="card__info-item">
-                          <svg class="card__info-icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icon-room_type"></use>
-                          </svg>
-                          <span class="card__info-val">DBL</span>
-                        </li>
-                        <li class="card__info-item">
-                          <svg class="card__info-icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icon-adlt"></use>
-                          </svg>
-                          <span class="card__info-val">2</span>
-                        </li>
-                        <li class="card__info-item">
-                          <svg class="card__info-icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icon-price"></use>
-                          </svg>
-                          <span class="card__info-val card__info-val--price">135 000 Р</span>
-                        </li>
-                      </ul>
-                      <!-- <button class="card__button button" href="#">Предложить свою цену</button> -->
-                    </div>
-                
-                  </div>
-                </a>
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3 mt-md-4 p-0 px-sm-2 px-lg-4">
+          <div class="hotel-preview">
+            <div class="hotel-preview__header">
+              <h2 class="hotel-preview__title">Анакопия Клаб</h2>
+              <div class="hotel-preview__rating">
+                <div class="rating-block">
+                  <input name="rating" value="5" id="rating_5" type="radio" />
+                  <label for="rating_5" class="label_rating"></label>
+                 
+                  <input name="rating" value="4" id="rating_4" type="radio" />
+                  <label for="rating_4" class="label_rating"></label>
+                 
+                  <input name="rating" value="3" id="rating_3" type="radio" />
+                  <label for="rating_3" class="label_rating"></label>
+                 
+                  <input name="rating" value="2" id="rating_2" type="radio" />
+                  <label for="rating_2" class="label_rating"></label>
+                 
+                  <input name="rating" value="1" id="rating_1" type="radio" />
+                  <label for="rating_1" class="label_rating"></label>
+                </div>
               </div>
           
-              <div class="step-making__content">
-                <div style="margin-bottom: 20px; font-size: 1.25rem;">
-                  <p><b>Ваша ставка не принята продавцом</b></p>
-                  <p style="color: red;"><b>Ваша цена не устроила продовца, в сделке отказано</b></p>
-                </div>
-                <div style="margin-bottom: 20px;">
-                  <p style="margin-bottom: 20px;"><b>1. Предложите более высокую цену</b></p>
-                  <button class="button button--uppercase">Увеличить цену</button>
-                </div>
-                <div style="margin-bottom: 20px;">
-                  <p style="margin-bottom: 20px;"><b>2. Оставьте цену, дайте продавцу время подумать</b></p>
-                  <button class="button button--uppercase">Цена с ожиданием</button>
-                </div>
-                <div style="margin-bottom: 20px;">
-                  <p style="margin-bottom: 20px;"><b>3. Если не хотите ждать или увеличмвать цену, откажитесь от сделки</b></p>
-                  <button class="button button--uppercase">Отказаться от сделки</button>
-                </div>
-              </div>
+              <div class="hotel-preview__city">Абхазия</div>
             </div>
-            <div class="step-making__footer">
-              <a class="link link--button link--uppercase" href="#" data-btn="js-step-btn">Далее</a>
+            <div class="hotel-preview__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+          
+            <div class="hotel-preview__info">
+              <ul class="no-list hotel-preview__list">
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Туроператор:</span>
+                  <span class="hotel-preview__val">Pegas</span>
+                </li>
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Тур:</span>
+                  <span class="hotel-preview__val">14.12.2019 / 7 нч Dubai (Saint Petersburg) - (Emirates) EK</span>
+                </li>
+                <li class="hotel-preview__item">
+                  <span class="hotel-preview__label">Номер / Питание:</span>
+                  <span class="hotel-preview__val">standard studio without extra bed / 2 взр BB - Завтрак</span>
+                </li>
+              </ul>
+            </div>
+            <div class="hotel-preview__price">
+              <span class="hotel-preview__price-label">Цена за номер</span>
+              <span class="hotel-preview__price-number">105 500 руб</span>
             </div>
           </div>
         </div>
-
-        <div class="steps__content-item">
-          <div class="step-making data">
-            <div class="step-making__header">
-              <div class="step-making__title">Ваша предложение принято!</div>
-              <p>Для оформления путевки введите данные туристов:</p>
-            </div>
-            <div class="step-making__inner">
-              <div class="step-making__item">
-                <h3 class="step-making__item-title">Турист №1</h3>
-                <div class="page__row page-form">
-                  <div class="page__form-item">
-                    <ul class="page-form__list">
-                      <li class="page-form__item page-form__item--full">
-                        <label class="page-form__label" for="page-form-lastname">Фамилия (лат.)</label>
-                        <input id="page-form-lastname" class="page-form__field" type="text" name="page-form-lastname"
-                          placeholder="Введите вашу фамилию" required>
-                      </li>
-                      <li class="page-form__item page-form__item--full">
-                        <label class="page-form__label" for="page-form-name">Имя (лат.)</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="page-form-name"
-                          placeholder="Введите ваше имя" required>
-                      </li>
-                      <li class="page-form__item page-form__item--full">
-                        <!-- иконка календаря -->
-                        <label class="page-form__label" for="page-form-name">Дата рождения</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="birthday" value="10/24/1984"
-                          placeholder="Выберите дату" required>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="page__form-item">
-                    <ul class="page-form__list">
-                      <li class="page-form__item page-form__item--full">
-                        <fieldset class="page-form__passport">
-                          <legend class="page-form__title">Загранпаспорт</legend>
-                          <ul class="page-form__list">
-                            <li class="page-form__item">
-                              <input class="page-form__field" id="passport-1" type="number" name="passport-1" placeholder="Серия">
-                              <label class="visually-hidden" for="passport-1">Серия</label>
-                            </li>
-                            <li class="page-form__item">
-                              <input class="page-form__field" id="passport-2" type="number" name="passport-2"
-                                placeholder="Введите номер">
-                              <label class="visually-hidden" for="passport-2">Введите номер</label>
-                            </li>
-                          </ul>
-                        </fieldset>
-                
-                      </li>
-                
-                      <li class="page-form__item page-form__item--full">
-                        <!-- иконка календаря -->
-                        <label class="page-form__label" for="page-form-name">Дата выдачи</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="passport-date-1"
-                          placeholder="Выберите дату" required>
-                      </li>
-                      <li class="page-form__item page-form__item--full">
-                        <!-- иконка календаря -->
-                        <label class="page-form__label" for="page-form-name">Дата окончания</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="passport-date-2"
-                          placeholder="Выберите дату" required>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="page__form-item">
-                    <ul class="page-form__list">
-                      <li class="page-form__item page-form__item--full">
-                        <fieldset class="page-form__gender">
-                          <legend class="page-form__title">Пол</legend>
-                          <ul class="page-form__list">
-                            <li class="page-form__item">
-                              <input class="page-form__field visually-hidden" id="gender-1" type="radio" name="gender" checked>
-                              <label class="page-form__label" for="gender-1">
-                
-                                <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
-                                  <circle cx="8" cy="8" r="7.5" fill="none" stroke="var(--checked-border-color)" stroke-width="1" />
-                                  <circle cx="8" cy="8" r="4.5" fill="var(--checked-color)" />
-                                </svg>
-                                <span>Муж.</span>
-                              </label>
-                
-                            </li>
-                            <li class="page-form__item">
-                              <input class="page-form__field visually-hidden" id="gender-2" type="radio" name="gender">
-                              <label class="page-form__label" for="gender-2">
-                
-                                <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
-                                  <circle cx="8" cy="8" r="7.5" fill="none" stroke="var(--checked-border-color)" stroke-width="1" />
-                                  <circle cx="8" cy="8" r="4.5" fill="var(--checked-color)" />
-                                </svg>
-                                <span>Жен.</span>
-                              </label>
-                
-                            </li>
-                          </ul>
-                        </fieldset>
-                      </li>
-                      <li class="page-form__item page-form__item--full">
-                
-                        <ul class="page-form__list">
-                          <li class="page-form__item">
-                            <label class="page-form__label" for="page-form-country">Страна</label>
-                            <select id="page-form-name" class="custom-select page-form__field" name="page-form-country" data-placeholder="Россия" required>
-                              <option value="Россия">Россия</option>
-                              <option value="Англия">Англия</option>
-                              <option value="Северная Ирландия">Северная Ирландия</option>
-                              <option value="Шотландия">Шотландия</option>
-                              <option value="Уэльс">Уэльс</option>
-                            </select>
-                          </li>
-                          <li class="page-form__item">
-                            <label class="page-form__label" for="page-form-gr">Гражданство</label>
-                
-                            <select id="page-form-gr" class="custom-select page-form__field" name="page-form-gr" data-placeholder="Россия" required>
-                              <option value="Россия">Россия</option>
-                              <option value="Англия">Англия</option>
-                              <option value="Северная Ирландия">Северная Ирландия</option>
-                              <option value="Шотландия">Шотландия</option>
-                              <option value="Уэльс">Уэльс</option>
-                            </select>
-                          </li>
-                        </ul>
-                
-                      </li>
-                
-                      <li class="page-form__item page-form__item--full">
-                        <label class="page-form__label" for="page-form-name">Кем выдан</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="page-form-name"
-                          placeholder="Введите организацию" required>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="step-making__item">
-                <h3 class="step-making__item-title">Турист №2</h3>
-                <div class="page__row page-form">
-                  <div class="page__form-item">
-                    <ul class="page-form__list">
-                      <li class="page-form__item page-form__item--full">
-                        <label class="page-form__label" for="page-form-lastname">Фамилия (лат.)</label>
-                        <input id="page-form-lastname" class="page-form__field" type="text" name="page-form-lastname"
-                          placeholder="Введите вашу фамилию" required>
-                      </li>
-                      <li class="page-form__item page-form__item--full">
-                        <label class="page-form__label" for="page-form-name">Имя (лат.)</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="page-form-name"
-                          placeholder="Введите ваше имя" required>
-                      </li>
-                      <li class="page-form__item page-form__item--full">
-                        <!-- иконка календаря -->
-                        <label class="page-form__label" for="page-form-name">Дата рождения</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="birthday" value="10/24/1984"
-                          placeholder="Выберите дату" required>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="page__form-item">
-                    <ul class="page-form__list">
-                      <li class="page-form__item page-form__item--full">
-                        <fieldset class="page-form__passport">
-                          <legend class="page-form__title">Загранпаспорт</legend>
-                          <ul class="page-form__list">
-                            <li class="page-form__item">
-                              <input class="page-form__field" id="passport-1" type="number" name="passport-1" placeholder="Серия">
-                              <label class="visually-hidden" for="passport-1">Серия</label>
-                            </li>
-                            <li class="page-form__item">
-                              <input class="page-form__field" id="passport-2" type="number" name="passport-2"
-                                placeholder="Введите номер">
-                              <label class="visually-hidden" for="passport-2">Введите номер</label>
-                            </li>
-                          </ul>
-                        </fieldset>
-                
-                      </li>
-                
-                      <li class="page-form__item page-form__item--full">
-                        <!-- иконка календаря -->
-                        <label class="page-form__label" for="page-form-name">Дата выдачи</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="passport-date-1"
-                          placeholder="Выберите дату" required>
-                      </li>
-                      <li class="page-form__item page-form__item--full">
-                        <!-- иконка календаря -->
-                        <label class="page-form__label" for="page-form-name">Дата окончания</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="passport-date-2"
-                          placeholder="Выберите дату" required>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="page__form-item">
-                    <ul class="page-form__list">
-                      <li class="page-form__item page-form__item--full">
-                        <fieldset class="page-form__gender">
-                          <legend class="page-form__title">Пол</legend>
-                          <ul class="page-form__list">
-                            <li class="page-form__item">
-                              <input class="page-form__field visually-hidden" id="gender-3" type="radio" name="gender-2" checked>
-                              <label class="page-form__label" for="gender-3">
-                
-                                <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
-                                  <circle cx="8" cy="8" r="7.5" fill="none" stroke="var(--checked-border-color)" stroke-width="1" />
-                                  <circle cx="8" cy="8" r="4.5" fill="var(--checked-color)" />
-                                </svg>
-                                <span>Муж.</span>
-                              </label>
-                
-                            </li>
-                            <li class="page-form__item">
-                              <input class="page-form__field visually-hidden" id="gender-4" type="radio" name="gender-2">
-                              <label class="page-form__label" for="gender-4">
-                
-                                <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
-                                  <circle cx="8" cy="8" r="7.5" fill="none" stroke="var(--checked-border-color)" stroke-width="1" />
-                                  <circle cx="8" cy="8" r="4.5" fill="var(--checked-color)" />
-                                </svg>
-                                <span>Жен.</span>
-                              </label>
-                
-                            </li>
-                          </ul>
-                        </fieldset>
-                      </li>
-                      <li class="page-form__item page-form__item--full">
-                
-                        <ul class="page-form__list">
-                          <li class="page-form__item">
-                            <label class="page-form__label" for="page-form-country">Страна</label>
-                            <select id="page-form-name" class="custom-select page-form__field" name="page-form-country" data-placeholder="Россия" required>
-                              <option value="Россия">Россия</option>
-                              <option value="Англия">Англия</option>
-                              <option value="Северная Ирландия">Северная Ирландия</option>
-                              <option value="Шотландия">Шотландия</option>
-                              <option value="Уэльс">Уэльс</option>
-                            </select>
-                          </li>
-                          <li class="page-form__item">
-                            <label class="page-form__label" for="page-form-gr">Гражданство</label>
-                
-                            <select id="page-form-gr" class="custom-select page-form__field" name="page-form-gr" data-placeholder="Россия" required>
-                              <option value="Россия">Россия</option>
-                              <option value="Англия">Англия</option>
-                              <option value="Северная Ирландия">Северная Ирландия</option>
-                              <option value="Шотландия">Шотландия</option>
-                              <option value="Уэльс">Уэльс</option>
-                            </select>
-                          </li>
-                        </ul>
-                
-                      </li>
-                
-                      <li class="page-form__item page-form__item--full">
-                        <label class="page-form__label" for="page-form-name">Кем выдан</label>
-                        <input id="page-form-name" class="page-form__field" type="text" name="page-form-name"
-                          placeholder="Введите организацию" required>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="step-making__footer">
-          
-              <a class="link link--button link--uppercase" href="#" data-btn="js-step-btn">Далее</a>
-            </div>
-          
+        <div class="col-xs-12 col-md-8 col-lg-9 p-0">
+          <div class="steps">
+            <ul class="steps__list">
+              <li class="steps__item active  steps__item--hidden-sm">
+                <span class="steps__number">1</span>
+                <span class="steps__title">Авторизация</span>
+              </li>
+              <li class="steps__item active steps__item--hidden-sm">
+                <span class="steps__number">2</span>
+                <span class="steps__title">Регистрация</span>
+              </li>
+              <li class="steps__item active steps__item--hidden-sm">
+                <span class="steps__number">3</span>
+                <span class="steps__title">Предложить цену</span>
+              </li>
+              <li class="steps__item active">
+                <span class="steps__number">4</span>
+                <span class="steps__title">Оформление путевки</span>
+              </li>
+              <li class="steps__item steps__item--hidden-sm">
+                <span class="steps__number">5</span>
+                <span class="steps__title">Готово</span>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="steps__content-item">
-          <div class="row steps__content-row step-price tour-duration">
-            <div class="step-price__card">
-              <a class="card link" href="#">
-                <div class="card__inner">
-                  <div class="card__header">
-                    <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
-                    <svg class="card__icon-hot" width="25" height="25">
-                      <use xlink:href="img/sprite.svg#icon-hot_price"></use>
-                    </svg>
+
+          <div class="steps__content mt-0 mt-md-3 mb-0 mb-md-3 pb-0 pb-md-3">
+            <div class="scroll-content">
+              <div class="rate w-100 ">
+                <div class="">
+              
+                  <div style="margin-bottom: 20px; font-size: 1.25rem;">
+                    <p><b>Ваша ставка не принята продавцом</b></p>
+                    <p style="color: red;"><b>Ваша цена не устроила продовца, в сделке отказано</b></p>
                   </div>
-                  <div class="card__info">
-                    <div class="card__title">Турция ждет!</div>
-                    <ul class="card__info-list">
-                      <li class="card__info-item">
-                        <svg class="card__info-icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-fly"></use>
-                        </svg>
-                        <span class="card__info-val">Pegas</span>
-                      </li>
-                      <li class="card__info-item">
-                        <svg class="card__info-icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-date"></use>
-                        </svg>
-                        <span class="card__info-val">29 Июл 2019</span>
-                      </li>
-                      <li class="card__info-item">
-                        <svg class="card__info-icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-nights"></use>
-                        </svg>
-                        <span class="card__info-val">10 ночей</span>
-                      </li>
-                      <li class="card__info-item">
-                        <svg class="card__info-icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-food"></use>
-                        </svg>
-                        <span class="card__info-val">Все включено</span>
-                      </li>
-                      <li class="card__info-item">
-                        <svg class="card__info-icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-room_type"></use>
-                        </svg>
-                        <span class="card__info-val">DBL</span>
-                      </li>
-                      <li class="card__info-item">
-                        <svg class="card__info-icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-adlt"></use>
-                        </svg>
-                        <span class="card__info-val">2</span>
-                      </li>
-                      <li class="card__info-item">
-                        <svg class="card__info-icon" width="25" height="25">
-                          <use xlink:href="img/sprite.svg#icon-price"></use>
-                        </svg>
-                        <span class="card__info-val card__info-val--price">135 000 Р</span>
-                      </li>
-                    </ul>
-                    <!-- <button class="card__button button" href="#">Предложить свою цену</button> -->
+                  <div style="margin-bottom: 20px;">
+                    <p style="margin-bottom: 20px;"><b>1. Предложите более высокую цену</b></p>
+                    <button class="button button--uppercase">Увеличить цену</button>
+                  </div>
+                  <div style="margin-bottom: 20px;">
+                    <p style="margin-bottom: 20px;"><b>2. Оставьте цену, дайте продавцу время подумать</b></p>
+                    <button class="button button--uppercase">Цена с ожиданием</button>
+                  </div>
+                  <div style="margin-bottom: 20px;">
+                    <p style="margin-bottom: 20px;"><b>3. Если не хотите ждать или увеличмвать цену, откажитесь от сделки</b></p>
+                    <button class="button button--uppercase">Отказаться от сделки</button>
                   </div>
               
                 </div>
-              </a>
-            </div>
-            <div class="step-price__info-and-form content">
-              <p class=""><b>Укажите срок, который вы готовы подождать, чтобы дать продавцу подумать.
-              Возможно, он согласится принять вашу цену позже.</b></p>
-              <div class="">
-                <button class="button button--uppercase" type="button">1 день</button>
-                <button class="button button--uppercase" type="button">2 день</button>
-                <button class="button button--uppercase" type="button">3 день</button>
-                <button class="button button--uppercase" type="button">4 день</button>
+                <a class="link link--button link--uppercase" href="#" data-btn="js-step-btn">Далее</a>
               </div>
-              <div class="">
-                <button class="button button--tabs button--uppercase" type="button">Отмена</button>
+              <div class="data w-100">
+                <div class="step-making__title">Ваша предложение принято!</div>
+                <p>Для оформления путевки введите данные туристов:</p>
+                <div class="step-making__inner">
+                  <h3 class="step-making__item-title">Турист №1</h3>
+                  <div class="page__row page-form">
+                    <div class="page__form-item">
+                      <ul class="page-form__list">
+                        <li class="page-form__item page-form__item--full">
+                          <label class="page-form__label" for="page-form-lastname">Фамилия (лат.)</label>
+                          <input id="page-form-lastname" class="page-form__field" type="text" name="page-form-lastname"
+                            placeholder="Введите вашу фамилию" required>
+                        </li>
+                        <li class="page-form__item page-form__item--full">
+                          <label class="page-form__label" for="page-form-name">Имя (лат.)</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="page-form-name"
+                            placeholder="Введите ваше имя" required>
+                        </li>
+                        <li class="page-form__item page-form__item--full">
+                          <!-- иконка календаря -->
+                          <label class="page-form__label" for="page-form-name">Дата рождения</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="birthday" value="10/24/1984"
+                            placeholder="Выберите дату" required>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="page__form-item">
+                      <ul class="page-form__list">
+                        <li class="page-form__item page-form__item--full">
+                          <fieldset class="page-form__passport">
+                            <legend class="page-form__title">Загранпаспорт</legend>
+                            <ul class="page-form__list">
+                              <li class="page-form__item">
+                                <input class="page-form__field" id="passport-1" type="number" name="passport-1" placeholder="Серия">
+                                <label class="visually-hidden" for="passport-1">Серия</label>
+                              </li>
+                              <li class="page-form__item">
+                                <input class="page-form__field" id="passport-2" type="number" name="passport-2"
+                                  placeholder="Введите номер">
+                                <label class="visually-hidden" for="passport-2">Введите номер</label>
+                              </li>
+                            </ul>
+                          </fieldset>
+                  
+                        </li>
+                  
+                        <li class="page-form__item page-form__item--full">
+                          <!-- иконка календаря -->
+                          <label class="page-form__label" for="page-form-name">Дата выдачи</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="passport-date-1"
+                            placeholder="Выберите дату" required>
+                        </li>
+                        <li class="page-form__item page-form__item--full">
+                          <!-- иконка календаря -->
+                          <label class="page-form__label" for="page-form-name">Дата окончания</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="passport-date-2"
+                            placeholder="Выберите дату" required>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="page__form-item">
+                      <ul class="page-form__list">
+                        <li class="page-form__item page-form__item--full">
+                          <fieldset class="page-form__gender">
+                            <legend class="page-form__title">Пол</legend>
+                            <ul class="page-form__list">
+                              <li class="page-form__item">
+                                <input class="page-form__field visually-hidden" id="gender-1" type="radio" name="gender" checked>
+                                <label class="page-form__label" for="gender-1">
+                  
+                                  <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
+                                    <circle cx="8" cy="8" r="7.5" fill="none" stroke="var(--checked-border-color)" stroke-width="1" />
+                                    <circle cx="8" cy="8" r="4.5" fill="var(--checked-color)" />
+                                  </svg>
+                                  <span>Муж.</span>
+                                </label>
+                  
+                              </li>
+                              <li class="page-form__item">
+                                <input class="page-form__field visually-hidden" id="gender-2" type="radio" name="gender">
+                                <label class="page-form__label" for="gender-2">
+                  
+                                  <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
+                                    <circle cx="8" cy="8" r="7.5" fill="none" stroke="var(--checked-border-color)" stroke-width="1" />
+                                    <circle cx="8" cy="8" r="4.5" fill="var(--checked-color)" />
+                                  </svg>
+                                  <span>Жен.</span>
+                                </label>
+                  
+                              </li>
+                            </ul>
+                          </fieldset>
+                        </li>
+                        <li class="page-form__item page-form__item--full">
+                  
+                          <ul class="page-form__list">
+                            <li class="page-form__item">
+                              <label class="page-form__label" for="page-form-country">Страна</label>
+                              <select id="page-form-name" class="custom-select page-form__field" name="page-form-country" data-placeholder="Россия" required>
+                                <option value="Россия">Россия</option>
+                                <option value="Англия">Англия</option>
+                                <option value="Северная Ирландия">Северная Ирландия</option>
+                                <option value="Шотландия">Шотландия</option>
+                                <option value="Уэльс">Уэльс</option>
+                              </select>
+                            </li>
+                            <li class="page-form__item">
+                              <label class="page-form__label" for="page-form-gr">Гражданство</label>
+                  
+                              <select id="page-form-gr" class="custom-select page-form__field" name="page-form-gr" data-placeholder="Россия" required>
+                                <option value="Россия">Россия</option>
+                                <option value="Англия">Англия</option>
+                                <option value="Северная Ирландия">Северная Ирландия</option>
+                                <option value="Шотландия">Шотландия</option>
+                                <option value="Уэльс">Уэльс</option>
+                              </select>
+                            </li>
+                          </ul>
+                  
+                        </li>
+                  
+                        <li class="page-form__item page-form__item--full">
+                          <label class="page-form__label" for="page-form-name">Кем выдан</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="page-form-name"
+                            placeholder="Введите организацию" required>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h3 class="step-making__item-title">Турист №2</h3>
+                  <div class="page__row page-form">
+                    <div class="page__form-item">
+                      <ul class="page-form__list">
+                        <li class="page-form__item page-form__item--full">
+                          <label class="page-form__label" for="page-form-lastname">Фамилия (лат.)</label>
+                          <input id="page-form-lastname" class="page-form__field" type="text" name="page-form-lastname"
+                            placeholder="Введите вашу фамилию" required>
+                        </li>
+                        <li class="page-form__item page-form__item--full">
+                          <label class="page-form__label" for="page-form-name">Имя (лат.)</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="page-form-name"
+                            placeholder="Введите ваше имя" required>
+                        </li>
+                        <li class="page-form__item page-form__item--full">
+                          <!-- иконка календаря -->
+                          <label class="page-form__label" for="page-form-name">Дата рождения</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="birthday" value="10/24/1984"
+                            placeholder="Выберите дату" required>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="page__form-item">
+                      <ul class="page-form__list">
+                        <li class="page-form__item page-form__item--full">
+                          <fieldset class="page-form__passport">
+                            <legend class="page-form__title">Загранпаспорт</legend>
+                            <ul class="page-form__list">
+                              <li class="page-form__item">
+                                <input class="page-form__field" id="passport-1" type="number" name="passport-1" placeholder="Серия">
+                                <label class="visually-hidden" for="passport-1">Серия</label>
+                              </li>
+                              <li class="page-form__item">
+                                <input class="page-form__field" id="passport-2" type="number" name="passport-2"
+                                  placeholder="Введите номер">
+                                <label class="visually-hidden" for="passport-2">Введите номер</label>
+                              </li>
+                            </ul>
+                          </fieldset>
+                  
+                        </li>
+                  
+                        <li class="page-form__item page-form__item--full">
+                          <!-- иконка календаря -->
+                          <label class="page-form__label" for="page-form-name">Дата выдачи</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="passport-date-1"
+                            placeholder="Выберите дату" required>
+                        </li>
+                        <li class="page-form__item page-form__item--full">
+                          <!-- иконка календаря -->
+                          <label class="page-form__label" for="page-form-name">Дата окончания</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="passport-date-2"
+                            placeholder="Выберите дату" required>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="page__form-item">
+                      <ul class="page-form__list">
+                        <li class="page-form__item page-form__item--full">
+                          <fieldset class="page-form__gender">
+                            <legend class="page-form__title">Пол</legend>
+                            <ul class="page-form__list">
+                              <li class="page-form__item">
+                                <input class="page-form__field visually-hidden" id="gender-3" type="radio" name="gender-2" checked>
+                                <label class="page-form__label" for="gender-3">
+                  
+                                  <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
+                                    <circle cx="8" cy="8" r="7.5" fill="none" stroke="var(--checked-border-color)" stroke-width="1" />
+                                    <circle cx="8" cy="8" r="4.5" fill="var(--checked-color)" />
+                                  </svg>
+                                  <span>Муж.</span>
+                                </label>
+                  
+                              </li>
+                              <li class="page-form__item">
+                                <input class="page-form__field visually-hidden" id="gender-4" type="radio" name="gender-2">
+                                <label class="page-form__label" for="gender-4">
+                  
+                                  <svg widht="20" height="20" viewBox="0 0 16 16" class="page-form__radio">
+                                    <circle cx="8" cy="8" r="7.5" fill="none" stroke="var(--checked-border-color)" stroke-width="1" />
+                                    <circle cx="8" cy="8" r="4.5" fill="var(--checked-color)" />
+                                  </svg>
+                                  <span>Жен.</span>
+                                </label>
+                  
+                              </li>
+                            </ul>
+                          </fieldset>
+                        </li>
+                        <li class="page-form__item page-form__item--full">
+                  
+                          <ul class="page-form__list">
+                            <li class="page-form__item">
+                              <label class="page-form__label" for="page-form-country">Страна</label>
+                              <select id="page-form-name" class="custom-select page-form__field" name="page-form-country" data-placeholder="Россия" required>
+                                <option value="Россия">Россия</option>
+                                <option value="Англия">Англия</option>
+                                <option value="Северная Ирландия">Северная Ирландия</option>
+                                <option value="Шотландия">Шотландия</option>
+                                <option value="Уэльс">Уэльс</option>
+                              </select>
+                            </li>
+                            <li class="page-form__item">
+                              <label class="page-form__label" for="page-form-gr">Гражданство</label>
+                  
+                              <select id="page-form-gr" class="custom-select page-form__field" name="page-form-gr" data-placeholder="Россия" required>
+                                <option value="Россия">Россия</option>
+                                <option value="Англия">Англия</option>
+                                <option value="Северная Ирландия">Северная Ирландия</option>
+                                <option value="Шотландия">Шотландия</option>
+                                <option value="Уэльс">Уэльс</option>
+                              </select>
+                            </li>
+                          </ul>
+                  
+                        </li>
+                  
+                        <li class="page-form__item page-form__item--full">
+                          <label class="page-form__label" for="page-form-name">Кем выдан</label>
+                          <input id="page-form-name" class="page-form__field" type="text" name="page-form-name"
+                            placeholder="Введите организацию" required>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              
+              
+              
+                <a class="link link--button link--uppercase" href="#" data-btn="js-step-btn">Далее</a>
+              </div>
+              <div class="row steps__content-row step-price tour-duration">
+                <div class="step-price__card">
+                  <a class="card link" href="#">
+                    <div class="card__inner">
+                      <div class="card__header">
+                        <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+                        <svg class="card__icon-hot" width="25" height="25">
+                          <use xlink:href="img/sprite.svg#icon-hot_price"></use>
+                        </svg>
+                      </div>
+                      <div class="card__info">
+                        <div class="card__title">Турция ждет!</div>
+                        <ul class="card__info-list">
+                          <li class="card__info-item">
+                            <svg class="card__info-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-fly"></use>
+                            </svg>
+                            <span class="card__info-val">Pegas</span>
+                          </li>
+                          <li class="card__info-item">
+                            <svg class="card__info-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-date"></use>
+                            </svg>
+                            <span class="card__info-val">29 Июл 2019</span>
+                          </li>
+                          <li class="card__info-item">
+                            <svg class="card__info-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-nights"></use>
+                            </svg>
+                            <span class="card__info-val">10 ночей</span>
+                          </li>
+                          <li class="card__info-item">
+                            <svg class="card__info-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-food"></use>
+                            </svg>
+                            <span class="card__info-val">Все включено</span>
+                          </li>
+                          <li class="card__info-item">
+                            <svg class="card__info-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-room_type"></use>
+                            </svg>
+                            <span class="card__info-val">DBL</span>
+                          </li>
+                          <li class="card__info-item">
+                            <svg class="card__info-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-adlt"></use>
+                            </svg>
+                            <span class="card__info-val">2</span>
+                          </li>
+                          <li class="card__info-item">
+                            <svg class="card__info-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-price"></use>
+                            </svg>
+                            <span class="card__info-val card__info-val--price">135 000 Р</span>
+                          </li>
+                        </ul>
+                        <!-- <button class="card__button button" href="#">Предложить свою цену</button> -->
+                      </div>
+                  
+                    </div>
+                  </a>
+                </div>
+                <div class="step-price__info-and-form content">
+                  <p class=""><b>Укажите срок, который вы готовы подождать, чтобы дать продавцу подумать.
+                  Возможно, он согласится принять вашу цену позже.</b></p>
+                  <div class="">
+                    <button class="button button--uppercase" type="button">1 день</button>
+                    <button class="button button--uppercase" type="button">2 день</button>
+                    <button class="button button--uppercase" type="button">3 день</button>
+                    <button class="button button--uppercase" type="button">4 день</button>
+                  </div>
+                  <div class="">
+                    <button class="button button--tabs button--uppercase" type="button">Отмена</button>
+                  </div>
+                </div>
+                <div class="step-making__footer">
+                  <a class="link link--button link--uppercase" href="cabinet-5.html">Далее</a>
+                </div>
               </div>
             </div>
-            <div class="step-making__footer">
-              <a class="link link--button link--uppercase" href="cabinet-5.html">Далее</a>
+
+            <div class="steps__content-item">
+
             </div>
+            <div class="steps__content-item">
+
+            </div>
+
+            <div class="steps__content-item">
+
+            </div>
+
+
+            <!-- <a class="link link--button" href="cabinet-3.html">Далее</a> -->
+
+            <!-- //= template/module/_step-price.html -->
           </div>
         </div>
-
       </div>
 
     </main>
@@ -692,8 +682,6 @@
   <script>
     svg4everybody();
   </script>
-
-
 </body>
 
 </html>
