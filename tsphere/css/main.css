@@ -144,8 +144,8 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   display: inline-block;
   vertical-align: middle;
-  padding: 0.625rem 1.25rem;
-  font-size: 16px;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
   font-family: "Google Sans Bold", Arial, sans-serif;
   font-weight: 600;
   line-height: inherit;
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 1s; }
   @media (min-width: 375px) {
     .button {
-      font-size: calc(0.2589vw + 15.02913px); } }
+      font-size: calc(0.38835vw + 12.54369px); } }
   @media (min-width: 1920px) {
     .button {
       font-size: 20px; } }
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #bfbfbf; }
   .button--tabs {
     margin: 0 0.25rem;
-    font-size: 16px;
+    font-size: 14px;
     color: #0075ab;
     background-color: #ffffff;
     border: 2px solid #0075ab;
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase; }
     @media (min-width: 375px) {
       .button--tabs {
-        font-size: calc(0.2589vw + 15.02913px); } }
+        font-size: calc(0.38835vw + 12.54369px); } }
     @media (min-width: 1920px) {
       .button--tabs {
         font-size: 20px; } }
@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
   .link--uppercase {
     text-transform: uppercase; }
   .link--btn {
-    padding: 0.625rem 1.25rem;
+    padding: 0.5rem 1rem;
     background-color: #fed330;
     color: #1a1a1a;
     font-family: "Google Sans Bold", Arial, sans-serif;
@@ -241,8 +241,8 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       background-color: #d6ab08; }
   .link--button {
-    padding: 0.625rem 1.25rem;
-    font-size: 16px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
     font-family: "Google Sans Bold", Arial, sans-serif;
     font-weight: 600;
     background-color: #fed330;
@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.3125rem; }
     @media (min-width: 375px) {
       .link--button {
-        font-size: calc(0.2589vw + 15.02913px); } }
+        font-size: calc(0.38835vw + 12.54369px); } }
     @media (min-width: 1920px) {
       .link--button {
         font-size: 20px; } }
@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin-right: auto;
     max-width: 90%;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Google Sans Bold", Arial, sans-serif;
     font-weight: 600;
     color: #008dca;
@@ -595,7 +595,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s; }
     @media (min-width: 375px) {
       .accordion__title {
-        font-size: calc(0.2589vw + 15.02913px); } }
+        font-size: calc(0.38835vw + 12.54369px); } }
     @media (min-width: 1920px) {
       .accordion__title {
         font-size: 20px; } }
@@ -1745,11 +1745,11 @@ h1, h2, h3, h4, h5, h6 {
       color: #ffffff; }
   .page__subtitle {
     margin-bottom: 1.5rem;
-    font-size: 16px;
+    font-size: 14px;
     line-height: normal; }
     @media (min-width: 375px) {
       .page__subtitle {
-        font-size: calc(0.2589vw + 15.02913px); } }
+        font-size: calc(0.38835vw + 12.54369px); } }
     @media (min-width: 1920px) {
       .page__subtitle {
         font-size: 20px; } }
@@ -2270,6 +2270,14 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: 1920px) {
       .page-section__title {
         font-size: 50px; } }
+    .page-section__title--h1 {
+      font-size: 30px; }
+      @media (min-width: 375px) {
+        .page-section__title--h1 {
+          font-size: calc(2.589vw + 20.29126px); } }
+      @media (min-width: 1920px) {
+        .page-section__title--h1 {
+          font-size: 70px; } }
   .page-section__title-block {
     margin-bottom: 1.25rem;
     font-family: "Google Sans Bold", Arial, sans-serif;
@@ -2886,8 +2894,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #808080; }
 
 .hotel-rating__number {
-  padding: 0.625rem 1.25rem;
-  font-size: 16px;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
   font-family: "Google Sans Bold", Arial, sans-serif;
   font-weight: 600;
   background-color: #fed330;
@@ -2895,7 +2903,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.3125rem; }
   @media (min-width: 375px) {
     .hotel-rating__number {
-      font-size: calc(0.2589vw + 15.02913px); } }
+      font-size: calc(0.38835vw + 12.54369px); } }
   @media (min-width: 1920px) {
     .hotel-rating__number {
       font-size: 20px; } }
@@ -3292,7 +3300,40 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%; }
       @media (max-width: 768px) {
         .steps__content-footer {
-          display: none; } }
+          position: fixed;
+          bottom: 0%;
+          left: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: normal;
+              -ms-flex-align: normal;
+                  align-items: normal;
+          width: 100%;
+          padding: 10px;
+          font-size: small;
+          background-color: #f7f7f8;
+          border-top: 1px solid #dcdfe6; }
+          .steps__content-footer .d-flex.d-sm-none {
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; }
+            .steps__content-footer .d-flex.d-sm-none .d-flex.d-sm-none span {
+              margin-left: 5px; }
+          .steps__content-footer .button {
+            font-size: 80%;
+            padding: 0.5rem 1rem;
+            margin: 0 5px; } }
     .steps__content-footer-mob {
       display: none; }
       @media (max-width: 768px) {
@@ -3373,10 +3414,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: calc(var(--padding-and-margin) / 2);
     font-family: "Google Sans Bold", Arial, sans-serif;
     font-weight: 600;
-    font-size: 16px; }
+    font-size: 14px; }
     @media (min-width: 375px) {
       .step-authorization__title {
-        font-size: calc(0.2589vw + 15.02913px); } }
+        font-size: calc(0.38835vw + 12.54369px); } }
     @media (min-width: 1920px) {
       .step-authorization__title {
         font-size: 20px; } }
@@ -3808,10 +3849,10 @@ ul {
   margin-bottom: 1.25rem;
   font-family: "Google Sans Bold", Arial, sans-serif;
   font-weight: 600;
-  font-size: 16px; }
+  font-size: 14px; }
   @media (min-width: 375px) {
     .office-address__title {
-      font-size: calc(0.2589vw + 15.02913px); } }
+      font-size: calc(0.38835vw + 12.54369px); } }
   @media (min-width: 1920px) {
     .office-address__title {
       font-size: 20px; } }
@@ -4049,10 +4090,10 @@ ul {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%;
-    font-size: 16px; }
+    font-size: 14px; }
     @media (min-width: 375px) {
       .number__info {
-        font-size: calc(0.2589vw + 15.02913px); } }
+        font-size: calc(0.38835vw + 12.54369px); } }
     @media (min-width: 1920px) {
       .number__info {
         font-size: 20px; } }
@@ -4596,19 +4637,19 @@ ul {
 
 @-webkit-keyframes scroll-plane {
   0% {
-    -webkit-transform: translate(-1000px, -50px);
-            transform: translate(-1000px, -50px); }
+    -webkit-transform: translate(-1000px, -50px) rotate(11deg);
+            transform: translate(-1000px, -50px) rotate(11deg); }
   100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    -webkit-transform: translate(1000px, 0) rotate(11deg);
+            transform: translate(1000px, 0) rotate(11deg); } }
 
 @keyframes scroll-plane {
   0% {
-    -webkit-transform: translate(-1000px, -50px);
-            transform: translate(-1000px, -50px); }
+    -webkit-transform: translate(-1000px, -50px) rotate(11deg);
+            transform: translate(-1000px, -50px) rotate(11deg); }
   100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    -webkit-transform: translate(1000px, 0) rotate(11deg);
+            transform: translate(1000px, 0) rotate(11deg); } }
 
 .map {
   position: relative;
