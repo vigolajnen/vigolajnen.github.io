@@ -518,8 +518,8 @@ $(".custom-option").on("click", function() {
   };
 
   stepAuthorization();
-  stepOfferPrice();
-  stepMaking();
+  // stepOfferPrice();
+  // stepMaking();
 })();
 
 
