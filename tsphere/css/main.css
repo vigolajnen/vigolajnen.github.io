@@ -84,7 +84,8 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100%; }
 
 .main {
-  min-height: calc(100% - 400px); }
+  min-height: calc(100% - 400px);
+  overflow-x: hidden; }
 
 .overlay {
   overflow: hidden;
@@ -1676,8 +1677,7 @@ h1, h2, h3, h4, h5, h6 {
       border-radius: 50%; }
 
 .page {
-  position: relative;
-  overflow-x: hidden; }
+  position: relative; }
   @media (max-width: 900px) {
     .page--mobile-no-footer .page-footer {
       display: none; } }
@@ -1812,12 +1812,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.25rem; }
   @media (max-width: 599px) {
     .page-form {
-      padding: 0.9375rem; } }
+      padding: 0; } }
   .page-form__inner {
     border: none; }
   .page-form__title {
     margin-bottom: calc(var(--mb) / 2);
     color: #1a1a1a; }
+    @media (max-width: 768px) {
+      .page-form__title {
+        text-align: center; } }
   .page-form__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1848,7 +1851,8 @@ h1, h2, h3, h4, h5, h6 {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; } }
+                align-items: center;
+        margin-bottom: calc(var(--mb) / 2); } }
     @media (min-width: 769px) {
       .page-form__item {
         width: 48%; }
@@ -1990,6 +1994,17 @@ h1, h2, h3, h4, h5, h6 {
     border: none; }
   .page-form__gender {
     border: none; }
+    @media (max-width: 768px) {
+      .page-form__gender {
+        width: 100%; }
+        .page-form__gender .page-form__title {
+          text-align: center; }
+        .page-form__gender .page-form__list {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+        .page-form__gender .page-form__item {
+          width: 50%; } }
 
 .page-form__select input[name="list"]:not(:checked) ~ .page-form__select-text {
   font-family: "Google Sans Bold", Arial, sans-serif;
@@ -2859,8 +2874,9 @@ h1, h2, h3, h4, h5, h6 {
             align-items: center;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1;
-    margin-right: 0.9375rem; }
+            flex-grow: 1; }
+    .filters__item:not(:last-child) {
+      margin-right: 0.9375rem; }
   .filters__label {
     white-space: nowrap;
     margin-right: 10px; }
@@ -3276,6 +3292,9 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: 475px) {
       .steps__content {
         max-height: calc(100vh - 240px); } }
+    @media (min-width: 567px) {
+      .steps__content {
+        max-height: 600px; } }
     @media (min-width: 900px) {
       .steps__content {
         max-height: 500px;
@@ -3301,6 +3320,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%; }
       @media (max-width: 768px) {
         .steps__content-footer {
+          z-index: 101;
           position: fixed;
           bottom: 0%;
           left: 0;
@@ -3309,9 +3329,9 @@ h1, h2, h3, h4, h5, h6 {
           display: flex;
           -ms-flex-wrap: nowrap;
               flex-wrap: nowrap;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
           -webkit-box-align: normal;
               -ms-flex-align: normal;
                   align-items: normal;
@@ -3331,10 +3351,11 @@ h1, h2, h3, h4, h5, h6 {
                 flex-wrap: nowrap; }
             .steps__content-footer .d-flex.d-sm-none .d-flex.d-sm-none span {
               margin-left: 5px; }
-          .steps__content-footer .button {
-            font-size: 80%;
+          .steps__content-footer .button,
+          .steps__content-footer .link {
             padding: 0.5rem 1rem;
-            margin: 0 5px; } }
+            margin: 0 5px;
+            line-height: 24px; } }
     .steps__content-footer-mob {
       display: none; }
       @media (max-width: 768px) {
@@ -3445,8 +3466,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center; }
   .step-registration__inner {
     margin-bottom: 1.25rem;
-    background-color: #ffffff;
-    max-height: 12.5rem; }
+    background-color: #ffffff; }
     .step-registration__inner .conetnt {
       height: 100%; }
 
