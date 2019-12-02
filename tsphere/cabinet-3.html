@@ -93,8 +93,15 @@
             </div>
             <div class="hotel-preview__pic" style="background-image: url('img/card/card-1.jpg')"></div>
           
+          
             <div class="hotel-preview__info">
-              <ul class="no-list hotel-preview__list">
+          
+              <a class="d-block d-sm-none link" data-toggle="collapse" href="#descHotel" role="button" aria-expanded="false"
+                aria-controls="descHotel">
+                Описание
+              </a>
+          
+              <ul class="no-list hotel-preview__list collapse" id="descHotel">
                 <li class="hotel-preview__item">
                   <span class="hotel-preview__label">Туроператор:</span>
                   <span class="hotel-preview__val">Pegas</span>
@@ -109,6 +116,7 @@
                 </li>
               </ul>
             </div>
+          
             <div class="hotel-preview__price">
               <span class="hotel-preview__price-label">Цена за номер</span>
               <span class="hotel-preview__price-number">105 500 руб</span>
@@ -142,9 +150,6 @@
           </div>
 
           <div class="steps__content">
-            <!-- //= template/module/_step-authorization.html -->
-            <!-- //= template/module/_step-registration.html -->
-            <!-- //= template/module/_step-cards.html -->
             <div class="scroll-content">
               <div class="chat">
                 <div class="chat__item">
@@ -360,6 +365,9 @@
   <script src="js/main.min.js"></script>
   <script>
     svg4everybody();
+  </script>
+  <script>
+    $('.collapse').collapse('hide');
   </script>
 </body>
 

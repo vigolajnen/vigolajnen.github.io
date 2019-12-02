@@ -3850,6 +3850,10 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 1.25rem;
     padding-left: 15px;
     padding-right: 15px;
@@ -3860,6 +3864,9 @@ ul {
     @media (min-width: 900px) {
       .offices-address__item {
         width: 33.33333%; } }
+    @media (min-width: 769px) {
+      .offices-address__item {
+        text-align: left; } }
 
 .office-address__inner {
   display: -webkit-box;
@@ -4795,8 +4802,8 @@ ul {
     opacity: 0.7; }
   .hotel-preview__val {
     padding-left: 10px; }
-  @media (min-width: 900px) {
-    .hotel-preview__price > * {
+  @media (min-width: 767px) {
+    .hotel-preview__price {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -4817,6 +4824,13 @@ ul {
     @media (min-width: 1920px) {
       .hotel-preview__price-number {
         font-size: 40px; } }
+  @media (max-width: 767px) {
+    .hotel-preview__list {
+      font-size: small;
+      line-height: normal; } }
+  @media (min-width: 767px) {
+    .hotel-preview__list.collapse:not(.show) {
+      display: block; } }
 
 @media (max-width: 767px) {
   .hotel-preview {
