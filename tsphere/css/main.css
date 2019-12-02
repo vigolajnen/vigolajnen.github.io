@@ -3307,6 +3307,8 @@ h1, h2, h3, h4, h5, h6 {
       .steps__content {
         max-height: 500px;
         padding: 1.25rem; } }
+    .steps__content--mh {
+      max-height: calc(100vh - 160px); }
     .steps__content select {
       max-width: 100px; }
     .steps__content-row {
