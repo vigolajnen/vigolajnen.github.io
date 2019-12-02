@@ -72,7 +72,12 @@ img {
   -o-object-fit: cover;
      object-fit: cover; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 20px;
   font-family: "Google Sans Regular", Arial, sans-serif;
   font-size: 1.15rem;
@@ -111,6 +116,12 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.small {
+  font-size: 65%; }
+  @media (min-width: 767px) {
+    .small {
+      font-size: 80%; } }
 
 .swiper-container {
   width: 100%; }
@@ -3286,7 +3297,7 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    max-height: calc(100vh - 280px);
+    max-height: calc(100vh - 230px);
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -3296,10 +3307,10 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden; }
     @media (min-width: 375px) {
       .steps__content {
-        max-height: calc(100vh - 260px); } }
+        max-height: calc(100vh - 210px); } }
     @media (min-width: 475px) {
       .steps__content {
-        max-height: calc(100vh - 240px); } }
+        max-height: calc(100vh - 200px); } }
     @media (min-width: 567px) {
       .steps__content {
         max-height: 600px; } }
