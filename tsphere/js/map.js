@@ -10,13 +10,18 @@ function initMap() {
     zoom: 10,
     center: { lat: 59.9464941, lng: 30.3254092 }
   });
+  var mapModal = new google.maps.Map(document.getElementById("mapModal"), {
+    zoom: 10,
+    center: { lat: 59.9464941, lng: 30.3254092 }
+  });
 
   setMarkers(map);
+  setMarkers(mapModal);
 }
 
 // Data for the markers consisting of a name, a LatLng and a zIndex for the
 // order in which these markers should display on top of each other.
-var beaches = [
+var offices = [
   ["Метро Проспект Просвещения, Санкт-Петербург", 60.0524808, 30.333307, 4],
   ["Улица Шостаковича, дом 5, корпус 1", 60.0576247, 30.3308753, 5],
   ["Метро Московская, Санкт-Петербург", 59.8520263, 30.3192447, 3],
@@ -48,15 +53,15 @@ function setMarkers(map) {
     coords: [1, 1, 1, 60, 58, 60, 58, 1],
     type: 'poly'
   };
-  for (var i = 0; i < beaches.length; i++) {
-    var beach = beaches[i];
+  for (var i = 0; i < offices.length; i++) {
+    var office = offices[i];
     var marker = new google.maps.Marker({
-      position: {lat: beach[1], lng: beach[2]},
+      position: {lat: office[1], lng: office[2]},
       map: map,
       icon: image,
       shape: shape,
-      title: beach[0],
-      zIndex: beach[3]
+      title: office[0],
+      zIndex: office[3]
     });
   }
 }

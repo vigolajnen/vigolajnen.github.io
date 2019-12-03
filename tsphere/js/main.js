@@ -440,23 +440,22 @@ $(".custom-option").on("click", function() {
       var confirmBtn = stepPhoneCode.querySelector("[data-btn=js-step-btn]");
 
     if (btn) {
-      btn.addEventListener("click", function(evt) {
+      btn.addEventListener("click", function (evt) {
         evt.preventDefault();
-
-        stepAgreement.classList.remove("active");
-        stepAgreement.classList.add("closed");
-        stepAgreement.parentElement.style.display = "none";
-
-        stepPhoneCode.classList.add("active");
-        stepPhoneCode.classList.remove("closed");
-        stepPhoneCode.parentElement.style.display = "flex";
+        document.location.href = "cabinet-2.html";
       });
     }
 
     if (confirmBtn) {
-      confirmBtn.addEventListener("click", function(evt) {
+      confirmBtn.addEventListener("click", function (evt) {
         evt.preventDefault();
-        document.location.href = "cabinet-2.html";
+        stepPhoneCode.classList.remove("active");
+        stepPhoneCode.classList.add("closed");
+        stepPhoneCode.parentElement.style.display = "none";
+
+        stepAgreement.classList.add("active");
+        stepAgreement.classList.remove("closed");
+        stepAgreement.parentElement.style.display = "flex";
       });
     }
   };
