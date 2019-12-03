@@ -1090,9 +1090,9 @@ h6 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1472,6 +1472,24 @@ h6 {
             flex-direction: column; }
   .page-footer__payment {
     margin-bottom: 1.25rem; }
+  .page-footer__platform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.25rem;
+    margin-top: 1.25rem;
+    width: 100%;
+    border-top: 1px solid #dcdfe6; }
 
 .payment__list {
   list-style: none;
@@ -2806,7 +2824,7 @@ h6 {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        padding: 1.25rem; } }
+        padding: 1.25rem 0; } }
   .table-price__title {
     padding: 1.25rem;
     color: #808080; }
@@ -2957,7 +2975,7 @@ h6 {
     .hotel-page__rating > *:not(:last-child) {
       margin-right: 10px; }
   .hotel-page__gallery {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2967,6 +2985,9 @@ h6 {
             flex-flow: row wrap;
     margin-left: -15px;
     margin-right: -15px; }
+    @media (min-width: 900px) {
+      .hotel-page__gallery {
+        margin-bottom: 40px; } }
     .hotel-page__gallery .swiper-slide {
       background-size: cover;
       background-position: center; }
@@ -3084,12 +3105,17 @@ h6 {
   .hotel-page__reviews-title {
     margin-bottom: 20px; }
   .hotel-page__map {
-    position: relative; }
+    position: relative;
+    margin-bottom: 1rem; }
     .hotel-page__map .link {
-      position: absolute;
-      right: 30px;
-      top: 60px;
-      z-index: 2; }
+      display: none; }
+      @media (min-width: 900px) {
+        .hotel-page__map .link {
+          position: absolute;
+          right: 30px;
+          top: 60px;
+          z-index: 2;
+          display: block; } }
 
 .hotel-review {
   padding: 15px;
