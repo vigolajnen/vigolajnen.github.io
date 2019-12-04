@@ -179,20 +179,18 @@ popupOpenBtns.forEach(function(btn) {
     breakpoints: {
       320: {
         slidesPerView: 10,
-        spaceBetween: 20,
+        spaceBetween: 10,
         slidesPerColumn: 0,
         direction: 'horizontal',
       },
       768: {
-        slidesPerView: 10,
-        spaceBetween: 20,
         slidesPerColumn: 2,
         direction: 'horizontal',
       },
       1024: {
         spaceBetween: 10,
         slidesPerView: 4,
-        slidesPerColumn: 2,
+        // slidesPerColumn: 2,
         direction: 'vertical',
       },
     }
