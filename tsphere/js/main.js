@@ -172,6 +172,8 @@ popupOpenBtns.forEach(function(btn) {
     watchSlidesProgress: true,
     scrollbar: {
       el: '.swiper-scrollbar',
+      draggable: true,
+      hide: true,
     },
     mousewheel: true,
     breakpoints: {
