@@ -3514,6 +3514,11 @@ h6 {
   .step-registration__inner {
     margin-bottom: 1.25rem;
     background-color: #ffffff; }
+    @media (min-width: 768px) {
+      .step-registration__inner {
+        padding: 1.25rem;
+        max-height: 12.5rem;
+        overflow-y: auto; } }
     .step-registration__inner .conetnt {
       height: 100%; }
 
