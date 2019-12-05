@@ -164,22 +164,22 @@ popupOpenBtns.forEach(function(btn) {
     spaceBetween: 10,
     slidesPerView: 4,
     slidesPerColumn: 2,
+    slidesPerRow: 4,
+    slidesPerColumnFill: "column",
     direction: 'vertical',
-    loop: true,
+    loop: false,
     freeMode: true,
     loopedSlides: 4, //looped slides should be the same
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     scrollbar: {
       el: '.swiper-scrollbar',
-      draggable: true,
+      // draggable: true,
       hide: true,
     },
     mousewheel: true,
     breakpoints: {
       320: {
-        slidesPerView: 10,
-        spaceBetween: 10,
         slidesPerColumn: 0,
         direction: 'horizontal',
       },
@@ -189,8 +189,7 @@ popupOpenBtns.forEach(function(btn) {
       },
       1024: {
         spaceBetween: 10,
-        slidesPerView: 4,
-        // slidesPerColumn: 2,
+        slidesPerView: 1,
         direction: 'vertical',
       },
     }
