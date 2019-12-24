@@ -8,8 +8,8 @@ var myChart = new Chart(ctx, {
 
       data: [29.00, 10.05, 120.00, 55.00],
 
-      backgroundColor: ["#4c506b", "#e2a700", "#64bc00",
-        "#4095db"
+      backgroundColor: ["#8aca35", "#8aca35", "#8aca35",
+        "#8aca35"
       ]
     }],
     labels: ["1", "2", "3", "4"],
