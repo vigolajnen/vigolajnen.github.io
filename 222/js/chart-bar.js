@@ -35,8 +35,8 @@ var myBarChart = new Chart(ctx, {
     labels: ["18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
     datasets: [{
       label: "Значение",
-      backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
+      backgroundColor: "#8aca35",
+      hoverBackgroundColor: "#77ae2e",
       borderColor: "#4e73df",
       data: [1215, 5312, 6251, 7841, 9821, 14984, 5312, 6251, 7841, 9821, 14984, 5312, 6251, 7841, 9821, 14984, 5312, 6251, 7841, 9821, 14984, 9821, 14984],
     }],

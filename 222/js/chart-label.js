@@ -10,8 +10,8 @@ var myPieChart = new Chart(ctxP, {
     labels: ["Прямой бюджетный эффект", "Косвенный бюджетный эффект"],
     datasets: [{
       data: [113, 208.5],
-      backgroundColor: ["#4f81be", "#c0504e"],
-      hoverBackgroundColor: ["#4c7bb3", "#b44947"]
+      backgroundColor: ["#8aca35", "#77ae2e"],
+      hoverBackgroundColor: ["#8aca35", "#77ae2e"]
     }]
   },
   options: {
