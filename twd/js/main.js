@@ -33,6 +33,18 @@
   });
 
 })();
+(function () {
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+      delay: 5000,
+    },
+    effect: 'fade',
+
+  });
+})();
+(function() {
+  $('.collapse').collapse('show');
+})();
 
 function up(smooth) {
   var top = Math.max(
@@ -300,7 +312,7 @@ scrollBtns.forEach(function (btn) {
 
 })();
 (function(){
-
+  $('body').append($('.modal'));
   // Модальное окно с выбором туристов
   $('.modal-backdrop').hide();
 
@@ -352,11 +364,7 @@ scrollBtns.forEach(function (btn) {
         this.remove();
       }
     });
-    // div.forEach((e) => {
-    //   e.onclick = function () {
-    //     this.remove();
-    //   }
-    // });
+
     checkCountChild();
   }
 
@@ -367,7 +375,7 @@ scrollBtns.forEach(function (btn) {
     children.forEach(function(el){
       childCounter.push(parseInt(el.innerText));
     });
-    // children.forEach(el => childCounter.push(parseInt(el.innerText)));
+
     childCounter = childCounter.join(',');
     if (children.length != 0) {
       $('.formValAdult').val(adult);

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/main.min.css" />
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 </head>
 
 <body class="page">
@@ -120,16 +120,91 @@
                 <div class="search-form__item-inner">
                   <div class="search-form__field" data-form="form-where-from">
                     <label class="search-form__title" for="search-form-where-from">Откуда</label>
-                    <input id="search-form-where-from" class="search-form__val" type="text" name="js-field-where-from"
+                    <!-- <input id="search-form-where-from" class="search-form__val" type="text" name="js-field-where-from"
+                      placeholder="Город"> -->
+                    <svg class="search-form__btn-icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-search_where"></use>
+                    </svg>
+        
+                    <select name="search-form-where-from"" id=" search-form-where-from"" class="custom-select"
                       placeholder="Город">
-                      <svg class="search-form__btn-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-search_where"></use>
-                      </svg>
+                      <option value="53">Абакана</option>
+                      <option value="63">Анапы</option>
+                      <option value="29">Архангельска</option>
+                      <option value="40">Астрахани</option>
+                      <option value="25">Барнаула</option>
+                      <option value="99">Без перелета</option>
+                      <option value="32">Белгорода</option>
+                      <option value="36">Благовещенска</option>
+                      <option value="45">Братска</option>
+                      <option value="38">Брянска</option>
+                      <option value="23">Владивостока</option>
+                      <option value="46">Владикавказа</option>
+                      <option value="27">Волгограда</option>
+                      <option value="26">Воронежа</option>
+                      <option value="96">Грозного</option>
+                      <option value="3">Екатеринбурга</option>
+                      <option value="103">Иваново</option>
+                      <option value="64">Ижевска</option>
+                      <option value="22">Иркутска</option>
+                      <option value="10">Казани</option>
+                      <option value="17">Калининграда</option>
+                      <option value="95">Калуги</option>
+                      <option value="15">Кемерово</option>
+                      <option value="104">Кирова</option>
+                      <option value="11">Краснодара</option>
+                      <option value="12">Красноярска</option>
+                      <option value="47">Курска</option>
+                      <option value="48">Магнитогорска</option>
+                      <option value="94">Махачкалы</option>
+                      <option value="39">Мин.Вод</option>
+                      <option value="1">Москвы</option>
+                      <option value="30">Мурманска</option>
+                      <option value="8">Н.Новгорода</option>
+                      <option value="61">Наб.Челнов</option>
+                      <option value="54">Нальчика</option>
+                      <option value="34">Нижневартовска</option>
+                      <option value="19">Нижнекамска</option>
+                      <option value="16">Новокузнецка</option>
+                      <option value="9">Новосибирска</option>
+                      <option value="67">Нового Уренгоя</option>
+                      <option value="21">Омска</option>
+                      <option value="28">Оренбурга</option>
+                      <option value="49">Орска</option>
+                      <option value="43">П.Камчатского</option>
+                      <option value="65">Пензы</option>
+                      <option value="2">Перми</option>
+                      <option value="18">Ростова-на-Дону</option>
+                      <option value="5" Selected>Санкт-Петербурга</option>
+                      <option value="7">Самары</option>
+                      <option value="101">Саранска</option>
+                      <option value="31">Саратова</option>
+                      <option value="62">Симферополя</option>
+                      <option value="56">Сочи</option>
+                      <option value="55">Ставрополя</option>
+                      <option value="13">Сургута</option>
+                      <option value="41">Сыктывкара</option>
+                      <option value="52">Томска</option>
+                      <option value="14">Тюмени</option>
+                      <option value="42">Улан-Удэ</option>
+                      <option value="50">Ульяновска</option>
+                      <option value="4">Уфы</option>
+                      <option value="20">Хабаровска</option>
+                      <option value="35">Ханты-Мансийска</option>
+                      <option value="51">Чебоксар</option>
+                      <option value="6">Челябинска</option>
+                      <option value="102">Череповца</option>
+                      <option value="44">Читы</option>
+                      <option value="24">Ю.Сахалинска</option>
+                      <option value="37">Якутска</option>
+                      <option value="85">Ярославля</option>
+        
+                    </select>
         
                   </div>
                 </div>
         
-                <div class="search-form__options closed" tabindex="0" data-form="form-where-from">
+                <!-- <div class="search-form__options closed" tabindex="0" data-form="form-where-from">
                   <ul class="search-form__options-list" tabindex="0">
                     <li class="search-form__options-item" tabindex="0">
                       <span>Санкт-Петербург, Россия</span>
@@ -152,21 +227,111 @@
                       <span>kuf</span>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </li>
               <li class="search-form__item">
                 <div class="search-form__item-inner">
                   <div class="search-form__field" data-form="form-where">
                     <label class="search-form__title" for="search-form-where">Куда</label>
-                    <input id="search-form-where" class="search-form__val" type="text" name="js-field-where"
-                      placeholder="Направление">
+                    <!-- <input id="search-form-where" class="search-form__val" type="text" name="js-field-where"
+                      placeholder="Направление"> -->
                     <svg class="search-form__btn-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-search_where"></use>
-                      </svg>
+                      <use xlink:href="img/sprite.svg#icon-search_where"></use>
+                    </svg>
+        
+                    <select name="search-form-where"" id=" search-form-where"" class="custom-select" placeholder="Направление">
+                      <option value="46">Абхазия</option>
+                      <option value="31">Австрия</option>
+                      <option value="55">Азербайджан</option>
+                      <option value="71">Албания</option>
+                      <option value="17">Андорра</option>
+                      <option value="53">Армения</option>
+                      <option value="72">Аруба</option>
+                      <option value="73">Багамы</option>
+                      <option value="59">Бахрейн</option>
+                      <option value="57">Беларусь</option>
+                      <option value="74">Бельгия</option>
+                      <option value="20">Болгария</option>
+                      <option value="39">Бразилия</option>
+                      <option value="44">Великобритания</option>
+                      <option value="37">Венгрия</option>
+                      <option value="16">Вьетнам</option>
+                      <option value="86">Гамбия</option>
+                      <option value="38">Германия</option>
+                      <option value="6">Греция</option>
+                      <option value="54">Грузия</option>
+                      <option value="75">Дания</option>
+                      <option value="11">Доминикана</option>
+                      <option value="1">Египет</option>
+                      <option value="30">Израиль</option>
+                      <option value="3">Индия</option>
+                      <option value="7">Индонезия</option>
+                      <option value="29">Иордания</option>
+                      <option value="76">Ирландия</option>
+                      <option value="77">Исландия</option>
+                      <option value="14">Испания</option>
+                      <option value="24">Италия</option>
+                      <option value="78">Казахстан</option>
+                      <option value="40">Камбоджа</option>
+                      <option value="79">Катар</option>
+                      <option value="51">Кения</option>
+                      <option value="15">Кипр</option>
+                      <option value="60">Киргизия</option>
+                      <option value="13">Китай</option>
+                      <option value="61">Коста-Рика</option>
+                      <option value="10">Куба</option>
+                      <option value="62">Латвия</option>
+                      <option value="80">Ливан</option>
+                      <option value="63">Литва</option>
+                      <option value="27">Маврикий</option>
+                      <option value="36">Малайзия</option>
+                      <option value="8">Мальдивы</option>
+                      <option value="50">Мальта</option>
+                      <option value="23">Марокко</option>
+                      <option value="18">Мексика</option>
+                      <option value="81">Мьянма</option>
+                      <option value="45">Нидерланды</option>
+                      <option value="83">Норвегия</option>
+                      <option value="9">ОАЭ</option>
+                      <option value="64">Оман</option>
+                      <option value="87">Панама</option>
+                      <option value="65">Польша</option>
+                      <option value="35">Португалия</option>
+                      <option value="47">Россия</option>
+                      <option value="66">Румыния</option>
+                      <option value="28">Сейшелы</option>
+                      <option value="58">Сербия</option>
+                      <option value="25">Сингапур</option>
+                      <option value="42">Словакия</option>
+                      <option value="43">Словения</option>
+                      <option value="48">США</option>
+                      <option value="2" Selected>Таиланд</option>
+                      <option value="41">Танзания</option>
+                      <option value="5">Тунис</option>
+                      <option value="4">Турция</option>
+                      <option value="56">Узбекистан</option>
+                      <option value="67">Фиджи</option>
+                      <option value="26">Филиппины</option>
+                      <option value="34">Финляндия</option>
+                      <option value="68">Фр.Полинезия</option>
+                      <option value="32">Франция</option>
+                      <option value="22">Хорватия</option>
+                      <option value="21">Черногория</option>
+                      <option value="19">Чехия</option>
+                      <option value="52">Швейцария</option>
+                      <option value="84">Швеция</option>
+                      <option value="12">Шри-Ланка</option>
+                      <option value="69">Эстония</option>
+                      <option value="85">ЮАР</option>
+                      <option value="70">Южная Корея</option>
+                      <option value="33">Ямайка</option>
+                      <option value="49">Япония</option>
+        
+                    </select>
                   </div>
                 </div>
         
-                <div class="search-form__options closed" tabindex="0" data-form="form-where">
+                <!-- <div class="search-form__options closed" tabindex="0" data-form="form-where">
                   <ul class="search-form__options-list" tabindex="0">
                     <li class="search-form__options-item" tabindex="0">
                       <span>Санкт-Петербург, Россия</span>
@@ -189,17 +354,17 @@
                       <span>kuf</span>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </li>
               <li class="search-form__item">
                 <div class="search-form__item-inner">
                   <div class="search-form__field">
                     <label class="search-form__title" for="search-form-3">Вылет - Прилет</label>
-                    <input id="search-form-3" class="search-form__val" type="text" name="datefilter"
+                    <input id="search-form-3" class="btn" type="text" name="datefilter"
                       placeholder="20 Июл - 27 Июл">
                     <svg class="search-form__btn-icon" width="25" height="25">
-                        <use xlink:href="img/sprite.svg#icon-search_clear"></use>
-                      </svg>
+                      <use xlink:href="img/sprite.svg#icon-search_clear"></use>
+                    </svg>
                   </div>
                 </div>
         
@@ -212,94 +377,58 @@
                       placeholder="6 - 14"> -->
         
         
-                      <select type="text" id="search-form-night"
-                        class="search-form__val custom-select" name="js-field-night" placeholder="1">
-                        <option value="1" selected>1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                      </select>
-        <!--
+                    <select type="text" id="search-form-night" class="custom-select" name="js-field-night"
+                      placeholder="1">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+        
                       <svg class="search-form__btn-icon" width="25" height="25">
                         <use xlink:href="img/sprite.svg#icon-search_choose_open"></use>
-                      </svg> -->
+                      </svg>
         
                   </div>
                 </div>
         
-                <div class="search-form__options closed" tabindex="0" data-form="form-night">
-                  <ul class="search-form__options-list" tabindex="0">
-                    <li class="search-form__options-item" tabindex="0">
-                      <span>1-2</span>
-                    </li>
-                    <li class="search-form__options-item" tabindex="0">
-                      <span>3-4</span>
-                    </li>
-                    <li class="search-form__options-item" tabindex="0">
-                      <span>4-6</span>
-                    </li>
-                    <li class="search-form__options-item" tabindex="0">
-                      <span>8-10</span>
-                    </li>
-                  </ul>
-                </div>
               </li>
               <li class="search-form__item">
-                <div class="search-form__item-inner">
-                  <fieldset class="search-form__group">
-                    <legend class="search-form__group-title">Туристы</legend>
-                    <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">2 взрослых</button>
         
-                    <!-- <ul class="search-form__group-list">
-                      <li class="search-form__group-item">
-                        <div class="search-form__group-field">
-                          <label class="visually-hidden" for="search-form-adlt">Взрослые</label>
-                          <input id="search-form-adlt" class="search-form__val" type="text" name="search-form-adlt"
-                            placeholder="0">
-                          <svg class="search-form__btn-icon" width="25" height="25">
-                              <use xlink:href="img/sprite.svg#icon-search_adlt"></use>
-                            </svg>
-                        </div>
-                      </li>
-                      <li class="search-form__group-item">
-                        <div class="search-form__group-field">
-                          <label class="visually-hidden" for="search-form-kids">Дети</label>
-                          <input id="search-form-kids" class="search-form__val" type="text" name="search-form-kids"
-                            placeholder="0">
-                          <svg class="search-form__btn-icon" width="25" height="25">
-                              <use xlink:href="img/sprite.svg#icon-search_kids"></use>
-                            </svg>
-                        </div>
-                      </li>
-                    </ul> -->
-                  </fieldset>
+                <div class="search-form__item-inner">
+                  <div class="search-form__field">
+                    <label class="search-form__title" for="search-form-tourists">Туристы</label>
+                    <button type="button" id="search-form-tourists" class="btn" data-toggle="modal"
+                      data-target="#sfTouristsModal">2 взрослых</button>
+        
+                  </div>
                 </div>
         
               </li>
@@ -307,57 +436,73 @@
                 <button class="btn btn-warning search-form__btn-submit" type="submit">Найти</button>
               </li>
             </ul>
-            <!-- <div class="search-form__inner-options">
-              <div class="search-form__options closed" tabindex="0" data-form="form-where-from">
-                <ul class="search-form__options-list" tabindex="0">
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Санкт-Петербург, Россия</span>
-                    <span>led</span>
-                  </li>
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Самуи, Тайланд</span>
-                    <span>usm</span>
-                  </li>
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Салоники, Греция</span>
-                    <span>skg</span>
-                  </li>
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Южно-Сахалинск, Россия</span>
-                    <span>uus</span>
-                  </li>
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Самара, Россия</span>
-                    <span>kuf</span>
-                  </li>
-                </ul>
+        
+          </div>
+        </div>
+        
+        
+        <div class="modal fade" id="sfTouristsModal" tabindex="-1" role="dialog" aria-labelledby="sfTouristsModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="sfTouristsModalLabel">Туристы</h5>
+                <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              <div class="search-form__options closed" tabindex="0" data-form="form-where">
-                <ul class="search-form__options-list" tabindex="0">
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Санкт-Петербург, Россия</span>
-                    <span>led</span>
-                  </li>
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Самуи, Тайланд</span>
-                    <span>usm</span>
-                  </li>
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Салоники, Греция</span>
-                    <span>skg</span>
-                  </li>
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Южно-Сахалинск, Россия</span>
-                    <span>uus</span>
-                  </li>
-                  <li class="search-form__options-item" tabindex="0">
-                    <span>Самара, Россия</span>
-                    <span>kuf</span>
-                  </li>
-                </ul>
+              <div class="modal-body">
+                <div class="modal-body-turistic">
+        
+                  <div class="tc_TouristsPanel">
+                    <div class="tc_content">
+                      <div class="tc_TouristsOptions">
+                        <div class="tc_TouristStatic">
+                          <div class="tc_TouristElement tc_adults">
+                            <div class="tc_TouristAction tc_TouristActionMinus">
+                              <div class="tc_TouristContentMinus tc_symbol"> - </div>
+                            </div>
+                            <div class="tc_TouristCount tc_TouristAll">Взрослых&ensp;<span class="tc_valAdults">2</span></div>
+                            <div class="tc_TouristAction tc_TouristActionPlus">
+                              <div class="tc_TouristContentPlus tc_symbol"> + </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tc_TouristDynamic">
+                          <div class="tc_TouristElement tc_TouristButton tc_addChild">Добавить ребёнка</div>
+                          <div class="tc_TouristPickElement tc_TouristButton">
+                            <div class="tc_pickHeader">Выберите возраст ребёнка</div>
+                            <div class="tc_pickAge">до 2-х лет</div>
+                            <div class="tc_pickAge">6 лет</div>
+                            <div class="tc_pickAge">11 лет</div>
+                            <div class="tc_pickAge">2 года</div>
+                            <div class="tc_pickAge">7 лет</div>
+                            <div class="tc_pickAge">12 лет</div>
+                            <div class="tc_pickAge">3 года</div>
+                            <div class="tc_pickAge">8 лет</div>
+                            <div class="tc_pickAge">13 лет</div>
+                            <div class="tc_pickAge">4 года</div>
+                            <div class="tc_pickAge">9 лет</div>
+                            <div class="tc_pickAge">14 лет</div>
+                            <div class="tc_pickAge">5 лет</div>
+                            <div class="tc_pickAge">10 лет</div>
+                            <div class="tc_pickAge">15 лет</div>
+                          </div>
+                        </div>
+        
+                      </div>
+                    </div>
+                    <div>
+                      <div class="tc_SubmitButton tc_ButtonActive">Выбрать
+                      </div>
+                    </div>
+        
+        
+                  </div>
+                </div>
               </div>
         
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="text-right mt-4 d-none d-sm-block" style="z-index: 1;position: relative;">
@@ -840,97 +985,14 @@
   </div>
 
   <script src="js/libs.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/main.min.js"></script>
   <script>
     svg4everybody();
   </script>
 
 
-  <script>
-    $('.collapse').collapse('show');
-  </script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var mySwiper = new Swiper('.swiper-container', {
-      autoplay: {
-        delay: 5000,
-      },
-      effect: 'fade',
-
-    });
-
-
-
-  </script>
-
-
-
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Туристы</h5>
-          <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-body-turistic">
-
-            <div class="tc_TouristsPanel">
-              <div class="tc_content">
-                <div class="tc_TouristsOptions">
-                  <div class="tc_TouristStatic">
-                    <div class="tc_TouristElement tc_adults">
-                      <div class="tc_TouristAction tc_TouristActionMinus">
-                        <div class="tc_TouristContentMinus tc_symbol"> - </div>
-                      </div>
-                      <div class="tc_TouristCount tc_TouristAll">Взрослых&ensp;<span class="tc_valAdults">2</span></div>
-                      <div class="tc_TouristAction tc_TouristActionPlus">
-                        <div class="tc_TouristContentPlus tc_symbol"> + </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tc_TouristDynamic">
-                    <div class="tc_TouristElement tc_TouristButton tc_addChild">Добавить ребёнка</div>
-                    <div class="tc_TouristPickElement tc_TouristButton">
-                      <div class="tc_pickHeader">Выберите возраст ребёнка</div>
-                      <div class="tc_pickAge">до 2-х лет</div>
-                      <div class="tc_pickAge">6 лет</div>
-                      <div class="tc_pickAge">11 лет</div>
-                      <div class="tc_pickAge">2 года</div>
-                      <div class="tc_pickAge">7 лет</div>
-                      <div class="tc_pickAge">12 лет</div>
-                      <div class="tc_pickAge">3 года</div>
-                      <div class="tc_pickAge">8 лет</div>
-                      <div class="tc_pickAge">13 лет</div>
-                      <div class="tc_pickAge">4 года</div>
-                      <div class="tc_pickAge">9 лет</div>
-                      <div class="tc_pickAge">14 лет</div>
-                      <div class="tc_pickAge">5 лет</div>
-                      <div class="tc_pickAge">10 лет</div>
-                      <div class="tc_pickAge">15 лет</div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div>
-                <div class="tc_SubmitButton tc_ButtonActive">Выбрать</divmodal-body-turistic>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
 
 
 </body>

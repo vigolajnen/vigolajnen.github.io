@@ -364,12 +364,12 @@ a:not([class*='']) {
       background-position: 95% 0; }
   .search-form__btn-icon {
     position: absolute;
-    bottom: 8px;
-    right: 0;
-    width: 1.25rem;
-    height: 1.25rem;
+    bottom: 19px;
+    right: 7px;
+    width: 1rem;
+    height: 1rem;
     fill: #0075ab;
-    background-color: transparent; }
+    background-color: #fff; }
   .search-form__group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -482,6 +482,20 @@ a:not([class*='']) {
       cursor: pointer; }
       .search-form__options-item:focus, .search-form__options-item:hover {
         background-color: rgba(154, 154, 154, 0.25); }
+
+.search-form .btn {
+  font-family: "Google Sans Bold", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none; }
+
+.search-form .btn:not([type="submit"]),
+.search-form .custom-select {
+  font-family: "Google Sans Bold", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  text-align: left; }
 
 .card {
   display: block;
