@@ -312,6 +312,8 @@ scrollBtns.forEach(function (btn) {
 
 })();
 (function(){
+
+
   $('body').append($('.modal'));
   // Модальное окно с выбором туристов
   $('.modal-backdrop').hide();
@@ -370,6 +372,7 @@ scrollBtns.forEach(function (btn) {
 
   $('.tc_ButtonActive').click(function () {
     var adult = $('.tc_valAdults').text();
+
     var children = document.querySelectorAll('.tc_childCount');
     var childCounter = [];
     children.forEach(function(el){
@@ -381,17 +384,17 @@ scrollBtns.forEach(function (btn) {
       $('.formValAdult').val(adult);
       $('.formValChild').val(children.length);
       $('.formValYears').val(childCounter);
-      $('.search-form__val.tourists').text(adult + ' взр. ' + children.length + ' реб.');
+      $('#search-form-tourists').text(adult + ' взр. ' + children.length + ' реб.');
     }
     else if (adult == 1) {
       $('.formValAdult').val(adult);
       $('.formValChild').val(0);
-      $('.search-form__val.tourists').text(adult + ' взрослый');
+      $('#search-form-tourists').text(adult + ' взрослый');
     }
     else {
       $('.formValAdult').val(adult);
       $('.formValChild').val(0);
-      $('.search-form__val.tourists').text(adult + ' взрослых');
+      $('#search-form-tourists').text(adult + ' взрослых');
     }
 
 
@@ -399,10 +402,14 @@ scrollBtns.forEach(function (btn) {
     $('#w1').removeClass('in');
     $('body').css({ 'padding-right': '0px' });
     $('body').removeClass('modal-open');
+    $('.modal').removeClass('show');
 
     console.log(childCounter);
 
   });
+
+
+
 })();
 
 // карта с адресами офисов
