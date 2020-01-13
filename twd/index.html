@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>Стартовая страница</title>
+
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="page">
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="page-header__container container">
+    
+        <nav class="navigation">
+          <button class="navigation__toggle navigation--opened button button--link" type="button" aria-label="Открыть меню">
+            <svg width="25" viewbox="0 0 10 10" fill="#ffcb00">
+              <rect width="10" height="1.5" x="0" y="0" />
+              <rect width="10" height="1.5" x="0" y="3" />
+              <rect width="10" height="1.5" x="0" y="6" />
+            </svg>
+          </button>
+          <div class="navigation__logo-and-phone">
+            <a class="navigation__logo logo" href="index.html">
+              <img class="img-full" src="img/logo.png" alt="логотип компании">
+            </a>
+            <a class="navigation__phone phone d-none d-md-flex" href="tel:+78126433406">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-call"></use>
+              </svg>
+              <span>+7 (812) 643 34 06 <span>Единый номер для всей России</span></span>
+            </a>
+          </div>
+          <div class="navigation__items">
+            <div class="navigation__item">
+              <a class="logo" href="index.html">
+                <img class="img-full" src="img/logo.png" alt="логотип компании">
+              </a>
+            </div>
+            <a class="navigation__item" href="offices.html">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-offices"></use>
+              </svg>
+              <span>Офисы продаж</span>
+            </a>
+            <a class="navigation__item" href="support.html">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-help"></use>
+              </svg>
+              <span>Тех. поддержка</span>
+            </a>
+    
+            <!-- если еще не авторизован -->
+            <a class="navigation__item d-flex" href="cabinet.html">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-profile"></use>
+              </svg>
+              <span>Личный кабинет</span>
+            </a>
+            <!-- если еще не авторизован -->
+    
+            <!-- если уже авторизован -->
+            <!-- <div class="navigation__item dropright">
+              <svg class="d-none d-sm-flex" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-profile"></use>
+              </svg>
+              <span class="d-none d-sm-flex">Дмитрий Ермолаев</span>
+              <button class="button button--link" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="navigation__item p-0 d-flex d-sm-none">
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-profile"></use>
+                  </svg>
+                  <span class="d-flex d-sm-none">Дмитрий Ермолаев</span>
+                </span>
+                <svg class="p-0 pl-2 d-none d-sm-flex" width="10" viewbox="0 0 8 10" fill="#ffffff">
+                  <rect width="8" height="1.5" x="0" y="2" />
+                  <rect width="8" height="1.5" x="0" y="5" />
+                  <rect width="8" height="1.5" x="0" y="8" />
+                </svg>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item link" href="#">Мой профиль</a>
+                <a class="dropdown-item link" href="#">Способы оплаты</a>
+                <a class="dropdown-item link" href="#">Мои покупки</a>
+                <a class="dropdown-item link" href="#">Покупки с ожиданием</a>
+                <a class="dropdown-item link" href="#">Адрес доставки</a>
+                <a class="dropdown-item link" href="#">Выход</a>
+              </div>
+            </div> -->
+            <!-- если уже авторизован -->
+          </div>
+        </nav>
+      </div>
+    
+    </header>
+
+    <section class="section promo-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('img/slider/slide-1.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('img/slider/slide-2.jpg');"></div>
+
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="search-form">
+          <div class="search-form__inner">
+            <ul class="search-form__list">
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <div class="search-form__field" data-form="form-where-from">
+                    <label class="search-form__title" for="search-form-where-from">Откуда</label>
+                    <input id="search-form-where-from" class="search-form__val" type="text" name="js-field-where-from"
+                      placeholder="Город">
+                      <svg class="search-form__btn-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search_where"></use>
+                      </svg>
+        
+                  </div>
+                </div>
+        
+                <div class="search-form__options closed" tabindex="0" data-form="form-where-from">
+                  <ul class="search-form__options-list" tabindex="0">
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Санкт-Петербург, Россия</span>
+                      <span>led</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Самуи, Тайланд</span>
+                      <span>usm</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Салоники, Греция</span>
+                      <span>skg</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Южно-Сахалинск, Россия</span>
+                      <span>uus</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Самара, Россия</span>
+                      <span>kuf</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <div class="search-form__field" data-form="form-where">
+                    <label class="search-form__title" for="search-form-where">Куда</label>
+                    <input id="search-form-where" class="search-form__val" type="text" name="js-field-where"
+                      placeholder="Направление">
+                    <svg class="search-form__btn-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search_where"></use>
+                      </svg>
+                  </div>
+                </div>
+        
+                <div class="search-form__options closed" tabindex="0" data-form="form-where">
+                  <ul class="search-form__options-list" tabindex="0">
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Санкт-Петербург, Россия</span>
+                      <span>led</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Самуи, Тайланд</span>
+                      <span>usm</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Салоники, Греция</span>
+                      <span>skg</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Южно-Сахалинск, Россия</span>
+                      <span>uus</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>Самара, Россия</span>
+                      <span>kuf</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <div class="search-form__field">
+                    <label class="search-form__title" for="search-form-3">Вылет - Прилет</label>
+                    <input id="search-form-3" class="search-form__val" type="text" name="datefilter"
+                      placeholder="20 Июл - 27 Июл">
+                    <svg class="search-form__btn-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search_clear"></use>
+                      </svg>
+                  </div>
+                </div>
+        
+              </li>
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <div class="search-form__field" data-form="form-night">
+                    <label class="search-form__title control-label" for="search-form-night">Ночей</label>
+                    <!-- <input id="search-form-night" class="search-form__val" type="text" name="js-field-night"
+                      placeholder="6 - 14"> -->
+        
+        
+                      <select type="text" id="search-form-night"
+                        class="search-form__val custom-select" name="js-field-night" placeholder="1">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+        <!--
+                      <svg class="search-form__btn-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-search_choose_open"></use>
+                      </svg> -->
+        
+                  </div>
+                </div>
+        
+                <div class="search-form__options closed" tabindex="0" data-form="form-night">
+                  <ul class="search-form__options-list" tabindex="0">
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>1-2</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>3-4</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>4-6</span>
+                    </li>
+                    <li class="search-form__options-item" tabindex="0">
+                      <span>8-10</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="search-form__item">
+                <div class="search-form__item-inner">
+                  <fieldset class="search-form__group">
+                    <legend class="search-form__group-title">Туристы</legend>
+                    <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">2 взрослых</button>
+        
+                    <!-- <ul class="search-form__group-list">
+                      <li class="search-form__group-item">
+                        <div class="search-form__group-field">
+                          <label class="visually-hidden" for="search-form-adlt">Взрослые</label>
+                          <input id="search-form-adlt" class="search-form__val" type="text" name="search-form-adlt"
+                            placeholder="0">
+                          <svg class="search-form__btn-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-search_adlt"></use>
+                            </svg>
+                        </div>
+                      </li>
+                      <li class="search-form__group-item">
+                        <div class="search-form__group-field">
+                          <label class="visually-hidden" for="search-form-kids">Дети</label>
+                          <input id="search-form-kids" class="search-form__val" type="text" name="search-form-kids"
+                            placeholder="0">
+                          <svg class="search-form__btn-icon" width="25" height="25">
+                              <use xlink:href="img/sprite.svg#icon-search_kids"></use>
+                            </svg>
+                        </div>
+                      </li>
+                    </ul> -->
+                  </fieldset>
+                </div>
+        
+              </li>
+              <li class="search-form__item p-3">
+                <button class="btn btn-warning search-form__btn-submit" type="submit">Найти</button>
+              </li>
+            </ul>
+            <!-- <div class="search-form__inner-options">
+              <div class="search-form__options closed" tabindex="0" data-form="form-where-from">
+                <ul class="search-form__options-list" tabindex="0">
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Санкт-Петербург, Россия</span>
+                    <span>led</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Самуи, Тайланд</span>
+                    <span>usm</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Салоники, Греция</span>
+                    <span>skg</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Южно-Сахалинск, Россия</span>
+                    <span>uus</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Самара, Россия</span>
+                    <span>kuf</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="search-form__options closed" tabindex="0" data-form="form-where">
+                <ul class="search-form__options-list" tabindex="0">
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Санкт-Петербург, Россия</span>
+                    <span>led</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Самуи, Тайланд</span>
+                    <span>usm</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Салоники, Греция</span>
+                    <span>skg</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Южно-Сахалинск, Россия</span>
+                    <span>uus</span>
+                  </li>
+                  <li class="search-form__options-item" tabindex="0">
+                    <span>Самара, Россия</span>
+                    <span>kuf</span>
+                  </li>
+                </ul>
+              </div>
+        
+            </div> -->
+          </div>
+        </div>
+        <div class="text-right mt-4 d-none d-sm-block" style="z-index: 1;position: relative;">
+          <div class="h1 font-weight-bold text-warning mb-0">
+            Купи тур дешевле,
+          </div>
+          <div class="h3 font-weight-bold text-warning mb-5">
+            предложив свою цену
+          </div>
+        </div>
+
+      </div>
+
+      <button id="normal" class="section__btn" aria-label="стрелка вниз">
+        <svg width="25" height="25">
+          <use xlink:href="img/sprite.svg#icon-list_white_open"></use>
+        </svg>
+      </button>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="h2 font-weight-bold mb-4">Хиты продаж в январе</h2>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <div class="card__inner">
+                <div class="card__header">
+                  <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+                  <svg class="card__icon-hot" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-hot_price"></use>
+                  </svg>
+                </div>
+                <div class="card__info">
+                  <a class="card__title link" href="cabinet.html">Турция ждет!</a>
+                  <ul class="card__info-list">
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-fly"></use>
+                      </svg>
+                      <span class="card__info-val">Pegas</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-date"></use>
+                      </svg>
+                      <span class="card__info-val">29 Июл 2019</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-nights"></use>
+                      </svg>
+                      <span class="card__info-val">10 ночей</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-food"></use>
+                      </svg>
+                      <span class="card__info-val">Все включено</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-room_type"></use>
+                      </svg>
+                      <span class="card__info-val">DBL</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-adlt"></use>
+                      </svg>
+                      <span class="card__info-val">2</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-price"></use>
+                      </svg>
+                      <span class="card__info-val card__info-val--price">135 000 Р</span>
+                    </li>
+                  </ul>
+                  <a class="btn btn-warning font-weight-bold w-100"  href="cabinet.html">Предложить свою цену</a>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <div class="card__inner">
+                <div class="card__header">
+                  <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+                  <svg class="card__icon-hot" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-hot_price"></use>
+                  </svg>
+                </div>
+                <div class="card__info">
+                  <a class="card__title link" href="cabinet.html">Турция ждет!</a>
+                  <ul class="card__info-list">
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-fly"></use>
+                      </svg>
+                      <span class="card__info-val">Pegas</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-date"></use>
+                      </svg>
+                      <span class="card__info-val">29 Июл 2019</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-nights"></use>
+                      </svg>
+                      <span class="card__info-val">10 ночей</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-food"></use>
+                      </svg>
+                      <span class="card__info-val">Все включено</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-room_type"></use>
+                      </svg>
+                      <span class="card__info-val">DBL</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-adlt"></use>
+                      </svg>
+                      <span class="card__info-val">2</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-price"></use>
+                      </svg>
+                      <span class="card__info-val card__info-val--price">135 000 Р</span>
+                    </li>
+                  </ul>
+                  <a class="btn btn-warning font-weight-bold w-100"  href="cabinet.html">Предложить свою цену</a>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <div class="card__inner">
+                <div class="card__header">
+                  <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+                  <svg class="card__icon-hot" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-hot_price"></use>
+                  </svg>
+                </div>
+                <div class="card__info">
+                  <a class="card__title link" href="cabinet.html">Турция ждет!</a>
+                  <ul class="card__info-list">
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-fly"></use>
+                      </svg>
+                      <span class="card__info-val">Pegas</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-date"></use>
+                      </svg>
+                      <span class="card__info-val">29 Июл 2019</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-nights"></use>
+                      </svg>
+                      <span class="card__info-val">10 ночей</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-food"></use>
+                      </svg>
+                      <span class="card__info-val">Все включено</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-room_type"></use>
+                      </svg>
+                      <span class="card__info-val">DBL</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-adlt"></use>
+                      </svg>
+                      <span class="card__info-val">2</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-price"></use>
+                      </svg>
+                      <span class="card__info-val card__info-val--price">135 000 Р</span>
+                    </li>
+                  </ul>
+                  <a class="btn btn-warning font-weight-bold w-100"  href="cabinet.html">Предложить свою цену</a>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card">
+              <div class="card__inner">
+                <div class="card__header">
+                  <div class="card__pic" style="background-image: url('img/card/card-1.jpg')"></div>
+                  <svg class="card__icon-hot" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-hot_price"></use>
+                  </svg>
+                </div>
+                <div class="card__info">
+                  <a class="card__title link" href="cabinet.html">Турция ждет!</a>
+                  <ul class="card__info-list">
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-fly"></use>
+                      </svg>
+                      <span class="card__info-val">Pegas</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-date"></use>
+                      </svg>
+                      <span class="card__info-val">29 Июл 2019</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-nights"></use>
+                      </svg>
+                      <span class="card__info-val">10 ночей</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-food"></use>
+                      </svg>
+                      <span class="card__info-val">Все включено</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-room_type"></use>
+                      </svg>
+                      <span class="card__info-val">DBL</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-adlt"></use>
+                      </svg>
+                      <span class="card__info-val">2</span>
+                    </li>
+                    <li class="card__info-item">
+                      <svg class="card__info-icon" width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-price"></use>
+                      </svg>
+                      <span class="card__info-val card__info-val--price">135 000 Р</span>
+                    </li>
+                  </ul>
+                  <a class="btn btn-warning font-weight-bold w-100"  href="cabinet.html">Предложить свою цену</a>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section section--bg-3">
+      <div class="container container--center">
+        <h2 class="h2 font-weight-bold mb-4">Как это работает?</h2>
+        <!-- этапы -->
+        <div class="purchase-stages">
+          <ul class="purchase-stages__list">
+            <li class="purchase-stages__item stage">
+              <svg class="purchase-stages__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-step_order"></use>
+              </svg>
+              <span class="purchase-stages__title">Выберите тур</span>
+              <span class="purchase-stages__info">В нашей базе более 10000 туров, на любой вы можете предложить свою цену</span>
+            </li>
+            <li class="purchase-stages__item stage">
+              <svg class="purchase-stages__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-step_order"></use>
+              </svg>
+              <span class="purchase-stages__title">Предложите свою цену</span>
+              <span class="purchase-stages__info">После процедуры регистрации вы сможете предложить свою цену на тур. На вашей карте будет заморожена сумма равная предложенной вами</span>
+            </li>
+            <li class="purchase-stages__item stage">
+              <svg class="purchase-stages__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-step_time"></use>
+              </svg>
+              <span class="purchase-stages__title">Получите одобрение в течении 10 секунд</span>
+              <span class="purchase-stages__info">Если Ваша цена устроит, то мы продадим Вам тур и замороженная сумма списывается с Вашей карты. Если ваша цена не устроит, то мы попросим увеличить цену</span>
+            </li>
+            <li class="purchase-stages__item stage">
+              <svg class="purchase-stages__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-step_docs"></use>
+              </svg>
+              <span class="purchase-stages__title">Оформите путевку</span>
+              <span class="purchase-stages__info">Заполните данные формы для всех участников путешествия</span>
+            </li>
+            <li class="purchase-stages__item stage">
+              <div class="purchase-stages__path-plane"></div>
+              <svg class="purchase-stages__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-step_order"></use>
+              </svg>
+              <span class="purchase-stages__title">Получите документы</span>
+              <span class="purchase-stages__info">Все необходимые документы Вы можете получить в <a class="link" href="offices.html">любом офисе</a> сети Турсфера</span>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-primary text-uppercase font-weight-bold" href="#">Купить тур сейчас</a>
+      </div>
+    </section>
+    <section class="section section--bg-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3 class="h2 font-weight-bold mb-4">С Турсферой выгоднее!</h3>
+            <div class="number">
+              <ul class="number__list">
+                <li class="number__item">
+                  <svg class="number__icon" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-orders"></use>
+                  </svg>
+                  <span class="number__count">230</span>
+                  <span class="number__info">Предложений было продано за вчерашний день</span>
+                </li>
+                <li class="number__item">
+                  <svg class="number__icon" width="25" height="25">
+                    <use xlink:href="img/sprite.svg#icon-clients"></use>
+                  </svg>
+                  <span class="number__count">120</span>
+                  <span class="number__info">Предложений было одобрено нашим клиентам</span>
+                </li>
+              </ul>
+              <div class="number__footer">
+                <div class="number__footer-price">252 000 Р</div>
+                <div class="number__info">Сэкономлено нашими довольными клиентами</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="h3 font-weight-bold mb-4">Вопрос-ответ</div>
+            <!-- другой -->
+            <div class="accordion" id="accordion-1">
+              <div class="card">
+                <div class="card-header" id="heading-1">
+                  <button class="accordion__item-title button button--link" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                    <span class="accordion__title">Почему вы продаете туры дешевле, чем другие?</span>
+                    <span class="accordion__btn-icon">
+                      <svg width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+            
+                <div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#accordion-1">
+                  <div class="accordion__text content">
+                    <h3>Как купить авиабилеты дешево</h3>
+                    <p>Мы составили список часто задаваемых вопросов по перёлетам, ответы
+                      на которые помогут приобрести билет без хлопот. Рассказываем, что
+                      делать, если купил авиабилет, но на почту он не пришёл, можно ли
+                      поменять даты вылета/прилёта купленных авиабилетов, как оплатить
+                      билет без банковской карты и многое другое (непременно полезное).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading-2">
+                  <button class="accordion__item-title button button--link collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                    <span class="accordion__title">Могу я предложить свою цену у вас в офисе?</span>
+                    <span class="accordion__btn-icon">
+                      <svg width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion-1">
+                  <div class="accordion__text content">2Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading-3">
+                  <button class="accordion__item-title button button--link collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                    <span class="accordion__title">Сколько туров я могу купить?</span>
+                    <span class="accordion__btn-icon">
+                      <svg width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion-1">
+                  <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading-4">
+                  <button class="accordion__item-title button button--link collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                    <span class="accordion__title">Сколько туров я могу купить?</span>
+                    <span class="accordion__btn-icon">
+                      <svg width="25" height="25">
+                        <use xlink:href="img/sprite.svg#icon-list_white_open-2"></use>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion-1">
+                  <div class="accordion__text content">3Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum nihil excepturi a velit ducimus facere reiciendis odit est tenetur quaerat?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="normal" class="section__btn" aria-label="стрелка вниз">
+        <svg width="25" height="25">
+          <use xlink:href="img/sprite.svg#icon-list_white_open"></use>
+        </svg>
+      </button>
+    </section>
+
+    <section class="section contacts">
+      <div class="container">
+        <h2 class="h2 font-weight-bold mb-4">Контакты наших офисов</h2>
+        <p>Офисы турагентства Турсфера в городе Санкт-Петербург</p>
+        <div class="row mt-4">
+          <div class="col-sm-6">
+            <div id="map"></div>
+            <div id="YMaps07" class="map"></div>
+          </div>
+          <div class="col-sm-6 contacts__info">
+            <!-- список офисов -->
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__inner container">
+        <a class="page-footer__logo logo" href="index.html">
+          <img src="img/logo.png" alt="логотип компании">
+        </a>
+        <ul class="page-footer__list">
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="offices.html">Офисы продаж</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="cabinet.html">Личный кабинет</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="support.html">Тех. поддержка</a>
+          </li>
+          <li class="page-footer__list-item">
+            <a class="page-footer__list-link" href="#">Наши реквизиты</a>
+          </li>
+        </ul>
+    
+        <div class="page-footer__platform">
+          <span>сервис работает на платформе</span>
+          <a href="#">
+            <img src="img/walltcha.png" alt="walltcha">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+
+
+  <script>
+    $('.collapse').collapse('show');
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay: {
+        delay: 5000,
+      },
+      effect: 'fade',
+
+    });
+
+
+
+  </script>
+
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Туристы</h5>
+          <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-turistic">
+
+            <div class="tc_TouristsPanel">
+              <div class="tc_content">
+                <div class="tc_TouristsOptions">
+                  <div class="tc_TouristStatic">
+                    <div class="tc_TouristElement tc_adults">
+                      <div class="tc_TouristAction tc_TouristActionMinus">
+                        <div class="tc_TouristContentMinus tc_symbol"> - </div>
+                      </div>
+                      <div class="tc_TouristCount tc_TouristAll">Взрослых&ensp;<span class="tc_valAdults">2</span></div>
+                      <div class="tc_TouristAction tc_TouristActionPlus">
+                        <div class="tc_TouristContentPlus tc_symbol"> + </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tc_TouristDynamic">
+                    <div class="tc_TouristElement tc_TouristButton tc_addChild">Добавить ребёнка</div>
+                    <div class="tc_TouristPickElement tc_TouristButton">
+                      <div class="tc_pickHeader">Выберите возраст ребёнка</div>
+                      <div class="tc_pickAge">до 2-х лет</div>
+                      <div class="tc_pickAge">6 лет</div>
+                      <div class="tc_pickAge">11 лет</div>
+                      <div class="tc_pickAge">2 года</div>
+                      <div class="tc_pickAge">7 лет</div>
+                      <div class="tc_pickAge">12 лет</div>
+                      <div class="tc_pickAge">3 года</div>
+                      <div class="tc_pickAge">8 лет</div>
+                      <div class="tc_pickAge">13 лет</div>
+                      <div class="tc_pickAge">4 года</div>
+                      <div class="tc_pickAge">9 лет</div>
+                      <div class="tc_pickAge">14 лет</div>
+                      <div class="tc_pickAge">5 лет</div>
+                      <div class="tc_pickAge">10 лет</div>
+                      <div class="tc_pickAge">15 лет</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div>
+                <div class="tc_SubmitButton tc_ButtonActive">Выбрать</divmodal-body-turistic>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
