@@ -313,8 +313,8 @@ scrollBtns.forEach(function (btn) {
 })();
 (function(){
 
-
   $('body').append($('.modal'));
+
   // Модальное окно с выбором туристов
   $('.modal-backdrop').hide();
 
