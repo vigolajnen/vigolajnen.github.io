@@ -237,13 +237,13 @@ p {
   padding-top: 2rem;
   margin-bottom: var(--mb);
   color: #ffffff;
-  background-color: #020024;
   background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(52%, #3c2440), to(#73346b));
   background: linear-gradient(0deg, #020024 0%, #3c2440 52%, #73346b 100%);
-  background-image: url("../img/promo/baclground.jpg");
+  background-image: url("../img/promo/background.jpg");
   background-size: cover;
   background-position: top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: #3c2440; }
   @media (min-width: 769px) {
     .promo {
       padding-top: 5rem; } }
@@ -552,7 +552,7 @@ p {
     right: 15px;
     background-image: url("../img/trading/bg-box-right.png"); }
   .trading .container {
-    background-image: url("../../img/trading/bg-line.png");
+    background-image: url("../img/trading/bg-line.png");
     background-repeat: no-repeat;
     background-position: 95% bottom;
     background-size: 40%; }
@@ -696,7 +696,7 @@ p {
       height: 15rem;
       background-repeat: no-repeat;
       background-position: top;
-      background-image: url("../img/trading/mu.png");
+      background-image: url("../img/trading/cow.png");
       background-size: contain;
       -webkit-transform: translate(40%, 0%);
               transform: translate(40%, 0%); }
