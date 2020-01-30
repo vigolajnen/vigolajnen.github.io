@@ -3,7 +3,7 @@
 
 // Импортируем другие js-файлы
 $(document).ready(function () {
-  $("button").click(function () {
+  $(".js-button").click(function () {
     var elementClick = $(this).attr("data-target");
     var destination = $(elementClick).offset().top;
     $('html').animate({ scrollTop: destination }, 1100);
