@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body class="page">
+
+  <div class="wrapper">
+    <section class="promo">
+      <div class="container">
+        <div class="promo__inner">
+          <a class="promo__logo logo" href="#">
+              <img src="../img/promo/logo.png" alt="logo" />
+            </a>
+          <div class="promo__text">
+    
+            <h1 class="title title--uppercase"><span>Get $10,000</span><br> on demo trading account</h1>
+            <p>Test Forex trading in the real market environment</p>
+    
+            <button class="button" data-target="#demo">get started</button>
+          </div>
+          <div class="promo__slider slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('../img/slider/man.png');"
+                >
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('../img/slider/man-2.png');"
+                >
+                </div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url('../img/slider/man-3.png');"
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main">
+      <section class="section trading headline">
+        <div class="container">
+          <div class="section__inner">
+            <div class="section__info">
+              <div class="section__caption">For beginner traders</div>
+              <h2 class="title"><span>Free</span> trading simulator</h2>
+              <p class="section__text">Are you new to trading financial markets? – Sign up
+              with MTrading and get from $5,000 on your free demo
+              account to practice Forex, and CFDs trading strategies
+              in real market conditions!</p>
+              <div class="section__pic" style="background-image: url('../img/trading/pk.png');"></div>
+              <button class="button" data-target="#demo">Open demo account</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits headline">
+        <div class="container">
+          <h2 class="title">Demo Account <span>benefits</span></h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <span>Real trading experience without risk</span>
+            </li>
+            <li class="benefits__item">
+              <span>Forex and CFDs trading in real market conditions</span>
+            </li>
+            <li class="benefits__item">
+              <span>Professional individual support</span></li>
+            <li class="benefits__item">
+              <span>Based on MetaTrader 4 trading platform</span>
+            </li>
+            <li class="benefits__item">
+              <span>All trading strategies allowed</span>
+            </li>
+            <li class="benefits__item">
+              <span>Unlimited demo balance starting at $5,000</span>
+            </li>
+          </ul>
+      </section>
+      <section id="demo" class="section headline">
+        <div class="container">
+          <div class="section__inner">
+            <div class="section__info">
+              <div class="section__caption">Gain trading experience</div>
+              <h2 class="title">Start in less than <span>5 minutes</span></h2>
+              <p class="section__text">Gain the experience and enter the market with confidence</p>
+              <button class="button">Open demo account</button>
+            </div>
+            <div class="section__form">
+              <form class="form" action="">
+                <fieldset class="form__inner">
+                  <h3>Sing Up</h3>
+                  <ul class="form__list">
+                    <li class="form__item">
+                      <label class="visually-hidden" for="form-name">First Name</label>
+                      <input id="form-name" class="form__field" type="text" name="form-name" placeholder="First Name"
+                        required>
+                    </li>
+                    <li class="form__item">
+                      <label class="visually-hidden" for="form-firstname">Last Name</label>
+                      <input id="form-firstname" class="form__field" type="text" name="form-firstname"
+                        placeholder="Last Name" required>
+                    </li>
+                    <li class="form__item">
+                      <label class="visually-hidden" for="form-mail">Email:</label>
+                      <input id="form-mail" class="form__field" type="email" name="form-mail" placeholder="Email"
+                        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                    </li>
+                    <li class="form__item">
+                      <label class="visually-hidden" for="form-company">Password</label>
+                      <input id="form-company" class="form__field" type="password" name="form-company"
+                        placeholder="Password" required>
+                    </li>
+                    <li class="form__item">
+                      <label class="visually-hidden" for="form-company">Confirm password</label>
+                      <input id="form-company" class="form__field" type="password" name="form-company"
+                        placeholder="Confirm password" required>
+                    </li>
+
+                    <li class="form__item">
+                      <label class="visually-hidden" for="form-tel">Phone</label>
+                      <input id="form-tel" class="form__field" type="tel" name="form-tel"
+                        placeholder="Phone" pattern="(\+?\d[- .]*){7,13}" required>
+                    </li>
+
+                    <li class="form__item">
+                      <button class="button" type="submit">Sing up</button>
+                    </li>
+                    <li class="form__item">
+                      <a class="link" href="#">Login</a>
+                    </li>
+                  </ul>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    svg4everybody();
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
+</body>
+
+</html>
