@@ -14,9 +14,11 @@
       <div class="container">
         <header class="page-header">
           <a class="page-header__logo logo">
-            <img src="img/logo.svg" alt="Логотип компании">
+            <img src="img/logo.svg" width="89" height="20" alt="Логотип компании">
           </a>
-          <a class="page-header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+          <div class="page-header__phone">
+            <a href="tel:+78005555555">8-800-555-55-55</a>
+          </div>
         </header>
         <section class="main-promo">
           <div class="main-promo__info">
@@ -227,7 +229,7 @@
                     ">
 
                   <!-- 1х: 226px; 2x: 452px -->
-                  <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
+                  <img src="img/trainers/trainer-1-mob.jpg" srcset="img/trainers/trainer-1-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
                 </picture>
               </div>
               <div class="swiper-slide trainers__slide">
@@ -251,7 +253,7 @@
                     ">
 
                   <!-- 1х: 226px; 2x: 452px -->
-                  <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
+                  <img src="img/trainers/trainer-2-mob.jpg" srcset="img/trainers/trainer-2-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
                 </picture>
               </div>
               <div class="swiper-slide trainers__slide">
@@ -275,7 +277,7 @@
                     ">
 
                   <!-- 1х: 226px; 2x: 452px -->
-                  <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
+                  <img src="img/trainers/trainer-4-mob.jpg" srcset="img/trainers/trainer-4-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
                 </picture>
               </div>
               <div class="swiper-slide trainers__slide">
@@ -299,7 +301,7 @@
                     ">
 
                   <!-- 1х: 226px; 2x: 452px -->
-                  <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
+                  <img src="img/trainers/trainer-1-mob.jpg" srcset="img/trainers/trainer-1-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
                 </picture>
               </div>
               <div class="swiper-slide trainers__slide">
@@ -323,7 +325,7 @@
                     ">
 
                   <!-- 1х: 226px; 2x: 452px -->
-                  <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
+                  <img src="img/trainers/trainer-2-mob.jpg" srcset="img/trainers/trainer-2-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
                 </picture>
               </div>
               <div class="swiper-slide trainers__slide">
@@ -347,7 +349,7 @@
                     ">
 
                   <!-- 1х: 226px; 2x: 452px -->
-                  <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
+                  <img src="img/trainers/trainer-4-mob.jpg" srcset="img/trainers/trainer-4-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
                 </picture>
               </div>
               <div class="swiper-slide trainers__slide">
@@ -371,7 +373,7 @@
                     ">
 
                   <!-- 1х: 226px; 2x: 452px -->
-                  <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
+                  <img src="img/trainers/trainer-1-mob.jpg" srcset="img/trainers/trainer-1-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
                 </picture>
               </div>
               <div class="swiper-slide trainers__slide">
@@ -395,7 +397,7 @@
                     ">
 
                   <!-- 1х: 226px; 2x: 452px -->
-                  <img src="img/trainers/trainer-3-mob.jpg" srcset="img/trainers/trainer-3-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
+                  <img src="img/trainers/trainer-2-mob.jpg" srcset="img/trainers/trainer-2-mob@2x.jpg 2x" width="226" height="274" alt="тренер">
                 </picture>
               </div>
             </div>
@@ -577,7 +579,19 @@
             <div class="reviews__slider-wrapper swiper-wrapper">
               <div class="swiper-slide reviews__slide review">
                 <div class="review__pic">
-                  <img src="img/reviews/user.png" alt="pic">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      ">
+                    <source type="image/webp" srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      ">
+
+                    <!-- 1х: 68px; 2x: 136px -->
+                    <img src="img/reviews/user-mob.png" srcset="img/reviews/user-mob@2x.png 2x" width="80" height="80" alt="pic">
+                  </picture>
                 </div>
                 <blockquote class="review__info">
                   <h3>Анна Орлова</h3>
@@ -590,7 +604,19 @@
               </div>
               <div class="swiper-slide reviews__slide review">
                 <div class="review__pic">
-                  <img src="img/reviews/user.png" alt="pic">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      ">
+                    <source type="image/webp" srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      ">
+
+                    <!-- 1х: 68px; 2x: 136px -->
+                    <img src="img/reviews/user-mob.png" srcset="img/reviews/user-mob@2x.png 2x" width="80" height="80" alt="pic">
+                  </picture>
                 </div>
                 <blockquote class="review__info">
                   <h3>2Анна Орлова</h3>
@@ -603,7 +629,19 @@
               </div>
               <div class="swiper-slide reviews__slide review">
                 <div class="review__pic">
-                  <img src="img/reviews/user.png" alt="pic">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      ">
+                    <source type="image/webp" srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      ">
+
+                    <!-- 1х: 68px; 2x: 136px -->
+                    <img src="img/reviews/user-mob.png" srcset="img/reviews/user-mob@2x.png 2x" width="80" height="80" alt="pic">
+                  </picture>
                 </div>
                 <blockquote class="review__info">
                   <h3>3Анна Орлова</h3>
@@ -616,7 +654,19 @@
               </div>
               <div class="swiper-slide reviews__slide review">
                 <div class="review__pic">
-                  <img src="img/reviews/user.png" alt="pic">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="
+                        img/reviews/user.webp    1x,
+                        img/reviews/user@2x.webp 2x
+                      ">
+                    <source type="image/webp" srcset="
+                        img/reviews/user-mob.webp    1x,
+                        img/reviews/user-mob@2x.webp 2x
+                      ">
+
+                    <!-- 1х: 68px; 2x: 136px -->
+                    <img src="img/reviews/user-mob.png" srcset="img/reviews/user-mob@2x.png 2x" width="80" height="80" alt="pic">
+                  </picture>
                 </div>
                 <blockquote class="review__info">
                   <h3>4Анна Орлова</h3>
@@ -644,16 +694,18 @@
     </section>
     <div class="form-and-contacts">
       <div class="form-and-contacts__container container">
-        <form class="form-and-contacts__item form-order" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="form-and-contacts__item form-order" action="https://echo.htmlacademy.ru" method="post">
           <h3>Бесплатное занятие</h3>
           <label for="name" aria-label="Имя">
-            <input id="name" type="text" placeholder="Имя" required="">
+            <input id="name" name="name" type="text" placeholder="Имя" required="">
           </label>
           <label for="phone" aria-label="Телефон">
-            <input id="phone" type="text" placeholder="Телефон" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="" minlength="16" maxlength="16" required="">
+            <input id="phone" name="phone" type="text" placeholder="Телефон" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="" minlength="16" maxlength="16" required="">
           </label>
+
           <button type="submit">отправить</button>
         </form>
+
         <section class="form-and-contacts__item contacts">
           <h3>Контакты</h3>
           <ul>
@@ -682,7 +734,7 @@
         <ul class="page-footer__list">
           <li class="page-footer__item page-footer__item--logo">
             <a class="logo">
-              <img src="img/logo.svg" alt="Логотип компании">
+              <img src="img/logo.svg" width="89" height="20" alt="Логотип компании">
             </a>
           </li>
           <li class="page-footer__item page-footer__item--service">
