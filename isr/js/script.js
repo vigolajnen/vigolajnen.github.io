@@ -142,12 +142,17 @@
       evt.preventDefault();
       // валидируем форму;
 
-      if (!inputName.value || !inputPhone.value) {
+      if (!inputName.value) {
         evt.preventDefault();
         inputName.setCustomValidity('Нужно ввести имя');
-        inputPhone.setCustomValidity('Введите номер телефона полностью');
-      } else {
+        inputName.classList.add('invalid');
 
+      } else if (!inputPhone.value && inputPhone.value.length < 17) {
+        inputPhone.setCustomValidity('Введите номер телефона полностью');
+        inputPhone.classList.add('invalid');
+        inputName.classList.remove('invalid');
+      } else {
+        inputPhone.classList.remove('invalid');
         if (isStorageSupport) {
           localStorage.setItem('inputName', inputName.value);
           localStorage.setItem('inputPhone', inputPhone.value);
@@ -156,12 +161,14 @@
 
       // показываем попап;
       poupOpen(popupApplication);
+      popupApplication.classList.add('popup--application');
 
       if (popupApplication.classList.contains('popup--active') && popupForm.classList.contains('popup--active')) {
         popupForm.classList.remove('popup--active');
       }
 
       popupClose(popupApplication, form);
+      popupApplication.classList.remove('popup--application');
 
       return false; // предотвращаем отправку формы и перезагрузку страницы
     });
