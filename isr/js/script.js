@@ -12,20 +12,44 @@
     };
   }
 
-  var itemTabs = document.querySelectorAll('.tabs__item');
-  var itemTabsTitle = document.querySelector('.tabs__content h3');
 
-  if (itemTabs) {
-    itemTabs.forEach(function (item) {
-      item.addEventListener('click', function (evt) {
-        var target = evt.target;
-        itemTabsTitle.innerText = target.innerText;
+  var tab; // заголовок вкладки
+  var tabContent; // блок содержащий контент вкладки
 
-        var activeItem = document.querySelector('.tabs__item.tabs__item--active');
-        activeItem.classList.remove('tabs__item--active');
-        item.classList.add('tabs__item--active');
-      });
-    });
+  window.onload = function () {
+    tabContent = document.getElementsByClassName('tabs__content');
+    tab = document.getElementsByClassName('tabs__item');
+    hideTabsContent(1);
+    showTabsContent(1);
+  };
+
+  function hideTabsContent(a) {
+    for (var i = a; i < tabContent.length; i++) {
+      tabContent[i].classList.remove('tabs__content--show');
+      tabContent[i].classList.add('tabs__content--hide');
+      tab[i].classList.remove('tabs__item--active');
+    }
+  }
+
+  document.querySelector('.tabs').onclick = function (event) {
+    var target = event.target;
+    if (target.className === 'tabs__item') {
+      for (var i = 0; i < tab.length; i++) {
+        if (target === tab[i]) {
+          showTabsContent(i);
+          break;
+        }
+      }
+    }
+  };
+
+  function showTabsContent(b) {
+    if (tabContent[b].classList.contains('tabs__content--hide')) {
+      hideTabsContent(0);
+      tab[b].classList.add('tabs__item--active');
+      tabContent[b].classList.remove('tabs__content--hide');
+      tabContent[b].classList.add('tabs__content--show');
+    }
   }
 
   var accordion = document.querySelector('.accordion');
@@ -68,10 +92,52 @@
     isStorageSupport = false;
   }
 
-  var phones = document.querySelectorAll('input[onkeyup]');
+  function maskPhone(inputPhoneName, mask) {
+    var textArr = document.querySelectorAll(inputPhoneName);
+
+    textArr.forEach(function (text) {
+      // var text = document.querySelector(inputPhoneName);
+      var value = text.value;
+
+      var literalPattern = /[0\*]/;
+      var numberPattern = /[0-9]/;
+      var newValue = '';
+
+      for (var vId = 0, mId = 0; mId < mask.length;) {
+
+        if (mId >= value.length) {
+          break;
+        }
+
+        if (mask[mId] === '0' && value[vId].match(numberPattern) === null) {
+          break;
+        }
+
+        // Found a literal
+        while (mask[mId].match(literalPattern) === null) {
+          if (value[vId] === mask[mId]) {
+            break;
+          }
+
+          newValue += mask[mId++];
+        }
+
+        newValue += value[vId++];
+        mId++;
+
+      }
+
+      text.value = newValue;
+    });
+
+  }
+
+  var phones = document.querySelectorAll('input[name$="phone"]');
   phones.forEach(function (phone) {
+    phone.addEventListener('keyup', function () {
+      maskPhone('input[name$="phone"]', '+7(000) 000 00 00');
+    });
     phone.addEventListener('input', function () {
-      phone.parentElement.classList.add('input-phone');
       // console.log(phone.value.length);
       if (phone.value.length < 17) {
         phone.setCustomValidity('Введите номер телефона полностью');
@@ -79,6 +145,16 @@
       } else {
         phone.setCustomValidity('');
       }
+    });
+
+    phone.addEventListener('focus', function (evt) {
+      evt.preventDefault();
+      phone.parentElement.classList.add('input-phone');
+    });
+
+    phone.addEventListener('blur', function (evt) {
+      evt.preventDefault();
+      phone.parentElement.classList.remove('input-phone');
     });
 
   });
@@ -127,7 +203,7 @@
       evt.preventDefault();
       var target = evt.target;
 
-      if ((target.className === 'popup popup--active') || (target.className === 'popup__btn-close')) {
+      if ((target.className === 'popup popup--active') || (target.tagName === 'BUTTON')) {
         popup.classList.remove('popup--active');
         page.classList.remove('page--overlay');
 
@@ -137,7 +213,48 @@
     });
   }
 
+  function generateError(text) {
+    var error = document.createElement('div');
+    error.className = 'error__text';
+    error.innerText = text;
+    return error;
+  }
+
+  function checkFieldsPresence(inputs) {
+    for (var i = 0; i < inputs.length; i++) {
+      if (!inputs[i].value || (inputs[i].type === 'checkbox' && !inputs[i].checked)) {
+        inputs[i].parentElement.classList.add('error');
+        var error = generateError('Ошибка: заполните поле');
+        inputs[i].parentElement.appendChild(error, inputs[i]);
+      }
+      if (inputs[i].getAttribute('placeholder') === 'телефон') {
+        if (inputs[i].value.length < 17) {
+          inputs[i].setCustomValidity('Введите номер телефона полностью');
+        } else {
+          inputs[i].setCustomValidity('');
+        }
+      }
+    }
+  }
+
+  function removeValidation(form) {
+    var errors = form.querySelectorAll('.error__text');
+
+    for (var i = 0; i < errors.length; i++) {
+      errors[i].parentElement.classList.remove('error');
+      errors[i].remove();
+    }
+  }
+
   forms.forEach(function (form) {
+    var inputs = form.querySelectorAll('input');
+    form.addEventListener('click', function (evt) {
+      if (evt.target.tagName === 'BUTTON') {
+        removeValidation(form);
+        checkFieldsPresence(inputs);
+      }
+    });
+
     form.addEventListener('submit', function (evt) {
       evt.preventDefault();
       // валидируем форму;
@@ -145,12 +262,9 @@
       if (!inputName.value) {
         evt.preventDefault();
         inputName.setCustomValidity('Нужно ввести имя');
-        inputName.classList.add('invalid');
 
       } else if (!inputPhone.value && inputPhone.value.length < 17) {
         inputPhone.setCustomValidity('Введите номер телефона полностью');
-        inputPhone.classList.add('invalid');
-        inputName.classList.remove('invalid');
       } else {
         inputPhone.classList.remove('invalid');
         if (isStorageSupport) {
@@ -161,10 +275,10 @@
 
       // показываем попап;
       poupOpen(popupApplication);
-      popupApplication.classList.add('popup--application');
 
       if (popupApplication.classList.contains('popup--active') && popupForm.classList.contains('popup--active')) {
         popupForm.classList.remove('popup--active');
+        popupApplication.classList.add('popup--application');
       }
 
       popupClose(popupApplication, form);
