@@ -4,149 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Тестовое задание</title>
-    <meta name="description" content="Описание задания">
+    <title>Дезинтекс</title>
+    <meta name="description" content="100% защита дома от вирусов и микробов">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
-    <header class="page-header container">
-      <a class="page-header__logo logo">
-        <img src="img/logo.svg" width="49" height="35" alt="Логотип компании">
-      </a>
-      <button class="page-header__burger" type="button" aria-label="Кнопка меню"></button>
-      <div class="page-header__nav">
-        <nav class="nav">
-          <div class="nav__item">
-            <a class="nav__link" href="#">About</a>
+    <div class="header-and-promo">
+      <div class="container">
+        <header class="page-header">
+          <a class="page-header__logo logo">
+            <img src="img/logo2.png" srcset="img/logo2@2x.png 2x" width="200" height="64" alt="Логотип компании">
+          </a>
+        </header>
+        <section class="promo">
+          <div class="promo__info">
+            <h1>100% защита дома <span>от вирусов</span> <span>и микробов</span></h1>
+            <ul>
+              <li>Убивает все известные вирусы и микробы</li>
+              <li>Защищает поверхности от микробов 48 часов</li>
+              <li>Подходит <span>для любых</span> поверхностей</li>
+            </ul>
+            <!-- 1х: 176px; 2x: 352px -->
+            <img src="img/product.png" srcset="img/product@2x.png 2x" width="176" height="388" alt="Дезинтекс">
           </div>
-          <div class="nav__item">
-            <a class="nav__link" href="#">Help
-              <svg width="6.25" height="10">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow-small-down"></use>
-              </svg>
-            </a>
-            <div class="nav__sub-list">
-              <div class="nav__sub-item">
-                <a href="#">User Guide</a>
-              </div>
-              <div class="nav__sub-item">
-                <a href="#">Contact Support</a>
-              </div>
+          <form class="promo__form form-order" action="https://echo.htmlacademy.ru" method="post">
+            <h3>Специальное предложение!</h3>
+            <div class="form-order__sale">
+              Специальная цена <span>149₽*</span>
             </div>
-          </div>
-          <div class="nav__item">
-            <a class="nav__link" href="#">Features</a>
-          </div>
-        </nav>
-        <button class="page-header__btn" type="button">Sign Up</button>
+            <select name="city" id="city">
+              <option>Россия</option>
+            </select>
+            <label for="name" aria-label="Имя">
+              <input id="name" name="name" type="text" placeholder="Имя" required="">
+            </label>
+            <label for="phone" aria-label="Телефон">
+              <input id="phone" name="phone" type="text" placeholder="Телефон" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="" minlength="16" maxlength="16" required="">
+            </label>
+
+            <button type="submit">Заказать</button>
+            <p>* при заказе набора</p>
+          </form>
+        </section>
       </div>
-    </header>
-    <section class="features">
-      <div class="features__container container">
-        <div class="features__header">
-          <h1>Features</h1>
-          <p>
-            Some of the features and advantages that we provide for those of you
-            who store data in this Data Warehouse.
-          </p>
-        </div>
-        <div class="features__slider">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide features__slide" data-num="1">
-                <div class="features__slide-inner">
-                  <h2>First Feature</h2>
-                  <p>
-                    Little Red Cap opened her eyes and when she saw the sunbeams
-                    dancing to and fro through the trees and how the ground was
-                    covered with beautiful flowers.
-                  </p>
-                  <a href="#">
-                    <span>Learn more</span>
-                    <svg width="22" height="16">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-link"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide features__slide" data-num="2">
-                <div class="features__slide-inner">
-                  <h2>Second Feature</h2>
-                  <p>
-                    Each time she picked one she thought that she could see an
-                    even more beautiful one a little way off, and she ran after
-                    it, going further and further into the woods.
-                  </p>
-                  <a href="#">
-                    <span>Learn more</span>
-                    <svg width="22" height="16">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-link"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide features__slide" data-num="3">
-                <div class="features__slide-inner">
-                  <h2>Third Feature</h2>
-                  <p>
-                    The wolf pressed the latch, and the door opened. He stepped
-                    inside, went straight to the grandmother's bed, and ate her
-                    up.
-                  </p>
-                  <a href="#">
-                    <span>Learn more</span>
-                    <svg width="22" height="16">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-link"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide features__slide features__slide--new" data-num="4">
-                <div class="features__slide-inner">
-                  <h2>Fourth Feature</h2>
-                  <p>
-                    Little Red Cap had run after the flowers. After she had
-                    gathered so many that she could not carry any more, she
-                    remembered her grandmother.
-                  </p>
-                  <a href="#">
-                    <span>Learn more</span>
-                    <svg width="22" height="16">
-                      <use xlink:href="img/sprite_auto.svg#icon-arrow-link"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <footer class="page-footer">
-      <div class="page-footer__container container">
-        <a class="page-footer__logo logo">
-          <img src="img/logo-white.svg" width="49" height="35" alt="Логотип компании">
-        </a>
-        <ul class="page-footer__list">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="#">About Us</a>
-          </li>
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="#">Privacy Policy</a>
-          </li>
-        </ul>
-        <form action="https://echo.htmlacademy.ru" method="post" class="page-footer__form form">
-          <label for="email" aria-label="Enter your email">
-            <input id="email" type="email" name="email" placeholder="Enter your email" required="">
-          </label>
-          <button type="submit">
-            Sign Up Now
-          </button>
-        </form>
-      </div>
-    </footer>
+    </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/script.js"></script>
   </body>
