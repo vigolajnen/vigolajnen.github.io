@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое задание</title>
+    <meta name="description" content="Описание задания">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+    <header class="page-header container">
+      <a class="page-header__logo logo">
+        <img src="img/logo.svg" width="179" height="64" alt="Логотип компании">
+      </a>
+      <button class="page-header__burger" type="button" aria-label="Кнопка меню"></button>
+      <nav class="page-header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Ваша выгода</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Документы </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Наши выплаты </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Условия выкупа </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Онлайн-оценка</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__phone" href="tel:+79189571336">
+        <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.96 13.24c-.04-.14-.35-.36-.92-.64a28.42 28.42 0 00-1.42-.79 26.06 26.06 0 01-.96-.59 3.4 3.4 0 00-.43-.26.8.8 0 00-.35-.08c-.16 0-.36.11-.6.34-.24.23-.47.48-.67.75-.2.28-.42.53-.64.76-.23.23-.42.34-.56.34-1.29 0-3.08-1.77-3.9-2.58-.88-.88-2.58-2.54-2.58-3.9 0-.14.11-.33.34-.56.23-.22.48-.44.76-.64.27-.2.52-.43.75-.67.23-.24.34-.44.34-.6a.8.8 0 00-.08-.35 26.67 26.67 0 01-1.27-2.15L4.4.95C4.12.39 3.9.08 3.76.04A.68.68 0 003.5 0a4.8 4.8 0 00-1.69.38c-.4.17-.83.66-1.28 1.48C-.71 4.15.46 7.34 1.75 9.42c1.42 2.3 3.53 4.4 5.83 5.83 2.08 1.3 5.28 2.46 7.56 1.22.9-.5 1.44-1.01 1.7-1.94l.04-.18c.08-.35.12-.63.12-.85 0-.11-.01-.2-.04-.26z" fill="url(#paint0_linear)"></path>
+          <defs>
+            <linearGradient id="paint0_linear" x1="0" y1=".11" x2="17.34" y2=".46" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#EB5D56"></stop>
+              <stop offset="1" stop-color="#390A40"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+        +7 (918) 957-13-36</a>
+    </header>
+    <section class="promo">
+      <div class="promo__slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="
+                background-image: url(img/promo/vlad-tchompalov-axTvnbgRlAk-unsplash.jpg);
+              "></div>
+            <div class="swiper-slide" style="
+                background-image: url(img/promo/peter-broomfield-m3m-lnR90uM-unsplash.jpg);
+              "></div>
+            <div class="swiper-slide" style="
+                background-image: url(img/promo/matt-henry-1nVbppFJl-s-unsplash.jpg);
+              "></div>
+          </div>
+        </div>
+      </div>
+      <div class="promo__wrapper container">
+        <div class="promo__info">
+          <div class="promo__dop-text">В Краснодаре и крае</div>
+          <h1>Выкуп авто в любом состоянии</h1>
+          <div class="promo__desc-text">
+            Получите до 90% рыночной цены за авто уже сегодня!
+          </div>
+        </div>
+        <div class="promo__form">
+          <h2>Узнать сумму выкупа авто</h2>
+          <form action="https://echo.htmlacademy.ru" method="post" class="form">
+            <label for="form-uto">
+              <span>Ваш автомобиль</span>
+              <input id="form-uto" type="text" placeholder="Lada Granta, 2016 г.в." required="">
+            </label>
+            <label for="form-phone">
+              <span>Номер телефона</span>
+              <input id="form-phone" name="form-phone" type="text" placeholder="+7 999 999 99 99" value="" minlength="17" maxlength="17" required="">
+            </label>
+            <button type="submit">Отправить</button>
+            <div class="form__text">
+              Отправляя форму, вы соглашаетесь с условиями обработки
+              персональных данных
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="categorys container section">
+      <h2>Мы готовы приобрести любые автомобили</h2>
+      <div class="categorys__items">
+        <a href="#" class="categorys__item">
+          <picture class="categorys__item-pic">
+            <img src="img/category/prima.jpg" alt="auto" width="399" height="249">
+          </picture>
+          <h3 class="categorys__item-title">
+            <svg width="200" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path transform="matrix(-1 0 0 1 200 0)" fill="url(#paint0_linear)" d="M0 0h200v2H0z"></path>
+              <defs>
+                <linearGradient id="paint0_linear" x1="0" y1="1" x2="161" y2="-78.24" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#EB5D56" stop-opacity="0"></stop>
+                  <stop offset=".28" stop-color="#EB5D56"></stop>
+                  <stop offset=".73" stop-color="#390A40"></stop>
+                  <stop offset=".99" stop-color="#390A40" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Грузовые</span>
+          </h3>
+        </a>
+        <a href="#" class="categorys__item">
+          <picture class="categorys__item-pic">
+            <img src="img/category/car-car.png" alt="auto" width="259" height="154">
+          </picture>
+          <h3 class="categorys__item-title">
+            <svg width="200" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path transform="matrix(-1 0 0 1 200 0)" fill="url(#paint0_linear)" d="M0 0h200v2H0z"></path>
+              <defs>
+                <linearGradient id="paint0_linear" x1="0" y1="1" x2="161" y2="-78.24" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#EB5D56" stop-opacity="0"></stop>
+                  <stop offset=".28" stop-color="#EB5D56"></stop>
+                  <stop offset=".73" stop-color="#390A40"></stop>
+                  <stop offset=".99" stop-color="#390A40" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Легковые</span>
+          </h3>
+        </a>
+        <a href="#" class="categorys__item">
+          <picture class="categorys__item-pic">
+            <img src="img/category/536078.png" alt="auto" width="353" height="254">
+          </picture>
+          <h3 class="categorys__item-title">
+            <svg width="200" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path transform="matrix(-1 0 0 1 200 0)" fill="url(#paint0_linear)" d="M0 0h200v2H0z"></path>
+              <defs>
+                <linearGradient id="paint0_linear" x1="0" y1="1" x2="161" y2="-78.24" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#EB5D56" stop-opacity="0"></stop>
+                  <stop offset=".28" stop-color="#EB5D56"></stop>
+                  <stop offset=".73" stop-color="#390A40"></stop>
+                  <stop offset=".99" stop-color="#390A40" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Спецтехнику</span>
+          </h3>
+        </a>
+      </div>
+    </section>
+    <section class="about section">
+      <div class="about__wrapper container">
+        <picture class="about__pic">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-pic.webp 1x, img/about/about-pic@2x.webp 2x">
+          <!-- 1х: 790px; 2x: 1580px -->
+          <img src="img/about/about-pic.jpg" srcset="img/about/about-pic@2x.jpg 2x" width="790" height="584" alt="user" loading="lazy">
+        </picture>
+        <div class="about__info">
+          <h2>Вы ничем не рискуете</h2>
+          <div class="about__items">
+            <div class="about__item">
+              <svg class="about__item-icon" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.653 27.288a.781.781 0 00-.281-.01 1.865 1.865 0 01-1.65-1.849.82.82 0 00-1.64 0 3.509 3.509 0 002.58 3.379v.82a.82.82 0 001.64 0v-.77a3.502 3.502 0 00-.717-6.93 1.862 1.862 0 111.862-1.863.82.82 0 001.64 0 3.509 3.509 0 00-2.785-3.428v-.747a.82.82 0 00-1.64 0v.797a3.502 3.502 0 00.923 6.88 1.861 1.861 0 01.068 3.72z" fill="url(#paint0_linear)"></path>
+                <path d="M13.692 22.81c0 6.569 5.324 11.893 11.893 11.893 6.568 0 11.893-5.324 11.893-11.893 0-6.568-5.325-11.893-11.893-11.893-6.566.008-11.886 5.328-11.893 11.893zm11.893-10.252c5.662 0 10.252 4.59 10.252 10.252 0 5.663-4.59 10.253-10.252 10.253-5.663 0-10.253-4.59-10.253-10.253.006-5.66 4.593-10.246 10.253-10.252z" fill="url(#paint1_linear)"></path>
+                <path d="M41.52 36.725l-6.424 3.036a5.233 5.233 0 00-4.461-2.753l-5.931-.163a6.263 6.263 0 01-2.695-.696l-.604-.313a10.645 10.645 0 00-9.86.01l.038-1.367a.82.82 0 00-.797-.842l-6.504-.18a.82.82 0 00-.842.798l-.393 14.272a.82.82 0 00.797.842l6.504.18h.022a.82.82 0 00.82-.798l.02-.683 1.689-.905a2.898 2.898 0 012.163-.237l10.089 2.832c.018.005.035.01.053.013a10.942 10.942 0 006.789-.769.762.762 0 00.101-.056l14.629-9.462a.82.82 0 00.269-1.092 4.143 4.143 0 00-5.471-1.667zM4.71 47.752l.347-12.632 4.864.134-.348 12.632-4.864-.134zm26.544-.215a9.298 9.298 0 01-5.687.635l-10.062-2.824a4.535 4.535 0 00-3.38.37l-.864.462.231-8.399a9.015 9.015 0 019.159-.489l.603.313a7.921 7.921 0 003.405.88l5.931.163a3.597 3.597 0 013.42 2.866l-8.835-.244a.82.82 0 00-.046 1.64l9.75.269h.023a.82.82 0 00.82-.798 5.204 5.204 0 00-.08-1.064l6.59-3.114.019-.009a2.506 2.506 0 012.833.397l-13.83 8.947z" fill="url(#paint2_linear)"></path>
+                <path d="M26.405 8.612V.82a.82.82 0 00-1.64 0v7.792a.82.82 0 001.64 0z" fill="url(#paint3_linear)"></path>
+                <path d="M32.556 8.611v-3.69a.82.82 0 00-1.64 0v3.69a.82.82 0 001.64 0z" fill="url(#paint4_linear)"></path>
+                <path d="M20.254 8.611v-3.69a.82.82 0 00-1.64 0v3.69a.82.82 0 001.64 0z" fill="url(#paint5_linear)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="22.082" y1="15.165" x2="29.23" y2="15.232" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="13.692" y1="11.064" x2="37.953" y2="11.559" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear" x1="3.047" y1="33.56" x2="47.864" y2="35.995" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear" x1="24.765" y1=".058" x2="26.438" y2=".064" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint4_linear" x1="30.916" y1="4.134" x2="32.589" y2="4.144" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint5_linear" x1="18.613" y1="4.134" x2="20.287" y2="4.144" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h3>Деньги сразу</h3>
+              <p>
+                Полную стоимость авто вы получите сразу после оформления сделки.
+              </p>
+            </div>
+            <div class="about__item">
+              <svg class="about__item-icon" width="47" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.79 4.548h22.742v5.307c0 .42.339.758.758.758h5.307v6.064h1.516V9.855c0-.21-.086-.4-.223-.537l-6.062-6.062a.757.757 0 00-.538-.224H6.823V1.516h28.806v16.677h1.516V.759A.757.757 0 0036.387 0H6.064a.757.757 0 00-.758.758v2.274H3.032a.757.757 0 00-.758.758v42.452c0 .42.339.758.758.758h25.774v-1.516H3.79V4.548zM28.048 5.62l3.477 3.477h-3.477V5.62z" fill="url(#paint0_linear)"></path>
+                <path d="M43.968 22.742h-1.142a11.34 11.34 0 01-8.735-4.09l-.153-.185c-.287-.346-.878-.346-1.165 0l-.154.184a11.341 11.341 0 01-8.735 4.09h-1.142a.757.757 0 00-.758.759v12.278c0 2.985 1.61 5.76 4.202 7.24l6.793 3.882a.757.757 0 00.752 0l6.793-3.882a8.357 8.357 0 004.202-7.24V23.5a.757.757 0 00-.758-.758zm-.758 13.036a6.834 6.834 0 01-3.438 5.923l-6.417 3.669-6.417-3.668a6.837 6.837 0 01-3.438-5.924v-11.52h.384a12.85 12.85 0 009.47-4.148 12.849 12.849 0 009.472 4.148h.384v11.52z" fill="url(#paint1_linear)"></path>
+                <path d="M33.355 25.016c-4.598 0-8.339 3.741-8.339 8.339 0 4.598 3.741 8.339 8.339 8.339 4.598 0 8.339-3.742 8.339-8.34 0-4.597-3.742-8.338-8.34-8.338zm0 15.161a6.83 6.83 0 01-6.823-6.822 6.83 6.83 0 016.823-6.823 6.83 6.83 0 016.822 6.823 6.83 6.83 0 01-6.822 6.822z" fill="url(#paint2_linear)"></path>
+                <path d="M32.993 35.712l-1.376-1.377-1.072 1.072 2.274 2.274a.756.756 0 001.262-.318l2.274-7.58-1.452-.436-1.91 6.365z" fill="url(#paint3_linear)"></path>
+                <path d="M5.306 12.129h19.71v1.516H5.306V12.13z" fill="url(#paint4_linear)"></path>
+                <path d="M5.306 15.161h19.71v1.516H5.306v-1.516z" fill="url(#paint5_linear)"></path>
+                <path d="M5.306 18.194h19.71v1.516H5.306v-1.517z" fill="url(#paint6_linear)"></path>
+                <path d="M5.306 21.226h15.162v1.516H5.306v-1.516z" fill="url(#paint7_linear)"></path>
+                <path d="M5.306 24.258h15.162v1.516H5.306v-1.516z" fill="url(#paint8_linear)"></path>
+                <path d="M5.306 27.29h15.162v1.517H5.306V27.29z" fill="url(#paint9_linear)"></path>
+                <path d="M5.306 36.387h15.162v1.516H5.306v-1.516z" fill="url(#paint10_linear)"></path>
+                <path d="M5.306 39.42h15.162v1.515H5.306V39.42z" fill="url(#paint11_linear)"></path>
+                <path d="M5.306 42.452h15.162v1.516H5.306v-1.516z" fill="url(#paint12_linear)"></path>
+                <path d="M6.065 6.065H7.58V7.58H6.065V6.065z" fill="url(#paint13_linear)"></path>
+                <path d="M9.097 6.065h1.516V7.58H9.097V6.065z" fill="url(#paint14_linear)"></path>
+                <path d="M12.13 6.065h1.515V7.58H12.13V6.065z" fill="url(#paint15_linear)"></path>
+                <path d="M15.161 6.065h9.855V7.58h-9.855V6.065z" fill="url(#paint16_linear)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="2.274" y1=".29" x2="37.849" y2=".829" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="21.984" y1="18.385" x2="45.184" y2="18.759" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear" x1="25.016" y1="25.119" x2="42.027" y2="25.466" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear" x1="30.545" y1="29.4" x2="36.473" y2="29.482" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint4_linear" x1="5.306" y1="12.138" x2="24.096" y2="17.123" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint5_linear" x1="5.306" y1="15.171" x2="24.096" y2="20.156" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint6_linear" x1="5.306" y1="18.203" x2="24.096" y2="23.188" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint7_linear" x1="5.306" y1="21.235" x2="20.159" y2="24.266" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint8_linear" x1="5.306" y1="24.267" x2="20.159" y2="27.299" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint9_linear" x1="5.306" y1="27.3" x2="20.159" y2="30.331" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint10_linear" x1="5.306" y1="36.397" x2="20.159" y2="39.428" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint11_linear" x1="5.306" y1="39.429" x2="20.159" y2="42.46" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint12_linear" x1="5.306" y1="42.461" x2="20.159" y2="45.492" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint13_linear" x1="6.065" y1="6.074" x2="7.611" y2="6.105" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint14_linear" x1="9.097" y1="6.074" x2="10.643" y2="6.105" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint15_linear" x1="12.129" y1="6.074" x2="13.675" y2="6.105" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint16_linear" x1="15.161" y1="6.074" x2="25.043" y2="7.385" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h3>Сделка застрахована</h3>
+              <p>
+                Все документы оформляются согласно текущему законодательству РФ.
+              </p>
+            </div>
+            <div class="about__item">
+              <svg class="about__item-icon" width="47" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M20.41 35.833l5.14-5.14 1.04 1.038-5.141 5.14-1.039-1.038z" fill="url(#paint0_linear)"></path>
+                  <path d="M20.563 30.844h1.468v1.468h-1.468v-1.468z" fill="url(#paint1_linear)"></path>
+                  <path d="M24.969 35.25h1.468v1.469H24.97V35.25z" fill="url(#paint2_linear)"></path>
+                  <path d="M23.5 41.125a7.344 7.344 0 10-7.344-7.344 7.352 7.352 0 007.344 7.344zm0-13.219a5.875 5.875 0 11-5.875 5.875 5.882 5.882 0 015.875-5.875z" fill="url(#paint3_linear)"></path>
+                  <path d="M7.344 43.328v.734h32.312v-.734a3.676 3.676 0 013.672-3.672h.734v-11.75h-.734a3.676 3.676 0 01-3.672-3.672V23.5H7.344v.734a3.676 3.676 0 01-3.672 3.672h-.735v11.75h.735a3.676 3.676 0 013.672 3.672zM4.406 29.323a5.153 5.153 0 004.355-4.354H38.24a5.153 5.153 0 004.354 4.354v8.916a5.153 5.153 0 00-4.355 4.355H8.761a5.153 5.153 0 00-4.355-4.355v-8.916z" fill="url(#paint4_linear)"></path>
+                  <path d="M40.097 9.037l-3.781 1.013-5.14-9.663L.39 16.762l.69 1.297L30.57 2.373l4.289 8.067-1.46.39-1.37-2.58-.649.348a3.67 3.67 0 01-4.961-1.518l-.348-.65-12.655 6.735.69 1.297L25.51 8.394a5.148 5.148 0 005.886 1.8l.546 1.028L7.947 17.65l.38 1.419 30.73-8.234 2.603 9.727h-1.523l-.982-3.666-.708.189a3.685 3.685 0 01-4.5-2.602l-.19-.71L19.29 17.65l.38 1.419 13.096-3.51a5.164 5.164 0 005.333 3.085l.515 1.92H0V47h47V20.562h-3.819L40.097 9.037zM45.53 45.53H1.47v-23.5h44.06v23.5z" fill="url(#paint5_linear)"></path>
+                  <path d="M38.188 0H47v1.469h-8.813V0z" fill="url(#paint6_linear)"></path>
+                  <path d="M41.125 2.938H47v1.468h-5.875V2.938z" fill="url(#paint7_linear)"></path>
+                  <path d="M44.063 5.875H47v1.469h-2.938V5.875z" fill="url(#paint8_linear)"></path>
+                  <path d="M0 0h8.813v1.469H0V0z" fill="url(#paint9_linear)"></path>
+                  <path d="M0 2.938h5.875v1.468H0V2.938z" fill="url(#paint10_linear)"></path>
+                  <path d="M0 5.875h2.938v1.469H0V5.875z" fill="url(#paint11_linear)"></path>
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="20.41" y1="30.731" x2="26.713" y2="30.859" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="20.563" y1="30.853" x2="22.061" y2="30.883" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear" x1="24.969" y1="35.259" x2="26.467" y2="35.29" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear" x1="16.156" y1="26.528" x2="31.137" y2="26.834" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint4_linear" x1="2.938" y1="23.627" x2="44.832" y2="25.337" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint5_linear" x1="0" y1=".675" x2="47.939" y2="1.661" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint6_linear" x1="38.188" y1=".009" x2="47.047" y2="1.094" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint7_linear" x1="41.125" y1="2.947" x2="47.08" y2="3.433" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint8_linear" x1="44.063" y1="5.884" x2="47.055" y2="6.006" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint9_linear" x1="0" y1=".009" x2="8.86" y2="1.094" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint10_linear" x1="0" y1="2.947" x2="5.955" y2="3.433" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint11_linear" x1="0" y1="5.884" x2="2.992" y2="6.006" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <clipPath id="clip0">
+                    <path fill="#fff" d="M0 0h47v47H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+              <h3>Никаких комиссий</h3>
+              <p>
+                Не согласны с ценой авто — просто уезжаетеи ни за что не
+                платите.
+              </p>
+            </div>
+            <div class="about__item">
+              <svg class="about__item-icon" width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.745 32.267a2.706 2.706 0 001.986-1.124l7.137-9.972a.777.777 0 00-.08-.996.758.758 0 00-.985-.08l-9.867 7.216a2.748 2.748 0 00-1.11 2.006 2.76 2.76 0 00.787 2.155 2.694 2.694 0 002.132.795zm-1.4-2.83c.027-.352.206-.674.486-.88l6.02-4.401-4.354 6.082a1.19 1.19 0 01-.872.493 1.196 1.196 0 01-1.28-1.294z" fill="url(#paint0_linear)"></path>
+                <path d="M44.819 18.072c-.008-.016-.008-.033-.017-.049-.009-.015-.023-.024-.033-.038a20.928 20.928 0 00-2.717-3.705l1.637-1.654 1.078 1.089L48 10.446l-3.233-3.268-3.234 3.268 1.078 1.09-1.637 1.654a20.718 20.718 0 00-3.665-2.747c-.015-.01-.023-.025-.039-.034-.016-.01-.032-.008-.048-.017a20.287 20.287 0 00-7.83-2.622v-.918h1.143a1.918 1.918 0 001.905-1.926A1.918 1.918 0 0030.534 3h-6.86a1.918 1.918 0 00-1.905 1.926c0 1.062.854 1.926 1.905 1.926h1.143v.89c-.823.09-1.644.225-2.457.413a.77.77 0 00-.572.923.761.761 0 00.913.578 19.24 19.24 0 012.119-.367l.818-.064c.25-.02.48-.033.704-.044v1.523c0 .426.34.77.762.77a.766.766 0 00.762-.77V9.186a18.75 18.75 0 017.97 2.192l-.752 1.315a.775.775 0 00.28 1.053.76.76 0 001.041-.282l.749-1.312a19.308 19.308 0 015.924 5.988l-1.298.757a.774.774 0 00-.278 1.052.76.76 0 001.041.282l1.301-.76a19.28 19.28 0 012.172 8.182h-1.505a.766.766 0 00-.763.77c0 .426.341.77.763.77h1.505a19.28 19.28 0 01-2.172 8.181l-1.3-.76a.757.757 0 00-1.042.283.775.775 0 00.28 1.052l1.297.758a19.31 19.31 0 01-5.924 5.987l-.749-1.312a.757.757 0 00-1.041-.282.774.774 0 00-.28 1.053l.752 1.315a18.752 18.752 0 01-7.97 2.191v-1.516c0-.426-.34-.77-.761-.77a.766.766 0 00-.763.77v1.523a19.041 19.041 0 01-3.64-.476.759.759 0 00-.913.579.77.77 0 00.572.923c1.522.354 3.076.533 4.618.533.037 0 .073-.002.11-.003.006 0 .01.003.014.003.006 0 .012-.004.018-.004a20.28 20.28 0 0010.075-2.753c.024-.01.049-.016.072-.03.015-.009.023-.024.038-.034a20.843 20.843 0 007.449-7.52c.014-.02.033-.037.046-.06.009-.016.008-.033.016-.049a20.824 20.824 0 002.741-10.351c0-3.768-1-7.3-2.74-10.352zm-.053-8.715l1.078 1.09-1.078 1.09-1.079-1.09 1.079-1.09zM26.342 7.639V5.31h-2.668a.384.384 0 01-.381-.385c0-.212.172-.385.381-.385h6.86c.21 0 .381.173.381.385a.384.384 0 01-.381.385h-2.668v2.33a18.386 18.386 0 00-.762-.017l-.067.002-.057-.002c-.125 0-.25.009-.375.011-.089.003-.172.002-.263.006z" fill="url(#paint1_linear)"></path>
+                <path d="M20.244 13.786h-3.81a.766.766 0 00-.763.77c0 .426.34.77.762.77h3.811a.766.766 0 00.762-.77c0-.426-.34-.77-.762-.77z" fill="url(#paint2_linear)"></path>
+                <path d="M20.244 19.179h-7.622a.766.766 0 00-.762.77c0 .426.34.77.762.77h7.622a.766.766 0 00.762-.77c0-.426-.34-.77-.762-.77z" fill="url(#paint3_linear)"></path>
+                <path d="M20.244 24.572H8.811a.766.766 0 00-.762.77c0 .426.34.77.762.77h11.433a.766.766 0 00.762-.77c0-.426-.34-.77-.762-.77z" fill="url(#paint4_linear)"></path>
+                <path d="M20.244 29.965H5.762a.766.766 0 00-.762.77c0 .426.34.77.762.77h14.482a.766.766 0 00.762-.77c0-.426-.34-.77-.762-.77z" fill="url(#paint5_linear)"></path>
+                <path d="M20.244 35.358h-9.909a.766.766 0 00-.762.77c0 .426.34.77.762.77h9.91a.766.766 0 00.761-.77c0-.426-.34-.77-.762-.77z" fill="url(#paint6_linear)"></path>
+                <path d="M20.244 40.75H14.91a.766.766 0 00-.763.77c0 .427.341.771.763.771h5.335a.766.766 0 00.762-.77c0-.426-.34-.77-.762-.77z" fill="url(#paint7_linear)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="24.818" y1="20.026" x2="37.256" y2="20.277" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="21.768" y1="3.286" x2="48.532" y2="3.596" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear" x1="15.671" y1="13.795" x2="21.088" y2="14.178" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear" x1="11.86" y1="19.188" x2="21.058" y2="20.303" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint4_linear" x1="8.049" y1="24.581" x2="20.892" y2="26.785" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint5_linear" x1="5" y1="29.974" x2="20.631" y2="33.288" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint6_linear" x1="9.573" y1="35.367" x2="20.978" y2="37.094" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint7_linear" x1="14.146" y1="40.76" x2="21.089" y2="41.391" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h3>Быстро, как никогда</h3>
+              <p>Процесс продажи авто занимает не более 2 часов.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions section">
+      <div class="questions__wrapper container">
+        <div class="questions__accordion accordion">
+          <h2>Часто задаваемые вопросы</h2>
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              <h3>Законно ли это?</h3>
+              <svg class="accordion__item-icon" width="20" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11l9.15-9L19 11" stroke="url(#paint0_linear)" stroke-width="2"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="1" y1="10.94" x2="19.34" y2="10.2" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="accordion__item-text">
+              Согласно Российскому Законодательству любой автовладелец вправе
+              продать или передать свое право спора со страховой компанией.
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              <h3>
+                Я уже получил небольшую страховую выплату, получается, что вы не
+                сможете выкупить мой страховой случай?
+              </h3>
+
+              <svg class="accordion__item-icon" width="20" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11l9.15-9L19 11" stroke="url(#paint0_linear)" stroke-width="2"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="1" y1="10.94" x2="19.34" y2="10.2" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="accordion__item-text">
+              Согласно Российскому Законодательству любой автовладелец вправе
+              продать или передать свое право спора со страховой компанией.
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              <h3>Выкуп страховых случаев по ДТП - это невыгодно?</h3>
+
+              <svg class="accordion__item-icon" width="20" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11l9.15-9L19 11" stroke="url(#paint0_linear)" stroke-width="2"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="1" y1="10.94" x2="19.34" y2="10.2" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="accordion__item-text">
+              Согласно Российскому Законодательству любой автовладелец вправе
+              продать или передать свое право спора со страховой компанией.
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__item-header">
+              <h3>В какой срок происходит выкуп страховых случаев по ДТП?</h3>
+
+              <svg class="accordion__item-icon" width="20" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11l9.15-9L19 11" stroke="url(#paint0_linear)" stroke-width="2"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="1" y1="10.94" x2="19.34" y2="10.2" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="accordion__item-text">
+              Согласно Российскому Законодательству любой автовладелец вправе
+              продать или передать свое право спора со страховой компанией.
+            </div>
+          </div>
+          <div class="accordion__item accordion__item--big">
+            <div class="accordion__item-header">
+              <h3>
+                Сколько времени занимает оформление необходимых документов?
+              </h3>
+              <svg class="accordion__item-icon" width="20" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11l9.15-9L19 11" stroke="url(#paint0_linear)" stroke-width="2"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="1" y1="10.94" x2="19.34" y2="10.2" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EB5D56"></stop>
+                    <stop offset="1" stop-color="#390A40"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="accordion__item-text">
+              Согласно Российскому Законодательству любой автовладелец вправе
+              продать или передать свое право спора со страховой компанией.
+            </div>
+          </div>
+        </div>
+        <div class="questions__pic">
+          <picture>
+            <source type="image/webp" srcset="
+                img/questions/questions-pic.webp    1x,
+                img/questions/questions-pic@2x.webp 2x
+              ">
+            <!-- 1х: 846px; 2x: 1692px -->
+            <img class="lazy" src="img/questions/questions-pic.jpg" data-src="img/questions/questions-pic.jpg" srcset="img/questions/questions-pic@2x.jpg 2x" width="846" height="618" alt="Люди" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback__wrapper container">
+        <div class="feedback__header">
+          <h2>Узнайте сумму выкупа своего автомобиля</h2>
+          <p>
+            Заполните данные об авто, прикрепите фото и мы сообщим вам стоимость
+          </p>
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="post" class="form feedback__form">
+          <label for="feedback-auto">
+            <span>Ваш автомобиль</span>
+            <input id="feedback-auto" type="text" placeholder="Lada Granta, 2016 г.в." required="">
+          </label>
+          <label for="feedback-year">
+            <span>Год выпуска</span>
+            <input id="feedback-year" type="text" placeholder="2016 г.в." required="">
+          </label>
+          <label for="feedback-name">
+            <span>Ваше имя</span>
+            <input id="feedback-name" type="text" placeholder="Евгений" required="">
+          </label>
+          <label for="feedback-phone">
+            <span>Номер телефона</span>
+            <input id="feedback-phone" name="feedback-phone" type="text" placeholder="+7 999 999 99 99" value="" minlength="17" maxlength="17" required="">
+          </label>
+          <div class="feedback__form-bottom">
+            <a href="">Добавьте фото</a>
+            <button type="submit">Отправить</button>
+            <div class="form__text">
+              Отправляя форму, вы соглашаетесь с условиями обработки
+              персональных данных
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__left">
+          <a class="page-footer__conf" href="#">Политика конфиденциальности</a>
+          <p class="page-footer__copy">Copyright © 2019</p>
+          <a class="page-footer__logo-art" href="#">
+            <img src="img/logo-footer2.svg" width="57" height="22" alt="Логотип компании art">
+          </a>
+        </div>
+        <a class="page-footer__logo logo">
+          <img src="img/logo-footer.svg" width="105" height="90" alt="Логотип компании">
+        </a>
+        <div class="page-footer__right">
+          <a class="page-footer__phone" href="tel:+79189571336">+7 (918) 957-13-36</a>
+          <a class="page-footer__mail" href="mailto:avto.vucup23mail.ru">avto.vucup23mail.ru</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
