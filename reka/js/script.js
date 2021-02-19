@@ -8,11 +8,9 @@
         clickable: true,
       },
     lazy: true,
-    
     autoplay: {
       delay: 5000,
     },
-
     effect: 'fade',
     fadeEffect: {
       crossFade: true
@@ -42,7 +40,7 @@
       prevEl: '.swiper-button-prev',
     },
   });
-  
+
   let projects = new Swiper('#projects-slider', {
     lazy: true,
     grabCursor: true,
@@ -65,10 +63,7 @@
       prevEl: '.swiper-button-prev',
     },
   });
-  
 
-
-  
   // header scroll
   const body = document.body;
   const triggerMenu = document.querySelector(".page-header__btn-burger");
@@ -88,7 +83,7 @@
       body.classList.remove(scrollUp);
       return;
     }
-    
+
     if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
       // down
       body.classList.remove(scrollUp);
@@ -101,10 +96,3 @@
     lastScroll = currentScroll;
   });
 })();
-
-
-
-
-
-
-
