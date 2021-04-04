@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Тестовое задание</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Тестовое задание">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page">
+    <div class="popup">
+      <section class="popup__inner item">
+        <button class="popup__close" type="button" aria-label="закрыть окно">
+          <svg class="btn__icon" width="24" height="24">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <img class="item__picture" src="img/room/1.svg" alt="room">
+        <div class="item__info">
+          <h2 class="item__title">2-к квартира</h2>
+          <ul class="item__list">
+            <li>Этаж<span>3 из 19</span></li>
+            <li>Высота потолков<span>3,2 м</span></li>
+            <li>Отделка<span>Предчистовая</span></li>
+            <li>Общая площадь<span>32,24 м²</span></li>
+            
+            <li>Жилая площадь<span>22,24 м²</span></li>
+            
+            <li>Площадь кухни<span>14,24 м²</span></li>
+          </ul>
+          <div class="item__tags">
+            <div class="item__tag">
+              <svg class="item__tag-icon" width="16" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-chek"></use>
+              </svg>
+              Вы были на просмотре
+            </div>
+            <div class="item__tag item__tag--red">
+              <svg class="item__tag-icon" width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+              </svg>
+              Дом аккредитован другим банком
+            </div>
+          </div>
+        </div>
+        <div class="item__price">
+          <div class="item__reserve">
+            Ваша цена по брони до
+            <span class="item__reserve-date">19 сентября</span>
+            <div class="item__reserve-price">3 312 666 Р</div>
+          </div>
+          <div class="item__dev">
+            Текущая цена у застройщика дороже на
+            <span class="item__dev-price">324 825 Р</span>
+          </div>
+          <button class="item__price-btn btn" type="button">
+            <svg class="btn__icon" width="16" height="16">
+              <use xlink:href="img/sprite_auto.svg#icon-key"></use>
+            </svg>
+            Выбрать для покупки
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>
