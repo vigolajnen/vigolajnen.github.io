@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Подбор программы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Магазин готовых шаблонов">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="navigation">
+        <div class="navigation__header"><a class="navigation__logo" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo/logo.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg"><img src="img/logo/logo-mobile.svg" alt="Логотип компании" width="35" height="38">
+                  </picture></a>
+                <svg class="navigation__logo-text" width="101" height="18">
+                  <use xlink:href="../img/sprite.svg#icon-logo-text"></use>
+                </svg>
+          <button class="navigation__toggle navigation__toggle--closed" type="button" aria-label="Открыть меню">
+            <svg class="navigation__icon" width="25" viewbox="0 0 10 10">
+              <rect class="navigation__line navigation__line--1" width="10" height="1" x="0" y="0"></rect>
+              <rect class="navigation__line navigation__line--2" width="10" height="1" x="0" y="3"></rect>
+              <rect class="navigation__line navigation__line--3" width="10" height="1" x="0" y="6"></rect>
+            </svg>
+          </button>
+        </div>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="/index.html">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/catalog.html">Каталог продукции</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-form">
+      <div class="container">
+        <h1 class="page__title">Подбор программы</h1>
+      </div>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+        <div class="container">
+          <p class="form__caption">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="form__inner">
+            <ul class="form__base">
+              <li>
+                <label for="form-name">ИМЯ:*</label>
+                <input type="text" id="form-name" name="form-name" placeholder="Барсик" required>
+              </li>
+              <li>
+                <label for="form-weight">Вес (кг):*</label>
+                <input type="text" id="form-weight" name="form-weight" placeholder="7" required>
+              </li>
+              <li>
+                <label for="form-age">Возраст (лет):</label>
+                <input type="text" id="form-age" name="form-age" placeholder="7">
+              </li>
+            </ul>
+            <ul class="form__theme">
+              <li>
+                <input class="visually-hidden" id="theme-1" type="radio" name="form-theme" checked>
+                <label for="theme-1">похудение</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="theme-2" type="radio" name="form-theme">
+                <label for="theme-2">Набор массы</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="theme-3" type="radio" name="form-theme">
+                <label for="theme-3">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <fieldset class="form__wrapper">
+          <legend class="form__title">
+            <h2>Контактные данные (владельца кота)</h2>
+          </legend>
+          <ul class="form__contacts container">
+            <li>
+              <label for="form-email">E-mail:*</label>
+              <input type="email" id="form-email" name="form-email" placeholder="кuklachev@gmail.com" required>
+            </li>
+            <li>
+              <label for="form-phone">Телефон:*</label>
+              <input type="tel" id="form-phone" name="form-phone" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__wrapper">
+          <legend class="form__title">
+            <h3>Комментарий</h3>
+          </legend>
+          <div class="form__comment container">
+            <label for="form-mess" aria-label="Текст комментария:"></label>
+            <textarea id="form-mess" name="form-mess" cols="10" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="form__wrapper">
+          <legend class="form__title">
+            <h3>Дополнительно</h3>
+          </legend>
+          <ul class="form__other-info container">
+            <li>
+              <input class="visually-hidden" id="info-1" type="checkbox" name="info-1" checked>
+              <label for="info-1">сахарозаменитель</label>
+            </li>
+            <li>
+              <input class="visually-hidden" id="info-2" type="checkbox" name="info-2">
+              <label for="info-2">питьевая вода</label>
+            </li>
+            <li>
+              <input class="visually-hidden" id="info-3" type="checkbox" name="info-3">
+              <label for="info-3">молоко</label>
+            </li>
+            <li>
+              <input class="visually-hidden" id="info-4" type="checkbox" name="info-4">
+              <label for="info-4">витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__footer container">
+          <button type="submit">отправить заявку</button><span>* — Обязательные поля</span>
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <section class="contacts">
+        <div class="container contacts__wrapper">
+          <div class="contacts__info">
+            <h3 class="contacts__title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+            <div class="contacts__text">
+              <p class="contacts__street">ул. Большая<br>Конюшенная, д. 19/8</p>
+              <p class="contacts__city">Санкт-Петербург</p>
+            </div>
+          </div>
+        </div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63846.578024267925!2d30.35411705!3d59.9950849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1637092738564!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      <div class="container page-footer__wrapper"><a class="page-footer__item" href="#"><img src="img/footer/footer-logo.svg" alt="logo" width="128" height="24"></a>
+        <div class="page-footer__item">
+          <ul class="social">
+            <li class="social__item"><a class="social__link social__link--vk" href="#">
+                          <svg width="28" height="20">
+                            <use xlink:href="../img/sprite.svg#icon-vk"></use>
+                          </svg></a></li>
+            <li class="social__item"><a class="social__link social__link--inst" href="#">
+                          <svg width="23" height="23">
+                            <use xlink:href="../img/sprite.svg#icon-inst"></use>
+                          </svg></a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#">
+                          <svg width="28" height="33">
+                            <use xlink:href="../img/sprite.svg#icon-fb"></use>
+                          </svg></a></li>
+          </ul>
+        </div><a class="page-footer__item" href="#"><img src="img/footer/logo_html.svg" alt="logo" width="163" height="34"></a>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
