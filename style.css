@@ -81,34 +81,12 @@ a {
 
 @media (min-width: 540px) {
   .card {
-    grid-template-columns: 40% 50%;
-  }
-}
-
-@media (min-width: 960px) {
-  .card {
-    grid-template-columns: 30% 50%;
+    grid-template-columns: 50% 50%;
   }
 }
 
 .card:nth-child(2n + 1) .card__background {
   order: 0;
-}
-
-.card:nth-child(2n + 1) {
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 540px) {
-  .card:nth-child(2n + 1) {
-    grid-template-columns: 50% 40%;
-  }
-}
-
-@media (min-width: 960px) {
-  .card:nth-child(2n + 1) {
-    grid-template-columns: 50% 30%;
-  }
 }
 
 .card__background {
