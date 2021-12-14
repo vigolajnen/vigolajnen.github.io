@@ -63,7 +63,6 @@ a {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
   justify-content: space-between;
@@ -94,7 +93,6 @@ a {
   order: 1;
   background-size: cover;
   background-position: center;
-  border-radius: var(--spacing-l);
   filter: brightness(0.75) saturate(1.2) contrast(0.85);
   transform-origin: center;
   transform: scale(1) translateZ(0);
