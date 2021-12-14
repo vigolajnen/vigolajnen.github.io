@@ -66,6 +66,7 @@ a {
   grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
+  justify-content: space-between;
 }
 
 
@@ -87,7 +88,8 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: 30% 50%;
-  min-height: 50vw;
+  height: 50vw;
+  text-decoration: none;
 }
 
 .card:nth-child(2n + 1) .card__background {
