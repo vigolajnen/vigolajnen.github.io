@@ -69,8 +69,6 @@ a {
   justify-content: space-between;
 }
 
-
-
 @media (min-width: 540px) {
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -88,8 +86,21 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: 30% 50%;
-  height: 50vw;
+  justify-content: space-around;
+  height: 50vh;
   text-decoration: none;
+}
+
+@media (min-width: 540px) {
+  .card {
+    grid-template-columns: 40% 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .card-grid {
+    grid-template-columns: 30% 50%;
+  }
 }
 
 .card:nth-child(2n + 1) .card__background {
@@ -97,7 +108,19 @@ a {
 }
 
 .card:nth-child(2n + 1) {
-  grid-template-columns: 50% 30%;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 540px) {
+  .card:nth-child(2n + 1) {
+    grid-template-columns: 40% 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .card:nth-child(2n + 1) {
+    grid-template-columns: 30% 50%;
+  }
 }
 
 .card__background {
