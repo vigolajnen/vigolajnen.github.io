@@ -69,18 +69,6 @@ a {
   justify-content: space-between;
 }
 
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (min-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .card {
   list-style: none;
   position: relative;
@@ -98,7 +86,7 @@ a {
 }
 
 @media (min-width: 960px) {
-  .card-grid {
+  .card {
     grid-template-columns: 30% 50%;
   }
 }
