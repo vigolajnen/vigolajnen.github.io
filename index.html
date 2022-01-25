@@ -1,107 +1,73 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <title>Портфолио</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Магазин готовых шаблонов">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="img/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="img/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
-
-  <body class="page dark-theme">
+  <body class="page-body">
     <header class="page-header">
-      <button class="btn-toggle">Переключатель тёмной темы</button>
+      <nav class="navigation header-and-promo__nav">
+        <div class="navigation__wrapper container">
+          <button class="navigation__toggle navigation__toggle--closed" type="button" aria-label="Открыть меню">
+            <svg class="navigation__icon" width="30" viewbox="0 0 30 25">
+              <rect class="navigation__line navigation__line--1" width="30" height="4" x="0" y="0"></rect>
+              <rect class="navigation__line navigation__line--2" width="30" height="4" x="0" y="10"></rect>
+              <rect class="navigation__line navigation__line--3" width="30" height="4" x="0" y="20"></rect>
+            </svg>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><a class="navigation__link" href="#cat">Cat Energy</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#cruise">Круизы в Антарктику</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#fitness">Фитнес центр</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#shop">Магазин украшений</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#mishka">Магазин игрушек</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#test">Архитектура и дизайн</a></li>
+          </ul>
+          <div class="theme-toggle">
+            <input class="checkbox" type="checkbox" id="checkbox">
+            <label class="label" for="checkbox"><i class="far fa-moon"></i><i class="far fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+        </div>
+      </nav>
     </header>
-
-    <main class="container">
-      <section class="section">
-        <nav class="card-grid">
-          <a class="card" href="https://vigolajnen.github.io/catEnergy/">
-            <div
-              class="card__background"
-              style="background-image: url(projects/cat/img/maket/Desktop.jpg)"
-            ></div>
-            <div class="card__content">
-              <h3 class="card__heading">Интернет магазин питания для котов</h3>
-              <p class="card__category">Верстка</p>
-            </div>
-          </a>
-          <a class="card" href="/projects/jewellery/index.html">
-            <div
-              class="card__background"
-              style="
-                background-image: url(projects/jewellery/img/maket/Main_page.jpg);
-              "
-            ></div>
-            <div class="card__content">
-              <h3 class="card__heading">Интернет магазин украшений</h3>
-              <p class="card__category">Верстка</p>
-            </div></a
-          >
-          <a class="card" href="/projects/cruise/index.html">
-            <div
-              class="card__background"
-              style="
-                background-image: url(projects/cruise/img/maket/desktop.jpg);
-              "
-            ></div>
-            <div class="card__content">
-              <h3 class="card__heading">Круизы в Антарктику</h3>
-              <p class="card__category">Верстка</p>
-            </div></a
-          >
-          <a class="card" href="/projects/fitness/index.html">
-            <div
-              class="card__background"
-              style="
-                background-image: url(projects/fitness/img/maket/Desktop.jpg);
-              "
-            ></div>
-            <div class="card__content">
-              <h3 class="card__heading">Фитнес центр</h3>
-              <p class="card__category">Верстка</p>
-            </div>
-          </a>
-          <a class="card" href="/projects/mishka/index.html">
-            <div
-              class="card__background"
-              style="
-                background-image: url(projects/mishka/img/maket/mishka.jpg);
-              "
-            ></div>
-            <div class="card__content">
-              <h3 class="card__heading">Mishka</h3>
-              <p class="card__category">Верстка</p>
-            </div>
-          </a>
-          <a class="card" href="/projects/reka/">
-            <div
-              class="card__background"
-              style="
-                background-image: url(projects/reka/img/maket/StudiaKora.png);
-              "
-            ></div>
-            <div class="card__content">
-              <h3 class="card__heading">Studiokora</h3>
-              <p class="card__category">Верстка</p>
-            </div>
-          </a>
-          <a class="card" href="/projects/tsphere/index.html">
-            <div
-              class="card__background"
-              style="
-                background-image: url(projects/tsphere/img/maket/tshere.jpg);
-              "
-            ></div>
-            <div class="card__content">
-              <h3 class="card__heading">Турсфера</h3>
-              <p class="card__category">Верстка</p>
-            </div>
-          </a>
-        </nav>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__wrapper"><a class="gallery__item" id="shop" href="https://vigolajnen.github.io/projects/jewellery/index.html" target="_blank"><img src="img/gallery/shop1.jpg" alt="Магазин украшений">
+                <div class="gallery__info">
+                  <h3>Магазин украшений</h3>
+                </div></a><a class="gallery__item" id="cat" href="https://vigolajnen.github.io/catEnergy/index.html" target="_blank"><img src="img/gallery/cat1.jpg" alt="Cat Energy">
+                <div class="gallery__info">
+                  <h3>Cat Energy</h3>
+                </div></a><a class="gallery__item" id="fitness" href="https://vigolajnen.github.io/projects/fitness/index.html" target="_blank"><img src="img/gallery/fitness1.jpg" alt="Фитнес центр">
+                <div class="gallery__info">
+                  <h3>Фитнес центр</h3>
+                </div></a><a class="gallery__item" id="cruise" href="https://vigolajnen.github.io/projects/cruise/index.html" target="_blank"><img src="img/gallery/cruise1.jpg" alt="Круизы в Антарктику">
+                <div class="gallery__info">
+                  <h3>Круизы в Антарктику</h3>
+                </div></a><a class="gallery__item" id="mishka" href="https://vigolajnen.github.io/projects/mishka/index.html" target="_blank"><img src="img/gallery/mishka1.jpg" alt="Магазин игрушек">
+                <div class="gallery__info">
+                  <h3>Магазин игрушек</h3>
+                </div></a><a class="gallery__item" id="test" href="https://vigolajnen.github.io/projects/reka/index.html" target="_blank"><img src="img/gallery/test1.jpg" alt="Архитектура и дизайн">
+                <div class="gallery__info">
+                  <h3>Архитектура и дизайн</h3>
+                </div></a>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container page-footer__wrapper"><a class="page-footer__email" href="mailto:anya.vigolainen@yandex.ru">anya.vigolainen@yandex.ru</a></div>
+    </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
