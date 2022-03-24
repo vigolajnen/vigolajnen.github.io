@@ -13,107 +13,88 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
-    <div class="container-fluid min-vh-100">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMobile" aria-controls="navbarTogglerMobile" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Гайд по дежурству</a>
-          <div class="collapse navbar-collapse" id="navbarTogglerMobile">
-            <div class="d-block d-sm-none">
-              <nav class="nav nav-pills"><a class="nav-link w-100 active" href="page-1.html">
-                  <svg class="me-2 feather feather-home" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                  </svg>Главное</a><a class="nav-link w-100" href="page-2.html">
-                  <svg class="me-2 feather feather-layers" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                    <polyline points="2 17 12 22 22 17"></polyline>
-                    <polyline points="2 12 12 17 22 12"></polyline>
-                  </svg>Выгрузка</a><a class="nav-link w-100" href="page-3.html">
-                  <svg class="me-2 feather feather-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                    <polyline points="13 2 13 9 20 9"></polyline>
-                  </svg>Работа с файлами</a><a class="nav-link w-100" href="page-4.html">
-                  <svg class="me-2 feather feather-bar-chart-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <line x1="18" y1="20" x2="18" y2="10"></line>
-                    <line x1="12" y1="20" x2="12" y2="4"></line>
-                    <line x1="6" y1="20" x2="6" y2="14"></line>
-                  </svg>Отчет</a></nav>
-            </div>
-          </div>
-        </nav>
-        <div class="d-flex align-items-start p-0 min-vh-100">
-          <div class="d-none d-md-block col-md-3 bg-light min-vh-100">
-            <nav class="nav nav-pills"><a class="nav-link w-100 active" href="page-1.html">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMobile" aria-controls="navbarTogglerMobile" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Дежурство</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerMobile">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="page-1.html">
                 <svg class="me-2 feather feather-home" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                   <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>Главное</a><a class="nav-link w-100" href="page-2.html">
+                </svg>Главное</a></li>
+            <li class="nav-item"><a class="nav-link active" href="page-2.html">
                 <svg class="me-2 feather feather-layers" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                   <polyline points="2 17 12 22 22 17"></polyline>
                   <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>Выгрузка</a><a class="nav-link w-100" href="page-3.html">
+                </svg>Выгрузка</a></li>
+            <li class="nav-item"><a class="nav-link" href="page-3.html">
                 <svg class="me-2 feather feather-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
                   <polyline points="13 2 13 9 20 9"></polyline>
-                </svg>Работа с файлами</a><a class="nav-link w-100" href="page-4.html">
+                </svg>Работа с файлами</a></li>
+            <li class="nav-item"><a class="nav-link" href="page-4.html">
                 <svg class="me-2 feather feather-bar-chart-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <line x1="18" y1="20" x2="18" y2="10"></line>
                   <line x1="12" y1="20" x2="12" y2="4"></line>
                   <line x1="6" y1="20" x2="6" y2="14"></line>
-                </svg>Отчет</a></nav>
+                </svg>Отчет</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container pt-3">
+      <h2 class="h3">Выгрузка</h2>
+      <hr>
+      <p>Выгрузку в день делаем три раза:</p>
+      <ol>
+        <li><b>В 10:00</b>-  c 7:00 по 10:00;</li>
+        <li><b>В 14:00</b>-  c 10:00 по 14:00;</li>
+        <li><b>В 18:00</b>-  c 14:00 по 18:00.</li>
+      </ol>
+      <div class="d-flex flex-column w-100">
+        <div class="p-2 w-100">
+          <button class="btn btn-outline-dark w-100 d-flex" type="button" data-toggle="collapse" data-target="#t-item-01" aria-expanded="false" aria-controls="t-item-01">1. Входящие (потерянные)</button>
+          <div class="collapse" id="t-item-01">
+            <section class="t-item-01 card pt-3 mt-3">
+              <div class="container">
+                <p>Параметры для выгрузки<b>(дата и интервал времени, линии, тип звонков - потерянные)</b></p>
+                <p><b>Линии (очередь) (на данный момент 17):</b></p>
+                <ol class="px-3">
+                  <li>CCR-8-8005050606</li>
+                  <li>FITNESS HOUSE</li>
+                  <li>...</li>
+                  <li value="17">Кнопка_1</li>
+                </ol><a href="img/1.jpg" data-fancybox="gallery"><img class="picture img-fluid rounded" src="img/1.jpg" loading="lazy" alt="Таблица данных по звонкам"></a>
+                <figure class="figure py-3">
+                  <figcaption class="figure-caption pb-2">Когда сформировали таблицу, можно нажать на колонку “очередь” для фильтрации линий и затем скачать файл:</figcaption><a href="img/2.jpg" data-fancybox="gallery"><img class="picture figure-img img-fluid rounded" src="img/2.jpg" loading="lazy" alt="Таблица"></a>
+                </figure>
+              </div>
+            </section>
           </div>
-          <main class="col-md-9 ms-sm-auto p-2">
-            <h2 class="h3">Выгрузка</h2>
-            <hr>
-            <p>Выгрузку в день делаем три раза:</p>
-            <ol>
-              <li><b>В 10:00</b>-  c 7:00 по 10:00;</li>
-              <li><b>В 14:00</b>-  c 10:00 по 14:00;</li>
-              <li><b>В 18:00</b>-  c 14:00 по 18:00.</li>
-            </ol>
-            <div class="card mb-3">
-              <div class="card-body">
-                <div class="container" id="gallery" data-toggle="modal" data-target="#exampleModal">
-                  <div class="row">
-                    <div class="col-lg-5 col-md-auto p-0">
-                      <h4 class="h4">Входящие (потерянные)</h4>
-                      <p>Параметры для выгрузки<b>(дата и интервал времени, линии, тип звонков - потерянные)</b></p>
-                      <p><b>Линии (очередь) (на данный момент 17):</b></p>
-                      <ol class="px-3">
-                        <li>CCR-8-8005050606</li>
-                        <li>FITNESS HOUSE</li>
-                        <li>...</li>
-                        <li value="17">Кнопка_1</li>
-                      </ol>
-                    </div>
-                    <div class="d-flex col-lg-7 col-md-auto p-0"><img class="img-thumbnail" src="img/1.jpg" alt="Таблица данных по звонкам" data-toggle="modal" data-target="#myModal" data-slide-to="0"></div>
-                  </div>
-                </div>
-                <div class="pt-2">
-                  <p>Когда сформировали таблицу, можно нажать на колонку “очередь” для фильтрации линий и затем скачать файл:</p><img class="img-thumbnail" src="img/2.jpg" alt="Таблица" data-toggle="modal" data-target="#myModal" data-slide-to="1">
-                </div>
+        </div>
+        <div class="p-2 w-100">
+          <button class="btn btn-outline-dark w-100 d-flex" type="button" data-toggle="collapse" data-target="#t-item-02" aria-expanded="false" aria-controls="t-item-02">2. Пропущенные</button>
+          <div class="collapse" id="t-item-02">
+            <section class="t-item-02 card pt-3 mt-3">
+              <div class="container">
+                <p>Параметры для выгрузки (дата и интервал времени, линии (очередь) (на данный момент 17))</p><a href="img/3.jpg" data-fancybox="gallery"><img class="picture img-fluid rounded" src="img/3.jpg" loading="lazy" alt="Таблица"></a>
+                <p>Когда сформировали таблицу, можно нажать на колонку “очередь” для фильтрации линий и затем скачать файл:</p><a href="img/2.jpg" data-fancybox="gallery"><img class="picture img-fluid rounded" src="img/2.jpg" loading="lazy" alt="Таблица"></a>
               </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-body">
-                <h4 class="h4">Пропущенные</h4>
-                <p>Параметры для выгрузки (дата и интервал времени, линии (очередь) (на данный момент 17))</p><img class="img-thumbnail" src="img/3.jpg" alt="Таблица" data-toggle="modal" data-target="#myModal" data-slide-to="2">
-                <div class="pt-2">
-                  <p>Когда сформировали таблицу, можно нажать на колонку “очередь” для фильтрации линий и затем скачать файл:</p><img class="img-thumbnail" src="img/2.jpg" alt="Таблица" data-toggle="modal" data-target="#myModal" data-slide-to="1">
-                </div>
+            </section>
+          </div>
+        </div>
+        <div class="p-2 w-100">
+          <button class="btn btn-outline-dark w-100 d-flex" type="button" data-toggle="collapse" data-target="#t-item-03" aria-expanded="false" aria-controls="t-item-03">3. Входящие (принятые)</button>
+          <div class="collapse" id="t-item-03">
+            <section class="t-item-03 card pt-3 mt-3">
+              <div class="container">
+                <p>Параметры для выгрузки (дата и интервал времени, линии, тип звонков - принятые)</p><a href="img/4.jpg" data-fancybox="gallery"><img class="picture img-fluid rounded" src="img/4.jpg" loading="lazy" alt="Таблица"></a>
+                <p>Когда сформировали таблицу, можно нажать на колонку “очередь” для фильтрации линий и затем скачать файл:</p><a href="img/2.jpg" data-fancybox="gallery"><img class="picture img-fluid rounded" src="img/2.jpg" loading="lazy" alt="Таблица"></a>
               </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-body">
-                <h4 class="h4">Входящие (принятые)</h4>
-                <p>Параметры для выгрузки (дата и интервал времени, линии, тип звонков - принятые)</p><img class="img-thumbnail" src="img/4.jpg" alt="Таблица" data-toggle="modal" data-target="#myModal" data-slide-to="2">
-                <div class="pt-2">
-                  <p>Когда сформировали таблицу, можно нажать на колонку “очередь” для фильтрации линий и затем скачать файл:</p><img class="img-thumbnail" src="img/2.jpg" alt="Таблица" data-toggle="modal" data-target="#myModal" data-slide-to="1">
-                </div>
-              </div>
-            </div>
-          </main>
+            </section>
+          </div>
         </div>
       </div>
     </div>
