@@ -158,10 +158,10 @@
         <div class="tabs-service">
           <div class="tabs__wrapper">
             <nav class="tabs">
-              <button class="tab active" data-target="panel-1">Абонементы</button>
-              <button class="tab" data-target="panel-2">Персональные тренировки</button>
-              <button class="tab" data-target="panel-3">Детские секции</button>
-              <button class="tab" data-target="panel-4">Доп. услуги</button>
+              <button class="tab d-md-flex active" data-target="panel-1">Абонементы</button>
+              <button class="tab d-none d-md-flex" data-target="panel-2">Персональные тренировки</button>
+              <button class="tab d-none d-md-flex" data-target="panel-3">Детские секции</button>
+              <button class="tab d-none d-md-flex" data-target="panel-4">Доп. услуги</button>
             </nav>
           </div>
           <div id="panels">
@@ -314,20 +314,24 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form class="from form-tour" action="">
-                  <label class="form-label mb-4" for="exampleInputEmail1">
-                    <input class="form-control" type="email" id="exampleInputEmail1">
+                <form class="from form-tour mb-4" action="">
+                  <label class="form-label mb-4" for="exampleInputEmail1"><span>Введите фамилию и имя</span>
+                    <input class="form-control" type="email" id="exampleInputEmail1" placeholder="Иванов Артем">
                   </label>
-                  <label class="form-label mb-4" for="exampleInputText">
-                    <input class="form-control" type="text" id="exampleInputText">
+                  <label class="form-label mb-4" for="exampleInputText"><span>Введите @email</span>
+                    <input class="form-control" type="text" id="exampleInputText" placeholder="Ivanov@mail.com">
                   </label>
-                  <label class="form-label mb-4" for="exampleInputText">
-                    <input class="form-control" type="text" id="exampleInputText">
+                  <label class="form-label mb-4" for="exampleInputText"><span>Введите номер телефона</span>
+                    <input class="form-control" type="tel:+79999999999" id="exampleInputText" placeholder="+7 999 999 99 99">
                   </label>
-                  <label class="form-label mb-4" for="exampleInputText">
-                    <input class="form-control" type="text" id="exampleInputText">
+                  <label class="form-label mb-4" for="exampleInputText"><span>Выберете клуб</span>
+                    <input class="form-control" type="text" id="exampleInputText" placeholder="На Гашека">
                   </label>
                   <button class="button--red mx-auto mb-2" type="submit">Записаться</button>
+                  <div>
+                    <input type="checkbox" name="">
+                    <label>Даю согласие на обработку данных</label>
+                  </div>
                 </form>
               </div>
             </div>
