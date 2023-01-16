@@ -9776,6 +9776,9 @@ button[type=submit] {
   overflow: hidden;
 }
 .page-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 20px;
   line-height: 26px;
   width: 100%;
@@ -9843,6 +9846,8 @@ button[type=submit] {
 }
 
 .page-footer {
+  margin-top: auto;
+  margin-bottom: 0;
   padding-bottom: 2rem;
   padding-top: 2rem;
   background-color: #42474d;
