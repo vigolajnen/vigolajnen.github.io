@@ -10,11 +10,11 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png">
-    <link rel="preload" href="fonts/AvenirNext.woff2" as="font" type="font/woff2" crossoring>
+    <link rel="preload" href="fonts/AvenirNextCyr-Regular.woff2" as="font" type="font/woff2" crossoring>
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="container mx-auto px-4"><a class="phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон">
+      <div class="container"><a class="phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон">
               <svg class="icon" width="13" height="22">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg><span>(812) 610 06 06</span></a><a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
@@ -48,10 +48,7 @@
             <li><a href="#">Вакансии</a></li>
             <li><a href="#">Реклама</a></li>
           </ul>
-          <hr><a class="page-footer__phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон">
-                      <svg class="icon" width="13" height="22">
-                        <use xlink:href="img/sprite.svg#phone"></use>
-                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <hr><a class="page-footer__phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон"><span class="ml-2">(812) 610 06 06</span></a>
           <ul class="social">
             <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
                           <svg class="icon" width="31" height="19">
@@ -69,53 +66,50 @@
         </div>
       </nav>
     </header>
-    <main class="container mx-auto px-2">
-      <div class="definition-city">
-        <h3>Ваш город Санкт-Петербург?</h3>
-        <button class="button button--city">Да</button>
-        <button class="button button--city" data-bs-target="#modalToggleCityChange" data-bs-toggle="modal" data-bs-dismiss="modal">Нет</button>
-      </div>
+    <main class="container">
       <nav class="nav-menu">
         <ul class="nav-menu__list">
-          <li class="nav-menu__item">
+          <li class="nav-menu__item nav-menu__item--city">
             <div class="nav-city">
-              <div class="nav-city__title" role="button" tabindex="0"><span>Город</span>
+              <div class="nav-city__title" role="button" tabindex="0"><span>Самара</span>
                             <svg class="icon" width="14" height="8">
                               <use xlink:href="img/sprite.svg#arrow-down"></use>
                             </svg>
               </div>
-              <ul class="nav-city__list d-none">
-                <li><a class="region-select" href="/" data-region="1">Санкт-Петербург</a></li>
-                <li><a class="region-select" href="index-n-novgorod.html" data-region="2">Нижний Новгород</a></li>
-                <li><a class="region-select" href="index-kazan.html" data-region="3">Казань</a></li>
-                <li><a class="region-select" href="index-tolyatti.html" data-region="4">Тольятти</a></li>
-                <li><a class="region-select" href="1976.html" data-region="5">Самара</a></li>
-                <li><a class="region-select" href="2123.html" data-region="6">Ульяновск</a></li>
-                <li><a class="region-select" href="2181.html" data-region="7">Архангельск</a></li>
-                <li><a class="region-select" href="2210.html" data-region="8">Ижевск</a></li>
-                <li><a class="region-select" href="2236.html" data-region="9">Ярославль</a></li>
-                <li><a class="region-select" href="2473.html" data-region="11">Петрозаводск</a></li>
-                <li><a class="region-select" href="2526.html" data-region="12">Мурманск</a></li>
-                <li><a class="region-select" href="2537.html" data-region="13">Рязань</a></li>
-                <li><a class="region-select" href="3172.html" data-region="14">Набережные Челны</a></li>
-                <li><a class="region-select" href="5556.html" data-region="15">Тула</a></li>
-                <li><a class="region-select" href="6804.html" data-region="16">Нижнекамск</a></li>
-              </ul>
+              <div class="nav-city__wrapper d-none my-custom-scrollbar my-custom-scrollbar-primary">
+                <ul class="nav-city__list">
+                  <li><a class="region-select" href="/" data-region="1">Санкт-Петербург</a></li>
+                  <li><a class="region-select" href="index-n-novgorod.html" data-region="2">Нижний Новгород</a></li>
+                  <li><a class="region-select" href="index-kazan.html" data-region="3">Казань</a></li>
+                  <li><a class="region-select" href="index-tolyatti.html" data-region="4">Тольятти</a></li>
+                  <li><a class="region-select" href="1976.html" data-region="5">Самара</a></li>
+                  <li><a class="region-select" href="2123.html" data-region="6">Ульяновск</a></li>
+                  <li><a class="region-select" href="2181.html" data-region="7">Архангельск</a></li>
+                  <li><a class="region-select" href="2210.html" data-region="8">Ижевск</a></li>
+                  <li><a class="region-select" href="2236.html" data-region="9">Ярославль</a></li>
+                  <li><a class="region-select" href="2473.html" data-region="11">Петрозаводск</a></li>
+                  <li><a class="region-select" href="2526.html" data-region="12">Мурманск</a></li>
+                  <li><a class="region-select" href="2537.html" data-region="13">Рязань</a></li>
+                  <li><a class="region-select" href="3172.html" data-region="14">Набережные Челны</a></li>
+                  <li><a class="region-select" href="5556.html" data-region="15">Тула</a></li>
+                  <li><a class="region-select" href="6804.html" data-region="16">Нижнекамск</a></li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="nav-menu__item order-2"><a class="nav-menu__link active" href="sale.html"><span class="px-1 d-none d-sm-block">Акции</span><span class="px-1 d-sm-none">Акционные предложения</span>
+          <li class="nav-menu__item  order-2"><a class="nav-menu__link nav-menu__link--sale active" href="sale.html"><span class="d-none d-sm-block">Акции</span><span class="d-sm-none">Акционные предложения</span>
                           <svg class="icon" width="22" height="22">
                             <use xlink:href="img/sprite.svg#sale"></use>
                           </svg></a></li>
-          <li class="nav-menu__item order-1 order-md-3"><a class="nav-menu__link" href="#"><span class="px-1">Клубы</span>
+          <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link" href="#"><span>Клубы</span>
                           <svg class="icon" width="22" height="22">
                             <use xlink:href="img/sprite.svg#city"></use>
                           </svg></a></li>
-          <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span class="px-1">Тренеры</span>
+          <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Тренеры</span>
                           <svg class="icon" width="19" height="18">
                             <use xlink:href="img/sprite.svg#trainer"></use>
                           </svg></a></li>
-          <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span class="px-1">Расписание</span>
+          <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Расписание</span>
                           <svg class="icon" width="19" height="18">
                             <use xlink:href="img/sprite.svg#schedule"></use>
                           </svg></a></li>
@@ -124,35 +118,35 @@
       <div class="main">
         <section class="sale section"><a href="#">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/sale/sale.png">
-                      <source media="(min-width: 768px)" srcset="img/sale/sale-768.png"><img src="img/sale/sale-mob.png" alt="Акция" width="287" height="322">
+                      <source media="(min-width: 1200px)" srcset="img/sale/banner-1.jpg">
+                      <source media="(min-width: 768px)" srcset="img/sale/banner-1-768.jpg"><img src="img/sale/banner-1-mob.jpg" alt="Акция" width="294" height="330">
                     </picture></a></section>
-        <section class="advantages">
+        <section class="advantages order-2 order-md-1">
           <h2 class="advantages__title">Фитнес Хаус - это</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--1">
-              <div class="advantages__count"><span>14</span>
+              <div class="advantages__count"><span class="number">14</span>
                         <svg class="icon" width="49" height="45">
                           <use xlink:href="img/sprite.svg#house"></use>
                         </svg>
               </div><span class="advantages-item__title">городов в россии</span>
             </li>
             <li class="advantages__item advantages__item--2">
-              <div class="advantages__count"><span>72</span>
+              <div class="advantages__count"><span class="number">72</span>
                         <svg class="icon" width="53" height="29">
                           <use xlink:href="img/sprite.svg#people"></use>
                         </svg>
               </div><span class="advantages-item__title">клуба федеральной сети</span>
             </li>
             <li class="advantages__item advantages__item--3">
-              <div class="advantages__count"><span>25+</span>
+              <div class="advantages__count"><span class="number">25<sub>+</sub></span>
                         <svg class="icon" width="55" height="55">
                           <use xlink:href="img/sprite.svg#heart"></use>
                         </svg>
               </div><span class="advantages-item__title">Групповых направлений</span>
             </li>
             <li class="advantages__item advantages__item--4">
-              <div class="advantages__count"><span>4</span>
+              <div class="advantages__count"><span class="number">4</span>
                         <svg class="icon" width="49" height="36">
                           <use xlink:href="img/sprite.svg#barbell"></use>
                         </svg>
@@ -160,124 +154,54 @@
             </li>
           </ul>
         </section>
-        <div class="tabs-service">
-          <div class="tabs__wrapper">
-            <nav class="tabs">
-              <button class="tab d-md-flex active" data-target="panel-1">Абонементы</button>
-              <button class="tab d-none d-md-flex" data-target="panel-2">Персональные тренировки</button>
-              <button class="tab d-none d-md-flex" data-target="panel-3">Детские секции</button>
-              <button class="tab d-none d-md-flex" data-target="panel-4">Доп. услуги</button>
-            </nav>
-          </div>
-          <div id="panels">
-            <div class="panel-1 tab-content active h-full">
-              <form class="form" action="">
-                <div class="form__item">
-                  <label class="form-label" for="">Выбор клуба</label>
-                  <select class="form-select" name="">
-                    <option selected="">Все клубы</option>
-                    <option value="FH в Шушарах">FH в Шушарах</option>
-                    <option value="FH в Славянке">FH в Славянке</option>
-                    <option value="FH на Пулковском">FH на Пулковском</option>
-                  </select>
-                </div>
-                <div class="form__item">
-                  <label class="form-label" for="">Срок договора</label>
-                  <select class="form-select" name="">
-                    <option selected="">Все варианты</option>
-                    <option value="1 месяц">1 месяц</option>
-                    <option value="3 месяца">3 месяца</option>
-                    <option value="6 месяцев">6 месяцев</option>
-                    <option value="9 месяцев">9 месяцев</option>
-                    <option value="1 год">1 год</option>
-                  </select>
-                </div>
-                <button type="submit">Подобрать</button>
-              </form>
-            </div>
-            <div class="panel-2 tab-content h-full">
-              <form class="form" action="">
-                <div class="form__item">
-                  <label class="form-label" for="">Выбор клуба</label>
-                  <select class="form-select" name="">
-                    <option selected="">Все клубы</option>
-                    <option value="FH в Шушарах">FH в Шушарах</option>
-                    <option value="FH в Славянке">FH в Славянке</option>
-                    <option value="FH на Пулковском">FH на Пулковском</option>
-                  </select>
-                </div>
-                <div class="form__item">
-                  <label class="form-label" for="">Выбор услуги</label>
-                  <select class="form-select" name="">
-                    <option selected="">Все варианты</option>
-                  </select>
-                </div>
-                <button type="submit">Подобрать</button>
-              </form>
-            </div>
-            <div class="panel-3 tab-content h-full">
-              <form class="form" action="">
-                <div class="form__item">
-                  <label class="form-label" for="">Выбор клуба</label>
-                  <select class="form-select" name="">
-                    <option selected="">Все клубы</option>
-                    <option value="FH в Шушарах">FH в Шушарах</option>
-                    <option value="FH в Славянке">FH в Славянке</option>
-                    <option value="FH на Пулковском">FH на Пулковском</option>
-                  </select>
-                </div>
-                <div class="form__item">
-                  <label class="form-label" for="">Выбор услуги</label>
-                  <select class="form-select" name="">
-                    <option selected="">Все варианты</option>
-                  </select>
-                </div>
-                <button type="submit">Подобрать</button>
-              </form>
-            </div>
-            <div class="panel-4 tab-content h-full">
-              <form class="form" action="">
-                <div class="form__item">
-                  <label class="form-label" for="">Выбор клуба</label>
-                  <select class="form-select" name="">
-                    <option selected="">Все клубы</option>
-                    <option value="FH в Шушарах">FH в Шушарах</option>
-                    <option value="FH в Славянке">FH в Славянке</option>
-                    <option value="FH на Пулковском">FH на Пулковском</option>
-                  </select>
-                </div>
-                <div class="form__item">
-                  <label class="form-label" for="">Выбор услуги</label>
-                  <select class="form-select" name="">
-                    <option selected="">Все варианты</option>
-                    <option value="Фитнес-консультант">Фитнес-консультант</option>
-                    <option value="Солярий">Солярий</option>
-                  </select>
-                </div>
-                <button type="submit">Подобрать</button>
-              </form>
+        <form class="form form--base form--offers section order-1 order-md-2">
+          <div class="form__title">Подберём персональное предложение</div>
+          <div class="form__wrapper">
+            <label class="form-label" for="formName"><span>Введите имя</span>
+              <input class="form-control" type="text" id="formName" placeholder="Алексей" required>
+            </label>
+            <label class="form-label" for="formPhone"><span>Введите номер телефона</span>
+              <input class="form-control" type="tel:+79999999999" id="formPhone" placeholder="+7 999 999 99 99" required>
+            </label>
+            <label class="form-label" for="formClub"><span>Выберете клуб</span>
+              <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
+                <option selected disabled value="">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+              </select>
+            </label>
+            <div class="form__btns">
+              <button class="botton button--red" type="submit">Подобрать</button>
+              <label class="form__check form-check-label" for="formAgreement">
+                <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span>Даю согласие на обработку данных</span>
+              </label>
             </div>
           </div>
-        </div>
-        <section class="box job">
+        </form><a class="box box--job job order-2" href="#">
                   <svg class="icon" width="94" height="52">
                     <use xlink:href="img/sprite.svg#job"></use>
                   </svg>
-          <h3 class="box__title">Работа в компании<span>Fitness house</span></h3><a class="box__link link-text link-text--more" href="#"><span>Подробнее</span>
-                    <svg class="icon" width="34" height="8">
-                      <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg></a>
-        </section>
-        <section class="schedule box box--yellow">
+          <div class="box__content">
+            <h3 class="box__title">Работа в компании<span>Fitness house</span></h3>
+            <div class="box__link link-text link-text--more"><span>Подробнее</span>
+                      <svg class="icon" width="34" height="8">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+            </div>
+          </div></a><a class="schedule box box--schedule box--yellow order-2" href="#">
                   <svg class="icon" width="58" height="59">
                     <use xlink:href="img/sprite.svg#schedule-2"></use>
                   </svg>
-          <h3 class="box__title">Расписание групповых занятий</h3><a class="box__link link-text link-text--more" href="#"><span>Подробнее</span>
-                    <svg class="icon" width="34" height="8">
-                      <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg></a>
-        </section>
-        <section class="slider">
+          <div class="box__content">
+            <h3 class="box__title">Расписание групповых занятий</h3>
+            <div class="box__link link-text link-text--more"><span>Подробнее</span>
+                      <svg class="icon" width="34" height="8">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+            </div>
+          </div></a>
+        <section class="slider order-2">
           <div class="swiper-container">
             <!-- swiper slides-->
             <div class="swiper-wrapper"><a class="swiper-slide" href="#" style="background-image: url(img/slider/1.jpg);">
@@ -301,13 +225,13 @@
             <!-- !pagination dots-->
           </div>
         </section>
-        <section class="record">
+        <section class="record order-2">
           <h3 class="record__title">Запишись<span>на экскурсию</span></h3><a class="link-text link-text--more" href="#exampleModalToggle" type="button" data-bs-toggle="modal"><span>Записаться</span>
                     <svg class="icon" width="34" height="8">
                       <use xlink:href="img/sprite.svg#arrow"></use>
                     </svg></a>
         </section>
-        <div class="modal fade modal-tour" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal fade modal-tour order-2" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
@@ -345,37 +269,38 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="container mx-auto px-4">
-        <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон">
-                      <svg class="icon" width="13" height="22">
-                        <use xlink:href="img/sprite.svg#phone"></use>
-                      </svg><span class="ml-2">(812) 610 06 06</span></a>
-          <ul class="page-footer__links">
-            <li><a class="link-text link-text--arrow" href="#">
-                          <svg class="icon" width="16" height="16">
-                            <use xlink:href="img/sprite.svg#arrow-li"></use>
-                          </svg><span class="ml-2">Новости клубов</span></a></li>
-            <li><a class="link-text link-text--arrow" href="#">
-                          <svg class="icon" width="16" height="16">
-                            <use xlink:href="img/sprite.svg#arrow-li"></use>
-                          </svg><span class="ml-2">Академия фитнеса Корус</span></a></li>
-            <li><a class="link-text link-text--arrow" href="#">
-                          <svg class="icon" width="16" height="16">
-                            <use xlink:href="img/sprite.svg#arrow-li"></use>
-                          </svg><span class="ml-2">Вакансии</span></a></li>
-            <li><a class="link-text link-text--arrow" href="#">
-                          <svg class="icon" width="16" height="16">
-                            <use xlink:href="img/sprite.svg#arrow-li"></use>
-                          </svg><span class="ml-2">Реклама в клубах</span></a></li>
-            <li><a class="link-text link-text--arrow" href="#">
-                          <svg class="icon" width="16" height="16">
-                            <use xlink:href="img/sprite.svg#arrow-li"></use>
-                          </svg><span class="ml-2">Корпоративные продажи</span></a></li>
-            <li><a class="link-text link-text--arrow" href="#">
-                          <svg class="icon" width="16" height="16">
-                            <use xlink:href="img/sprite.svg#arrow-li"></use>
-                          </svg><span class="ml-2">Развитие регионов</span></a></li>
-          </ul>
+      <div class="container">
+        <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон"><span class="ml-2">(812) 610 06 06</span></a>
+          <div class="page-footer__links links">
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span class="ml-2">Новости клубов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span class="ml-2">Академия фитнеса Корус</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span class="ml-2">Вакансии</span></a></li>
+            </ul>
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span class="ml-2">Корпоративные продажи</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span class="ml-2">Развитие регионов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span class="ml-2">Реклама в клубах</span></a></li>
+            </ul>
+          </div>
           <div class="page-footer__support">Служба поддержки<span>с 07:00 до 00:00</span>
             <div>Email:<a href="mailto:help@fhclub.ru">help@fhclub.ru</a></div>
           </div><a class="logo logo--footer" href="#">
