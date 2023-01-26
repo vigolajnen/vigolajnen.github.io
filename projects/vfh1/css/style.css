@@ -1898,12 +1898,12 @@ button[type=submit] {
 .page-header {
   position: relative;
   background-color: #42474d;
-  padding: 1.8rem 0.6rem 0.8rem 0;
+  padding: 1.8rem 0 0.8rem 0;
   transition: 0.5s;
 }
 @media (min-width: 768px) {
   .page-header {
-    padding: 1.4rem 0.7rem 1.6rem 0.2rem;
+    padding: 1.4rem 0 1.6rem;
   }
 }
 @media (min-width: 992px) {
@@ -1932,6 +1932,19 @@ button[type=submit] {
   align-items: center;
   color: #ffffff;
 }
+.page-header .phone {
+  width: 30px;
+}
+@media (min-width: 768px) {
+  .page-header .phone {
+    width: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .page-header .phone {
+    width: auto;
+  }
+}
 .page-header .phone span {
   display: none;
 }
@@ -1939,6 +1952,10 @@ button[type=submit] {
   .page-header .phone span {
     display: flex;
   }
+}
+.page-header .phone .icon {
+  margin-right: 0;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   .page-header .phone .icon {
@@ -1952,21 +1969,20 @@ button[type=submit] {
 @media (min-width: 992px) {
   .page-header__lk {
     display: flex;
-    padding-right: 5px;
   }
 }
 .page-header__lk span {
-  margin-left: 10px;
+  margin-left: 0;
 }
 @media (min-width: 768px) {
   .page-header .logo {
     width: 230px;
-    margin-left: -15px;
   }
 }
 @media (min-width: 992px) {
   .page-header .logo {
     width: auto;
+    height: auto;
     margin-left: 0;
   }
 }
@@ -2421,6 +2437,16 @@ button[type=submit] {
     height: auto;
   }
 }
+@media (min-width: 768px) {
+  .main__adv .advantages__list {
+    height: 100%;
+  }
+}
+@media (min-width: 1300px) {
+  .main__adv .advantages__list {
+    height: auto;
+  }
+}
 .main__form {
   grid-area: tabs;
   -ms-grid-area: tabs;
@@ -2640,10 +2666,13 @@ button[type=submit] {
   color: #42474d;
   border: 1px solid #ffffff;
   padding: 0.3rem 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 @media (min-width: 576px) {
   .advantages__item {
     padding: 0.5rem;
+    padding-left: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -2661,7 +2690,7 @@ button[type=submit] {
 @media (min-width: 992px) {
   .advantages__item {
     width: 50%;
-    height: auto;
+    height: 50%;
     padding: 0.5rem 0.3rem;
     border-width: 2px;
   }
@@ -2937,14 +2966,29 @@ button[type=submit] {
   position: relative;
   color: #42474d;
   font-family: "Avenir Next Cyr Medium", sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 140%;
   text-transform: uppercase;
+  font-size: 10px;
+}
+@media (min-width: 320px) {
+  .advantages-item__title {
+    font-size: calc(5.4545454545vw - 7.4545454545px);
+  }
+}
+@media (min-width: 375px) {
+  .advantages-item__title {
+    font-size: calc(0.1877934272vw + 12.2957746479px);
+  }
+}
+@media (min-width: 1440px) {
+  .advantages-item__title {
+    font-size: 15px;
+  }
 }
 @media (min-width: 768px) {
   .advantages-item__title {
-    font-size: 13px;
     margin-top: -10px;
   }
 }
@@ -2958,6 +3002,15 @@ button[type=submit] {
 @media (min-width: 1300px) {
   .advantages-item__title {
     margin-top: 0;
+  }
+}
+.advantages-item__title span {
+  display: block;
+}
+@media (min-width: 768px) {
+  .advantages-item__title span {
+    display: inline-block;
+    padding-left: 0.2rem;
   }
 }
 .advantages__count {
@@ -3029,7 +3082,7 @@ button[type=submit] {
 }
 .nav-menu__item:nth-child(2) {
   width: 100%;
-  max-width: 287px;
+  max-width: 260px;
   margin-right: 0;
 }
 @media (min-width: 450px) {
@@ -3108,8 +3161,8 @@ button[type=submit] {
   padding-right: 20px;
 }
 .nav-menu__link.active {
-  background-color: #42474d;
-  color: #ffffff;
+  background-color: #fffeda;
+  color: #42474d;
 }
 .nav-menu__link svg {
   fill: #42474d;
