@@ -2618,7 +2618,11 @@ button[type=submit] {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
   padding: 0.5rem;
+}
+.advantages__list:focus, .advantages__list:hover {
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .advantages__list {
@@ -4063,4 +4067,179 @@ button[type=submit] {
   .timer__text span {
     font-size: 24px;
   }
+}
+
+.history__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.history .title {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  /* identical to box height, or 52px */
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 23px;
+}
+@media (min-width: 450) {
+  .history .title {
+    font-size: calc(4.4025157233vw + 3.1886792453px);
+  }
+}
+@media (min-width: 768px) {
+  .history .title {
+    font-size: calc(0.4464285714vw + 33.5714285714px);
+  }
+}
+@media (min-width: 1440px) {
+  .history .title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .history .title {
+    padding-top: 0;
+    padding-left: 30px;
+  }
+}
+.history .icon {
+  display: none;
+  width: 130px;
+  height: 22px;
+  margin-left: 3%;
+}
+@media (min-width: 768px) {
+  .history .icon {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .history .icon {
+    margin-left: 10%;
+  }
+}
+.history__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+}
+.history__list::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 5px;
+  height: 91.5%;
+  background: linear-gradient(180deg, #5e879f 21.12%, #77c7cc 100%);
+  border-radius: 18px;
+}
+@media (min-width: 768px) {
+  .history__list::before {
+    height: 91%;
+  }
+}
+@media (min-width: 992px) {
+  .history__list::before {
+    height: 92%;
+  }
+}
+@media (min-width: 1200px) {
+  .history__list::before {
+    height: 91%;
+  }
+}
+.history__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 16px;
+}
+.history__title {
+  position: relative;
+  margin-right: 12px;
+  padding: 5px 15px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 120%;
+  border-radius: 30px;
+  background-color: var(--bgColor);
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .history__title {
+    margin-right: 0;
+  }
+}
+.history__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--bgColor);
+}
+.history__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .history__text {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-history .modal-dialog {
+    max-width: 690px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-history .modal-dialog {
+    max-width: 856px;
+  }
+}
+@media (min-width: 768px) {
+  .modal-history .modal-body {
+    padding: 32px;
+  }
+}
+.modal-history .modal-content {
+  border-radius: 22px;
+  padding-bottom: 157px;
+  background-image: url("../img/modal/girl-swimming-pool-mob.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 157px;
+}
+@media (min-width: 768px) {
+  .modal-history .modal-content {
+    background-image: var(--pic);
+    padding-bottom: 220px;
+    background-size: 100% 220px;
+  }
+}
+.modal-history .modal-content .btn-close {
+  z-index: 2;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  color: #42474d;
+  opacity: 1;
 }

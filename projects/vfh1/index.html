@@ -14,7 +14,7 @@
     <link rel="preload" href="fonts/avenirnextcyr-regular.woff2" as="font" type="font/woff2" crossoring>
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header fixed-top">
       <div class="container"><a class="phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон">
               <svg class="icon" width="13" height="22">
                 <use xlink:href="img/sprite.svg#phone"></use>
@@ -134,8 +134,7 @@
                           <source media="(min-width: 768px)" srcset="img/sale/banner-1-768.jpg"><img src="img/sale/banner-1-mob.jpg" alt="Акция" width="294" height="330">
                         </picture></a></section>
         </section>
-        <section class="main__adv">
-          <section class="advantages order-2 order-md-1">
+        <section class="main__adv"><a class="advantages order-2 order-md-1" href="#modal-history" type="button" data-bs-toggle="modal">
             <h2 class="advantages__title">Фитнес Хаус - это</h2>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--1">
@@ -170,8 +169,7 @@
                 </div>
                 <div class="advantages-item__title">клуба<span>премиум-класса</span></div>
               </li>
-            </ul>
-          </section>
+            </ul></a>
         </section>
         <section class="main__form">
           <form class="form form--base form--offers section order-1 order-md-2">
@@ -431,6 +429,64 @@
         </div>
       </div>
     </div>
+        <div class="modal fade modal-history" aria-hidden="true" aria-labelledby="" tabindex="-1" id="modal-history">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="--pic:url('../img/modal/girl-swimming-pool.jpg')">
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+              <div class="modal-body">
+                    <section class="history">
+                      <div class="history__header">
+                        <h3 class="title">История компании</h3>
+                                  <svg class="icon" width="130" height="22">
+                                    <use xlink:href="img/sprite.svg#logo"></use>
+                                  </svg>
+                      </div>
+                      <ul class="history__list">
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor: #5E879F">2007 год</h4>
+                          <div class="history__text">30 июня 2007 г. открывается первый Fitness House на Стрелке Васильевского острова, в самом центре Санкт-Петербурга.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#5E879F">2011 год</h4>
+                          <div class="history__text">К началу 2011 г. сеть насчитывает 26 клубов в разных районах Санкт-Петербурга. Конец 2011 г. отмечен открытием первого клуба новой линейки фитнес-клубов премиум класса Fitness House Prestige на Левашовском проспекте.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#5095AC">2017 год</h4>
+                          <div class="history__text">В начале 2017 г. сеть насчитывает 43 клуба, из них — 34 клуба с бассейными комплексами,
+          5 клубов без бассейнов, 4 клуба премиум класса Fitness House Prestige.
+          В этом году Fitness House начинает покорять регионы. Осенью открываются первые клубы в Нижнем Новгороде и Казани.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#559CB4">2018 год</h4>
+                          <div class="history__text">В 2018 г. продолжается активное строительство новых фитнес-клубов. Fitness House узнают в регионах. Открываются вторые клубы в Казани и Нижнем Новгороде. Теперь наши клубы в Тольятти и Ульяновске.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#51A5BC">2019 год</h4>
+                          <div class="history__text">Открываются новые клубы в Архангельске, Ижевске, Самаре, Ярославле и Петрозаводске.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#54AAB6">2020 год</h4>
+                          <div class="history__text">Fitness House продолжает покорять регионы. Теперь наши клубы в Рязани, Мурманске, открываются вторые клубы в Самаре и Ижевске.
+          В Санкт-Петербурге появляется новый формат фитнес-клубов бизнес-класса Fitness House Premier в ТЦ «Охта Молл» и на улице Салова.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#63B3B8">2021 год</h4>
+                          <div class="history__text">Fitness House активно продолжает свой рост в Санкт-Петербурге, Казани, Самаре, Ижевске. К концу 2021 года сеть насчитывает 66 клубов в 12 городах РФ.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#6DBDC2">2022 год</h4>
+                          <div class="history__text">Открываются 6 новых клубов: 3 в Санкт-Петербурге, а также в других городах: в Набережных Челнах, в Туле и 4й клуб в Самаре.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#77C7CC">Перспективы на 2023 год</h4>
+                          <div class="history__text">Открытие новых клубов в разных городах России, продолжение развития сети в Санкт-Петербурге.</div>
+                        </li>
+                      </ul>
+                    </section>
+              </div>
+            </div>
+          </div>
+        </div>
     <script src="js/libs.min.js"></script>
     <script src="js/script.min.js" type="module"></script>
   </body>
