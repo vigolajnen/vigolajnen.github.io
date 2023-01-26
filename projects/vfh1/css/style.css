@@ -715,14 +715,14 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("Avenir Next Cyr Demi"), url("../fonts/AvenirNextCyr-Demi.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Demi.woff") format("woff");
+  src: local("Avenir Next Cyr Demi"), url("./fonts/AvenirNextCyr-Demi.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Demi.woff") format("woff");
 }
 @font-face {
   font-family: "Avenir Next Cyr Light";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: local("Avenir Next Cyr Light"), url("../fonts/AvenirNextCyr-Light.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Light.woff") format("woff");
+  src: local("Avenir Next Cyr Light"), url("fonts/AvenirNextCyr-Light.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Light.woff") format("woff");
 }
 /**
  * Rem-converter mixin to convert px to rem
