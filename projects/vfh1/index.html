@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Start">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.2.3/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="preload" href="fonts/avenirnextcyr-regular.woff2" as="font" type="font/woff2" crossoring>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
-    <header class="page-header fixed-top">
+    <header class="page-header">
       <div class="container"><a class="phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон">
               <svg class="icon" width="13" height="22">
                 <use xlink:href="img/sprite.svg#phone"></use>
@@ -71,20 +69,15 @@
       </nav>
     </header>
     <main class="main container">
-      <div class="definition-city">
-        <h3>Ваш город Санкт-Петербург?</h3>
-        <button class="button button--city active">Да</button>
-        <button class="button button--city" data-bs-target="#modalToggleCityChange" data-bs-toggle="modal" data-bs-dismiss="modal">Нет</button>
-      </div>
       <nav class="nav-menu">
         <ul class="nav-menu__list">
           <li class="nav-menu__item nav-menu__item--city">
             <div class="nav-city">
-              <div class="nav-city__title" role="button" tabindex="0"><span>Самара</span>
+              <button class="nav-city__title" role="button" tabindex="0"><span>Самара</span>
                             <svg class="icon" width="14" height="8">
                               <use xlink:href="img/sprite.svg#arrow-down"></use>
                             </svg>
-              </div>
+              </button>
               <div class="nav-city__wrapper d-none">
                 <div class="my-custom-scrollbar my-custom-scrollbar-primary">
                   <ul class="nav-city__list">
@@ -134,42 +127,44 @@
                           <source media="(min-width: 768px)" srcset="img/sale/banner-1-768.jpg"><img src="img/sale/banner-1-mob.jpg" alt="Акция" width="294" height="330">
                         </picture></a></section>
         </section>
-        <section class="main__adv"><a class="advantages order-2 order-md-1" href="#modal-history" type="button" data-bs-toggle="modal">
-            <h2 class="advantages__title">Фитнес Хаус - это</h2>
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item--1">
-                <div class="advantages__count"><span class="number">14</span>
-                            <svg class="icon" width="49" height="45">
-                              <use xlink:href="img/sprite.svg#house"></use>
-                            </svg>
-                </div>
-                <div class="advantages-item__title">городов<span>в россии</span></div>
-              </li>
-              <li class="advantages__item advantages__item--2">
-                <div class="advantages__count"><span class="number">72</span>
-                            <svg class="icon" width="53" height="29">
-                              <use xlink:href="img/sprite.svg#people"></use>
-                            </svg>
-                </div>
-                <div class="advantages-item__title">клуба<span>федеральной сети</span></div>
-              </li>
-              <li class="advantages__item advantages__item--3">
-                <div class="advantages__count"><span class="number">25<sub>+</sub></span>
-                            <svg class="icon" width="55" height="55">
-                              <use xlink:href="img/sprite.svg#heart"></use>
-                            </svg>
-                </div>
-                <div class="advantages-item__title">Групповых<span>направлений</span></div>
-              </li>
-              <li class="advantages__item advantages__item--4">
-                <div class="advantages__count"><span class="number">4</span>
-                            <svg class="icon" width="49" height="36">
-                              <use xlink:href="img/sprite.svg#barbell"></use>
-                            </svg>
-                </div>
-                <div class="advantages-item__title">клуба<span>премиум-класса</span></div>
-              </li>
-            </ul></a>
+        <section class="main__adv">
+          <section class="advantages order-2 order-md-1">
+            <h1>Фитнес Хаус - это</h1><a href="#modal-history" type="button" data-bs-toggle="modal">
+              <ul class="advantages__list">
+                <li class="advantages__item advantages__item--1">
+                  <div class="advantages__count"><span class="number">14</span>
+                              <svg class="icon" width="49" height="45">
+                                <use xlink:href="img/sprite.svg#house"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">городов<span>в россии</span></div>
+                </li>
+                <li class="advantages__item advantages__item--2">
+                  <div class="advantages__count"><span class="number">72</span>
+                              <svg class="icon" width="53" height="29">
+                                <use xlink:href="img/sprite.svg#people"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">клуба<span>федеральной сети</span></div>
+                </li>
+                <li class="advantages__item advantages__item--3">
+                  <div class="advantages__count"><span class="number">25<sub>+</sub></span>
+                              <svg class="icon" width="55" height="55">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">Групповых<span>направлений</span></div>
+                </li>
+                <li class="advantages__item advantages__item--4">
+                  <div class="advantages__count"><span class="number">4</span>
+                              <svg class="icon" width="49" height="36">
+                                <use xlink:href="img/sprite.svg#barbell"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">клуба<span>премиум-класса</span></div>
+                </li>
+              </ul></a>
+          </section>
         </section>
         <section class="main__form">
           <form class="form form--base form--offers section order-1 order-md-2">
@@ -298,6 +293,11 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="definition-city">
+        <h3>Ваш город Санкт-Петербург?</h3>
+        <button class="button button--city active">Да</button>
+        <button class="button button--city" data-bs-target="#modalToggleCityChange" data-bs-toggle="modal" data-bs-dismiss="modal">Нет</button>
       </div>
     </main>
     <footer class="page-footer">

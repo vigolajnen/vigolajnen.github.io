@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Start">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5.2.3/css/bootstrap-ie11.min.css" media="all and (-ms-high-contrast: active), (-ms-high-contrast: none)">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="preload" href="fonts/avenirnextcyr-regular.woff2" as="font" type="font/woff2" crossoring>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
-    <header class="page-header fixed-top">
+    <header class="page-header">
       <div class="container"><a class="phone link-text link-text--svg" href="tel:(812) 610 06 06" aria-label="Наш телефон">
               <svg class="icon" width="13" height="22">
                 <use xlink:href="img/sprite.svg#phone"></use>
@@ -75,11 +73,11 @@
         <ul class="nav-menu__list">
           <li class="nav-menu__item nav-menu__item--city">
             <div class="nav-city">
-              <div class="nav-city__title" role="button" tabindex="0"><span>Самара</span>
+              <button class="nav-city__title" role="button" tabindex="0"><span>Самара</span>
                             <svg class="icon" width="14" height="8">
                               <use xlink:href="img/sprite.svg#arrow-down"></use>
                             </svg>
-              </div>
+              </button>
               <div class="nav-city__wrapper d-none">
                 <div class="my-custom-scrollbar my-custom-scrollbar-primary">
                   <ul class="nav-city__list">
