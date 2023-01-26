@@ -2624,6 +2624,9 @@ button[type=submit] {
 .advantages__list:focus, .advantages__list:hover {
   text-decoration: none;
 }
+.advantages__list:focus, .advantages__list:hover {
+  background-color: #fffeda;
+}
 @media (min-width: 768px) {
   .advantages__list {
     padding: 0.65rem 0.7rem;
@@ -4242,4 +4245,8 @@ button[type=submit] {
   border-radius: 50%;
   color: #42474d;
   opacity: 1;
+  outline: none;
+}
+.modal-history .modal-content .btn-close:focus, .modal-history .modal-content .btn-close:hover {
+  outline: none;
 }
