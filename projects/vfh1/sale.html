@@ -68,7 +68,7 @@
         </div>
       </nav>
     </header>
-    <main class="container mx-auto px-2">
+    <main class="container">
       <nav class="nav-menu">
         <ul class="nav-menu__list">
           <li class="nav-menu__item nav-menu__item--city">
@@ -120,7 +120,7 @@
         </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
       </nav>
       <div class="main-sale">
-        <div class="main-sale__slider">
+        <section class="main-sale__slider">
                     <section class="slider" id="slider-sale">
                       <div class="swiper-container">
                         <div class="swiper-wrapper"><a class="swiper-slide" href="#11">
@@ -142,7 +142,7 @@
                         <div class="swiper-pagination"></div>
                       </div>
                     </section>
-        </div>
+        </section>
         <section class="timer">
           <div class="title">До конца акции <span>осталось:</span></div>
           <div class="timer__wrapper">
@@ -196,34 +196,36 @@
             </div>
           </div>
         </section>
-        <form class="form form--base form-offers section">
-          <div class="form-offers__title">Подберём персональное предложение</div>
-          <div class="form-offers__wrapper">
-            <label class="form-label form-label--1" for="formName"><span>Введите имя</span>
-              <input class="form-control" type="text" id="formName" placeholder="Алексей" required>
-            </label>
-            <label class="form-label form-label--2" for="formPhone"><span>Введите номер телефона</span>
-              <input class="form-control" type="tel:+79999999999" id="formPhone" placeholder="+7 999 999 99 99" required>
-            </label>
-            <label class="form-label form-label--3" for="formClub"><span>Выберете клуб</span>
-              <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
-                <option selected disabled value="">На Гашека</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Гашека">На Гашека</option>
-              </select>
-            </label>
-            <div class="form-offers__btns">
-              <button class="botton button--red" type="submit">Подобрать</button>
-              <label class="form-offers__check form-check-label" for="formAgreement">
-                <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span>Даю согласие на обработку данных</span>
+        <section class="main-sale__form">
+          <form class="form form--base form-offers section">
+            <div class="form-offers__title">Подберём персональное предложение</div>
+            <div class="form-offers__wrapper">
+              <label class="form-label form-label--1" for="formName"><span>Введите имя</span>
+                <input class="form-control" type="text" id="formName" placeholder="Алексей" required>
               </label>
+              <label class="form-label form-label--2" for="formPhone"><span>Введите номер телефона</span>
+                <input class="form-control" type="tel:+79999999999" id="formPhone" placeholder="+7 999 999 99 99" required>
+              </label>
+              <label class="form-label form-label--3" for="formClub"><span>Выберете клуб</span>
+                <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
+                  <option selected disabled value="">На Гашека</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Гашека">На Гашека</option>
+                </select>
+              </label>
+              <div class="form-offers__btns">
+                <button class="botton button--red" type="submit">Подобрать</button>
+                <label class="form-offers__check form-check-label" for="formAgreement">
+                  <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span>Даю согласие на обработку данных</span>
+                </label>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </section>
         <section class="list-services section">
           <div class="list-services__item">
-            <h3 class="list-services__title">Абонемент включает в себя базовые услуги:</h3>
+            <h3 class="list-services__title">Абонемент включает<span>в себя базовые услуги:</span></h3>
             <ul>
               <li><span>Водный комплекс</span>
                             <svg class="icon" width="33" height="28">
@@ -330,30 +332,32 @@
                                   <use xlink:href="img/sprite.svg#arrow"></use>
                                 </svg>
                   </div></a>
-        <sectinon class="content mt-md-4">
+        <sectinon class="content">
           <h1>Как выглядит Фитнес Хаус</h1>
-                    <section class="slider" id="slider-content">
-                      <div class="swiper-container">
-                        <div class="swiper-wrapper"><a class="swiper-slide" href="#11">
-                            <picture>
-                              <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
-                              <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
-                            </picture></a><a class="swiper-slide" href="#22">
-                            <picture>
-                              <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
-                              <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
-                            </picture></a><a class="swiper-slide" href="#33">
-                            <picture>
-                              <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
-                              <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
-                            </picture></a>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                      </div>
-                    </section>
-          <div class="my-4">
+          <div class="content__slider">
+                        <section class="slider" id="slider-content">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper"><a class="swiper-slide" href="#11">
+                                <picture>
+                                  <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
+                                  <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
+                                </picture></a><a class="swiper-slide" href="#22">
+                                <picture>
+                                  <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
+                                  <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
+                                </picture></a><a class="swiper-slide" href="#33">
+                                <picture>
+                                  <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
+                                  <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
+                                </picture></a>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                        </section>
+          </div>
+          <div>
             <p>* Перечень и описание базовых и дополнительных услуг являются предварительными, не являются публичной офертой и могут быть оказаны только при наличии технической возможности их оказания.  Затем уже основная приписка к акции.</p>
             <p>*Скидка распространяется только на определенные акцией Пакеты услуг и действует с 10 по 16 декабря 2022 г. во всех действующих клубах Fitness House® (Фитнес Хаус) г. Санкт-Петербург, кроме клубов Fitness House® Prestige (Фитнес Хаус Престиж) по адресам: ул. Барочная, д.10/2Б, ул. Я. Гашека, 17А, Шереметьевская ул., 13А, клуба Fitness House® Premier (Фитнес Хаус Премьер) по адресу ул. Салова, д. 61.</p>
             <p>Организатор акции: ООО «Фитнес Центр СПб» (ИНН 7814542887, ОГРН 1127847385159), ИП Григорьев С.А. (ИНН 780100743391, ОГРНИП 315784700193659), ИП Круткявичене Г.А. (ИНН 781311455605, ОГРНИП 31078473160022) .</p>
