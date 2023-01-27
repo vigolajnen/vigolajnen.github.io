@@ -1008,7 +1008,7 @@ button[type=submit] {
 .link-text {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
   font-family: inherit;
