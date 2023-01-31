@@ -2662,6 +2662,17 @@ button[type=submit] {
     border-right-color: #ffffff;
     border-bottom-color: #ffffff;
     padding-left: 2px;
+    padding-bottom: 29px;
+  }
+}
+@media (min-width: 1349px) {
+  .advantages__item--1 {
+    padding-bottom: 8px;
+  }
+}
+@media (min-width: 1400px) {
+  .advantages__item--1 {
+    padding-bottom: 0;
   }
 }
 .advantages__item--1 .icon {
@@ -2696,7 +2707,7 @@ button[type=submit] {
 }
 @media (min-width: 576px) {
   .advantages__item--2 {
-    padding-left: 1.5rem;
+    padding-left: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -2808,7 +2819,7 @@ button[type=submit] {
 }
 @media (min-width: 576px) {
   .advantages__item--4 {
-    padding-left: 1.5rem;
+    padding-left: 2rem;
   }
 }
 @media (min-width: 768px) {
