@@ -782,6 +782,11 @@ button[type=submit] {
   text-decoration: none;
   overflow: hidden;
 }
+@media (min-width: 992px) {
+  .section-kids {
+    padding-bottom: 2rem;
+  }
+}
 .section-kids::before {
   content: "";
   position: absolute;
@@ -824,6 +829,11 @@ button[type=submit] {
 .section-kids .link-text--more:focus, .section-kids .link-text--more:hover {
   color: #fffeda;
 }
+@media (max-width: 576px) {
+  .section-kids .link-text--more .icon {
+    width: 25px;
+  }
+}
 
 .section-korus {
   z-index: 1;
@@ -840,6 +850,13 @@ button[type=submit] {
   background-size: cover;
   text-decoration: none;
   overflow: hidden;
+}
+@media (min-width: 992px) {
+  .section-korus {
+    padding: 1.6rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
 }
 .section-korus::before {
   content: "";
@@ -875,6 +892,11 @@ button[type=submit] {
 }
 .section-korus .link-text--more:focus, .section-korus .link-text--more:hover {
   color: #fffeda;
+}
+@media (max-width: 576px) {
+  .section-korus .link-text--more .icon {
+    width: 25px;
+  }
 }
 
 .title {
@@ -4004,6 +4026,7 @@ button[type=submit] {
   }
 }
 .list-services__item {
+  flex-grow: 1;
   margin-bottom: 20px;
 }
 @media (min-width: 576px) {
@@ -4470,5 +4493,151 @@ button[type=submit] {
   .modal-history .modal-content .btn-close {
     top: 30px;
     right: 32px;
+  }
+}
+
+.hero {
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+}
+.hero__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hero__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.hero__list, .hero__pic {
+  width: 100%;
+  margin-bottom: 35px;
+}
+@media (min-width: 992px) {
+  .hero__list, .hero__pic {
+    width: 50%;
+    margin-bottom: 35px;
+  }
+}
+.hero__item {
+  flex-grow: 1;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #42474d;
+  padding-left: 50px;
+}
+.hero__item::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  width: 17px;
+  height: 30px;
+  background-image: url("../img/icons/fh.svg");
+}
+.hero__item:not(:last-child) {
+  border-bottom: 1px solid;
+}
+@media (min-width: 992px) {
+  .hero__item {
+    padding-left: 70px;
+  }
+  .hero__item::before {
+    top: 24px;
+    left: 40px;
+  }
+}
+.hero__club {
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+@media (min-width: 375px) {
+  .hero__club {
+    font-size: calc(1.272264631vw + 10.2290076336px);
+  }
+}
+@media (min-width: 768px) {
+  .hero__club {
+    font-size: 20px;
+  }
+}
+.hero__text {
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 16px;
+}
+@media (min-width: 375px) {
+  .hero__text {
+    font-size: calc(1.0178117048vw + 12.1832061069px);
+  }
+}
+@media (min-width: 768px) {
+  .hero__text {
+    font-size: 20px;
+  }
+}
+.hero__pic {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 0 3rem;
+}
+.hero__pic img {
+  width: 324px;
+  height: 217px;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  .hero__pic img {
+    width: 730px;
+    height: 269px;
+  }
+}
+@media (min-width: 992px) {
+  .hero__pic img {
+    width: 510px;
+    height: 305px;
+    margin-left: auto;
+  }
+}
+.hero h1 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 60px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(73, 76, 79, 0.5);
+  font-size: 20px;
+}
+@media (min-width: 375px) {
+  .hero h1 {
+    font-size: calc(7.6335877863vw - 8.6259541985px);
+  }
+}
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: calc(1.4880952381vw + 38.5714285714px);
+  }
+}
+@media (min-width: 1440px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .hero h1 {
+    margin-bottom: 2rem;
   }
 }
