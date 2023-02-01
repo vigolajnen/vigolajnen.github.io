@@ -1187,6 +1187,7 @@ button[type=submit] {
 @media (max-width: 450px) {
   .nav-city__title {
     width: 100%;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
@@ -4033,9 +4034,9 @@ button[type=submit] {
   height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
-  min-height: 60vh;
+  min-height: 90vh;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .modal.modal-city .modal-content .my-custom-scrollbar {
     height: auto;
     min-height: auto;
