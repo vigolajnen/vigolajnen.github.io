@@ -120,12 +120,11 @@
     </nav>
     <main class="main container">
       <div class="main__grid">
-        <section class="main__sale">
-          <section class="sale section"><a href="#">
-                        <picture>
-                          <source media="(min-width: 1200px)" srcset="img/sale/banner-1.jpg">
-                          <source media="(min-width: 768px)" srcset="img/sale/banner-1-768.jpg"><img src="img/sale/banner-1-mob.jpg" alt="Акция" width="294" height="330">
-                        </picture></a></section>
+        <section class="main__sale"><a class="sale section" href="#">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/sale/banner-1.jpg">
+                        <source media="(min-width: 768px)" srcset="img/sale/banner-1-768.jpg"><img src="img/sale/banner-1-mob.jpg" alt="Акция" width="294" height="330">
+                      </picture></a>
         </section>
         <section class="main__adv">
           <section class="advantages order-2 order-md-1">
@@ -167,14 +166,18 @@
           </section>
         </section>
         <section class="main__form">
-          <form class="form form--offers form-offers section order-1 order-md-2">
+          <form class="form form-offers section order-1 order-md-2 needs-validation" novalidate>
             <div class="form-offers__title">Подберём персональное предложение</div>
             <div class="form-offers__wrapper">
               <label class="form-label" for="formName"><span>Введите имя</span>
                 <input class="form-control" type="text" id="formName" placeholder="Алексей" required>
+                <div class="valid-feedback">Успешно</div>
+                <div class="invalid-feedback">Заполните поле</div>
               </label>
               <label class="form-label" for="formPhone"><span>Введите номер телефона</span>
-                <input class="form-control" type="tel:+79999999999" id="formPhone" placeholder="+7 999 999 99 99" required>
+                <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="12" required>
+                <div class="valid-feedback">Успешно</div>
+                <div class="invalid-feedback">Заполните поле</div>
               </label>
               <label class="form-label" for="formClub"><span>Выберете клуб</span>
                 <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
@@ -189,15 +192,34 @@
                   <option value="На Гашека">На Гашека</option>
                   <option value="На Гашека">На Гашека</option>
                 </select>
+                <div class="valid-feedback">Успешно</div>
+                <div class="invalid-feedback">Заполните поле</div>
               </label>
               <div class="form-offers__btns">
-                <button class="botton button--red" type="submit">Подобрать</button>
+                <button class="botton button--red" type="submit" data-bs-target="#modal-submit-form" data-bs-toggle="modal" data-bs-dismiss="modal">Подобрать</button>
                 <label class="form__check form-check-label" for="formAgreement">
                   <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span class="form__check-text">Даю согласие на обработку данных</span>
                 </label>
               </div>
             </div>
           </form>
+                    <div class="modal fade modal--bg" aria-hidden="true" aria-labelledby="" tabindex="-1" id="modal-submit-form">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
+                          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+                          <div class="modal-body">
+                            <div class="form-message">
+                              <div class="form-message__wrapper">
+                                          <svg class="icon" width="36" height="36">
+                                            <use xlink:href="img/sprite.svg#ok"></use>
+                                          </svg>
+                                <div class="form-message__title">Заявка отправлена в клуб!<span>Ваш менеджер перезвонит в ближайшее время</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
         </section>
         <section class="main__job"><a class="box box box--job job order-2" href="#">
                       <div class="box__title">Работа в компании <span>Fitness house</span></div>
@@ -256,15 +278,21 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form class="form" action="">
+                <form class="form needs-validation" action="" novalidate>
                   <label class="form-label" for="formSingUpName"><span>Введите имя</span>
-                    <input class="form-control" type="email" id="formSingUpName" placeholder="Артем" required>
+                    <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required>
+                    <div class="valid-feedback">Успешно</div>
+                    <div class="invalid-feedback">Заполните поле</div>
                   </label>
                   <label class="form-label" for="formSingUpEmail"><span>Введите @email</span>
-                    <input class="form-control" type="text" id="formSingUpEmail" placeholder="Ivanov@mail.com" required>
+                    <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required>
+                    <div class="valid-feedback">Успешно</div>
+                    <div class="invalid-feedback">Заполните поле</div>
                   </label>
                   <label class="form-label" for="formSingUpPhone"><span>Введите номер телефона</span>
-                    <input class="form-control" type="tel:+79999999999" id="formSingUpPhone" placeholder="+7 999 999 99 99" required>
+                    <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="13" required>
+                    <div class="valid-feedback">Успешно</div>
+                    <div class="invalid-feedback">Заполните поле</div>
                   </label>
                   <label class="form-label" for="formSingUpClub"><span>Выберете клуб</span>
                     <select class="form-select form-control form-select" id="formSingUpClub" name="formClub" aria-label="клуб" required>
@@ -273,10 +301,12 @@
                       <option value="На Гашека">На Гашека</option>
                       <option value="На Гашека">На Гашека</option>
                     </select>
+                    <div class="valid-feedback">Успешно</div>
+                    <div class="invalid-feedback">Заполните поле</div>
                   </label>
-                  <button class="botton button--red" type="submit">Записаться</button>
-                  <label class="form__check" for="formSingUpCheck">
-                    <input type="checkbox" name="" id="formSingUpCheck">
+                  <button class="botton button--red mt-2" type="submit">Записаться</button>
+                  <label class="form__check form-check-label" for="formSingUpCheck">
+                    <input class="form-check-input" type="checkbox" id="formSingUpCheck" checked required>
                     <div class="form__check-text"><span>Оставляя свой email, я принимаю</span><a href="#">Политику конфиденциальности</a></div>
                   </label>
                 </form>

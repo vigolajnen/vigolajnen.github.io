@@ -1552,7 +1552,7 @@ button[type=submit] {
   border-radius: 16px;
   border: none;
 }
-@media (min-width: 1300px) {
+@media (min-width: 992px) {
   .modal--bg .modal-content {
     padding: 1rem;
     background-image: var(--pic);
@@ -1579,7 +1579,6 @@ button[type=submit] {
   cursor: pointer;
   opacity: 1;
   color: #ffffff;
-  background: none;
 }
 .modal--bg .modal-body {
   display: flex;
@@ -1593,7 +1592,7 @@ button[type=submit] {
   line-height: 140%;
   color: #42474d;
 }
-@media (min-width: 1300px) {
+@media (min-width: 992px) {
   .modal--bg .modal-body {
     width: 50%;
     justify-content: start;
@@ -1622,6 +1621,7 @@ button[type=submit] {
 .form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .form__check {
   display: flex;
@@ -1640,11 +1640,14 @@ button[type=submit] {
   }
 }
 .form__check-text {
-  padding-left: 0.6rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: calc(100% - 1.3em);
+  padding-left: 0.4rem;
 }
 @media (min-width: 768px) {
   .form__check-text {
-    padding-left: 1rem;
+    padding-left: 0.8rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1746,6 +1749,20 @@ button[type=submit] {
   font-size: 20px;
   line-height: 130%;
   color: rgba(66, 71, 77, 0.5);
+}
+.form .form-label {
+  position: relative;
+}
+.form .valid-feedback, .form .invalid-feedback {
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  text-align: right;
+}
+.form .form-check-input:checked {
+  background-color: #888888;
+  border-color: #888888;
+  margin: 0;
 }
 
 .phone {
@@ -2570,6 +2587,7 @@ button[type=submit] {
 }
 
 .sale {
+  display: block;
   position: relative;
   background-position: 50%;
   background-size: cover;
@@ -2586,9 +2604,6 @@ button[type=submit] {
   width: 100%;
   height: 100%;
   background: linear-gradient(177.83deg, rgba(0, 0, 0, 0) 10.17%, rgba(0, 0, 0, 0.8) 136.24%);
-}
-.sale a {
-  position: relative;
 }
 .sale img {
   width: 100%;
@@ -3778,6 +3793,7 @@ button[type=submit] {
   margin-top: auto;
   margin-bottom: auto;
   padding-right: 0;
+  padding-top: 1rem;
   width: var(--field-width);
 }
 @media (min-width: 576px) {
@@ -3911,6 +3927,40 @@ button[type=submit] {
 .form-offers--sale button[type=submit] {
   margin-left: auto;
   margin-right: 0;
+}
+
+.form-message {
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .form-message {
+    padding: 3rem 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .form-message--bg {
+    background-image: url(../img/forms/1.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 45% 100%;
+  }
+}
+.form-message__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-message__title {
+  max-width: 280px;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #42474d;
+}
+.form-message__title span {
+  display: block;
 }
 
 .main-sale {
