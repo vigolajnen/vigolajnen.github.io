@@ -2678,8 +2678,7 @@ button[type=submit] {
 }
 @media (min-width: 1400px) {
   .advantages__list {
-    padding: 12px 6px 19px 60px;
-    padding-left: 60px;
+    padding: 12px 30px 19px 50px;
   }
 }
 .advantages__item {
@@ -2830,6 +2829,11 @@ button[type=submit] {
     border-left-color: #ffffff;
     padding-left: 20px;
     padding-bottom: 8px;
+  }
+}
+@media (min-width: 1319px) and (max-width: 1349px) {
+  .advantages__item--2 {
+    padding-bottom: 29px;
   }
 }
 @media (min-width: 1400px) {
