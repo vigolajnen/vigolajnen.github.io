@@ -2405,7 +2405,7 @@ button[type=submit] {
   height: 100%;
   width: 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .main__sale .sale {
     margin-top: 10px;
   }
@@ -2673,7 +2673,6 @@ button[type=submit] {
 }
 @media (min-width: 1200px) {
   .advantages__list {
-    padding-left: 60px;
     height: auto;
   }
 }
@@ -3736,6 +3735,11 @@ button[type=submit] {
   }
 }
 @media (min-width: 1200px) {
+  .form-offers {
+    padding: 1.8rem 1rem;
+  }
+}
+@media (min-width: 1400px) {
   .form-offers {
     padding: 1.8rem;
   }
