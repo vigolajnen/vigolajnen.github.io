@@ -175,7 +175,7 @@
                 <div class="invalid-feedback">Заполните поле</div>
               </label>
               <label class="form-label" for="formPhone"><span>Введите номер телефона</span>
-                <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="12" required>
+                <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required>
                 <div class="valid-feedback">Успешно</div>
                 <div class="invalid-feedback">Заполните поле</div>
               </label>
@@ -196,30 +196,13 @@
                 <div class="invalid-feedback">Заполните поле</div>
               </label>
               <div class="form-offers__btns">
-                <button class="botton button--red" type="submit" data-bs-target="#modal-submit-form" data-bs-toggle="modal" data-bs-dismiss="modal">Подобрать</button>
+                <button class="botton button--red" type="submit">Подобрать</button>
                 <label class="form__check form-check-label" for="formAgreement">
                   <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span class="form__check-text">Даю согласие на обработку данных</span>
                 </label>
               </div>
             </div>
           </form>
-                    <div class="modal fade modal--bg" aria-hidden="true" aria-labelledby="" tabindex="-1" id="modal-submit-form">
-                      <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
-                          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
-                          <div class="modal-body">
-                            <div class="form-message">
-                              <div class="form-message__wrapper">
-                                          <svg class="icon" width="36" height="36">
-                                            <use xlink:href="img/sprite.svg#ok"></use>
-                                          </svg>
-                                <div class="form-message__title">Заявка отправлена в клуб!<span>Ваш менеджер перезвонит в ближайшее время</span></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
         </section>
         <section class="main__job"><a class="box box box--job job order-2" href="#">
                       <div class="box__title">Работа в компании <span>Fitness house</span></div>
@@ -290,7 +273,7 @@
                     <div class="invalid-feedback">Заполните поле</div>
                   </label>
                   <label class="form-label" for="formSingUpPhone"><span>Введите номер телефона</span>
-                    <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="13" required>
+                    <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required>
                     <div class="valid-feedback">Успешно</div>
                     <div class="invalid-feedback">Заполните поле</div>
                   </label>
@@ -314,6 +297,23 @@
             </div>
           </div>
         </div>
+                <div class="modal fade modal--bg modal-submit-form" aria-hidden="true" aria-labelledby="" tabindex="-1" id="modal-submit-form">
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
+                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+                      <div class="modal-body">
+                        <div class="form-message-modal">
+                          <div class="form-message-modal__wrapper">
+                                      <svg class="icon" width="36" height="36">
+                                        <use xlink:href="img/sprite.svg#ok"></use>
+                                      </svg>
+                            <div class="form-message-modal__title">Заявка отправлена в клуб!<span>Ваш менеджер перезвонит в ближайшее время</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
       </div>
     </main>
     <footer class="page-footer">
