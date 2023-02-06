@@ -143,58 +143,60 @@
                       </div>
                     </section>
         </section>
-        <section class="timer">
-          <div class="title">До конца акции <span>осталось:</span></div>
-          <div class="timer__wrapper">
-            <div class="timer__item" style="--clr:red;">
-              <div class="dots day_dot"></div>
-              <svg viewBox="0 0 160 160">
-                <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#ffffff"></stop>
-                    <stop offset="100%" stop-color="#3C76BC"></stop>
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70"></circle>
-                <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient)" id="dd"></circle>
-              </svg>
-              <div class="timer__text">
-                <div id="days">12</div><span>дней</span>
+        <section class="main-sale__timer">
+          <section class="timer">
+            <div class="title">До конца акции <span>осталось:</span></div>
+            <div class="timer__wrapper">
+              <div class="timer__item" style="--clr:red;">
+                <div class="dots day_dot"></div>
+                <svg viewBox="0 0 160 160">
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#ffffff"></stop>
+                      <stop offset="100%" stop-color="#3C76BC"></stop>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70"></circle>
+                  <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient)" id="dd"></circle>
+                </svg>
+                <div class="timer__text">
+                  <div id="days">12</div><span>дней</span>
+                </div>
+              </div>
+              <div class="timer__item" style="--clr:green;">
+                <div class="dots hours_dot"></div>
+                <svg viewBox="0 0 160 160">
+                  <defs>
+                    <linearGradient id="gradient-2" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#ffffff"></stop>
+                      <stop offset="100%" stop-color="#3C76BC"></stop>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70"></circle>
+                  <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient-2)" id="hh"></circle>
+                </svg>
+                <div class="timer__text">
+                  <div id="hours">5</div><span>часов</span>
+                </div>
+              </div>
+              <div class="timer__item" style="--clr:blue;">
+                <div class="dots min_dot"></div>
+                <svg viewBox="0 0 160 160">
+                  <defs>
+                    <linearGradient id="gradient-3" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#ffffff"></stop>
+                      <stop offset="100%" stop-color="#3C76BC"></stop>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70"></circle>
+                  <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient-3)" id="mm"></circle>
+                </svg>
+                <div class="timer__text">
+                  <div id="minutes">5</div><span>минут</span>
+                </div>
               </div>
             </div>
-            <div class="timer__item" style="--clr:green;">
-              <div class="dots hours_dot"></div>
-              <svg viewBox="0 0 160 160">
-                <defs>
-                  <linearGradient id="gradient-2" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#ffffff"></stop>
-                    <stop offset="100%" stop-color="#3C76BC"></stop>
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70"></circle>
-                <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient-2)" id="hh"></circle>
-              </svg>
-              <div class="timer__text">
-                <div id="hours">5</div><span>часов</span>
-              </div>
-            </div>
-            <div class="timer__item" style="--clr:blue;">
-              <div class="dots min_dot"></div>
-              <svg viewBox="0 0 160 160">
-                <defs>
-                  <linearGradient id="gradient-3" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#ffffff"></stop>
-                    <stop offset="100%" stop-color="#3C76BC"></stop>
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70"></circle>
-                <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient-3)" id="mm"></circle>
-              </svg>
-              <div class="timer__text">
-                <div id="minutes">5</div><span>минут</span>
-              </div>
-            </div>
-          </div>
+          </section>
         </section>
         <section class="main-sale__form">
           <form class="form form-offers form-offers--sale section needs-validation" novalidate>
@@ -229,122 +231,128 @@
               <div class="form-offers__btns">
                 <button class="botton button--red" type="submit">Подобрать</button>
                 <label class="form__check form-check-label" for="formAgreement">
-                  <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span>Даю согласие на обработку данных</span>
+                  <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span class="form__check-text">Даю согласие на обработку данных</span>
                 </label>
               </div>
             </div>
           </form>
         </section>
-        <section class="list-services section">
-          <div class="list-services__item">
-            <h3 class="list-services__title">Абонемент включает<span>в себя базовые услуги:</span></h3>
-            <ul>
-              <li><span>Водный комплекс</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#Swim"></use>
-                          </svg>
-              </li>
-              <li><span>СПА-зона</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#spa"></use>
-                          </svg>
-              </li>
-              <li><span>Групповые программы</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#group"></use>
-                          </svg>
-              </li>
-              <li><span>Тренажерный зал</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#gym"></use>
-                          </svg>
-              </li>
-              <li><span>Кардио-зона</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#cardio"></use>
-                          </svg>
-              </li>
-              <li><span>Шкафчики</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#cupboard"></use>
-                          </svg>
-              </li>
-              <li><span>Питьевая вода</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#Water"></use>
-                          </svg>
-              </li>
-              <li><span>Гель для душа</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#Creame"></use>
-                          </svg>
-              </li>
-              <li><span>Фен</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#hair-dryer"></use>
-                          </svg>
-              </li>
-              <li><span>Стартовый пакет тренировок</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#cupboard"></use>
-                          </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="list-services__item">
-            <h3 class="list-services__title"> Дополнительные<span>услуги:*</span></h3>
-            <ul>
-              <li><span>Услуги персонального тренера</span>
-                          <svg class="icon" width="24" height="24">
-                            <use xlink:href="img/sprite.svg#person-rounded"></use>
-                          </svg>
-              </li>
-              <li><span>Ячейки для хранения вещей</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#material"></use>
-                          </svg>
-              </li>
-              <li><span>Солярий</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#Sun"></use>
-                          </svg>
-              </li>
-              <li><span>Полотенца</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#towel"></use>
-                          </svg>
-              </li>
-              <li><span>Секции для взрослых</span>
-                          <svg class="icon" width="26" height="18">
-                            <use xlink:href="img/sprite.svg#people2"></use>
-                          </svg>
-              </li>
-              <li><span>Секции для детей</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#Kids"></use>
-                          </svg>
-              </li>
-              <li><span>Мастер-классы</span>
-                          <svg class="icon" width="33" height="28">
-                            <use xlink:href="img/sprite.svg#star"></use>
-                          </svg>
-              </li>
-            </ul>
-          </div>
-        </section><a class="section section-kids" href="#modal-form-kids" style="--pic:url('../img/sale/kids/swimming-lesson-kids.jpg')" data-bs-toggle="modal">
-                  <div class="title">Детские секции</div>
-                  <div class="link-text link-text--more"><span>Подробнее</span>
-                              <svg class="icon" width="34" height="8">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg>
-                  </div></a><a class="section section-korus" href="https://school.fitnesshouse.ru/" target="_blank" style="--pic:url('../img/sale/korus.jpg')">
-                  <div class="title">Академия фитнеса «Корус»</div>
-                  <div class="link-text link-text--more"><span>Подробнее</span>
-                              <svg class="icon" width="34" height="8">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg>
-                  </div></a>
-        <sectinon class="content">
+        <section class="main-sale__list">
+          <section class="list-services section">
+            <div class="list-services__item">
+              <h3 class="list-services__title">Абонемент включает<span>в себя базовые услуги:</span></h3>
+              <ul>
+                <li><span>Водный комплекс</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#Swim"></use>
+                            </svg>
+                </li>
+                <li><span>СПА-зона</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#spa"></use>
+                            </svg>
+                </li>
+                <li><span>Групповые программы</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#group"></use>
+                            </svg>
+                </li>
+                <li><span>Тренажерный зал</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#gym"></use>
+                            </svg>
+                </li>
+                <li><span>Кардио-зона</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#cardio"></use>
+                            </svg>
+                </li>
+                <li><span>Шкафчики</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#cupboard"></use>
+                            </svg>
+                </li>
+                <li><span>Питьевая вода</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#Water"></use>
+                            </svg>
+                </li>
+                <li><span>Гель для душа</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#Creame"></use>
+                            </svg>
+                </li>
+                <li><span>Фен</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#hair-dryer"></use>
+                            </svg>
+                </li>
+                <li><span>Стартовый пакет тренировок</span>
+                            <svg class="icon" width="16" height="20">
+                              <use xlink:href="img/sprite-sale.svg#ph_sun-fill"></use>
+                            </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="list-services__item">
+              <h3 class="list-services__title"> Дополнительные услуги:*</h3>
+              <ul>
+                <li><span>Услуги персонального тренера</span>
+                            <svg class="icon" width="24" height="24">
+                              <use xlink:href="img/sprite-sale.svg#person-rounded"></use>
+                            </svg>
+                </li>
+                <li><span>Ячейки для хранения вещей</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#material"></use>
+                            </svg>
+                </li>
+                <li><span>Солярий</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#Sun"></use>
+                            </svg>
+                </li>
+                <li><span>Полотенца</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#towel"></use>
+                            </svg>
+                </li>
+                <li><span>Секции для взрослых</span>
+                            <svg class="icon" width="26" height="18">
+                              <use xlink:href="img/sprite-sale.svg#people2"></use>
+                            </svg>
+                </li>
+                <li><span>Секции для детей</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#Kids"></use>
+                            </svg>
+                </li>
+                <li><span>Мастер-классы</span>
+                            <svg class="icon" width="33" height="28">
+                              <use xlink:href="img/sprite-sale.svg#star"></use>
+                            </svg>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section class="main-sale__box-kids"><a class="section section--bg-pic section-kids" href="#modal-form-kids" style="--pic:url('../img/sale/kids/swimming-lesson-kids.jpg')" data-bs-toggle="modal">
+                      <div class="title">Детские секции</div>
+                      <div class="link-text link-text--more"><span>Подробнее</span>
+                                  <svg class="icon" width="34" height="8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg>
+                      </div></a>
+        </section>
+        <section class="main-sale__box-korus"><a class="section section--bg-pic section-korus" href="https://school.fitnesshouse.ru/" target="_blank" style="--pic:url('../img/sale/korus.jpg')">
+                      <div class="title">Академия фитнеса «Корус»</div>
+                      <div class="link-text link-text--more"><span>Подробнее</span>
+                                  <svg class="icon" width="34" height="8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg>
+                      </div></a>
+        </section>
+        <sectinon class="main-sale__content content">
           <h1>Как выглядит Фитнес Хаус</h1>
           <div class="content__slider">
                         <section class="slider" id="slider-content">
@@ -377,10 +385,10 @@
             <p>Настоящая Акция действует только при обращении в коммерческий отдел Клубов и не распространяет свое действие на интернет-магазин Fitness House (Фитнес Хаус).</p>
           </div>
         </sectinon>
-                <div class="modal fade modal--bg" aria-hidden="true" aria-labelledby="" tabindex="-1" id="modal-form-kids">
+                <div class="modal fade modal--bg modal-kids" aria-hidden="true" aria-labelledby="" tabindex="-1" id="modal-form-kids">
                   <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content" style="--pic:url('../img/modal/swimming-lesson-kids.jpg')">
-                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+                      <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
                       <div class="modal-body">
                         <h4 class="title">В Фитнес Хаус до 31 декабря идет набор на разнообразные детские секции.</h4>
                         <p>Плавание, танцы, гимнастика, и персональные тренировки для посетителей от 3 до 13 лет включительно.</p>
@@ -390,12 +398,16 @@
                           <li>улучшает осанку</li>
                           <li>повышает уверенность в себе</li>
                         </ul>
-                        <form class="form">
+                        <form class="form needs-validation" novalidate>
                           <label class="form-label" for="formName"><span>Введите имя</span>
                             <input class="form-control" type="text" id="formName" placeholder="Алексей" required>
+                            <div class="valid-feedback">Успешно</div>
+                            <div class="invalid-feedback">Заполните поле</div>
                           </label>
                           <label class="form-label" for="formPhone"><span>Введите номер телефона</span>
-                            <input class="form-control" type="tel:+79999999999" id="formPhone" placeholder="+7 999 999 99 99" required>
+                            <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required>
+                            <div class="valid-feedback">Успешно</div>
+                            <div class="invalid-feedback">Заполните поле</div>
                           </label>
                           <label class="form-label" for="formClub"><span>Выберете клуб</span>
                             <select class="form-select form-select" name="formClub" aria-label="клуб" required>
@@ -404,21 +416,16 @@
                               <option value="На Гашека">На Гашека</option>
                               <option value="На Гашека">На Гашека</option>
                             </select>
+                            <div class="valid-feedback">Успешно</div>
+                            <div class="invalid-feedback">Заполните поле</div>
                           </label>
-                          <button class="botton button--red" type="submit" data-bs-target="#modal-submit-form" data-bs-toggle="modal" data-bs-dismiss="modal">Подобрать</button>
-                          <label class="form-offers__check form-check-label" for="formAgreement">
-                            <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span>Даю согласие на обработку данных</span>
-                          </label>
+                          <div class="form-offers__btns">
+                            <button class="botton button--red" type="submit">Подобрать</button>
+                            <label class="form__check form-check-label" for="formAgreement">
+                              <input class="form-check-input" type="checkbox" id="formAgreement" checked required><span class="form__check-text">Даю согласие на обработку данных</span>
+                            </label>
+                          </div>
                         </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal fade modal--bg" aria-hidden="true" aria-labelledby="" tabindex="-1" id="modal-submit-form">
-                  <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content" style="--pic:url('../img/modal/swimming-lesson-kids.jpg')">
-                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
-                      <div class="modal-body">
                       </div>
                     </div>
                   </div>
@@ -492,6 +499,6 @@
       </div>
     </footer>
     <script src="js/libs.min.js"></script>
-    <script src="js/script.min.js" type="module"></script>
+    <script src="js/script-sale.min.js" type="module"></script>
   </body>
 </html>
