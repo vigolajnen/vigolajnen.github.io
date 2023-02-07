@@ -145,54 +145,51 @@
         </section>
         <section class="main-sale__timer">
           <section class="timer">
-            <div class="title">До конца акции <span>осталось:</span></div>
+            <div class="title">До конца акции<span>осталось:</span></div>
             <div class="timer__wrapper">
-              <div class="timer__item" style="--clr:red;">
-                <div class="dots day_dot"></div>
-                <svg viewBox="0 0 160 160">
+              <div class="timer__item">
+                <svg viewBox="0 0 160 160" width="160" height="160">
                   <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stop-color="#ffffff"></stop>
-                      <stop offset="100%" stop-color="#3C76BC"></stop>
-                    </linearGradient>
+                    <radialGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%" gradientTransform="rotate(90)">
+                      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+                      <stop offset="100%" stop-color="#3C76BC" stop-opacity="1"></stop>
+                    </radialGradient>
                   </defs>
                   <circle cx="80" cy="80" r="70"></circle>
                   <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient)" id="dd"></circle>
                 </svg>
                 <div class="timer__text">
-                  <div id="days">12</div><span>дней</span>
+                  <div id="days">12</div><span id="label-days">дней</span>
                 </div>
               </div>
-              <div class="timer__item" style="--clr:green;">
-                <div class="dots hours_dot"></div>
-                <svg viewBox="0 0 160 160">
+              <div class="timer__item">
+                <svg viewBox="0 0 160 160" width="160" height="160">
                   <defs>
-                    <linearGradient id="gradient-2" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stop-color="#ffffff"></stop>
-                      <stop offset="100%" stop-color="#3C76BC"></stop>
-                    </linearGradient>
+                    <radialGradient id="gradient-2" x1="0%" y1="0%" x2="0%" y2="100%" gradientTransform="rotate(90)">
+                      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+                      <stop offset="100%" stop-color="#3C76BC" stop-opacity="1"></stop>
+                    </radialGradient>
                   </defs>
                   <circle cx="80" cy="80" r="70"></circle>
                   <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient-2)" id="hh"></circle>
                 </svg>
                 <div class="timer__text">
-                  <div id="hours">5</div><span>часов</span>
+                  <div id="hours">5</div><span id="label-hours">часов</span>
                 </div>
               </div>
-              <div class="timer__item" style="--clr:blue;">
-                <div class="dots min_dot"></div>
-                <svg viewBox="0 0 160 160">
+              <div class="timer__item">
+                <svg viewBox="0 0 160 160" width="160" height="160">
                   <defs>
-                    <linearGradient id="gradient-3" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stop-color="#ffffff"></stop>
-                      <stop offset="100%" stop-color="#3C76BC"></stop>
-                    </linearGradient>
+                    <radialGradient id="gradient-3" x1="0%" y1="0%" x2="0%" y2="100%" gradientTransform="rotate(90)">
+                      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+                      <stop offset="100%" stop-color="#3C76BC" stop-opacity="1"></stop>
+                    </radialGradient>
                   </defs>
                   <circle cx="80" cy="80" r="70"></circle>
                   <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient-3)" id="mm"></circle>
                 </svg>
                 <div class="timer__text">
-                  <div id="minutes">5</div><span>минут</span>
+                  <div id="minutes">5</div><span id="label-minutes">минут</span>
                 </div>
               </div>
             </div>
