@@ -3886,6 +3886,12 @@ button[type=submit] {
     margin-right: var(--mr-sl);
   }
 }
+@media (min-width: 1200px) {
+  .form-offers--sale .form-label {
+    width: calc(20% - var(--mr-sl));
+    margin-right: var(--mr-sl);
+  }
+}
 @media (min-width: 576px) {
   .form-offers--sale .form-offers__btns {
     width: calc(50% - var(--mr-sl));
@@ -3900,6 +3906,15 @@ button[type=submit] {
     align-items: flex-end;
   }
 }
+@media (min-width: 1200px) {
+  .form-offers--sale .form-offers__btns {
+    flex-grow: 1;
+    width: calc(30% - var(--mr-sl));
+  }
+}
+.form-offers--sale .form__check-text {
+  font-size: 13px;
+}
 @media (min-width: 992px) {
   .form-offers--sale .form__check-text {
     font-size: 14px;
@@ -3907,7 +3922,7 @@ button[type=submit] {
 }
 @media (min-width: 1200px) {
   .form-offers--sale .form__check-text {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .form-offers--sale button[type=submit] {
