@@ -105,7 +105,7 @@
                       <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
                         <use xlink:href="img/sprite.svg#sale"></use>
                       </svg></a></li>
-        <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link nav-menu__link" href="clubs.html"><span>Клубы</span>
+        <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link nav-menu__link active" href="clubs.html"><span>Клубы</span>
                       <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
                         <use xlink:href="img/sprite.svg#city"></use>
                       </svg></a></li>
@@ -119,12 +119,32 @@
                       </svg></a></li>
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
-    <main class="main-club main">
-      <div class="container">
-        <h1>Fitness House  на Северном</h1>
+    <main class="page-club main">
+      <div class="page-club__header container">
+        <div class="title">Fitness House  на Северном</div>
+        <div class="page-club__wrapper">
+          <div class="page-club__header-item">
+            <div class="title">Fitness House  на Северном</div>
+            <div class="raiting">stars +</div>
+            <div class="page-club__header-map"><span>Северный пр., 40А, 1 этаж</span><a class="link-text link-text--more" href="#"><span>Смотреть на карте</span>
+                          <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                          </svg></a></div>
+          </div>
+          <div class="page-club__header-item working-hours">
+            <div class="working-hours__item">
+              <div class="subtitle">Режим работы<span></span>клуба</div>
+              <div class="working-hours__club"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
+            </div>
+            <div class="working-hours__item">
+              <div class="subtitle">Режим работы<span></span> коммерческого отдела</div>
+              <div class="working-hours__managers"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="main-club__promo container">
-        <div class="main-club__promo-inner">
+      <div class="page-club__promo container">
+        <div class="page-club__promo-inner">
                     <section class="slider" id="slider-club">
                       <div class="swiper-container">
                         <div class="swiper-wrapper"><a class="swiper-slide" href="#11">
@@ -216,8 +236,8 @@
           </li>
         </ul>
       </div>
-      <div class="main-club__record container">
-        <div class="main-club__record-inner">
+      <div class="page-club__record container">
+        <div class="page-club__record-inner">
                     <section class="slider slider-content" id="slider-content">
                       <div class="swiper-container">
                         <div class="swiper-wrapper"><a class="swiper-slide" href="#11">
@@ -265,7 +285,11 @@
                       <div class="news-wg__item-text">В связи с этим обращаем ваше внимание на режим работы клубов в праздничные дни: 31 декабря – с 08:00 до 18:00 часов, 01 и 02 января – клубы не работают.с 03 по 08 января – по режиму выходного дня - с 08:00 до 22:00 часов.</div>
                     </li>
                   </ul>
-                  <button class="button">Показать еще</button>
+                  <button class="button"><span>Показать еще</span>
+                              <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                              </svg>
+                  </button>
                 </section>
       </div>
       <div class="modal fade modal-tour order-2" id="modalToggle" aria-hidden="true" aria-labelledby="modalToggleLabel" tabindex="-1">
@@ -375,6 +399,6 @@
       </div>
     </footer>
     <script src="js/libs.min.js"></script>
-    <script src="js/script.min.js" type="module"></script>
+    <script src="js/script-clubs.min.js" type="module"></script>
   </body>
 </html>
