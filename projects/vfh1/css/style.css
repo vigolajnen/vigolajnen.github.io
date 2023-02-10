@@ -762,7 +762,7 @@ button[type=submit] {
 
 .section {
   border-radius: 16px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
 }
 .section--bg-pic {
   z-index: 1;
@@ -982,7 +982,7 @@ button[type=submit] {
   color: #ffffff;
   border: 2px solid #cd4141;
   background-color: #cd4141;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
   transition: 0.3s;
   text-decoration: none;
@@ -1063,7 +1063,7 @@ button[type=submit] {
   margin: 0.5rem;
   color: #42474d;
   background-color: #e2f0fb;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
   transition: 0.3s;
   line-height: normal;
@@ -1134,7 +1134,7 @@ button[type=submit] {
   height: 100%;
   color: #42474d;
   background-color: #e2f0fb;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
   transition: 0.3s;
   line-height: normal;
@@ -1305,7 +1305,7 @@ button[type=submit] {
   justify-content: space-between;
   align-items: center;
   border-radius: 16px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   background-color: #e2f0fb;
   width: 100%;
   text-decoration: none;
@@ -1437,7 +1437,7 @@ button[type=submit] {
 .slider {
   min-height: 295px;
   border-radius: 16px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   overflow: hidden;
 }
 .slider .swiper-container {
@@ -1552,6 +1552,7 @@ button[type=submit] {
 @media (min-width: 992px) {
   .modal--bg .modal-content {
     padding: 1rem;
+    min-height: 240px;
     background-image: var(--pic);
     background-repeat: no-repeat;
     background-position: 100% 0;
@@ -1592,7 +1593,6 @@ button[type=submit] {
 @media (min-width: 992px) {
   .modal--bg .modal-body {
     width: 50%;
-    justify-content: start;
     padding: 0 1rem;
   }
 }
@@ -1604,6 +1604,10 @@ button[type=submit] {
   margin: 0;
   margin-bottom: 1rem;
   padding-left: 0.6rem;
+}
+.modal .btn-close:focus {
+  border-radius: 50%;
+  box-shadow: none;
 }
 
 :root {
@@ -2627,7 +2631,7 @@ button[type=submit] {
   flex-wrap: wrap;
   background-color: #e2f0fb;
   border-radius: 22px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   height: 100%;
   list-style: none;
   margin: 0;
@@ -3243,7 +3247,7 @@ button[type=submit] {
   line-height: 140%;
   color: #42474d;
   background-color: #e2f0fb;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
   transition: 0.3s;
   text-decoration: none;
@@ -5143,6 +5147,18 @@ button[type=submit] {
 .form-clubs {
   background-color: #90959A;
   padding: 40px 0;
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  border-radius: 10px;
+}
+@media (min-width: 576px) {
+  .form-clubs {
+    border-radius: 22px;
+  }
+}
+@media (min-width: 769px) {
+  .form-clubs {
+    border-radius: 0;
+  }
 }
 .form-clubs__title {
   margin-bottom: 1.3rem;
@@ -5249,11 +5265,47 @@ button[type=submit] {
 }
 
 .map {
+  position: relative;
   width: 100%;
   min-height: 800px;
   background-color: #e2f0fb;
   background-image: url("../img/clubs/map.jpg");
   background-size: cover;
+}
+.map .container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 800px;
+}
+.map__ya {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.map [class$=-custom-scroll] {
+  box-shadow: -1px 4px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 22px;
+  border: none;
+  overflow: hidden;
+}
+.map [class$=-balloon__content] {
+  padding: 0;
+  margin: 0;
+}
+.map [class$=-balloon__content] ymaps {
+  min-height: 470px;
+}
+.map [class$=-balloon__close] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.map [class$=-balloon__close] + [class$=-balloon__content] {
+  margin: 0;
 }
 
 .subscription {
@@ -5525,7 +5577,7 @@ button[type=submit] {
   flex-direction: column;
   background-color: #e2f0fb;
   margin-bottom: 2rem;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -5750,9 +5802,14 @@ button[type=submit] {
   display: flex;
   flex-wrap: wrap;
   background-color: #e2f0fb;
-  padding: 30px;
+  padding: 30px 15px;
   margin: 1rem 0;
   border-radius: 16px;
+}
+@media (min-width: 576px) {
+  .club-services {
+    padding: 30px;
+  }
 }
 .club-services__item {
   flex-grow: 1;
@@ -5968,7 +6025,7 @@ button[type=submit] {
   font-size: 20px;
   line-height: 130%;
   background-color: #e2f0fb;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
 }
 .news-wg__item-text {
@@ -6110,4 +6167,76 @@ button[type=submit] {
 }
 .working-hours__managers::before {
   background-image: url("../img/icons/man.svg");
+}
+
+.club-preview {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #ffffff;
+  box-shadow: -1px 4px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 22px;
+  max-width: 645px;
+  width: 100%;
+  padding: 15px 0;
+}
+@media (min-width: 768px) {
+  .club-preview {
+    right: 20px;
+  }
+}
+.club-preview__header {
+  padding: 25px 40px;
+}
+.club-preview__footer {
+  padding: 10px 40px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.club-preview__text {
+  padding: 25px 20px 15px 40px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
+.club-balloon {
+  width: 100%;
+}
+.club-balloon__header {
+  padding: 25px 40px;
+}
+.club-balloon__footer {
+  padding: 10px 40px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.club-balloon__text {
+  padding: 25px 20px 15px 40px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
+.modal-map .modal-content {
+  border-radius: 22px;
+}
+.modal-map .modal-body {
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.modal-map .btn-close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .modal-map .btn-close {
+    top: 0;
+    right: -30px;
+  }
 }

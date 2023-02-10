@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Fitness House  на Северном</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Start">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=5bc879da-d208-4e6a-bfb8-ab4b7a20802a&amp;lang=ru_RU" type="text/javascript"></script>
   <body class="page-body">
     <header class="page-header">
       <div class="container"><a class="phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
               <svg class="icon" width="13" height="22" viewBox="0 0 13 22">
                 <use xlink:href="img/sprite.svg#phone"></use>
-              </svg><span>(812) 610 06 06</span></a><a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
+              </svg><span>(812) 610 06 06</span></a><a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
               <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
                 <use xlink:href="img/sprite.svg#user-lk"></use>
               </svg><span>Личный кабинет</span></a>
@@ -39,7 +40,7 @@
                 </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
           <ul class="list list--bold">
             <li><a href="sale.html">Акции</a></li>
-            <li><a href="#">Клубы</a></li>
+            <li><a href="clubs">Клубы</a></li>
             <li><a href="#">Тренеры</a></li>
             <li><a href="#">Расписание</a></li>
           </ul>
@@ -126,7 +127,7 @@
           <div class="page-club__header-item">
             <div class="title">Fitness House  на Северном</div>
             <div class="raiting">stars +</div>
-            <div class="page-club__header-map"><span>Северный пр., 40А, 1 этаж</span><a class="link-text link-text--more" href="#"><span>Смотреть на карте</span>
+            <div class="page-club__header-map"><span>Северный пр., 40А, 1 этаж</span><a class="link-text link-text--more" href="#modal-map" data-bs-toggle="modal" data-bs-dismiss="modal"><span>Смотреть на карте</span>
                           <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
                             <use xlink:href="img/sprite.svg#arrow"></use>
                           </svg></a></div>
@@ -170,7 +171,7 @@
             <div class="title">Успей забронировать выгодно сейчас</div>
             <div class="form-book__wrapper">
               <label class="form-label" for="formService"><span class="form__label-name">Выберете услугу</span>
-                <select class="form-select form-control form-select" id="formService" name="formClub" aria-label="клуб" required>
+                <select class="form-select form-control form-select" id="formService" name="formClub" aria-label="Выберете услугу" required>
                   <option selected disabled value="">Абонемент</option>
                   <option value="Абонемент">Абонемент</option>
                   <option value="Абонемент">Абонемент</option>
@@ -331,6 +332,35 @@
           </div>
         </div>
       </div>
+            <div class="modal fade modal-map" aria-hidden="true" tabindex="-1" id="modal-map">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+                  <div class="modal-body">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/fitness_house/170179942434/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Fitness House</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/swimming_pool/184107275/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Бассейн в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/sports_club_group/184107297/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивный клуб, секция в Санкт‑Петербурге</a>
+                      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.386754%2C60.028730&amp;mode=search&amp;oid=170179942434&amp;ol=biz&amp;z=14.57" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;width:100%;height:100%;min-height:500px;"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade modal--bg modal-submit-form" aria-hidden="true" tabindex="-1" id="modal-submit-form">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
+                  <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+                  <div class="modal-body">
+                    <div class="form-message-modal">
+                      <div class="form-message-modal__wrapper">
+                                  <svg class="icon" width="36" height="36" viewBox="0 0 36 36">
+                                    <use xlink:href="img/sprite.svg#ok"></use>
+                                  </svg>
+                        <div class="form-message-modal__title">Заявка отправлена в клуб!<span>Ваш менеджер перезвонит в ближайшее время</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
     </main>
     <footer class="page-footer">
       <div class="container">
