@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=5bc879da-d208-4e6a-bfb8-ab4b7a20802a&amp;lang=ru_RU" type="text/javascript"></script>
+  <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
   <body class="page-body">
     <header class="page-header">
       <div class="container"><a class="phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
@@ -148,71 +149,48 @@
       </div>
     </section>
     <div class="form-and-map">
-      <form class="form form-clubs">
-        <div class="container">
-          <div class="form-clubs__title">Найди свой фитнес Хаус</div>
-          <div class="form-clubs__wrapper">
-            <label class="form-label"><span class="form__label-name">Твой Фитнес Хаус</span>
-              <select class="form-select form-control" aria-label="с бассейном или без бассейна" required>
-                <option selected disabled value="">С бассейном</option>
-                <option value="На Гашека">Без бассейна</option>
-              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-            </label>
-            <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-              <select class="form-select form-control" aria-label="выберете клуб" required>
-                <option selected disabled value="">На Северном</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Северном">На Северном</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Северном">На Северном</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Гашека">На Гашека</option>
-              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-            </label>
-            <label class="form-label"><span class="form__label-name">Выберете станцию метро</span>
-              <select class="form-select form-control" aria-label="выберете станцию метро" required>
-                <option selected disabled value="">Академическая</option>
-                <option value="Парнас">Парнас</option>
-                <option value="Девяткино">Девяткино</option>
-                <option value="Выборгская">Выборгская</option>
-                <option value="Чкаловская">Чкаловская</option>
-                <option value="Крестовский">Крестовский</option>
-                <option value="Купчино">Купчино</option>
-              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-            </label>
-            <div class="form-clubs__btns">
-              <button class="button button--yellow" type="submit">Подобрать</button>
-              <button class="button button--outline" type="reset">Сбросить</button>
-            </div>
+      <form class="form form-clubs container">
+        <div class="form-clubs__title">Найди свой фитнес Хаус</div>
+        <div class="form-clubs__wrapper">
+          <label class="form-label"><span class="form__label-name">Твой Фитнес Хаус</span>
+            <select class="form-select form-control" aria-label="с бассейном или без бассейна" required>
+              <option selected disabled value="">С бассейном</option>
+              <option value="На Гашека">Без бассейна</option>
+            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+          </label>
+          <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+            <select class="form-select form-control" aria-label="выберете клуб" required>
+              <option selected disabled value="">На Северном</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Северном">На Северном</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Северном">На Северном</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Гашека">На Гашека</option>
+            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+          </label>
+          <label class="form-label"><span class="form__label-name">Выберете станцию метро</span>
+            <select class="form-select form-control" aria-label="выберете станцию метро" required>
+              <option selected disabled value="">Академическая</option>
+              <option value="Парнас">Парнас</option>
+              <option value="Девяткино">Девяткино</option>
+              <option value="Выборгская">Выборгская</option>
+              <option value="Чкаловская">Чкаловская</option>
+              <option value="Крестовский">Крестовский</option>
+              <option value="Купчино">Купчино</option>
+            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+          </label>
+          <div class="form-clubs__btns">
+            <button class="button button--yellow" type="submit">Подобрать</button>
+            <button class="button button--outline" type="reset">Сбросить</button>
           </div>
         </div>
       </form>
       <div class="map container">
         <div class="map__ya" id="map"></div>
-        <section class="club-preview">
-          <div class="club-preview__header">
-            <div class="club-preview__contacts">
-              <div class="title">Fitness House на Северном</div>
-              <div class="raiting">stars +</div>
-              <div class="club-preview__address">Северный пр., 40А, 1 этаж</div>
-            </div>
-            <div class="club-preview__working"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
-          </div>
-          <div class="club-preview__body">
-            <div class="club-preview__pic"><img src="img/club/preview/1.jpg" width="666" height="228px" alt="фитнес-клуб с большим бассейном"></div>
-            <div class="club-preview__text">Светлый и просторный фитнес-клуб с большим бассейном для взрослых и детским бассейном. В клубе предусмотрены комфортные условия для семейного отдыха.</div>
-          </div>
-          <div class="club-preview__footer"><a class="link-text link-text--more" href="#" data-bs-toggle="modal" data-toggle="modal"><span>Подобрать абонемент</span>
-                        <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                          <use xlink:href="img/sprite.svg#arrow"></use>
-                        </svg></a><a class="link-text link-text--more" href="club.html"><span>О клубе</span>
-                        <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                          <use xlink:href="img/sprite.svg#arrow"></use>
-                        </svg></a></div>
-        </section>
       </div>
     </div>
     <div class="container">
