@@ -258,49 +258,53 @@
                         </svg>
             </div></a>
         </section>
-        <div class="modal fade modal-tour order-2" id="modalToggle" aria-hidden="true" aria-labelledby="modalToggleLabel" tabindex="-1">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalToggleLabel">Записаться на экскурсию</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-dismiss="modal">
-                            <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
-                              <use xlink:href="img/sprite.svg#btn-close"></use>
-                            </svg>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form class="form needs-validation" novalidate>
-                  <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
-                    <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                  </label>
-                  <label class="form-label" for="formSingUpEmail"><span class="form__label-name">Введите @email</span>
-                    <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                  </label>
-                  <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
-                    <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                  </label>
-                  <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-                    <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
-                      <option selected disabled value="">На Гашека</option>
-                      <option value="На Гашека">На Гашека</option>
-                      <option value="На Гашека">На Гашека</option>
-                      <option value="На Гашека">На Гашека</option>
-                    </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                  </label>
-                  <button class="botton button--red mt-2" type="submit">Записаться</button>
-                  <label class="form__check form-check-label" for="formSingUpCheck">
-                    <input class="form-check-input" type="checkbox" id="formSingUpCheck" checked required><span class="form__check-text"><span>Оставляя свой email, я принимаю</span><a href="#">Политику конфиденциальности</a></span>
-                  </label>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="--pic:url('../img/modal/modal-bg-gym.jpg')">
+                      <div class="modal-header">
+                        <h5 class="title modal-title">Записаться на экскурсию</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                    <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                      <use xlink:href="img/sprite.svg#btn-close"></use>
+                                    </svg>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="form needs-validation" novalidate>
+                          <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
+                            <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label" for="formSingUpEmail"><span class="form__label-name">Введите @email</span>
+                            <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
+                            <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+                            <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
+                              <option selected disabled value="">На Гашека</option>
+                              <option value="На Гашека">На Гашека</option>
+                              <option value="На Гашека">На Гашека</option>
+                              <option value="На Гашека">На Гашека</option>
+                            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <button class="botton button--red mt-2" type="submit">Записаться</button>
+                          <label class="form__check form-check-label" for="formSingUpCheck">
+                            <input class="form-check-input" type="checkbox" id="formSingUpCheck" checked required><span class="form__check-text"><span>Оставляя свой email, я принимаю</span><a href="#">Политику конфиденциальности</a></span>
+                          </label>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="modal fade modal--bg modal-submit-form" aria-hidden="true" tabindex="-1" id="modal-submit-form">
                   <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
-                      <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                  <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                    <use xlink:href="img/sprite.svg#btn-close"></use>
+                                  </svg>
+                      </button>
                       <div class="modal-body">
                         <div class="form-message-modal">
                           <div class="form-message-modal__wrapper">

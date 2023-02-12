@@ -296,49 +296,49 @@
                   </button>
                 </section>
       </div>
-      <div class="modal fade modal-tour order-2" id="modalToggle" aria-hidden="true" aria-labelledby="modalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalToggleLabel">Записаться на экскурсию</h5>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-dismiss="modal">
-                          <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
-                            <use xlink:href="img/sprite.svg#btn-close"></use>
-                          </svg>
-              </button>
+            <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="--pic:url('../img/modal/modal-bg-gym.jpg')">
+                  <div class="modal-header">
+                    <h5 class="title modal-title">Записаться на экскурсию</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                  <use xlink:href="img/sprite.svg#btn-close"></use>
+                                </svg>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form needs-validation" novalidate>
+                      <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
+                        <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <label class="form-label" for="formSingUpEmail"><span class="form__label-name">Введите @email</span>
+                        <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
+                        <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+                        <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
+                          <option selected disabled value="">На Гашека</option>
+                          <option value="На Гашека">На Гашека</option>
+                          <option value="На Гашека">На Гашека</option>
+                          <option value="На Гашека">На Гашека</option>
+                        </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <button class="botton button--red mt-2" type="submit">Записаться</button>
+                      <label class="form__check form-check-label" for="formSingUpCheck">
+                        <input class="form-check-input" type="checkbox" id="formSingUpCheck" checked required><span class="form__check-text"><span>Оставляя свой email, я принимаю</span><a href="#">Политику конфиденциальности</a></span>
+                      </label>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
-              <form class="form needs-validation" novalidate>
-                <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
-                  <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                </label>
-                <label class="form-label" for="formSingUpEmail"><span class="form__label-name">Введите @email</span>
-                  <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                </label>
-                <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
-                  <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                </label>
-                <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-                  <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
-                    <option selected disabled value="">На Гашека</option>
-                    <option value="На Гашека">На Гашека</option>
-                    <option value="На Гашека">На Гашека</option>
-                    <option value="На Гашека">На Гашека</option>
-                  </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                </label>
-                <button class="botton button--red mt-2" type="submit">Записаться</button>
-                <label class="form__check form-check-label" for="formSingUpCheck">
-                  <input class="form-check-input" type="checkbox" id="formSingUpCheck" checked required><span class="form__check-text"><span>Оставляя свой email, я принимаю</span><a href="#">Политику конфиденциальности</a></span>
-                </label>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
             <div class="modal fade modal-map" aria-hidden="true" tabindex="-1" id="modal-map">
               <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
-                  <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
                   <div class="modal-body">
                     <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/fitness_house/170179942434/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Fitness House</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/swimming_pool/184107275/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Бассейн в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/sports_club_group/184107297/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивный клуб, секция в Санкт‑Петербурге</a>
                       <iframe src="https://yandex.ru/map-widget/v1/?ll=30.386754%2C60.028730&amp;mode=search&amp;oid=170179942434&amp;ol=biz&amp;z=14.57" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;width:100%;height:100%;min-height:500px;"></iframe>
@@ -350,7 +350,11 @@
             <div class="modal fade modal--bg modal-submit-form" aria-hidden="true" tabindex="-1" id="modal-submit-form">
               <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
-                  <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно"></button>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                              <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                <use xlink:href="img/sprite.svg#btn-close"></use>
+                              </svg>
+                  </button>
                   <div class="modal-body">
                     <div class="form-message-modal">
                       <div class="form-message-modal__wrapper">
