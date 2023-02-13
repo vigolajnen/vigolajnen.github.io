@@ -4806,7 +4806,7 @@ button[type=submit] {
   height: 26px;
   margin-right: 10px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .list-services__list-item .icon, .list-services__sublist-item .icon {
     height: 18px;
   }
