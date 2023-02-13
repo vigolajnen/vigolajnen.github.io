@@ -771,7 +771,7 @@ button[type=submit] {
   flex-direction: column;
   justify-content: flex-end;
   max-width: 550px;
-  min-height: 214px;
+  min-height: 254px;
   padding: 1rem;
   padding-top: 5rem;
   background-color: #42474d;
@@ -811,7 +811,7 @@ button[type=submit] {
 .section--bg-pic .section__pic-bg picture, .section--bg-pic .section__pic-bg img {
   display: block;
   width: 100%;
-  height: auto;
+  min-height: 254px;
 }
 @media (min-width: 992px) {
   .section--bg-pic .section__pic-bg picture, .section--bg-pic .section__pic-bg img {
@@ -1561,6 +1561,41 @@ button[type=submit] {
   font-weight: 700;
 }
 
+.modal .btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 11;
+  color: #fffeda;
+  opacity: 1;
+  background: none;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.modal .btn-close:focus, .modal .btn-close:hover {
+  outline: none;
+  box-shadow: none;
+}
+@media (min-width: 768px) {
+  .modal .btn-close {
+    color: #fffeda;
+  }
+}
+.modal .btn-close .icon {
+  width: 26px;
+  height: 26px;
+  fill: #fffeda;
+  stroke: #42474d;
+}
+@media (min-width: 768px) {
+  .modal .btn-close .icon {
+    fill: #fffeda;
+    stroke: #42474d;
+  }
+}
 .modal--bg .modal-content {
   position: relative;
   background-color: #fffeda;
@@ -1762,10 +1797,6 @@ button[type=submit] {
   margin: 0;
   margin-bottom: 1rem;
   padding-left: 0.6rem;
-}
-.modal .btn-close:focus {
-  border-radius: 50%;
-  box-shadow: none;
 }
 
 :root {
@@ -3986,11 +4017,11 @@ button[type=submit] {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: rgba(73, 76, 79, 0.5);
-  font-size: 27px;
+  font-size: 32px;
 }
 @media (min-width: 375px) {
   .content h1 {
-    font-size: calc(3.6464088398vw + 13.3259668508px);
+    font-size: calc(3.0939226519vw + 20.3977900552px);
   }
 }
 @media (min-width: 1280px) {
@@ -4215,7 +4246,7 @@ button[type=submit] {
 }
 @media (min-width: 992px) {
   .form-offers--sale .form-label {
-    width: calc(25% - var(--mr-sl));
+    width: calc(20% - var(--mr-sl));
     margin-right: var(--mr-sl);
   }
 }
@@ -4224,6 +4255,9 @@ button[type=submit] {
     width: calc(20% - var(--mr-sl));
     margin-right: var(--mr-sl);
   }
+}
+.form-offers--sale .form-offers__btns {
+  flex-grow: 1;
 }
 @media (min-width: 576px) {
   .form-offers--sale .form-offers__btns {
@@ -4234,14 +4268,13 @@ button[type=submit] {
 }
 @media (min-width: 992px) {
   .form-offers--sale .form-offers__btns {
-    width: calc(25% - var(--mr-sl));
+    width: calc(27% - var(--mr-sl));
     margin-right: 0;
     align-items: flex-end;
   }
 }
 @media (min-width: 1200px) {
   .form-offers--sale .form-offers__btns {
-    flex-grow: 1;
     width: calc(30% - var(--mr-sl));
   }
 }
@@ -5065,6 +5098,12 @@ button[type=submit] {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .history__header {
+    width: 100%;
+  }
 }
 .history .title {
   padding-top: 20px;
@@ -5239,26 +5278,11 @@ button[type=submit] {
   }
 }
 .modal-history .modal-content .btn-close {
-  z-index: 2;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
   color: #42474d;
-  opacity: 1;
-  outline: none;
 }
-.modal-history .modal-content .btn-close:focus, .modal-history .modal-content .btn-close:hover {
-  outline: none;
-}
-@media (min-width: 768px) {
-  .modal-history .modal-content .btn-close {
-    top: 30px;
-    right: 32px;
-  }
+.modal-history .modal-content .btn-close .icon {
+  fill: #42474d;
+  stroke: #ffffff;
 }
 
 .modal-kids .modal-body {
@@ -6589,13 +6613,6 @@ button[type=submit] {
   overflow: hidden;
 }
 .modal-map .btn-close {
-  position: absolute;
-  top: -30px;
+  top: 0;
   right: 0;
-}
-@media (min-width: 768px) {
-  .modal-map .btn-close {
-    top: 0;
-    right: -30px;
-  }
 }
