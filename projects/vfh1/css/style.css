@@ -4803,7 +4803,7 @@ button[type=submit] {
 }
 .list-services__list-item .icon, .list-services__sublist-item .icon {
   width: 30px;
-  height: 26px;
+  height: 18px;
   margin-right: 10px;
 }
 @media (min-width: 768px) {
