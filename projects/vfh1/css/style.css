@@ -1621,6 +1621,7 @@ button[type=submit] {
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: cover;
+    background-color: #42474d;
   }
 }
 .modal--bg .modal-header {
