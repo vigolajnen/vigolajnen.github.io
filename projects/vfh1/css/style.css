@@ -3336,7 +3336,22 @@ button[type=submit] {
 }
 @media (min-width: 425px) {
   .advantages h1 {
-    font-size: calc(0.4678362573vw + 34.0116959064px);
+    font-size: calc(1.0016694491vw + 31.7429048414px);
+  }
+}
+@media (min-width: 1024px) {
+  .advantages h1 {
+    font-size: calc(10.2857142857vw - 63.3257142857px);
+  }
+}
+@media (min-width: 1199px) {
+  .advantages h1 {
+    font-size: calc(-2000vw + 24040px);
+  }
+}
+@media (min-width: 1200px) {
+  .advantages h1 {
+    font-size: calc(0vw + 40px);
   }
 }
 @media (min-width: 1280px) {
