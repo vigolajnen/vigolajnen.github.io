@@ -327,9 +327,10 @@
                         </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                       </label>
                       <button class="botton button--red mt-2" type="submit">Записаться</button>
-                      <label class="form__check form-check-label" for="formSingUpCheck">
-                        <input class="form-check-input" type="checkbox" id="formSingUpCheck" checked required><span class="form__check-text"><span>Оставляя свой email, я принимаю</span><a href="#">Политику конфиденциальности</a></span>
-                      </label>
+                      <div class="custom-form-check">
+                        <input class="visually-hidden" type="checkbox" id="custom-form-check" required>
+                        <label for="custom-form-check"><span>Оставляя свой email, я принимаю</span><br><a href="#">Политику конфиденциальности</a></label>
+                      </div>
                     </form>
                   </div>
                 </div>

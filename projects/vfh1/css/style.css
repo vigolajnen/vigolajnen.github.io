@@ -2024,6 +2024,85 @@ button[type=submit] {
   margin: 0;
 }
 
+.custom-form-check {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: #8f8f8f;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .custom-form-check {
+    font-size: 14px;
+  }
+}
+.custom-form-check input:checked + label::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background-image: url(../img/icons/check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #8f8f8f;
+}
+.custom-form-check label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.custom-form-check label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #42474d;
+  background-color: #ffffff;
+}
+.custom-form-check label:hover::before {
+  cursor: pointer;
+  border-color: #42474d;
+}
+.custom-form-check label:focus::before {
+  cursor: pointer;
+  border-color: #42474d;
+}
+.custom-form-check a {
+  color: inherit;
+  text-decoration: revert;
+}
+.custom-form-check a:focus, .custom-form-check a:hover {
+  color: #42474d;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
 .phone {
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
 }
