@@ -2015,6 +2015,9 @@ button[type=submit] {
   right: 0;
   text-align: right;
 }
+.form .form-check-input {
+  margin: 0;
+}
 .form .form-check-input:checked {
   background-color: #888888;
   border-color: #888888;
@@ -2062,6 +2065,51 @@ button[type=submit] {
   overflow: hidden;
 }
 
+.page-title-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  color: rgba(73, 76, 79, 0.5);
+}
+@media (min-width: 768px) {
+  .page-title-icon {
+    justify-content: flex-start;
+    width: auto;
+  }
+}
+.page-title-icon h1 {
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: inherit;
+  font-size: 17px;
+}
+@media (min-width: 375px) {
+  .page-title-icon h1 {
+    font-size: calc(2.2900763359vw + 8.4122137405px);
+  }
+}
+@media (min-width: 768px) {
+  .page-title-icon h1 {
+    font-size: calc(6.640625vw - 25px);
+  }
+}
+@media (min-width: 1280px) {
+  .page-title-icon h1 {
+    font-size: 60px;
+  }
+}
+.page-title-icon .icon {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  width: 30px;
+  height: 100%;
+  fill: rgba(73, 76, 79, 0.5);
+}
 .page-body {
   display: flex;
   flex-direction: column;
@@ -2867,16 +2915,6 @@ button[type=submit] {
   .sale {
     min-height: 630px;
   }
-}
-.sale::before {
-  position: absolute;
-  z-index: 2;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(177.83deg, rgba(0, 0, 0, 0) 10.17%, rgba(0, 0, 0, 0.8) 136.24%);
 }
 .sale img {
   width: 100%;
@@ -5434,6 +5472,9 @@ button[type=submit] {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.hero__clubs-info {
+  display: flex;
+}
 .hero__clubs-info, .hero__pic {
   width: 100%;
   margin-bottom: 35px;
@@ -5456,20 +5497,21 @@ button[type=submit] {
 .hero__pic img {
   width: 324px;
   width: 100%;
-  height: 217px;
+  min-height: 217px;
   max-width: 100%;
+  height: 100%;
   border-radius: 16px;
 }
 @media (min-width: 768px) {
   .hero__pic img {
-    width: 730px;
-    height: 269px;
+    width: 100%;
+    min-height: 269px;
   }
 }
 @media (min-width: 992px) {
   .hero__pic img {
-    width: 510px;
-    height: 305px;
+    width: 100%;
+    min-height: 305px;
     margin-left: auto;
   }
 }
@@ -5519,13 +5561,11 @@ button[type=submit] {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-@media (min-width: 576px) {
-  .clubs-info {
-    margin-right: 90px;
-  }
-}
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .clubs-info {
     margin-right: 50px;
   }
@@ -5557,6 +5597,9 @@ button[type=submit] {
   margin: 0;
   color: #42474d;
   padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .clubs-info__item {
@@ -5575,21 +5618,6 @@ button[type=submit] {
     padding-bottom: 24px;
   }
 }
-.clubs-info__item::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 0;
-  width: 17px;
-  height: 30px;
-  background-image: url("../img/icons/fh.svg");
-}
-@media (min-width: 768px) {
-  .clubs-info__item::before {
-    top: 24px;
-    left: 20px;
-  }
-}
 .clubs-info__item:not(:last-child) {
   border-bottom: 1px solid;
 }
@@ -5603,6 +5631,7 @@ button[type=submit] {
   }
 }
 .clubs-info__club {
+  position: relative;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
   line-height: 130%;
@@ -5618,6 +5647,21 @@ button[type=submit] {
 @media (min-width: 768px) {
   .clubs-info__club {
     font-size: 20px;
+  }
+}
+.clubs-info__club::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 17px;
+  height: 30px;
+  background-image: url("../img/icons/fh.svg");
+}
+@media (min-width: 768px) {
+  .clubs-info__club::before {
+    top: 0;
+    left: -25px;
   }
 }
 .clubs-info__text {
@@ -5805,10 +5849,14 @@ button[type=submit] {
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
 }
-.map .container {
+.map.container {
   position: relative;
   height: 100%;
   min-height: 800px;
+}
+.map--region.container {
+  min-height: 600px;
+  margin-bottom: 2rem;
 }
 .map__ya {
   z-index: 2;
@@ -5897,67 +5945,60 @@ button[type=submit] {
   flex-direction: column;
   margin: 1rem 0 3rem;
   padding: 30px 15px;
+  width: 100%;
   background-color: #e2f0fb;
 }
 @media (min-width: 576px) {
   .subscription {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
     padding: 30px;
   }
 }
+@media (min-width: 900px) {
+  .subscription {
+    padding-top: 60px;
+  }
+}
 @media (min-width: 1200px) {
   .subscription {
-    padding: 40px 80px;
+    padding: 60px 80px 30px;
     margin: 20px auto 3rem;
     max-width: 1150px;
   }
 }
 .subscription__title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 120%;
 }
+@media (min-width: 969px) {
+  .subscription__title {
+    max-width: 300px;
+    width: 100%;
+    padding-top: 1.3rem;
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 992px) {
   .subscription__title {
     max-width: 365px;
+  }
+}
+.subscription__form {
+  width: 100%;
+}
+@media (min-width: 601px) {
+  .subscription__form {
+    width: calc(100% - 365px);
+  }
+}
+@media (max-width: 600px) {
+  .subscription__form {
     width: 100%;
-    padding-top: 2rem;
-    margin-right: 45px;
-  }
-}
-@media (min-width: 992px) {
-  .subscription__title {
-    width: calc(35% - 60px);
-  }
-}
-@media (min-width: 1200px) {
-  .subscription__title {
-    width: calc(35% - 45px);
-  }
-}
-@media (min-width: 1400px) {
-  .subscription__title {
-    width: calc(40% - 45px);
-  }
-}
-@media (min-width: 992px) {
-  .subscription .form-subscription {
-    width: calc(50% - 1rem);
-  }
-}
-@media (min-width: 992px) {
-  .subscription .form-subscription {
-    width: calc(65% - 1rem);
-  }
-}
-@media (min-width: 1400px) {
-  .subscription .form-subscription {
-    width: 60%;
   }
 }
 
@@ -5967,45 +6008,40 @@ button[type=submit] {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   flex-grow: 1;
-}
-@media (min-width: 576px) {
-  .form-subscription {
-    align-items: flex-end;
-  }
-}
-@media (min-width: 992px) {
-  .form-subscription {
-    align-items: center;
-  }
 }
 .form-subscription .form-label {
   width: 100%;
+  padding-bottom: 1.5rem;
+  flex-grow: 1;
 }
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .form-subscription .form-label {
     width: calc(50% - 2rem);
+    margin-right: 0.5rem;
+    padding-bottom: 3.6rem;
+    flex-grow: 0;
+  }
+}
+@media (min-width: 601px) {
+  .form-subscription .form-label {
     margin-right: 2rem;
-  }
-}
-@media (min-width: 700px) {
-  .form-subscription .form-label {
-    width: calc(50% - 30px);
-    margin-right: 3rem;
-  }
-}
-@media (min-width: 768px) {
-  .form-subscription .form-label {
-    width: calc(50% - 35px);
-    margin-right: 70px;
   }
 }
 @media (min-width: 992px) {
   .form-subscription .form-label {
-    width: calc(50% - 30px);
-    margin-right: 30px;
-    padding-bottom: 4rem;
+    flex-grow: 1;
+    width: calc(50% - 80px);
+  }
+}
+@media (min-width: 1200px) {
+  .form-subscription .form-label {
+    width: calc(50% - 80px);
+  }
+}
+@media (min-width: 1300px) {
+  .form-subscription .form-label {
+    width: calc(50% - 50px);
   }
 }
 .form-subscription .form-control {
@@ -6013,30 +6049,27 @@ button[type=submit] {
 }
 .form-subscription__btns {
   width: 100%;
-  flex-grow: 1;
 }
-@media (min-width: 576px) {
+@media (min-width: 601px) {
   .form-subscription__btns {
     width: 50%;
   }
 }
-@media (min-width: 700px) {
-  .form-subscription__btns {
-    width: calc(50% - 30px);
-  }
-}
 @media (min-width: 768px) {
   .form-subscription__btns {
-    width: calc(50% - 35px);
+    width: auto;
   }
 }
 .form-subscription .button {
   width: 100%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  border-width: 1px;
 }
 @media (min-width: 576px) {
   .form-subscription .button {
     width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -6060,6 +6093,8 @@ button[type=submit] {
 @media (min-width: 768px) {
   .clubs-result {
     max-width: 650px;
+    height: 831px;
+    max-height: 831px;
   }
 }
 .clubs-result__item {
@@ -6109,6 +6144,44 @@ button[type=submit] {
   margin: 2px;
   fill: #42474d;
   stroke: #fffeda;
+}
+
+.gallery-clubs-preview {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 15px 0;
+  margin-bottom: 2rem;
+}
+.gallery-clubs-preview .swiper-wrapper {
+  padding-right: 15px;
+}
+@media (min-width: 1024px) {
+  .gallery-clubs-preview .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-clubs-preview .swiper-slide {
+    width: 23%;
+  }
+}
+.gallery-clubs-preview .swiper-slide:before {
+  background: none;
+}
+.gallery-clubs-preview .club-preview {
+  border-radius: 16px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .gallery-clubs-preview .club-preview {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .page-club {
@@ -6971,6 +7044,7 @@ button[type=submit] {
   padding: 0;
   max-width: 670px;
   width: 100%;
+  border-radius: 22px;
   overflow: hidden;
 }
 @media (min-width: 576px) {
@@ -6988,7 +7062,7 @@ button[type=submit] {
 }
 @media (min-width: 576px) {
   .club-preview--result .club-preview__header {
-    padding: 25px 15px 25px 35px;
+    padding: 10px 15px 10px 25px;
   }
 }
 .club-preview--result .club-preview__info {
@@ -7090,7 +7164,7 @@ button[type=submit] {
 @media (min-width: 576px) {
   .club-preview--result .club-preview__pic {
     display: block;
-    height: 133px;
+    height: 120px;
   }
 }
 .club-preview--result .club-preview__pic img {
@@ -7121,6 +7195,36 @@ button[type=submit] {
 }
 .club-preview--result .club-preview__working .working-hours__club span:not(:last-child) {
   margin-right: 0.25rem;
+}
+.club-preview--slide .club-preview__header {
+  padding: 15px;
+}
+.club-preview--slide .club-preview__contacts {
+  width: 100%;
+  max-width: 100%;
+}
+.club-preview--slide .club-preview__address {
+  width: 100%;
+  max-width: 100%;
+}
+.club-preview--slide .club-preview__working {
+  padding-top: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+.club-preview--slide .club-preview__pic {
+  min-height: 175px;
+}
+.club-preview--slide .club-preview__pic img {
+  height: 100%;
+  min-height: 175px;
+}
+.club-preview--slide .club-preview__footer {
+  padding: 15px;
+}
+.club-preview--slide .club-preview__footer .link-text:first-child {
+  max-width: 100%;
+  order: 1;
 }
 
 .club-balloon {
