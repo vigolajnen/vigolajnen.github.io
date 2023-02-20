@@ -2023,6 +2023,24 @@ button[type=submit] {
   border-color: #888888;
   margin: 0;
 }
+.form .form-select {
+  margin-bottom: 0;
+  min-height: 46px;
+  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(66, 71, 77, 0.5);
+}
+.form .form-select option {
+  padding: 10px;
+  color: #42474d;
+  min-height: 50px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.form .form-select:focus, .form .form-select:active {
+  color: #42474d;
+}
 
 .custom-form-check {
   display: flex;
@@ -2069,7 +2087,7 @@ button[type=submit] {
   left: 0;
   width: 20px;
   height: 20px;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px solid #42474d;
   background-color: #ffffff;
 }
@@ -2087,6 +2105,13 @@ button[type=submit] {
 }
 .custom-form-check a:focus, .custom-form-check a:hover {
   color: #42474d;
+}
+
+.was-validated:invalid .custom-form-check label::before {
+  outline: 2px solid red;
+}
+.was-validated:valid .custom-form-check label::before {
+  outline: 2px solid green;
 }
 
 .visually-hidden {
@@ -4411,14 +4436,6 @@ button[type=submit] {
 }
 .form-offers .form-control {
   align-items: flex-start;
-}
-.form-offers .form-select {
-  margin-bottom: 0;
-  min-height: 46px;
-  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(66, 71, 77, 0.5);
 }
 .form-offers .form-check-input:checked {
   background-color: #888888;
