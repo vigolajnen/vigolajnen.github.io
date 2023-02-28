@@ -374,15 +374,16 @@
     <div class="container">
       <section class="subscription section">
         <div class="subscription__title">Подпишись на рассылку Fitness House и будь в курсе выгодных предложений</div>
-        <form class="form form-subscription subscription__form">
+        <form class="form form-subscription subscription__form needs-validation">
           <label class="form-label" for="formEmail"><span>Ваш e-mail</span>
             <input class="form-control" type="email" id="formEmail" placeholder="address@mail.ru" autocomplete="off" required>
           </label>
           <div class="form-subscription__btns">
             <button class="button button--yellow" type="submit">Подписаться</button>
-            <label class="form__check form-check-label">
-              <input class="form-check-input" type="checkbox" required><span class="form__check-text">Даю согласие на обработку данных</span>
-            </label>
+            <div class="custom-form-check">
+              <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+              <label for="custom-form-check-1"><span>Даю согласие на обработку данных</span></label>
+            </div>
           </div>
         </form>
       </section>

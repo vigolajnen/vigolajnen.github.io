@@ -1984,8 +1984,7 @@ button[type=submit] {
   }
 }
 .form .form-select:focus, .form .form-select:hover, .form .form-control:focus, .form .form-control:hover {
-  border-color: #42474d;
-  box-shadow: none;
+  box-shadow: 0 0 0 0.15rem rgba(164, 176, 186, 0.22);
 }
 .form .form-select::placeholder, .form .form-control::placeholder {
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
@@ -2025,7 +2024,6 @@ button[type=submit] {
 }
 .form .form-select {
   margin-bottom: 0;
-  min-height: 46px;
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2052,6 +2050,10 @@ button[type=submit] {
   line-height: 140%;
   color: #8f8f8f;
   cursor: pointer;
+}
+.custom-form-check:focus::before {
+  cursor: pointer;
+  border-color: #42474d;
 }
 @media (min-width: 1200px) {
   .custom-form-check {
@@ -2183,6 +2185,8 @@ button[type=submit] {
   }
 }
 .page-title-icon h1 {
+  margin: 0;
+  margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -2190,30 +2194,51 @@ button[type=submit] {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: inherit;
-  font-size: 17px;
 }
-@media (min-width: 375px) {
+@media (min-width: 576px) {
   .page-title-icon h1 {
-    font-size: calc(2.2900763359vw + 8.4122137405px);
+    font-size: 26px;
   }
 }
 @media (min-width: 768px) {
   .page-title-icon h1 {
-    font-size: calc(6.640625vw - 25px);
+    font-size: 50px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .page-title-icon h1 {
     font-size: 60px;
   }
 }
 .page-title-icon .icon {
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-  width: 30px;
-  height: 100%;
+  margin-top: 5px;
+  width: 20px;
+  height: 13px;
   fill: rgba(73, 76, 79, 0.5);
 }
+@media (min-width: 576px) {
+  .page-title-icon .icon {
+    margin-top: 6px;
+    width: 30px;
+    height: 23px;
+  }
+}
+@media (min-width: 768px) {
+  .page-title-icon .icon {
+    margin-left: 0.5rem;
+    margin-top: 15px;
+    width: 30px;
+    height: 37px;
+  }
+}
+@media (min-width: 992px) {
+  .page-title-icon .icon {
+    margin-top: 10px;
+    margin-left: 0.5rem;
+    height: 60px;
+  }
+}
+
 .page-body {
   display: flex;
   flex-direction: column;
@@ -4437,6 +4462,12 @@ button[type=submit] {
 .form-offers .form-control {
   align-items: flex-start;
 }
+.form-offers .form-control:focus, .form-offers .form-control:hover {
+  box-shadow: 0 0 0 0.15rem rgba(226, 240, 251, 0.22);
+}
+.form-offers .form-select:focus, .form-offers .form-select:hover {
+  box-shadow: 0 0 0 0.15rem rgba(226, 240, 251, 0.22);
+}
 .form-offers .form-check-input:checked {
   background-color: #888888;
   border-color: #888888;
@@ -5893,10 +5924,15 @@ button[type=submit] {
     margin-right: 1rem;
   }
 }
-.form-clubs .form-select {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 130%;
+.form-clubs .form-select:focus, .form-clubs .form-select:hover {
+  box-shadow: 0 0 0 0.15rem rgba(44, 58, 69, 0.305);
+}
+@media (min-width: 1200px) {
+  .form-clubs .form-select {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
 .form-clubs__btns {
   display: flex;
