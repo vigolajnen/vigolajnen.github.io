@@ -5974,17 +5974,26 @@ button[type=submit] {
 .map {
   position: relative;
   width: 100%;
-  min-height: 800px;
   background-color: #e2f0fb;
   background-image: url("../img/clubs/map.jpg");
   background-size: cover;
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
+  min-height: 470px;
+}
+@media (min-width: 768px) {
+  .map {
+    min-height: 500px;
+  }
+}
+@media (min-width: 1300px) {
+  .map {
+    min-height: 800px;
+  }
 }
 .map.container {
   position: relative;
   height: 100%;
-  min-height: 800px;
 }
 .map--region.container {
   min-height: 600px;
@@ -6002,6 +6011,7 @@ button[type=submit] {
 @media (max-width: 576px) {
   .map [class$=-controls__control_toolbar] {
     margin-right: 0 !important;
+    padding: 5px;
   }
 }
 .map [class$=-custom-scroll] {
@@ -6205,6 +6215,20 @@ button[type=submit] {
   }
 }
 
+:root {
+  --size-h: 500px;
+}
+@media (min-width: 992px) {
+  :root {
+    --size-h: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --size-h: 830px;
+  }
+}
+
 .clubs-result {
   position: absolute;
   z-index: 10;
@@ -6213,7 +6237,6 @@ button[type=submit] {
   left: 0;
   max-width: 450px;
   height: 100%;
-  border-radius: 22px;
   overflow: hidden;
 }
 @media (min-width: 450px) {
@@ -6225,29 +6248,33 @@ button[type=submit] {
 @media (min-width: 768px) {
   .clubs-result {
     max-width: 650px;
-    height: 831px;
-    max-height: 831px;
+    height: var(--size-h);
+    max-height: var(--size-h);
   }
 }
 .clubs-result__item {
-  background-color: #e2f0fb;
-  box-shadow: -1px 4px 24px rgba(0, 0, 0, 0.2);
+  background-color: #f6f6f6;
 }
-.clubs-result__item:nth-child(2n) {
-  background-color: #fffeda;
+.clubs-result__item .club-preview__address {
+  font-size: 17px;
 }
-@media (min-width: 576px) {
-  .clubs-result__item {
-    background-color: #f6f6f6;
-    border-radius: 22px;
-  }
-  .clubs-result__item:nth-child(2n) {
-    background-color: #f6f6f6;
+@media (max-width: 768px) {
+  .clubs-result__item .club-preview__links {
+    padding: 0;
   }
 }
 .clubs-result .my-custom-scrollbar {
   height: 100%;
-  min-height: 800px;
+  min-height: var(--size-h);
+}
+.clubs-result .my-custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.clubs-result .my-custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #e2f0fb;
+}
+.clubs-result .my-custom-scrollbar::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
 }
 .clubs-result .btn-close {
   position: absolute;
@@ -6283,16 +6310,21 @@ button[type=submit] {
   overflow: hidden;
   border-radius: 0;
   box-shadow: none;
-  padding: 15px 0;
+  padding: 15px 10px;
   margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .gallery-clubs-preview {
+    padding: 15px;
+  }
 }
 .gallery-clubs-preview .swiper-wrapper {
   padding-right: 15px;
+  padding-bottom: 20px;
 }
 @media (min-width: 1024px) {
   .gallery-clubs-preview .swiper-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
   }
@@ -6304,6 +6336,16 @@ button[type=submit] {
 }
 .gallery-clubs-preview .swiper-slide:before {
   background: none;
+}
+.gallery-clubs-preview .swiper-pagination {
+  bottom: -10px;
+}
+.gallery-clubs-preview .swiper-pagination-bullet {
+  background-color: #42474d;
+  border-color: #42474d;
+}
+.gallery-clubs-preview .swiper-pagination-bullet-active {
+  background-color: transparent;
 }
 .gallery-clubs-preview .club-preview {
   border-radius: 16px;
@@ -7197,6 +7239,11 @@ button[type=submit] {
     padding: 10px 15px 10px 25px;
   }
 }
+@media (max-width: 768px) {
+  .club-preview--result .club-preview__header .title {
+    font-size: 17px;
+  }
+}
 .club-preview--result .club-preview__info {
   width: 90%;
 }
@@ -7207,7 +7254,7 @@ button[type=submit] {
 }
 @media (min-width: 992px) {
   .club-preview--result .club-preview__info {
-    width: 60%;
+    width: 65%;
   }
 }
 .club-preview--result .club-preview__contacts {
@@ -7228,6 +7275,11 @@ button[type=submit] {
     justify-content: space-between;
   }
 }
+@media (max-width: 768px) {
+  .club-preview--result .club-preview__links {
+    padding: 0;
+  }
+}
 @media (min-width: 992px) {
   .club-preview--result .club-preview__links {
     width: 50%;
@@ -7239,7 +7291,7 @@ button[type=submit] {
 }
 @media (min-width: 992px) {
   .club-preview--result .club-preview__links {
-    width: 40%;
+    width: 35%;
   }
 }
 .club-preview--result .club-preview__links .link-text {
@@ -7345,7 +7397,9 @@ button[type=submit] {
   max-width: 100%;
 }
 .club-preview--slide .club-preview__pic {
+  width: 100%;
   min-height: 175px;
+  overflow: hidden;
 }
 .club-preview--slide .club-preview__pic img {
   height: 100%;

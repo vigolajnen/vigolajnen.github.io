@@ -154,34 +154,60 @@
         <div class="form-clubs__title">Найди свой фитнес Хаус</div>
         <div class="form-clubs__wrapper">
           <label class="form-label"><span class="form__label-name">Твой Фитнес Хаус</span>
-            <select class="form-select form-control" aria-label="с бассейном или без бассейна" required>
+            <select class="form-select form-control" aria-label="с бассейном или без бассейна" name="pool" required>
               <option selected value="С бассейном">С бассейном</option>
               <option value="Без бассейна">Без бассейна</option>
             </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
           </label>
           <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-            <select class="form-select form-control" aria-label="выберете клуб" required>
+            <select class="form-select form-control" aria-label="выберете клуб" name="clubName">
               <option selected value="">Выберете клуб</option>
+              <option value="В Кудрово">В Кудрово</option>
+              <option value="На Большевиков">На Большевиков</option>
               <option value="На Гашека">На Гашека</option>
               <option value="На Северном">На Северном</option>
               <option value="На Гашека">На Гашека</option>
-              <option value="На Северном">На Северном</option>
+              <option value="На Наставников">На Наставников</option>
               <option value="На Гашека">На Гашека</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Гашека">На Гашека</option>
+              <option value="На Политехнической">На Политехнической</option>
               <option value="На Гашека">На Гашека</option>
             </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
           </label>
           <label class="form-label"><span class="form__label-name">Выберете станцию метро</span>
-            <select class="form-select form-control" aria-label="выберете станцию метро" required>
-              <option selected disabled value="">Выберете метро</option>
-              <option value="Парнас">Парнас</option>
+            <select class="form-select form-control" aria-label="выберете станцию метро" name="metroStation">
+              <option selected value="">Выберете метро</option>
+              <option value="Адмиралтейская">Адмиралтейская</option>
+              <option value="Академическая">Академическая</option>
+              <option value="Беговая">Беговая</option>
+              <option value="Бухарестская">Бухарестская</option>
+              <option value="Василеостровская">Василеостровская</option>
+              <option value="Гражданский проспект">Гражданский проспект</option>
               <option value="Девяткино">Девяткино</option>
-              <option value="Выборгская">Выборгская</option>
-              <option value="Чкаловская">Чкаловская</option>
-              <option value="Крестовский">Крестовский</option>
+              <option value="Достоевская">Достоевская</option>
+              <option value="Звёздная">Звёздная</option>
+              <option value="Кировский завод">Кировский завод</option>
+              <option value="Комендантский проспект">Комендантский проспект</option>
+              <option value="Крестовский остров">Крестовский остров</option>
               <option value="Купчино">Купчино</option>
+              <option value="Ладожская">Ладожская</option>
+              <option value="Ленинский проспект">Ленинский проспект</option>
+              <option value="Лесная">Лесная</option>
+              <option value="Международная">Международная</option>
+              <option value="Московская">Московская</option>
+              <option value="Новочеркасская">Новочеркасская</option>
+              <option value="Озерки">Озерки</option>
+              <option value="Пионерская">Пионерская</option>
+              <option value="Приморская">Приморская</option>
+              <option value="Проспект Большевиков">Проспект Большевиков</option>
+              <option value="Проспект Ветеранов">Проспект Ветеранов</option>
+              <option value="Проспект Просвещения">Проспект Просвещения</option>
+              <option value="Рыбацкое">Рыбацкое</option>
+              <option value="Старая деревня">Старая деревня</option>
+              <option value="Удельная">Удельная</option>
+              <option value="Улица Дыбенко">Улица Дыбенко</option>
+              <option value="Чкаловская">Чкаловская</option>
+              <option value="Чёрная речка">Чёрная речка</option>
+              <option value="Нет метро">Нет метро</option>
             </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
           </label>
           <div class="form-clubs__btns">
@@ -210,92 +236,7 @@
                         <use xlink:href="img/sprite.svg#btn-close"></use>
                       </svg>
           </button>
-          <div class="my-custom-scrollbar my-custom-scrollbar-primary">
-            <div class="clubs-result__item">
-              <section class="club-preview club-preview--result">
-                <div class="club-preview__header">
-                  <div class="club-preview__info">
-                    <div class="club-preview__contacts">
-                      <div class="title">Fitness House на Северном</div>
-                      <div class="raiting">
-                        <iframe src="https://yandex.ru/sprav/widget/rating-badge/170179942434" width="150" height="50" frameborder="0"></iframe>
-                      </div>
-                      <div class="club-preview__address">Северный пр., 40А, 1 этаж</div>
-                    </div>
-                    <div class="club-preview__working working-hours">
-                      <div class="working-hours__club"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
-                    </div>
-                  </div>
-                  <div class="club-preview__links"><a class="link-text link-text--more" href="#" data-bs-toggle="modal" data-toggle="modal"><span>Подобрать абонемент</span>
-                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                                  <use xlink:href="img/sprite.svg#arrow"></use>
-                                </svg></a><a class="link-text link-text--more" href="club.html"><span>О клубе</span>
-                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                                  <use xlink:href="img/sprite.svg#arrow"></use>
-                                </svg></a></div>
-                </div>
-                <div class="club-preview__body">
-                  <div class="club-preview__pic"><img src="img/club/preview/1.jpg" width="666" height="228px" alt="фитнес-клуб с большим бассейном"></div>
-                </div>
-              </section>
-            </div>
-            <div class="clubs-result__item">
-              <section class="club-preview club-preview--result">
-                <div class="club-preview__header">
-                  <div class="club-preview__info">
-                    <div class="club-preview__contacts">
-                      <div class="title">Fitness House на Северном</div>
-                      <div class="raiting">
-                        <iframe src="https://yandex.ru/sprav/widget/rating-badge/170179942434" width="150" height="50" frameborder="0"></iframe>
-                      </div>
-                      <div class="club-preview__address">Северный пр., 40А, 1 этаж</div>
-                    </div>
-                    <div class="club-preview__working working-hours">
-                      <div class="working-hours__club"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
-                    </div>
-                  </div>
-                  <div class="club-preview__links"><a class="link-text link-text--more" href="#" data-bs-toggle="modal" data-toggle="modal"><span>Подобрать абонемент</span>
-                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                                  <use xlink:href="img/sprite.svg#arrow"></use>
-                                </svg></a><a class="link-text link-text--more" href="club.html"><span>О клубе</span>
-                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                                  <use xlink:href="img/sprite.svg#arrow"></use>
-                                </svg></a></div>
-                </div>
-                <div class="club-preview__body">
-                  <div class="club-preview__pic"><img src="img/club/preview/1.jpg" width="666" height="228px" alt="фитнес-клуб с большим бассейном"></div>
-                </div>
-              </section>
-            </div>
-            <div class="clubs-result__item">
-              <section class="club-preview club-preview--result">
-                <div class="club-preview__header">
-                  <div class="club-preview__info">
-                    <div class="club-preview__contacts">
-                      <div class="title">Fitness House на Северном</div>
-                      <div class="raiting">
-                        <iframe src="https://yandex.ru/sprav/widget/rating-badge/170179942434" width="150" height="50" frameborder="0"></iframe>
-                      </div>
-                      <div class="club-preview__address">Северный пр., 40А, 1 этаж</div>
-                    </div>
-                    <div class="club-preview__working working-hours">
-                      <div class="working-hours__club"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
-                    </div>
-                  </div>
-                  <div class="club-preview__links"><a class="link-text link-text--more" href="#" data-bs-toggle="modal" data-toggle="modal"><span>Подобрать абонемент</span>
-                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                                  <use xlink:href="img/sprite.svg#arrow"></use>
-                                </svg></a><a class="link-text link-text--more" href="club.html"><span>О клубе</span>
-                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                                  <use xlink:href="img/sprite.svg#arrow"></use>
-                                </svg></a></div>
-                </div>
-                <div class="club-preview__body">
-                  <div class="club-preview__pic"><img src="img/club/preview/1.jpg" width="666" height="228px" alt="фитнес-клуб с большим бассейном"></div>
-                </div>
-              </section>
-            </div>
-          </div>
+          <div class="clubs-result__wrapper my-custom-scrollbar my-custom-scrollbar-primary"></div>
         </div>
       </div>
     </div>
@@ -317,6 +258,52 @@
       </section>
     </div>
     <div class="main-clubs"></div>
+        <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="--pic:url('../img/modal/modal-bg-gym.jpg')">
+              <div class="modal-header">
+                <h5 class="title modal-title">Записаться на экскурсию</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                            <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                              <use xlink:href="img/sprite.svg#btn-close"></use>
+                            </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="form needs-validation" novalidate>
+                  <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
+                    <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form-label" for="formSingUpEmail"><span class="form__label-name">Введите @email</span>
+                    <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
+                    <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+                    <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
+                      <option selected disabled value="">Ваш клуб</option>
+                      <option value="На Гашека">На Гашека</option>
+                      <option value="На Северном">На Северном</option>
+                      <option value="На Заречной">На Заречной</option>
+                      <option value="На Камышовой">На Камышовой</option>
+                      <option value="На Лесной">На Лесной</option>
+                      <option value="На Выборгской">На Выборгской</option>
+                      <option value="На Большевиков">На Большевиков</option>
+                      <option value="На Ладожской">На Ладожской</option>
+                      <option value="На Левашовском">На Левашовском</option>
+                    </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <div class="custom-form-check order-1" tabindex="0">
+                    <input class="visually-hidden" type="checkbox" id="custom-form-check" required>
+                    <label for="custom-form-check"><span>Оставляя свой email, я принимаю</span><br><a href="#">Политику конфиденциальности</a></label>
+                  </div>
+                  <button class="botton button--red mt-2" type="submit">Записаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="modal fade modal--bg-md modal-submit-form" aria-hidden="true" tabindex="-1" id="modal-submit-form">
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
