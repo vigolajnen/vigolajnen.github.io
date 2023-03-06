@@ -211,7 +211,7 @@
             </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
           </label>
           <div class="form-clubs__btns">
-            <button class="button button--yellow" type="submit">Подобрать</button>
+            <button class="button button--yellow" type="button" data-toggle="modal" data-target="#myModal2">Подобрать</button>
             <button class="button button--outline" type="reset">Сбросить</button>
           </div>
         </div>
@@ -237,6 +237,15 @@
                       </svg>
           </button>
           <div class="clubs-result__wrapper my-custom-scrollbar my-custom-scrollbar-primary"></div>
+        </div>
+      </div>
+      <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
