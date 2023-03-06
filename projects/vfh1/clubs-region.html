@@ -285,16 +285,30 @@
     <div class="container">
       <section class="subscription section">
         <div class="subscription__title">Подпишись на рассылку Fitness House и будь в курсе выгодных предложений</div>
-        <form class="form form-subscription subscription__form needs-validation">
-          <label class="form-label" for="formEmail"><span>Ваш e-mail</span>
-            <input class="form-control" type="email" id="formEmail" placeholder="address@mail.ru" autocomplete="off" required>
+        <form class="form form-subscription subscription__form">
+          <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+            <select class="form-select form-control" aria-label="выберете клуб" required>
+              <option selected value="">Выберете клуб</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Северном">На Северном</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Северном">На Северном</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Гашека">На Гашека</option>
+            </select>
+          </label>
+          <label class="form-label"><span class="form__label-name">Ваш e-mail</span>
+            <input class="form-control" type="email" placeholder="address@mail.ru" autocomplete="off" required>
           </label>
           <div class="form-subscription__btns">
-            <button class="button button--yellow" type="submit">Подписаться</button>
-            <div class="custom-form-check">
-              <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+            <div class="custom-form-check order-1" tabindex="0">
+              <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required tabindex="0">
               <label for="custom-form-check-1"><span>Даю согласие на обработку данных</span></label>
             </div>
+            <button class="button button--yellow" type="submit">Подписаться</button>
           </div>
         </form>
       </section>
