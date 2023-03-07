@@ -183,7 +183,6 @@
               <option value="Василеостровская">Василеостровская</option>
               <option value="Гражданский проспект">Гражданский проспект</option>
               <option value="Девяткино">Девяткино</option>
-              <option value="Достоевская">Достоевская</option>
               <option value="Звёздная">Звёздная</option>
               <option value="Кировский завод">Кировский завод</option>
               <option value="Комендантский проспект">Комендантский проспект</option>
@@ -211,7 +210,7 @@
             </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
           </label>
           <div class="form-clubs__btns">
-            <button class="button button--yellow" type="button" data-toggle="modal" data-target="#myModal2">Подобрать</button>
+            <button class="button button--yellow" type="button" data-target="sidebar-list">Подобрать</button>
             <button class="button button--outline" type="reset">Сбросить</button>
           </div>
         </div>
@@ -230,23 +229,18 @@
       </div>
       <div class="map container">
         <div class="map__ya" id="map"></div>
-        <div class="clubs-result d-none">
-          <button class="btn-close" type="button" aria-label="Закрыть модальное окно">
-                      <svg class="icon" width="26" height="26">
-                        <use xlink:href="img/sprite.svg#btn-close"></use>
-                      </svg>
-          </button>
-          <div class="clubs-result__wrapper my-custom-scrollbar my-custom-scrollbar-primary"></div>
-        </div>
-      </div>
-      <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <aside class="map__sidebar sidebar-clubs fade">
+          <div class="sidebar-clubs__dialog">
+            <div class="sidebar-clubs__content">
+              <button class="btn-close" type="button" data-target="sidebar-list-close" aria-label="Закрыть модальное окно">
+                          <svg class="icon" width="26" height="26">
+                            <use xlink:href="img/sprite.svg#btn-close"></use>
+                          </svg>
+              </button>
+              <div class="sidebar-clubs__body"></div>
             </div>
           </div>
-        </div>
+        </aside>
       </div>
     </div>
     <div class="container">

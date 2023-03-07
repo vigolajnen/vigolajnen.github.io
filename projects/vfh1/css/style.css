@@ -2773,13 +2773,14 @@ button[type=submit] {
   flex-direction: column;
   display: grid;
   display: -ms-grid;
-  column-gap: 30px;
-  row-gap: 30px;
   grid-template-columns: 1fr;
   grid-template-areas: "s" "f" "a" "h" "j" "l" "d";
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 576px) {
   .main__grid {
+    display: grid;
     column-gap: 16px;
     row-gap: 16px;
     grid-template-columns: 1fr 1fr;
@@ -2831,6 +2832,14 @@ button[type=submit] {
     grid-template-areas: "s s a" "s s f" "j h l" "d d d";
   }
 }
+.main__grid > * {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .main__grid > * {
+    margin-bottom: 0;
+  }
+}
 .main__sale {
   grid-area: s;
   -ms-grid-area: s;
@@ -2866,11 +2875,17 @@ button[type=submit] {
   -ms-grid-area: a;
   display: flex;
   flex-direction: column;
+  order: 1;
 }
 @media (max-width: 576px) {
   .main__adv {
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .main__adv {
+    order: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -2925,6 +2940,7 @@ button[type=submit] {
   -ms-grid-area: j;
   display: flex;
   flex-direction: column;
+  order: 2;
 }
 @media (max-width: 576px) {
   .main__job {
@@ -2936,6 +2952,7 @@ button[type=submit] {
   .main__job {
     margin-top: 15px;
     margin-bottom: 15px;
+    order: 0;
   }
 }
 @media (min-width: 992px) {
@@ -2960,6 +2977,7 @@ button[type=submit] {
   -ms-grid-area: h;
   display: flex;
   flex-direction: column;
+  order: 2;
 }
 @media (max-width: 576px) {
   .main__schedule {
@@ -2972,6 +2990,7 @@ button[type=submit] {
     margin-top: 15px;
     margin-bottom: 15px;
     align-items: flex-end;
+    order: 0;
   }
 }
 @media (min-width: 992px) {
@@ -2999,6 +3018,12 @@ button[type=submit] {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  order: 2;
+}
+@media (min-width: 768px) {
+  .main__slider {
+    order: 0;
+  }
 }
 @media (min-width: 1200px) {
   .main__slider {
@@ -3022,6 +3047,13 @@ button[type=submit] {
   -ms-grid-area: d;
   display: flex;
   flex-direction: column;
+  order: 2;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .main__record {
+    order: 0;
+  }
 }
 @media (min-width: 1200px) {
   .main__record {
@@ -6009,6 +6041,7 @@ button[type=submit] {
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
   min-height: 470px;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .map {
@@ -6103,12 +6136,40 @@ button[type=submit] {
 .map .content {
   margin: 0;
 }
+.map__sidebar {
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: auto;
+  width: 650px;
+  max-width: 650px;
+  height: 100%;
+  transform: translate3d(0%, 0, 0);
+  overflow: hidden;
+}
 
 #map {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+}
+
+.sidebar-clubs {
+  right: -650px;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+.sidebar-clubs.show {
+  right: 0;
+}
+.sidebar-clubs__content {
+  max-height: 100%;
+  background-color: transparent;
+}
+.sidebar-clubs__body {
+  padding: 0.3rem 0;
+  background-color: transparent;
 }
 
 .subscription {
