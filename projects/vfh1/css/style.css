@@ -2190,11 +2190,16 @@ button[type=submit] {
   margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 130%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: inherit;
+}
+@media (min-width: 350px) {
+  .page-title-icon h1 {
+    font-size: 22px;
+  }
 }
 @media (min-width: 375px) {
   .page-title-icon h1 {
@@ -5868,7 +5873,7 @@ button[type=submit] {
 }
 
 .form-and-map {
-  margin: 2rem 0;
+  margin: 0 0 2rem;
   overflow: hidden;
   position: relative;
   padding-left: 16px;
@@ -5877,6 +5882,7 @@ button[type=submit] {
 @media (min-width: 992px) {
   .form-and-map {
     padding: 0;
+    margin: 2rem 0;
   }
 }
 .form-and-map__btns {
@@ -5892,7 +5898,7 @@ button[type=submit] {
   }
 }
 .form-and-map__btns .button {
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   margin: 0 0.5rem;
   width: 100%;
   flex-grow: 1;
@@ -5909,6 +5915,7 @@ button[type=submit] {
 }
 @media (min-width: 576px) {
   .form-and-map__btns .button {
+    padding: 1rem;
     font-size: 20px;
   }
 }
