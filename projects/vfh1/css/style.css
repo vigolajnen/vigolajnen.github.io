@@ -2294,6 +2294,15 @@ button[type=submit] {
   text-decoration: none;
 }
 
+.horizontal-scrollable > .row {
+  overflow-x: auto;
+}
+
+.horizontal-scrollable .row .col {
+  display: inline-block;
+  float: none;
+}
+
 .page-header {
   z-index: 11;
   position: fixed;
@@ -2769,12 +2778,6 @@ button[type=submit] {
 }
 .main__grid {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  display: grid;
-  display: -ms-grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "s" "f" "a" "h" "j" "l" "d";
   display: flex;
   flex-direction: column;
 }
@@ -5730,6 +5733,14 @@ button[type=submit] {
     margin-bottom: 1rem;
   }
 }
+.hero h1 span {
+  display: block;
+}
+@media (min-width: 992px) {
+  .hero h1 span {
+    display: inline-block;
+  }
+}
 
 .clubs-info {
   position: relative;
@@ -5860,6 +5871,13 @@ button[type=submit] {
   margin: 2rem 0;
   overflow: hidden;
   position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 992px) {
+  .form-and-map {
+    padding: 0;
+  }
 }
 .form-and-map__btns {
   display: none;
@@ -6042,11 +6060,11 @@ button[type=submit] {
   background-size: cover;
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
-  min-height: 470px;
+  min-height: 500px;
 }
 @media (min-width: 768px) {
   .map {
-    min-height: 500px;
+    min-height: 600px;
   }
 }
 @media (min-width: 1300px) {
@@ -6058,18 +6076,29 @@ button[type=submit] {
   position: relative;
   height: 100%;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .map.container {
     margin-bottom: 50px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1300px) {
   .map.container {
     margin-bottom: 70px;
   }
 }
+.map--region {
+  border-radius: 22px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  min-height: 500px;
+}
+@media (min-width: 768px) {
+  .map--region {
+    min-height: 600px;
+  }
+}
 .map--region.container {
-  min-height: 600px;
+  min-height: 100%;
   margin-bottom: 2rem;
 }
 .map__ya {
@@ -6173,13 +6202,6 @@ button[type=submit] {
   }
 }
 
-#map {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 .sidebar-clubs {
   right: -650px;
   transition: opacity 0.3s linear, right 0.3s ease-out;
@@ -6189,8 +6211,11 @@ button[type=submit] {
   right: 0;
   min-height: 560px;
 }
+.sidebar-clubs__dialog {
+  height: 100%;
+}
 .sidebar-clubs .btn-close {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   background: none;
@@ -6301,12 +6326,16 @@ button[type=submit] {
     width: 50%;
     align-content: start;
     justify-content: start;
+    margin-right: 2rem;
+    padding-left: 2rem;
   }
 }
 @media (min-width: 992px) {
   .form-subscription__btns {
     width: auto;
     padding-top: 2rem;
+    margin-right: 0;
+    padding-left: 0;
   }
 }
 .form-subscription .button {
@@ -7553,6 +7582,41 @@ button[type=submit] {
 .club-preview--slide .club-preview__footer .link-text:first-child {
   max-width: 100%;
   order: 1;
+}
+.club-preview--list .club-preview__header {
+  padding: 15px;
+}
+.club-preview--list .club-preview__contacts {
+  width: 100%;
+  max-width: 100%;
+}
+.club-preview--list .club-preview__address {
+  width: 100%;
+  max-width: 100%;
+}
+.club-preview--list .club-preview__working {
+  padding-top: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+.club-preview--list .club-preview__pic {
+  width: 100%;
+  min-height: 175px;
+  overflow: hidden;
+}
+.club-preview--list .club-preview__pic img {
+  height: 100%;
+  min-height: 175px;
+}
+.club-preview--list .club-preview__footer {
+  padding: 15px;
+  flex-direction: column-reverse;
+  order: 1;
+  width: 100%;
+  max-width: 100%;
+}
+.club-preview--list .club-preview__footer .link-text {
+  max-width: 100%;
 }
 
 .club-balloon {
