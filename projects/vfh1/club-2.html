@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Fitness House на Северном</title>
+    <title>Fitness House в Архангельске</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Start">
@@ -123,15 +123,50 @@
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
     <main class="page-club main">
+      <section class="hero container d-none d-xl-block">
+        <h1>У каждого есть<span>свой Фитнес Хаус:</span></h1>
+        <div class="hero__wrapper">
+          <div class="hero__clubs-info">
+            <ul class="clubs-info">
+              <li class="clubs-info__item">
+                <div class="clubs-info__club">15 ЛЕТ УСПЕШНОЙ РАБОТы</div>
+                <div class="clubs-info__text">Более 70 клубов по всей России</div>
+              </li>
+              <li class="clubs-info__item">
+                <div class="clubs-info__club">СИЛЬНЫЙ ТРЕНЕРСКИЙ СОСТАВ</div>
+                <div class="clubs-info__text">Профессиональные тренеры и спортсмены</div>
+              </li>
+              <li class="clubs-info__item">
+                <div class="clubs-info__club">КОМФОРТНЫЙ И ДОСТУПНЫЙ ФИТНЕС</div>
+                <div class="clubs-info__text">Все, что нужно для занятий спортом по приятной цене</div>
+              </li>
+              <li class="clubs-info__item">
+                <div class="clubs-info__club">СЕМЕЙНЫЕ ФИТНЕС-КЛУБЫ</div>
+                <div class="clubs-info__text">Спортивные секции для всей семьи</div>
+              </li>
+              <li class="clubs-info__item">
+                <div class="clubs-info__club">МНОГООБРАЗИЕ НАПРАВЛЕНИЙ:</div>
+                <div class="clubs-info__text">бассейн, спа-зона, тренажерный зал, групповые программы, детские секции </div>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__pic">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/clubs/h-reg.webp">
+                  <source media="(min-width: 768px)" srcset="img/clubs/hero-768.webp"><img src="img/clubs/hero-mob.jpg" alt="pic" width="324" height="217">
+                </picture>
+          </div>
+        </div>
+      </section>
       <div class="page-club__header container">
-        <div class="title">Fitness House на Северном</div>
+        <div class="title">Fitness House в Архангельске</div>
         <div class="page-club__wrapper">
           <div class="page-club__header-item">
-            <div class="title">Fitness House<span>на Северном</span></div>
+            <div class="title">Fitness House<span>в Архангельске</span></div>
             <div class="raiting">
               <iframe src="https://yandex.ru/sprav/widget/rating-badge/170179942434" width="150" height="50" frameborder="0"></iframe>
             </div>
-            <div class="page-club__header-map"><span>Северный пр., 40А, 1 этаж</span><a class="link-text link-text--more" href="#modal-map" data-bs-toggle="modal" data-bs-dismiss="modal"><span>Смотреть на карте</span>
+            <div class="page-club__header-map"><span>Московский пр., д. 33</span><a class="link-text link-text--more" href="#modal-map" data-bs-toggle="modal" data-bs-dismiss="modal"><span>Смотреть на карте</span>
                           <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
                             <use xlink:href="img/sprite.svg#arrow"></use>
                           </svg></a></div>
@@ -264,7 +299,37 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div>
                       </div>
-                    </section><a class="link record record--club" href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">
+                    </section>
+          <section class="subscription section">
+            <div class="subscription__title">
+              Подпишись на рассылку <span>Fitness House и будь в курсе выгодных предложений</span></div>
+            <form class="form form-subscription subscription__form">
+              <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+                <select class="form-select form-control" aria-label="выберете клуб" required>
+                  <option selected value="">Выберете клуб</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Северном">На Северном</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Северном">На Северном</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Гашека">На Гашека</option>
+                </select>
+              </label>
+              <label class="form-label"><span class="form__label-name">Ваш e-mail</span>
+                <input class="form-control" type="email" placeholder="address@mail.ru" autocomplete="off" required>
+              </label>
+              <div class="form-subscription__btns">
+                <div class="custom-form-check order-1" tabindex="0">
+                  <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required tabindex="0">
+                  <label for="custom-form-check-1"><span>Даю согласие на обработку данных</span></label>
+                </div>
+                <button class="button button--yellow" type="submit">Подписаться</button>
+              </div>
+            </form>
+          </section><a class="link record record--club" href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">
             <h3 class="record__title">Понравился клуб?</h3>
             <div class="record__subtitle">Запишись на<span>бесплатную экскурсию</span></div>
             <div class="link-text link-text--more"><span>Записаться</span>
@@ -362,8 +427,8 @@
                               </svg>
                   </button>
                   <div class="modal-body">
-                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/fitness_house/170179942434/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Fitness House</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/swimming_pool/184107275/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Бассейн в Санкт‑Петербурге</a><a href="https://yandex.ru/maps/2/saint-petersburg/category/sports_club_group/184107297/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивный клуб, секция в Санкт‑Петербурге</a>
-                      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.386754%2C60.028730&amp;mode=search&amp;oid=170179942434&amp;ol=biz&amp;z=14.57" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;width:100%;height:100%;min-height:500px;"></iframe>
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/fitness_house/242931028716/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Fitness House</a>
+                      <iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&amp;ll=40.599673%2C64.532734&amp;mode=search&amp;oid=242931028716&amp;ol=biz&amp;source=mapframe&amp;utm_source=mapframe&amp;z=17.13" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;width:100%;height:100%;min-height:500px;"></iframe>
                     </div>
                   </div>
                 </div>
