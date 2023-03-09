@@ -4179,6 +4179,11 @@ button[type=submit] {
     font-size: 36px;
   }
 }
+@media (min-width: 1400px) {
+  .record--club .record__title {
+    font-size: 50px;
+  }
+}
 .record--club .record__subtitle {
   margin: 0;
   margin-bottom: 20px;
@@ -7111,12 +7116,6 @@ button[type=submit] {
   width: 24px;
   margin-left: 6px;
   background-image: url("../img/icons-service/ph_sun-fill.svg");
-}
-@media (min-width: 1300px) {
-  .club-services__item--8::before {
-    margin-left: 4px;
-    width: 26px;
-  }
 }
 .club-services__title {
   margin-bottom: 4px;
