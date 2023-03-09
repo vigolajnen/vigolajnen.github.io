@@ -7104,7 +7104,7 @@ button[type=submit] {
 }
 @media (min-width: 576px) {
   .club-services__text {
-    max-width: auto;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
