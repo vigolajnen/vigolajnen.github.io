@@ -5085,6 +5085,7 @@ button[type=submit] {
     width: 100%;
     min-height: 305px;
     margin-left: auto;
+    height: 430px;
   }
 }
 @media (max-width: 992px) {
@@ -6120,6 +6121,9 @@ button[type=submit] {
   .page-club .form-book {
     width: 30%;
   }
+}
+.page-club__record::after {
+  bottom: 0;
 }
 .page-club__record-inner {
   display: flex;
