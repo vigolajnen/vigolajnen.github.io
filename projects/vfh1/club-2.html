@@ -122,7 +122,11 @@
     </nav>
     <main class="page-club main">
       <section class="hero container d-none d-xl-block">
-        <h1>У каждого есть<span>свой Фитнес Хаус:</span></h1>
+        <h1>
+          У каждого
+          есть
+          <span> свой Фитнес Хаус:</span>
+        </h1>
         <div class="hero__wrapper">
           <div class="hero__clubs-info">
             <ul class="clubs-info">
@@ -133,10 +137,6 @@
               <li class="clubs-info__item">
                 <div class="clubs-info__club">СИЛЬНЫЙ ТРЕНЕРСКИЙ СОСТАВ</div>
                 <div class="clubs-info__text">Профессиональные тренеры и спортсмены</div>
-              </li>
-              <li class="clubs-info__item">
-                <div class="clubs-info__club">КОМФОРТНЫЙ И ДОСТУПНЫЙ ФИТНЕС</div>
-                <div class="clubs-info__text">Все, что нужно для занятий спортом по приятной цене</div>
               </li>
               <li class="clubs-info__item">
                 <div class="clubs-info__club">СЕМЕЙНЫЕ ФИТНЕС-КЛУБЫ</div>
@@ -208,14 +208,14 @@
                       </div>
                     </section>
           <form class="form form-book form needs-validation" novalidate>
-            <div class="title">Успей забронировать выгодно сейчас</div>
+            <div class="title">Успей забронировать выгодно</div>
             <div class="form-book__wrapper">
               <label class="form-label" for="formService"><span class="form__label-name">Выберете услугу</span>
                 <select class="form-select form-control form-select" id="formService" name="formClub" aria-label="Выберете услугу" required>
-                  <option selected disabled value="">Абонемент</option>
-                  <option value="Абонемент">Абонемент</option>
-                  <option value="Абонемент">Абонемент</option>
-                  <option value="Абонемент">Абонемент</option>
+                  <option selected value="Абонементы">Абонементы</option>
+                  <option value="Персональные тренировки">Персональные тренировки</option>
+                  <option value="Дополнительные услуги">Дополнительные услуги</option>
+                  <option value="Детские секции">Детские секции</option>
                 </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
               <label class="form-label" for="formName"><span class="form__label-name">Введите имя</span>
@@ -246,36 +246,52 @@
         <section class="club-services">
           <ul class="club-services__list">
             <li class="club-services__item club-services__item--1">
-              <div class="club-services__title">Тренажерный зал</div>
-              <div class="club-services__text">Зона свободных весов, силовые тренажеры</div>
+              <div class="club-services__content club-services__content--1">
+                <div class="club-services__title">Тренажерный зал</div>
+                <div class="club-services__text">Зона свободных весов, силовые тренажеры</div>
+              </div>
             </li>
             <li class="club-services__item club-services__item--2">
-              <div class="club-services__title">Групповые занятия</div>
-              <div class="club-services__text">Танцы, йога, пилатес, акваэробика</div>
+              <div class="club-services__content club-services__content--2">
+                <div class="club-services__title">Групповые занятия</div>
+                <div class="club-services__text">Танцы, йога, пилатес, акваэробика</div>
+              </div>
             </li>
             <li class="club-services__item club-services__item--3">
-              <div class="club-services__title">Кардио-зона</div>
-              <div class="club-services__text">Беговые дорожки, велосипеды, сайкл</div>
+              <div class="club-services__content club-services__content--3">
+                <div class="club-services__title">Кардио-зона</div>
+                <div class="club-services__text">Беговые дорожки, велосипеды, сайкл</div>
+              </div>
             </li>
             <li class="club-services__item club-services__item--4">
-              <div class="club-services__title">Мастер-классы от ведущих тренеров</div>
-              <div class="club-services__text"></div>
+              <div class="club-services__content club-services__content--4">
+                <div class="club-services__title">Мастер-классы от ведущих тренеров</div>
+                <div class="club-services__text"></div>
+              </div>
             </li>
             <li class="club-services__item club-services__item--5">
-              <div class="club-services__title">Бассейн</div>
-              <div class="club-services__text">Спортивный бассейн, детский бассейн</div>
+              <div class="club-services__content club-services__content--5">
+                <div class="club-services__title">Бассейн</div>
+                <div class="club-services__text">Спортивный бассейн, детский бассейн</div>
+              </div>
             </li>
             <li class="club-services__item club-services__item--6">
-              <div class="club-services__title">СПА-зона</div>
-              <div class="club-services__text">Инфракрасная сауна, хаммам, финская сауна</div>
+              <div class="club-services__content club-services__content--6">
+                <div class="club-services__title">СПА-зона</div>
+                <div class="club-services__text">Инфракрасная сауна, хаммам, финская сауна</div>
+              </div>
             </li>
             <li class="club-services__item club-services__item--7">
-              <div class="club-services__title">Детские секции</div>
-              <div class="club-services__text">Плавание, танцы, единоборства и др.</div>
+              <div class="club-services__content club-services__content--7">
+                <div class="club-services__title">Детские секции</div>
+                <div class="club-services__text">Плавание, танцы, единоборства и др.</div>
+              </div>
             </li>
             <li class="club-services__item club-services__item--8">
-              <div class="club-services__title">Стартовый пакет персональных тренировок</div>
-              <div class="club-services__text"></div>
+              <div class="club-services__content club-services__content--8">
+                <div class="club-services__title">Стартовый пакет персональных тренировок</div>
+                <div class="club-services__text"></div>
+              </div>
             </li>
           </ul>
         </section>
@@ -308,7 +324,7 @@
                     </section>
           <section class="subscription section">
             <div class="subscription__title">
-              Подпишись на рассылку <span>Fitness House и будь в курсе выгодных предложений</span></div>
+              Подпишись на рассылку<span>Fitness House и будь в курсе выгодных предложений</span></div>
             <form class="form form-subscription subscription__form">
               <label class="form-label"><span class="form__label-name">Выберете клуб</span>
                 <select class="form-select form-control" aria-label="выберете клуб" required>
@@ -329,16 +345,19 @@
               </label>
               <div class="form-subscription__btns">
                 <div class="custom-form-check order-1" tabindex="0">
-                  <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required tabindex="0">
-                  <label for="custom-form-check-1"><span>Даю согласие на обработку данных</span></label>
+                  <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-15" required tabindex="0">
+                  <label for="custom-form-check-15"><span>Даю согласие на обработку данных</span></label>
                 </div>
                 <button class="button button--yellow" type="submit">Подписаться</button>
               </div>
             </form>
           </section><a class="link record record--club" href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">
             <h3 class="record__title">Понравился клуб?</h3>
-            <div class="record__subtitle">Запишись на<span>бесплатную экскурсию</span></div>
-            <div class="link-text link-text--more"><span>Записаться</span>
+            <div class="record__subtitle">
+              Запишись на
+               <span> бесплатную экскурсию</span>
+            </div>
+            <div class="link-text link-text--more"><span>записаться</span>
                         <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
                           <use xlink:href="img/sprite.svg#arrow"></use>
                         </svg>
@@ -370,12 +389,10 @@
                 <p>01 и 02 января — клубы не работают.с 03 по 08 января — по режиму выходного дня — с 08:00 до 22:00 часов.</p>
               </div>
             </li>
-          </ul>
-          <button class="button"><span>Показать еще</span>
-                      <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
-                        <use xlink:href="img/sprite.svg#arrow-down"></use>
-                      </svg>
-          </button>
+          </ul><a class="link-text link-text--more" href="#"><span>Показать еще</span>
+                      <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg></a>
         </section>
       </div>
             <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
