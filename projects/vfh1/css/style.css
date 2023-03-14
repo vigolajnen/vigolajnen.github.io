@@ -6122,16 +6122,12 @@ button[type=submit] {
     width: 30%;
   }
 }
-.page-club__record::after {
-  bottom: 0;
-}
 .page-club__record-inner {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
   border-radius: 10px;
-  overflow: hidden;
 }
 @media (min-width: 1025px) {
   .page-club__record-inner {
