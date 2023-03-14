@@ -207,8 +207,12 @@ button[type=submit] {
     font-size: 20px;
   }
 }
+.title span {
+  word-spacing: inherit;
+}
 
 .subtitle {
+  display: inline-block;
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
   font-weight: 400;
   line-height: 130%;
@@ -223,6 +227,9 @@ button[type=submit] {
   .subtitle {
     font-size: 20px;
   }
+}
+.subtitle span {
+  word-spacing: inherit;
 }
 
 .logo {
@@ -3555,13 +3562,6 @@ button[type=submit] {
     margin-right: 15%;
   }
 }
-@media (min-width: 1881px) {
-  .record--club .link-text {
-    margin-left: 0;
-    margin-bottom: auto;
-  }
-}
-
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -5083,9 +5083,8 @@ button[type=submit] {
 @media (min-width: 992px) {
   .hero__pic img {
     width: 100%;
-    min-height: 305px;
     margin-left: auto;
-    height: 430px;
+    max-height: 430px;
   }
 }
 @media (max-width: 992px) {
@@ -5678,6 +5677,7 @@ button[type=submit] {
 }
 .subscription__title span {
   display: block;
+  word-spacing: inherit;
 }
 @media (min-width: 768px) {
   .subscription__title span {
@@ -5936,13 +5936,13 @@ button[type=submit] {
 .page-club__header > .title {
   display: none;
   margin-bottom: 15px;
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 @media (min-width: 992px) {
   .page-club__header > .title {
-    display: flex;
+    display: inline-block;
   }
 }
 .page-club__wrapper {
@@ -6076,13 +6076,17 @@ button[type=submit] {
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .page-club__promo-inner {
     margin-bottom: 2rem;
-    flex-direction: row;
-    justify-content: space-between;
     border-radius: 22px;
     box-shadow: none;
+  }
+}
+@media (min-width: 1100px) {
+  .page-club__promo-inner {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .page-club .slider {
@@ -6093,13 +6097,18 @@ button[type=submit] {
     border-radius: 0;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 800px) {
   .page-club .slider {
-    width: 60%;
+    min-height: 435px;
+  }
+}
+@media (min-width: 1100px) {
+  .page-club .slider {
+    width: 65%;
     border-radius: 22px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .page-club .slider {
     width: 70%;
   }
@@ -6112,12 +6121,12 @@ button[type=submit] {
 .page-club .form-book {
   width: 100%;
 }
-@media (min-width: 769px) {
+@media (min-width: 1100px) {
   .page-club .form-book {
-    width: 40%;
+    width: 35%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .page-club .form-book {
     width: 30%;
   }
@@ -6128,6 +6137,7 @@ button[type=submit] {
   flex-direction: column;
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 45px;
 }
 @media (min-width: 1025px) {
   .page-club__record-inner {
@@ -6151,8 +6161,8 @@ button[type=submit] {
 }
 @media (min-width: 768px) {
   .page-club__record .slider-content {
-    height: 500px;
-    margin-bottom: 35px;
+    height: 435px;
+    margin-bottom: 45px;
     border-radius: 22px;
   }
 }
@@ -6230,9 +6240,20 @@ button[type=submit] {
     margin-bottom: 36px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  .form-book .title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .form-book .title {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1100px) {
   .form-book .title {
     margin-bottom: 1rem;
+    font-size: 20px;
   }
 }
 .form-book__wrapper {
@@ -6241,7 +6262,7 @@ button[type=submit] {
   flex-wrap: wrap;
   align-items: flex-start;
 }
-@media (min-width: 769px) {
+@media (min-width: 1100px) {
   .form-book__wrapper {
     justify-content: space-between;
   }
@@ -6259,7 +6280,7 @@ button[type=submit] {
     margin-right: 0.9rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1100px) {
   .form-book .form-label {
     width: 100%;
     margin-right: 0;
@@ -6346,7 +6367,7 @@ button[type=submit] {
     width: calc(50% - 0.5rem);
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1100px) {
   .form-book__btns {
     width: 100%;
     padding-right: 0;
@@ -6425,8 +6446,12 @@ button[type=submit] {
   margin: 0;
   padding: 0;
   gap: 20px;
-  padding-bottom: 20px;
   justify-content: space-around;
+}
+@media (min-width: 576px) {
+  .club-services__list {
+    padding-bottom: 20px;
+  }
 }
 @media (min-width: 800px) {
   .club-services__list {
@@ -6805,9 +6830,6 @@ button[type=submit] {
     line-height: 130%;
   }
 }
-.working-hours .subtitle span {
-  display: inline-flex;
-}
 @media (min-width: 768px) {
   .working-hours .subtitle span {
     display: flex;
@@ -6878,6 +6900,10 @@ button[type=submit] {
     height: 100%;
     transform: translateY(-50%);
   }
+}
+.working-hours__club-label span {
+  display: inline-block;
+  padding-left: 0.5rem;
 }
 .working-hours__club, .working-hours__managers {
   position: relative;

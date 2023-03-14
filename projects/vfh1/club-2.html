@@ -143,8 +143,8 @@
                 <div class="clubs-info__text">Спортивные секции для всей семьи</div>
               </li>
               <li class="clubs-info__item">
-                <div class="clubs-info__club">МНОГООБРАЗИЕ НАПРАВЛЕНИЙ:</div>
-                <div class="clubs-info__text">бассейн, спа-зона, тренажерный зал, групповые программы, детские секции </div>
+                <div class="clubs-info__club">МНОГООБРАЗИЕ НАПРАВЛЕНИЙ</div>
+                <div class="clubs-info__text">Бассейн, спа-зона, тренажерный зал, групповые программы, детские секции </div>
               </li>
             </ul>
           </div>
@@ -171,12 +171,22 @@
           </div>
           <div class="page-club__header-item working-hours">
             <div class="working-hours__item">
-              <div class="subtitle">Режим работы<span></span>клуба</div>
-              <div class="working-hours__club"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
+              <div class="subtitle">Режим работы<span>
+                  
+                  клуба</span></div>
+              <div class="working-hours__club">
+                <div class="working-hours__club-label">ПН-ПТ<span>07:00–23:00</span></div>
+                <div class="working-hours__club-label">СБ-ВС<span>08:00–22:00</span></div>
+              </div>
             </div>
             <div class="working-hours__item">
-              <div class="subtitle">Режим работы<span></span> коммерческого отдела</div>
-              <div class="working-hours__managers"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
+              <div class="subtitle">Режим работы<span>
+                  
+                   коммерческого отдела</span></div>
+              <div class="working-hours__managers">
+                <div class="working-hours__club-label">ПН-ПТ<span>10:00–21:00</span></div>
+                <div class="working-hours__club-label">СБ-ВС<span>11:00–21:00</span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -208,7 +218,7 @@
                       </div>
                     </section>
           <form class="form form-book form needs-validation" novalidate>
-            <div class="title">Успей забронировать выгодно</div>
+            <div class="title">Успеть забронировать выгодно</div>
             <div class="form-book__wrapper">
               <label class="form-label" for="formService"><span class="form__label-name">Выберете услугу</span>
                 <select class="form-select form-control form-select" id="formService" name="formClub" aria-label="Выберете услугу" required>
@@ -321,41 +331,11 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div>
                       </div>
-                    </section>
-          <section class="subscription section">
-            <div class="subscription__title">
-              Подпишись на рассылку<span>Fitness House и будь в курсе выгодных предложений</span></div>
-            <form class="form form-subscription subscription__form">
-              <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-                <select class="form-select form-control" aria-label="выберете клуб" required>
-                  <option selected value="">Выберете клуб</option>
-                  <option value="На Гашека">На Гашека</option>
-                  <option value="На Северном">На Северном</option>
-                  <option value="На Гашека">На Гашека</option>
-                  <option value="На Северном">На Северном</option>
-                  <option value="На Гашека">На Гашека</option>
-                  <option value="На Гашека">На Гашека</option>
-                  <option value="На Гашека">На Гашека</option>
-                  <option value="На Гашека">На Гашека</option>
-                  <option value="На Гашека">На Гашека</option>
-                </select>
-              </label>
-              <label class="form-label"><span class="form__label-name">Ваш e-mail</span>
-                <input class="form-control" type="email" placeholder="address@mail.ru" autocomplete="off" required>
-              </label>
-              <div class="form-subscription__btns">
-                <div class="custom-form-check order-1" tabindex="0">
-                  <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-15" required tabindex="0">
-                  <label for="custom-form-check-15"><span>Даю согласие на обработку данных</span></label>
-                </div>
-                <button class="button button--yellow" type="submit">Подписаться</button>
-              </div>
-            </form>
-          </section><a class="link record record--club" href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">
+                    </section><a class="link record record--club" href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">
             <h3 class="record__title">Понравился клуб?</h3>
             <div class="record__subtitle">
-              Запишись на
-               <span> бесплатную экскурсию</span>
+              Записаться на
+              <span> бесплатную экскурсию</span>
             </div>
             <div class="link-text link-text--more"><span>записаться</span>
                         <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
@@ -363,6 +343,38 @@
                         </svg>
             </div></a>
         </div>
+        <section class="subscription section">
+          <div class="subscription__title">
+            Подписаться на рассылку
+             <span>выгодных предложений Fitness House</span>
+          </div>
+          <form class="form form-subscription subscription__form">
+            <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+              <select class="form-select form-control" aria-label="выберете клуб" required>
+                <option selected value="">Выберете клуб</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Северном">На Северном</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Северном">На Северном</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+              </select>
+            </label>
+            <label class="form-label"><span class="form__label-name">Ваш e-mail</span>
+              <input class="form-control" type="email" placeholder="address@mail.ru" autocomplete="off" required>
+            </label>
+            <div class="form-subscription__btns">
+              <div class="custom-form-check order-1" tabindex="0">
+                <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-15" required tabindex="0">
+                <label for="custom-form-check-15"><span>Даю согласие на обработку данных</span></label>
+              </div>
+              <button class="button button--yellow" type="submit">Подписаться</button>
+            </div>
+          </form>
+        </section>
       </div>
       <div class="container">
         <section class="news-wg">
