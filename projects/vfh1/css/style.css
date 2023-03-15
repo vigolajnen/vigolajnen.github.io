@@ -3794,6 +3794,7 @@ button[type=submit] {
 }
 .content--promo p {
   font-size: 20px;
+  line-height: 130%;
 }
 
 :root {
