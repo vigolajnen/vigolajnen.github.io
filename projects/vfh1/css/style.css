@@ -3722,7 +3722,7 @@ button[type=submit] {
   color: #42474d;
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 140%;
   margin-bottom: 30px;
 }
@@ -3778,6 +3778,12 @@ button[type=submit] {
 .content p {
   margin-bottom: 0;
   color: inherit;
+  font-size: 13px;
+}
+@media (min-width: 576px) {
+  .content p {
+    font-size: 15px;
+  }
 }
 .content a {
   color: #42474d;
@@ -3785,6 +3791,9 @@ button[type=submit] {
 }
 .content a:hover {
   color: #42474d;
+}
+.content--promo p {
+  font-size: 20px;
 }
 
 :root {
