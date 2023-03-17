@@ -120,81 +120,114 @@
                       </svg></a></li>
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
-    <section class="hero container">
-      <h1>У каждого есть<span>свой Фитнес Хаус:</span></h1>
-      <div class="hero__wrapper">
-        <div class="hero__clubs-info">
-          <ul class="clubs-info">
-            <li class="clubs-info__item">
-              <div class="clubs-info__club">15 ЛЕТ УСПЕШНОЙ РАБОТы</div>
-              <div class="clubs-info__text">Более 70 клубов по всей России</div>
-            </li>
-            <li class="clubs-info__item">
-              <div class="clubs-info__club">СИЛЬНЫЙ ТРЕНЕРСКИЙ СОСТАВ</div>
-              <div class="clubs-info__text">Профессиональные тренеры и спортсмены</div>
-            </li>
-            <li class="clubs-info__item">
-              <div class="clubs-info__club">КОМФОРТНЫЙ И ДОСТУПНЫЙ ФИТНЕС</div>
-              <div class="clubs-info__text">Все, что нужно для занятий спортом по приятной цене</div>
-            </li>
-            <li class="clubs-info__item">
-              <div class="clubs-info__club">СЕМЕЙНЫЕ ФИТНЕС-КЛУБЫ</div>
-              <div class="clubs-info__text">Спортивные секции для всей семьи</div>
-            </li>
-            <li class="clubs-info__item">
-              <div class="clubs-info__club">МНОГООБРАЗИЕ НАПРАВЛЕНИЙ:</div>
-              <div class="clubs-info__text">бассейн, спа-зона, тренажерный зал, групповые программы, детские секции </div>
-            </li>
-          </ul>
-        </div>
-        <div class="hero__pic">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/clubs/h-reg.webp">
-                <source media="(min-width: 768px)" srcset="img/clubs/hero-768.webp"><img src="img/clubs/hero-mob.jpg" alt="pic" width="324" height="217">
-              </picture>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-      <div class="map map--region">
-        <div class="map__ya" id="map"></div>
-      </div>
-    </div>
-    <div class="container">
-      <section class="subscription section">
-        <div class="subscription__title">
-          Подписаться на рассылку
-           <span>выгодных предложений Fitness House</span>
-        </div>
-        <form class="form form-subscription subscription__form">
-          <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-            <select class="form-select form-control" aria-label="выберете клуб" required>
-              <option selected value="">Выберете клуб</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Северном">На Северном</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Северном">На Северном</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Гашека">На Гашека</option>
-            </select>
-          </label>
-          <label class="form-label"><span class="form__label-name">Ваш e-mail</span>
-            <input class="form-control" type="email" placeholder="address@mail.ru" autocomplete="off" required>
-          </label>
-          <div class="form-subscription__btns">
-            <div class="custom-form-check order-1" tabindex="0">
-              <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-15" required tabindex="0">
-              <label for="custom-form-check-15"><span>Даю согласие на обработку данных</span></label>
-            </div>
-            <button class="button button--yellow" type="submit">Подписаться</button>
+    <main class="page-clubs page-clubs--region">
+      <section class="hero container">
+        <h1 class="hero__title">У каждого есть<span>свой Фитнес Хаус:</span></h1>
+        <div class="hero__wrapper">
+          <div class="hero__clubs-info">
+                  <ul class="clubs-info">
+                    <li class="clubs-info__item">
+                      <div class="clubs-info__club">15 ЛЕТ УСПЕШНОЙ РАБОТы</div>
+                      <div class="clubs-info__text">Более 70 клубов по всей России</div>
+                    </li>
+                    <li class="clubs-info__item">
+                      <div class="clubs-info__club">СИЛЬНЫЙ ТРЕНЕРСКИЙ СОСТАВ</div>
+                      <div class="clubs-info__text">Профессиональные тренеры и спортсмены</div>
+                    </li>
+                    <li class="clubs-info__item">
+                      <div class="clubs-info__club">СЕМЕЙНЫЕ ФИТНЕС-КЛУБЫ</div>
+                      <div class="clubs-info__text">Спортивные секции для всей семьи</div>
+                    </li>
+                    <li class="clubs-info__item">
+                      <div class="clubs-info__club">МНОГООБРАЗИЕ НАПРАВЛЕНИЙ</div>
+                      <div class="clubs-info__text">Бассейн, спа-зона, тренажерный зал, групповые программы, детские секции </div>
+                    </li>
+                  </ul>
           </div>
-        </form>
+          <div class="hero__pic">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/clubs/h-reg.webp">
+                  <source media="(min-width: 768px)" srcset="img/clubs/hero-768.webp"><img src="img/clubs/hero-mob.jpg" alt="pic" width="324" height="217">
+                </picture>
+          </div>
+        </div>
       </section>
-    </div>
-    <div class="main-clubs"></div>
+      <div class="container">
+        <div class="map map--region">
+          <div class="map__ya" id="map"></div>
+                  <div class="modal fade modal-preview-club" aria-hidden="true" tabindex="-1" id="modal-preview-club">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                    <svg class="icon" width="26" height="26">
+                                      <use xlink:href="img/sprite.svg#btn-close"></use>
+                                    </svg>
+                        </button>
+                        <div class="modal-body">
+                          <section class="club-preview">
+                            <div class="club-preview__header">
+                              <div class="club-preview__contacts">
+                                <div class="title">Fitness House на Северном</div>
+                                <div class="raiting">
+                                  <iframe src="https://yandex.ru/sprav/widget/rating-badge/170179942434" width="150" height="50" frameborder="0"></iframe>
+                                </div>
+                                <div class="club-preview__address">Северный пр., 40А, 1 этаж</div>
+                              </div>
+                              <div class="club-preview__working working-hours">
+                                <div class="working-hours__club"><span>ПН-ПТ 07:00–23:00</span><span>  СБ-ВС 08:00–22:00</span></div>
+                              </div>
+                            </div>
+                            <div class="club-preview__body">
+                              <div class="club-preview__pic"><img src="img/club/preview/1.jpg" width="666" height="228px" alt="фитнес-клуб с большим бассейном"></div>
+                              <div class="club-preview__text">Светлый и просторный фитнес-клуб с большим бассейном для взрослых и детским бассейном. В клубе предусмотрены комфортные условия для семейного отдыха.</div>
+                            </div>
+                            <div class="club-preview__footer"><a class="link-text link-text--more" href="#" data-bs-toggle="modal" data-toggle="modal"><span>Подобрать абонемент</span>
+                                          <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                            <use xlink:href="img/sprite.svg#arrow"></use>
+                                          </svg></a><a class="link-text link-text--more" href="club.html"><span>О клубе</span>
+                                          <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                            <use xlink:href="img/sprite.svg#arrow"></use>
+                                          </svg></a></div>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <section class="subscription section">
+          <div class="subscription__title">
+            Подписаться на рассылку
+             <span>выгодных предложений Fitness House</span>
+          </div>
+          <form class="form form-subscription subscription__form">
+            <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+              <select class="form-select form-control" aria-label="выберете клуб" required>
+                <option selected value="">Выберете клуб</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Северном">На Северном</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Северном">На Северном</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+              </select>
+            </label>
+            <label class="form-label"><span class="form__label-name">Ваш e-mail</span>
+              <input class="form-control" type="email" placeholder="address@mail.ru" autocomplete="off" required>
+            </label>
+            <div class="form-subscription__btns">
+              <div class="custom-form-check order-1" tabindex="0">
+                <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-15" required tabindex="0">
+                <label for="custom-form-check-15"><span>Даю согласие на обработку данных</span></label>
+              </div>
+              <button class="button button--yellow" type="submit">Подписаться</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
@@ -263,6 +296,6 @@
     </footer>
     <script src="js/libs-map.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=5bc879da-d208-4e6a-bfb8-ab4b7a20802a&amp;lang=ru_RU" type="text/javascript"></script>
-    <script src="js/script-clubs-1x.min.js" type="module"></script>
+    <script src="js/script-region-1.min.js" type="module"></script>
   </body>
 </html>

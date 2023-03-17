@@ -106,7 +106,7 @@
                       <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
                         <use xlink:href="img/sprite.svg#sale"></use>
                       </svg></a></li>
-        <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link nav-menu__link active" href="clubs.html"><span>Клубы</span>
+        <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link nav-menu__link" href="clubs.html"><span>Клубы</span>
                       <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
                         <use xlink:href="img/sprite.svg#city"></use>
                       </svg></a></li>
@@ -121,46 +121,49 @@
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
     <main class="page-club main">
-      <section class="hero container d-none d-xl-block">
-        <h1>
-          У каждого
-          есть
-          <span> свой Фитнес Хаус:</span>
-        </h1>
-        <div class="hero__wrapper">
-          <div class="hero__clubs-info">
-            <ul class="clubs-info">
-              <li class="clubs-info__item">
-                <div class="clubs-info__club">15 ЛЕТ УСПЕШНОЙ РАБОТы</div>
-                <div class="clubs-info__text">Более 70 клубов по всей России</div>
-              </li>
-              <li class="clubs-info__item">
-                <div class="clubs-info__club">СИЛЬНЫЙ ТРЕНЕРСКИЙ СОСТАВ</div>
-                <div class="clubs-info__text">Профессиональные тренеры и спортсмены</div>
-              </li>
-              <li class="clubs-info__item">
-                <div class="clubs-info__club">СЕМЕЙНЫЕ ФИТНЕС-КЛУБЫ</div>
-                <div class="clubs-info__text">Спортивные секции для всей семьи</div>
-              </li>
-              <li class="clubs-info__item">
-                <div class="clubs-info__club">МНОГООБРАЗИЕ НАПРАВЛЕНИЙ</div>
-                <div class="clubs-info__text">Бассейн, спа-зона, тренажерный зал, групповые программы, детские секции </div>
-              </li>
-            </ul>
+      <div class="d-none d-xl-block">
+        <section class="hero container">
+          <h1 class="hero__title">У каждого есть<span>свой Фитнес Хаус:</span></h1>
+          <div class="hero__wrapper">
+            <div class="hero__clubs-info">
+                      <ul class="clubs-info">
+                        <li class="clubs-info__item">
+                          <div class="clubs-info__club">15 ЛЕТ УСПЕШНОЙ РАБОТы</div>
+                          <div class="clubs-info__text">Более 70 клубов по всей России</div>
+                        </li>
+                        <li class="clubs-info__item">
+                          <div class="clubs-info__club">СИЛЬНЫЙ ТРЕНЕРСКИЙ СОСТАВ</div>
+                          <div class="clubs-info__text">Профессиональные тренеры и спортсмены</div>
+                        </li>
+                        <li class="clubs-info__item">
+                          <div class="clubs-info__club">СЕМЕЙНЫЕ ФИТНЕС-КЛУБЫ</div>
+                          <div class="clubs-info__text">Спортивные секции для всей семьи</div>
+                        </li>
+                        <li class="clubs-info__item">
+                          <div class="clubs-info__club">МНОГООБРАЗИЕ НАПРАВЛЕНИЙ</div>
+                          <div class="clubs-info__text">Бассейн, спа-зона, тренажерный зал, групповые программы, детские секции </div>
+                        </li>
+                      </ul>
+            </div>
+            <div class="hero__pic">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/clubs/h-reg.webp">
+                    <source media="(min-width: 768px)" srcset="img/clubs/hero-768.webp"><img src="img/clubs/hero-mob.jpg" alt="pic" width="324" height="217">
+                  </picture>
+            </div>
           </div>
-          <div class="hero__pic">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/clubs/h-reg.webp">
-                  <source media="(min-width: 768px)" srcset="img/clubs/hero-768.webp"><img src="img/clubs/hero-mob.jpg" alt="pic" width="324" height="217">
-                </picture>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <div class="page-club__header container">
-        <div class="title">Fitness House в Архангельске</div>
+        <div class="page-club__title d-none d-lg-block">Fitness House в Архангельске</div>
         <div class="page-club__wrapper">
           <div class="page-club__header-item">
-            <div class="title">Fitness House<span>в Архангельске</span></div>
+            <div class="page-club__title-inner">
+              <div class="d-lg-none">
+                Fitness House
+                <span>в Архангельске</span>
+              </div>
+            </div>
             <div class="raiting">
               <iframe src="https://yandex.ru/sprav/widget/rating-badge/170179942434" width="150" height="50" frameborder="0"></iframe>
             </div>
@@ -246,8 +249,10 @@
         </div>
       </div>
       <div class="container">
-        <div class="content">
-          <p><span class="d-block d-sm-inline"><strong>Фитнес Хаус</strong></span><span><strong>на Северном</strong></span>  — вас приятно удивит просторный водный комплекс, где можно плавать в свое удовольствие или поучаствовать в оздоровительном занятии аквааэробикой.</p>
+        <div class="content content--promo">
+          <p><span class="d-block d-sm-inline"><strong>Фитнес Хаус</strong></span><span>
+              
+              <strong>на Московском</strong></span>  — вас приятно удивит просторный водный комплекс, где можно плавать в свое удовольствие или поучаствовать в оздоровительном занятии аквааэробикой.</p>
           <p><strong>Тренажерный зал</strong> оборудован современными и разнообразными тренажерами фирмы Technogym. Для вас в неограниченном доступе зона свободных весов, тренажеры для силовых и кардио-занятий.</p>
           <p><strong>На групповых тренировках</strong> с профессиональными инструкторами вы сможете развить пластику движений и растяжку, скорректировать осанку и фигуру, повысить тонус мышц.
              Мы заботимся о том, чтобы ваши тренировки проходили с комфортом. Поэтому все помещения оснащены хорошей вентиляцией, а в летний период работают кондиционеры.
