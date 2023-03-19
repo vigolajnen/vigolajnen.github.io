@@ -123,7 +123,10 @@
     <main class="page-club main">
       <div class="d-none d-xl-block">
         <section class="hero container">
-          <h1 class="hero__title">У каждого есть<span>свой Фитнес Хаус:</span></h1>
+          <h1 class="hero__title">
+            У каждого есть
+            <span>свой Фитнес Хаус:</span>
+          </h1>
           <div class="hero__wrapper">
             <div class="hero__clubs-info">
                       <ul class="clubs-info">
@@ -313,7 +316,7 @@
       </div>
       <div class="page-club__record container">
         <div class="page-club__record-inner">
-                    <section class="slider slider-content">
+                    <section class="slider slider--content">
                       <div class="swiper-container" id="slider-content">
                         <div class="swiper-wrapper"><a class="swiper-slide" href="#11">
                             <picture>
@@ -380,6 +383,34 @@
             </div>
           </form>
         </section>
+        <section class="presale">
+          <ul class="presale__list">
+            <li class="presale__item">
+              <div class="presale__opening-date">
+                <div class="presale__date-inner">
+                  <div class="presale__date-text">
+                    Открытие
+                    <span>4й квартал 2023г.</span>
+                  </div>
+                            <svg class="icon" width="17" height="21" viewBox="0 0 17 21">
+                              <use xlink:href="img/sprite.svg#hours-1"></use>
+                            </svg>
+                </div>
+              </div>
+              <div class="presale__item-club">
+                <div class="presale__club-name">Новый клуб на Богословской</div>
+                <div class="presale__club-address">пр. Маршала Блюхера, д. 12, лит. Б.</div>
+              </div>
+              <div class="presale__links"><a class="link-icon link-icon--more link-icon--bold" href="#modalPresale" data-bs-toggle="modal" data-toggle="modal"><span>Забронировать выгодно</span>
+                            <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                              <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg></a><a class="link-icon link-icon--more" href="club.html"><span>О клубе</span>
+                            <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                              <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg></a></div>
+            </li>
+          </ul>
+        </section>
       </div>
       <div class="container">
         <section class="news-wg">
@@ -406,11 +437,56 @@
                 <p>01 и 02 января — клубы не работают.с 03 по 08 января — по режиму выходного дня — с 08:00 до 22:00 часов.</p>
               </div>
             </li>
-          </ul><a class="link-text link-text--more" href="#"><span>Показать еще</span>
+          </ul><a class="news-wg__link link-icon link-icon--more link-icon--lower" href="#"><span>Показать еще</span>
                       <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
                         <use xlink:href="img/sprite.svg#arrow"></use>
                       </svg></a>
         </section>
+      </div>
+      <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalPresale">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content" style="--pic:url('../img/forms/swimming-pool.jpg')">
+            <div class="modal-header">
+              <h5 class="title modal-title">Подобрать абонемент</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                          <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                            <use xlink:href="img/sprite.svg#btn-close"></use>
+                          </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="form needs-validation" novalidate>
+                <label class="form-label" for="formName"><span class="form__label-name">Введите имя</span>
+                  <input class="form-control" type="text" id="formName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                </label>
+                <label class="form-label" for="formPhone"><span class="form__label-name">Введите номер телефона</span>
+                  <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                </label>
+                <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+                  <select class="form-select" size="1" name="club" aria-label="клуб" required>
+                    <option selected value="">Ваш клуб</option>
+                    <option value="На Гашека">На Гашека</option>
+                    <option value="На Северном">На Северном</option>
+                    <option value="На Заречной">На Заречной</option>
+                    <option value="На Камышовой">На Камышовой</option>
+                    <option value="На Лесной">На Лесной</option>
+                    <option value="На Выборгской">На Выборгской</option>
+                    <option value="На Большевиков">На Большевиков</option>
+                    <option value="На Ладожской">На Ладожской</option>
+                    <option value="На Левашовском">На Левашовском</option>
+                  </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                </label>
+                <div class="form__btns">
+                  <div class="custom-form-check order-1" tabindex="0">
+                    <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-5" required tabindex="0">
+                    <label for="custom-form-check-5"><span>Даю согласие на обработку данных</span></label>
+                  </div>
+                  <button class="button button--red" type="submit">Подобрать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
             <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
               <div class="modal-dialog modal-lg modal-dialog-centered">
