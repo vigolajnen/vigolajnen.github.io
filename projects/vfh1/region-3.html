@@ -156,7 +156,7 @@
         </div>
       </section>
       <div class="container">
-        <div class="slider-scroll" id="slider-scroll">
+        <div id="scroll-cards">
           <div class="list-card list-card--three">
             <div class="list-card__item">
               <section class="card-club">
@@ -311,6 +311,72 @@
             </div>
           </form>
         </section>
+        <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalPresale">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="--pic:url('../img/forms/swimming-pool.jpg')">
+              <div class="modal-header">
+                <h5 class="title modal-title">Подобрать абонемент</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                            <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                              <use xlink:href="img/sprite.svg#btn-close"></use>
+                            </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="form needs-validation" novalidate>
+                  <label class="form-label" for="formName"><span class="form__label-name">Введите имя</span>
+                    <input class="form-control" type="text" id="formName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form-label" for="formPhone"><span class="form__label-name">Введите номер телефона</span>
+                    <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+                    <select class="form-select" size="1" name="club" aria-label="клуб" required>
+                      <option selected value="">Ваш клуб</option>
+                      <option value="На Гашека">На Гашека</option>
+                      <option value="На Северном">На Северном</option>
+                      <option value="На Заречной">На Заречной</option>
+                      <option value="На Камышовой">На Камышовой</option>
+                      <option value="На Лесной">На Лесной</option>
+                      <option value="На Выборгской">На Выборгской</option>
+                      <option value="На Большевиков">На Большевиков</option>
+                      <option value="На Ладожской">На Ладожской</option>
+                      <option value="На Левашовском">На Левашовском</option>
+                    </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <div class="form__btns">
+                    <div class="custom-form-check order-1" tabindex="0">
+                      <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-5" required tabindex="0">
+                      <label for="custom-form-check-5"><span>Даю согласие на обработку данных</span></label>
+                    </div>
+                    <button class="button button--red" type="submit">Подобрать</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="modal fade modal--bg-md modal-submit-form" aria-hidden="true" tabindex="-1" id="modal-submit-form">
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
+                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                  <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                    <use xlink:href="img/sprite.svg#btn-close"></use>
+                                  </svg>
+                      </button>
+                      <div class="modal-body">
+                        <div class="form-message-modal">
+                          <div class="form-message-modal__wrapper">
+                                      <svg class="icon" width="36" height="36" viewBox="0 0 36 36">
+                                        <use xlink:href="img/sprite.svg#ok"></use>
+                                      </svg>
+                            <div class="form-message-modal__title">Заявка отправлена в клуб!<span>Ваш менеджер перезвонит в ближайшее время</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
       </div>
     </main>
     <footer class="page-footer">
@@ -381,6 +447,17 @@
     </footer>
     <script src="js/libs-map.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=5bc879da-d208-4e6a-bfb8-ab4b7a20802a&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+    <script>
+      if (window.matchMedia('(min-width: 576px)').matches) {
+        $('#scroll-cards').mCustomScrollbar({
+          axis: 'x',
+          theme: 'dark-thin',
+          autoExpandScrollbar: true,
+          advanced: { autoExpandHorizontalScroll: true },
+        });
+      }
+    </script>
     <script src="js/script-region-3.min.js" type="module"></script>
   </body>
 </html>
