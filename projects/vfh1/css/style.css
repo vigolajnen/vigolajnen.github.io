@@ -6413,7 +6413,7 @@ yx-axis
 @media (min-width: 1200px) {
   .timer {
     justify-content: space-between;
-    padding: 1.6rem 6rem 1.5rem;
+    padding: 1.6rem 5rem 1.5rem;
   }
 }
 @media (min-width: 1400px) {
@@ -6526,7 +6526,19 @@ yx-axis
     height: 115px;
   }
 }
+@media (min-width: 800px) {
+  .timer__item {
+    width: 15vw;
+    height: 15vw;
+  }
+}
 @media (min-width: 992px) {
+  .timer__item {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 1200px) {
   .timer__item {
     width: 120px;
     height: 120px;
