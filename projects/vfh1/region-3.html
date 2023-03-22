@@ -461,14 +461,24 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=5bc879da-d208-4e6a-bfb8-ab4b7a20802a&amp;lang=ru_RU" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
     <script>
+      window.addEventListener('resize', function(e) {
+        if (window.matchMedia('(min-width: 576px)').matches) {
+          $('#scroll-cards').mCustomScrollbar({
+            axis: 'x',
+            theme: 'dark-thin',
+            autoExpandScrollbar: true,
+            advanced: { autoExpandHorizontalScroll: true },
+          });
+        }
+      });
       if (window.matchMedia('(min-width: 576px)').matches) {
-        $('#scroll-cards').mCustomScrollbar({
-          axis: 'x',
-          theme: 'dark-thin',
-          autoExpandScrollbar: true,
-          advanced: { autoExpandHorizontalScroll: true },
-        });
-      }
+          $('#scroll-cards').mCustomScrollbar({
+            axis: 'x',
+            theme: 'dark-thin',
+            autoExpandScrollbar: true,
+            advanced: { autoExpandHorizontalScroll: true },
+          });
+        }
     </script>
     <script src="js/script-region-3.min.js" type="module"></script>
   </body>

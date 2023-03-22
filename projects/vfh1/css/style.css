@@ -7473,12 +7473,12 @@ yx-axis
   right: 15px;
   top: 15px;
   z-index: 10000;
-  width: 15px;
+  width: 23px;
+  height: 23px;
   flex-basis: 15px;
   flex-grow: 0;
   flex-shrink: 0;
   padding: 3px;
-  height: 15px;
   cursor: pointer;
   background: url("../img/icons/close.svg") 50% no-repeat;
 }
@@ -8172,6 +8172,7 @@ yx-axis
 @media (min-width: 576px) {
   #scroll-cards .list-card {
     padding-top: 5px;
+    flex-wrap: nowrap;
   }
 }
 @media (min-width: 992px) {
@@ -8279,6 +8280,7 @@ yx-axis
   }
 }
 .card-club__address {
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -8445,11 +8447,6 @@ yx-axis
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-  }
-}
-@media (min-width: 768px) {
-  .card-club--four .card-club__address {
-    min-height: 47px;
   }
 }
 @media (min-width: 992px) {
@@ -9657,6 +9654,9 @@ yx-axis
     width: auto;
     min-width: auto;
   }
+}
+.club-preview__address {
+  width: 100%;
 }
 @media (min-width: 992px) {
   .club-preview__address {
