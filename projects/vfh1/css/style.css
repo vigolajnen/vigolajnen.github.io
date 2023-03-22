@@ -7404,7 +7404,7 @@ yx-axis
 }
 @media (min-width: 992px) {
   .map--region {
-    margin-top: 27px;
+    margin-top: 44px;
     margin-bottom: 54px;
   }
 }
@@ -7887,6 +7887,11 @@ yx-axis
   height: 1%;
   background-color: #42474d;
 }
+@media (min-width: 992px) {
+  .presale__item::after {
+    height: 1.25%;
+  }
+}
 @media (min-width: 576px) {
   .presale__item {
     padding: 25px 0;
@@ -8097,6 +8102,8 @@ yx-axis
 @media (min-width: 992px) {
   .list-card {
     gap: 40px;
+    margin-top: 54px;
+    margin-bottom: 44px;
   }
 }
 .list-card--three {
@@ -8107,14 +8114,9 @@ yx-axis
 }
 @media (min-width: 992px) {
   .list-card--three {
-    gap: 20px;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 1200px) {
-  .list-card--three {
     grid-auto-columns: minmax(288px, 400px);
     grid-auto-flow: column;
+    gap: 20px;
   }
 }
 @media (min-width: 576px) {
@@ -8124,41 +8126,25 @@ yx-axis
 }
 @media (min-width: 992px) {
   .list-card--three .list-card__item {
-    width: 400px;
     max-width: 400px;
   }
 }
-@media (min-width: 992px) {
-  .list-card--three .card-club__header {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-}
-.list-card--three .card-club__footer {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-@media (min-width: 992px) {
-  .list-card--three .card-club__footer {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-}
 .list-card--four {
-  gap: 22px;
-  grid-auto-columns: minmax(288px, 300px);
-  grid-auto-flow: column;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .list-card--four {
+    flex-direction: row;
+    gap: 22px;
+    grid-auto-columns: minmax(288px, 300px);
+    grid-auto-flow: column;
+  }
 }
 @media (min-width: 576px) {
   .list-card--four .list-card__item {
     max-width: 300px;
   }
-}
-.list-card--four .card-club__footer {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
 }
 .list-card__item {
   width: 100%;
@@ -8179,11 +8165,23 @@ yx-axis
     width: 100%;
   }
 }
+@media (min-width: 576px) {
+  #scroll-cards .list-card {
+    padding-top: 5px;
+  }
+}
+@media (min-width: 992px) {
+  #scroll-cards .list-card {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 
 .card-club {
   border-radius: 22px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   width: 100%;
+  height: 100%;
   min-width: 288px;
   max-width: 620px;
   padding-top: 25px;
@@ -8202,8 +8200,20 @@ yx-axis
 }
 .card-club__header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .card-club__header {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .card-club__header {
+    display: grid;
+    grid-template-columns: minmax(1fr, 346px) minmax(1fr, 170px);
+  }
 }
 .card-club__header, .card-club__footer {
   padding-left: 18px;
@@ -8234,6 +8244,37 @@ yx-axis
   font-size: 20px;
   text-transform: uppercase;
 }
+.card-club__title span {
+  display: inline-block;
+  white-space: nowrap;
+}
+@media (min-width: 576px) {
+  .card-club__title span {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .card-club__title span {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  .card-club__title-and-raiting {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+@media (min-width: 992px) {
+  .card-club__working {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: auto;
+  }
+}
 .card-club__address {
   font-style: normal;
   font-weight: 400;
@@ -8249,11 +8290,14 @@ yx-axis
 @media (min-width: 992px) {
   .card-club__address {
     font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
 .card-club__working.working-hours {
   display: none;
-  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   .card-club__working.working-hours {
@@ -8314,6 +8358,107 @@ yx-axis
 @media (min-width: 769px) {
   .card-club__footer .link-icon:first-child {
     margin-bottom: 0;
+  }
+}
+.card-club--three {
+  padding: 25px 0;
+}
+@media (min-width: 992px) {
+  .card-club--three {
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .card-club--three .card-club__header, .card-club--three .card-club__footer {
+    padding: 0 25px;
+  }
+}
+@media (min-width: 769px) {
+  .card-club--three .card-club__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .card-club--three .card-club__title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .card-club--three .card-club__address {
+    min-height: 47px;
+  }
+}
+@media (min-width: 992px) {
+  .card-club--three .card-club__address {
+    margin-bottom: 0;
+    font-size: 18px;
+    min-height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .card-club--three .card-club__pic {
+    height: 174px;
+  }
+}
+.card-club--four {
+  padding: 25px 0;
+}
+@media (min-width: 992px) {
+  .card-club--four .card-club__header, .card-club--four .card-club__footer {
+    padding: 0 25px;
+  }
+}
+@media (min-width: 992px) {
+  .card-club--four .card-club__header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.card-club--four .card-club__title span {
+  display: inline-block;
+}
+@media (min-width: 576px) {
+  .card-club--four .card-club__title span {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .card-club--four .card-club__title-and-raiting {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+.card-club--four .card-club__working {
+  margin-right: auto;
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .card-club--four .card-club__working {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+@media (min-width: 768px) {
+  .card-club--four .card-club__address {
+    min-height: 47px;
+  }
+}
+@media (min-width: 992px) {
+  .card-club--four .card-club__address {
+    font-size: 18px;
+    min-height: auto;
+  }
+}
+@media (min-width: 576px) {
+  .card-club--four .card-club__footer {
+    gap: 14px;
+    flex-direction: row;
   }
 }
 
@@ -9326,6 +9471,9 @@ yx-axis
     height: 100%;
     transform: translateY(-50%);
   }
+}
+.working-hours__club-label {
+  white-space: nowrap;
 }
 .working-hours__club-label span {
   display: inline-block;
