@@ -7480,8 +7480,7 @@ yx-axis
   padding: 3px;
   height: 15px;
   cursor: pointer;
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTQgLjdsLS43LS43TDcgNi4zLjcgMCAwIC43IDYuMyA3IDAgMTMuM2wuNy43TDcgNy43bDYuMyA2LjMuNy0uN0w3LjcgN3oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==") 50% no-repeat;
-  opacity: 0.3;
+  background: url("../img/icons/close.svg") 50% no-repeat;
 }
 .map .content {
   margin: 0;
@@ -8090,6 +8089,11 @@ yx-axis
 }
 @media (min-width: 576px) {
   .list-card {
+    gap: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .list-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -8153,7 +8157,7 @@ yx-axis
 .list-card__item:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .list-card__item {
     margin-bottom: 0;
   }
@@ -8495,6 +8499,11 @@ yx-axis
 }
 .modal-preview-club .club-preview {
   padding-bottom: 22px;
+}
+@media (max-width: 576px) {
+  .modal-preview-club .club-preview .title {
+    padding-right: 50px;
+  }
 }
 .modal-preview-club .club-preview .title span {
   display: inline-block;
@@ -9651,6 +9660,7 @@ yx-axis
 }
 @media (min-width: 992px) {
   .club-preview__address {
+    font-size: 20px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
