@@ -8461,6 +8461,111 @@ yx-axis
     flex-direction: row;
   }
 }
+.card-club--map {
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+@media (min-width: 576px) {
+  .card-club--map {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .card-club--map {
+    padding-top: 43px;
+    padding-bottom: 32px;
+  }
+}
+.card-club--map .card-club__text {
+  display: none;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
+@media (min-width: 576px) {
+  .card-club--map .card-club__text {
+    display: flex;
+    padding: 0 35px;
+    margin-bottom: 25px;
+  }
+}
+.card-club--map .card-club__header {
+  width: 100%;
+  padding: 0 35px;
+}
+.card-club--map .card-club__title span {
+  display: inline-block;
+}
+.card-club--map .card-club__pic {
+  order: 2;
+  margin-bottom: 0;
+  display: block;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .card-club--map .card-club__pic {
+    order: 0;
+    margin-bottom: 25px;
+  }
+}
+.card-club--map .link-icon {
+  text-decoration: none;
+}
+.card-club--map .card-club__footer {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0 30px 0 35px;
+}
+@media (max-width: 576px) {
+  .card-club--map .card-club__footer .link-icon {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    margin-bottom: 0;
+    padding: 10px 14px 10px 24px;
+    border-radius: 16px;
+  }
+  .card-club--map .card-club__footer .link-icon:first-child {
+    padding-right: 24px;
+    color: #42474d;
+    border: 1px solid #42474d;
+  }
+  .card-club--map .card-club__footer .link-icon:last-child {
+    color: #ffffff;
+    background-color: #cd4141;
+  }
+}
+@media (min-width: 576px) {
+  .card-club--map .card-club__footer {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.card-club--map .card-club__working.working-hours {
+  display: flex;
+  margin-bottom: 25px;
+}
+@media (min-width: 576px) {
+  .card-club--map .card-club__working.working-hours {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .card-club--map .card-club__working.working-hours {
+    display: flex;
+  }
+}
 
 .modal-preview-club .modal-dialog {
   margin: 0 auto;
@@ -8470,7 +8575,12 @@ yx-axis
   background-color: #f6f6f6;
 }
 .modal-preview-club .modal-body {
-  padding: 0;
+  padding: 21px 0;
+}
+@media (min-width: 576px) {
+  .modal-preview-club .modal-body {
+    padding: 32px 0;
+  }
 }
 .modal-preview-club .club-preview__header {
   padding: 10px 30px;
@@ -9550,448 +9660,6 @@ yx-axis
 }
 .working-hours__managers::before {
   background-image: url("../img/icons/man.svg");
-}
-
-.club-preview {
-  max-width: 645px;
-  width: 100%;
-  padding: 15px 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-@media (min-width: 768px) {
-  .club-preview {
-    right: 20px;
-  }
-}
-.club-preview__header {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  width: 100%;
-}
-@media (min-width: 576px) {
-  .club-preview__header {
-    padding: 25px 35px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview__header {
-    display: grid;
-    grid-template-columns: minmax(346px, 1fr) minmax(170px, 1fr);
-  }
-}
-.club-preview__body {
-  width: 100%;
-  order: 1;
-}
-@media (min-width: 768px) {
-  .club-preview__body {
-    order: 0;
-  }
-}
-.club-preview__text {
-  padding: 25px 20px 15px 40px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 140%;
-}
-@media (max-width: 576px) {
-  .club-preview__text {
-    display: none;
-  }
-}
-.club-preview__contacts {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 130%;
-}
-@media (min-width: 992px) {
-  .club-preview__contacts {
-    padding-bottom: 10px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-}
-.club-preview .title {
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 130%;
-  text-transform: uppercase;
-}
-.club-preview .title span {
-  display: block;
-  white-space: nowrap;
-}
-@media (min-width: 768px) {
-  .club-preview .title span {
-    display: inline-block;
-    padding-left: 0.5rem;
-  }
-}
-.club-preview__working {
-  display: flex;
-  padding-top: 10px;
-}
-@media (min-width: 576px) {
-  .club-preview__working {
-    display: none;
-    padding-top: 0;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview__working {
-    display: flex;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-left: auto;
-    width: auto;
-    min-width: auto;
-  }
-}
-.club-preview__address {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .club-preview__address {
-    font-size: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-.club-preview__footer {
-  width: 100%;
-  padding: 0 15px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-@media (min-width: 576px) {
-  .club-preview__footer {
-    padding: 10px 35px 17px;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview__footer {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-.club-preview__footer .link-text {
-  text-transform: initial;
-  padding: 0.5rem 0;
-  text-decoration: none;
-}
-@media (max-width: 576px) {
-  .club-preview__footer .link-text {
-    margin-left: 0;
-    margin-right: auto;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    width: auto;
-    border: 1px solid;
-    border-radius: 16px;
-    border-color: #42474d;
-  }
-  .club-preview__footer .link-text:first-child {
-    flex-grow: 1;
-    background-color: #cd4141;
-    color: #ffffff;
-    border-color: #cd4141;
-  }
-}
-@media (min-width: 576px) {
-  .club-preview__footer .link-text {
-    max-width: 50%;
-  }
-  .club-preview__footer .link-text:first-child {
-    max-width: 60%;
-    font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-    font-weight: 700;
-  }
-}
-@media (min-width: 769px) {
-  .club-preview__footer .link-text {
-    max-width: 100%;
-  }
-}
-.club-preview__footer .link-text .icon {
-  margin-left: 0.3rem;
-  height: 5px;
-}
-.club-preview__pic {
-  display: block;
-  height: 228px;
-  overflow: hidden;
-}
-.club-preview__pic img {
-  width: 100%;
-  height: 100%;
-}
-.club-preview--result {
-  padding: 0;
-  max-width: 670px;
-  width: 100%;
-  border-radius: 22px;
-  overflow: hidden;
-}
-@media (min-width: 576px) {
-  .club-preview--result {
-    max-width: 443px;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview--result {
-    max-width: 670px;
-  }
-}
-.club-preview--result .club-preview__header {
-  padding: 15px;
-}
-@media (min-width: 576px) {
-  .club-preview--result .club-preview__header {
-    padding: 10px 15px 10px 25px;
-  }
-}
-@media (max-width: 768px) {
-  .club-preview--result .club-preview__header .title {
-    font-size: 17px;
-    padding-bottom: 0.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview--result .club-preview__header .title {
-    font-size: 19px;
-  }
-}
-.club-preview--result .club-preview__header .raiting {
-  display: none;
-}
-@media (min-width: 576px) {
-  .club-preview--result .club-preview__header .raiting {
-    display: block;
-  }
-}
-.club-preview--result .club-preview__header .working-hours {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.club-preview--result .club-preview__info {
-  width: 100%;
-}
-@media (min-width: 576px) {
-  .club-preview--result .club-preview__info {
-    width: 90%;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview--result .club-preview__info {
-    width: 65%;
-  }
-}
-.club-preview--result .club-preview__contacts {
-  max-width: 100%;
-  width: 100%;
-}
-.club-preview--result .club-preview__links {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 1rem 0;
-}
-@media (min-width: 576px) {
-  .club-preview--result .club-preview__links {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 768px) {
-  .club-preview--result .club-preview__links {
-    padding: 0;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview--result .club-preview__links {
-    width: 50%;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 2rem 0;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview--result .club-preview__links {
-    width: 35%;
-  }
-}
-.club-preview--result .club-preview__links .link-text {
-  text-transform: initial;
-  padding: 0.5rem 0;
-}
-@media (max-width: 576px) {
-  .club-preview--result .club-preview__links .link-text {
-    margin-left: 0;
-    margin-right: auto;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    width: auto;
-    border: 1px solid;
-    border-radius: 16px;
-    border-color: #42474d;
-  }
-  .club-preview--result .club-preview__links .link-text:first-child {
-    background-color: #cd4141;
-    color: #ffffff;
-    border-color: #cd4141;
-  }
-}
-@media (min-width: 576px) {
-  .club-preview--result .club-preview__links .link-text {
-    max-width: 50%;
-  }
-  .club-preview--result .club-preview__links .link-text:first-child {
-    max-width: 60%;
-    flex-grow: 1;
-    font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-    font-weight: 700;
-  }
-}
-@media (min-width: 769px) {
-  .club-preview--result .club-preview__links .link-text {
-    max-width: 100%;
-    padding: 0;
-  }
-  .club-preview--result .club-preview__links .link-text:first-child {
-    max-width: 100%;
-  }
-}
-.club-preview--result .club-preview__links .link-text .icon {
-  margin-left: 0.3rem;
-  height: 5px;
-}
-.club-preview--result .club-preview__body {
-  width: 100%;
-}
-.club-preview--result .club-preview__pic {
-  display: none;
-}
-@media (min-width: 576px) {
-  .club-preview--result .club-preview__pic {
-    display: block;
-    height: 120px;
-  }
-}
-.club-preview--result .club-preview__pic img {
-  height: 100%;
-}
-.club-preview--result .club-preview__working {
-  padding-top: 0.5rem;
-  width: 100%;
-  max-width: 100%;
-}
-@media (min-width: 576px) {
-  .club-preview--result .club-preview__working {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
-  .club-preview--result .club-preview__working {
-    display: flex;
-  }
-}
-@media (min-width: 576px) {
-  .club-preview--result .club-preview__working .working-hours__club {
-    flex-direction: row;
-  }
-  .club-preview--result .club-preview__working .working-hours__club::before {
-    top: 0;
-  }
-}
-.club-preview--result .club-preview__working .working-hours__club span:not(:last-child) {
-  margin-right: 0.25rem;
-}
-.club-preview--slide .club-preview__header {
-  padding: 15px;
-}
-.club-preview--slide .club-preview__contacts {
-  width: 100%;
-  max-width: 100%;
-}
-.club-preview--slide .club-preview__address {
-  width: 100%;
-  max-width: 100%;
-}
-.club-preview--slide .club-preview__working {
-  padding-top: 1rem;
-  width: 100%;
-  max-width: 100%;
-}
-.club-preview--slide .club-preview__pic {
-  width: 100%;
-  min-height: 175px;
-  overflow: hidden;
-}
-.club-preview--slide .club-preview__pic img {
-  height: 100%;
-  min-height: 175px;
-}
-.club-preview--slide .club-preview__footer {
-  padding: 15px;
-}
-.club-preview--slide .club-preview__footer .link-text:first-child {
-  max-width: 100%;
-  order: 1;
-}
-.club-preview--list .club-preview__header {
-  padding: 15px;
-}
-.club-preview--list .club-preview__contacts {
-  width: 100%;
-  max-width: 100%;
-}
-.club-preview--list .club-preview__address {
-  width: 100%;
-  max-width: 100%;
-}
-.club-preview--list .club-preview__working {
-  padding-top: 1rem;
-  width: 100%;
-  max-width: 100%;
-}
-.club-preview--list .club-preview__pic {
-  width: 100%;
-  min-height: 175px;
-  overflow: hidden;
-}
-.club-preview--list .club-preview__pic img {
-  height: 100%;
-  min-height: 175px;
-}
-.club-preview--list .club-preview__footer {
-  padding: 15px;
-  flex-direction: column-reverse;
-  order: 1;
-  width: 100%;
-  max-width: 100%;
-}
-.club-preview--list .club-preview__footer .link-text {
-  max-width: 100%;
 }
 
 .club-balloon {
