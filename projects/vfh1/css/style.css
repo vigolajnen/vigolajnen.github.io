@@ -9731,6 +9731,14 @@ yx-axis
   margin-left: 0.3rem;
   height: 5px;
 }
+.club-preview__pic {
+  display: block;
+  height: 228px;
+  overflow: hidden;
+}
+.club-preview__pic img {
+  height: 100%;
+}
 .club-preview--result {
   padding: 0;
   max-width: 670px;
