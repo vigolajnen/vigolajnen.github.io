@@ -6884,16 +6884,6 @@ yx-axis
   font-weight: 700;
   line-height: 130%;
 }
-@media (max-width: 720px) {
-  .hero.container {
-    padding-left: 0;
-  }
-}
-@media (min-width: 570px) {
-  .hero.container {
-    padding-left: 20px;
-  }
-}
 .hero__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -6917,15 +6907,11 @@ yx-axis
   display: flex;
   margin-bottom: 25px;
 }
-@media (max-width: 576px) {
-  .hero__clubs-info {
-    padding: 0 16px;
-  }
-}
 @media (min-width: 576px) {
   .hero__clubs-info {
     margin-bottom: 35px;
     padding-right: 75px;
+    padding-left: 4px;
   }
 }
 @media (min-width: 992px) {
@@ -7009,9 +6995,9 @@ yx-axis
     font-size: 60px;
   }
 }
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   .hero__title {
-    padding: 0 16px;
+    padding-left: 4px;
   }
 }
 @media (min-width: 768px) {
@@ -8476,6 +8462,7 @@ yx-axis
 @media (max-width: 576px) {
   .card-club--map .card-club__header {
     padding: 0 20px;
+    padding-right: 50px;
   }
 }
 .card-club--map .card-club__title span {
