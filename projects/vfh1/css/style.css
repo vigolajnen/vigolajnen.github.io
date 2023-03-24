@@ -7355,7 +7355,6 @@ yx-axis
   position: relative;
   width: 100%;
   max-width: 100%;
-  background-color: #e2f0fb;
   background-size: cover;
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
@@ -7372,9 +7371,7 @@ yx-axis
   }
 }
 .map--region {
-  border-radius: 22px;
   overflow: hidden;
-  margin-top: 35px;
   margin-bottom: 35px;
   width: 100%;
   min-height: 500px;
@@ -7394,6 +7391,10 @@ yx-axis
 .map--region.container {
   min-height: 100%;
 }
+.map--region #map {
+  background-color: #e2f0fb;
+  border-radius: 22px;
+}
 .map__ya {
   z-index: 2;
   position: absolute;
@@ -7402,6 +7403,8 @@ yx-axis
   width: 100%;
   height: 100%;
   overflow: hidden;
+  -ms-touch-action: auto !important;
+  touch-action: auto !important;
 }
 @media (max-width: 576px) {
   .map [class$=-controls__control_toolbar] {
@@ -7492,6 +7495,11 @@ yx-axis
     width: 650px;
     max-width: 650px;
   }
+}
+
+.ymaps-map {
+  -ms-touch-action: auto !important;
+  touch-action: auto !important;
 }
 
 .subscription {
@@ -8128,18 +8136,22 @@ yx-axis
 }
 
 .card-club {
-  border-radius: 22px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   min-width: 288px;
   max-width: 620px;
   padding-top: 25px;
   padding-bottom: 25px;
+  border-radius: 22px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 576px) {
   .card-club {
     min-width: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 992px) {
@@ -8165,6 +8177,7 @@ yx-axis
   }
 }
 .card-club__header, .card-club__footer {
+  width: 100%;
   padding-left: 18px;
   padding-right: 18px;
 }
@@ -8261,6 +8274,7 @@ yx-axis
   }
 }
 .card-club__pic {
+  width: 100%;
   display: block;
   height: 175px;
   margin-top: 15px;
@@ -8408,16 +8422,12 @@ yx-axis
   }
 }
 .card-club--map {
-  display: flex;
-  flex-direction: column;
   box-shadow: none;
   border-radius: 0;
   padding: 21px 0;
 }
 @media (min-width: 576px) {
   .card-club--map {
-    flex-direction: row;
-    flex-wrap: wrap;
     padding: 32px 0;
   }
 }
@@ -8546,16 +8556,12 @@ yx-axis
   }
 }
 .card-club--list-item {
-  background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 0;
+  background-color: #f6f6f6;
   overflow: hidden;
 }
 @media (min-width: 576px) {
   .card-club--list-item {
-    flex-direction: row;
-    flex-wrap: wrap;
     padding-top: 25px;
   }
 }
