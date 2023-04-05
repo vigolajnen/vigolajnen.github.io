@@ -7406,7 +7406,6 @@ yx-axis
 }
 .map--region {
   overflow: hidden;
-  margin-top: 35px;
   margin-bottom: 35px;
   width: 100%;
   min-height: 500px;
@@ -7415,11 +7414,12 @@ yx-axis
 @media (min-width: 576px) {
   .map--region {
     width: 100%;
+    margin-top: 25px;
   }
 }
 @media (min-width: 768px) {
   .map--region {
-    margin-top: 50px;
+    margin-top: 35px;
   }
 }
 @media (min-width: 992px) {
@@ -7812,14 +7812,6 @@ yx-axis
     margin-bottom: 54px;
   }
 }
-.page-clubs--region .map {
-  margin-bottom: 35px;
-}
-@media (min-width: 992px) {
-  .page-clubs--region .map {
-    margin-bottom: 54px;
-  }
-}
 .page-clubs--region .subscription {
   margin-bottom: 40px;
 }
@@ -8098,7 +8090,6 @@ yx-axis
 @media (min-width: 576px) {
   .list-card {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -8116,43 +8107,69 @@ yx-axis
   }
 }
 .list-card--three {
-  grid-auto-columns: minmax(288px, 302px);
-  grid-auto-flow: column;
   width: 100%;
   padding-right: 10px;
 }
+@media (min-width: 576px) {
+  .list-card--three {
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  }
+}
 @media (min-width: 992px) {
   .list-card--three {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-auto-columns: minmax(288px, 400px);
-    grid-auto-flow: column;
     gap: 20px;
   }
 }
-@media (min-width: 576px) {
-  .list-card--three .list-card__item {
-    max-width: 300px;
+@media (min-width: 1400px) {
+  .list-card--three {
+    grid-template-columns: repeat(auto-fill, minmax(288px, 395px));
+    grid-auto-columns: minmax(288px, 400px);
+    gap: 20px;
   }
+}
+@media (min-width: 1410px) {
+  .list-card--three {
+    grid-template-columns: repeat(auto-fill, minmax(288px, 400px));
+  }
+}
+.list-card--three .list-card__item {
+  min-width: 288px;
 }
 @media (min-width: 992px) {
   .list-card--three .list-card__item {
+    width: 400px;
     max-width: 400px;
   }
 }
+@media (min-width: 1200px) {
+  .list-card--three .list-card__item {
+    width: 400px;
+  }
+}
 .list-card--four {
-  display: flex;
   flex-direction: column;
 }
 @media (min-width: 576px) {
   .list-card--four {
     flex-direction: row;
     gap: 22px;
-    grid-auto-columns: minmax(288px, 300px);
-    grid-auto-flow: column;
   }
 }
 @media (min-width: 576px) {
-  .list-card--four .list-card__item {
-    max-width: 300px;
+  .list-card--four {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+@media (min-width: 992px) {
+  .list-card--four {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+@media (min-width: 1440px) {
+  .list-card--four {
+    grid-template-columns: repeat(auto-fill, 300px);
   }
 }
 .list-card__item {
@@ -8177,13 +8194,61 @@ yx-axis
 @media (min-width: 576px) {
   #scroll-cards .list-card {
     padding-top: 5px;
-    flex-wrap: nowrap;
   }
 }
 @media (min-width: 992px) {
   #scroll-cards .list-card {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+/**
+    * Reinstate scrolling for non-JS clients
+    */
+.simplebar-content-wrapper {
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  display: initial;
+  width: initial;
+  height: initial;
+}
+
+.mCustomScrollbar .list-card--three {
+  grid-auto-columns: minmax(288px, 302px);
+  grid-auto-flow: column;
+}
+@media (min-width: 992px) {
+  .mCustomScrollbar .list-card--three {
+    grid-auto-columns: minmax(288px, 400px);
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .mCustomScrollbar .list-card--three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.mCustomScrollbar .list-card--three .list-card__item {
+  min-width: 288px;
+}
+@media (min-width: 576px) {
+  .mCustomScrollbar .list-card--three .list-card__item {
+    width: 300px;
+    max-width: 300px;
+  }
+}
+.mCustomScrollbar .list-card--four {
+  grid-auto-flow: column;
+}
+@media (min-width: 576px) {
+  .mCustomScrollbar .list-card--four .list-card__item {
+    width: 300px;
+    max-width: 300px;
   }
 }
 
@@ -9837,7 +9902,7 @@ yx-axis
 }
 @media (min-width: 768px) {
   .working-hours .subtitle span {
-    display: flex;
+    display: inline-flex;
   }
 }
 .working-hours__item {
