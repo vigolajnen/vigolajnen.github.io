@@ -2756,6 +2756,10 @@ yx-axis
     margin-bottom: 115px;
   }
 }
+.gallery__item picture {
+  width: 100%;
+  height: 100%;
+}
 .gallery__title {
   display: none;
   padding-left: 15px;
@@ -2831,6 +2835,19 @@ yx-axis
     height: auto;
   }
 }
+@media (min-width: 768px) {
+  .gallery__pic picture {
+    min-height: 245px;
+  }
+}
+.gallery__pic picture img {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .gallery__pic picture img {
+    min-height: 245px;
+  }
+}
 @media (min-width: 992px) {
   .gallery__item--pool .gallery__scroll {
     grid-template-columns: minmax(400px, 2fr) 1fr 2fr;
@@ -2853,8 +2870,10 @@ yx-axis
     align-self: flex-end;
   }
 }
-.gallery__item--pool .gallery__pic {
-  min-height: 245px;
+@media (min-width: 768px) {
+  .gallery__item--pool .gallery__pic {
+    min-height: 245px;
+  }
 }
 @media (min-width: 992px) {
   .gallery__item--pool .gallery__pic--left {
@@ -2912,7 +2931,12 @@ yx-axis
   }
 }
 .gallery__item--gym .gallery__pic, .gallery__item--lessons .gallery__pic {
-  min-height: 245px;
+  align-items: flex-end;
+}
+@media (min-width: 768px) {
+  .gallery__item--gym .gallery__pic, .gallery__item--lessons .gallery__pic {
+    min-height: 245px;
+  }
 }
 @media (min-width: 992px) {
   .gallery__item--gym .gallery__pic--left, .gallery__item--lessons .gallery__pic--left {
@@ -2931,6 +2955,14 @@ yx-axis
     grid-row-end: 3;
     min-height: 400px;
   }
+}
+.gallery__item--gym .gallery__pic--right picture, .gallery__item--lessons .gallery__pic--right picture {
+  display: flex;
+  min-height: 400px;
+}
+.gallery__item--gym .gallery__pic--right img, .gallery__item--lessons .gallery__pic--right img {
+  height: 100%;
+  min-height: 400px;
 }
 @media (min-width: 992px) {
   .gallery__item--gym .gallery__pic--medium, .gallery__item--lessons .gallery__pic--medium {
@@ -2963,14 +2995,18 @@ yx-axis
     grid-row-end: 4;
   }
 }
+.gallery__item--spa .gallery__pic--two {
+  display: none;
+}
 @media (min-width: 992px) {
   .gallery__item--spa .gallery__pic--two {
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
   }
-  .gallery__item--spa .gallery__pic--two img {
+  .gallery__item--spa .gallery__pic--two img, .gallery__item--spa .gallery__pic--two picture {
     display: flex;
     margin-left: auto;
     width: auto;
@@ -2999,7 +3035,7 @@ yx-axis
     grid-row-start: 2;
     grid-row-end: 5;
   }
-  .gallery__item--spa .gallery__pic--five img {
+  .gallery__item--spa .gallery__pic--five img, .gallery__item--spa .gallery__pic--five picture {
     display: block;
   }
 }
@@ -3008,6 +3044,13 @@ yx-axis
   display: grid;
   gap: 10px;
   grid-auto-flow: column;
+}
+
+.scroll-gallery {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  overflow-x: auto;
 }
 
 .faq {
