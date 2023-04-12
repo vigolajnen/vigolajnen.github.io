@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fitness House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Start">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page-body">
+    <header class="page-header element-animation">
+      <div class="container">
+        <div class="page-header__label">рядом с домом</div><a class="logo" href="#"><img src="images/logo.svg" alt="Логотип компании" width="160" height="27" loading="lazy"></a>
+        <button class="page-header__btn-menu page-header__btn-menu" aria-label="Открыть меню">
+              <svg class="icon" width="47" height="25" viewBox="0 0 47 25">
+                <use xlink:href="images/sprite.svg#menu"></use>
+              </svg>
+        </button>
+      </div>
+    </header>
+    <nav class="navigation">
+      <button class="btn-close navigation__close" aria-label="Закрыть меню">
+            <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
+              <use xlink:href="images/sprite.svg#close"></use>
+            </svg>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="link" href="#profit">Ваша выгода</a></li>
+        <li class="navigation__item"><a class="link" href="#gallery">галерея</a></li>
+        <li class="navigation__item"><a class="link" href="#contacts">Адреса</a></li>
+        <li class="navigation__item"><a class="link" href="#faq">отвечаем на Вопросы</a></li>
+      </ul>
+      <ul class="social">
+        <li class="social__item"><a class="social__link social__link--tm" href="#" aria-label="Наш телеграм">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#telegram"></use>
+                  </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                  <svg class="icon" width="27" height="16" viewBox="0 0 27 16">
+                    <use xlink:href="images/sprite.svg#vk"></use>
+                  </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Наш youtube">
+                  <svg class="icon" width="25" height="18" viewBox="0 0 25 18">
+                    <use xlink:href="images/sprite.svg#youtube"></use>
+                  </svg></a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <section class="promo element-animation">
+        <div class="container">
+          <h1 class="promo__title">4 крутых<br>фитнес-клуба</h1>
+          <p class="promo__price">с бассейном всего за 3.900₽/мес.</p>
+          <div class="promo__text">Безлимитный абонемент во все клубы на целый месяц</div>
+                <button class="button" type="button">Купить</button>
+        </div>
+      </section>
+      <section class="timer element-animation">
+        <div class="container">
+          <div class="title">До конца предложения осталось:</div>
+          <div class="timer__wrapper">
+            <div class="timer__item">
+              <svg viewBox="0 0 160 160" width="160" height="160">
+                <defs>
+                  <radialGradient id="gradient" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+                    <stop offset="100%" stop-color="#e46821" stop-opacity="1"></stop>
+                  </radialGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70"></circle>
+                <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient)" id="dd"></circle>
+              </svg>
+              <div class="timer__text">
+                <div id="days">12</div><span id="label-days">дней</span>
+              </div>
+            </div>
+            <div class="timer__item">
+              <svg viewBox="0 0 160 160" width="160" height="160">
+                <defs>
+                  <radialGradient id="gradient-2" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+                    <stop offset="100%" stop-color="#e46821" stop-opacity="1"></stop>
+                  </radialGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70"></circle>
+                <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient-2)" id="hh"></circle>
+              </svg>
+              <div class="timer__text">
+                <div id="hours">5</div><span id="label-hours">часов</span>
+              </div>
+            </div>
+            <div class="timer__item">
+              <svg viewBox="0 0 160 160" width="160" height="160">
+                <defs>
+                  <radialGradient id="gradient-3" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+                    <stop offset="100%" stop-color="#e46821" stop-opacity="1"></stop>
+                  </radialGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70"></circle>
+                <circle class="circle" cx="80" cy="80" r="70" stroke="url(#gradient-3)" id="mm"></circle>
+              </svg>
+              <div class="timer__text">
+                <div id="minutes">5</div><span id="label-minutes">минут</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="profit" id="profit">
+        <div class="container">
+                <div class="title title--white profit__title element-animation">Ваша выгода</div>
+                <ul class="profit__list">
+                  <li class="profit__item">
+                    <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/credit.svg&quot;)">
+                      <h3 class="profit__item-title">1 абонемент = 4 клуба</h3>
+                      <div class="profit__item-text">Ходите в любой клуб сети Фитнес Хаус</div>
+                    </div>
+                  </li>
+                  <li class="profit__item">
+                    <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/clock.svg&quot;)">
+                      <h3 class="profit__item-title">доступная цена</h3>
+                      <div class="profit__item-text">Не нужно платить на год вперед</div>
+                    </div>
+                  </li>
+                  <li class="profit__item">
+                    <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/best-price.svg&quot;)">
+                      <h3 class="profit__item-title">короткий срок абонемента </h3>
+                      <div class="profit__item-text">Понравилось? Продлите абонемент выгодно</div>
+                    </div>
+                  </li>
+                  <li class="profit__item">
+                    <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/map.svg&quot;)">
+                      <h3 class="profit__item-title">удобно в любой точке города </h3>
+                      <div class="profit__item-text">Посещайте клуб возле дома или работы</div>
+                    </div>
+                  </li>
+                  <li class="profit__item">
+                    <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/gym.svg&quot;)">
+                      <h3 class="profit__item-title">все включено, без ограничений</h3>
+                      <div class="profit__item-text">Бассейн, спа, тренажеры, кардиозона, групповые программы</div>
+                    </div>
+                  </li>
+                </ul>
+        </div>
+      </section>
+      <section class="gallery container" id="gallery">
+              <div class="title">Убедитесь сами</div>
+        <div class="gallery__item gallery__item--pool element-animation">
+          <div class="gallery__title gallery__title--mob"><span>просторный бассейн</span> для спортивного и расслабленного плавания</div>
+          <div class="gallery__scroll scroll-gallery">
+            <div class="gallery__title"><span>просторный бассейн</span> для спортивного и расслабленного плавания</div>
+            <div class="gallery__pic gallery__pic--left"><img src="../images/gallery/pool/1.webp" alt="бассейн" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--medium"><img src="../images/gallery/pool/3.webp" alt="бассейн" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--right"><img src="../images/gallery/pool/2.webp" alt="бассейн" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="gallery__item gallery__item--gym element-animation">
+          <div class="gallery__title gallery__title--mob">профессионально оборудованные<br><span> и просторные тренажерные залы</span></div>
+          <div class="gallery__scroll scroll-gallery">
+            <div class="gallery__title">профессионально оборудованные<br><span> и просторные тренажерные залы</span></div>
+            <div class="gallery__pic gallery__pic--left"><img src="../images/gallery/gym/1.webp" alt="тренажерные залы" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--medium"><img src="../images/gallery/gym/2.webp" alt="тренажерные залы" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--right"><img src="../images/gallery/gym/3.webp" alt="тренажерные залы" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="gallery__item gallery__item--spa element-animation">
+          <div class="gallery__title gallery__title--mob"><span>спа-комплекс</span> финская, русская, турецкая, инфракрасная сауны и соляная комната</div>
+          <div class="gallery__scroll scroll-gallery">
+            <div class="gallery__title"><span>спа-комплекс</span> финская, русская, турецкая, инфракрасная сауны и соляная комната</div>
+            <div class="gallery__pic gallery__pic--one"><img src="../images/gallery/spa/2.webp" alt="спа-комплекс" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--two"><img src="../images/gallery/spa/5.webp" alt="спа-комплекс" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--three"><img src="../images/gallery/spa/4.webp" alt="спа-комплекс" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--four"><img src="../images/gallery/spa/3.webp" alt="спа-комплекс" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--five"><img src="../images/gallery/spa/1.webp" alt="спа-комплекс" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="gallery__item gallery__item--lessons element-animation">
+          <div class="gallery__title gallery__title--mob"><span>разнообразные групповые уроки</span> растяжка, гимнастика, силовые, аквааэробика</div>
+          <div class="gallery__scroll scroll-gallery">
+            <div class="gallery__title"><span>разнообразные групповые уроки</span> растяжка, гимнастика, силовые, аквааэробика</div>
+            <div class="gallery__pic gallery__pic--left"><img src="../images/gallery/group-lessons/1.webp" alt="групповые уроки" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--medium"><img src="../images/gallery/group-lessons/2.webp" alt="групповые уроки" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--right"><img src="../images/gallery/group-lessons/3.webp" alt="групповые уроки" loading="lazy"></div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+                <ul class="advantages__list">
+                  <li class="advantages__item">
+                    <div class="advantages__item-inner" style="--pic:url(&quot;../images/icons/muscle.svg&quot;)">
+                      <h3 class="advantages__item-title">индивидуальный подход тренеров</h3>
+                      <div class="advantages__item-text">Команда профессионалов с большим опытом работы</div>
+                    </div>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__item-inner" style="--pic:url(&quot;../images/icons/car-parking.svg&quot;)">
+                      <h3 class="advantages__item-title">Бесплатная парковка</h3>
+                      <div class="advantages__item-text">Просторная бесплатная парковка рядом с клубом</div>
+                    </div>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__item-inner" style="--pic:url(&quot;../images/icons/shield.svg&quot;)">
+                      <h3 class="advantages__item-title">безопасный фитнес</h3>
+                      <div class="advantages__item-text">Трехступенчатая система очистки воды в бассейне современными фильтрами</div>
+                    </div>
+                  </li>
+                </ul>
+          <blockquote class="advantages__info"><strong>Владельцы безлимитного абонемента целый месяц могут свободно посещать разнообразные зоны любого Fitness House в Самаре.</strong><span> Для вашего комфорта индивидуальные шкафчики в раздевалке, просторные душевые, питьевая вода, гель для душа и мощные фены.</span></blockquote>
+                <button class="button advantages__button-pay" type="button">Купить</button>
+        </div>
+      </section>
+      <section class="map element-animation" id="contacts">
+        <div class="map__ya" id="map"></div>
+        <div class="container">
+          <div class="map__info">
+            <div class="map__info-wrapper">
+              <h3>В ваш абонемент уже включены клубы:</h3>
+                    <ul class="list-address">
+                      <li class="list-address__item"><span>Московское ш., 4, корп. 4</span>
+                              <svg class="icon" width="21" height="27" viewBox="0 0 21 27">
+                                <use xlink:href="images/sprite.svg#pin"></use>
+                              </svg>
+                      </li>
+                      <li class="list-address__item"><span>Ул. Стара Загора, 58</span>
+                              <svg class="icon" width="21" height="27" viewBox="0 0 21 27">
+                                <use xlink:href="images/sprite.svg#pin"></use>
+                              </svg>
+                      </li>
+                      <li class="list-address__item"><span>Южное ш., 5</span>
+                              <svg class="icon" width="21" height="27" viewBox="0 0 21 27">
+                                <use xlink:href="images/sprite.svg#pin"></use>
+                              </svg>
+                      </li>
+                      <li class="list-address__item"><span>Красноармейская ул., 131</span>
+                              <svg class="icon" width="21" height="27" viewBox="0 0 21 27">
+                                <use xlink:href="images/sprite.svg#pin"></use>
+                              </svg>
+                      </li>
+                    </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq container element-animation" id="faq">
+              <div class="title">отвечаем на Вопросы</div>
+        <div class="faq__list">
+          <button class="accordion">В какое время можно посещать клуб?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <button class="accordion">Как продлить абонемент?</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <button class="accordion">Какие групповые занятия можно посещать?</button>
+          <div class="panel"></div>
+          <button class="accordion">В стоимость включена ознакомительная тренировка с тренером?</button>
+          <div class="panel"></div>
+          <button class="accordion">Есть заморозка абонемента?</button>
+          <div class="panel"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__top"><a class="logo" href="#"><img src="images/logo.svg" alt="Логотип компании" width="160" height="27" loading="lazy"></a>
+              <ul class="list-address list-address--footer page-footer__list">
+                <li class="list-address__item"><span>Московское ш., 4, корп. 4</span>
+                      <svg class="icon" width="21" height="27" viewBox="0 0 21 27">
+                        <use xlink:href="images/sprite.svg#pin"></use>
+                      </svg>
+                </li>
+                <li class="list-address__item"><span>Ул. Стара Загора, 58</span>
+                      <svg class="icon" width="21" height="27" viewBox="0 0 21 27">
+                        <use xlink:href="images/sprite.svg#pin"></use>
+                      </svg>
+                </li>
+                <li class="list-address__item"><span>Южное ш., 5</span>
+                      <svg class="icon" width="21" height="27" viewBox="0 0 21 27">
+                        <use xlink:href="images/sprite.svg#pin"></use>
+                      </svg>
+                </li>
+                <li class="list-address__item"><span>Красноармейская ул., 131</span>
+                      <svg class="icon" width="21" height="27" viewBox="0 0 21 27">
+                        <use xlink:href="images/sprite.svg#pin"></use>
+                      </svg>
+                </li>
+              </ul>
+        </div>
+        <div class="page-footer__bottom">
+          <ul class="social">
+            <li class="social__item"><a class="social__link social__link--tm" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="images/sprite.svg#telegram"></use>
+                          </svg></a></li>
+            <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="27" height="16" viewBox="0 0 27 16">
+                            <use xlink:href="images/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="25" height="18" viewBox="0 0 25 18">
+                            <use xlink:href="images/sprite.svg#youtube"></use>
+                          </svg></a></li>
+          </ul><a class="page-footer__link link" href="#"> Юридическая информация</a><a class="page-footer__link link" href="#">Cоглашение на обработку персональных данных</a>
+          <div class="page-footer__copy">
+            <div>© 2007 - 2023</div>
+            <div>Все права защищены.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5bc879da-d208-4e6a-bfb8-ab4b7a20802a&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.min.js" type="module"></script>
+    <script>
+      window.addEventListener('resize', function(e) {
+        if (window.matchMedia('(max-width: 992px)').matches) {
+          $('.scroll-gallery').mCustomScrollbar({
+            axis: 'x',
+            theme: 'dark-thin',
+            autoExpandScrollbar: true,
+            advanced: { autoExpandHorizontalScroll: true },
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
