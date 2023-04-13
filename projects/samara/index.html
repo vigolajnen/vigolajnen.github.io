@@ -30,6 +30,9 @@
               <use xlink:href="images/sprite.svg#close"></use>
             </svg>
       </button>
+      <div class="navigation__header"><a class="logo" href="#"><img src="images/logo.svg" alt="Логотип компании" width="160" height="27" loading="lazy"></a>
+        <div class="navigation__label">рядом с домом</div>
+      </div>
       <ul class="navigation__list">
         <li class="navigation__item"><a class="link" href="#profit">Ваша выгода</a></li>
         <li class="navigation__item"><a class="link" href="#gallery">галерея</a></li>
@@ -118,31 +121,31 @@
                 <ul class="profit__list">
                   <li class="profit__item">
                     <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/credit.svg&quot;)">
-                      <h3 class="profit__item-title">1 абонемент = 4 клуба</h3>
+                      <div class="profit__item-title">1 абонемент = 4 клуба</div>
                       <div class="profit__item-text">Ходите в любой клуб сети Фитнес Хаус</div>
                     </div>
                   </li>
                   <li class="profit__item">
                     <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/clock.svg&quot;)">
-                      <h3 class="profit__item-title">доступная цена</h3>
+                      <div class="profit__item-title">доступная цена</div>
                       <div class="profit__item-text">Не нужно платить на год вперед</div>
                     </div>
                   </li>
                   <li class="profit__item">
                     <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/best-price.svg&quot;)">
-                      <h3 class="profit__item-title">короткий срок абонемента </h3>
+                      <div class="profit__item-title">короткий срок абонемента </div>
                       <div class="profit__item-text">Понравилось? Продлите абонемент выгодно</div>
                     </div>
                   </li>
                   <li class="profit__item">
                     <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/map.svg&quot;)">
-                      <h3 class="profit__item-title">удобно в любой точке города </h3>
+                      <div class="profit__item-title">удобно в любой точке города </div>
                       <div class="profit__item-text">Посещайте клуб возле дома или работы</div>
                     </div>
                   </li>
                   <li class="profit__item">
                     <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/gym.svg&quot;)">
-                      <h3 class="profit__item-title">все включено, без ограничений</h3>
+                      <div class="profit__item-title">все включено, без ограничений</div>
                       <div class="profit__item-text">Бассейн, спа, тренажеры, кардиозона, групповые программы</div>
                     </div>
                   </li>
@@ -260,19 +263,19 @@
                 <ul class="advantages__list">
                   <li class="advantages__item">
                     <div class="advantages__item-inner" style="--pic:url(&quot;../images/icons/muscle.svg&quot;)">
-                      <h3 class="advantages__item-title">индивидуальный подход тренеров</h3>
+                      <div class="advantages__item-title">индивидуальный подход тренеров</div>
                       <div class="advantages__item-text">Команда профессионалов с большим опытом работы</div>
                     </div>
                   </li>
                   <li class="advantages__item">
                     <div class="advantages__item-inner" style="--pic:url(&quot;../images/icons/car-parking.svg&quot;)">
-                      <h3 class="advantages__item-title">Бесплатная парковка</h3>
+                      <div class="advantages__item-title">Бесплатная парковка</div>
                       <div class="advantages__item-text">Просторная бесплатная парковка рядом с клубом</div>
                     </div>
                   </li>
                   <li class="advantages__item">
                     <div class="advantages__item-inner" style="--pic:url(&quot;../images/icons/shield.svg&quot;)">
-                      <h3 class="advantages__item-title">безопасный фитнес</h3>
+                      <div class="advantages__item-title">безопасный фитнес</div>
                       <div class="advantages__item-text">Трехступенчатая система очистки воды в бассейне современными фильтрами</div>
                     </div>
                   </li>
@@ -394,24 +397,53 @@
               </div>
               <div class="modal-body">
                 <form class="form needs-validation" novalidate>
-                  <label class="form__item form__item--50 form-label" for="formName1"><span class="form__label-name">Имя</span>
-                    <input class="form-control" type="text" id="formName1" placeholder="Имя" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
+                    <input class="form-control" type="text" id="firstName" placeholder="Имя" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
-                  <label class="form__item form__item--50 form-label" for="formName1"><span class="form__label-name">Фамилия</span>
-                    <input class="form-control" type="text" id="formName1" placeholder="Фамилия" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
+                    <input class="form-control" type="text" id="lastName" placeholder="Фамилия" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
-                  <label class="form__item form-label" for="formPhone1"><span class="form__label-name">Номер телефона</span>
-                    <input class="form-control" type="tel" id="formPhone1" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
+                    <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
-                  <label class="form__item form-label" for="userDate"><span class="form__label-name">Дата рождения</span>
+                  <div class="form__item">
+                    <div class="form__tooltip-label">
+                      <label class="form__label-name form-label" for="userDate">Дата рождения</label>
+                      <button class="button button--tooltip" type="button" id="example">
+                                  <svg class="icon" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#tooltip"></use>
+                                  </svg>
+                      </button>
+                    </div>
                     <input class="form-control" id="userDate" type="date" placeholder="Дата рождения" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                  </label>
-                  <label class="form__item form-label" for="formName1"><span class="form__label-name">Email (необязательное поле)</span>
+                  </div>
+                  <label class="form__item form-label"><span class="form__label-name">Email (необязательное поле)</span>
                     <input class="form-control" id="userEmail" type="email" placeholder="Email"><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
                   <button class="button" type="submit">Вперед</button>
                   <div>Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade modal--bg-md modal-submit-form" aria-hidden="true" tabindex="-1" id="modal-message">
+          <div class="modal-lg modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
+              <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                          <svg class="icon" width="26" height="26">
+                            <use xlink:href="images/sprite.svg#close"></use>
+                          </svg>
+              </button>
+              <div class="modal-body">
+                <div class="form-message-modal">
+                  <div class="form-message-modal__wrapper">
+                              <svg class="icon" width="36" height="36" viewBox="0 0 36 36">
+                                <use xlink:href="images/sprite.svg#ok"></use>
+                              </svg>
+                    <div class="form-message-modal__title">Заявка отправлена в клуб!<span>Ваш менеджер перезвонит в ближайшее время</span></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -427,6 +459,9 @@
             autoExpandScrollbar: true,
             advanced: { autoExpandHorizontalScroll: true },
           });
+        } else {
+          $('.scroll-gallery').mCustomScrollbar('destroy');
+          $('.scroll-gallery').mCustomScrollbar('update');
         }
       });
     </script>
