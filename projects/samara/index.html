@@ -10,10 +10,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
-    <header class="page-header element-animation">
+    <header class="page-header">
       <div class="container">
         <div class="page-header__label">рядом с домом</div><a class="logo" href="#"><img src="images/logo.svg" alt="Логотип компании" width="160" height="27" loading="lazy"></a>
         <button class="page-header__btn-menu page-header__btn-menu" aria-label="Открыть меню">
@@ -51,12 +52,12 @@
       </ul>
     </nav>
     <main class="main">
-      <section class="promo element-animation">
+      <section class="promo">
         <div class="container">
           <h1 class="promo__title">4 крутых<br>фитнес-клуба</h1>
           <p class="promo__price">с бассейном всего за 3.900₽/мес.</p>
           <div class="promo__text">Безлимитный абонемент во все клубы на целый месяц</div>
-                <button class="button" type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Купить</button>
+                <button class="button" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#exampleModal">Купить</button>
         </div>
       </section>
       <section class="timer element-animation">
@@ -157,43 +158,43 @@
             <div class="gallery__pic gallery__pic--left">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/pool/1.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/pool/tablet/1.webp"><img src="images/gallery/pool/mob/1.jpg" alt="бассейн" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/pool/tablet/1.webp"><img src="images/gallery/pool/mob/1.webp" alt="бассейн" width="262" height="190" data-gallery-index="1" loading="lazy">
                       </picture>
             </div>
             <div class="gallery__pic gallery__pic--medium">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/pool/2.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/pool/tablet/2.webp"><img src="images/gallery/pool/mob/2.jpg" alt="бассейн" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/pool/tablet/2.webp"><img src="images/gallery/pool/mob/2.webp" alt="бассейн" width="262" height="190" data-gallery-index="2" loading="lazy">
                       </picture>
             </div>
             <div class="gallery__pic gallery__pic--right">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/pool/3.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/pool/tablet/3.webp"><img src="images/gallery/pool/mob/3.jpg" alt="бассейн" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/pool/tablet/3.webp"><img src="images/gallery/pool/mob/3.webp" alt="бассейн" width="262" height="190" data-gallery-index="3" loading="lazy">
                       </picture>
             </div>
           </div>
         </div>
-        <div class="gallery__item gallery__item--gym element-animation">
+        <div class="gallery__item gallery__item--gym element-animation lightbox">
           <div class="gallery__title gallery__title--mob">профессионально оборудованные<br><span> и просторные тренажерные залы</span></div>
           <div class="gallery__scroll scroll-gallery">
             <div class="gallery__title">профессионально оборудованные<br><span> и просторные тренажерные залы</span></div>
             <div class="gallery__pic gallery__pic--left">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/gym/2.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/gym/tablet/2.webp"><img src="images/gallery/gym/mob/2.jpg" alt="тренажерные залы" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/gym/tablet/2.webp"><img src="images/gallery/gym/mob/2.webp" alt="тренажерные залы" width="262" height="190" data-gallery-index="1" loading="lazy">
                       </picture>
             </div>
             <div class="gallery__pic gallery__pic--medium">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/gym/2.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/gym/tablet/2.webp"><img src="images/gallery/gym/mob/2.jpg" alt="тренажерные залы" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/gym/tablet/2.webp"><img src="images/gallery/gym/mob/2.webp" alt="тренажерные залы" width="262" height="190" data-gallery-index="2" loading="lazy">
                       </picture>
             </div>
             <div class="gallery__pic gallery__pic--right">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/gym/3.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/gym/tablet/3.webp"><img src="images/gallery/gym/mob/3.jpg" alt="тренажерные залы" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/gym/tablet/3.webp"><img src="images/gallery/gym/mob/3.webp" alt="тренажерные залы" width="262" height="190" data-gallery-index="3" loading="lazy">
                       </picture>
             </div>
           </div>
@@ -205,54 +206,50 @@
             <div class="gallery__pic gallery__pic--one">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/spa/2.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/spa/tablet/2.webp"><img src="images/gallery/spa/mob/2.jpg" alt="спа-комплекс" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/spa/tablet/2.webp"><img src="images/gallery/spa/mob/2.webp" alt="спа-комплекс" width="262" height="190" data-large-src="images/gallery/spa/2.webp" data-gallery-index="0" loading="lazy">
                       </picture>
             </div>
-            <div class="gallery__pic gallery__pic--two"><img src="images/gallery/spa/5.jpg" alt="спа-комплекс" width="262" height="190" loading="lazy"></div>
+            <div class="gallery__pic gallery__pic--two"><img src="images/gallery/spa/5.webp" alt="спа-комплекс" width="262" height="190" data-large-src="images/gallery/spa/5.jpg" data-gallery-index="0" loading="lazy"></div>
             <div class="gallery__pic gallery__pic--three">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/spa/4.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/spa/tablet/4.webp"><img src="images/gallery/spa/mob/4.jpg" alt="спа-комплекс" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/spa/tablet/4.webp"><img src="images/gallery/spa/mob/4.webp" alt="спа-комплекс" width="262" height="190" data-large-src="images/gallery/spa/4.webp" data-gallery-index="1" loading="lazy">
                       </picture>
             </div>
             <div class="gallery__pic gallery__pic--four">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/spa/3.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/spa/tablet/3.webp"><img src="images/gallery/spa/mob/3.jpg" alt="спа-комплекс" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/spa/tablet/3.webp"><img src="images/gallery/spa/mob/3.webp" alt="спа-комплекс" width="262" height="190" data-large-src="images/gallery/spa/3.webp" data-gallery-index="2" loading="lazy">
                       </picture>
             </div>
             <div class="gallery__pic gallery__pic--five">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/spa/1.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/spa/tablet/1.webp"><img src="images/gallery/spa/mob/1.jpg" alt="спа-комплекс" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/spa/tablet/1.webp"><img src="images/gallery/spa/mob/1.webp" alt="спа-комплекс" width="262" height="190" data-large-src="images/gallery/spa/1.webp" data-gallery-index="3" loading="lazy">
                       </picture>
             </div>
           </div>
         </div>
         <div class="gallery__item gallery__item--lessons element-animation">
-          <div class="gallery__title gallery__title--mob">
-            <group-lessonsn>разнообразные групповые уроки</group-lessonsn> растяжка, гимнастика, силовые, аквааэробика
-          </div>
+          <div class="gallery__title gallery__title--mob"><span>разнообразные групповые уроки</span> растяжка, гимнастика, силовые, аквааэробика</div>
           <div class="gallery__scroll scroll-gallery">
-            <div class="gallery__title">
-              <group-lessonsn>разнообразные групповые уроки</group-lessonsn> растяжка, гимнастика, силовые, аквааэробика
-            </div>
+            <div class="gallery__title"><span>разнообразные групповые уроки</span> растяжка, гимнастика, силовые, аквааэробика</div>
             <div class="gallery__pic gallery__pic--left">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/group-lessons/1.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/group-lessons/tablet/1.webp"><img src="images/gallery/group-lessons/mob/1.jpg" alt="групповые уроки" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/group-lessons/tablet/1.webp"><img src="images/gallery/group-lessons/mob/1.webp" alt="групповые уроки" width="262" height="190" data-gallery-index="1" loading="lazy">
                       </picture>
             </div>
             <div class="gallery__pic gallery__pic--medium">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/group-lessons/2.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/group-lessons/tablet/2.webp"><img src="images/gallery/group-lessons/mob/2.jpg" alt="групповые уроки" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/group-lessons/tablet/2.webp"><img src="images/gallery/group-lessons/mob/2.webp" alt="групповые уроки" width="262" height="190" data-gallery-index="2" loading="lazy">
                       </picture>
             </div>
             <div class="gallery__pic gallery__pic--right">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="images/gallery/group-lessons/3.webp">
-                        <source media="(min-width: 768px)" srcset="images/gallery/group-lessons/tablet/3.webp"><img src="images/gallery/group-lessons/mob/3.jpg" alt="групповые уроки" width="262" height="190" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="images/gallery/group-lessons/tablet/3.webp"><img src="images/gallery/group-lessons/mob/3.webp" alt="групповые уроки" width="262" height="190" data-gallery-index="3" loading="lazy">
                       </picture>
             </div>
           </div>
@@ -281,7 +278,7 @@
                   </li>
                 </ul>
           <blockquote class="advantages__info"><strong>Владельцы безлимитного абонемента целый месяц могут свободно посещать разнообразные зоны любого Fitness House в Самаре.</strong><span> Для вашего комфорта индивидуальные шкафчики в раздевалке, просторные душевые, питьевая вода, гель для душа и мощные фены.</span></blockquote>
-                <button class="button advantages__button-pay" type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Купить</button>
+                <button class="button advantages__button-pay" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#exampleModal">Купить</button>
         </div>
       </section>
       <section class="map element-animation" id="contacts">
@@ -384,49 +381,42 @@
         </div>
       </div>
     </footer>
-    <div class="modal fade" aria-hidden="true" tabindex="-1" id="exampleModal">
-      <div class="modal-lg modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="title">Оформить абонемент</h5>
-            <button class="btn-close button" type="button" data-mdb-dismiss="modal" aria-label="Закрыть модальное окно">
-                        <svg class="icon" width="26" height="26">
-                          <use xlink:href="images/sprite.svg#btn-close"></use>
-                        </svg>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-outline mb-4">
-                <input class="form-control" id="userName" type="text" required>
-                <label class="form-label" for="userName">Имя</label>
+        <div class="modal fade" aria-hidden="true" tabindex="-1" id="exampleModal">
+          <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="title">Оформить абонемент</h5>
+                <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                            <svg class="icon" width="26" height="26">
+                              <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                </button>
               </div>
-              <div class="form-outline mb-4">
-                <input class="form-control" id="userSurName" type="text" required>
-                <label class="form-label" for="userSurName">Фамилия</label>
+              <div class="modal-body">
+                <form class="form needs-validation" novalidate>
+                  <label class="form__item form__item--50 form-label" for="formName1"><span class="form__label-name">Имя</span>
+                    <input class="form-control" type="text" id="formName1" placeholder="Имя" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form__item--50 form-label" for="formName1"><span class="form__label-name">Фамилия</span>
+                    <input class="form-control" type="text" id="formName1" placeholder="Фамилия" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label" for="formPhone1"><span class="form__label-name">Номер телефона</span>
+                    <input class="form-control" type="tel" id="formPhone1" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label" for="userDate"><span class="form__label-name">Дата рождения</span>
+                    <input class="form-control" id="userDate" type="date" placeholder="Дата рождения" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label" for="formName1"><span class="form__label-name">Email (необязательное поле)</span>
+                    <input class="form-control" id="userEmail" type="email" placeholder="Email"><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <button class="button" type="submit">Вперед</button>
+                  <div>Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
+                </form>
               </div>
-              <div class="form-outline mb-4">
-                <input class="form-control" id="userPhone" type="tel" placeholder=" +7 (999) 000-00-00" required>
-                <label class="form-label" for="userPhone">Номер телефона</label>
-              </div>
-              <div class="form-outline mb-4">
-                <input class="form-control" id="userDate" type="date" required>
-                <label class="form-label" for="userDate">Дата рождения</label>
-              </div>
-              <div class="form-outline mb-4">
-                <input class="form-control" id="userEmail" type="email" required>
-                <label class="form-label" for="userEmail">Email (необязательное поле)</label>
-              </div>
-              <!-- Submit button-->
-              <button class="button" type="submit">Вперед</button>
-              <div>Нажимая на кнопку, вы даете согласие на<a href="#" target="_blank"> обработку своих персональных данных</a></div>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
     <script src="js/libs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
     <script src="js/script.min.js" type="module"></script>
     <script>
       window.addEventListener('resize', function(e) {
