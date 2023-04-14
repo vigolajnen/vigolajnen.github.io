@@ -2320,3 +2320,75 @@ button[type=submit] {
   line-height: 24px;
   color: #344054;
 }
+
+.messengers {
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
+  max-width: 242px;
+  background: #ffffff;
+  border: 1px solid #e46821;
+  padding: 20px 10px;
+  border-radius: 6px;
+  color: #171818;
+}
+.messengers .btn-close {
+  z-index: 3;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  color: #e46821;
+  opacity: 1;
+  background: none;
+}
+.messengers__title {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+}
+.messengers__text {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+}
+.messengers__upload {
+  display: flex;
+  justify-content: space-between;
+}
+.messengers__upload span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+}
+.messengers__links {
+  display: flex;
+  gap: 10px;
+}
+.messengers--close .btn-close {
+  display: none;
+}
+.messengers--close .messengers__content {
+  display: none;
+}
+.messengers--close .messengers__upload span {
+  display: none;
+}
+.messengers--close .messengers__links {
+  flex-direction: column;
+}
+.messengers--close .link {
+  display: block;
+}
