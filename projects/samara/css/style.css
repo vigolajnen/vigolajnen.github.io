@@ -1354,8 +1354,8 @@ button[type=submit] {
 }
 @media (min-width: 375px) {
   .timer__item {
-    width: 110px;
-    height: 110px;
+    width: 105px;
+    height: 105px;
   }
 }
 @media (min-width: 480px) {
@@ -1472,10 +1472,12 @@ button[type=submit] {
   padding-right: 0;
   width: 100%;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .gallery__item {
   width: 100%;
   overflow: hidden;
+  margin: 0 auto;
   margin-bottom: 54px;
 }
 @media (min-width: 992px) {
@@ -1617,6 +1619,19 @@ button[type=submit] {
   }
 }
 @media (min-width: 992px) {
+  .gallery__item--pool .gallery__pic--left picture {
+    min-height: 400px;
+  }
+}
+.gallery__item--pool .gallery__pic--left picture img {
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .gallery__item--pool .gallery__pic--left picture img {
+    min-height: 400px;
+  }
+}
+@media (min-width: 992px) {
   .gallery__item--pool .gallery__pic--right {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -1640,7 +1655,7 @@ button[type=submit] {
 }
 @media (min-width: 992px) {
   .gallery__item--gym .gallery__scroll, .gallery__item--lessons .gallery__scroll {
-    grid-template-columns: 2fr 1fr minmax(400px, 2fr);
+    grid-template-columns: 2fr minmax(300px, 1fr) minmax(400px, 2fr);
   }
 }
 @media (min-width: 1200px) {
@@ -2241,6 +2256,18 @@ button[type=submit] {
   justify-content: center;
   gap: 10px;
 }
+.form__button {
+  width: 100%;
+  text-transform: initial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .form__button {
+    font-size: 18px;
+  }
+}
 .form__item {
   position: relative;
   width: 100%;
@@ -2283,4 +2310,13 @@ button[type=submit] {
 .form__label-name {
   display: block;
   margin-bottom: 10px;
+  color: #344054;
+  font-weight: 700;
+}
+.form__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344054;
 }
