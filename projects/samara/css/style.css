@@ -2301,9 +2301,9 @@ button[type=submit] {
     margin: 0 auto;
   }
 }
-.map__info h3 {
+.map__info-title {
   margin-bottom: 24px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   line-height: 140%;
   color: #e46821;
@@ -2311,17 +2311,17 @@ button[type=submit] {
   font-size: 18px;
 }
 @media (min-width: 320px) {
-  .map__info h3 {
+  .map__info-title {
     font-size: calc(0.4464285714vw + 16.5714285714px);
   }
 }
 @media (min-width: 768px) {
-  .map__info h3 {
+  .map__info-title {
     font-size: 20px;
   }
 }
 @media (min-width: 576px) {
-  .map__info h3 {
+  .map__info-title {
     margin-bottom: 38px;
   }
 }
