@@ -192,6 +192,7 @@ body, .page {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+  background-color: #f3f6f8;
 }
 
 img {
@@ -978,24 +979,24 @@ button[type=submit] {
 :root {
   --bg-h: 70px;
 }
-@media (min-width: 576px) {
+@media (min-width: 375px) {
   :root {
-    --bg-h: 140px;
+    --bg-h: 85px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --bg-h: 160px;
   }
 }
 @media (min-width: 992px) {
   :root {
-    --bg-h: 205px;
+    --bg-h: 190px;
   }
 }
 @media (min-width: 1200px) {
   :root {
     --bg-h: 235px;
-  }
-}
-@media (min-width: 1600px) {
-  :root {
-    --bg-h: 370px;
   }
 }
 
@@ -1006,6 +1007,8 @@ button[type=submit] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1440px;
+  margin: 65px auto 0;
   text-align: center;
   color: #171818;
   overflow: hidden;
@@ -1115,6 +1118,13 @@ button[type=submit] {
 }
 
 .profit {
+  background-color: #f3f6f8;
+}
+.profit .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
   padding-top: 75px;
   padding-bottom: 54px;
   background-color: #204860;
@@ -1124,25 +1134,19 @@ button[type=submit] {
   background-image: url("../images/profit/bg-1.webp");
 }
 @media (min-width: 576px) {
-  .profit {
+  .profit .container {
     padding-top: 54px;
   }
 }
 @media (min-width: 768px) {
-  .profit {
+  .profit .container {
     background-image: url("../images/profit/bg-1t.webp");
   }
 }
 @media (min-width: 992px) {
-  .profit {
+  .profit .container {
     background-image: url("../images/profit/bg-1d.webp");
   }
-}
-.profit .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1110px;
 }
 @media (max-width: 768px) {
   .profit .container {
@@ -1174,6 +1178,11 @@ button[type=submit] {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 992px) {
+  .profit__list {
+    gap: 60px;
+  }
+}
 .profit__item {
   margin-bottom: 60px;
   text-align: center;
@@ -1201,7 +1210,7 @@ button[type=submit] {
 }
 @media (min-width: 992px) {
   .profit__item {
-    width: calc(33.3333333333% - 50px);
+    width: calc(33.3333333333% - 45px);
   }
   .profit__item:first-child, .profit__item:nth-child(2) {
     width: calc(50% - 50px);
@@ -1214,6 +1223,11 @@ button[type=submit] {
   }
   .profit__item:nth-child(2) .profit__item-inner {
     margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .profit__item {
+    width: calc(33.3333333333% - 80px);
   }
 }
 .profit__item-inner {
@@ -1286,6 +1300,8 @@ button[type=submit] {
   padding-top: 34px;
   padding-bottom: 100px;
   background-color: #ffffff;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 @media (min-width: 992px) {
   .timer {
@@ -2120,8 +2136,9 @@ button[type=submit] {
 .map__wrapper {
   position: relative;
   width: 100%;
-  max-width: 100%;
+  max-width: 1440px;
   margin-top: 0;
+  margin: 0 auto;
   background-size: cover;
   min-height: 610px;
   overflow: hidden;
