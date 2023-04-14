@@ -344,6 +344,26 @@ button[type=submit] {
 .list-address--footer .icon {
   fill: #ffffff;
 }
+@media (min-width: 576px) {
+  .list-address--map {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.list-address--map .list-address__item {
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+@media (min-width: 576px) {
+  .list-address--map .list-address__item {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .list-address--map .list-address__item {
+    width: 100%;
+  }
+}
 
 .accordion {
   position: relative;
@@ -1319,6 +1339,7 @@ button[type=submit] {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   width: 100%;
 }
 .timer__item {
@@ -1328,19 +1349,19 @@ button[type=submit] {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 29vw;
-  height: 29vw;
+  width: 28vw;
+  height: 28vw;
 }
 @media (min-width: 375px) {
   .timer__item {
-    width: 115px;
-    height: 115px;
+    width: 110px;
+    height: 110px;
   }
 }
 @media (min-width: 480px) {
   .timer__item {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
 }
 @media (min-width: 670px) {
@@ -1810,17 +1831,19 @@ button[type=submit] {
 }
 
 .advantages {
-  padding-top: 28px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 54px;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .advantages {
-    padding-top: 0;
+    padding-top: 70px;
   }
 }
 @media (min-width: 992px) {
   .advantages {
-    padding-bottom: 115px;
+    background-color: transparent;
+    padding-top: 0;
   }
 }
 .advantages .element-animation.element-show {
@@ -2041,7 +2064,6 @@ button[type=submit] {
   display: inline-flex;
   flex-wrap: wrap;
   padding-left: 22px;
-  margin-bottom: 54px;
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
@@ -2077,13 +2099,32 @@ button[type=submit] {
 }
 
 .map {
+  padding-top: 54px;
+  background-color: #f3f6f8;
+}
+.map__wrapper {
   position: relative;
   width: 100%;
   max-width: 100%;
   margin-top: 0;
   background-size: cover;
-  height: 610px;
+  min-height: 610px;
   overflow: hidden;
+  margin-top: 100px;
+}
+@media (min-width: 768px) {
+  .map__wrapper {
+    margin-top: 124px;
+  }
+}
+@media (min-width: 992px) {
+  .map__wrapper {
+    margin-top: 115px;
+  }
+}
+.map__wrapper .container {
+  width: 100%;
+  max-width: 100%;
 }
 .map__ya {
   z-index: 2;
@@ -2104,27 +2145,31 @@ button[type=submit] {
   padding-right: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .map .container {
     max-width: 1440px;
+    min-height: 610px;
   }
 }
 .map__info {
-  z-index: 3;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   padding: 10% 5%;
+  padding-top: 650px;
   background-color: #ffffff;
   width: 100%;
-  max-width: 370px;
   border-radius: 10px;
 }
 @media (min-width: 768px) {
   .map__info {
+    z-index: 3;
+    position: absolute;
+    padding: 10% 5%;
     bottom: auto;
     top: 10%;
     left: 0;
+    max-width: 370px;
   }
 }
 @media (min-width: 992px) {
@@ -2134,9 +2179,11 @@ button[type=submit] {
     border-radius: 0;
   }
 }
-.map__info-wrapper {
-  max-width: 282px;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .map__info-wrapper {
+    max-width: 282px;
+    margin: 0 auto;
+  }
 }
 .map__info h3 {
   margin-bottom: 24px;
