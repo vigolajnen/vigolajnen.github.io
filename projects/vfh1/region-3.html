@@ -471,16 +471,11 @@
             autoExpandScrollbar: true,
             advanced: { autoExpandHorizontalScroll: true },
           });
+        } else {
+          $('.scroll-gallery').mCustomScrollbar('destroy');
+          $('.scroll-gallery').mCustomScrollbar('update');
         }
       });
-      if (window.matchMedia('(min-width: 576px)').matches) {
-          $('#scroll-cards').mCustomScrollbar({
-            axis: 'x',
-            theme: 'dark-thin',
-            autoExpandScrollbar: true,
-            advanced: { autoExpandHorizontalScroll: true },
-          });
-        }
       
     </script>
     <script src="js/script-region-3.min.js" type="module"></script>
