@@ -2567,6 +2567,10 @@ yx-axis
 }
 .slider--sale {
   height: auto;
+  max-height: 500px;
+}
+.slider--sale img {
+  max-height: 500px;
 }
 .slider--sale .swiper-slide {
   background-position: center;
@@ -5931,26 +5935,6 @@ yx-axis
     margin-bottom: var(--s-mb);
   }
 }
-@media (min-width: 768px) {
-  .page-sale__slider .swiper-slide {
-    min-height: 300px;
-  }
-}
-@media (min-width: 1200px) {
-  .page-sale__slider .swiper-slide {
-    min-height: 500px;
-  }
-}
-@media (min-width: 768px) {
-  .page-sale__slider .swiper-slide img {
-    min-height: 300px;
-  }
-}
-@media (min-width: 1200px) {
-  .page-sale__slider .swiper-slide img {
-    min-height: 500px;
-  }
-}
 .page-sale__form {
   width: 100%;
   margin-bottom: var(--s-mb);
@@ -7166,6 +7150,18 @@ yx-axis
   padding-top: 10px;
   margin-top: -10px;
 }
+.clubs-search__btn-list {
+  z-index: 5;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background-color: #ffffff;
+  color: #42474d;
+}
+.clubs-search__btn-list:hover {
+  background-color: #fffeda;
+  color: #42474d;
+}
 .clubs-search__sidebar {
   z-index: 0;
   position: absolute;
@@ -7216,7 +7212,7 @@ yx-axis
 
 .form-clubs {
   background-color: #90959A;
-  padding: 40px 0;
+  padding: 20px 0;
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -7234,24 +7230,29 @@ yx-axis
   }
 }
 .form-clubs__title {
-  margin-bottom: 1.3rem;
+  margin-bottom: 0.7rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 130%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
 }
 @media (min-width: 320px) {
   .form-clubs__title {
-    font-size: calc(4.4642857143vw + 5.7142857143px);
+    font-size: calc(4.9107142857vw + 2.2857142857px);
   }
 }
 @media (min-width: 768px) {
   .form-clubs__title {
     font-size: 40px;
+  }
+}
+@media (min-width: 576px) {
+  .form-clubs__title {
+    margin-bottom: 1rem;
   }
 }
 @media (min-width: 768px) {
@@ -7265,16 +7266,24 @@ yx-axis
   align-items: flex-end;
   width: 100%;
 }
+.form-clubs .form-control {
+  padding: 0.7rem 0.75rem 0.7rem 1.45rem;
+}
+@media (min-width: 768px) {
+  .form-clubs .form-control {
+    padding: 1rem 0.75rem 1rem 1.45rem;
+  }
+}
 .form-clubs .form-label {
   padding-bottom: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #ffffff;
   width: 100%;
 }
 @media (min-width: 576px) {
   .form-clubs .form-label {
     width: calc(50% - 1rem);
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
 }
 @media (min-width: 992px) {
@@ -7312,9 +7321,13 @@ yx-axis
   width: 100%;
   margin-top: 1rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 375px) {
   .form-clubs__btns {
     flex-direction: row;
+  }
+}
+@media (min-width: 576px) {
+  .form-clubs__btns {
     width: auto;
     margin-top: 0;
   }
@@ -7327,6 +7340,7 @@ yx-axis
 .form-clubs .button {
   width: 100%;
   margin-bottom: 1rem;
+  padding: 10px 20px;
 }
 .form-clubs .button:not(:last-child) {
   margin-right: 0.5rem;
@@ -7336,9 +7350,22 @@ yx-axis
     margin-right: 1rem;
   }
 }
+@media (min-width: 375px) {
+  .form-clubs .button {
+    width: calc(50% - 0.25rem);
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 576px) {
   .form-clubs .button {
     width: auto;
+    margin-bottom: 0.4rem;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 768px) {
+  .form-clubs .button {
+    padding: 16px 20px;
   }
 }
 
@@ -9096,7 +9123,7 @@ yx-axis
     box-shadow: none;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .page-club__promo-inner {
     flex-direction: row;
     justify-content: space-between;
@@ -9115,15 +9142,26 @@ yx-axis
     min-height: 435px;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .page-club .slider {
     width: 65%;
+    height: 100%;
+    max-height: 611px;
     border-radius: 22px;
   }
 }
 @media (min-width: 1200px) {
   .page-club .slider {
     width: 70%;
+  }
+}
+.page-club .slider img, .page-club .slider picture {
+  height: 100%;
+  max-height: 611px;
+}
+@media (min-width: 1200px) {
+  .page-club .slider img, .page-club .slider picture {
+    min-height: 611px;
   }
 }
 @media (max-width: 767px) {
@@ -9134,7 +9172,7 @@ yx-axis
 .page-club .form-book {
   width: 100%;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .page-club .form-book {
     width: 35%;
   }
@@ -9276,7 +9314,7 @@ yx-axis
     font-size: 28px;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .form-book .title {
     margin-bottom: 1rem;
     font-size: 20px;
@@ -9288,7 +9326,7 @@ yx-axis
   flex-wrap: wrap;
   align-items: flex-start;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .form-book__wrapper {
     justify-content: space-between;
   }
@@ -9306,7 +9344,7 @@ yx-axis
     margin-right: 0.9rem;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .form-book .form-label {
     width: 100%;
     margin-right: 0;
@@ -9401,7 +9439,7 @@ yx-axis
     margin-right: 0.5rem;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .form-book__btns {
     width: 100%;
     padding-right: 0;
