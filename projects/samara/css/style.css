@@ -1058,7 +1058,7 @@ button[type=submit] {
 }
 
 :root {
-  --bg-h: 20vw;
+  --bg-h: 17vw;
 }
 @media (min-width: 1200px) {
   :root {
@@ -1160,6 +1160,24 @@ button[type=submit] {
 @media (min-width: 1200px) {
   .promo__price {
     font-size: 52px;
+  }
+}
+.promo__price span {
+  font-size: 16px;
+}
+@media (min-width: 320px) {
+  .promo__price span {
+    font-size: calc(2.2321428571vw + 8.8571428571px);
+  }
+}
+@media (min-width: 768px) {
+  .promo__price span {
+    font-size: calc(1.3888888889vw + 15.3333333333px);
+  }
+}
+@media (min-width: 1200px) {
+  .promo__price span {
+    font-size: 32px;
   }
 }
 .promo__text {
@@ -1571,9 +1589,10 @@ button[type=submit] {
     margin-bottom: 115px;
   }
 }
-.gallery__item picture {
+.gallery__item picture, .gallery__item img {
   width: 100%;
   height: 100%;
+  min-height: 245px;
 }
 .gallery__title {
   display: none;
@@ -2206,6 +2225,8 @@ button[type=submit] {
 }
 .map__wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column-reverse;
   width: 100%;
   max-width: 1440px;
   margin-top: 0;
@@ -2231,15 +2252,21 @@ button[type=submit] {
 }
 .map__ya {
   z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 100%;
-  height: 610px;
+  height: 500px;
   overflow: hidden;
   -ms-touch-action: auto !important;
   touch-action: auto !important;
+}
+@media (min-width: 768px) {
+  .map__ya {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 610px;
+  }
 }
 .map .container {
   position: relative;
@@ -2259,7 +2286,6 @@ button[type=submit] {
 .map__info {
   position: relative;
   padding: 10% 5%;
-  padding-top: 650px;
   background-color: #ffffff;
   width: 100%;
   border-radius: 10px;
