@@ -428,15 +428,15 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form class="form needs-validation" novalidate>
+                <form class="form needs-validation" novalidate method="post" action="https://echo.htmlacademy.ru">
                   <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
-                    <input class="form-control" type="text" id="firstName" placeholder="Имя" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                    <input class="form-control" type="text" id="userName" name="userName" placeholder="Имя" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
                   <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
-                    <input class="form-control" type="text" id="lastName" placeholder="Фамилия" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                    <input class="form-control" type="text" id="userSurname" name="userSurname" placeholder="Фамилия" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
                   <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
-                    <input class="form-control mask-phone" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                    <input class="form-control mask-phone" type="tel" id="userPhone" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
                   <div class="form__item">
                     <div class="form__tooltip-label">
@@ -447,31 +447,14 @@
                                   </svg>
                       </button>
                     </div>
-                    <input class="form-control" id="userDate" type="date" placeholder="Дата рождения" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
+                    <input class="form-control" id="userDate" type="date" placeholder="Дата рождения" name="userDate" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
                   </div>
                   <label class="form__item form-label"><span class="form__label-name">Email (необязательное поле)</span>
-                    <input class="form-control" id="userEmail" type="email" placeholder="Email"><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                    <input class="form-control" id="userEmail" type="email" name="userEmail" placeholder="Email"><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
                   <button class="button form__button" type="submit">Вперед</button>
                   <div class="form__text">Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
                 </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade modal-message" aria-hidden="true" tabindex="-1" id="modal-message">
-          <div class="modal-dialog modal-sm modal-dialog-centered">
-            <div class="modal-content">
-              <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                          <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
-                            <use xlink:href="images/sprite.svg#close"></use>
-                          </svg>
-              </button>
-              <div class="modal-body">
-                <div class="modal-message">
-                  <div>Заявка отправлена!</div>
-                  <div>Ваш менеджер перезвонит в ближайшее время.</div>
-                </div>
               </div>
             </div>
           </div>
