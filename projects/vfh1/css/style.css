@@ -2554,6 +2554,9 @@ yx-axis
     min-height: 500px;
   }
 }
+.slider--content .swiper-container {
+  height: 100%;
+}
 .slider--content .swiper-slide {
   background-position: center;
   background-size: cover;
@@ -10099,6 +10102,8 @@ yx-axis
   }
 }
 .page-presale__slider {
+  width: 100%;
+  overflow: hidden;
   margin-bottom: var(--base-mb);
   max-height: 500px;
 }
@@ -10106,6 +10111,8 @@ yx-axis
   max-height: 100%;
 }
 .page-presale__timer {
+  width: 100%;
+  overflow: hidden;
   margin-bottom: var(--base-mb);
 }
 @media (min-width: 992px) {
