@@ -140,7 +140,7 @@
                               <li>Индивидуальные шкафчики</li>
                               <li>Питьевая вода</li>
                             </ul>
-                                  <button class="button" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#modal_2"><span>Купить</span></button>
+                                  <button class="button" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#modal_1"><span>Купить</span></button>
                           </div>
                         </div>
             </div>
@@ -168,7 +168,7 @@
                               <li>Индивидуальные шкафчики</li>
                               <li>Питьевая вода</li>
                             </ul>
-                                  <button class="button" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#modal_1"><span>Купить</span></button>
+                                  <button class="button" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#modal_2"><span>Купить</span></button>
                           </div>
                         </div>
             </div>
@@ -430,11 +430,11 @@
                     <input class="form-control" type="text" id="userSurname" name="userSurname" placeholder="Фамилия" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
                   <label class="form__item form-label"><span class="form__label-name">Выберете клуб</span>
-                    <select class="form-select form-control" size="1" name="addressClub" aria-label="клуб" required>
+                    <select class="form-select form-control" size="1" name="price_id" aria-label="клуб" required>
                       <option selected disabled value="">Выберете клуб</option>
-                      <option value="Московское ш., 4, корп. 4">Московское ш., 4, корп. 4</option>
-                      <option value="Красноармейская ул., 131">Красноармейская ул., 131</option>
-                      <option value="Южное ш., 5">Южное ш., 5</option>
+                      <option value="349577">Московское ш., 4, корп. 4</option>
+                      <option value="349578">Красноармейская ул., 131</option>
+                      <option value="349576">Южное ш., 5</option>
                     </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
                   <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
@@ -454,6 +454,8 @@
                   <label class="form__item form-label"><span class="form__label-name">Email (необязательное поле)</span>
                     <input class="form-control" id="userEmail" type="email" name="userEmail" placeholder="Email"><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
+                  <input type="hidden" name="posName" value="1 месяц">
+                  <input type="hidden" name="posPrice" value="2300">
                   <button class="button form__button" type="submit"><span>Вперед</span></button>
                   <div class="form__text">Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
                 </form>
@@ -497,6 +499,9 @@
                   <label class="form__item form-label"><span class="form__label-name">Email (необязательное поле)</span>
                     <input class="form-control" id="userEmail" type="email" name="userEmail" placeholder="Email"><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                   </label>
+                  <input type="hidden" name="posName" value="Мультикарта 1 месяц Все клубы Самары">
+                  <input type="hidden" name="posPrice" value="3900">
+                  <input type="hidden" name="price_id" value="349579">
                   <button class="button form__button" type="submit"><span>Вперед</span></button>
                   <div class="form__text">Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
                 </form>
