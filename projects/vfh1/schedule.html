@@ -40,9 +40,9 @@
                 </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
           <ul class="list list--bold">
             <li><a href="sale.html">Акции</a></li>
-            <li><a href="clubs">Клубы</a></li>
+            <li><a href="clubs.html">Клубы</a></li>
             <li><a href="#">Тренеры</a></li>
-            <li><a href="#">Расписание</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
           </ul>
           <ul class="list">
             <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
@@ -114,211 +114,1305 @@
                       <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
                         <use xlink:href="img/sprite.svg#trainer"></use>
                       </svg></a></li>
-        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Расписание</span>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="schedule.html"><span>Расписание</span>
                       <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
                         <use xlink:href="img/sprite.svg#schedule"></use>
                       </svg></a></li>
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
-    <div class="page-schedule container">
-      <section class="page-schedule__header">
-        <div class="page-schedule__item-header">
-          <div class="title">Мастер-классы</div>
-          <div class="text">Мастер-классы (МК) и занятия, в названии которых содержится обозначение "СЕКЦИЯ" или в скобках указана стоимость, являются Дополнительными услугами. Их посещение возможно только после предварительной оплаты.</div>
-        </div>
-        <div class="page-schedule__item-header"><img src="" alt="pic" width="618" height="182"></div>
-      </section>
-    </div>
-    <section class="page-schedule__form">
-      <form class="form container" id="schedule-form">
-        <div class="form__title">Найти свою тренировку</div>
-        <div class="form__wrapper">
-          <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-            <select class="form-select form-control" aria-label="клуб" name="clubs">
-              <option selected value="">Выберете клуб</option>
-              <option value="В Кудрово">В Кудрово</option>
-              <option value="На Большевиков">На Большевиков</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Северном">На Северном</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Наставников">На Наставников</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Политехнической">На Политехнической</option>
-              <option value="На Гашека">На Гашека</option>
-            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-          </label>
-          <label class="form-label"><span class="form__label-name">Выберете направление</span>
-            <select class="form-select form-control" aria-label="направление" name="category" required>
-              <option selected value="Выберете категорию">Выберете направление</option>
-              <option value="Водный комплекс">Водный комплекс</option>
-              <option value="Водный комплекс">Водный комплекс</option>
-              <option value="Водный комплекс">Водный комплекс</option>
-            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-          </label>
-          <label class="form-label"><span class="form__label-name">Время посещения</span>
-            <select class="form-select form-control" aria-label="Время посещения" name="stations">
-              <option selected value="">Время посещения</option>
-              <option value="Утро (7.00-12.00)">Утро (7.00-12.00)</option>
-              <option value="Утро (7.00-12.00)">Утро (7.00-12.00)</option>
-              <option value="Утро (7.00-12.00)">Утро (7.00-12.00)</option>
-            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-          </label>
-          <div class="form-clubs__btns">
-            <button class="button button--yellow" type="button" data-target="sidebar-list">Подобрать</button>
-            <button class="button button--outline" type="reset">Сбросить</button>
+    <div class="page-schedule">
+      <div class="container">
+        <section class="page-schedule__header">
+          <div class="page-schedule__header-item">
+            <div class="title">Мастер-классы</div>
+            <div class="text">Мастер-классы (МК) и занятия, в названии которых содержится обозначение "СЕКЦИЯ" или в скобках указана стоимость, являются Дополнительными услугами. Их посещение возможно только после предварительной оплаты.</div>
           </div>
-        </div>
-      </form>
-    </section>
-    <div class="container">
-      <section class="page-schedule__advantages">
-        <div class="title">
-          Преимущества тренировок "+"
-          <span>(в скобках указана стоимость)</span>
-        </div>
-        <ul class="page-schedule__list-advantages">
-          <li class="page-schedule__item-advantages">
-            <div class="icon"></div><span>Расширенный формат тренировок</span>
-          </li>
-          <li class="page-schedule__item-advantages">
-            <div class="icon"></div><span>Индивидуальный подход к каждому</span>
-          </li>
-          <li class="page-schedule__item-advantages">
-            <div class="icon"></div><span>Нестандартная программа тренировки</span>
-          </li>
-        </ul>
-      </section>
-      <main>
-        <h1>Расписание</h1><a href="#">Открыть расписание на неделю в PDF</a>
-      </main>
-      <div class="cd-schedule loading">
-        <div class="timeline">
-          <ul>
-            <li><span>09:00</span></li>
-            <li><span>09:30</span></li>
-            <li><span>10:00</span></li>
-            <li><span>10:30</span></li>
-            <li><span>11:00</span></li>
-            <li><span>11:30</span></li>
-            <li><span>12:00</span></li>
-            <li><span>12:30</span></li>
-            <li><span>13:00</span></li>
-            <li><span>13:30</span></li>
-            <li><span>14:00</span></li>
-            <li><span>14:30</span></li>
-            <li><span>15:00</span></li>
-            <li><span>15:30</span></li>
-            <li><span>16:00</span></li>
-            <li><span>16:30</span></li>
-            <li><span>17:00</span></li>
-            <li><span>17:30</span></li>
-            <li><span>18:00</span></li>
-          </ul>
-        </div>
-        <div class="events">
-          <ul class="wrap">
-            <li class="events-group">
-              <div class="top-info"><span>Понедельник</span></div>
-              <ul>
-                <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1"><a href="#0">
-                    <div class="event-name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div></a></li>
-                <li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2"><a href="#0">
-                    <div class="event-name">Rowing Workout</div></a></li>
-                <li class="single-event" data-start="14:00" data-end="15:15" data-content="event-yoga-1" data-event="event-3"><a href="#0">
-                    <div class="event-name">Yoga Level 1</div></a></li>
-              </ul>
-            </li>
-            <li class="events-group">
-              <div class="top-info"><span>Вторник</span></div>
-              <ul>
-                <li class="single-event" data-start="10:00" data-end="11:00" data-content="event-rowing-workout" data-event="event-2"><a href="#0">
-                    <div class="event-name">Rowing Workout</div></a></li>
-                <li class="single-event" data-start="11:30" data-end="13:00" data-content="event-restorative-yoga" data-event="event-4"><a href="#0">
-                    <div class="event-name">Restorative Yoga</div></a></li>
-                <li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1"><a href="#0">
-                    <div class="event-name">Abs Circuit</div></a></li>
-                <li class="single-event" data-start="15:45" data-end="16:45" data-content="event-yoga-1" data-event="event-3"><a href="#0">
-                    <div class="event-name">Yoga Level 1</div></a></li>
-              </ul>
-            </li>
-            <li class="events-group">
-              <div class="top-info"><span>Среда</span></div>
-              <ul>
-                <li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4"><a href="#0">
-                    <div class="event-name">Restorative Yoga</div></a></li>
-                <li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3"><a href="#0">
-                    <div class="event-name">Yoga Level 1</div></a></li>
-                <li class="single-event" data-start="12:00" data-end="13:45" data-content="event-rowing-workout" data-event="event-2"><a href="#0">
-                    <div class="event-name">Rowing Workout</div></a></li>
-                <li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3"><a href="#0">
-                    <div class="event-name">Yoga Level 1</div></a></li>
-              </ul>
-            </li>
-            <li class="events-group">
-              <div class="top-info"><span>Четверг</span></div>
-              <ul>
-                <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1"><a href="#0">
-                    <div class="event-name">Abs Circuit</div></a></li>
-                <li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4"><a href="#0">
-                    <div class="event-name">Restorative Yoga</div></a></li>
-                <li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1"><a href="#0">
-                    <div class="event-name">Abs Circuit</div></a></li>
-                <li class="single-event" data-start="17:00" data-end="18:30" data-content="event-rowing-workout" data-event="event-2"><a href="#0">
-                    <div class="event-name">Rowing Workout</div></a></li>
-              </ul>
-            </li>
-            <li class="events-group">
-              <div class="top-info"><span>Пятница</span></div>
-              <ul>
-                <li class="single-event" data-start="10:00" data-end="11:00" data-content="event-rowing-workout" data-event="event-2"><a href="#0">
-                    <div class="event-name">Rowing Workout</div></a></li>
-                <li class="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1"><a href="#0">
-                    <div class="event-name">Abs Circuit</div></a></li>
-                <li class="single-event" data-start="15:45" data-end="16:45" data-content="event-yoga-1" data-event="event-3"><a href="#0">
-                    <div class="event-name">Yoga Level 1</div></a></li>
-              </ul>
-            </li>
-            <!---->
-            <li class="events-group">
-              <div class="top-info"><span>Суббота</span></div>
-              <ul>
-                <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1"><a href="#0">
-                    <div class="event-name">Abs Circuit</div></a></li>
-                <li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2"><a href="#0">
-                    <div class="event-name">Rowing Workout</div></a></li>
-                <li class="single-event" data-start="14:00" data-end="15:15" data-content="event-yoga-1" data-event="event-3"><a href="#0">
-                    <div class="event-name">Yoga Level 1</div></a></li>
-              </ul>
-            </li>
-            <!---->
-            <!---->
-            <li class="events-group">
-              <div class="top-info"><span>Воскресенье</span></div>
-              <ul>
-                <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1"><a href="#0">
-                    <div class="event-name">Abs Circuit</div></a></li>
-                <li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2"><a href="#0">
-                    <div class="event-name">Rowing Workout</div></a></li>
-                <li class="single-event" data-start="14:00" data-end="15:15" data-content="event-yoga-1" data-event="event-3"><a href="#0">
-                    <div class="event-name">Yoga Level 1</div></a></li>
-              </ul>
-            </li>
-            <!---->
-          </ul>
-        </div>
-        <div class="event-modal">
-          <header class="header">
-            <div class="content"><span class="event-date"></span>
-              <h3 class="event-name"></h3>
+          <div class="page-schedule__header-item">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/schedule/header.webp">
+                      <source media="(min-width: 768px)" srcset="img/schedule/header-tb.webp"><img src="img/schedule/header-mb.jpg" alt="pic" width="288" height="322">
+                    </picture>
+          </div>
+        </section>
+        <div class="d-block d-sm-none">
+          <section class="page-schedule__advantages advantages-workout">
+            <div class="advantages-workout__title">
+              Преимущества тренировок "+"
+              <span>(в скобках указана стоимость)</span>
             </div>
-            <div class="header-bg"></div>
-          </header>
-          <div class="body">
-            <div class="event-info"></div>
-            <div class="body-bg"></div>
-          </div><a class="close" href="#0">Close</a>
+            <ul class="advantages-workout__list">
+              <li class="advantages-workout__item">
+                          <svg class="icon" width="30" height="24" viewBox="0 0 30 24">
+                            <use xlink:href="img/sprite.svg#workout-1"></use>
+                          </svg><span>Расширенный формат тренировок</span>
+              </li>
+              <li class="advantages-workout__item">
+                          <svg class="icon" width="23" height="23" viewBox="0 0  13 13">
+                            <use xlink:href="img/sprite.svg#sch-user"></use>
+                          </svg><span>Индивидуальный подход к каждому</span>
+              </li>
+              <li class="advantages-workout__item">
+                          <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                            <use xlink:href="img/sprite.svg#workout-3"></use>
+                          </svg><span>Нестандартная программа тренировки</span>
+              </li>
+            </ul>
+          </section>
         </div>
-        <div class="cover-layer"></div>
+      </div>
+      <section class="page-schedule__form">
+        <form class="form form-schedule container" id="schedule-form">
+          <div class="form-clubs__title">Найти свою тренировку</div>
+          <div class="form-clubs__wrapper">
+            <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+              <select class="form-select form-control" aria-label="выберете клуб" required>
+                <option selected disabled value="">Выберете клуб</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Северном">На Северном</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Северном">На Северном</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Гашека">На Гашека</option>
+              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+            </label>
+            <label class="form-label"><span class="form__label-name">Выберете направление</span>
+              <select class="form-select form-control" aria-label="Выберете направление" required>
+                <option selected disabled value="Выберете категорию">Выберете направление</option>
+                <option value="Водный комплекс">Водный комплекс</option>
+                <option value="Водный комплекс">Водный комплекс</option>
+                <option value="Водный комплекс">Водный комплекс</option>
+              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+            </label>
+            <label class="form-label"><span class="form__label-name">Время посещения</span>
+              <select class="form-select form-control" aria-label="Время посещения" required>
+                <option selected disabled value="">Время посещения</option>
+                <option value="Утро (7.00-12.00)">Утро (7.00-12.00)</option>
+                <option value="Утро (7.00-12.00)">Утро (7.00-12.00)</option>
+                <option value="Утро (7.00-12.00)">Утро (7.00-12.00)</option>
+              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+            </label>
+            <div class="form-clubs__btns">
+              <button class="button button--yellow" type="submit">Подобрать</button>
+              <button class="button button--outline" type="reset">Сбросить</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <div class="container">
+        <div class="d-none d-sm-block">
+          <section class="page-schedule__advantages advantages-workout">
+            <div class="advantages-workout__title">
+              Преимущества тренировок "+"
+              <span>(в скобках указана стоимость)</span>
+            </div>
+            <ul class="advantages-workout__list">
+              <li class="advantages-workout__item">
+                          <svg class="icon" width="30" height="24" viewBox="0 0 30 24">
+                            <use xlink:href="img/sprite.svg#workout-1"></use>
+                          </svg><span>Расширенный формат тренировок</span>
+              </li>
+              <li class="advantages-workout__item">
+                          <svg class="icon" width="23" height="23" viewBox="0 0  13 13">
+                            <use xlink:href="img/sprite.svg#sch-user"></use>
+                          </svg><span>Индивидуальный подход к каждому</span>
+              </li>
+              <li class="advantages-workout__item">
+                          <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                            <use xlink:href="img/sprite.svg#workout-3"></use>
+                          </svg><span>Нестандартная программа тренировки</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <main class="schedule">
+          <div class="schedule__header">
+            <h1 class="schedule__header-title title">Расписание</h1><a class="schedule__header-link-pdf" href="#">Открыть расписание на неделю в PDF</a><a class="link-text link-text--more" href="#"><span>Следующая неделя</span>
+                        <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                          <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg></a>
+          </div>
+          <div class="schedule__inner">
+            <div class="schedule__hours hours">
+              <div class="hours__morning">
+                <div class="hours__item" data-hour="09:00">09:00</div>
+                <div class="hours__item" data-hour="10:00">10:00</div>
+                <div class="hours__item" data-hour="11:00">11:00</div>
+              </div>
+              <div class="hours__day">
+                <div class="hours__item" data-hour="12:00">12:00</div>
+                <div class="hours__item" data-hour="13:00">13:00</div>
+                <div class="hours__item" data-hour="14:00">14:00</div>
+                <div class="hours__item" data-hour="15:00">15:00</div>
+              </div>
+              <div class="hours__evening">
+                <div class="hours__item" data-hour="16:00">16:00</div>
+                <div class="hours__item" data-hour="17:00">17:00</div>
+                <div class="hours__item" data-hour="18:00">18:00</div>
+                <div class="hours__item" data-hour="19:00">19:00</div>
+                <div class="hours__item" data-hour="20:00">20:00</div>
+                <div class="hours__item" data-hour="21:00">21:00</div>
+              </div>
+            </div>
+            <div class="schedule__week">
+              <div class="schedule__mob-nav">
+                <button class="schedule__button" type="button" aria-label="Выбор дня недели"><span class="schedule__item-active">20.03 пн</span></button>
+              </div>
+              <div class="schedule__week-days week-days">
+                <div class="week-days__item">09.05 вт</div>
+                <div class="week-days__item">21.03 вт</div>
+                <div class="week-days__item">22.03 ср</div>
+                <div class="week-days__item">23.03 чт</div>
+                <div class="week-days__item">24.03 пт</div>
+                <div class="week-days__item">25.03 сб</div>
+                <div class="week-days__item">26.03 вс</div>
+              </div>
+              <div class="schedule__days">
+                <div class="days" data-weekday="09.05 вт">
+                  <div class="days__item" data-hour="09:00"></div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="10:00">
+                              <div class="lesson" title="Fitness Yoga" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Fitness Yoga</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed accusantium vel architecto.</div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="11:00"></div>
+                  <div class="days__item" data-hour="12:00"></div>
+                  <div class="days__item" data-hour="13:00"></div>
+                  <div class="days__item" data-hour="14:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text">Внимание! Посещение урока возможно только в спортивной обуви или в носках. Комплекс упражнений направленный на растяжку и релаксацию. Подобные регулярные групповые тренировки помогут повысить тонус мышц, улучшить координацию, восстановить осанку, сделать движения пластичными. Рекомендуется для любого уровня подготовленности. Продолжительность занятий составляет 55 минут.</div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="15:00">
+                              <div class="lesson" title="Fitness Yoga" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Fitness Yoga</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="16:00"></div>
+                  <div class="days__item" data-hour="17:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="18:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="19:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="20:00">
+                              <div class="lesson" title="Fitness Yoga" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Fitness Yoga</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="21:00"></div>
+                </div>
+                <div class="days" data-weekday="21.03 вт">
+                  <div class="days__item" data-hour="09:00">
+                              <div class="lesson" title="Fitness Yoga" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Fitness Yoga</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="10:00">
+                              <div class="lesson" title="Fitness Yoga" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Fitness Yoga</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="10:00">
+                              <div class="lesson" title="Fitness Yoga" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Fitness Yoga</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="11:00">
+                              <div class="lesson lesson--gym" title="СЕКЦИЯ (9-11лет) «Бодибилдинг для мальчиков»" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ (9-11лет) «Бодибилдинг для мальчиков»</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Тренажерный зал</span>
+                                              <svg class="icon" width="16" height="14" viewBox="0 0 16 14">
+                                                <use xlink:href="img/sprite.svg#sch-swim"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="12:00"></div>
+                  <div class="days__item" data-hour="13:00">
+                              <div class="lesson" title="Fitness Yoga" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Fitness Yoga</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="14:00"></div>
+                  <div class="days__item" data-hour="15:00"></div>
+                  <div class="days__item" data-hour="16:00"></div>
+                  <div class="days__item" data-hour="17:00"></div>
+                  <div class="days__item" data-hour="18:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="19:00"></div>
+                  <div class="days__item" data-hour="20:00">
+                              <div class="lesson lesson--pool" title="Middle Mix" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Middle Mix</div>
+                                  <div class="lesson__trainer"><span>Маркотнова Лора</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="21:00"></div>
+                </div>
+                <div class="days" data-weekday="22.03 ср">
+                  <div class="days__item" data-hour="09:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="10:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="11:00"></div>
+                  <div class="days__item" data-hour="12:00">
+                              <div class="lesson lesson--pay" title="Flex + (100р.)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex + (100р.)</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="13:00"></div>
+                  <div class="days__item" data-hour="14:00"></div>
+                  <div class="days__item" data-hour="15:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="16:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="17:00">
+                              <div class="lesson lesson--pay" title="Flex + (100р.)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex + (100р.)</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="18:00"></div>
+                  <div class="days__item" data-hour="19:00"></div>
+                  <div class="days__item" data-hour="20:00">
+                              <div class="lesson" title="Fitness Yoga" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Fitness Yoga</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="21:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="days" data-weekday="23.03 чт">
+                  <div class="days__item" data-hour="09:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="10:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="11:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="12:00"></div>
+                  <div class="days__item" data-hour="13:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="14:00"></div>
+                  <div class="days__item" data-hour="15:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="16:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Дельфины 4» (5-6 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Дельфины 4» (5-6 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="17:00"></div>
+                  <div class="days__item" data-hour="18:00">
+                              <div class="lesson lesson--pay" title="Flex + (100р.)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex + (100р.)</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="19:00"></div>
+                  <div class="days__item" data-hour="20:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Школа плавания 13» (11-13 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Школа плавания 13» (11-13 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="21:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="days" data-weekday="24.03 пт">
+                  <div class="days__item" data-hour="09:00"></div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="11:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Дельфины 4» (5-6 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Дельфины 4» (5-6 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Детский бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="12:00"></div>
+                  <div class="days__item" data-hour="13:00"></div>
+                  <div class="days__item" data-hour="14:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Дельфины 4» (5-6 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Дельфины 4» (5-6 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Детский бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="15:00">
+                              <div class="lesson" title="СЕКЦИЯ (9-11лет) «Бодибилдинг для мальчиков»" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ (9-11лет) «Бодибилдинг для мальчиков»</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Тренажерный зал</span>
+                                              <svg class="icon" width="16" height="14" viewBox="0 0 16 14">
+                                                <use xlink:href="img/sprite.svg#sch-swim"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="16:00">
+                              <div class="lesson lesson--pool" title="Middle Mix" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Middle Mix</div>
+                                  <div class="lesson__trainer"><span>Маркотнова Лора</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="17:00"></div>
+                  <div class="days__item" data-hour="18:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="19:00"></div>
+                  <div class="days__item" data-hour="20:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Дельфины 4» (5-6 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Дельфины 4» (5-6 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Детский бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="21:00"></div>
+                </div>
+                <div class="days" data-weekday="25.03 сб">
+                  <div class="days__item" data-hour="09:00"></div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="11:00"></div>
+                  <div class="days__item" data-hour="12:00">
+                              <div class="lesson lesson--pay" title="Flex + (100р.)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex + (100р.)</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="13:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="14:00"></div>
+                  <div class="days__item" data-hour="15:00"></div>
+                  <div class="days__item" data-hour="16:00"></div>
+                  <div class="days__item" data-hour="17:00"></div>
+                  <div class="days__item" data-hour="18:00"></div>
+                  <div class="days__item" data-hour="19:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="20:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Дельфины 4» (5-6 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Дельфины 4» (5-6 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Детский бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="21:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Дельфины 4» (5-6 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Дельфины 4» (5-6 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Детский бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                </div>
+                <div class="days" data-weekday="26.03 вс">
+                  <div class="days__item" data-hour="09:00"></div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="10:00"></div>
+                  <div class="days__item" data-hour="11:00">
+                              <div class="lesson" title="Flex" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="12:00"></div>
+                  <div class="days__item" data-hour="13:00"></div>
+                  <div class="days__item" data-hour="14:00"></div>
+                  <div class="days__item" data-hour="15:00">
+                              <div class="lesson lesson--pay" title="Flex + (100р.)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">Flex + (100р.)</div>
+                                  <div class="lesson__trainer"><span>Кайгородцева Татьяна</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Большой аэробный зал</span>
+                                              <svg class="icon" width="17" height="20" viewBox="0 0 17 20">
+                                                <use xlink:href="img/sprite.svg#sch-spa"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="16:00"></div>
+                  <div class="days__item" data-hour="17:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Дельфины 4» (5-6 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Дельфины 4» (5-6 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Детский бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="18:00"></div>
+                  <div class="days__item" data-hour="19:00"></div>
+                  <div class="days__item" data-hour="20:00">
+                              <div class="lesson lesson--pool" title="СЕКЦИЯ «Дельфины 4» (5-6 лет)" data-bs-content-id="popover-content" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus">
+                                <div class="lesson__wrapper">
+                                  <div class="lesson__name">СЕКЦИЯ «Дельфины 4» (5-6 лет)</div>
+                                  <div class="lesson__trainer"><span>Малахова Елена</span>
+                                              <svg class="icon" width="15" height="18" viewBox="0 0 15 18">
+                                                <use xlink:href="img/sprite.svg#sch-user"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="lesson__place"><span>Детский бассейн</span>
+                                              <svg class="icon" width="15" height="10" viewBox="0 0 15 10">
+                                                <use xlink:href="img/sprite.svg#sch-pool"></use>
+                                              </svg>
+                                  </div>
+                                  <div class="d-none lesson__popover" id="popover-content">
+                                    <div class="lesson__text"></div><a class="link-text link-text--more" href="#"><span>Информация о тренере</span>
+                                                <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                                  <use xlink:href="img/sprite.svg#arrow"></use>
+                                                </svg></a>
+                                  </div>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="days__item" data-hour="21:00"></div>
+                </div>
+              </div>
+            </div>
+            <div class="mob-week-days">
+              <div class="mob-week-days__item">Пн</div>
+              <div class="mob-week-days__item">Вт</div>
+              <div class="mob-week-days__item mob-week-days__item--active">Ср</div>
+              <div class="mob-week-days__item">Чт</div>
+              <div class="mob-week-days__item">Пт</div>
+              <div class="mob-week-days__item">Сб</div>
+              <div class="mob-week-days__item">Вс</div>
+            </div>
+          </div>
+        </main><a class="link record" href="all-schedule.html">
+          <h3 class="record__title">Смотреть расписание<span>во всех клубах</span></h3>
+          <div class="link-text link-text--more"><span>cмотреть</span>
+                    <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                      <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+          </div></a>
       </div>
     </div>
     <footer class="page-footer">
@@ -389,6 +1483,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/script.min.js" type="module"></script>
+    <script src="js/script-schedule.min.js" type="module"></script>
   </body>
 </html>
