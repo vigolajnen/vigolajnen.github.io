@@ -10525,11 +10525,11 @@ yx-axis
 
 :root {
   --schedule-col: calc(100% / 7 - 10px);
-  --schedule-col-min: 130px;
+  --schedule-col-min: 140px;
   --schedule-min: 980px;
   --schedule-row: 125px;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   :root {
     --schedule-row: 170px;
   }
@@ -10546,6 +10546,11 @@ yx-axis
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  .schedule__header {
+    display: inline-flex;
+  }
 }
 .schedule__header-title.title {
   margin-bottom: 30px;
@@ -10612,7 +10617,7 @@ yx-axis
   margin-bottom: 30px;
   box-sizing: border-box;
 }
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .schedule__inner {
     justify-content: center;
     max-width: 100%;
@@ -10632,13 +10637,13 @@ yx-axis
 .schedule__week {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 60px);
+  width: calc(100% - 70px);
   overflow: hidden;
   scroll-behavior: smooth;
 }
 @media (max-width: 768px) {
   .schedule__week {
-    width: calc(100% - 56px);
+    width: calc(100% - 65px);
   }
 }
 @media (max-width: 1024px) {
@@ -10654,7 +10659,12 @@ yx-axis
 .schedule__days {
   display: flex;
   width: 100%;
-  margin-left: 4px;
+  gap: 10px;
+}
+@media (max-width: 576px) {
+  .schedule__days {
+    animation: mobDaysVisible 3s forwards;
+  }
 }
 @media (min-width: 768px) {
   .schedule__days {
@@ -10692,7 +10702,7 @@ yx-axis
 .schedule__mob-nav {
   display: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .schedule__mob-nav {
     display: flex;
     margin-top: 8px;
@@ -10703,6 +10713,13 @@ yx-axis
     width: 100%;
   }
 }
+.schedule__mob-nav .schedule__button {
+  display: flex;
+  align-items: center;
+}
+.schedule__mob-nav .schedule__button .icon {
+  margin: 0 5px;
+}
 .schedule__item-active {
   position: relative;
   display: flex;
@@ -10712,26 +10729,19 @@ yx-axis
   font-weight: 700;
   font-size: 17px;
   line-height: 120%;
-}
-.schedule__item-active::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  width: 19px;
-  height: 10px;
-  transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  color: #42474d;
 }
 .schedule__item-active--active {
   color: #42474d;
-  background-color: #f5f5f5;
-  border-color: #f5f5f5;
+}
+@media (min-width: 576px) {
+  .schedule__item-active--active {
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .week-days {
     display: flex;
     flex-direction: column;
@@ -10740,6 +10750,7 @@ yx-axis
 }
 .week-days--open {
   position: absolute;
+  z-index: 2;
   top: 70px;
   left: 0;
   width: 100%;
@@ -10785,19 +10796,14 @@ yx-axis
     font-size: 18px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .week-days__item {
     display: none;
     flex-direction: column;
+    margin: 0;
     padding: 16px 0;
-    width: 173px;
+    width: 100%;
     font-size: 16px;
-  }
-  .week-days__item:not(:first-child) {
-    margin-top: -6px;
-  }
-  .week-days__item:first-child {
-    padding: 16px 0 16px 14px;
   }
 }
 
@@ -10807,7 +10813,7 @@ yx-axis
   width: var(--schedule-col);
   min-width: var(--schedule-col-min);
   flex-grow: 1;
-  margin: 4px;
+  margin: 4px 0;
 }
 .days--hidden {
   display: none;
@@ -10843,11 +10849,11 @@ yx-axis
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-top: 9px;
+  margin-top: 4px;
   height: 100%;
   flex-grow: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .hours {
     margin-top: 56px;
   }
@@ -10896,6 +10902,14 @@ yx-axis
   background: #eaeced;
 }
 
+@keyframes mobDaysVisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .advantages-workout {
   margin-bottom: 30px;
 }
@@ -11130,6 +11144,7 @@ yx-axis
 }
 
 .lesson {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11240,22 +11255,78 @@ yx-axis
     margin-right: 7px;
   }
 }
-.lesson__popover .link-text {
-  margin-top: 1rem;
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 140%;
-}
-.lesson__popover .link-text span {
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 140%;
-  color: red;
-}
 .lesson__text {
   margin-bottom: 1rem;
+}
+.lesson__popup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+}
+.lesson__link {
+  position: relative;
+  display: inline-flex;
+  padding-right: 40px;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+}
+.lesson__link::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 0;
+  transform: translateY(-40%);
+  width: 30px;
+  height: 100%;
+  background-image: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: 0.3s;
+}
+.lesson__link:hover::before {
+  transform: translateY(-40%) translateX(10%);
+}
+.lesson__link span::first-letter {
+  text-transform: uppercase;
+}
+
+.popover {
+  position: relative;
+  min-width: 320px;
+  background: #f6f7f8;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+.popover::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/close.svg");
+  background-size: contain;
+}
+.popover .title {
+  margin-bottom: 5px;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+}
+.popover .text {
+  margin-bottom: 5px;
+  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  height: 100%;
 }
 
 .mob-week-days {
