@@ -11342,6 +11342,12 @@ yx-axis
   }
 }
 .mob-week-days__item {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
   padding: 8px 10px;
   flex-grow: 1;
   font-weight: 400;
