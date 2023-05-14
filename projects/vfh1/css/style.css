@@ -10433,7 +10433,17 @@ yx-axis
 }
 
 .page-schedule {
-  padding-top: 30px;
+  margin-bottom: 54px;
+}
+@media (min-width: 768px) {
+  .page-schedule {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-schedule {
+    margin-bottom: 84px;
+  }
 }
 .page-schedule .title {
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
@@ -10483,6 +10493,12 @@ yx-axis
   border-radius: 15.535px;
   overflow: hidden;
 }
+@media (min-width: 992px) {
+  .page-schedule__header-item:last-child {
+    margin-left: 40px;
+    width: calc(50% - 40px);
+  }
+}
 .page-schedule__header-item img {
   width: 100%;
   height: 100%;
@@ -10500,21 +10516,24 @@ yx-axis
 }
 @media (min-width: 768px) {
   .page-schedule__header .text {
-    padding-right: 20px;
+    padding-right: 35px;
   }
 }
 .page-schedule__form {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 0;
   margin-bottom: 30px;
-  background: #90959a;
-  /* 3d */
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
 }
 @media (min-width: 768px) {
   .page-schedule__form {
     margin-bottom: 84px;
+  }
+}
+@media (min-width: 992px) {
+  .page-schedule__form {
+    margin-bottom: 84px;
+    background: #90959A;
+    box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   }
 }
 .page-schedule__advantaves {
@@ -10522,21 +10541,63 @@ yx-axis
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+.page-schedule .record {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .page-schedule .record {
+    margin-top: 50px;
+  }
+}
+.page-schedule .record__title {
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .page-schedule .record__title {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-schedule .record__title {
+    font-size: 60px;
+  }
+}
 
 :root {
   --schedule-col: calc(100% / 7 - 10px);
-  --schedule-col-min: 140px;
+  --schedule-col-min: 164px;
+  --schedule-col-max: 100%;
   --schedule-min: 980px;
-  --schedule-row: 125px;
+  --schedule-row: 130px;
+  --schedule-row-min: 40px;
+  --base-gap: 10px;
+  --step: 5px;
+  --count: 2;
+  --bg-image: url("../img/schedule/bg-mb.png");
+  --item-color: rgb(234 236 237 / 45%);
 }
 @media (min-width: 576px) {
   :root {
     --schedule-row: 170px;
+    --schedule-row-min: --schedule-row;
+    --schedule-col-max: 180px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --bg-image: url("../img/schedule/bg.png");
   }
 }
 @media (min-width: 1200px) {
   :root {
     --schedule-row: 180px;
+    --schedule-row-min: --schedule-row;
+    --schedule-col-max: 164px;
   }
 }
 
@@ -10545,7 +10606,6 @@ yx-axis
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 @media (max-width: 576px) {
   .schedule__header {
@@ -10610,6 +10670,23 @@ yx-axis
   transform: translateX(6px);
   transition: 0.3s;
 }
+.schedule__header-scroll {
+  display: none;
+}
+@media (min-width: 576px) {
+  .schedule__header-scroll {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  .schedule__header-scroll {
+    display: none;
+  }
+}
 .schedule__inner {
   position: relative;
   display: flex;
@@ -10622,7 +10699,7 @@ yx-axis
     justify-content: center;
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 90px;
   }
 }
 .schedule__hours {
@@ -10646,7 +10723,7 @@ yx-axis
     width: calc(100% - 65px);
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .schedule__week {
     overflow-x: auto;
   }
@@ -10654,17 +10731,18 @@ yx-axis
 .schedule__week-days {
   position: relative;
   display: flex;
-  margin-left: 4px;
+  gap: var(--base-gap);
+}
+@media (min-width: 768px) {
+  .schedule__week-days {
+    margin-bottom: 10px;
+  }
 }
 .schedule__days {
   display: flex;
   width: 100%;
-  gap: 10px;
-}
-@media (max-width: 576px) {
-  .schedule__days {
-    animation: mobDaysVisible 3s forwards;
-  }
+  gap: var(--base-gap);
+  border-radius: 12px;
 }
 @media (min-width: 768px) {
   .schedule__days {
@@ -10707,7 +10785,7 @@ yx-axis
     display: flex;
     margin-top: 8px;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100%;
@@ -10750,15 +10828,17 @@ yx-axis
 }
 .week-days--open {
   position: absolute;
-  z-index: 2;
-  top: 70px;
-  left: 0;
+  z-index: 1;
+  top: 12px;
+  left: -2px;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 20px;
   width: 100%;
   max-width: 100%;
-  max-height: 360px;
-  overflow: auto;
-  border-radius: 12px;
   background-color: #fff;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
 }
 .week-days--open .week-days__item {
   display: flex;
@@ -10769,9 +10849,7 @@ yx-axis
 .week-days__item {
   order: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 4px;
   padding: 10px;
   width: 100%;
   min-width: var(--schedule-col-min);
@@ -10779,6 +10857,11 @@ yx-axis
   font-weight: 700;
   font-size: 20px;
   line-height: 130%;
+}
+@media (min-width: 576px) {
+  .week-days__item {
+    justify-content: center;
+  }
 }
 .week-days__item--active {
   color: #ffffff;
@@ -10788,6 +10871,9 @@ yx-axis
 }
 .week-days__item--first {
   order: 0;
+}
+.week-days__item span {
+  display: inline-flex;
 }
 @media (max-width: 1200px) {
   .week-days__item {
@@ -10799,9 +10885,7 @@ yx-axis
 @media (max-width: 576px) {
   .week-days__item {
     display: none;
-    flex-direction: column;
     margin: 0;
-    padding: 16px 0;
     width: 100%;
     font-size: 16px;
   }
@@ -10812,8 +10896,9 @@ yx-axis
   flex-wrap: wrap;
   width: var(--schedule-col);
   min-width: var(--schedule-col-min);
+  max-width: var(--schedule-col-max);
   flex-grow: 1;
-  margin: 4px 0;
+  gap: var(--base-gap);
 }
 .days--hidden {
   display: none;
@@ -10823,17 +10908,16 @@ yx-axis
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4px 0;
-  margin-bottom: 8px;
   width: 100%;
   min-width: var(--schedule-col-min);
   height: var(--schedule-row);
+  min-height: var(--schedule-row-min);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
   color: #42474d;
-  background: #eaeced;
+  background: var(--item-color);
   border-radius: 12px;
   border: 2px solid transparent;
   overflow: hidden;
@@ -10848,8 +10932,7 @@ yx-axis
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-top: 4px;
+  gap: var(--base-gap);
   height: 100%;
   flex-grow: 1;
 }
@@ -10860,7 +10943,7 @@ yx-axis
 }
 @media (min-width: 992px) {
   .hours {
-    margin-top: 60px;
+    margin-top: 53.4px;
   }
 }
 .hours--opacity {
@@ -10872,13 +10955,11 @@ yx-axis
   align-items: center;
   padding: 5px;
   width: 100%;
-  height: calc(var(--schedule-row) + 2px);
+  height: var(--schedule-row);
+  min-height: var(--schedule-row-min);
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
-}
-.hours__item[data-hour="10:00"] {
-  height: calc((var(--schedule-row) + 8px) * 2);
 }
 .hours__item--active {
   color: #ffffff;
@@ -10887,7 +10968,7 @@ yx-axis
   border-radius: 12px;
 }
 .hours__evening, .hours__day, .hours__morning {
-  gap: 10px;
+  gap: var(--base-gap);
   display: flex;
   flex-direction: column;
   border-radius: 12px;
@@ -10910,6 +10991,23 @@ yx-axis
     opacity: 1;
   }
 }
+.schedule--empty .schedule__days {
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+@media (max-width: 576px) {
+  .schedule--empty .days__item {
+    --schedule-row: 0;
+  }
+}
+@media (max-width: 576px) {
+  .schedule--empty .hours__item {
+    --schedule-row: 0;
+  }
+}
+
 .advantages-workout {
   margin-bottom: 30px;
 }
@@ -10963,10 +11061,16 @@ yx-axis
     gap: 18px;
   }
 }
+@media (min-width: 992px) {
+  .advantages-workout__list {
+    gap: 45px;
+  }
+}
 .advantages-workout__item {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 20px 16px;
   margin-bottom: 13px;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
@@ -10977,9 +11081,16 @@ yx-axis
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 12px;
 }
-@media (min-width: 576px) {
+@media (min-width: 700px) {
   .advantages-workout__item {
+    margin-bottom: 0;
     width: calc(33.3333333333% - 12px);
+  }
+}
+@media (min-width: 992px) {
+  .advantages-workout__item {
+    width: calc(33.3333333333% - 30px);
+    margin-bottom: 13px;
   }
 }
 @media (min-width: 992px) {
@@ -10989,19 +11100,56 @@ yx-axis
     line-height: 130%;
   }
 }
-.advantages-workout__item .icon {
-  width: 30px;
-  margin-top: 5px;
-  margin-right: 10px;
-}
 .advantages-workout__item span {
   width: calc(100% - 40px);
+}
+@media (min-width: 768px) {
+  .advantages-workout__item--center {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .advantages-workout__item--center span {
+    width: auto;
+  }
+}
+.advantages-workout__item .icon {
+  width: 30px;
+  margin-right: 10px;
 }
 
 .form-schedule {
   background-color: #90959A;
-  padding: 20px 0;
+  padding: 24px 15px;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .form-schedule {
+    box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 345px) {
+  .form-schedule {
+    padding-bottom: 34px;
+  }
+}
+@media (min-width: 576px) {
+  .form-schedule {
+    padding: 25px 15px 50px;
+    border-radius: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .form-schedule {
+    padding: 40px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .form-schedule.container {
+    margin: 0 15px;
+  }
 }
 .form-schedule__title {
   margin-bottom: 0.7rem;
@@ -11034,48 +11182,91 @@ yx-axis
     margin-bottom: 2rem;
   }
 }
+.form-schedule .form-clubs__title {
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .form-schedule .form-clubs__title {
+    font-size: 40px;
+    line-height: 130%;
+  }
+}
 .form-schedule__wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   width: 100%;
 }
+.form-schedule .form-clubs__wrapper {
+  gap: 18px;
+  font-size: 20px;
+  line-height: 130%;
+}
+@media (min-width: 992px) {
+  .form-schedule .form-clubs__wrapper {
+    gap: 0;
+  }
+}
 .form-schedule .form-control {
-  padding: 0.7rem 0.75rem 0.7rem 1.45rem;
+  font-size: 20px;
+  line-height: 130%;
+  padding: 0.7rem 1.75rem 0.7rem 1.45rem;
+}
+@media (min-width: 576px) {
+  .form-schedule .form-control {
+    font-size: 15px;
+  }
 }
 @media (min-width: 768px) {
   .form-schedule .form-control {
     padding: 1rem 1.8rem 1rem 1rem;
+    font-size: 20px;
   }
 }
 .form-schedule .form-label {
+  font-size: 15px;
+  line-height: 140%;
+}
+.form-schedule .form-label, .form-schedule .form-clubs__btns {
   padding-bottom: 0;
-  margin-bottom: 0.5rem;
   color: #ffffff;
   width: 100%;
 }
 @media (min-width: 576px) {
-  .form-schedule .form-label {
+  .form-schedule .form-label, .form-schedule .form-clubs__btns {
     width: calc(50% - 1rem);
-    margin-right: 0.5rem;
   }
 }
 @media (min-width: 992px) {
-  .form-schedule .form-label {
+  .form-schedule .form-label, .form-schedule .form-clubs__btns {
     width: calc(23% - 1rem);
     margin-right: 1rem;
   }
 }
 @media (min-width: 1200px) {
-  .form-schedule .form-label {
+  .form-schedule .form-label, .form-schedule .form-clubs__btns {
     width: calc(23% - 1rem);
     margin-right: 1rem;
   }
 }
 @media (min-width: 1400px) {
-  .form-schedule .form-label {
-    width: calc(25% - 1rem);
-    margin-right: 1rem;
+  .form-schedule .form-label, .form-schedule .form-clubs__btns {
+    width: calc(24% - 30px);
+    margin-right: 30px;
+  }
+}
+.form-schedule .form-clubs__btns {
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .form-schedule .form-clubs__btns {
+    width: calc(31% - 1rem);
+  }
+}
+@media (min-width: 1400px) {
+  .form-schedule .form-clubs__btns {
+    width: 25%;
+    margin-right: 0;
   }
 }
 .form-schedule .form-select:focus, .form-schedule .form-select:hover {
@@ -11109,19 +11300,33 @@ yx-axis
 @media (min-width: 992px) {
   .form-schedule__btns {
     margin-left: auto;
+    margin-right: 0;
   }
 }
 .form-schedule .button {
+  flex-grow: 1;
   width: 100%;
   margin-bottom: 1rem;
-  padding: 10px 20px;
+  padding: 14px 20px;
+  font-size: 20px;
+  line-height: 130%;
+}
+@media (min-width: 576px) {
+  .form-schedule .button {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .form-schedule .button {
+    font-size: 20px;
+  }
 }
 .form-schedule .button:not(:last-child) {
   margin-right: 0.5rem;
 }
 @media (min-width: 1400px) {
   .form-schedule .button:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 24px;
   }
 }
 @media (min-width: 375px) {
@@ -11132,14 +11337,22 @@ yx-axis
 }
 @media (min-width: 576px) {
   .form-schedule .button {
-    width: auto;
-    margin-bottom: 0.4rem;
     padding: 10px 20px;
   }
 }
 @media (min-width: 768px) {
   .form-schedule .button {
     padding: 16px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .form-schedule .button {
+    padding: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .form-schedule .button {
+    width: calc(50% - 24px);
   }
 }
 
@@ -11156,7 +11369,7 @@ yx-axis
 }
 @media (min-width: 1300px) {
   .lesson {
-    padding: 15px;
+    padding: 14px;
   }
 }
 .lesson--pool {
@@ -11166,17 +11379,17 @@ yx-axis
   background-color: #f9d288;
 }
 .lesson__wrapper {
-  margin: 2px;
+  margin: 2px 0;
 }
 .lesson__name {
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 130%;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 @media (min-width: 1300px) {
   .lesson__name {
-    font-size: 15px;
     margin-bottom: 10px;
   }
 }
@@ -11185,13 +11398,13 @@ yx-axis
   flex-direction: row-reverse;
   justify-content: space-between;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 120%;
-  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 140%;
+  margin-bottom: 7px;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1100px) {
   .lesson__trainer {
-    font-size: 14px;
+    line-height: 120%;
   }
 }
 .lesson__trainer span {
@@ -11203,8 +11416,9 @@ yx-axis
   }
 }
 .lesson__trainer .icon {
-  width: 15px;
+  width: 12px;
   height: 20px;
+  margin-top: 3px;
   margin-right: 3px;
 }
 @media (min-width: 1200px) {
@@ -11223,12 +11437,12 @@ yx-axis
   flex-direction: row-reverse;
   justify-content: space-between;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 120%;
+  font-size: 15px;
+  line-height: 140%;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1100px) {
   .lesson__place {
-    font-size: 14px;
+    line-height: 120%;
   }
 }
 .lesson__place span {
@@ -11302,6 +11516,14 @@ yx-axis
   background: #f6f7f8;
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+@media (min-width: 768px) {
+  .popover {
+    min-width: 380px;
+    max-height: 233px;
+  }
 }
 .popover::before {
   content: "";
@@ -11326,15 +11548,16 @@ yx-axis
   font-weight: 400;
   font-size: 13px;
   line-height: 130%;
-  height: 100%;
+  height: 100px;
+  overflow-y: auto;
 }
 
 .mob-week-days {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 10px;
-  padding: 15px 0;
+  gap: 8px;
+  padding: 30px 0 20px;
 }
 @media (min-width: 768px) {
   .mob-week-days {
@@ -11348,12 +11571,13 @@ yx-axis
   margin: 0;
   padding: 0;
   cursor: pointer;
-  padding: 8px 10px;
+  padding: 8px;
   flex-grow: 1;
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
   text-align: center;
+  color: #42474d;
   background: #eaeced;
   border-radius: 6px;
 }
