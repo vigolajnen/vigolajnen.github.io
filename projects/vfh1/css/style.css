@@ -11436,6 +11436,9 @@ yx-axis
 .lesson--pool {
   background-color: #cde0f0;
 }
+.lesson--pool .lesson__place .icon {
+  margin-right: 3px;
+}
 .lesson--pay {
   background-color: #f9d288;
 }
@@ -11477,10 +11480,10 @@ yx-axis
   }
 }
 .lesson__trainer .icon {
-  width: 12px;
+  width: 13px;
   height: 20px;
   margin-top: 3px;
-  margin-right: 3px;
+  margin-left: 2px;
 }
 @media (min-width: 1200px) {
   .lesson__trainer .icon {
@@ -11489,8 +11492,7 @@ yx-axis
 }
 @media (min-width: 1300px) {
   .lesson__trainer .icon {
-    width: 20px;
-    margin-right: 7px;
+    width: 26px;
   }
 }
 .lesson__place {
@@ -11516,8 +11518,8 @@ yx-axis
 }
 .lesson__place .icon {
   width: 15px;
-  height: 20px;
-  margin-right: 3px;
+  height: 15px;
+  margin-top: 3px;
 }
 @media (min-width: 1200px) {
   .lesson__place .icon {
@@ -11526,8 +11528,7 @@ yx-axis
 }
 @media (min-width: 1300px) {
   .lesson__place .icon {
-    width: 20px;
-    margin-right: 7px;
+    width: 26px;
   }
 }
 .lesson__text {
@@ -11622,7 +11623,7 @@ yx-axis
   }
 }
 .popover .text::-webkit-scrollbar {
-  width: 1em;
+  width: 7px;
 }
 .popover .text::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.7);
