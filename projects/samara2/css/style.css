@@ -208,6 +208,9 @@ svg {
 button[type=submit] {
   cursor: pointer;
 }
+button[type=submit]:disabled {
+  opacity: 0.5;
+}
 
 .simplebar-content-wrapper {
   scrollbar-width: auto;
@@ -240,7 +243,6 @@ button[type=submit] {
   outline: none;
   margin: 0;
   padding: 0;
-  cursor: pointer;
   padding: 2px;
   font-weight: 700;
   font-size: 20px;
@@ -250,6 +252,7 @@ button[type=submit] {
   color: #ffffff;
   transition: 0.3s;
   border-radius: 51px;
+  cursor: pointer;
 }
 .button span {
   display: flex;
@@ -263,6 +266,9 @@ button[type=submit] {
 }
 .button:focus span, .button:active span, .button:hover span {
   background: #18181b;
+}
+.button:disabled {
+  opacity: 0.5;
 }
 .button--outline span {
   display: flex;
@@ -540,7 +546,6 @@ button[type=submit] {
   outline: none;
   margin: 0;
   padding: 0;
-  cursor: pointer;
   background: none;
   color: #6ddcff;
   opacity: 1;
@@ -886,7 +891,6 @@ button[type=submit] {
   outline: none;
   margin: 0;
   padding: 0;
-  cursor: pointer;
   display: block;
   position: absolute;
   top: 50%;
@@ -2398,7 +2402,6 @@ button[type=submit] {
   outline: none;
   margin: 0;
   padding: 0;
-  cursor: pointer;
   background: transparent;
 }
 .form__item .form-control {
@@ -2454,7 +2457,6 @@ button[type=submit] {
   outline: none;
   margin: 0;
   padding: 0;
-  cursor: pointer;
   position: absolute;
   top: 10px;
   right: 5px;
