@@ -10580,6 +10580,7 @@ yx-axis
   --count: 2;
   --bg-image: url("../img/schedule/bg-mb.png");
   --item-color: rgb(234 236 237 / 45%);
+  --week-days-h: 50px;
 }
 @media (min-width: 576px) {
   :root {
@@ -10601,6 +10602,18 @@ yx-axis
   }
 }
 
+.schedule .schedule__warning {
+  display: none;
+}
+.schedule .schedule__header-link-pdf, .schedule .schedule__header-link-next {
+  display: flex;
+}
+.schedule .schedule__header-link-next {
+  margin-bottom: 20px;
+}
+.schedule .schedule__header-link-next span::first-letter {
+  text-transform: uppercase;
+}
 .schedule__header {
   position: relative;
   display: flex;
@@ -10636,12 +10649,16 @@ yx-axis
 }
 .schedule__header-link-pdf {
   text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
   padding: 10px 25px 12px;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 120%;
+  text-align: center;
   color: #42474d;
   border: 2px solid #42474d;
   border-radius: 16px;
@@ -10651,15 +10668,21 @@ yx-axis
 }
 @media (min-width: 768px) {
   .schedule__header-link-pdf {
+    display: inline-flex;
+    justify-content: flex-start;
     position: absolute;
     top: 5px;
     right: 0;
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
   .schedule__header-link-pdf {
     top: 10px;
   }
+}
+.schedule__header-link-pdf span {
+  display: inline-flex;
 }
 .schedule__header-link-pdf:focus, .schedule__header-link-pdf:hover {
   opacity: 0.8;
@@ -10733,8 +10756,9 @@ yx-axis
   display: flex;
   gap: var(--base-gap);
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .schedule__week-days {
+    height: var(--week-days-h);
     margin-bottom: 10px;
   }
 }
@@ -10797,6 +10821,8 @@ yx-axis
 }
 .schedule__mob-nav .schedule__button .icon {
   margin: 0 5px;
+  width: 15px;
+  height: 15px;
 }
 .schedule__item-active {
   position: relative;
@@ -10832,7 +10858,6 @@ yx-axis
   top: 12px;
   left: -2px;
   padding-top: 60px;
-  padding-left: 60px;
   padding-bottom: 20px;
   width: 100%;
   max-width: 100%;
@@ -10850,7 +10875,7 @@ yx-axis
   order: 1;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 40px 10px 18vw;
   width: 100%;
   min-width: var(--schedule-col-min);
   font-style: normal;
@@ -10860,7 +10885,9 @@ yx-axis
 }
 @media (min-width: 576px) {
   .week-days__item {
+    padding: 10px;
     justify-content: center;
+    text-transform: lowercase;
   }
 }
 .week-days__item--active {
@@ -10887,7 +10914,10 @@ yx-axis
     display: none;
     margin: 0;
     width: 100%;
-    font-size: 16px;
+    font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 120%;
   }
 }
 
@@ -10938,12 +10968,7 @@ yx-axis
 }
 @media (min-width: 576px) {
   .hours {
-    margin-top: 56px;
-  }
-}
-@media (min-width: 992px) {
-  .hours {
-    margin-top: 53.4px;
+    margin-top: calc(var(--week-days-h) + 10px);
   }
 }
 .hours--opacity {
@@ -10995,7 +11020,7 @@ yx-axis
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.7;
 }
 @media (max-width: 576px) {
   .schedule--empty .days__item {
@@ -11006,6 +11031,42 @@ yx-axis
   .schedule--empty .hours__item {
     --schedule-row: 0;
   }
+}
+.schedule--empty .schedule__header-link-pdf, .schedule--empty .schedule__header-link-next {
+  display: none;
+}
+.schedule--empty .schedule__warning {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 15px 10px;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 120%;
+  color: #42474d;
+  border: 2px solid #42474d;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  .schedule--empty .schedule__warning {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .schedule--empty .schedule__warning {
+    top: 10px;
+  }
+}
+.schedule--empty .schedule__warning .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.schedule--empty .schedule__warning span {
+  width: calc(100% - 20px);
 }
 
 .advantages-workout {
@@ -11512,12 +11573,15 @@ yx-axis
 
 .popover {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-width: 320px;
   background: #f6f7f8;
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
+  height: 300px;
   max-height: 300px;
-  overflow-y: auto;
 }
 @media (min-width: 768px) {
   .popover {
@@ -11529,7 +11593,7 @@ yx-axis
   content: "";
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 12px;
   width: 20px;
   height: 20px;
   background-image: url("../img/icons/close.svg");
@@ -11543,13 +11607,40 @@ yx-axis
   line-height: 130%;
 }
 .popover .text {
+  padding-right: 10px;
   margin-bottom: 5px;
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 130%;
-  height: 100px;
+  height: 210px;
   overflow-y: auto;
+}
+@media (min-width: 768px) {
+  .popover .text {
+    height: 130px;
+  }
+}
+.popover .text::-webkit-scrollbar {
+  width: 1em;
+}
+.popover .text::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+}
+.popover .text::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 41px;
+}
+.popover .lesson__link {
+  display: inline-flex;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .popover .lesson__link {
+    margin-top: 20px;
+  }
 }
 
 .mob-week-days {

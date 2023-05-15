@@ -227,11 +227,16 @@
         <main class="schedule schedule--empty" id="schedule">
           <div class="schedule__header">
             <h1 class="schedule__header-title title">Расписание</h1>
-            <div class="schedule__header-link-pdf">
+            <div class="schedule__warning">
                         <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
                           <use xlink:href="img/sprite.svg#alert-triangle"></use>
-                        </svg><span class="px-2">Чтобы увидеть расписание, воспользуйтесь фильтром</span>
-            </div>
+                        </svg><span>Чтобы увидеть расписание, воспользуйтесь фильтром</span>
+            </div><a class="schedule__header-link-pdf" href="#">Открыть расписание<span>
+                
+                 на неделю в PDF</span></a><a class="schedule__header-link-next link-text link-text--more" href="#"><span>Следующая неделя</span>
+                        <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                          <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg></a>
             <div class="schedule__header-scroll">
                         <svg class="icon" width="32" height="30" viewBox="0 0 32 30">
                           <use xlink:href="img/sprite.svg#scroll"></use>
@@ -262,23 +267,23 @@
             </div>
             <div class="schedule__week" id="scroll-wrapper">
               <div class="schedule__mob-nav">
-                <button class="schedule__button" type="button" aria-label="Выбор дня недели"><span class="schedule__item-active">08.05 Понедельник</span>
+                <button class="schedule__button" type="button" aria-label="Выбор дня недели"><span class="schedule__item-active">15.05 Понедельник</span>
                             <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
                               <use xlink:href="img/sprite.svg#arrow-down"></use>
                             </svg>
                 </button>
               </div>
               <div class="schedule__week-days week-days">
-                <div class="week-days__item"><span class="week-days__item-date">08.05</span><span class="d-none d-sm-flex px-2">пн</span><span class="d-flex d-sm-none px-2">Понедельник</span></div>
-                <div class="week-days__item"><span class="week-days__item-date">09.05</span><span class="d-none d-sm-flex px-2">вт</span><span class="d-flex d-sm-none px-2">Вторник</span></div>
-                <div class="week-days__item"><span class="week-days__item-date">10.05</span><span class="d-none d-sm-flex px-2">ср</span><span class="d-flex d-sm-none px-2">Среда</span></div>
-                <div class="week-days__item"><span class="week-days__item-date">11.05</span><span class="d-none d-sm-flex px-2">чт</span><span class="d-flex d-sm-none px-2">Четверг</span></div>
-                <div class="week-days__item"><span class="week-days__item-date">12.05</span><span class="d-none d-sm-flex px-2">пт</span><span class="d-flex d-sm-none px-2">Пятница</span></div>
-                <div class="week-days__item"><span class="week-days__item-date">13.05</span><span class="d-none d-sm-flex px-2">сб</span><span class="d-flex d-sm-none px-2">Суббота</span></div>
-                <div class="week-days__item"><span class="week-days__item-date">14.05</span><span class="d-none d-sm-flex px-2">вс</span><span class="d-flex d-sm-none px-2">Воскресенье</span></div>
+                <div class="week-days__item"><span class="week-days__item-date">15.05</span><span class="d-none d-sm-flex px-2">пн</span><span class="d-flex d-sm-none px-2">Понедельник</span></div>
+                <div class="week-days__item"><span class="week-days__item-date">16.05</span><span class="d-none d-sm-flex px-2">вт</span><span class="d-flex d-sm-none px-2">Вторник</span></div>
+                <div class="week-days__item"><span class="week-days__item-date">17.05</span><span class="d-none d-sm-flex px-2">ср</span><span class="d-flex d-sm-none px-2">Среда</span></div>
+                <div class="week-days__item"><span class="week-days__item-date">18.05</span><span class="d-none d-sm-flex px-2">чт</span><span class="d-flex d-sm-none px-2">Четверг</span></div>
+                <div class="week-days__item"><span class="week-days__item-date">19.05</span><span class="d-none d-sm-flex px-2">пт</span><span class="d-flex d-sm-none px-2">Пятница</span></div>
+                <div class="week-days__item"><span class="week-days__item-date">20.05</span><span class="d-none d-sm-flex px-2">сб</span><span class="d-flex d-sm-none px-2">Суббота</span></div>
+                <div class="week-days__item"><span class="week-days__item-date">21.05</span><span class="d-none d-sm-flex px-2">вс</span><span class="d-flex d-sm-none px-2">Воскресенье</span></div>
               </div>
-              <div class="schedule__days schedule__days--empty">
-                <div class="days" data-weekday="08.05">
+              <div class="schedule__days">
+                <div class="days" data-weekday="15.05">
                   <div class="days__item" data-hour="09:00"></div>
                   <div class="days__item" data-hour="10:00"></div>
                   <div class="days__item" data-hour="11:00"></div>
@@ -293,7 +298,7 @@
                   <div class="days__item d-flex d-sm-none" data-hour="20:00"></div>
                   <div class="days__item d-flex d-sm-none" data-hour="21:00"></div>
                 </div>
-                <div class="days" data-weekday="09.05">
+                <div class="days" data-weekday="16.05">
                   <div class="days__item" data-hour="09:00"></div>
                   <div class="days__item" data-hour="10:00"></div>
                   <div class="days__item" data-hour="11:00"></div>
@@ -308,7 +313,7 @@
                   <div class="days__item d-flex d-sm-none" data-hour="20:00"></div>
                   <div class="days__item d-flex d-sm-none" data-hour="21:00"></div>
                 </div>
-                <div class="days" data-weekday="10.05">
+                <div class="days" data-weekday="17.05">
                   <div class="days__item" data-hour="09:00"></div>
                   <div class="days__item" data-hour="10:00"></div>
                   <div class="days__item" data-hour="11:00"></div>
@@ -323,7 +328,7 @@
                   <div class="days__item d-flex d-sm-none" data-hour="20:00"></div>
                   <div class="days__item d-flex d-sm-none" data-hour="21:00"></div>
                 </div>
-                <div class="days" data-weekday="11.05">
+                <div class="days" data-weekday="18.05">
                   <div class="days__item" data-hour="09:00"></div>
                   <div class="days__item" data-hour="10:00"></div>
                   <div class="days__item" data-hour="11:00"></div>
@@ -338,7 +343,7 @@
                   <div class="days__item d-flex d-sm-none" data-hour="20:00"></div>
                   <div class="days__item d-flex d-sm-none" data-hour="21:00"></div>
                 </div>
-                <div class="days" data-weekday="12.05">
+                <div class="days" data-weekday="19.05">
                   <div class="days__item" data-hour="09:00"></div>
                   <div class="days__item" data-hour="10:00"></div>
                   <div class="days__item" data-hour="11:00"></div>
@@ -353,7 +358,7 @@
                   <div class="days__item d-flex d-sm-none" data-hour="20:00"></div>
                   <div class="days__item d-flex d-sm-none" data-hour="21:00"></div>
                 </div>
-                <div class="days" data-weekday="13.05">
+                <div class="days" data-weekday="20.05">
                   <div class="days__item" data-hour="09:00"></div>
                   <div class="days__item" data-hour="10:00"></div>
                   <div class="days__item" data-hour="11:00"></div>
@@ -368,7 +373,7 @@
                   <div class="days__item d-flex d-sm-none" data-hour="20:00"></div>
                   <div class="days__item d-flex d-sm-none" data-hour="21:00"></div>
                 </div>
-                <div class="days" data-weekday="14.05">
+                <div class="days" data-weekday="21.05">
                   <div class="days__item" data-hour="09:00"></div>
                   <div class="days__item" data-hour="10:00"></div>
                   <div class="days__item" data-hour="11:00"></div>
