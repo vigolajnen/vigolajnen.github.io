@@ -11437,7 +11437,14 @@ yx-axis
   background-color: #cde0f0;
 }
 .lesson--pool .lesson__place .icon {
-  margin-right: 3px;
+  width: 15px;
+  margin-right: 2px;
+}
+@media (min-width: 768px) {
+  .lesson--pool .lesson__place .icon {
+    width: 20px;
+    margin-right: 7px;
+  }
 }
 .lesson--pay {
   background-color: #f9d288;
@@ -11484,6 +11491,7 @@ yx-axis
   height: 20px;
   margin-top: 3px;
   margin-left: 2px;
+  margin-right: 2px;
 }
 @media (min-width: 1200px) {
   .lesson__trainer .icon {
@@ -11520,15 +11528,18 @@ yx-axis
   width: 15px;
   height: 15px;
   margin-top: 3px;
+  margin-right: 2px;
 }
 @media (min-width: 1200px) {
   .lesson__place .icon {
     width: 17px;
+    margin-top: 0;
   }
 }
 @media (min-width: 1300px) {
   .lesson__place .icon {
     width: 26px;
+    height: 20px;
   }
 }
 .lesson__text {
