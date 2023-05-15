@@ -11127,6 +11127,11 @@ yx-axis
     gap: 45px;
   }
 }
+@media (min-width: 1200px) {
+  .advantages-workout__list {
+    padding-right: 10%;
+  }
+}
 .advantages-workout__item {
   width: 100%;
   display: flex;
