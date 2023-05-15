@@ -10570,12 +10570,12 @@ yx-axis
 
 :root {
   --schedule-col: calc(100% / 7 - 10px);
-  --schedule-col-min: 164px;
+  --schedule-col-min: 166px;
   --schedule-col-max: 100%;
   --schedule-min: 980px;
   --schedule-row: 130px;
   --schedule-row-min: 40px;
-  --base-gap: 10px;
+  --base-gap: 8px;
   --step: 5px;
   --count: 2;
   --bg-image: url("../img/schedule/bg-mb.png");
@@ -10584,9 +10584,9 @@ yx-axis
 }
 @media (min-width: 576px) {
   :root {
-    --schedule-row: 170px;
+    --schedule-row: 166px;
     --schedule-row-min: --schedule-row;
-    --schedule-col-max: 180px;
+    --schedule-col-max: 166px;
   }
 }
 @media (min-width: 768px) {
@@ -10596,9 +10596,9 @@ yx-axis
 }
 @media (min-width: 1200px) {
   :root {
-    --schedule-row: 180px;
+    --schedule-row: 166px;
     --schedule-row-min: --schedule-row;
-    --schedule-col-max: 164px;
+    --schedule-col-max: 166px;
   }
 }
 
@@ -11447,8 +11447,14 @@ yx-axis
 }
 @media (min-width: 768px) {
   .lesson--pool .lesson__place .icon {
+    width: 15px;
+    margin-right: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .lesson--pool .lesson__place .icon {
     width: 20px;
-    margin-right: 7px;
+    margin-right: 6px;
   }
 }
 .lesson--pay {
@@ -11462,7 +11468,7 @@ yx-axis
   font-weight: 700;
   font-size: 15px;
   line-height: 130%;
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 }
 @media (min-width: 1300px) {
   .lesson__name {
@@ -11476,11 +11482,12 @@ yx-axis
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
-  margin-bottom: 7px;
+  margin-bottom: 2px;
 }
 @media (min-width: 1100px) {
   .lesson__trainer {
     line-height: 120%;
+    margin-bottom: 7px;
   }
 }
 .lesson__trainer span {
@@ -11530,14 +11537,14 @@ yx-axis
   }
 }
 .lesson__place .icon {
-  width: 15px;
-  height: 15px;
-  margin-top: 3px;
+  width: 17px;
+  height: 17px;
   margin-right: 2px;
 }
 @media (min-width: 1200px) {
   .lesson__place .icon {
-    width: 17px;
+    width: 20px;
+    height: 20px;
     margin-top: 0;
   }
 }
