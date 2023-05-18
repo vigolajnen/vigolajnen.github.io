@@ -167,96 +167,151 @@
         </form>
       </section>
       <main class="schedule container">
-        <div class="full-schedule">
-          <div class="full-schedule__inner">
-            <div class="full-schedule__header">
-              <div class="full-schedule__title">Дата/время</div>
-              <div class="full-schedule__title">Тренировка</div>
-              <div class="full-schedule__title">Возраст</div>
-              <div class="full-schedule__title">Зал</div>
-              <div class="full-schedule__title">Клуб</div>
-              <div class="full-schedule__title">Тренер</div>
+        <div class="table-responsive-xl">
+          <div class="dataTables_wrapper no-footer" id="dataTable_wrapper">
+            <div class="dataTables_length" id="dataTable_length">
+              <label>&Pcy;&ocy;&kcy;&acy;&zcy;&acy;&tcy;&softcy;
+                <select name="dataTable_length" aria-controls="dataTable">
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select> &zcy;&acy;&pcy;&icy;&scy;&iecy;&jcy;
+              </label>
             </div>
-            <div class="full-schedule__body">
-              <div class="full-schedule__item">
-                        <div class="full-lesson">
-                          <div class="full-lesson__date" data-hour="Дата/время">
-                            <div><b>20.03 пн</b></div>
-                            <div>09:00</div>
-                          </div>
-                          <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                          <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                          <div class="full-lesson__gym" data-gym="Зал">Большой Бассейн</div>
-                          <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
-                          <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                        </div>
+            <div class="dataTables_filter" id="dataTable_filter">
+              <label>&Pcy;&ocy;&icy;&scy;&kcy;:
+                <input class="search" type="search" placeholder="Введи: клуб/тренер/тренировка" aria-controls="dataTable">
+              </label>
+            </div>
+            <div class="dataTables_scroll">
+              <div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;">
+                <div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 925px; padding-right: 0px;">
+                  <table class="table data-table dataTable no-footer" cellspacing="0" width="100%" role="grid" style="margin-left: 0px; width: 925px;">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting_asc" scope="col" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 70.5125px;" aria-sort="ascending" aria-label="Дата/Время: activate to sort column descending">&Dcy;&acy;&tcy;&acy;/&Vcy;&rcy;&iecy;&mcy;&yacy;</th>
+                        <th class="sorting" scope="col" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 202.05px;" aria-label="Тренировка: activate to sort column ascending">&Tcy;&rcy;&iecy;&ncy;&icy;&rcy;&ocy;&vcy;&kcy;&acy;</th>
+                        <th class="sorting" scope="col" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 126.988px;" aria-label="Возраст: activate to sort column ascending">&Vcy;&ocy;&zcy;&rcy;&acy;&scy;&tcy;</th>
+                        <th class="sorting" scope="col" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 165.225px;" aria-label="Зал: activate to sort column ascending">&Zcy;&acy;&lcy;</th>
+                        <th class="sorting" scope="col" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 162.988px;" aria-label="Клуб: activate to sort column ascending">&Kcy;&lcy;&ucy;&bcy;</th>
+                        <th class="sorting" scope="col" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 197.238px;" aria-label="Тренер: activate to sort column ascending">&Tcy;&rcy;&iecy;&ncy;&iecy;&rcy;</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
               </div>
-              <div class="full-schedule__item">
-                        <div class="full-lesson">
-                          <div class="full-lesson__date" data-hour="Дата/время">
-                            <div><b>20.03 пн</b></div>
-                            <div>09:00</div>
-                          </div>
-                          <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                          <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                          <div class="full-lesson__gym" data-gym="Зал">Большой Бассейн</div>
-                          <div class="full-lesson__club" data-club="Клуб">на Савушкина</div>
-                          <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                        </div>
-              </div>
-              <div class="full-schedule__item">
-                        <div class="full-lesson">
-                          <div class="full-lesson__date" data-hour="Дата/время">
-                            <div><b>20.03 пн</b></div>
-                            <div>10:00</div>
-                          </div>
-                          <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                          <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                          <div class="full-lesson__gym" data-gym="Зал">Большой Бассейн</div>
-                          <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
-                          <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                        </div>
-              </div>
-              <div class="full-schedule__item">
-                        <div class="full-lesson">
-                          <div class="full-lesson__date" data-hour="Дата/время">
-                            <div><b>20.03 пн</b></div>
-                            <div>09:00</div>
-                          </div>
-                          <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                          <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                          <div class="full-lesson__gym" data-gym="Зал">Большой Бассейн</div>
-                          <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
-                          <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                        </div>
-              </div>
-              <div class="full-schedule__item">
-                        <div class="full-lesson">
-                          <div class="full-lesson__date" data-hour="Дата/время">
-                            <div><b>20.03 пн</b></div>
-                            <div>09:00</div>
-                          </div>
-                          <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                          <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                          <div class="full-lesson__gym" data-gym="Зал">Большой Бассейн</div>
-                          <div class="full-lesson__club" data-club="Клуб">на Савушкина</div>
-                          <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                        </div>
-              </div>
-              <div class="full-schedule__item">
-                        <div class="full-lesson">
-                          <div class="full-lesson__date" data-hour="Дата/время">
-                            <div><b>20.03 пн</b></div>
-                            <div>10:00</div>
-                          </div>
-                          <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                          <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                          <div class="full-lesson__gym" data-gym="Зал">Большой Бассейн</div>
-                          <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
-                          <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                        </div>
+              <div class="dataTables_scrollBody" style="overflow: auto; width: 100%;">
+                <table class="table data-table dataTable no-footer" id="dataTable" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 925px;">
+                  <thead>
+                    <tr role="row" style="height: 0px;">
+                      <th class="sorting_asc" scope="col" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 70.5125px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-sort="ascending" aria-label="Дата/Время: activate to sort column descending">
+                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">&Dcy;&acy;&tcy;&acy;/&Vcy;&rcy;&iecy;&mcy;&yacy;</div>
+                      </th>
+                      <th class="sorting" scope="col" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 202.05px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Тренировка: activate to sort column ascending">
+                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">&Tcy;&rcy;&iecy;&ncy;&icy;&rcy;&ocy;&vcy;&kcy;&acy;</div>
+                      </th>
+                      <th class="sorting" scope="col" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 126.988px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Возраст: activate to sort column ascending">
+                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">&Vcy;&ocy;&zcy;&rcy;&acy;&scy;&tcy;</div>
+                      </th>
+                      <th class="sorting" scope="col" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 165.225px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Зал: activate to sort column ascending">
+                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">&Zcy;&acy;&lcy;</div>
+                      </th>
+                      <th class="sorting" scope="col" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 162.988px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Клуб: activate to sort column ascending">
+                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">&Kcy;&lcy;&ucy;&bcy;</div>
+                      </th>
+                      <th class="sorting" scope="col" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 197.238px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="Тренер: activate to sort column ascending">
+                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">&Tcy;&rcy;&iecy;&ncy;&iecy;&rcy;</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="odd" role="row">
+                      <td class="sorting_1"> 2023-05-16 19:30</td>
+                      <td> &quot;Swimming &Mcy;&Acy;&Scy;&Tcy;&IEcy;&Rcy;&Scy;&quot;</td>
+                      <td> &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&acy;&yacy;</td>
+                      <td> &Scy;&pcy;&ocy;&rcy;&tcy;&icy;&vcy;&ncy;&ycy;&jcy; &bcy;&acy;&scy;&scy;&iecy;&jcy;&ncy;</td>
+                      <td> FH &Ncy;.&Ncy;&ocy;&vcy;&gcy;&ocy;&rcy;&ocy;&dcy; &TScy;&vcy;&iecy;&tcy;&ycy;</td>
+                      <td> &Dcy;&ocy;&gcy;&acy;&dcy;&ocy;&vcy; &Mcy;&acy;&kcy;&scy;&icy;&mcy;</td>
+                    </tr>
+                    <tr class="even" role="row">
+                      <td class="sorting_1"> 2023-05-16 19:30</td>
+                      <td> &Scy;&IEcy;&Kcy;&TScy;&Icy;&YAcy; &quot;&Rcy;&ucy;&kcy;&ocy;&pcy;&acy;&shcy;&ncy;&ycy;&jcy; &Bcy;&ocy;&jcy;&quot; (11-13 &lcy;&iecy;&tcy;)</td>
+                      <td> &dcy;&iecy;&tcy;&scy;&kcy;&acy;&yacy;</td>
+                      <td> &Zcy;&acy;&lcy; &iecy;&dcy;&icy;&ncy;&ocy;&bcy;&ocy;&rcy;&scy;&tcy;&vcy; &numero;1</td>
+                      <td> FH &ncy;&acy; &Bcy;&ucy;&lcy;&softcy;&vcy;&acy;&rcy;&iecy; &Ncy;&ocy;&vcy;&acy;&tcy;&ocy;&rcy;&ocy;&vcy;</td>
+                      <td> &SHcy;&ucy;&mcy;&icy;&lcy;&ocy;&vcy; &Acy;&lcy;&iecy;&kcy;&scy;&iecy;&jcy;</td>
+                    </tr>
+                    <tr class="odd" role="row">
+                      <td class="sorting_1"> 2023-05-16 20:00</td>
+                      <td> Strip Dance</td>
+                      <td> &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&acy;&yacy;</td>
+                      <td> &Bcy;&ocy;&lcy;&softcy;&shcy;&ocy;&jcy; &acy;&ecy;&rcy;&ocy;&bcy;&ncy;&ycy;&jcy; &zcy;&acy;&lcy;</td>
+                      <td> FH &vcy; &Ocy;&khcy;&tcy;&acy; &Mcy;&ocy;&lcy;&lcy;&iecy;</td>
+                      <td> &Lcy;&ucy;&zhcy;&kcy;&ocy;&vcy;&acy; &Lcy;&yucy;&bcy;&ocy;&vcy;&softcy;</td>
+                    </tr>
+                    <tr class="even" role="row">
+                      <td class="sorting_1"> 2023-05-16 20:00</td>
+                      <td> Pilates 1</td>
+                      <td> &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&acy;&yacy;</td>
+                      <td> &Bcy;&ocy;&lcy;&softcy;&shcy;&ocy;&jcy; &acy;&ecy;&rcy;&ocy;&bcy;&ncy;&ycy;&jcy; &zcy;&acy;&lcy;</td>
+                      <td> FH &vcy; &YAcy;&ncy;&icy;&ncy;&ocy;</td>
+                      <td> &Kcy;&ucy;&zcy;&softcy;&mcy;&iecy;&ncy;&kcy;&ocy;&vcy;&acy; &Icy;&rcy;&icy;&ncy;&acy;</td>
+                    </tr>
+                    <tr class="odd" role="row">
+                      <td class="sorting_1"> 2023-05-16 20:00</td>
+                      <td> &quot;&SHcy;&kcy;.&pcy;&lcy;&acy;&vcy;&acy;&ncy;&icy;&yacy; 3&quot; &Scy;&IEcy;&Kcy;&TScy;&Icy;&YAcy; (11-13 &lcy;&iecy;&tcy;)</td>
+                      <td> &dcy;&iecy;&tcy;&scy;&kcy;&acy;&yacy;</td>
+                      <td> &Bcy;&ocy;&lcy;&softcy;&shcy;&ocy;&jcy; &bcy;&acy;&scy;&scy;&iecy;&jcy;&ncy;</td>
+                      <td> FH &vcy; &YAcy;&ncy;&icy;&ncy;&ocy;</td>
+                      <td> &Mcy;&ocy;&vcy;&chcy;&acy;&ncy; &Icy;&vcy;&acy;&ncy;</td>
+                    </tr>
+                    <tr class="even" role="row">
+                      <td class="sorting_1"> 2023-05-16 20:00</td>
+                      <td> &Scy;&IEcy;&Kcy;&TScy;&Icy;&YAcy; &quot; &Dcy;&zcy;&yucy;&dcy;&ocy;&quot; (11-13 &lcy;&iecy;&tcy;)</td>
+                      <td> &dcy;&iecy;&tcy;&scy;&kcy;&acy;&yacy;</td>
+                      <td> &Zcy;&acy;&lcy; &iecy;&dcy;&icy;&ncy;&ocy;&bcy;&ocy;&rcy;&scy;&tcy;&vcy;</td>
+                      <td> FH &vcy; &YAcy;&ncy;&icy;&ncy;&ocy;</td>
+                      <td> &Ocy;&tcy;&iecy;&vcy; &Vcy;&acy;&dcy;&icy;&mcy;</td>
+                    </tr>
+                    <tr class="odd" role="row">
+                      <td class="sorting_1"> 2023-05-16 20:00</td>
+                      <td> &Kcy;&acy;&rcy;&acy;&tcy;&iecy;(&Ocy;&Fcy;&Pcy;)</td>
+                      <td> &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&acy;&yacy;</td>
+                      <td> &IEcy;&dcy;&icy;&ncy;&ocy;&bcy;&ocy;&rcy;&scy;&tcy;&vcy;</td>
+                      <td> FH &vcy; &Dcy;&iecy;&vcy;&yacy;&tcy;&kcy;&icy;&ncy;&ocy;</td>
+                      <td> &Mcy;&iecy;&lcy;&icy;&khcy;&ocy;&vcy; &Vcy;&acy;&lcy;&iecy;&rcy;&icy;&jcy;</td>
+                    </tr>
+                    <tr class="even" role="row">
+                      <td class="sorting_1"> 2023-05-16 20:00</td>
+                      <td> Cross Fitness + (100&rcy;.)</td>
+                      <td> &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&acy;&yacy;</td>
+                      <td> &Bcy;&ocy;&lcy;&softcy;&shcy;&ocy;&jcy; &zcy;&acy;&lcy;</td>
+                      <td> FH &vcy; &Dcy;&iecy;&vcy;&yacy;&tcy;&kcy;&icy;&ncy;&ocy;</td>
+                      <td> &Kcy;&rcy;&ycy;&lcy;&ocy;&vcy;&acy; &Acy;&ncy;&ncy;&acy;</td>
+                    </tr>
+                    <tr class="odd" role="row">
+                      <td class="sorting_1"> 2023-05-16 20:00</td>
+                      <td> Aqua + (100&rcy;.)</td>
+                      <td> &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&acy;&yacy;</td>
+                      <td> &Bcy;&ocy;&lcy;&softcy;&shcy;&ocy;&jcy; &bcy;&acy;&scy;&scy;&iecy;&jcy;&ncy;</td>
+                      <td> FH &ncy;&acy; &Pcy;&rcy;&acy;&zhcy;&scy;&kcy;&ocy;&jcy;</td>
+                      <td> &Ncy;&acy;&zcy;&acy;&rcy;&ocy;&vcy;&acy;  &Acy;&ncy;&acy;&scy;&tcy;&acy;&scy;&icy;&yacy;</td>
+                    </tr>
+                    <tr class="even" role="row">
+                      <td class="sorting_1"> 2023-05-16 20:00</td>
+                      <td> Step 1</td>
+                      <td> &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&acy;&yacy;</td>
+                      <td> &Zcy;&acy;&lcy; &numero; 1</td>
+                      <td> FH &ncy;&acy; &Pcy;&rcy;&acy;&zhcy;&scy;&kcy;&ocy;&jcy;</td>
+                      <td> &Fcy;&acy;&khcy;&rcy;&icy;&iecy;&vcy;&acy; &Scy;&acy;&rcy;&icy;&iecy;</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
+            <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">&Pcy;&ocy;&kcy;&acy;&zcy;&acy;&ncy;&ocy; &ocy;&tcy; 1 &dcy;&ocy; 10 &icy;&zcy; 4,318 &zcy;&acy;&pcy;&icy;&scy;&iecy;&jcy;</div>
+            <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate"><a class="paginate_button previous disabled" id="dataTable_previous" aria-controls="dataTable" data-dt-idx="0" tabindex="0">&Ncy;&acy;&zcy;&acy;&dcy;</a><span><a class="paginate_button current" aria-controls="dataTable" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button" aria-controls="dataTable" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button" aria-controls="dataTable" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button" aria-controls="dataTable" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button" aria-controls="dataTable" data-dt-idx="5" tabindex="0">5</a><span>&mldr;</span><a class="paginate_button" aria-controls="dataTable" data-dt-idx="6" tabindex="0">432</a></span><a class="paginate_button next" id="dataTable_next" aria-controls="dataTable" data-dt-idx="7" tabindex="0">&Vcy;&pcy;&iecy;&rcy;&iecy;&dcy;</a></div>
           </div>
         </div>
       </main>

@@ -10575,7 +10575,7 @@ yx-axis
   --schedule-min: 980px;
   --schedule-row: 130px;
   --schedule-row-min: 40px;
-  --base-gap: 8px;
+  --base-gap: 5px;
   --step: 5px;
   --count: 2;
   --bg-image: url("../img/schedule/bg-mb.png");
@@ -10585,7 +10585,7 @@ yx-axis
 @media (min-width: 576px) {
   :root {
     --schedule-row: 166px;
-    --schedule-row-min: --schedule-row;
+    --schedule-row-min: 166px;
     --schedule-col-max: 166px;
   }
 }
@@ -10596,9 +10596,9 @@ yx-axis
 }
 @media (min-width: 1200px) {
   :root {
-    --schedule-row: 166px;
-    --schedule-row-min: --schedule-row;
-    --schedule-col-max: 166px;
+    --schedule-row: 173px;
+    --schedule-row-min: 173px;
+    --schedule-col-max: 173px;
   }
 }
 
@@ -10940,7 +10940,6 @@ yx-axis
   align-items: center;
   width: 100%;
   min-width: var(--schedule-col-min);
-  height: var(--schedule-row);
   min-height: var(--schedule-row-min);
   font-style: normal;
   font-weight: normal;
@@ -10951,6 +10950,7 @@ yx-axis
   border-radius: 12px;
   border: 2px solid transparent;
   overflow: hidden;
+  transition: max-height 0.9s;
 }
 .days__item--active {
   color: #42474d;
@@ -11017,6 +11017,7 @@ yx-axis
   }
 }
 .schedule--empty .schedule__days {
+  background-color: #4b8aa6;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
@@ -11067,6 +11068,24 @@ yx-axis
 }
 .schedule--empty .schedule__warning span {
   width: calc(100% - 20px);
+}
+
+.schedule-table {
+  width: 100%;
+}
+
+.day-item {
+  min-width: var(--schedule-col-min);
+  background: var(--item-color);
+  border-radius: 12px;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.lesson {
+  min-width: var(--schedule-col-min);
+  min-height: var(--schedule-row-min);
+  height: 100%;
 }
 
 .advantages-workout {
@@ -11435,7 +11454,7 @@ yx-axis
 }
 @media (min-width: 1300px) {
   .lesson {
-    padding: 14px;
+    padding: 10px;
   }
 }
 .lesson--pool {
@@ -11604,7 +11623,7 @@ yx-axis
   background: #f6f7f8;
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  height: 300px;
+  height: auto;
   max-height: 300px;
 }
 @media (min-width: 768px) {
@@ -11624,6 +11643,7 @@ yx-axis
   background-size: contain;
 }
 .popover .title {
+  padding-right: 15px;
   margin-bottom: 5px;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
@@ -11631,18 +11651,19 @@ yx-axis
   line-height: 130%;
 }
 .popover .text {
-  padding-right: 10px;
+  padding-right: 15px;
   margin-bottom: 5px;
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 130%;
-  height: 210px;
+  height: 100%;
+  max-height: 170px;
   overflow-y: auto;
 }
 @media (min-width: 768px) {
   .popover .text {
-    height: 130px;
+    max-height: 120px;
   }
 }
 .popover .text::-webkit-scrollbar {
@@ -11660,6 +11681,7 @@ yx-axis
   display: inline-flex;
   margin-top: auto;
   margin-bottom: 0;
+  height: 30px;
 }
 @media (min-width: 768px) {
   .popover .lesson__link {
