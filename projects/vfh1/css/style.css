@@ -10573,7 +10573,7 @@ yx-axis
   --schedule-col-min: 166px;
   --schedule-col-max: 100%;
   --schedule-min: 980px;
-  --schedule-row: 130px;
+  --schedule-row: 40px;
   --schedule-row-min: 40px;
   --base-gap: 5px;
   --step: 5px;
@@ -10584,21 +10584,23 @@ yx-axis
 }
 @media (min-width: 576px) {
   :root {
-    --schedule-row: 166px;
+    --schedule-row: 100px;
     --schedule-row-min: 166px;
     --schedule-col-max: 166px;
   }
 }
 @media (min-width: 768px) {
   :root {
+    --schedule-row: 166px;
+    --schedule-row-min: 166px;
+    --schedule-col-max: 166px;
     --bg-image: url("../img/schedule/bg.png");
   }
 }
 @media (min-width: 1200px) {
   :root {
-    --schedule-row: 173px;
-    --schedule-row-min: 173px;
-    --schedule-col-max: 173px;
+    --schedule-col: calc(100% / 7 - 10px);
+    --schedule-col-max: calc(100% / 7 - 10px);
   }
 }
 
@@ -10930,8 +10932,16 @@ yx-axis
   flex-grow: 1;
   gap: var(--base-gap);
 }
+@media (max-width: 576px) {
+  .days {
+    display: none;
+  }
+}
 .days--hidden {
   display: none;
+}
+.days--active {
+  display: flex;
 }
 .days__item {
   flex-grow: 1;
@@ -11023,9 +11033,21 @@ yx-axis
   background-size: cover;
   opacity: 0.7;
 }
+@media (min-width: 1200px) {
+  .schedule--empty .schedule__days {
+    --base-gap: 8px;
+  }
+}
 @media (max-width: 576px) {
   .schedule--empty .days__item {
     --schedule-row: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .schedule--empty .days__item {
+    --schedule-col: calc(100% / 7 - 10px);
+    --schedule-col-min: 170px;
+    --schedule-col-max: calc(100% / 7 - 10px);
   }
 }
 @media (max-width: 576px) {
