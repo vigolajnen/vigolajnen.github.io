@@ -10984,6 +10984,7 @@ yx-axis
 }
 @media (min-width: 576px) {
   .hours {
+    gap: var(--base-gap);
     margin-top: calc(var(--week-days-h) + 10px);
   }
 }
@@ -11001,6 +11002,7 @@ yx-axis
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+  border: 2px solid transparent;
 }
 .hours__item--active {
   color: #ffffff;
