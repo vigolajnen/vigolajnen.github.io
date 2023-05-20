@@ -165,7 +165,7 @@
           <div class="form-clubs__title">Найти свою тренировку</div>
           <div class="form-clubs__wrapper">
             <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-              <select class="form-select form-control" aria-label="выберете клуб" required>
+              <select class="form-select form-control selectpicker" aria-label="выберете клуб" autocomplete="off" required>
                 <option selected disabled value="">Выберете клуб</option>
                 <option value="На Выбогской">На Выбогской</option>
                 <option value="На Гашека">На Гашека</option>
@@ -175,7 +175,7 @@
               </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
             </label>
             <label class="form-label"><span class="form__label-name">Выберете направление</span>
-              <select class="form-select form-control" aria-label="Выберете направление">
+              <select class="form-select form-control selectpicker" aria-label="Выберете направление" autocomplete="off">
                 <option selected disabled value="Выберете категорию">Выберете направление</option>
                 <option value="Водный комплекс">Водный комплекс</option>
                 <option value="Групповые занятия">Групповые занятия</option>
@@ -184,8 +184,8 @@
               </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
             </label>
             <label class="form-label"><span class="form__label-name">Время посещения</span>
-              <select class="form-select form-control" aria-label="Время посещения">
-                <option selected disabled value="">Время посещения</option>
+              <select class="form-select form-control selectpicker" aria-label="Время посещения" autocomplete="off">
+                <option selected disabled value="Время посещения">Время посещения</option>
                 <option value="Утро (7.00-12.00)">Утро (7.00-12.00)</option>
                 <option value="День (12.00-17.00)">День (12.00-17.00)</option>
                 <option value="Вечер (17.00-22.00)">Вечер (17.00-22.00)</option>
@@ -485,6 +485,7 @@
             axis: 'x',
             theme: 'dark-thin',
             autoExpandScrollbar: true,
+            keyboard: true,
             advanced: { autoExpandHorizontalScroll: true },
           });
         } else {
@@ -496,6 +497,7 @@
             axis: 'x',
             theme: 'dark-thin',
             autoExpandScrollbar: true,
+            keyboard: true,
             advanced: { autoExpandHorizontalScroll: true },
           });
         } else {

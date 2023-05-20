@@ -10575,6 +10575,8 @@ yx-axis
   --schedule-min: 980px;
   --schedule-row: 40px;
   --schedule-row-min: 40px;
+  --schedule-row-empty: 40px;
+  --schedule-row-empty-min: 40px;
   --base-gap: 5px;
   --step: 5px;
   --count: 2;
@@ -10585,20 +10587,24 @@ yx-axis
 @media (min-width: 576px) {
   :root {
     --schedule-row: 100px;
-    --schedule-row-min: 166px;
+    --schedule-row-min: 100px;
     --schedule-col-max: 166px;
+    --schedule-row-empty: 166px;
+    --schedule-row-empty-min: 166px;
   }
 }
 @media (min-width: 768px) {
   :root {
-    --schedule-row: 166px;
-    --schedule-row-min: 166px;
+    --schedule-row: 100px;
+    --schedule-row-min: 100px;
     --schedule-col-max: 166px;
     --bg-image: url("../img/schedule/bg.png");
   }
 }
 @media (min-width: 1200px) {
   :root {
+    --base-gap: 8px;
+    --schedule-row: 166px;
     --schedule-col: calc(100% / 7 - 10px);
     --schedule-col-max: calc(100% / 7 - 10px);
   }
@@ -11033,22 +11039,18 @@ yx-axis
   background-size: cover;
   opacity: 0.7;
 }
-@media (min-width: 1200px) {
-  .schedule--empty .schedule__days {
-    --base-gap: 8px;
-  }
+.schedule--empty .days__item {
+  min-height: var(--schedule-row-empty-min);
+  height: var(--schedule-row-empty);
 }
 @media (max-width: 576px) {
   .schedule--empty .days__item {
     --schedule-row: 0;
   }
 }
-@media (min-width: 1200px) {
-  .schedule--empty .days__item {
-    --schedule-col: calc(100% / 7 - 10px);
-    --schedule-col-min: 170px;
-    --schedule-col-max: calc(100% / 7 - 10px);
-  }
+.schedule--empty .hours__item {
+  min-height: var(--schedule-row-empty-min);
+  height: var(--schedule-row-empty);
 }
 @media (max-width: 576px) {
   .schedule--empty .hours__item {
@@ -11092,22 +11094,9 @@ yx-axis
   width: calc(100% - 20px);
 }
 
-.schedule-table {
-  width: 100%;
-}
-
-.day-item {
-  min-width: var(--schedule-col-min);
-  background: var(--item-color);
-  border-radius: 12px;
-  border: 2px solid transparent;
-  overflow: hidden;
-}
-
-.lesson {
-  min-width: var(--schedule-col-min);
-  min-height: var(--schedule-row-min);
-  height: 100%;
+.mCSB_scrollTools.mCSB_scrollTools_horizontal.horizontalTopScroll {
+  top: 0;
+  bottom: auto;
 }
 
 .advantages-workout {
@@ -11474,6 +11463,9 @@ yx-axis
   border: 12px;
   background-color: #eae8ca;
 }
+.lesson::before {
+  content: attr();
+}
 @media (min-width: 1300px) {
   .lesson {
     padding: 10px;
@@ -11654,8 +11646,17 @@ yx-axis
     max-height: 233px;
   }
 }
-.popover::before {
-  content: "";
+.popover .popover-body {
+  height: auto;
+  max-height: 300px;
+}
+@media (min-width: 768px) {
+  .popover .popover-body {
+    min-width: 380px;
+    max-height: 233px;
+  }
+}
+.popover .lesson__popover-close {
   position: absolute;
   top: 10px;
   right: 12px;
@@ -11663,6 +11664,7 @@ yx-axis
   height: 20px;
   background-image: url("../img/icons/close.svg");
   background-size: contain;
+  cursor: pointer;
 }
 .popover .title {
   padding-right: 15px;
@@ -11685,7 +11687,17 @@ yx-axis
 }
 @media (min-width: 768px) {
   .popover .text {
-    max-height: 120px;
+    max-height: 130px;
+  }
+}
+@media (min-width: 992px) {
+  .popover .text {
+    max-height: 110px;
+  }
+}
+@media (min-width: 1200px) {
+  .popover .text {
+    max-height: 100px;
   }
 }
 .popover .text::-webkit-scrollbar {
@@ -11704,11 +11716,6 @@ yx-axis
   margin-top: auto;
   margin-bottom: 0;
   height: 30px;
-}
-@media (min-width: 768px) {
-  .popover .lesson__link {
-    margin-top: 20px;
-  }
 }
 
 .mob-week-days {
