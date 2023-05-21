@@ -11520,6 +11520,7 @@ yx-axis
   font-size: 15px;
   line-height: 140%;
   margin-bottom: 2px;
+  min-height: 18px;
 }
 .lesson__trainer::before {
   content: "";
@@ -11550,6 +11551,7 @@ yx-axis
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
+  min-height: 18px;
 }
 .lesson__place::before {
   content: "";

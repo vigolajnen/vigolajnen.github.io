@@ -1,1 +1,11 @@
-<svg viewBox="0 0 49 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".836" y="12.836" width="4.329" height="9.329" rx="2.164" fill="#42474D" stroke="#42474D" stroke-width="1.671"/><rect x="4.836" y="3.836" width="5.329" height="27.329" rx="2.664" stroke="#42474D" stroke-width="1.671"/><rect x="10.836" y=".836" width="5.329" height="34.329" rx="2.664" stroke="#42474D" stroke-width="1.671"/><rect x="-.836" y=".836" width="4.329" height="9.329" rx="2.164" transform="matrix(-1 0 0 1 47.329 12)" fill="#42474D" stroke="#42474D" stroke-width="1.671"/><rect x="-.836" y=".836" width="5.329" height="27.329" rx="2.664" transform="matrix(-1 0 0 1 43.329 3)" stroke="#42474D" stroke-width="1.671"/><rect x="-.836" y=".836" width="5.329" height="34.329" rx="2.664" transform="matrix(-1 0 0 1 37.329 0)" stroke="#42474D" stroke-width="1.671"/><path stroke="#42474D" stroke-width="1.671" d="M15.836 12.836h16.329v9.329H15.836zM32 18h-9"/><path fill="#000" stroke="#42474D" d="M20.5 17.5h1v1h-1z"/></svg>
+<svg viewBox="0 0 49 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.835659" y="12.8357" width="4.32868" height="9.32868" rx="2.16434" fill="#42474D" stroke="#42474D" stroke-width="1.67132"/>
+<rect x="4.83566" y="3.83566" width="5.32868" height="27.3287" rx="2.66434" stroke="#42474D" stroke-width="1.67132"/>
+<rect x="10.8357" y="0.835659" width="5.32868" height="34.3287" rx="2.66434" stroke="#42474D" stroke-width="1.67132"/>
+<rect x="-0.835659" y="0.835659" width="4.32868" height="9.32868" rx="2.16434" transform="matrix(-1 0 0 1 47.3287 12)" fill="#42474D" stroke="#42474D" stroke-width="1.67132"/>
+<rect x="-0.835659" y="0.835659" width="5.32868" height="27.3287" rx="2.66434" transform="matrix(-1 0 0 1 43.3287 3)" stroke="#42474D" stroke-width="1.67132"/>
+<rect x="-0.835659" y="0.835659" width="5.32868" height="34.3287" rx="2.66434" transform="matrix(-1 0 0 1 37.3287 0)" stroke="#42474D" stroke-width="1.67132"/>
+<rect x="15.8357" y="12.8357" width="16.3287" height="9.32868" stroke="#42474D" stroke-width="1.67132"/>
+<path d="M32 18H23" stroke="#42474D" stroke-width="1.67132"/>
+<rect x="20.5" y="17.5" width="1" height="1" fill="black" stroke="#42474D"/>
+</svg>
