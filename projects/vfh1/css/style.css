@@ -10465,60 +10465,6 @@ yx-axis
     color: rgba(73, 76, 79, 0.5);
   }
 }
-.page-schedule__header {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  color: #42474d;
-}
-@media (min-width: 768px) {
-  .page-schedule__header {
-    margin-bottom: 54px;
-    font-size: 20px;
-  }
-}
-.page-schedule__header-item {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .page-schedule__header-item {
-    width: 50%;
-  }
-}
-.page-schedule__header-item:last-child {
-  background: #d9d9d9;
-  border-radius: 15.535px;
-  overflow: hidden;
-}
-@media (min-width: 992px) {
-  .page-schedule__header-item:last-child {
-    margin-left: 40px;
-    width: calc(50% - 40px);
-  }
-}
-.page-schedule__header-item img {
-  width: 100%;
-  height: 100%;
-}
-.page-schedule__header .title {
-  margin-bottom: 15px;
-}
-@media (min-width: 768px) {
-  .page-schedule__header .title {
-    margin-bottom: 6px;
-  }
-}
-.page-schedule__header .text {
-  margin-bottom: 30px;
-}
-@media (min-width: 768px) {
-  .page-schedule__header .text {
-    padding-right: 35px;
-  }
-}
 .page-schedule__form {
   display: flex;
   flex-wrap: wrap;
@@ -11096,9 +11042,69 @@ yx-axis
   width: calc(100% - 20px);
 }
 
-.mCSB_scrollTools.mCSB_scrollTools_horizontal.horizontalTopScroll {
-  top: 0;
-  bottom: auto;
+.schedule-promo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #42474d;
+}
+@media (min-width: 768px) {
+  .schedule-promo {
+    margin-bottom: 54px;
+    font-size: 20px;
+  }
+}
+.schedule-promo__info {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .schedule-promo__info {
+    width: 50%;
+  }
+}
+.schedule-promo__pic {
+  width: 100%;
+  min-height: 322px;
+  background: #d9d9d9;
+  background-image: url("../img/schedule/header-mb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15.535px;
+  overflow: hidden;
+}
+@media (min-width: 576px) {
+  .schedule-promo__pic {
+    max-height: auto;
+    min-height: 400px;
+    background-image: url("../img/schedule/header-tb.jpg");
+  }
+}
+@media (min-width: 992px) {
+  .schedule-promo__pic {
+    min-height: 182px;
+    margin-left: 40px;
+    width: calc(50% - 40px);
+    background-image: url("../img/schedule/header.jpg");
+  }
+}
+.schedule-promo .title {
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .schedule-promo .title {
+    margin-bottom: 6px;
+  }
+}
+.schedule-promo .text {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .schedule-promo .text {
+    padding-right: 35px;
+  }
 }
 
 .advantages-workout {
@@ -11476,21 +11482,16 @@ yx-axis
 .lesson--pool {
   background-color: #cde0f0;
 }
-.lesson--pool .lesson__place .icon {
-  width: 15px;
-  margin-right: 2px;
-}
-@media (min-width: 768px) {
-  .lesson--pool .lesson__place .icon {
-    width: 15px;
-    margin-right: 3px;
-  }
-}
-@media (min-width: 1200px) {
-  .lesson--pool .lesson__place .icon {
-    width: 20px;
-    margin-right: 6px;
-  }
+.lesson--pool .lesson__place::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 16px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/icons/sch-pool.svg");
 }
 .lesson--pay {
   background-color: #f9d288;
@@ -11511,6 +11512,7 @@ yx-axis
   }
 }
 .lesson__trainer {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -11518,6 +11520,17 @@ yx-axis
   font-size: 15px;
   line-height: 140%;
   margin-bottom: 2px;
+}
+.lesson__trainer::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/icons/sch-user.svg");
 }
 @media (min-width: 1100px) {
   .lesson__trainer {
@@ -11527,30 +11540,10 @@ yx-axis
 }
 .lesson__trainer span {
   width: calc(100% - 15px);
-}
-@media (min-width: 1300px) {
-  .lesson__trainer span {
-    width: calc(100% - 25px);
-  }
-}
-.lesson__trainer .icon {
-  width: 13px;
-  height: 20px;
-  margin-top: 3px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-@media (min-width: 1200px) {
-  .lesson__trainer .icon {
-    width: 17px;
-  }
-}
-@media (min-width: 1300px) {
-  .lesson__trainer .icon {
-    width: 26px;
-  }
+  padding-left: 5px;
 }
 .lesson__place {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -11558,36 +11551,25 @@ yx-axis
   font-size: 15px;
   line-height: 140%;
 }
+.lesson__place::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/icons/sch-spa.svg");
+}
 @media (min-width: 1100px) {
   .lesson__place {
     line-height: 120%;
   }
 }
 .lesson__place span {
+  padding-left: 5px;
   width: calc(100% - 15px);
-}
-@media (min-width: 1300px) {
-  .lesson__place span {
-    width: calc(100% - 25px);
-  }
-}
-.lesson__place .icon {
-  width: 17px;
-  height: 17px;
-  margin-right: 2px;
-}
-@media (min-width: 1200px) {
-  .lesson__place .icon {
-    width: 20px;
-    height: 20px;
-    margin-top: 0;
-  }
-}
-@media (min-width: 1300px) {
-  .lesson__place .icon {
-    width: 26px;
-    height: 20px;
-  }
 }
 .lesson__text {
   margin-bottom: 1rem;
