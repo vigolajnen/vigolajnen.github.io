@@ -10544,6 +10544,7 @@ yx-axis
     --schedule-row: 100px;
     --schedule-row-min: 100px;
     --schedule-col-max: 166px;
+    --schedule-col-min: 150px;
     --bg-image: url("../img/schedule/bg.png");
   }
 }
@@ -10551,6 +10552,7 @@ yx-axis
   :root {
     --base-gap: 8px;
     --schedule-row: 166px;
+    --schedule-col-min: 166px;
     --schedule-col: calc(100% / 7 - 10px);
     --schedule-col-max: calc(100% / 7 - 10px);
   }
@@ -10579,6 +10581,17 @@ yx-axis
     display: inline-flex;
   }
 }
+@media (min-width: 576px) {
+  .schedule__header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .schedule__header {
+    flex-direction: column;
+  }
+}
 .schedule__header-title.title {
   margin-bottom: 30px;
 }
@@ -10596,7 +10609,7 @@ yx-axis
 .schedule__header-link-pdf, .schedule__header-title {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .schedule__header-link-pdf, .schedule__header-title {
     width: auto;
   }
@@ -11071,6 +11084,7 @@ yx-axis
   background-image: url("../img/schedule/header-mb.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
   border-radius: 15.535px;
   overflow: hidden;
 }
@@ -11159,6 +11173,11 @@ yx-axis
     gap: 18px;
   }
 }
+@media (min-width: 768px) {
+  .advantages-workout__list {
+    gap: 10px;
+  }
+}
 @media (min-width: 992px) {
   .advantages-workout__list {
     gap: 45px;
@@ -11173,6 +11192,7 @@ yx-axis
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   align-items: center;
   padding: 20px 16px;
   margin-bottom: 13px;
@@ -11184,10 +11204,25 @@ yx-axis
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 12px;
 }
+@media (min-width: 576px) {
+  .advantages-workout__item {
+    padding: 20px 13px;
+    width: calc(33.3333333333% - 12px);
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media (min-width: 700px) {
   .advantages-workout__item {
+    flex-direction: row;
+    text-align: left;
     margin-bottom: 0;
     width: calc(33.3333333333% - 12px);
+  }
+}
+@media (min-width: 800px) {
+  .advantages-workout__item {
+    padding: 20px 16px;
   }
 }
 @media (min-width: 992px) {
@@ -11206,20 +11241,35 @@ yx-axis
 .advantages-workout__item span {
   width: calc(100% - 40px);
 }
+@media (min-width: 576px) {
+  .advantages-workout__item span {
+    width: 100%;
+  }
+}
+@media (min-width: 700px) {
+  .advantages-workout__item span {
+    width: calc(100% - 40px);
+  }
+}
+.advantages-workout__item .icon {
+  width: 30px;
+  margin-right: 10px;
+}
 @media (min-width: 768px) {
   .advantages-workout__item--center {
     justify-content: center;
     text-align: center;
+  }
+  .advantages-workout__item--center .icon {
+    margin-left: auto;
+    width: 20px;
+    margin-right: 0;
   }
 }
 @media (min-width: 992px) {
   .advantages-workout__item--center span {
     width: auto;
   }
-}
-.advantages-workout__item .icon {
-  width: 30px;
-  margin-right: 10px;
 }
 
 .form-schedule {
