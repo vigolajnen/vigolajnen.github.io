@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --btn-padding: 0.5rem;
   --bs-body-line-height: 130%;
@@ -11529,6 +11530,34 @@ yx-axis
     width: calc(50% - 24px);
   }
 }
+.form-schedule--all {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .form-schedule--all {
+    padding-bottom: 90px;
+  }
+}
+@media (min-width: 992px) {
+  .form-schedule--all .form-schedule__type {
+    position: absolute;
+    bottom: 40px;
+    left: 25%;
+    transform: translateX(25%);
+  }
+}
+@media (min-width: 1200px) {
+  .form-schedule--all .form-schedule__type {
+    left: 33.3333333333%;
+    transform: translateX(0%);
+  }
+}
+.form-schedule--all .form-check-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
 
 .lesson {
   position: relative;
@@ -11858,6 +11887,12 @@ yx-axis
   background-color: #e2f0fb;
 }
 
+:root {
+  --full-col-min: 100px;
+  --full-col-place: 123px;
+  --full-col-workout: 300px;
+}
+
 .full-schedule {
   display: flex;
   flex-direction: column;
@@ -11866,22 +11901,76 @@ yx-axis
   overflow: hidden;
   scroll-behavior: smooth;
 }
-@media (max-width: 990px) {
+@media (min-width: 992px) {
   .full-schedule {
-    overflow-x: auto;
+    margin-top: -30px;
   }
 }
 @media (max-width: 990px) {
   .full-schedule__inner {
     min-width: 940px;
     width: 100%;
+    overflow-x: auto;
   }
 }
 .full-schedule__header {
   display: flex;
   gap: 10px;
 }
+.full-schedule__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
+@media (min-width: 576px) {
+  .full-schedule__footer {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 992px) {
+  .full-schedule__footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.full-schedule__item-count {
+  display: inline-block;
+  width: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #eaeced;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
+.full-schedule__item-count select {
+  background-color: transparent;
+  border: none;
+  color: #42474d;
+}
+.full-schedule__paginate {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: #42474d;
+}
+.full-schedule__paginate .link {
+  color: #42474d;
+}
 .full-schedule__title {
+  position: relative;
   flex-grow: 1;
   padding: 20px;
   width: 16.6666666667%;
@@ -11896,6 +11985,23 @@ yx-axis
 }
 .full-schedule__title:nth-child(2) {
   min-width: 208px;
+}
+.full-schedule__title--sort span {
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.full-schedule__title--sort span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 15px;
+  height: 26px;
+  background-image: url("../img/icons/sort.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .full-schedule__body {
   display: flex;
@@ -11912,6 +12018,156 @@ yx-axis
 }
 .full-schedule__item:nth-child(2n) {
   background: #dee8ed;
+}
+.full-schedule [data-workout=Тренировка] {
+  width: var(--full-col-workout);
+}
+.full-schedule [data-place=Зал] {
+  width: var(--full-col-place);
+}
+
+.schedule-table {
+  text-align: left;
+  position: relative;
+  border-spacing: 0 11px;
+  border-collapse: inherit;
+}
+.schedule-table tr:nth-child(2n) td {
+  background-color: #eaeced;
+}
+.schedule-table th {
+  background: transparent;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+}
+.schedule-table td {
+  padding: 20px 10px;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  background: #dee8ed;
+}
+.schedule-table td:first-child {
+  border-radius: 12px 0 0 12px;
+}
+.schedule-table td:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.paginate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+@media (min-width: 576px) {
+  .paginate {
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+}
+.paginate .list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-right: 23px;
+}
+.paginate .list .paginate__button {
+  margin-bottom: 0;
+}
+.paginate .list::before {
+  content: "...";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  transform: translateY(-25%);
+}
+.paginate .link {
+  display: block;
+  border-radius: 6px;
+  background-color: #eaeced;
+  padding: 8px 10px;
+}
+@media (min-width: 576px) {
+  .paginate .link {
+    padding: 10px 15px;
+  }
+}
+.paginate .link:focus, .paginate .link:hover {
+  background-color: #e2f0fb;
+  color: #42474d;
+}
+.paginate__button {
+  position: relative;
+  margin: 0;
+}
+.paginate__button.previous, .paginate__button.next {
+  position: absolute;
+  bottom: 0;
+  text-transform: lowercase;
+  background-color: transparent;
+}
+@media (min-width: 576px) {
+  .paginate__button.previous, .paginate__button.next {
+    position: relative;
+  }
+}
+.paginate__button.previous::before, .paginate__button.next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  width: 30px;
+  height: 6px;
+}
+.paginate__button.previous:focus, .paginate__button.previous:hover, .paginate__button.next:focus, .paginate__button.next:hover {
+  background-color: transparent;
+  color: #42474d;
+}
+.paginate__button.previous {
+  left: 15px;
+  padding-left: 40px;
+  padding-right: 0;
+  transition: 0.3s;
+}
+@media (min-width: 576px) {
+  .paginate__button.previous {
+    left: 0;
+  }
+}
+.paginate__button.previous::before {
+  left: 0;
+  transform: rotate(180deg) translateY(50%);
+}
+.paginate__button.previous:focus::before, .paginate__button.previous:hover::before {
+  transition: 0.3s;
+  transform: rotate(180deg) translateY(50%) translateX(10%);
+}
+.paginate__button.next {
+  right: 15px;
+  padding-right: 40px;
+  padding-left: 0;
+}
+@media (min-width: 576px) {
+  .paginate__button.next {
+    right: 0;
+  }
+}
+.paginate__button.next::before {
+  right: 0;
+}
+.paginate__button.next:focus::before, .paginate__button.next:hover::before {
+  transition: 0.3s;
+  transform: translateY(-50%) translateX(10%);
 }
 
 .full-lesson {
