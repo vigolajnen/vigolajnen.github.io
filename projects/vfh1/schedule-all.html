@@ -171,93 +171,413 @@
               <option value="100">100</option>
             </select><span class="px-2">записей</span>
           </label>
-          <div class="full-schedule__inner" id="scroll-wrapper">
-            <div class="full-schedule__header">
-              <div class="full-schedule__title" data-hour="Дата/время"><span>Дата/время</span></div>
-              <div class="full-schedule__title full-schedule__title--sort" data-workout="Тренировка"><span>Тренировка</span></div>
-              <div class="full-schedule__title full-schedule__title--sort" data-age="Возраст"><span>Возраст</span></div>
-              <div class="full-schedule__title full-schedule__title--sort" data-place="Зал"><span>Зал</span></div>
-              <div class="full-schedule__title full-schedule__title--sort" data-club="Клуб"><span>Клуб</span></div>
-              <div class="full-schedule__title full-schedule__title--sort" data-trainer="Тренер"><span>Тренер</span></div>
-            </div>
-            <div class="full-schedule__body">
-              <div class="full-schedule__item">
-                          <div class="full-lesson">
-                            <div class="full-lesson__date" data-hour="Дата/время">
-                              <div><b>20.03 пн</b></div>
-                              <div>09:00</div>
-                            </div>
-                            <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                            <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                            <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
-                            <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
-                            <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                          </div>
+          <div id="scroll-wrapper">
+            <div class="full-schedule__inner">
+              <div class="full-schedule__header">
+                <div class="full-schedule__title" data-hour="Дата/время"><span>Дата/время</span></div>
+                <div class="full-schedule__title full-schedule__title--sort" data-workout="Тренировка"><span>Тренировка</span></div>
+                <div class="full-schedule__title full-schedule__title--sort" data-age="Возраст"><span>Возраст</span></div>
+                <div class="full-schedule__title full-schedule__title--sort" data-place="Зал"><span>Зал</span></div>
+                <div class="full-schedule__title full-schedule__title--sort" data-club="Клуб"><span>Клуб</span></div>
+                <div class="full-schedule__title full-schedule__title--sort" data-trainer="Тренер"><span>Тренер</span></div>
               </div>
-              <div class="full-schedule__item">
-                          <div class="full-lesson">
-                            <div class="full-lesson__date" data-hour="Дата/время">
-                              <div><b>20.03 пн</b></div>
-                              <div>09:00</div>
+              <div class="full-schedule__body">
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>09:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-1" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-1">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text">Внимание! Посещение урока возможно только в спортивной обуви или в носках. Комплекс упражнений направленный на растяжку и релаксацию. Подобные регулярные групповые тренировки помогут повысить тонус мышц, улучшить координацию, восстановить осанку, сделать движения пластичными. Рекомендуется для любого уровня подготовленности.</div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-1" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-1">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text">Инструктор тренажерного зала. Инструктор по плаванию. Институт бизнеса и права. Экономика Тренерский стаж с 2015 года. Плавание для детей и взрослых. Тренировки детей с особенностями развития, гидрореабилитация. Развитие силовой выносливости и координации</div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
                             </div>
-                            <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                            <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                            <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
-                            <div class="full-lesson__club" data-club="Клуб">на Савушкина</div>
-                            <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                          </div>
-              </div>
-              <div class="full-schedule__item">
-                          <div class="full-lesson">
-                            <div class="full-lesson__date" data-hour="Дата/время">
-                              <div><b>20.03 пн</b></div>
-                              <div>10:00</div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>09:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-2" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-2">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Савушкина</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-2" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-2">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
                             </div>
-                            <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                            <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                            <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
-                            <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
-                            <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                          </div>
-              </div>
-              <div class="full-schedule__item">
-                          <div class="full-lesson">
-                            <div class="full-lesson__date" data-hour="Дата/время">
-                              <div><b>20.03 пн</b></div>
-                              <div>09:00</div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>10:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-3" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-3">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-3" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-3">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
                             </div>
-                            <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                            <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                            <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
-                            <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
-                            <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                          </div>
-              </div>
-              <div class="full-schedule__item">
-                          <div class="full-lesson">
-                            <div class="full-lesson__date" data-hour="Дата/время">
-                              <div><b>20.03 пн</b></div>
-                              <div>09:00</div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>09:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-4" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-4">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-4" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-4">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
                             </div>
-                            <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                            <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                            <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
-                            <div class="full-lesson__club" data-club="Клуб">на Савушкина</div>
-                            <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                          </div>
-              </div>
-              <div class="full-schedule__item">
-                          <div class="full-lesson">
-                            <div class="full-lesson__date" data-hour="Дата/время">
-                              <div><b>20.03 пн</b></div>
-                              <div>10:00</div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>09:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-5" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-5">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Савушкина</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-5" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-5">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
                             </div>
-                            <div class="full-lesson__workout" data-workout="Тренировка">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
-                            <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
-                            <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
-                            <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
-                            <div class="full-lesson__trainer" data-trainer="Тренер">Кузовненина Екатерина</div>
-                          </div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>10:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-6" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-6">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-6" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-6">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>09:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-7" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-7">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-7" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-7">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text">Кузовненина Екатерина</div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>09:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-8" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-8">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Савушкина</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-8" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-8">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>10:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-9" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-9">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-9" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-9">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>09:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-10" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-10">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-10" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-10">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>09:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-11" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-11">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Савушкина</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-11" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-11">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+                <div class="full-schedule__item">
+                            <div class="full-lesson">
+                              <div class="full-lesson__date" data-hour="Дата/время">
+                                <div><b>20.03 пн</b></div>
+                                <div>10:00</div>
+                              </div>
+                              <div class="full-lesson__workout" data-workout="Тренировка" data-bs-content-id="popover-content-workout-12" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</span>
+                                <div class="d-none lesson__popover" id="popover-content-workout-12">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией об уроке"></div>
+                                  <h4 class="title">СЕКЦИЯ «Шк.плавания 11» (11-13 лет)</h4>
+                                  <div class="text"></div>
+                                </div>
+                              </div>
+                              <div class="full-lesson__age" data-age="Возраст">Взрослые</div>
+                              <div class="full-lesson__gym" data-place="Зал">Большой Бассейн</div>
+                              <div class="full-lesson__club" data-club="Клуб">на Маршала Говорова</div>
+                              <div class="full-lesson__trainer" data-trainer="Тренер" data-bs-content-id="popover-content-trainer-12" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus">
+                                          <svg class="icon" width="18" height="17" viewBox="0 0 18 17">
+                                            <use xlink:href="img/sprite.svg#info"></use>
+                                          </svg><span class="text">Кузовненина Екатерина</span>
+                                <div class="d-none lesson__popover" id="popover-content-trainer-12">
+                                  <div class="lesson__popover-close" tabindex="1" aria-label="Закрыть окно с информацией о тренере"></div>
+                                  <div class="avatar"><img class="avatar__pic" src="../img/schedule/avatar.jpg" width="59" height="54">
+                                    <h4 class="title">Кузовненина Екатерина</h4>
+                                  </div>
+                                  <div class="text"></div><a class="lesson__link link-text link-text--more" href="#"><span>Информация о тренере</span></a>
+                                </div>
+                              </div>
+                            </div>
+                </div>
               </div>
             </div>
           </div>
@@ -347,7 +667,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
     <script>
       window.addEventListener('resize', function(e) {
-        if (window.matchMedia('(min-width: 576px)').matches && window.matchMedia('(max-width: 1100px)').matches) {
+        if (window.matchMedia('(max-width: 990px)').matches && window.matchMedia('(max-width: 1100px)').matches) {
           $('#scroll-wrapper').mCustomScrollbar({
             axis: 'x',
             theme: 'dark-thin',
@@ -359,7 +679,7 @@
           $('#scroll-wrapper').mCustomScrollbar('destroy');
         }
       });
-      if (window.matchMedia('(min-width: 576px)').matches && window.matchMedia('(max-width: 1100px)').matches) {
+      if (window.matchMedia('(max-width: 990px)').matches && window.matchMedia('(max-width: 1100px)').matches) {
           $('#scroll-wrapper').mCustomScrollbar({
             axis: 'x',
             theme: 'dark-thin',
@@ -373,6 +693,6 @@
       
       
     </script>
-    <script src="js/script-schedule.min.js" type="module"></script>
+    <script src="js/script-all-schedule.min.js" type="module"></script>
   </body>
 </html>

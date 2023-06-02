@@ -2572,29 +2572,43 @@ yx-axis
 }
 .slider--sale {
   height: auto;
-  max-height: 500px;
-}
-.slider--sale img {
-  max-height: 500px;
+  min-height: auto;
 }
 .slider--sale .swiper-slide {
   background-position: center;
   background-size: cover;
   border-radius: 16px;
   overflow: hidden;
+  min-height: 100%;
 }
 .slider--sale .swiper-slide img {
   display: block;
   width: 100%;
+  object-fit: fill;
 }
 .slider--sale .swiper-button-next {
-  right: 17px;
+  right: 10px;
+}
+@media (min-width: 768px) {
+  .slider--sale .swiper-button-next {
+    right: 17px;
+  }
 }
 .slider--sale .swiper-button-prev {
-  left: 17px;
+  left: 10px;
+}
+@media (min-width: 768px) {
+  .slider--sale .swiper-button-prev {
+    left: 17px;
+  }
 }
 .slider--sale .swiper-button-next:after, .slider--sale .swiper-button-prev:after {
-  font-size: 2.45rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .slider--sale .swiper-button-next:after, .slider--sale .swiper-button-prev:after {
+    font-size: 2.45rem;
+  }
 }
 .slider--sale .swiper-pagination-fraction {
   bottom: 10px;
@@ -2605,7 +2619,8 @@ yx-axis
 }
 .slider--sale img {
   height: 100%;
-  min-height: 330px;
+  min-height: auto;
+  max-height: 500px;
 }
 
 .list {
@@ -10516,7 +10531,7 @@ yx-axis
 }
 
 :root {
-  --schedule-col: calc(100% / 7 - 10px);
+  --schedule-col: calc(100% / 7);
   --schedule-col-min: 166px;
   --schedule-col-max: 100%;
   --schedule-min: 980px;
@@ -10551,14 +10566,15 @@ yx-axis
 }
 @media (min-width: 992px) {
   :root {
+    --base-gap: 2px;
     --schedule-col-min: 110px;
-    --schedule-col-max: calc(86vw /7);
+    --schedule-col-max: calc(89vw /7);
     --schedule-min: 700px;
+    --week-days-h: 40px;
   }
 }
 @media (min-width: 1200px) {
   :root {
-    --base-gap: 8px;
     --schedule-min: 980px;
     --schedule-row: 166px;
     --schedule-col: calc(100% / 7);
@@ -10567,9 +10583,10 @@ yx-axis
 }
 @media (min-width: 1400px) {
   :root {
+    --base-gap: 8px;
     --schedule-col-min: 166px;
-    --schedule-col: calc(100% / 7 - 10px);
-    --schedule-col-max: calc(100% / 7 - 10px);
+    --schedule-col: calc(100% / 7 - 8px);
+    --schedule-col-max: calc(100% / 7 - 8px);
   }
 }
 
@@ -10577,7 +10594,11 @@ yx-axis
   display: none;
 }
 .schedule .schedule__header-link-pdf, .schedule .schedule__header-link-next {
-  display: flex;
+  display: inline-flex;
+}
+.schedule .schedule__header-link-pdf span, .schedule .schedule__header-link-next span {
+  display: inline-flex;
+  padding-left: 0.5em;
 }
 .schedule .schedule__header-link-next {
   margin-bottom: 20px;
@@ -10726,6 +10747,11 @@ yx-axis
 @media (max-width: 768px) {
   .schedule__week {
     width: calc(100% - 65px);
+  }
+}
+@media (min-width: 992px) {
+  .schedule__week {
+    width: calc(100% - 60px);
   }
 }
 @media (max-width: 1400px) {
@@ -11289,6 +11315,8 @@ yx-axis
     width: auto;
   }
   .advantages-workout__item--center .icon {
+    width: 30px;
+    height: 35px;
     margin-left: 0;
     margin-right: 10px;
   }
@@ -11383,7 +11411,7 @@ yx-axis
   }
 }
 .form-schedule .form-control {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 130%;
   padding: 0.7rem 1.75rem 0.7rem 1.45rem;
 }
@@ -11575,7 +11603,7 @@ yx-axis
 }
 @media (min-width: 1300px) {
   .lesson {
-    padding: 10px;
+    padding: 15px 10px;
   }
 }
 .lesson--pool {
@@ -11646,6 +11674,18 @@ yx-axis
   background-size: cover;
   background-image: url("../img/icons/sch-user.svg");
 }
+@media (min-width: 992px) {
+  .lesson__trainer::before {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (min-width: 1300px) {
+  .lesson__trainer::before {
+    width: 13px;
+    height: 13px;
+  }
+}
 .lesson__trainer span {
   width: calc(100% - 15px);
   padding-left: 5px;
@@ -11655,7 +11695,7 @@ yx-axis
     font-size: 13px;
   }
   .lesson__trainer span {
-    padding-left: 3px;
+    padding-left: 2px;
   }
 }
 @media (min-width: 1200px) {
@@ -11695,6 +11735,18 @@ yx-axis
   background-image: url("../img/icons/sch-spa.svg");
 }
 @media (min-width: 992px) {
+  .lesson__place::before {
+    width: 14px;
+    height: 14px;
+  }
+}
+@media (min-width: 1300px) {
+  .lesson__place::before {
+    width: 17px;
+    height: 15px;
+  }
+}
+@media (min-width: 992px) {
   .lesson__place {
     font-size: 13px;
   }
@@ -11715,10 +11767,10 @@ yx-axis
 }
 @media (min-width: 992px) {
   .lesson__place span {
-    padding-left: 3px;
+    padding-left: 2px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .lesson__place span {
     padding-left: 5px;
   }
@@ -11908,7 +11960,7 @@ yx-axis
 }
 @media (max-width: 990px) {
   .full-schedule__inner {
-    min-width: 940px;
+    min-width: 990px;
     width: 100%;
     overflow-x: auto;
   }
@@ -11974,10 +12026,17 @@ yx-axis
   flex-grow: 1;
   padding: 20px;
   width: 16.6666666667%;
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 130%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
+@media (min-width: 768px) {
+  .full-schedule__title {
+    font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
 .full-schedule__title:first-child {
   width: 160px;
@@ -11985,6 +12044,11 @@ yx-axis
 }
 .full-schedule__title:nth-child(2) {
   min-width: 208px;
+}
+.full-schedule__title:last-child {
+  flex-grow: 1;
+  width: 200px;
+  min-width: 170px;
 }
 .full-schedule__title--sort span {
   position: relative;
@@ -12066,7 +12130,7 @@ yx-axis
 @media (min-width: 576px) {
   .paginate {
     justify-content: flex-start;
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
 }
 .paginate .list {
@@ -12171,13 +12235,21 @@ yx-axis
 }
 
 .full-lesson {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
   width: 100%;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
+  font-size: 15px;
+  line-height: 140%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .full-lesson {
+    font-size: 16px;
+    line-height: 130%;
+  }
 }
 .full-lesson > * {
   flex-grow: 1;
@@ -12190,4 +12262,124 @@ yx-axis
 }
 .full-lesson > *:nth-child(2) {
   min-width: 208px;
+}
+.full-lesson > *:last-child {
+  flex-grow: 1;
+  width: 200px;
+  min-width: 170px;
+}
+.full-lesson__workout, .full-lesson__trainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.full-lesson__workout .icon, .full-lesson__trainer .icon {
+  width: 18px;
+  height: 17px;
+}
+.full-lesson__workout .text, .full-lesson__trainer .text {
+  width: calc(100% - 18px - 10px);
+}
+
+.popover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  background: #f6f7f8;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  height: auto;
+  max-height: 300px;
+}
+@media (min-width: 768px) {
+  .popover {
+    min-width: 380px;
+    max-height: 233px;
+  }
+}
+.popover .popover-body {
+  height: auto;
+  max-height: 300px;
+}
+@media (min-width: 768px) {
+  .popover .popover-body {
+    min-width: 380px;
+    max-height: 233px;
+  }
+}
+.popover .lesson__popover-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/close.svg");
+  background-size: contain;
+  cursor: pointer;
+}
+.popover .title {
+  padding-right: 15px;
+  margin-bottom: 5px;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+}
+.popover .text {
+  padding-right: 15px;
+  margin-bottom: 5px;
+  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  height: 100%;
+  max-height: 170px;
+  overflow-y: auto;
+}
+@media (min-width: 768px) {
+  .popover .text {
+    max-height: 130px;
+  }
+}
+@media (min-width: 992px) {
+  .popover .text {
+    max-height: 110px;
+  }
+}
+@media (min-width: 1200px) {
+  .popover .text {
+    max-height: 100px;
+  }
+}
+.popover .text::-webkit-scrollbar {
+  width: 7px;
+}
+.popover .text::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+}
+.popover .text::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 41px;
+}
+.popover .lesson__link {
+  display: inline-flex;
+  margin-top: auto;
+  margin-bottom: 0;
+  height: 30px;
+}
+.popover .avatar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.popover .avatar__pic {
+  width: 55px;
+  height: 54px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
 }
