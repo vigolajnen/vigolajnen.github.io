@@ -11991,6 +11991,12 @@ yx-axis
     overflow-x: auto;
   }
 }
+@media (max-width: 576px) {
+  .full-schedule__inner {
+    min-width: min-content;
+    max-width: 700px;
+  }
+}
 .full-schedule__header {
   display: flex;
   gap: 10px;
@@ -12050,11 +12056,16 @@ yx-axis
 .full-schedule__title {
   position: relative;
   flex-grow: 1;
-  padding: 20px;
+  padding: 10px;
   width: 16.6666666667%;
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
+}
+@media (min-width: 576px) {
+  .full-schedule__title {
+    padding: 20px;
+  }
 }
 @media (min-width: 768px) {
   .full-schedule__title {
@@ -12065,11 +12076,27 @@ yx-axis
   }
 }
 .full-schedule__title:first-child {
-  width: 160px;
-  min-width: 160px;
+  width: 60px;
+  min-width: 60px;
+}
+@media (min-width: 576px) {
+  .full-schedule__title:first-child {
+    width: 160px;
+    min-width: 160px;
+  }
 }
 .full-schedule__title:nth-child(2) {
-  min-width: 208px;
+  width: 150px;
+  max-width: 150px;
+}
+@media (min-width: 576px) {
+  .full-schedule__title:nth-child(2) {
+    width: 208px;
+    min-width: 208px;
+  }
+}
+.full-schedule__title:nth-child(5) {
+  min-width: 130px;
 }
 .full-schedule__title:last-child {
   flex-grow: 1;
@@ -12279,25 +12306,57 @@ yx-axis
 }
 .full-lesson__date, .full-lesson__workout, .full-lesson__age, .full-lesson__gym, .full-lesson__club, .full-lesson__trainer {
   flex-grow: 1;
-  padding: 20px;
+  padding: 10px;
   width: 16.6666666667%;
 }
+@media (min-width: 576px) {
+  .full-lesson__date, .full-lesson__workout, .full-lesson__age, .full-lesson__gym, .full-lesson__club, .full-lesson__trainer {
+    padding: 20px;
+  }
+}
 .full-lesson__date {
-  width: 160px;
-  min-width: 160px;
+  width: 60px;
+  min-width: 60px;
+}
+@media (min-width: 576px) {
+  .full-lesson__date {
+    width: 160px;
+    min-width: 160px;
+  }
+}
+.full-lesson__club {
+  min-width: 130px;
 }
 .full-lesson__workout {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  min-width: 208px;
+  min-width: 130px;
+  max-width: 150px;
+}
+@media (min-width: 576px) {
+  .full-lesson__workout {
+    width: 208px;
+    min-width: 208px;
+  }
 }
 .full-lesson__workout .icon {
+  display: none;
   width: 18px;
   height: 17px;
 }
+@media (min-width: 992px) {
+  .full-lesson__workout .icon {
+    display: flex;
+  }
+}
 .full-lesson__workout .text {
-  width: calc(100% - 18px - 10px);
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .full-lesson__workout .text {
+    width: calc(100% - 18px - 10px);
+  }
 }
 .full-lesson__trainer {
   display: flex;
@@ -12308,11 +12367,22 @@ yx-axis
   min-width: 170px;
 }
 .full-lesson__trainer .icon {
+  display: none;
   width: 18px;
   height: 17px;
 }
+@media (min-width: 992px) {
+  .full-lesson__trainer .icon {
+    display: flex;
+  }
+}
 .full-lesson__trainer .text {
-  width: calc(100% - 18px - 10px);
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .full-lesson__trainer .text {
+    width: calc(100% - 18px - 10px);
+  }
 }
 
 .popover {
