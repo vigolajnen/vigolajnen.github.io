@@ -12277,33 +12277,41 @@ yx-axis
     line-height: 130%;
   }
 }
-.full-lesson > * {
+.full-lesson__date, .full-lesson__workout, .full-lesson__age, .full-lesson__gym, .full-lesson__club, .full-lesson__trainer {
   flex-grow: 1;
   padding: 20px;
   width: 16.6666666667%;
 }
-.full-lesson > *:first-child {
+.full-lesson__date {
   width: 160px;
   min-width: 160px;
 }
-.full-lesson > *:nth-child(2) {
+.full-lesson__workout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   min-width: 208px;
 }
-.full-lesson > *:last-child {
+.full-lesson__workout .icon {
+  width: 18px;
+  height: 17px;
+}
+.full-lesson__workout .text {
+  width: calc(100% - 18px - 10px);
+}
+.full-lesson__trainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   flex-grow: 1;
   width: 200px;
   min-width: 170px;
 }
-.full-lesson__workout, .full-lesson__trainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.full-lesson__workout .icon, .full-lesson__trainer .icon {
+.full-lesson__trainer .icon {
   width: 18px;
   height: 17px;
 }
-.full-lesson__workout .text, .full-lesson__trainer .text {
+.full-lesson__trainer .text {
   width: calc(100% - 18px - 10px);
 }
 
