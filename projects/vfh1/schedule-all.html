@@ -144,7 +144,7 @@
             <label class="form-label flex-grow-1"><span class="form__label-name">Введите: тренер/тренировка</span>
               <input class="search form-control" type="search" placeholder="Введи: клуб/тренер/тренировка" aria-controls="dataTable"><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
             </label>
-            <div class="order-1-md flex-grow-1 d-flex form-schedule__type">
+            <div class="form-label order-1-md flex-grow-1 d-flex form-schedule__type">
               <div class="form-check">
                 <input class="form-check-input" id="flexCheckDefault" type="checkbox" value="">
                 <label class="form-check-label px-2" for="flexCheckDefault">Детские</label>
@@ -672,8 +672,12 @@
             axis: 'x',
             theme: 'dark-thin',
             autoExpandScrollbar: true,
-            keyboard: true,
-            advanced: { autoExpandHorizontalScroll: true },
+            keyboard: {enable: true},
+            advanced: {
+              autoExpandHorizontalScroll: true,
+              updateOnContentResize:true },
+            mouseWheel: {enable: true},
+            documentTouchScroll: true,
           });
         } else {
           $('#scroll-wrapper').mCustomScrollbar('destroy');
@@ -684,8 +688,12 @@
             axis: 'x',
             theme: 'dark-thin',
             autoExpandScrollbar: true,
-            keyboard: true,
-            advanced: { autoExpandHorizontalScroll: true },
+            kkeyboard: {enable: true},
+            advanced: {
+              autoExpandHorizontalScroll: true,
+              updateOnContentResize:true },
+            mouseWheel: {enable: true},
+            documentTouchScroll: true,
           });
         } else {
           $('#scroll-wrapper').mCustomScrollbar('destroy');

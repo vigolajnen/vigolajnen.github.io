@@ -480,21 +480,30 @@
             axis: 'x',
             theme: 'dark-thin',
             autoExpandScrollbar: true,
-            keyboard: true,
-            advanced: { autoExpandHorizontalScroll: true },
+            keyboard: {enable: true},
+            advanced: {
+              autoExpandHorizontalScroll: true,
+              updateOnContentResize:true },
+            mouseWheel: {enable: true},
+            documentTouchScroll: true,
+      
           });
         } else {
           $('#scroll-wrapper').mCustomScrollbar('destroy');
         }
       });
       if (window.matchMedia('(min-width: 576px)').matches && window.matchMedia('(max-width: 1100px)').matches) {
-          $('#scroll-wrapper').mCustomScrollbar({
-            axis: 'x',
-            theme: 'dark-thin',
-            autoExpandScrollbar: true,
-            keyboard: true,
-            advanced: { autoExpandHorizontalScroll: true },
-          });
+        $('#scroll-wrapper').mCustomScrollbar({
+          axis: 'x',
+          theme: 'dark-thin',
+          autoExpandScrollbar: true,
+          keyboard: {enable: true},
+          advanced: {
+            autoExpandHorizontalScroll: true,
+            updateOnContentResize:true },
+          mouseWheel: {enable: true},
+          documentTouchScroll: true,
+        });
         } else {
           $('#scroll-wrapper').mCustomScrollbar('destroy');
         }
