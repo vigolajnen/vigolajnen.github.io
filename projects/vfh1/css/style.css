@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --btn-padding: 0.5rem;
   --bs-body-line-height: 130%;
@@ -11965,12 +11964,6 @@ yx-axis
   background-color: #e2f0fb;
 }
 
-:root {
-  --full-col-min: 100px;
-  --full-col-place: 123px;
-  --full-col-workout: 300px;
-}
-
 .full-schedule {
   display: flex;
   flex-direction: column;
@@ -11996,10 +11989,6 @@ yx-axis
     min-width: min-content;
     max-width: 700px;
   }
-}
-.full-schedule__header {
-  display: flex;
-  gap: 10px;
 }
 .full-schedule__footer {
   display: flex;
@@ -12053,62 +12042,37 @@ yx-axis
 .full-schedule__paginate .link {
   color: #42474d;
 }
-.full-schedule__title {
+
+.schedule-table {
+  width: 100%;
+  min-width: 630px;
+  text-align: left;
   position: relative;
-  flex-grow: 1;
+  border-spacing: 0 11px;
+  border-collapse: inherit;
+}
+.schedule-table__title {
+  position: relative;
   padding: 10px;
-  width: 16.6666666667%;
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
 }
-@media (min-width: 576px) {
-  .full-schedule__title {
-    padding: 20px;
-  }
-}
 @media (min-width: 768px) {
-  .full-schedule__title {
+  .schedule-table__title {
+    padding: 10px 20px;
     font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
   }
 }
-.full-schedule__title:first-child {
-  width: 60px;
-  min-width: 60px;
-}
-@media (min-width: 576px) {
-  .full-schedule__title:first-child {
-    width: 160px;
-    min-width: 160px;
-  }
-}
-.full-schedule__title:nth-child(2) {
-  width: 150px;
-  max-width: 150px;
-}
-@media (min-width: 576px) {
-  .full-schedule__title:nth-child(2) {
-    width: 208px;
-    min-width: 208px;
-  }
-}
-.full-schedule__title:nth-child(5) {
-  min-width: 130px;
-}
-.full-schedule__title:last-child {
-  flex-grow: 1;
-  width: 200px;
-  min-width: 170px;
-}
-.full-schedule__title--sort span {
+.schedule-table__title--sort span {
   position: relative;
   padding-right: 20px;
   cursor: pointer;
 }
-.full-schedule__title--sort span::before {
+.schedule-table__title--sort span::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -12120,56 +12084,84 @@ yx-axis
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.full-schedule__body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 10px;
-}
-.full-schedule__item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: #eaeced;
-  border-radius: 12px;
-}
-.full-schedule__item:nth-child(2n) {
-  background: #dee8ed;
-}
-.full-schedule [data-workout=Тренировка] {
-  width: var(--full-col-workout);
-}
-.full-schedule [data-place=Зал] {
-  width: var(--full-col-place);
-}
-
-.schedule-table {
-  text-align: left;
-  position: relative;
-  border-spacing: 0 11px;
-  border-collapse: inherit;
-}
-.schedule-table tr:nth-child(2n) td {
+.schedule-table__row:nth-child(2n) td {
   background-color: #eaeced;
 }
-.schedule-table th {
-  background: transparent;
-  position: sticky;
-  top: 0; /* Don't forget this, required for the stickiness */
-}
-.schedule-table td {
-  padding: 20px 10px;
+.schedule-table__column {
+  padding: 10px;
   margin: 10px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
+  font-size: 15px;
+  line-height: 140%;
   background: #dee8ed;
 }
-.schedule-table td:first-child {
+@media (min-width: 768px) {
+  .schedule-table__column {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+.schedule-table__column:first-child {
   border-radius: 12px 0 0 12px;
 }
-.schedule-table td:last-child {
+.schedule-table__column:last-child {
   border-radius: 0 12px 12px 0;
+}
+.schedule-table__column--place {
+  width: 130px;
+  min-width: 130px;
+}
+.schedule-table__date {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50px;
+}
+@media (min-width: 768px) {
+  .schedule-table__date {
+    display: inline-flex;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .schedule-table__time {
+    display: flex;
+  }
+}
+@media (min-width: 576px) {
+  .schedule-table__column[data-type=workout] .schedule-table__inner {
+    width: 208px;
+    min-width: 208px;
+  }
+}
+@media (min-width: 576px) {
+  .schedule-table__column[data-type=trainer] .schedule-table__inner {
+    width: 150px;
+    min-width: 150px;
+  }
+}
+.schedule-table__inner {
+  display: flex;
+  gap: 10px;
+}
+.schedule-table__inner .icon {
+  display: none;
+  width: 18px;
+  height: 17px;
+}
+@media (min-width: 992px) {
+  .schedule-table__inner .icon {
+    display: flex;
+  }
+}
+.schedule-table__inner .text {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .schedule-table__inner .text {
+    width: calc(100% - 18px - 10px);
+  }
 }
 
 .paginate {
@@ -12285,104 +12277,6 @@ yx-axis
 .paginate__button.next:focus::before, .paginate__button.next:hover::before {
   transition: 0.3s;
   transform: translateY(-50%) translateX(10%);
-}
-
-.full-lesson {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 140%;
-  overflow: hidden;
-}
-@media (min-width: 768px) {
-  .full-lesson {
-    font-size: 16px;
-    line-height: 130%;
-  }
-}
-.full-lesson__date, .full-lesson__workout, .full-lesson__age, .full-lesson__gym, .full-lesson__club, .full-lesson__trainer {
-  flex-grow: 1;
-  padding: 10px;
-  width: 16.6666666667%;
-}
-@media (min-width: 576px) {
-  .full-lesson__date, .full-lesson__workout, .full-lesson__age, .full-lesson__gym, .full-lesson__club, .full-lesson__trainer {
-    padding: 20px;
-  }
-}
-.full-lesson__date {
-  width: 60px;
-  min-width: 60px;
-}
-@media (min-width: 576px) {
-  .full-lesson__date {
-    width: 160px;
-    min-width: 160px;
-  }
-}
-.full-lesson__club {
-  min-width: 130px;
-}
-.full-lesson__workout {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  min-width: 130px;
-  max-width: 150px;
-}
-@media (min-width: 576px) {
-  .full-lesson__workout {
-    width: 208px;
-    min-width: 208px;
-  }
-}
-.full-lesson__workout .icon {
-  display: none;
-  width: 18px;
-  height: 17px;
-}
-@media (min-width: 992px) {
-  .full-lesson__workout .icon {
-    display: flex;
-  }
-}
-.full-lesson__workout .text {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .full-lesson__workout .text {
-    width: calc(100% - 18px - 10px);
-  }
-}
-.full-lesson__trainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  flex-grow: 1;
-  width: 200px;
-  min-width: 170px;
-}
-.full-lesson__trainer .icon {
-  display: none;
-  width: 18px;
-  height: 17px;
-}
-@media (min-width: 992px) {
-  .full-lesson__trainer .icon {
-    display: flex;
-  }
-}
-.full-lesson__trainer .text {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .full-lesson__trainer .text {
-    width: calc(100% - 18px - 10px);
-  }
 }
 
 .popover {
