@@ -12163,6 +12163,9 @@ yx-axis
   display: flex;
   gap: 10px;
 }
+.schedule-table__inner:focus, .schedule-table__inner:hover {
+  cursor: pointer;
+}
 .schedule-table__inner .icon {
   display: none;
   width: 18px;
