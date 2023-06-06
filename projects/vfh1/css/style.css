@@ -3410,15 +3410,6 @@ yx-axis
   text-decoration: none;
 }
 
-.horizontal-scrollable > .row {
-  overflow-x: auto;
-}
-
-.horizontal-scrollable .row .col {
-  display: inline-block;
-  float: none;
-}
-
 .page-header {
   z-index: 999999;
   position: fixed;
