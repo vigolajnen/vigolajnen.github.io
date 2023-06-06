@@ -122,7 +122,7 @@
     </nav>
     <div class="page-schedule">
       <div class="container">
-        <section class="page-schedule__header schedule-promo">
+        <section class="page-schedule__header schedule-promo schedule-promo--full">
           <div class="title">Расписание по всем клубам</div>
           <div class="text">Мастер-классы (МК) и занятия, в названии которых содержится обозначение "СЕКЦИЯ" или в скобках указана стоимость, являются Дополнительными услугами. Их посещение возможно только после предварительной оплаты.</div>
         </section>
@@ -163,6 +163,11 @@
       </section>
       <main class="schedule container">
         <div class="full-schedule">
+          <div class="full-schedule__icon-scroll">
+                      <svg class="icon" width="32" height="30" viewBox="0 0 32 30">
+                        <use xlink:href="img/sprite.svg#scroll"></use>
+                      </svg>
+          </div>
           <label class="full-schedule__item-count">Показать
             <select name="dataTable_length" aria-controls="dataTable">
               <option value="10">10</option>
