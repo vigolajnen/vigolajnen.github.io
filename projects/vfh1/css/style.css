@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --btn-padding: 0.5rem;
   --bs-body-line-height: 130%;
@@ -2571,43 +2572,29 @@ yx-axis
 }
 .slider--sale {
   height: auto;
-  min-height: auto;
+  max-height: 500px;
+}
+.slider--sale img {
+  max-height: 500px;
 }
 .slider--sale .swiper-slide {
   background-position: center;
   background-size: cover;
   border-radius: 16px;
   overflow: hidden;
-  min-height: 100%;
 }
 .slider--sale .swiper-slide img {
   display: block;
   width: 100%;
-  object-fit: fill;
 }
 .slider--sale .swiper-button-next {
-  right: 10px;
-}
-@media (min-width: 768px) {
-  .slider--sale .swiper-button-next {
-    right: 17px;
-  }
+  right: 17px;
 }
 .slider--sale .swiper-button-prev {
-  left: 10px;
-}
-@media (min-width: 768px) {
-  .slider--sale .swiper-button-prev {
-    left: 17px;
-  }
+  left: 17px;
 }
 .slider--sale .swiper-button-next:after, .slider--sale .swiper-button-prev:after {
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .slider--sale .swiper-button-next:after, .slider--sale .swiper-button-prev:after {
-    font-size: 2.45rem;
-  }
+  font-size: 2.45rem;
 }
 .slider--sale .swiper-pagination-fraction {
   bottom: 10px;
@@ -2618,8 +2605,7 @@ yx-axis
 }
 .slider--sale img {
   height: 100%;
-  min-height: auto;
-  max-height: 500px;
+  min-height: 330px;
 }
 
 .list {
@@ -3408,6 +3394,15 @@ yx-axis
 }
 .page-body .link:focus, .page-body .link:hover {
   text-decoration: none;
+}
+
+.horizontal-scrollable > .row {
+  overflow-x: auto;
+}
+
+.horizontal-scrollable .row .col {
+  display: inline-block;
+  float: none;
 }
 
 .page-header {
@@ -9526,7 +9521,6 @@ yx-axis
 @media (min-width: 1024px) {
   .club-services {
     padding: 30px 50px 10px;
-    padding-left: 80px;
   }
 }
 @media (min-width: 1100px) {
@@ -9567,29 +9561,29 @@ yx-axis
 @media (min-width: 1200px) {
   .club-services__list {
     width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-around;
   }
 }
 .club-services__item {
   flex-grow: 1;
-  width: 100%;
+  padding: 0;
+  max-width: 100%;
 }
 @media (min-width: 576px) {
   .club-services__item {
-    width: calc(50% - 2rem);
-    max-width: 299px;
+    width: 48%;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .club-services__item {
-    width: calc(33.3333333333% - 2rem);
-    max-width: calc(33.3333333333% - 1rem);
+    max-width: 320px;
   }
-}
-@media (min-width: 1200px) {
-  .club-services__item {
-    max-width: 292px;
-    width: calc(25% - 2rem);
+  .club-services__item.col-sm-3 {
+    width: 23%;
+    max-width: 23%;
   }
 }
 @media (min-width: 768px) {
@@ -9605,11 +9599,6 @@ yx-axis
 .club-services__item--4 {
   order: 3;
   margin-bottom: 0;
-}
-@media (min-width: 992px) {
-  .club-services__item--4 {
-    max-width: calc(33.3333333333% - 3rem);
-  }
 }
 @media (min-width: 768px) {
   .club-services__item--6 {
@@ -9632,19 +9621,6 @@ yx-axis
 @media (min-width: 800px) {
   .club-services__item--8 {
     order: 3;
-  }
-}
-@media (min-width: 992px) {
-  .club-services__item--8 {
-    padding-left: 0;
-    max-width: calc(33.3333333333% - 3rem);
-  }
-}
-@media (min-width: 1200px) {
-  .club-services__item--8 {
-    padding-left: 0;
-    margin-right: 0;
-    max-width: calc(33.3333333333% - 1rem);
   }
 }
 .club-services__content {
@@ -10521,7 +10497,7 @@ yx-axis
 }
 
 :root {
-  --schedule-col: calc(100% / 7);
+  --schedule-col: calc(100% / 7 - 10px);
   --schedule-col-min: 166px;
   --schedule-col-max: 100%;
   --schedule-min: 980px;
@@ -10556,15 +10532,14 @@ yx-axis
 }
 @media (min-width: 992px) {
   :root {
-    --base-gap: 2px;
     --schedule-col-min: 110px;
-    --schedule-col-max: calc(89vw /7);
+    --schedule-col-max: calc(86vw /7);
     --schedule-min: 700px;
-    --week-days-h: 40px;
   }
 }
 @media (min-width: 1200px) {
   :root {
+    --base-gap: 8px;
     --schedule-min: 980px;
     --schedule-row: 166px;
     --schedule-col: calc(100% / 7);
@@ -10573,10 +10548,9 @@ yx-axis
 }
 @media (min-width: 1400px) {
   :root {
-    --base-gap: 8px;
     --schedule-col-min: 166px;
-    --schedule-col: calc(100% / 7 - 6px);
-    --schedule-col-max: calc(100% / 7 - 6px);
+    --schedule-col: calc(100% / 7 - 10px);
+    --schedule-col-max: calc(100% / 7 - 10px);
   }
 }
 
@@ -10584,11 +10558,7 @@ yx-axis
   display: none;
 }
 .schedule .schedule__header-link-pdf, .schedule .schedule__header-link-next {
-  display: inline-flex;
-}
-.schedule .schedule__header-link-pdf span, .schedule .schedule__header-link-next span {
-  display: inline-flex;
-  padding-left: 0.5em;
+  display: flex;
 }
 .schedule .schedule__header-link-next {
   margin-bottom: 20px;
@@ -10737,11 +10707,6 @@ yx-axis
 @media (max-width: 768px) {
   .schedule__week {
     width: calc(100% - 65px);
-  }
-}
-@media (min-width: 992px) {
-  .schedule__week {
-    width: calc(100% - 60px);
   }
 }
 @media (max-width: 1400px) {
@@ -11150,12 +11115,6 @@ yx-axis
     padding-right: 35px;
   }
 }
-.schedule-promo--full {
-  max-width: 1080px;
-}
-.schedule-promo--full .text {
-  margin-bottom: 0;
-}
 
 .advantages-workout {
   margin-bottom: 30px;
@@ -11311,8 +11270,6 @@ yx-axis
     width: auto;
   }
   .advantages-workout__item--center .icon {
-    width: 30px;
-    height: 35px;
     margin-left: 0;
     margin-right: 10px;
   }
@@ -11406,29 +11363,8 @@ yx-axis
     gap: 0;
   }
 }
-.form-schedule .form-check {
-  display: flex;
-  align-items: center;
-}
-.form-schedule .form-check-input {
-  border-color: #fffeda;
-  width: 1.25em;
-  height: 1.25em;
-}
-@media (min-width: 768px) {
-  .form-schedule .form-check-input {
-    width: 1.5em;
-    height: 1.5em;
-  }
-}
-.form-schedule .form-check-input:checked {
-  border-color: #fffeda;
-}
-.form-schedule .form-check-input:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 254, 218, 0.25);
-}
 .form-schedule .form-control {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 130%;
   padding: 0.7rem 1.75rem 0.7rem 1.45rem;
 }
@@ -11443,19 +11379,6 @@ yx-axis
     font-size: 20px;
   }
 }
-.form-schedule .form-control::placeholder {
-  font-size: 18px;
-}
-@media (min-width: 576px) {
-  .form-schedule .form-control::placeholder {
-    font-size: 15px;
-  }
-}
-@media (min-width: 768px) {
-  .form-schedule .form-control::placeholder {
-    font-size: 20px;
-  }
-}
 .form-schedule .form-label {
   font-size: 15px;
   line-height: 140%;
@@ -11467,7 +11390,7 @@ yx-axis
 }
 @media (min-width: 576px) {
   .form-schedule .form-label, .form-schedule .form-clubs__btns {
-    width: calc(50% - 1.25rem);
+    width: calc(50% - 1rem);
   }
 }
 @media (min-width: 992px) {
@@ -11633,7 +11556,7 @@ yx-axis
 }
 @media (min-width: 1300px) {
   .lesson {
-    padding: 15px 10px;
+    padding: 10px;
   }
 }
 .lesson--pool {
@@ -11704,18 +11627,6 @@ yx-axis
   background-size: cover;
   background-image: url("../img/icons/sch-user.svg");
 }
-@media (min-width: 992px) {
-  .lesson__trainer::before {
-    width: 10px;
-    height: 10px;
-  }
-}
-@media (min-width: 1300px) {
-  .lesson__trainer::before {
-    width: 13px;
-    height: 13px;
-  }
-}
 .lesson__trainer span {
   width: calc(100% - 15px);
   padding-left: 5px;
@@ -11725,7 +11636,7 @@ yx-axis
     font-size: 13px;
   }
   .lesson__trainer span {
-    padding-left: 2px;
+    padding-left: 3px;
   }
 }
 @media (min-width: 1200px) {
@@ -11765,18 +11676,6 @@ yx-axis
   background-image: url("../img/icons/sch-spa.svg");
 }
 @media (min-width: 992px) {
-  .lesson__place::before {
-    width: 14px;
-    height: 14px;
-  }
-}
-@media (min-width: 1300px) {
-  .lesson__place::before {
-    width: 17px;
-    height: 15px;
-  }
-}
-@media (min-width: 992px) {
   .lesson__place {
     font-size: 13px;
   }
@@ -11797,10 +11696,10 @@ yx-axis
 }
 @media (min-width: 992px) {
   .lesson__place span {
-    padding-left: 2px;
+    padding-left: 3px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .lesson__place span {
     padding-left: 5px;
   }
@@ -11969,8 +11868,13 @@ yx-axis
   background-color: #e2f0fb;
 }
 
+:root {
+  --full-col-min: 100px;
+  --full-col-place: 123px;
+  --full-col-workout: 300px;
+}
+
 .full-schedule {
-  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -11983,30 +11887,16 @@ yx-axis
     margin-top: -30px;
   }
 }
-.full-schedule__icon-scroll {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  width: 32px;
-  height: 30px;
-}
-@media (min-width: 992px) {
-  .full-schedule__icon-scroll {
-    display: none;
-  }
-}
 @media (max-width: 990px) {
   .full-schedule__inner {
-    min-width: 990px;
+    min-width: 940px;
     width: 100%;
     overflow-x: auto;
   }
 }
-@media (max-width: 576px) {
-  .full-schedule__inner {
-    min-width: min-content;
-    max-width: 700px;
-  }
+.full-schedule__header {
+  display: flex;
+  gap: 10px;
 }
 .full-schedule__footer {
   display: flex;
@@ -12060,37 +11950,29 @@ yx-axis
 .full-schedule__paginate .link {
   color: #42474d;
 }
-
-.schedule-table {
-  width: 100%;
-  min-width: 630px;
-  text-align: left;
+.full-schedule__title {
   position: relative;
-  border-spacing: 0 11px;
-  border-collapse: inherit;
+  flex-grow: 1;
+  padding: 20px;
+  width: 16.6666666667%;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
 }
-.schedule-table__title {
-  position: relative;
-  padding: 10px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 140%;
+.full-schedule__title:first-child {
+  width: 160px;
+  min-width: 160px;
 }
-@media (min-width: 768px) {
-  .schedule-table__title {
-    padding: 10px 20px;
-    font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 130%;
-  }
+.full-schedule__title:nth-child(2) {
+  min-width: 208px;
 }
-.schedule-table__title--sort span {
+.full-schedule__title--sort span {
   position: relative;
   padding-right: 20px;
   cursor: pointer;
 }
-.schedule-table__title--sort span::before {
+.full-schedule__title--sort span::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -12102,87 +11984,56 @@ yx-axis
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.schedule-table__row:nth-child(2n) td {
-  background-color: #eaeced;
-}
-.schedule-table__column {
-  padding: 10px;
-  margin: 10px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 140%;
-  background: #dee8ed;
-}
-@media (min-width: 768px) {
-  .schedule-table__column {
-    padding: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-  }
-}
-.schedule-table__column:first-child {
-  border-radius: 12px 0 0 12px;
-}
-.schedule-table__column:last-child {
-  border-radius: 0 12px 12px 0;
-}
-.schedule-table__column--place {
-  width: 130px;
-  min-width: 130px;
-}
-.schedule-table__date {
+.full-schedule__body {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 50px;
-}
-@media (min-width: 768px) {
-  .schedule-table__date {
-    display: inline-flex;
-    max-width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .schedule-table__time {
-    display: flex;
-  }
-}
-@media (min-width: 576px) {
-  .schedule-table__column[data-type=workout] .schedule-table__inner {
-    width: 208px;
-    min-width: 208px;
-  }
-}
-@media (min-width: 576px) {
-  .schedule-table__column[data-type=trainer] .schedule-table__inner {
-    width: 150px;
-    min-width: 150px;
-  }
-}
-.schedule-table__inner {
-  display: flex;
+  flex-direction: column;
+  width: 100%;
   gap: 10px;
 }
-.schedule-table__inner:focus, .schedule-table__inner:hover {
-  cursor: pointer;
-}
-.schedule-table__inner .icon {
-  display: none;
-  width: 18px;
-  height: 17px;
-}
-@media (min-width: 992px) {
-  .schedule-table__inner .icon {
-    display: flex;
-  }
-}
-.schedule-table__inner .text {
+.full-schedule__item {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  background: #eaeced;
+  border-radius: 12px;
 }
-@media (min-width: 992px) {
-  .schedule-table__inner .text {
-    width: calc(100% - 18px - 10px);
-  }
+.full-schedule__item:nth-child(2n) {
+  background: #dee8ed;
+}
+.full-schedule [data-workout=Тренировка] {
+  width: var(--full-col-workout);
+}
+.full-schedule [data-place=Зал] {
+  width: var(--full-col-place);
+}
+
+.schedule-table {
+  text-align: left;
+  position: relative;
+  border-spacing: 0 11px;
+  border-collapse: inherit;
+}
+.schedule-table tr:nth-child(2n) td {
+  background-color: #eaeced;
+}
+.schedule-table th {
+  background: transparent;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+}
+.schedule-table td {
+  padding: 20px 10px;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  background: #dee8ed;
+}
+.schedule-table td:first-child {
+  border-radius: 12px 0 0 12px;
+}
+.schedule-table td:last-child {
+  border-radius: 0 12px 12px 0;
 }
 
 .paginate {
@@ -12196,7 +12047,7 @@ yx-axis
 @media (min-width: 576px) {
   .paginate {
     justify-content: flex-start;
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 }
 .paginate .list {
@@ -12300,106 +12151,24 @@ yx-axis
   transform: translateY(-50%) translateX(10%);
 }
 
-.popover {
-  position: relative;
+.full-lesson {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 320px;
-  background: #f6f7f8;
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-  height: auto;
-  max-height: 300px;
-}
-@media (min-width: 768px) {
-  .popover {
-    min-width: 380px;
-    max-height: 233px;
-  }
-}
-.popover .popover-body {
-  height: auto;
-  max-height: 300px;
-}
-@media (min-width: 768px) {
-  .popover .popover-body {
-    min-width: 380px;
-    max-height: 233px;
-  }
-}
-.popover .lesson__popover-close {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/icons/close.svg");
-  background-size: contain;
-  cursor: pointer;
-}
-.popover .title {
-  padding-right: 15px;
-  margin-bottom: 5px;
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 130%;
-}
-.popover .text {
-  padding-right: 15px;
-  margin-bottom: 5px;
-  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 130%;
-  height: 100%;
-  max-height: 170px;
-  overflow-y: auto;
-}
-@media (min-width: 768px) {
-  .popover .text {
-    max-height: 130px;
-  }
-}
-@media (min-width: 992px) {
-  .popover .text {
-    max-height: 110px;
-  }
-}
-@media (min-width: 1200px) {
-  .popover .text {
-    max-height: 100px;
-  }
-}
-.popover .text::-webkit-scrollbar {
-  width: 7px;
-}
-.popover .text::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
-}
-.popover .text::-webkit-scrollbar-thumb {
-  background: #c4c4c4;
-  border-radius: 41px;
-}
-.popover .lesson__link {
-  display: inline-flex;
-  margin-top: auto;
-  margin-bottom: 0;
-  height: 30px;
-}
-.popover .avatar {
-  display: flex;
-  gap: 10px;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 10px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
 }
-.popover .avatar__pic {
-  width: 55px;
-  height: 54px;
-  border-radius: 50%;
-  overflow: hidden;
-  object-fit: cover;
-  background-color: #e2f0fb;
+.full-lesson > * {
+  flex-grow: 1;
+  padding: 20px;
+  width: 16.6666666667%;
+}
+.full-lesson > *:first-child {
+  width: 160px;
+  min-width: 160px;
+}
+.full-lesson > *:nth-child(2) {
+  min-width: 208px;
 }
