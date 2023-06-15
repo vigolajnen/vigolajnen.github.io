@@ -11390,6 +11390,7 @@ yx-axis
   gap: 18px;
   font-size: 20px;
   line-height: 130%;
+  justify-content: space-around;
 }
 @media (min-width: 992px) {
   .form-schedule .form-clubs__wrapper {
@@ -11484,12 +11485,12 @@ yx-axis
 @media (min-width: 992px) {
   .form-schedule .form-clubs__btns {
     width: calc(31% - 1rem);
+    margin-right: 0;
   }
 }
 @media (min-width: 1400px) {
   .form-schedule .form-clubs__btns {
     width: 25%;
-    margin-right: 0;
   }
 }
 .form-schedule .form-select:focus, .form-schedule .form-select:hover {
