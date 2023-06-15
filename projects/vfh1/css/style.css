@@ -9646,22 +9646,31 @@ yx-axis
   background-image: url("../img/icons-service/group.svg");
 }
 .club-services__content--3::before {
+  width: 31px;
   background-image: url("../img/icons-service/cardio.svg");
 }
 .club-services__content--4::before {
+  width: 36px;
+  height: 36px;
   background-image: url("../img/icons-service/star.svg");
 }
 .club-services__content--5::before {
   background-image: url("../img/icons-service/Swim.svg");
 }
 .club-services__content--6::before {
+  width: 36px;
+  height: 36px;
   background-image: url("../img/icons-service/spa.svg");
 }
 .club-services__content--7::before {
+  width: 35px;
+  height: 35px;
   background-image: url("../img/icons-service/Kids.svg");
 }
 .club-services__content--8::before {
-  width: 24px;
+  left: 8px;
+  width: 25px;
+  height: 25px;
   background-image: url("../img/icons-service/ph_sun-fill.svg");
 }
 .club-services__title {
