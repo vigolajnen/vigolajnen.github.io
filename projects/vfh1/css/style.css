@@ -10468,12 +10468,12 @@ yx-axis
 }
 @media (min-width: 768px) {
   .page-schedule__form {
-    margin-bottom: 84px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 992px) {
   .page-schedule__form {
-    margin-bottom: 84px;
+    margin-bottom: 60px;
     background: #90959A;
     box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   }
@@ -11282,7 +11282,7 @@ yx-axis
   width: 30px;
   margin-right: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .advantages-workout__item--center {
     padding: 20px;
     justify-content: center;
@@ -12131,6 +12131,14 @@ yx-axis
 .schedule-table__column--place {
   width: 130px;
   min-width: 130px;
+}
+.schedule-table__column[data-bs-toggle=popover] {
+  text-decoration: underline;
+}
+@media (min-width: 992px) {
+  .schedule-table__column[data-bs-toggle=popover] {
+    text-decoration: none;
+  }
 }
 .schedule-table__date {
   display: flex;
