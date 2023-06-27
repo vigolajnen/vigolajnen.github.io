@@ -5392,6 +5392,10 @@ yx-axis
     height: 26px;
   }
 }
+.social__link--support .icon {
+  width: 30px;
+  height: 30px;
+}
 .social .icon {
   fill: #ffffff;
 }
