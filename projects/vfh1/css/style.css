@@ -5357,6 +5357,7 @@ yx-axis
   }
 }
 .social__link {
+  display: block;
   color: #ffffff;
 }
 .social__link:focus, .social__link:hover {
@@ -5392,9 +5393,20 @@ yx-axis
     height: 26px;
   }
 }
+.social__link--support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 7px;
+}
 .social__link--support .icon {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 .social .icon {
   fill: #ffffff;
