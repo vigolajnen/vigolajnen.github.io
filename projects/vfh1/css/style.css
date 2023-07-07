@@ -2498,8 +2498,9 @@ yx-axis
   height: 100%;
 }
 .slider .swiper-slide img {
+  width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .slider .swiper-pagination {
   bottom: 18px;
@@ -2583,7 +2584,6 @@ yx-axis
 .slider--sale .swiper-slide img {
   display: block;
   width: 100%;
-  object-fit: fill;
 }
 .slider--sale .swiper-button-next {
   right: 10px;
@@ -5407,6 +5407,7 @@ yx-axis
 .social__link--support .icon {
   width: 25px;
   height: 25px;
+  margin-left: 2px;
 }
 .social .icon {
   fill: #ffffff;
@@ -8978,6 +8979,36 @@ yx-axis
   overflow: hidden;
 }
 
+:root {
+  --form-book-w: 100%;
+  --slider-club-w: 100%;
+  --slider-club-h: 365px;
+}
+@media (min-width: 375px) {
+  :root {
+    --slider-club-h: 427px;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --slider-club-h: 539px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --form-book-w: 25%;
+    --slider-club-w: 75%;
+    --slider-club-h: 501px;
+  }
+}
+@media (min-width: 1400px) {
+  :root {
+    --form-book-w: 30%;
+    --slider-club-w: 70%;
+    --slider-club-h: 575px;
+  }
+}
+
 .page-club {
   max-width: 1440px;
   width: 100%;
@@ -9171,60 +9202,31 @@ yx-axis
   .page-club__promo-inner {
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 22px;
+    overflow: hidden;
   }
 }
 .page-club .slider {
-  width: 100%;
+  width: var(--slider-club-w);
+  height: 100%;
+  max-height: var(--slider-club-h);
 }
 @media (max-width: 767px) {
   .page-club .slider {
     border-radius: 0;
   }
 }
-@media (min-width: 800px) {
-  .page-club .slider {
-    min-height: 435px;
-  }
-}
 @media (min-width: 1200px) {
   .page-club .slider {
-    width: 65%;
-    height: 100%;
-    max-height: 611px;
     border-radius: 22px;
+    overflow: hidden;
   }
 }
-@media (min-width: 1200px) {
-  .page-club .slider {
-    width: 70%;
-  }
-}
-.page-club .slider img, .page-club .slider picture {
+.page-club .swiper-container {
   height: 100%;
-  max-height: 611px;
-}
-@media (min-width: 1200px) {
-  .page-club .slider img, .page-club .slider picture {
-    min-height: 611px;
-  }
-}
-@media (max-width: 767px) {
-  .page-club .swiper-wrapper {
-    max-height: 400px;
-  }
 }
 .page-club .form-book {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .page-club .form-book {
-    width: 35%;
-  }
-}
-@media (min-width: 1200px) {
-  .page-club .form-book {
-    width: 30%;
-  }
+  width: var(--form-book-w);
 }
 .page-club__record {
   margin-bottom: 35px;
@@ -9332,10 +9334,14 @@ yx-axis
     padding-top: 20px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-book {
-    padding: 35px;
-    padding-right: 50px;
+    padding: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .form-book {
+    padding: 25px;
   }
 }
 .form-book .title {
@@ -9418,9 +9424,29 @@ yx-axis
   line-height: 130%;
   color: rgba(66, 71, 77, 0.5);
 }
+@media (min-width: 992px) {
+  .form-book .form-select, .form-book .form-control {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .form-book .form-select, .form-book .form-control {
+    padding: 1.175rem 2rem 1.175rem 1.45rem;
+  }
+}
 .form-book .form-control::placeholder {
   font-size: 20px;
   padding: 1.175rem 0 1.175rem 0;
+}
+@media (min-width: 992px) {
+  .form-book .form-control::placeholder {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+}
+@media (min-width: 1400px) {
+  .form-book .form-control::placeholder {
+    padding: 1.175rem 0 1.175rem 0;
+  }
 }
 .form-book .form-check-input:checked {
   background-color: #888888;
@@ -10087,7 +10113,7 @@ yx-axis
   --base-mb: 30px;
   --form-px: 15px;
   --form-gap: 20px;
-  --slider-h: 328px;
+  --slider-h: 365px;
 }
 @media (min-width: 576px) {
   :root {
@@ -10099,12 +10125,13 @@ yx-axis
   :root {
     --base-mb: 54px;
     --form-gap: 60px;
-    --slider-h: 500px;
+    --slider-h: 403px;
   }
 }
 @media (min-width: 1200px) {
   :root {
     --form-px: 137px;
+    --slider-h: 575px;
   }
 }
 
@@ -10115,12 +10142,17 @@ yx-axis
 }
 .page-presale__slider {
   width: 100%;
-  overflow: hidden;
   margin-bottom: var(--base-mb);
   max-height: 500px;
+  min-height: 283px;
+  border-radius: 22px;
+  overflow: hidden;
 }
 .page-presale__slider .swiper-slide {
   max-height: 100%;
+  min-height: 283px;
+  border-radius: 22px;
+  overflow: hidden;
 }
 .page-presale__timer {
   width: 100%;
