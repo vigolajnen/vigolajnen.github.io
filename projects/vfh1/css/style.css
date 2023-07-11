@@ -9113,10 +9113,6 @@ yx-axis
   transform: translateX(6px);
   transition: 0.3s;
 }
-.page-club__promo {
-  border-radius: 22px;
-  overflow: hidden;
-}
 .page-club__record {
   margin-bottom: 35px;
 }
@@ -9321,7 +9317,7 @@ yx-axis
 }
 .form-book .form-select, .form-book .form-control {
   margin-bottom: 0;
-  padding: 1.175rem 2rem 1.175rem 1.45rem;
+  padding: 1rem 2rem 1rem 1.45rem;
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
   font-style: normal;
   font-weight: 400;
