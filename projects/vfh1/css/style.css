@@ -2380,6 +2380,7 @@ yx-axis
   width: 100%;
   text-decoration: none;
   color: #42474d;
+  padding: 2rem;
 }
 .box:focus, .box:hover {
   color: #42474d;
@@ -2389,18 +2390,11 @@ yx-axis
   .box {
     margin-top: 0;
     width: 50%;
-    padding: var(--box-pd);
-  }
-}
-@media (min-width: 1200px) {
-  .box {
-    min-width: 295px;
+    padding: 2rem;
   }
 }
 .box--job {
   align-items: flex-end;
-  padding: 26px 33px 29px 33px;
-  padding-top: 39px;
 }
 @media (min-width: 768px) and (max-width: 800px) {
   .box--job {
@@ -2412,7 +2406,7 @@ yx-axis
   margin-top: auto;
   margin-bottom: auto;
   margin: auto auto 0;
-  padding-top: calc(52px + var(--box-pd-base));
+  padding-top: calc(25% + 0.5rem);
 }
 .box--job .box__title::before {
   content: "";
@@ -2420,14 +2414,16 @@ yx-axis
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 94px;
-  height: 52px;
+  width: 27%;
+  height: 35%;
+  min-width: 94px;
   background-image: url("../img/icons/job.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 .box--schedule {
   align-items: flex-end;
-  padding: 26px 33px 29px 33px;
-  padding-top: 39px;
   height: 100%;
 }
 @media (min-width: 768px) and (max-width: 800px) {
@@ -2440,7 +2436,7 @@ yx-axis
   margin-top: auto;
   margin-bottom: auto;
   margin: auto auto 0;
-  padding-top: calc(52px + var(--box-pd-base));
+  padding-top: calc(25% + 0.5rem);
 }
 .box--schedule .box__title::before {
   content: "";
@@ -2448,9 +2444,13 @@ yx-axis
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 58px;
-  height: 59px;
+  width: 30%;
+  height: 43%;
+  min-width: 50px;
   background-image: url("../img/icons/schedule-2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 .box--schedule .box__title span {
   display: block;
@@ -2464,7 +2464,7 @@ yx-axis
   width: 100%;
   max-width: 220px;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 1rem;
 }
 .box__title span {
   display: block;
@@ -2505,26 +2505,33 @@ yx-axis
 }
 
 .slider {
-  min-height: 295px;
+  width: 100%;
+  height: 100%;
   border-radius: 16px;
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   overflow: hidden;
 }
 .slider .swiper {
   width: 100%;
+  height: 100%;
 }
 .slider .swiper-container {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 .slider .swiper-slide {
+  height: inherit;
   background-size: cover;
-  background-position: 50%;
-  min-height: 295px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
 }
 .slider .swiper-slide picture {
@@ -3960,7 +3967,6 @@ yx-axis
 }
 @media (min-width: 1440px) {
   .main__grid {
-    align-items: flex-start;
     -ms-grid-columns: 1fr 20px 1fr 20px 660px;
     -ms-grid-rows: 1fr 100px 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 307.5px 307.5px minmax(auto, 660px);
@@ -4105,7 +4111,6 @@ yx-axis
 .main__job .job {
   height: 100%;
   width: 100%;
-  min-height: 295px;
 }
 .main__schedule {
   grid-area: h;
@@ -4145,7 +4150,6 @@ yx-axis
 .main__schedule .schedule {
   height: 100%;
   width: 100%;
-  min-height: 295px;
 }
 .main__slider {
   grid-area: l;
@@ -4154,10 +4158,21 @@ yx-axis
   flex-direction: column;
   overflow: hidden;
   order: 2;
+  height: 100%;
+  max-height: 500px;
+  border-radius: 16px;
+  padding: 0 16px;
 }
 @media (min-width: 768px) {
   .main__slider {
     order: 0;
+    padding: 0;
+    min-height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .main__slider {
+    min-height: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -4165,16 +4180,6 @@ yx-axis
     -ms-grid-column: 5;
     -ms-grid-row: 5;
     max-width: 100%;
-  }
-}
-.main__slider .slider {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-@media (max-width: 576px) {
-  .main__slider .slider {
-    border-radius: 0;
   }
 }
 .main__record {
@@ -4671,62 +4676,12 @@ yx-axis
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
-  font-size: 27px;
   color: rgba(73, 76, 79, 0.5);
 }
-@media (min-width: 375px) {
+@media (max-width: 576px) {
   .advantages h1 {
-    font-size: calc(18vw - 40.5px);
-  }
-}
-@media (min-width: 425px) {
-  .advantages h1 {
-    font-size: calc(-0.6677796327vw + 38.8380634391px);
-  }
-}
-@media (min-width: 1024px) {
-  .advantages h1 {
-    font-size: calc(7.4285714286vw - 44.0685714286px);
-  }
-}
-@media (min-width: 1199px) {
-  .advantages h1 {
-    font-size: calc(-500vw + 6040px);
-  }
-}
-@media (min-width: 1200px) {
-  .advantages h1 {
-    font-size: calc(0vw + 40px);
-  }
-}
-@media (min-width: 1245px) {
-  .advantages h1 {
-    font-size: calc(0vw + 40px);
-  }
-}
-@media (min-width: 1250px) {
-  .advantages h1 {
-    font-size: calc(24vw - 260px);
-  }
-}
-@media (min-width: 1275px) {
-  .advantages h1 {
-    font-size: calc(0vw + 46px);
-  }
-}
-@media (min-width: 1290px) {
-  .advantages h1 {
-    font-size: calc(9.3333333333vw - 74.4px);
-  }
-}
-@media (min-width: 1440px) {
-  .advantages h1 {
-    font-size: 60px;
-  }
-}
-@media (min-width: 768px) {
-  .advantages h1 {
-    margin-bottom: 0;
+    display: block;
+    font-size: 36px;
   }
 }
 @media (max-width: 1023px) {
@@ -4734,20 +4689,53 @@ yx-axis
     display: none;
   }
 }
-@media (max-width: 576px) {
-  .advantages h1 {
-    display: block;
-  }
-}
 @media (min-width: 768px) {
   .advantages h1 {
     margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
     text-align: left;
+  }
+}
+@media (min-width: 1023px) {
+  .advantages h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1100px) {
+  .advantages h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1150px) {
+  .advantages h1 {
+    font-size: 46px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1250px) {
+  .advantages h1 {
+    font-size: 40px;
   }
 }
 @media (min-width: 1300px) {
   .advantages h1 {
     display: block;
+    font-size: 46px;
+  }
+}
+@media (min-width: 1400px) {
+  .advantages h1 {
+    font-size: 53px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages h1 {
+    font-size: 60px;
   }
 }
 .advantages__title {
@@ -5699,6 +5687,7 @@ yx-axis
 @media (min-width: 768px) {
   .form-offers .form__label-name {
     margin-bottom: 6px;
+    font-size: 13px;
   }
 }
 .form-offers .form-control {
@@ -9205,38 +9194,37 @@ yx-axis
 }
 
 .form-book {
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem;
 }
 @media (min-width: 576px) {
   .form-book {
     padding: 35px;
-    padding-top: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .form-book {
-    padding: 35px;
-    padding-top: 20px;
   }
 }
 @media (min-width: 992px) {
   .form-book {
-    padding: 16px;
+    padding: 25px 30px 25px 20px;
   }
 }
 @media (min-width: 1400px) {
   .form-book {
     padding: 25px;
+    padding-right: 30px;
   }
 }
 .form-book .title {
-  margin-bottom: 1rem;
-  font-size: 20px;
+  padding-bottom: 1rem;
+  font-size: 18px;
   line-height: 130%;
+}
+@media (min-width: 480px) {
+  .form-book .title {
+    font-size: 22px;
+  }
 }
 @media (min-width: 576px) {
   .form-book .title {
-    margin-bottom: 36px;
+    padding-bottom: 36px;
   }
 }
 @media (min-width: 768px) {
@@ -9248,18 +9236,18 @@ yx-axis
   .form-book .title {
     font-size: 18px;
     line-height: 100%;
-    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
   }
 }
 @media (min-width: 1200px) {
   .form-book .title {
-    margin-bottom: 1rem;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 100%;
   }
 }
 @media (min-width: 1400px) {
   .form-book .title {
+    padding-bottom: 1.5rem;
     line-height: 130%;
     font-size: 24px;
   }
@@ -9276,6 +9264,7 @@ yx-axis
 }
 @media (min-width: 992px) {
   .form-book__wrapper {
+    gap: 0;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -9440,14 +9429,24 @@ yx-axis
     padding-top: 1rem;
   }
 }
-.form-book__btns .custom-form-check {
-  margin-top: 1.3rem;
+.form-book__mess {
+  margin-top: 0.5rem;
+  line-height: 100%;
+  font-size: 16px;
+  color: #888888;
+}
+@media (min-width: 576px) {
+  .form-book__mess {
+    font-size: 14px;
+  }
 }
 @media (min-width: 992px) {
-  .form-book__btns .custom-form-check {
-    margin-top: 0.5rem;
-    font-size: 12px;
+  .form-book__mess {
+    font-size: 14px;
   }
+}
+.form-book__mess a {
+  color: #888888;
 }
 
 .club-services {
