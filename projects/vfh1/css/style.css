@@ -2511,6 +2511,16 @@ yx-axis
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   overflow: hidden;
 }
+@media (min-width: 768px) {
+  .slider {
+    max-height: 403px;
+  }
+}
+@media (min-width: 1200px) {
+  .slider {
+    max-height: 500px;
+  }
+}
 .slider .swiper {
   width: 100%;
   height: 100%;
