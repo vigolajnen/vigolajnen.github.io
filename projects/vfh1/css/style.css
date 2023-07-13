@@ -2518,7 +2518,7 @@ yx-axis
 }
 @media (min-width: 1200px) {
   .slider {
-    max-height: 500px;
+    max-height: 575px;
   }
 }
 .slider .swiper {
