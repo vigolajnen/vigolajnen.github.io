@@ -10110,6 +10110,11 @@ yx-axis
 .slider-and-form--prestige .form-book {
   background-color: rgba(227, 194, 252, 0.8862745098);
 }
+@media (min-width: 992px) {
+  .slider-and-form--prestige .form-book {
+    background-color: transparent;
+  }
+}
 
 @media (min-width: 992px) {
   .slider-and-form--premier {
@@ -10118,6 +10123,11 @@ yx-axis
 }
 .slider-and-form--premier .form-book {
   background-color: rgba(252, 215, 172, 0.7921568627);
+}
+@media (min-width: 992px) {
+  .slider-and-form--premier .form-book {
+    background-color: transparent;
+  }
 }
 
 :root {
