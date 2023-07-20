@@ -6895,6 +6895,7 @@ yx-axis
 .hero__clubs-info {
   display: flex;
   margin-bottom: 25px;
+  width: 100%;
 }
 @media (min-width: 576px) {
   .hero__clubs-info {
@@ -6907,13 +6908,19 @@ yx-axis
   .hero__clubs-info {
     margin-bottom: 0;
     padding-right: 0;
+    width: 50%;
   }
 }
-.hero__clubs-info, .hero__pic {
+@media (min-width: 1400px) {
+  .hero__clubs-info {
+    width: 40%;
+  }
+}
+.hero__pic {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .hero__clubs-info, .hero__pic {
+  .hero__pic {
     width: 50%;
   }
 }
@@ -6926,7 +6933,7 @@ yx-axis
     padding: 0 0 0 3rem;
   }
 }
-.hero__pic img {
+.hero__pic > img {
   width: 324px;
   width: 100%;
   min-height: 217px;
@@ -6936,13 +6943,13 @@ yx-axis
   border-radius: 16px;
 }
 @media (min-width: 768px) {
-  .hero__pic img {
+  .hero__pic > img {
     width: 100%;
     max-height: 269px;
   }
 }
 @media (min-width: 992px) {
-  .hero__pic img {
+  .hero__pic > img {
     width: 100%;
     margin-left: auto;
     max-height: 430px;
@@ -6950,7 +6957,7 @@ yx-axis
   }
 }
 @media (max-width: 992px) {
-  .hero__pic img {
+  .hero__pic > img {
     width: 100%;
   }
 }
@@ -7007,7 +7014,23 @@ yx-axis
     display: inline-block;
   }
 }
-
+.hero__poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .hero__poster {
+    width: 50%;
+  }
+}
+@media (min-width: 1400px) {
+  .hero__poster {
+    width: 60%;
+  }
+}
 .clubs-info {
   position: relative;
   list-style: none;
@@ -7067,8 +7090,7 @@ yx-axis
 }
 @media (min-width: 1400px) {
   .clubs-info__item {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-left: 30px;
   }
 }
 .clubs-info__item:not(:last-child) {
@@ -8271,8 +8293,6 @@ yx-axis
 @media (min-width: 600px) {
   .card-club {
     min-width: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 @media (min-width: 670px) {
@@ -8289,6 +8309,7 @@ yx-axis
 .card-club__header {
   display: flex;
   flex-direction: column;
+  margin-bottom: auto;
 }
 @media (min-width: 576px) {
   .card-club__header {
