@@ -6938,7 +6938,7 @@ yx-axis
 @media (min-width: 768px) {
   .hero__pic img {
     width: 100%;
-    min-height: 269px;
+    max-height: 269px;
   }
 }
 @media (min-width: 992px) {
@@ -8234,7 +8234,7 @@ yx-axis
 }
 @media (min-width: 1200px) {
   .mCustomScrollbar .list-card--three {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
   }
 }
 .mCustomScrollbar .list-card--three .list-card__item {
