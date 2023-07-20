@@ -5945,6 +5945,7 @@ yx-axis
 }
 
 .page-sale {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7804,6 +7805,9 @@ yx-axis
   stroke: #fffeda;
 }
 
+.page-clubs {
+  position: relative;
+}
 .page-clubs--region .hero {
   margin-bottom: 35px;
 }
@@ -8950,6 +8954,7 @@ yx-axis
 }
 
 .page-club {
+  position: relative;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -10501,6 +10506,7 @@ yx-axis
 }
 
 .page-schedule {
+  position: relative;
   margin-bottom: 54px;
 }
 @media (min-width: 768px) {
