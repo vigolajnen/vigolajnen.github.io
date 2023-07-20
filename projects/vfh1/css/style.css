@@ -2598,32 +2598,36 @@ yx-axis
     height: 400px;
   }
 }
+@media (min-width: 768px) {
+  .slider--content {
+    height: 435px;
+  }
+}
 @media (min-width: 992px) {
   .slider--content {
     height: 500px;
   }
 }
-.slider--content img {
-  min-height: 360px;
-}
-@media (min-width: 576px) {
-  .slider--content img {
-    min-height: 400px;
-  }
-}
-@media (min-width: 992px) {
-  .slider--content img {
-    min-height: 500px;
-  }
-}
 .slider--content .swiper-container {
   height: 100%;
 }
-.slider--content .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  border-radius: 16px;
-  overflow: hidden;
+@media (min-width: 576px) {
+  .slider--content .swiper-slide {
+    height: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .slider--content .swiper-slide {
+    height: 435px;
+  }
+}
+@media (min-width: 992px) {
+  .slider--content .swiper-slide {
+    height: 500px;
+  }
+}
+.slider--content .swiper-slide img, .slider--content .swiper-slide picture {
+  height: 100%;
 }
 .slider--slide-br .swiper-slide {
   background-position: center;
