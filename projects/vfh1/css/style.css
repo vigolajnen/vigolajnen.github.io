@@ -2380,7 +2380,7 @@ yx-axis
   width: 100%;
   text-decoration: none;
   color: #42474d;
-  padding: 2rem;
+  padding: 10% 2rem;
 }
 .box:focus, .box:hover {
   color: #42474d;
@@ -2390,8 +2390,51 @@ yx-axis
   .box {
     margin-top: 0;
     width: 50%;
-    padding: 2rem;
+    padding: 25% 2rem;
   }
+}
+@media (min-width: 1200px) {
+  .box {
+    padding-bottom: 2rem;
+  }
+}
+.box__title {
+  position: relative;
+  margin: auto;
+  padding-top: calc(25% + 0.5rem);
+  padding-bottom: 5%;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  width: 100%;
+  max-width: 220px;
+}
+@media (min-width: 1200px) {
+  .box__title {
+    padding-bottom: 15%;
+    padding-top: calc(30% + 0.5rem);
+  }
+}
+@media (min-width: 1400px) {
+  .box__title {
+    font-size: 22px;
+    padding-top: calc(40% + 0.5rem);
+  }
+}
+.box__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.box__title span {
+  display: block;
+  text-transform: uppercase;
 }
 .box--job {
   align-items: flex-end;
@@ -2401,26 +2444,17 @@ yx-axis
     width: 47vw !important;
   }
 }
-.box--job .box__title {
-  position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin: auto auto 0;
-  padding-top: calc(25% + 0.5rem);
-}
 .box--job .box__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 27%;
   height: 35%;
   min-width: 94px;
   background-image: url("../img/icons/job.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+}
+@media (min-width: 1400px) {
+  .box--job .box__title::before {
+    min-width: 120px;
+    height: 38%;
+  }
 }
 .box--schedule {
   align-items: flex-end;
@@ -2431,48 +2465,24 @@ yx-axis
     width: 47vw !important;
   }
 }
-.box--schedule .box__title {
-  position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin: auto auto 0;
-  padding-top: calc(25% + 0.5rem);
-}
 .box--schedule .box__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 30%;
   height: 43%;
   min-width: 50px;
   background-image: url("../img/icons/schedule-2.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+}
+@media (min-width: 1400px) {
+  .box--schedule .box__title::before {
+    min-width: 70px;
+    height: 47%;
+  }
 }
 .box--schedule .box__title span {
   display: block;
   text-transform: lowercase;
 }
-.box__title {
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 130%;
-  width: 100%;
-  max-width: 220px;
-  margin: 0;
-  padding-bottom: 1rem;
-}
-.box__title span {
-  display: block;
-  text-transform: uppercase;
-}
 .box__link {
-  margin-left: auto;
-  margin-right: 0;
+  margin: auto 0 0 auto;
 }
 .box__link span {
   margin: 0;
@@ -2562,6 +2572,14 @@ yx-axis
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.slider .swiper-button-next:after, .slider .swiper-button-prev:after {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .slider .swiper-button-next:after, .slider .swiper-button-prev:after {
+    font-size: 2.45rem;
+  }
 }
 .slider .swiper-pagination {
   bottom: 18px;
@@ -2665,6 +2683,11 @@ yx-axis
   color: #ffffff;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-size: 20px;
+}
+
+.slider-main .swiper-wrapper {
+  height: auto !important;
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
 }
 
 .list {
@@ -3337,7 +3360,7 @@ yx-axis
   margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 130%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -3447,7 +3470,7 @@ yx-axis
 }
 
 .page-header {
-  z-index: 999999;
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
@@ -4176,7 +4199,7 @@ yx-axis
 @media (min-width: 992px) {
   .main__slider {
     min-height: auto;
-    max-height: 250px;
+    max-height: 350px;
   }
 }
 @media (min-width: 1200px) {
@@ -6908,7 +6931,7 @@ yx-axis
   .hero__clubs-info {
     margin-bottom: 0;
     padding-right: 0;
-    width: 50%;
+    width: 40%;
   }
 }
 @media (min-width: 1400px) {
@@ -6916,43 +6939,37 @@ yx-axis
     width: 40%;
   }
 }
-.hero__pic {
+.hero__link, .hero__pic {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .hero__pic {
-    width: 50%;
+  .hero__link, .hero__pic {
+    width: 60%;
   }
 }
 .hero__pic {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 @media (min-width: 992px) {
   .hero__pic {
     padding: 0 0 0 3rem;
   }
 }
+.hero__pic picture {
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+}
 .hero__pic > img {
-  width: 324px;
-  width: 100%;
-  min-height: 217px;
   max-width: 100%;
-  height: 100%;
+  height: auto;
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
 }
-@media (min-width: 768px) {
-  .hero__pic > img {
-    width: 100%;
-    max-height: 269px;
-  }
-}
 @media (min-width: 992px) {
   .hero__pic > img {
-    width: 100%;
-    margin-left: auto;
-    max-height: 430px;
     box-shadow: none;
   }
 }
@@ -6963,6 +6980,21 @@ yx-axis
 }
 .hero__pic picture {
   width: 100%;
+}
+.hero__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .hero__link {
+    padding: 0 0 0 3rem;
+  }
+}
+.hero__link picture, .hero__link img {
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
 }
 .hero__title {
   margin: 0;
@@ -7014,23 +7046,7 @@ yx-axis
     display: inline-block;
   }
 }
-.hero__poster {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-@media (min-width: 992px) {
-  .hero__poster {
-    width: 50%;
-  }
-}
-@media (min-width: 1400px) {
-  .hero__poster {
-    width: 60%;
-  }
-}
+
 .clubs-info {
   position: relative;
   list-style: none;
@@ -7082,28 +7098,30 @@ yx-axis
     padding-left: 50px;
   }
 }
-@media (min-width: 1200px) {
-  .clubs-info__item {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-@media (min-width: 1400px) {
-  .clubs-info__item {
-    padding-left: 30px;
-  }
-}
-.clubs-info__item:not(:last-child) {
-  border-bottom: 1px solid;
-}
 @media (min-width: 992px) {
   .clubs-info__item {
-    padding-left: 70px;
+    padding: 10px;
+    padding-left: 30px;
   }
   .clubs-info__item::before {
     top: 24px;
     left: 40px;
   }
+}
+@media (min-width: 1200px) {
+  .clubs-info__item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  .clubs-info__item {
+    padding-left: 50px;
+  }
+}
+.clubs-info__item:not(:last-child) {
+  border-bottom: 1px solid;
 }
 .clubs-info__club {
   position: relative;
@@ -7117,10 +7135,10 @@ yx-axis
 }
 @media (min-width: 375px) {
   .clubs-info__club {
-    font-size: calc(1.272264631vw + 10.2290076336px);
+    font-size: calc(0.6060606061vw + 12.7272727273px);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .clubs-info__club {
     font-size: 20px;
   }
@@ -7149,10 +7167,10 @@ yx-axis
 }
 @media (min-width: 375px) {
   .clubs-info__text {
-    font-size: calc(1.0178117048vw + 12.1832061069px);
+    font-size: calc(0.4848484848vw + 14.1818181818px);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .clubs-info__text {
     font-size: 20px;
   }
@@ -7161,7 +7179,6 @@ yx-axis
   .clubs-info__text {
     font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
     font-weight: 700;
-    font-size: 20px;
   }
 }
 
@@ -7609,14 +7626,14 @@ yx-axis
   margin-bottom: 1.6rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 120%;
   color: #ffffff;
   max-width: 850px;
 }
 @media (min-width: 576px) {
   .subscription__title {
-    font-size: 19px;
+    font-size: 24px;
   }
 }
 @media (min-width: 992px) {
@@ -7708,15 +7725,13 @@ yx-axis
 @media (min-width: 992px) {
   .form-subscription__btns {
     width: auto;
-    padding-top: 2.5rem;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    padding-top: 8px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .form-subscription__btns {
-    padding-top: 2.2rem;
+    padding-top: 5px;
   }
 }
 .form-subscription .button {
@@ -7729,6 +7744,12 @@ yx-axis
     width: auto;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .form-subscription .button {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
   }
 }
 .form-subscription .custom-form-check label {
