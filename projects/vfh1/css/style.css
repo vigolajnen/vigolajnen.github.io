@@ -2690,6 +2690,10 @@ yx-axis
   font-size: 20px;
 }
 
+.slider--presale .swiper-wrapper {
+  height: 100% !important;
+}
+
 .list {
   list-style: none;
   margin: 0;
