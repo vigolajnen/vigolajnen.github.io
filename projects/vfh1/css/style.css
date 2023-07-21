@@ -2412,7 +2412,7 @@ yx-axis
 }
 @media (min-width: 1200px) {
   .box__title {
-    padding-bottom: 15%;
+    padding-bottom: 2%;
     padding-top: calc(30% + 0.5rem);
   }
 }
@@ -2544,7 +2544,6 @@ yx-axis
 }
 .slider .swiper-wrapper {
   height: auto;
-  height: 100% !important;
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
 }
 .slider .swiper-slide {
@@ -2629,6 +2628,9 @@ yx-axis
 .slider--content .swiper-container {
   height: 100%;
 }
+.slider--content .swiper-wrapper {
+  height: 100% !important;
+}
 @media (min-width: 576px) {
   .slider--content .swiper-slide {
     height: 400px;
@@ -2652,6 +2654,9 @@ yx-axis
   background-size: cover;
   border-radius: 16px;
   overflow: hidden;
+}
+.slider--sale .swiper-wrapper {
+  height: 100% !important;
 }
 .slider--sale .swiper-button-next {
   right: 10px;
@@ -2683,11 +2688,6 @@ yx-axis
   color: #ffffff;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-size: 20px;
-}
-
-.slider-main .swiper-wrapper {
-  height: auto !important;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
 }
 
 .list {
@@ -4186,6 +4186,7 @@ yx-axis
   order: 2;
   height: 100%;
   max-height: 700px;
+  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
   overflow: hidden;
   padding: 0 16px;
@@ -6961,10 +6962,11 @@ yx-axis
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
   overflow: hidden;
+  height: 100%;
 }
 .hero__pic > img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
   border-radius: 16px;
 }
@@ -10139,6 +10141,9 @@ yx-axis
 }
 .slider-and-form .slider .swiper-container {
   height: 100%;
+}
+.slider-and-form .slider .swiper-wrapper {
+  height: 100% !important;
 }
 .slider-and-form .slider .swiper-slide {
   min-height: 100%;
