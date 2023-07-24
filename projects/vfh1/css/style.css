@@ -2556,7 +2556,6 @@ yx-axis
 }
 .slider .swiper-slide {
   height: 100%;
-  background-color: #e2f0fb;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -4234,6 +4233,46 @@ yx-axis
 .main__slider .slider img {
   border-radius: 16px;
   overflow: hidden;
+}
+@media (max-width: 420px) {
+  .main__slider .slider img {
+    min-height: 253px;
+  }
+}
+@media (max-width: 376px) {
+  .main__slider .slider img {
+    min-height: 390px;
+  }
+}
+@media (max-width: 340px) {
+  .main__slider .slider img {
+    min-height: 327px;
+  }
+}
+@media (min-width: 520px) {
+  .main__slider .slider img {
+    min-height: 286px;
+  }
+}
+@media (min-width: 768px) {
+  .main__slider .slider img {
+    min-height: 403px;
+  }
+}
+@media (min-width: 1024px) {
+  .main__slider .slider img {
+    min-height: 211px;
+  }
+}
+@media (min-width: 1300px) {
+  .main__slider .slider img {
+    min-height: 269px;
+  }
+}
+@media (min-width: 1400px) {
+  .main__slider .slider img {
+    min-height: 346px;
+  }
 }
 .main__record {
   grid-area: d;
@@ -5989,7 +6028,7 @@ yx-axis
   display: block;
 }
 
-.page-sale {
+.page-sale .container {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -7206,6 +7245,10 @@ yx-axis
   }
 }
 
+.clubs-search {
+  border-radius: 30px;
+  overflow: hidden;
+}
 .clubs-search.container {
   position: relative;
   max-width: 1440px;
@@ -7373,16 +7416,17 @@ yx-axis
   margin-bottom: 0.5rem;
   color: #ffffff;
   width: 100%;
+  flex-grow: 1;
 }
 @media (min-width: 576px) {
   .form-clubs .form-label {
-    width: calc(50% - 1rem);
+    width: calc(50% - 1.5rem);
     margin-right: 0.5rem;
   }
 }
 @media (min-width: 992px) {
   .form-clubs .form-label {
-    width: calc(23% - 1rem);
+    width: calc(25% - 1.5rem);
     margin-right: 1rem;
   }
 }
@@ -7422,19 +7466,21 @@ yx-axis
 }
 @media (min-width: 576px) {
   .form-clubs__btns {
-    width: auto;
     margin-top: 0;
+    width: calc(50% - 0.5rem);
   }
 }
 @media (min-width: 992px) {
   .form-clubs__btns {
+    width: auto;
     margin-left: auto;
   }
 }
 .form-clubs .button {
   width: 100%;
   margin-bottom: 1rem;
-  padding: 10px 20px;
+  padding: 10px;
+  flex-grow: 1;
 }
 .form-clubs .button:not(:last-child) {
   margin-right: 0.5rem;
@@ -7446,20 +7492,24 @@ yx-axis
 }
 @media (min-width: 375px) {
   .form-clubs .button {
-    width: calc(50% - 0.25rem);
+    width: calc(50% - 1.25rem);
     margin-bottom: 0;
   }
 }
 @media (min-width: 576px) {
   .form-clubs .button {
-    width: auto;
     margin-bottom: 0.4rem;
-    padding: 10px 20px;
   }
 }
 @media (min-width: 768px) {
   .form-clubs .button {
-    padding: 16px 20px;
+    width: auto;
+    padding: 16px 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .form-clubs .button {
+    padding: 16px 13px;
   }
 }
 
@@ -9401,7 +9451,7 @@ yx-axis
 }
 @media (min-width: 1200px) {
   .form-book .form-select, .form-book .form-control {
-    padding: 0.75rem 2rem 0.75rem 1.45rem;
+    padding: 0.5rem 2rem 0.5rem 1.45rem;
     font-size: 18px;
   }
 }
@@ -9576,12 +9626,7 @@ yx-axis
 }
 @media (min-width: 1024px) {
   .club-services {
-    padding: 30px 50px 10px;
-  }
-}
-@media (min-width: 1100px) {
-  .club-services {
-    padding-left: 100px;
+    padding: 30px 5px 10px;
   }
 }
 @media (min-width: 1200px) {
