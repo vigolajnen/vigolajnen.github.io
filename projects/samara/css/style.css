@@ -1065,12 +1065,8 @@ button[type=submit]:disabled {
 .page-footer__link {
   display: block;
   margin-bottom: 20px;
-}
-@media (min-width: 576px) {
-  .page-footer__link {
-    font-size: 14px;
-    line-height: 140%;
-  }
+  font-size: 14px;
+  line-height: 140%;
 }
 @media (min-width: 992px) {
   .page-footer__link {
