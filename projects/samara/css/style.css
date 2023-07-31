@@ -2843,19 +2843,19 @@ button[type=submit]:disabled {
 .product:hover .button span {
   background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%);
 }
-.product[data-price="1900"] {
+.product[data-price="1.900"] {
   background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%), linear-gradient(0deg, #18181b, #18181b);
 }
-.product:not([data-price="1900"]) .button {
+.product:not([data-price="1.900"]) .button {
   background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%);
 }
-.product:not([data-price="1900"]) .button::before {
+.product:not([data-price="1.900"]) .button::before {
   background: #18181b;
 }
-.product:not([data-price="1900"]) .button:focus, .product:not([data-price="1900"]) .button:hover, .product:not([data-price="1900"]) .button:active {
+.product:not([data-price="1.900"]) .button:focus, .product:not([data-price="1.900"]) .button:hover, .product:not([data-price="1.900"]) .button:active {
   background: #18181b;
 }
-.product:not([data-price="1900"]) .button:focus::before, .product:not([data-price="1900"]) .button:hover::before, .product:not([data-price="1900"]) .button:active::before {
+.product:not([data-price="1.900"]) .button:focus::before, .product:not([data-price="1.900"]) .button:hover::before, .product:not([data-price="1.900"]) .button:active::before {
   background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%);
 }
 .product__wrapper {
