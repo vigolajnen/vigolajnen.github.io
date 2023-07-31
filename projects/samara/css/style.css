@@ -1046,11 +1046,14 @@ button[type=submit]:disabled {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 992px) {
   .page-footer__bottom {
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
   }
 }
 @media (min-width: 576px) {
@@ -1059,35 +1062,19 @@ button[type=submit]:disabled {
     margin-bottom: 20px;
   }
 }
-@media (min-width: 992px) {
-  .page-footer .social {
-    width: 25%;
-  }
-}
-@media (min-width: 1200px) {
-  .page-footer .social {
-    width: 20%;
-  }
-}
 .page-footer__link {
+  display: block;
   margin-bottom: 20px;
 }
 @media (min-width: 576px) {
   .page-footer__link {
     font-size: 14px;
-    width: 33.3333333333%;
-  }
-  .page-footer__link:last-child {
-    width: 33.3333333333%;
+    line-height: 140%;
   }
 }
 @media (min-width: 992px) {
   .page-footer__link {
-    margin-bottom: 0;
-    width: 25%;
-  }
-  .page-footer__link:last-child {
-    width: 25%;
+    margin-bottom: 7px;
   }
 }
 .page-footer__copy {
@@ -1097,6 +1084,51 @@ button[type=submit]:disabled {
   .page-footer__copy {
     font-size: 15px;
   }
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.2rem;
+}
+.social__item:not(:last-child) {
+  margin-right: 0.8rem;
+}
+@media (min-width: 768px) {
+  .social__item:not(:last-child) {
+    margin-right: 13px;
+  }
+}
+@media (min-width: 768px) {
+  .social {
+    margin-bottom: 0;
+  }
+}
+.social__link {
+  display: block;
+  color: #ffffff;
+}
+.social__link:focus, .social__link:hover {
+  color: #f3d27e;
+}
+.social__link--vk .icon {
+  width: 27px;
+  height: 16px;
+}
+.social__link--tm .icon {
+  width: 24px;
+  height: 24px;
+}
+.social__link--youtube .icon {
+  width: 25px;
+  height: 18px;
+}
+.social .icon {
+  fill: #ffffff;
 }
 
 .promo {
@@ -2848,6 +2880,7 @@ button[type=submit]:disabled {
 @media (max-width: 576px) {
   .products .slider-tariff .swiper-wrapper {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .products .slider-tariff .swiper-pagination {

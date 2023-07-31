@@ -351,6 +351,34 @@
               </div>
               <div class="swiper-wrapper d-sm-none">
                 <div class="swiper-slide products__item">
+                            <div class="product" data-price="1900">
+                              <div class="product__wrapper">
+                                <div class="product__type">Абонемент на месяц в 1 клуб</div>
+                                <div class="product__price">1900
+                                  <span>₽/месяц</span>
+                                </div>
+                                <div class="product__text">
+                                  <p>Тариф дает возможность посещать 1 из клубов</p>
+                                  <ul class="my-2">
+                                    <li>Московское ш., 4, корп. 4</li>
+                                    <li>Красноармейская ул., 131</li>
+                                    <li>Южное ш., 5</li>
+                                  </ul>
+                                  <div>*при условии оплаты Членского взноса 5 000руб.</div>
+                                </div>
+                                <ul class="product__list">
+                                  <li>Тренажерный зал</li>
+                                  <li>Бассейн</li>
+                                  <li>Групповые программы</li>
+                                  <li>Спа-комплекс</li>
+                                  <li>Индивидуальные шкафчики</li>
+                                  <li>Питьевая вода</li>
+                                </ul>
+                                      <button class="button click_buy_prices" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#modal_1">Купить</button>
+                              </div>
+                            </div>
+                </div>
+                <div class="swiper-slide products__item">
                             <div class="product" data-price="3900">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц во все клубы</div>
@@ -376,34 +404,6 @@
                                   <li>Питьевая вода</li>
                                 </ul>
                                       <button class="button click_buy_prices" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#modal_2">Купить</button>
-                              </div>
-                            </div>
-                </div>
-                <div class="swiper-slide products__item">
-                            <div class="product" data-price="1900">
-                              <div class="product__wrapper">
-                                <div class="product__type">Абонемент на месяц в 1 клуб</div>
-                                <div class="product__price">1900
-                                  <span>₽/месяц</span>
-                                </div>
-                                <div class="product__text">
-                                  <p>Тариф дает возможность посещать 1 из клубов</p>
-                                  <ul class="my-2">
-                                    <li>Московское ш., 4, корп. 4</li>
-                                    <li>Красноармейская ул., 131</li>
-                                    <li>Южное ш., 5</li>
-                                  </ul>
-                                  <div>*при условии оплаты Членского взноса 5 000руб.</div>
-                                </div>
-                                <ul class="product__list">
-                                  <li>Тренажерный зал</li>
-                                  <li>Бассейн</li>
-                                  <li>Групповые программы</li>
-                                  <li>Спа-комплекс</li>
-                                  <li>Индивидуальные шкафчики</li>
-                                  <li>Питьевая вода</li>
-                                </ul>
-                                      <button class="button click_buy_prices" type="button" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#modal_1">Купить</button>
                               </div>
                             </div>
                 </div>
@@ -492,7 +492,7 @@
                     <li class="profit__item">
                       <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/gym.svg&quot;)">
                         <div class="profit__item-title">все включено, без ограничений</div>
-                        <div class="profit__item-text">Бассейн, спа, тренажеры, кардиозона, групповые программы
+                        <div class="profit__item-text">ББассейн, спа, тренажеры, кардиозона, групповые авторские уроки, шкафчик в просторной раздевалке
                           
                           <span></span>
                         </div>
@@ -501,7 +501,7 @@
                     <li class="profit__item">
                       <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/best-price.svg&quot;)">
                         <div class="profit__item-title">доступная цена</div>
-                        <div class="profit__item-text">Не нужно платить на год вперед
+                        <div class="profit__item-text">Cпециальный тарифный план со скидками, не нужно платить на год вперед
                           
                           <span></span>
                         </div>
@@ -509,10 +509,8 @@
                     </li>
                     <li class="profit__item">
                       <div class="profit__item-inner" style="--pic:url(&quot;../images/icons/clock.svg&quot;)">
-                        <div class="profit__item-title">короткий срок абонемента </div>
-                        <div class="profit__item-text">Понравилось? Продлите
-                          
-                          <span>абонемент выгодно</span>
+                        <div class="profit__item-title">Комфортное продление </div>
+                        <div class="profit__item-text">Понравилось? Удобное автоматическое списание подписки за абонемент с возможностью отмены в любой момент
                         </div>
                       </div>
                     </li>
@@ -641,6 +639,15 @@
                       </div>
                     </div>
                   </li>
+                  <li class="advantages__item">
+                    <div class="advantages__item-inner" style="--pic:url(&quot;../images/icons/shield-2.svg&quot;)">
+                      <div class="advantages__item-title">Удобные браслеты</div>
+                      <div class="advantages__item-text">Персональный браслет Члена клуба
+                        
+                        <span></span>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
         </div>
       </section>
@@ -709,19 +716,33 @@
                 </li>
               </ul>
         </div>
-        <div class="page-footer__bottom"><a class="page-footer__link link" href="https://market.fitnesshouse.ru/documentation" target="_blank"> Оферта и реквизиты организации</a><a class="page-footer__link link" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Cоглашение на обработку персональных данных</a>
-          <div class="page-footer__copy">
-            <div>© 2007 - 2023</div>
-            <div>Все права защищены.</div>
+        <div class="page-footer__bottom">
+          <ul class="social">
+            <li class="social__item"><a class="social__link social__link--tm" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="images/sprite.svg#telegram"></use>
+                          </svg></a></li>
+            <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="27" height="16" viewBox="0 0 27 16">
+                            <use xlink:href="images/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="25" height="18" viewBox="0 0 25 18">
+                            <use xlink:href="images/sprite.svg#youtube"></use>
+                          </svg></a></li>
+          </ul><a class="page-footer__link link" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Cоглашение на обработку персональных данных</a>
+          <div><a class="page-footer__link link" href="https://market.fitnesshouse.ru/storage/documents/pravila_tehniki_bezopasnosti.pdf" target="_blank"> Правила техники безопасности</a><a class="page-footer__link link" href="#" target="_blank"> Реквизиты организации</a></div>
+          <div><a class="page-footer__link link" href="https://market.fitnesshouse.ru/storage/documents/oferta.pdf" target="_blank">Договор Оферты</a>
+            <div>© 2007 - 2023. Все права защищены.</div>
           </div>
         </div>
       </div>
     </footer>
     <div class="messengers" tabindex="-1">
       <button class="btn-close button" type="button" aria-label="Закрыть сообщение окно">
-            <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
-              <use xlink:href="images/sprite.svg#close"></use>
-            </svg>
+                  <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
+                    <use xlink:href="images/sprite.svg#close"></use>
+                  </svg>
       </button>
       <div class="messengers__wrapper">
         <div class="messengers__content">
@@ -730,166 +751,69 @@
         </div>
         <div class="messengers__upload"><span>Скачайте в мессенджере</span>
           <div class="messengers__links"><a class="link" id="click_vidget_telegram" href="https://t.me/fh_mailing_bot" aria-label="Наш telegram">
-                  <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
-                    <use xlink:href="images/sprite.svg#popup-telegram"></use>
-                  </svg></a><a class="link" id="click_vidget_whatsapp" href="https://wa.me/79214244784?text=Хочу%20гайд" aria-label="Наш whatsapp">
-                  <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
-                    <use xlink:href="images/sprite.svg#popup-wp"></use>
-                  </svg></a></div>
+                        <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
+                          <use xlink:href="images/sprite.svg#popup-telegram"></use>
+                        </svg></a><a class="link" id="click_vidget_whatsapp" href="https://wa.me/79214244784?text=Хочу%20гайд" aria-label="Наш whatsapp">
+                        <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
+                          <use xlink:href="images/sprite.svg#popup-wp"></use>
+                        </svg></a></div>
         </div>
       </div>
     </div>
-        <div class="modal fade modal-order" aria-hidden="true" tabindex="-1" id="modal_3">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="title">Оформить абонемент</h5>
-                <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                      <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
-                        <use xlink:href="images/sprite.svg#close"></use>
-                      </svg>
-                </button>
-              </div>
-              <div class="modal-body">
-                    <form class="form needs-validation">
-                      <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
-                        <input class="form-control input-words" id="customer_first_name" type="text" name="first_name" placeholder="Имя" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
-                        <input class="form-control input-words" id="customer_last_name" type="text" name="last_name" placeholder="Фамилия" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form-label"><span class="form__label-name">Выберете клуб</span>
-                        <select class="form-select form-control" size="1" name="price_id" aria-label="клуб" required>
-                          <option selected disabled value="">Выберете клуб</option>
-                          <option value="349577">Московское ш., 4, корп. 4</option>
-                          <option value="349578">Красноармейская ул., 131</option>
-                          <option value="349576">Южное ш., 5</option>
-                        </select><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
-                        <input class="form-control mask-phone" id="customer_phone" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <div class="form__item">
-                        <div class="form__tooltip-label">
-                          <label class="form__label-name form-label" for="customer_birth_day">Дата рождения</label>
-                          <button class="button button--tooltip" type="button" data-tooltip="tooltip" title="Услуга не может быть оказана лицам моложе 14 лет">
-                                <svg class="icon" width="18" height="18">
-                                  <use xlink:href="images/sprite.svg#tooltip"></use>
-                                </svg>
-                          </button>
-                        </div>
-                        <input class="form-control" id="customer_birth_day" type="date" placeholder="Дата рождения" name="birth_day" min="1900-01-01" max="2009-01-01" required><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
-                      </div>
-                      <label class="form__item form-label"><span class="form__label-name">Email</span>
-                        <input class="form-control" id="customer_email" type="email" name="email" placeholder="Email" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <input type="hidden" id="product_name" name="name" value="1 месяц">
-                      <input type="hidden" id="product_price" name="price" value="7900">
-                      <button class="button form__button" type="submit"><span>Вперед</span></button>
-                      <div class="form__text">Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
-                    </form>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="modal fade modal-order" aria-hidden="true" tabindex="-1" id="modal_1">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="title">Оформить абонемент</h5>
                 <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                      <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
-                        <use xlink:href="images/sprite.svg#close"></use>
-                      </svg>
+                            <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
+                              <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
                 </button>
               </div>
               <div class="modal-body">
-                    <form class="form needs-validation">
-                      <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
-                        <input class="form-control input-words" id="customer_first_name" type="text" name="first_name" placeholder="Имя" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
-                        <input class="form-control input-words" id="customer_last_name" type="text" name="last_name" placeholder="Фамилия" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form-label"><span class="form__label-name">Выберете клуб</span>
-                        <select class="form-select form-control" size="1" name="price_id" aria-label="клуб" required>
-                          <option selected disabled value="">Выберете клуб</option>
-                          <option value="349577">Московское ш., 4, корп. 4</option>
-                          <option value="349578">Красноармейская ул., 131</option>
-                          <option value="349576">Южное ш., 5</option>
-                        </select><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
-                        <input class="form-control mask-phone" id="customer_phone" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <div class="form__item">
-                        <div class="form__tooltip-label">
-                          <label class="form__label-name form-label" for="customer_birth_day">Дата рождения</label>
-                          <button class="button button--tooltip" type="button" data-tooltip="tooltip" title="Услуга не может быть оказана лицам моложе 14 лет">
-                                <svg class="icon" width="18" height="18">
-                                  <use xlink:href="images/sprite.svg#tooltip"></use>
-                                </svg>
-                          </button>
-                        </div>
-                        <input class="form-control" id="customer_birth_day" type="date" placeholder="Дата рождения" name="birth_day" min="1900-01-01" max="2009-01-01" required><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
-                      </div>
-                      <label class="form__item form-label"><span class="form__label-name">Email</span>
-                        <input class="form-control" id="customer_email" type="email" name="email" placeholder="Email" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <input type="hidden" id="product_name" name="name" value="1 месяц Членский взнос">
-                      <input type="hidden" id="product_price" name="price" value="1900">
-                      <input type="hidden" id="product_name" name="name" value="Членский взнос">
-                      <input type="hidden" id="product_price" name="price" value="5000">
-                      <input type="hidden" id="product_price_id" name="price_id" value="68195">
-                      <button class="button form__button" type="submit"><span>Вперед</span></button>
-                      <div class="form__text">Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
-                    </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade modal-order" aria-hidden="true" tabindex="-1" id="modal_4">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="title">Оформить абонемент</h5>
-                <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                      <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
-                        <use xlink:href="images/sprite.svg#close"></use>
-                      </svg>
-                </button>
-              </div>
-              <div class="modal-body">
-                    <form class="form needs-validation">
-                      <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
-                        <input class="form-control input-words" id="customer_first_name" type="text" name="first_name" placeholder="Имя" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
-                        <input class="form-control input-words" id="customer_last_name" type="text" name="last_name" placeholder="Фамилия" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
-                        <input class="form-control mask-phone" id="customer_phone" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <div class="form__item">
-                        <div class="form__tooltip-label">
-                          <label class="form__label-name form-label" for="customer_birth_day">Дата рождения</label>
-                          <button class="button button--tooltip" type="button" data-tooltip="tooltip" title="Услуга не может быть оказана лицам моложе 14 лет">
-                                <svg class="icon" width="18" height="18">
-                                  <use xlink:href="images/sprite.svg#tooltip"></use>
-                                </svg>
-                          </button>
-                        </div>
-                        <input class="form-control" id="customer_birth_day" type="date" placeholder="Дата рождения" name="birth_day" min="1900-01-01" max="2009-01-01" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
-                      </div>
-                      <label class="form__item form-label"><span class="form__label-name">Email</span>
-                        <input class="form-control" id="customer_email" type="email" name="email" placeholder="Email" required><span class="valid-feedback">Успешно</span>
-                      </label>
-                      <input type="hidden" id="product_name" name="name" value="Мультикарта 1 месяц Все клубы Самары">
-                      <input type="hidden" id="product_price" name="price" value="9900">
-                      <input type="hidden" id="product_price_id" name="price_id" value="349579">
-                      <button class="button form__button" type="submit"><span>Вперед</span></button>
-                      <div class="form__text">Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
-                    </form>
+                <form class="form needs-validation">
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
+                    <input class="form-control input-words" id="customer_first_name" type="text" name="first_name" placeholder="Имя" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
+                    <input class="form-control input-words" id="customer_last_name" type="text" name="last_name" placeholder="Фамилия" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label"><span class="form__label-name">Выберете клуб</span>
+                    <select class="form-select form-control" size="1" name="price_id" aria-label="клуб" required>
+                      <option selected disabled value="">Выберете клуб</option>
+                      <option value="349577">Московское ш., 4, корп. 4</option>
+                      <option value="349578">Красноармейская ул., 131</option>
+                      <option value="349576">Южное ш., 5</option>
+                    </select><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
+                    <input class="form-control mask-phone" id="customer_phone" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <div class="form__item">
+                    <div class="form__tooltip-label">
+                      <label class="form__label-name form-label" for="customer_birth_day">Дата рождения</label>
+                      <button class="button button--tooltip" type="button" id="form-1-tooltip" title="Услуга не может быть оказана лицам моложе 14 лет">
+                                  <svg class="icon" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#tooltip"></use>
+                                  </svg>
+                      </button>
+                    </div>
+                    <input class="form-control" id="customer_birth_day" type="date" placeholder="Дата рождения" name="birth_day" min="1900-01-01" max="2009-01-01" required><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
+                  </div>
+                  <label class="form__item form-label"><span class="form__label-name">Email</span>
+                    <input class="form-control" id="customer_email" type="email" name="email" placeholder="Email" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <input type="hidden" id="product_name" name="name" value="1 месяц">
+                  <input type="hidden" id="product_price" name="price" value="7900">
+                  <button class="button form__button" type="submit">Вперед</button>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form-1-check" required>
+                    <label class="form-check-label small" for="form-1-check">Я ознакомлен(-на) и согласен(-на) с условиями<a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/oferta.pdf" target="_blank"> Договора Оферты,</a><a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/pravila_cluba.pdf" target="_blank"> Правилами Клуба</a><span>
+                        
+                          и даю своё согласие на</span><a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank"> обработку персональных данных.</a></label>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -900,45 +824,162 @@
               <div class="modal-header">
                 <h5 class="title">Оформить абонемент</h5>
                 <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                      <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
-                        <use xlink:href="images/sprite.svg#close"></use>
-                      </svg>
+                            <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
+                              <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
                 </button>
               </div>
               <div class="modal-body">
-                    <form class="form needs-validation">
-                      <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
-                        <input class="form-control input-words" id="customer_first_name" type="text" name="first_name" placeholder="Имя" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
-                        <input class="form-control input-words" id="customer_last_name" type="text" name="last_name" placeholder="Фамилия" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
-                        <input class="form-control mask-phone" id="customer_phone" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <div class="form__item">
-                        <div class="form__tooltip-label">
-                          <label class="form__label-name form-label" for="customer_birth_day">Дата рождения</label>
-                          <button class="button button--tooltip" type="button" data-tooltip="tooltip" title="Услуга не может быть оказана лицам моложе 14 лет">
-                                <svg class="icon" width="18" height="18">
-                                  <use xlink:href="images/sprite.svg#tooltip"></use>
-                                </svg>
-                          </button>
-                        </div>
-                        <input class="form-control" id="customer_birth_day" type="date" placeholder="Дата рождения" name="birth_day" min="1900-01-01" max="2009-01-01" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
-                      </div>
-                      <label class="form__item form-label"><span class="form__label-name">Email</span>
-                        <input class="form-control" id="customer_email" type="email" name="email" placeholder="Email" required><span class="valid-feedback">Успешно</span>
-                      </label>
-                      <input type="hidden" id="product_name" name="name" value="1 месяц Членский взнос">
-                      <input type="hidden" id="product_price" name="price" value="3900">
-                      <input type="hidden" id="product_price_id" name="price_id" value="68194">
-                      <input type="hidden" id="product_name" name="name" value="Членский взнос">
-                      <input type="hidden" id="product_price" name="price" value="5000">
-                      <input type="hidden" id="product_price_id" name="price_id" value="68195">
-                      <button class="button form__button" type="submit"><span>Вперед</span></button>
-                      <div class="form__text">Нажимая на кнопку, вы даете согласие на<a class="link link--primary" href="#" target="_blank"> обработку своих персональных данных</a></div>
-                    </form>
+                <form class="form needs-validation">
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
+                    <input class="form-control input-words" id="customer_first_name" type="text" name="first_name" placeholder="Имя" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
+                    <input class="form-control input-words" id="customer_last_name" type="text" name="last_name" placeholder="Фамилия" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label"><span class="form__label-name">Выберете клуб</span>
+                    <select class="form-select form-control" size="1" name="price_id" aria-label="клуб" required>
+                      <option selected disabled value="">Выберете клуб</option>
+                      <option value="349577">Московское ш., 4, корп. 4</option>
+                      <option value="349578">Красноармейская ул., 131</option>
+                      <option value="349576">Южное ш., 5</option>
+                    </select><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
+                    <input class="form-control mask-phone" id="customer_phone" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <div class="form__item">
+                    <div class="form__tooltip-label">
+                      <label class="form__label-name form-label" for="customer_birth_day">Дата рождения</label>
+                      <button class="button button--tooltip" type="button" id="form-2-tooltip" title="Услуга не может быть оказана лицам моложе 14 лет">
+                                  <svg class="icon" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#tooltip"></use>
+                                  </svg>
+                      </button>
+                    </div>
+                    <input class="form-control" id="customer_birth_day" type="date" placeholder="Дата рождения" name="birth_day" min="1900-01-01" max="2009-01-01" required><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
+                  </div>
+                  <label class="form__item form-label"><span class="form__label-name">Email</span>
+                    <input class="form-control" id="customer_email" type="email" name="email" placeholder="Email" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <input type="hidden" id="product_name" name="name" value="1 месяц Членский взнос">
+                  <input type="hidden" id="product_price" name="price" value="1900">
+                  <input type="hidden" id="product_name" name="name" value="Членский взнос">
+                  <input type="hidden" id="product_price" name="price" value="5000">
+                  <input type="hidden" id="product_price_id" name="price_id" value="68195">
+                  <button class="button form__button" type="submit">Вперед</button>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form-2-check" required>
+                    <label class="form-check-label small" for="form-2-check">Я ознакомлен(-на) и согласен(-на) с условиями<a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/oferta.pdf" target="_blank"> Договора Оферты,</a><a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/pravila_cluba.pdf" target="_blank"> Правилами Клуба</a><span>
+                        
+                          и даю своё согласие на</span><a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank"> обработку персональных данных.</a></label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade modal-order" aria-hidden="true" tabindex="-1" id="modal_3">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="title">Оформить абонемент</h5>
+                <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                            <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
+                              <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="form needs-validation">
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
+                    <input class="form-control input-words" id="customer_first_name" type="text" name="first_name" placeholder="Имя" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
+                    <input class="form-control input-words" id="customer_last_name" type="text" name="last_name" placeholder="Фамилия" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
+                    <input class="form-control mask-phone" id="customer_phone" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <div class="form__item">
+                    <div class="form__tooltip-label">
+                      <label class="form__label-name form-label" for="customer_birth_day">Дата рождения</label>
+                      <button class="button button--tooltip" type="button" did="form-3-tooltip" title="Услуга не может быть оказана лицам моложе 14 лет">
+                                  <svg class="icon" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#tooltip"></use>
+                                  </svg>
+                      </button>
+                    </div>
+                    <input class="form-control" id="customer_birth_day" type="date" placeholder="Дата рождения" name="birth_day" min="1900-01-01" max="2009-01-01" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
+                  </div>
+                  <label class="form__item form-label"><span class="form__label-name">Email</span>
+                    <input class="form-control" id="customer_email" type="email" name="email" placeholder="Email" required><span class="valid-feedback">Успешно</span>
+                  </label>
+                  <input type="hidden" id="product_name" name="name" value="Мультикарта 1 месяц Все клубы Самары">
+                  <input type="hidden" id="product_price" name="price" value="9900">
+                  <input type="hidden" id="product_price_id" name="price_id" value="349579">
+                  <button class="button form__button" type="submit">Вперед</button>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form-3-check" required>
+                    <label class="form-check-label small" for="form-3-check">Я ознакомлен(-на) и согласен(-на) с условиями<a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/oferta.pdf" target="_blank"> Договора Оферты,</a><a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/pravila_cluba.pdf" target="_blank"> Правилами Клуба</a><span>
+                        
+                          и даю своё согласие на</span><a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank"> обработку персональных данных.</a></label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade modal-order" aria-hidden="true" tabindex="-1" id="modal_4">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="title">Оформить абонемент</h5>
+                <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                            <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
+                              <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="form needs-validation">
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Имя</span>
+                    <input class="form-control input-words" id="customer_first_name" type="text" name="first_name" placeholder="Имя" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form__item--50 form-label"><span class="form__label-name">Фамилия</span>
+                    <input class="form-control input-words" id="customer_last_name" type="text" name="last_name" placeholder="Фамилия" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form__item form-label"><span class="form__label-name">Номер телефона</span>
+                    <input class="form-control mask-phone" id="customer_phone" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="off" minlength="11" required><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <div class="form__item">
+                    <div class="form__tooltip-label">
+                      <label class="form__label-name form-label" for="customer_birth_day">Дата рождения</label>
+                      <button class="button button--tooltip" type="button" id="form-4-tooltip" title="Услуга не может быть оказана лицам моложе 14 лет">
+                                  <svg class="icon" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#tooltip"></use>
+                                  </svg>
+                      </button>
+                    </div>
+                    <input class="form-control" id="customer_birth_day" type="date" placeholder="Дата рождения" name="birth_day" min="1900-01-01" max="2009-01-01" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Услуга не может быть оказана лицам моложе 14 лет</span>
+                  </div>
+                  <label class="form__item form-label"><span class="form__label-name">Email</span>
+                    <input class="form-control" id="customer_email" type="email" name="email" placeholder="Email" required><span class="valid-feedback">Успешно</span>
+                  </label>
+                  <input type="hidden" id="product_name" name="name" value="1 месяц Членский взнос">
+                  <input type="hidden" id="product_price" name="price" value="3900">
+                  <input type="hidden" id="product_price_id" name="price_id" value="68194">
+                  <input type="hidden" id="product_name" name="name" value="Членский взнос">
+                  <input type="hidden" id="product_price" name="price" value="5000">
+                  <input type="hidden" id="product_price_id" name="price_id" value="68195">
+                  <button class="button form__button" type="submit">Вперед</button>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form-4-check" required>
+                    <label class="form-check-label small" for="form-4-check">Я ознакомлен(-на) и согласен(-на) с условиями<a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/oferta.pdf" target="_blank"> Договора Оферты,</a><a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/pravila_cluba.pdf" target="_blank"> Правилами Клуба</a><span>
+                        
+                          и даю своё согласие на</span><a class="link link--primary" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank"> обработку персональных данных.</a></label>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -949,21 +990,21 @@
               <div class="modal-header">
                 <h5 class="title">Не знаете с чего начать тренировку?</h5>
                 <button class="btn-close button" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                      <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
-                        <use xlink:href="images/sprite.svg#close"></use>
-                      </svg>
+                            <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
+                              <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
                 </button>
               </div>
               <div class="modal-body">
                 <div>Ваш личный помощник подготовил бесплатный гайд<br>«Как начать тренировки в зале»</div>
                 <div class="modal-stop__upload"><span>Скачайте в мессенджере</span>
                   <div class="modal-stop__links"><a class="link" id="click_popup_telegram" href="https://t.me/fh_mailing_bot">
-                          <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
-                            <use xlink:href="images/sprite.svg#popup-telegram"></use>
-                          </svg></a><a class="link" id="click_popup_whatsapp" href="https://wa.me/79214244784?text=Хочу%20гайд">
-                          <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
-                            <use xlink:href="images/sprite.svg#popup-wp"></use>
-                          </svg></a></div>
+                                <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
+                                  <use xlink:href="images/sprite.svg#popup-telegram"></use>
+                                </svg></a><a class="link" id="click_popup_whatsapp" href="https://wa.me/79214244784?text=Хочу%20гайд">
+                                <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
+                                  <use xlink:href="images/sprite.svg#popup-wp"></use>
+                                </svg></a></div>
                 </div>
               </div>
             </div>
@@ -977,7 +1018,6 @@
         // Optional parameters
         loop: true,
         autoHeight: true,
-        autoplay: false,
         slidesPerView: 1,
         spaceBetween: 20,
         effect: 'coverflow',
@@ -1013,10 +1053,6 @@
           },
           768: {
             slidesPerView: 'auto',
-            autoplay: {
-              delay: 6e3,
-              disableOnInteraction: false
-            },
             freeMode: true,
           },
         },
