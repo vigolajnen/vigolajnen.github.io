@@ -246,7 +246,10 @@ button[type=submit]:disabled {
   outline: none;
   margin: 0;
   padding: 0;
-  padding: 2px;
+  z-index: 0;
+  position: relative;
+  padding: 15px 76px;
+  margin: 2%;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -257,17 +260,28 @@ button[type=submit]:disabled {
   border-radius: 51px;
   cursor: pointer;
 }
-.button span {
-  display: flex;
-  justify-content: center;
-  padding: 15px 76px;
+.button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
   border-radius: 51px;
-  background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%);
+  background: #18181b;
+  background: transparent;
+}
+.button::before:focus, .button::before:active, .button::before:hover {
+  background: radial-gradient(100% 100% at 142.5% 13.75%, #ffffff 0%, #7c76fa 46.35%, #70d0ff 100%) gradient(98.24deg, #6ddcff 0%, #7f60f9 100%);
 }
 .button:focus, .button:active, .button:hover {
   transition: 0.3s;
 }
 .button:focus span, .button:active span, .button:hover span {
+  background: #18181b;
+}
+.button:focus::before, .button:active::before, .button:hover::before {
   background: #18181b;
 }
 .button:disabled {
@@ -671,7 +685,7 @@ button[type=submit]:disabled {
     line-height: 44px;
   }
 }
-.modal .btn-close {
+.modal .btn-close, .modal .button {
   background: none;
   color: #6ddcff;
   width: 33px;
@@ -684,10 +698,13 @@ button[type=submit]:disabled {
   align-items: center;
   justify-content: center;
 }
-.modal .btn-close:focus, .modal .btn-close:hover, .modal .btn-close:active {
+.modal .btn-close:focus, .modal .btn-close:hover, .modal .btn-close:active, .modal .button:focus, .modal .button:hover, .modal .button:active {
   outline: none;
 }
-.modal .btn-close .icon {
+.modal .btn-close:focus::before, .modal .btn-close:hover::before, .modal .btn-close:active::before, .modal .button:focus::before, .modal .button:hover::before, .modal .button:active::before {
+  background: transparent;
+}
+.modal .btn-close .icon, .modal .button .icon {
   width: 100%;
   height: 100%;
   stroke: #6ddcff;
@@ -2621,6 +2638,12 @@ button[type=submit]:disabled {
   opacity: 1;
   background: none;
 }
+.messengers .btn-close:focus, .messengers .btn-close:hover, .messengers .btn-close:active {
+  outline: none;
+}
+.messengers .btn-close:focus::before, .messengers .btn-close:hover::before, .messengers .btn-close:active::before {
+  background: transparent;
+}
 .messengers__title {
   margin-bottom: 8px;
   font-style: normal;
@@ -2923,6 +2946,9 @@ button[type=submit]:disabled {
 }
 .product:hover .button span {
   background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%);
+}
+.product[data-price="1900"] {
+  background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%), linear-gradient(0deg, #18181b, #18181b);
 }
 .product__wrapper {
   display: flex;
