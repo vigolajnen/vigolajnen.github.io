@@ -685,7 +685,7 @@ button[type=submit]:disabled {
     line-height: 44px;
   }
 }
-.modal .btn-close, .modal .button {
+.modal .btn-close.button {
   background: none;
   color: #6ddcff;
   width: 33px;
@@ -698,13 +698,13 @@ button[type=submit]:disabled {
   align-items: center;
   justify-content: center;
 }
-.modal .btn-close:focus, .modal .btn-close:hover, .modal .btn-close:active, .modal .button:focus, .modal .button:hover, .modal .button:active {
+.modal .btn-close.button:focus, .modal .btn-close.button:hover, .modal .btn-close.button:active {
   outline: none;
 }
-.modal .btn-close:focus::before, .modal .btn-close:hover::before, .modal .btn-close:active::before, .modal .button:focus::before, .modal .button:hover::before, .modal .button:active::before {
+.modal .btn-close.button:focus::before, .modal .btn-close.button:hover::before, .modal .btn-close.button:active::before {
   background: transparent;
 }
-.modal .btn-close .icon, .modal .button .icon {
+.modal .btn-close.button .icon {
   width: 100%;
   height: 100%;
   stroke: #6ddcff;
@@ -721,11 +721,11 @@ button[type=submit]:disabled {
 }
 
 .modal-order .modal-content {
-  padding: 64px 16px;
+  padding: 14vw 5vw 3vw;
 }
 @media (min-width: 768px) {
   .modal-order .modal-content {
-    padding: 84px 125px;
+    padding: 3vw 5vw;
   }
 }
 .modal-order .modal-content .btn-close {
@@ -2587,6 +2587,15 @@ button[type=submit]:disabled {
 .form__tooltip-label .form__label-name {
   display: inline-flex;
   padding-right: 8px;
+}
+.form__tooltip-label .button {
+  background: transparent;
+}
+.form__tooltip-label .button::before {
+  background: transparent;
+}
+.form__tooltip-label .button:focus::before, .form__tooltip-label .button:active::before, .form__tooltip-label .button:hover::before {
+  background: transparent;
 }
 .form__label-name {
   display: block;
