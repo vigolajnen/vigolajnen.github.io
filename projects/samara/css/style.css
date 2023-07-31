@@ -1337,7 +1337,7 @@ button[type=submit]:disabled {
   right: 10%;
   width: 100%;
   height: 100%;
-  background-image: url("../images/promo/woman.png");
+  background-image: url("../images/promo/woman.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1538,7 +1538,7 @@ button[type=submit]:disabled {
   position: relative;
   background-color: rgba(4, 8, 40, 0.8);
   overflow: hidden;
-  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051F 100%);
+  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051f 100%);
 }
 @media (min-width: 1200px) {
   .profit {
@@ -1820,7 +1820,7 @@ button[type=submit]:disabled {
   height: 100%;
   fill: transparent;
   stroke-width: 10;
-  stroke: #E1E9EC;
+  stroke: #e1e9ec;
 }
 .timer__item svg .circle {
   stroke-dasharray: 440;
@@ -1900,7 +1900,7 @@ button[type=submit]:disabled {
   color: #ffffff;
   overflow: hidden;
   background-color: rgba(4, 8, 40, 0.8);
-  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051F 100%);
+  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051f 100%);
 }
 @media (min-width: 768px) {
   .gallery {
@@ -2311,7 +2311,7 @@ button[type=submit]:disabled {
   padding-top: 54px;
   color: #ffffff;
   overflow: hidden;
-  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051F 100%);
+  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051f 100%);
 }
 @media (min-width: 768px) {
   .advantages {
