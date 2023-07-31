@@ -2216,7 +2216,7 @@ button[type=submit]:disabled {
   width: 764px;
   height: 300px;
   max-width: 100%;
-  background-image: url("../images/faq/men.png");
+  background-image: url("../images/faq/men.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2873,6 +2873,10 @@ button[type=submit]:disabled {
   background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%);
   border-radius: 50%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
 }
 @media (min-width: 1300px) {
   .products .slider-tariff .swiper-button-prev, .products .slider-tariff .swiper-button-next {
@@ -2880,21 +2884,27 @@ button[type=submit]:disabled {
     height: 50px;
   }
 }
-.products .slider-tariff .swiper-button-prev::after, .products .slider-tariff .swiper-button-next::after {
-  width: 20px;
+.products .slider-tariff .swiper-button-prev:focus, .products .slider-tariff .swiper-button-prev:hover, .products .slider-tariff .swiper-button-next:focus, .products .slider-tariff .swiper-button-next:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background: linear-gradient(98.24deg, #7f60f9 0%, #6ddcff 100%);
+}
+.products .slider-tariff .swiper-button-prev .icon, .products .slider-tariff .swiper-button-next .icon {
+  width: 24px;
   height: 20px;
-  font-size: 20px;
-  margin: auto;
-  margin-right: 6px;
-  border-radius: 50%;
-  color: rebeccapurple;
 }
 @media (min-width: 1300px) {
-  .products .slider-tariff .swiper-button-prev::after, .products .slider-tariff .swiper-button-next::after {
-    width: 25px;
-    height: 25px;
-    font-size: 25px;
+  .products .slider-tariff .swiper-button-prev .icon, .products .slider-tariff .swiper-button-next .icon {
+    width: 28px;
+    height: 24px;
   }
+}
+.products .slider-tariff .swiper-button-next .icon {
+  transform: rotate(180deg);
+}
+.products .slider-tariff .swiper-button-prev::after, .products .slider-tariff .swiper-button-next::after {
+  content: "";
+  font-size: 0;
 }
 
 .product {

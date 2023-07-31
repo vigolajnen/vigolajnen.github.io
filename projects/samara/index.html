@@ -125,7 +125,7 @@
             <div class="swiper slider-tariff">
               <div class="swiper-wrapper d-none d-sm-flex">
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц в 1 клуб</div>
                                 <div class="product__price">1900
@@ -153,7 +153,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц во все клубы</div>
                                 <div class="product__price">3900
@@ -182,7 +182,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц в 1 клуб</div>
                                 <div class="product__price">7900
@@ -209,7 +209,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц во все клубы</div>
                                 <div class="product__price">9900
@@ -237,7 +237,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц в 1 клуб</div>
                                 <div class="product__price">1900
@@ -265,7 +265,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц во все клубы</div>
                                 <div class="product__price">3900
@@ -294,7 +294,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц в 1 клуб</div>
                                 <div class="product__price">7900
@@ -321,7 +321,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц во все клубы</div>
                                 <div class="product__price">9900
@@ -351,7 +351,7 @@
               </div>
               <div class="swiper-wrapper d-sm-none">
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц в 1 клуб</div>
                                 <div class="product__price">1900
@@ -379,7 +379,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц во все клубы</div>
                                 <div class="product__price">3900
@@ -408,7 +408,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц в 1 клуб</div>
                                 <div class="product__price">7900
@@ -435,7 +435,7 @@
                             </div>
                 </div>
                 <div class="swiper-slide products__item">
-                            <div class="product" tabindex="1">
+                            <div class="product" tabindex="0">
                               <div class="product__wrapper">
                                 <div class="product__type">Абонемент на месяц во все клубы</div>
                                 <div class="product__price">9900
@@ -465,8 +465,16 @@
               </div>
               <div class="swiper-pagination"></div>
               <div class="slider-tariff__btns">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev" aria-label="Кнопка назад">
+                      <svg class="icon" width="28" height="24" viewBox="0 0 28 24">
+                        <use xlink:href="images/sprite.svg#arrow-slide"></use>
+                      </svg>
+                </div>
+                <div class="swiper-button-next" aria-label="Кнопка вперед">
+                      <svg class="icon" width="28" height="24" viewBox="0 0 28 24">
+                        <use xlink:href="images/sprite.svg#arrow-slide"></use>
+                      </svg>
+                </div>
               </div>
             </div>
             <div class="bg-pic-1 element-animation"></div>
@@ -476,8 +484,8 @@
           <div class="profit__wrapper" id="profit">
             <div class="profit__title-pic element-animation">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="images/profit/title.png">
-                      <source media="(min-width: 768px)" srcset="images/profit/title2.png"><img src="images/profit/title3.png" alt="pic" width="324" height="217" loading="lazy">
+                      <source media="(min-width: 1200px)" srcset="images/profit/title.webp">
+                      <source media="(min-width: 768px)" srcset="images/profit/title2.webp"><img src="images/profit/title3.png" alt="Ваша выгода" width="324" height="217" loading="lazy">
                     </picture>
             </div>
                   <ul class="profit__list">
@@ -601,8 +609,8 @@
         <div class="container">
           <div class="advantages__title-pic">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="images/advantages/title.png">
-                    <source media="(min-width: 768px)" srcset="images/advantages/title2.png"><img src="images/advantages/title3.png" alt="pic" width="324" height="170" loading="lazy">
+                    <source media="(min-width: 1200px)" srcset="images/advantages/title.webp">
+                    <source media="(min-width: 768px)" srcset="images/advantages/title2.webp"><img src="images/advantages/title3.png" alt="Ваш комфорт" width="324" height="170" loading="lazy">
                   </picture>
           </div>
                 <ul class="advantages__list">
@@ -721,10 +729,10 @@
           <div class="messengers__text">Ваш личный помощник подготовил бесплатный гайд «Как начать тренировки в зале»</div>
         </div>
         <div class="messengers__upload"><span>Скачайте в мессенджере</span>
-          <div class="messengers__links"><a class="link" id="click_vidget_telegram" href="https://t.me/fh_mailing_bot">
+          <div class="messengers__links"><a class="link" id="click_vidget_telegram" href="https://t.me/fh_mailing_bot" aria-label="Наш telegram">
                   <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
                     <use xlink:href="images/sprite.svg#popup-telegram"></use>
-                  </svg></a><a class="link" id="click_vidget_whatsapp" href="https://wa.me/79214244784?text=Хочу%20гайд">
+                  </svg></a><a class="link" id="click_vidget_whatsapp" href="https://wa.me/79214244784?text=Хочу%20гайд" aria-label="Наш whatsapp">
                   <svg class="icon" width="33" height="33" viewBox="0 0 33 33">
                     <use xlink:href="images/sprite.svg#popup-wp"></use>
                   </svg></a></div>
@@ -1048,6 +1056,17 @@
                 mySwiper.autoplay.start();
               });
             }
+      
+            document.addEventListener("keydown", function(e){
+              if(e.keyCode == 37) {
+                  mySwiper.slidePrev();
+                  //Left arrow pressed
+              }
+              if(e.keyCode == 39) {
+                  mySwiper.slideNext();
+                  //Right arrow pressed
+              }
+          });
         } else if (window.matchMedia('(max-width: 575px)').matches && mySwiper != undefined) {
             mySwiper.destroy();
             mySwiper = undefined;
