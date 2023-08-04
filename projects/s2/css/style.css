@@ -1532,11 +1532,6 @@ button[type=submit]:disabled {
   right: -15%;
   width: 316.54px;
   height: 430px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-animation: showElementPic1 2s forwards;
-  animation: showElementPic1 2s forwards;
 }
 @media (min-width: 576px) {
   .promo__pic--pic-w {
@@ -1575,13 +1570,6 @@ button[type=submit]:disabled {
   left: 10%;
   width: 265.77px;
   height: 265.77px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-animation: showElementPic2 2s forwards;
-  animation: showElementPic2 2s forwards;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
 }
 @media (min-width: 576px) {
   .promo__pic--pic-2 {
@@ -1621,13 +1609,6 @@ button[type=submit]:disabled {
   right: -30%;
   width: 284.57px;
   height: 284.57px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-animation: showElementPic3 1s forwards;
-  animation: showElementPic3 1s forwards;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
 }
 @media (min-width: 576px) {
   .promo__pic--pic-1 {
