@@ -1317,6 +1317,27 @@ button[type=submit]:disabled {
     filter: blur(162px);
   }
 }
+@media (min-width: 1200px) {
+  .promo::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 0;
+    width: 300px;
+    height: 373px;
+    background-image: url("../images/promo/p04.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-animation: showElementPic3 1s forwards;
+    animation: showElementPic3 1s forwards;
+  }
+  @supports (background-image: -webkit-image-set(url("../images/promo/p04.webp") 1x)) {
+    .promo::after {
+      background-image: url("../images/promo/p04.webp");
+    }
+  }
+}
 .promo .container {
   position: relative;
   display: -webkit-box;
@@ -1329,9 +1350,6 @@ button[type=submit]:disabled {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
   width: 100%;
   max-width: 1440px;
   margin: 0;
@@ -1350,40 +1368,13 @@ button[type=submit]:disabled {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    padding-top: 62px;
   }
 }
-.promo .pic-0 {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 290px;
-  height: 290px;
-  overflow: hidden;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 0;
-  -webkit-animation: showElementPic2 3s forwards;
-  animation: showElementPic2 3s forwards;
-}
-@media (min-width: 1200px) {
-  .promo .pic-0 {
-    display: block;
+@media (min-width: 992px) {
+  .promo .container {
+    padding-top: 75px;
   }
-}
-.promo .pic-0:before {
-  content: "";
-  position: absolute;
-  height: 0;
-  top: 0;
-  left: 0;
-  width: 200%;
-  padding-bottom: 100%;
-  background-size: 490%;
-  background-position-x: -1480px;
-  display: block;
-  background-image: url(../images/sprite-png.png);
 }
 .promo__info {
   width: 100%;
@@ -1397,15 +1388,9 @@ button[type=submit]:disabled {
     text-align: left;
   }
 }
-@media (min-width: 768px) {
-  .promo__info {
-    padding-top: 62px;
-  }
-}
 @media (min-width: 1200px) {
   .promo__info {
     padding-left: 230px;
-    padding-top: 75px;
   }
 }
 .promo__title {
@@ -1498,7 +1483,12 @@ button[type=submit]:disabled {
 }
 @media (min-width: 320px) {
   .promo__text {
-    font-size: calc(4.2045454545vw + 16.5454545455px);
+    font-size: calc(-1.7857142857vw + 35.7142857143px);
+  }
+}
+@media (min-width: 600px) {
+  .promo__text {
+    font-size: calc(7vw - 17px);
   }
 }
 @media (min-width: 1200px) {
@@ -1526,6 +1516,9 @@ button[type=submit]:disabled {
   max-width: 350px;
   min-height: 348px;
   margin-left: auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 992px) {
   .promo__pic {
@@ -1539,6 +1532,11 @@ button[type=submit]:disabled {
   right: -15%;
   width: 316.54px;
   height: 430px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation: showElementPic1 2s forwards;
+  animation: showElementPic1 2s forwards;
 }
 @media (min-width: 576px) {
   .promo__pic--pic-w {
@@ -1562,9 +1560,14 @@ button[type=submit]:disabled {
   right: 10%;
   width: 100%;
   height: 100%;
-  background-image: url("../images/promo/woman.webp");
+  background-image: url("../images/promo/woman.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+@supports (background-image: -webkit-image-set(url("../images/promo/woman.webp") 1x)) {
+  .promo__pic--pic-w::before {
+    background-image: url("../images/promo/woman.webp");
+  }
 }
 .promo__pic--pic-2 {
   position: absolute;
@@ -1572,6 +1575,13 @@ button[type=submit]:disabled {
   left: 10%;
   width: 265.77px;
   height: 265.77px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation: showElementPic2 2s forwards;
+  animation: showElementPic2 2s forwards;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 @media (min-width: 576px) {
   .promo__pic--pic-2 {
@@ -1596,9 +1606,14 @@ button[type=submit]:disabled {
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/promo/ellipse2.webp");
+  background-image: url("../images/promo/ellipse2.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+@supports (background-image: -webkit-image-set(url("../images/promo/ellipse2.webp") 1x)) {
+  .promo__pic--pic-2::before {
+    background-image: url("../images/promo/ellipse2.webp");
+  }
 }
 .promo__pic--pic-1 {
   position: absolute;
@@ -1606,6 +1621,13 @@ button[type=submit]:disabled {
   right: -30%;
   width: 284.57px;
   height: 284.57px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation: showElementPic3 1s forwards;
+  animation: showElementPic3 1s forwards;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 @media (min-width: 576px) {
   .promo__pic--pic-1 {
@@ -1630,217 +1652,13 @@ button[type=submit]:disabled {
   right: -10px;
   width: 100%;
   height: 100%;
-  background-image: url("../images/promo/ellipse.webp");
+  background-image: url("../images/promo/ellipse.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
-.promo__bg-images {
-  background-image: url(../images/sprite-png.png);
-  background-size: 400% 100%;
-  background-repeat: no-repeat;
-  width: 460px;
-  height: 460px;
-  max-width: 100%;
-}
-.promo .sprite-container {
-  position: relative;
-  width: 405px;
-  height: 490px;
-  overflow: hidden;
-}
-.promo .sprite-container::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 450%;
-  height: 0;
-  padding-bottom: 450%;
-  background-position: -1197px 0;
-  background-size: 200%;
-  display: block;
-  /* Set The Sprite as the Background */
-  background-image: url(../images/sprite-png.png);
-}
-.promo .sprite-container::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  background-position: 132px 0;
-  width: 374%;
-  bottom: 0;
-  top: -123%;
-  z-index: 1;
-  height: 0;
-  padding-bottom: 450%;
-  background-size: 200%;
-  display: block;
-  /* Set The Sprite as the Background */
-  background-image: url(../images/sprite-png.png);
-}
-
-.pic-container {
-  position: relative;
-  width: 500px;
-  height: 100%;
-  min-height: 300px;
-}
-@media (min-width: 480px) {
-  .pic-container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    min-height: 560px;
-  }
-}
-.pic-container .pic-1, .pic-container .pic-2, .pic-container .pic-3 {
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-.pic-container .pic-1:before, .pic-container .pic-2:before, .pic-container .pic-3:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  background-size: 300% 100%;
-  display: block;
-}
-.pic-container .pic-1 {
-  z-index: 2;
-  width: 280px;
-  height: 300px;
-  margin-left: auto;
-  -webkit-animation: showElementPic1 2s forwards;
-  animation: showElementPic1 2s forwards;
-}
-.pic-container .pic-1::before {
-  background-image: url(../images/sprite-png.png);
-  top: auto;
-  bottom: 0;
-  width: 172%;
-  padding-bottom: 117%;
-  background-size: 637%;
-  background-position: -1200px 0px;
-}
-@media (min-width: 480px) {
-  .pic-container .pic-1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 320px;
-    height: 560px;
-  }
-  .pic-container .pic-1:before {
-    width: 160%;
-    padding-bottom: 110%;
-    background-size: 610%;
-    background-position: -1200px 0;
-  }
-}
-@media (min-width: 768px) {
-  .pic-container .pic-1:before {
-    padding-bottom: 140%;
-  }
-}
-@media (min-width: 992px) {
-  .pic-container .pic-1 {
-    right: 0;
-    bottom: 0;
-    width: 373px;
-    height: 560px;
-  }
-  .pic-container .pic-1:before {
-    width: 170%;
-    padding-bottom: 156%;
-    background-size: 570%;
-    background-position: -1400px 0;
-  }
-}
-@media (min-width: 1200px) {
-  .pic-container .pic-1 {
-    right: 10%;
-  }
-}
-.pic-container .pic-2 {
-  position: absolute;
-  left: 40%;
-  width: 300px;
-  height: 300px;
-  bottom: -40%;
-  -webkit-animation: showElementPic2 3s forwards;
-  animation: showElementPic2 3s forwards;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-.pic-container .pic-2::before {
-  background-image: url(../images/sprite-png.png);
-  width: 180%;
-  padding-bottom: 150%;
-  background-size: 515% 190%;
-  background-position-x: -153px;
-}
-@media (min-width: 480px) {
-  .pic-container .pic-2 {
-    left: 20%;
-    bottom: -25%;
-  }
-  .pic-container .pic-2::before {
-    background-size: 515% 190%;
-  }
-}
-@media (min-width: 992px) {
-  .pic-container .pic-2::before {
-    background-size: 518% 190%;
-  }
-}
-@media (min-width: 1200px) {
-  .pic-container .pic-2 {
-    left: -15%;
-    bottom: -10%;
-    width: 400px;
-    height: 400px;
-  }
-  .pic-container .pic-2::before {
-    width: 190%;
-    padding-bottom: 179%;
-    background-size: 490% 190%;
-    background-position-x: -205px;
-  }
-}
-.pic-container .pic-3 {
-  position: absolute;
-  top: 0;
-  right: -10%;
-  width: 280px;
-  height: 280px;
-  -webkit-animation: showElementPic3 3s forwards;
-  animation: showElementPic3 3s forwards;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-.pic-container .pic-3::before {
-  background-image: url(../images/sprite-png.png);
-  width: 200%;
-  padding-bottom: 135%;
-  background-size: 495% 220%;
-  background-position-x: -452px;
-}
-@media (min-width: 1200px) {
-  .pic-container .pic-3 {
-    right: 0;
-    width: 400px;
-    height: 400px;
-  }
-  .pic-container .pic-3::before {
-    background-position-x: -645px;
+@supports (background-image: -webkit-image-set(url("../images/promo/ellipse.webp") 1x)) {
+  .promo__pic--pic-1::before {
+    background-image: url("../images/promo/ellipse.webp");
   }
 }
 
@@ -2605,18 +2423,17 @@ button[type=submit]:disabled {
 }
 
 .faq {
-  position: relative;
   overflow: hidden;
+  position: relative;
   padding-bottom: 88px;
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
+  color: #ffffff;
   background-color: rgba(4, 8, 40, 0.8);
   background-image: -webkit-gradient(linear, left bottom, left top, from(#010310), to(#000000));
   background-image: -o-linear-gradient(bottom, #010310 0%, #000000 100%);
   background-image: linear-gradient(0deg, #010310 0%, #000000 100%);
-  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051F 100%);
-  color: #ffffff;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
 }
 .faq::before {
   position: absolute;
@@ -2628,11 +2445,6 @@ button[type=submit]:disabled {
   height: 100px;
   background-image: -o-linear-gradient(270.03deg, rgba(5, 10, 52, 0) 11.31%, #030619 33.51%, #020202 99.98%);
   background-image: linear-gradient(179.97deg, rgba(5, 10, 52, 0) 11.31%, #030619 33.51%, #020202 99.98%);
-}
-@media (max-width: 1440px) {
-  .faq {
-    overflow: hidden;
-  }
 }
 .faq__wrapper {
   position: relative;
@@ -2692,9 +2504,14 @@ button[type=submit]:disabled {
   width: 764px;
   height: 300px;
   max-width: 100%;
-  background-image: url("../images/faq/men.webp");
+  background-image: url("../images/faq/men.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+@supports (background-image: -webkit-image-set(url("../images/faq/men.webp") 1x)) {
+  .faq__bg--1 {
+    background-image: url("../images/faq/men.webp");
+  }
 }
 @media (min-width: 576px) {
   .faq__bg--1 {
@@ -3245,18 +3062,22 @@ button[type=submit]:disabled {
     left: 15%;
   }
 }
-.products .bg-pic-3:before {
+.products .bg-pic-3::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  background-size: 910%;
-  display: block;
-  background-position-x: -600px;
-  background-image: url(../images/sprite-png.png);
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 420px;
+  height: 420px;
+  background-image: url("../images/profit/circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@supports (background-image: -webkit-image-set(url("../images/profit/circle.webp") 1x)) {
+  .products .bg-pic-3::before {
+    background-image: url("../images/profit/circle.webp");
+  }
 }
 .products .bg-pic-2 {
   position: absolute;
@@ -3282,18 +3103,22 @@ button[type=submit]:disabled {
     right: 12%;
   }
 }
-.products .bg-pic-2:before {
+.products .bg-pic-2::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 0;
-  padding-bottom: 200%;
-  background-size: 900%;
-  display: block;
-  background-position-x: 0;
-  background-image: url(../images/sprite-png.png);
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 237px;
+  height: 237px;
+  background-image: url("../images/profit/ellipse2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@supports (background-image: -webkit-image-set(url("../images/profit/ellipse2.webp") 1x)) {
+  .products .bg-pic-2::before {
+    background-image: url("../images/profit/ellipse2.webp");
+  }
 }
 .products .bg-pic-1 {
   display: none;
@@ -3326,23 +3151,21 @@ button[type=submit]:disabled {
     height: 500px;
   }
 }
-.products .bg-pic-1:before {
+.products .bg-pic-1::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 450%;
-  height: 0;
-  padding-bottom: 200%;
-  background-size: 170%;
-  background-position-x: -792px;
-  display: block;
-  background-image: url(../images/sprite-png.png);
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/profit/ellipse3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-@media (min-width: 1200px) {
-  .products .bg-pic-1:before {
-    width: 500%;
-    background-position-x: -1130px;
+@supports (background-image: -webkit-image-set(url("../images/profit/ellipse3.webp") 1x)) {
+  .products .bg-pic-1::before {
+    background-image: url("../images/profit/ellipse3.webp");
   }
 }
 .products__item {
