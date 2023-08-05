@@ -1240,8 +1240,8 @@ button[type=submit]:disabled {
     flex-wrap: wrap;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
@@ -1249,15 +1249,15 @@ button[type=submit]:disabled {
 }
 @media (min-width: 992px) {
   .page-footer__bottom {
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
   }
 }
 @media (min-width: 1300px) {
   .page-footer__bottom {
-    -ms-grid-columns: (2fr)[2] (1fr)[2];
-    grid-template-columns: repeat(2, 2fr) repeat(2, 1fr);
+    -ms-grid-columns: 2fr 2fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
   }
 }
 @media (min-width: 576px) {
