@@ -12,6 +12,33 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PSHVFB6');
+    </script>
+    <!-- End Google Tag Manager-->
+    <!-- Yandex.Metrika counter-->
+    <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(93723690, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+      });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/93723690" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter-->
   </head>
   <body class="page-body">
     <!-- Google Tag Manager (noscript)-->
@@ -1265,6 +1292,97 @@
       
       window.addEventListener('resize', function(e) {
         initSwiper();
+      });
+    </script>
+    <!-- Roistat Counter Start-->
+    <script>
+      (function(w, d, s, h, id) {
+      w.roistatProjectId = id; w.roistatHost = h;
+      var p = d.location.protocol == "https:" ? "https://" : "http://";
+      var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
+      var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+      })(window, document, 'script', 'cloud.roistat.com', '85417265771b0fc5af8bf2070bcc89db');
+    </script>
+    <!-- Roistat Counter End-->
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+            //- Клик по кнопке купить Первый экран
+        document.getElementById("click_basic_first").onclick = function() {
+          //- console.log('click_basic_first');
+          roistat.event.send("click_basic_first");
+        };
+      
+          //- Клик по кнопке купить Описание тарифов
+        document.querySelectorAll('.click_buy_prices').forEach(btnPay => {
+          btnPay.addEventListener('click', function() {
+            //- console.log('click_buy_prices');
+            roistat.event.send('click_buy_prices');
+          })
+        });
+      
+        document.querySelectorAll('.needs-validation').forEach(form => {
+      
+          //- Заполнение формы
+          form.querySelectorAll('.form-control').forEach(field => {
+            field.addEventListener('mouseover', function() {
+              //- console.log('form_fill');
+              roistat.event.send('form_fill');
+            });
+          });
+      
+          //- Отправка формы
+          form.addEventListener('submit', function() {
+            //- console.log('form_submit');
+            roistat.event.send('form_submit');
+          });
+          //- Клик по мессенджеру из виджета Telegram
+          document.getElementById('click_vidget_telegram').onclick = function() {
+            //- console.log('click_vidget_telegram');
+            roistat.event.send("click_vidget_telegram");
+          };
+          //- Клик по мессенджеру из виджета WhatsApp
+          document.getElementById('click_vidget_whatsapp').onclick = function() {
+            //- console.log('click_vidget_whatsapp');
+            roistat.event.send("click_vidget_whatsapp");
+          };
+          //- Клик по мессенджеру из Pop-up Telegram
+          document.getElementById('click_popup_telegram').onclick = function() {
+            //- console.log('click_popup_telegram');
+            roistat.event.send("click_popup_telegram");
+          };
+          //- Клик по мессенджеру из Pop-up Whatsapp
+          document.getElementById('click_popup_whatsapp').onclick = function() {
+            //- console.log('click_popup_whatsapp');
+            roistat.event.send("click_popup_whatsapp");
+          };
+      
+          let observer = new IntersectionObserver(function (entries, obs) {
+            entries.forEach(function (entry) {
+            // Если элемент в зоне видимости, то ничего не происходит
+              if (!entry.isIntersecting) return;
+            // Отключаем «наблюдатель»
+              obs.unobserve(entry.target);
+            // Добавляем текст
+              //- console.log(entry.target.getAttribute('id'));
+              roistat.event.send(entry.target.getAttribute('id'));
+              });
+            });
+      
+          // Задаем элемент для наблюдения
+          let el = document.getElementById('gallery_view_pool');
+          let el1 = document.getElementById('gallery_view_group');
+          let el2 = document.getElementById('gallery_view_spa');
+          let el3 = document.getElementById('gallery_view_gym');
+          let el4 = document.getElementById('faq_view');
+      
+          // Прикрепляем его к «наблюдателю»
+          observer.observe(el);
+          observer.observe(el1);
+          observer.observe(el2);
+          observer.observe(el3);
+          observer.observe(el4);
+      
+        });
       });
     </script>
   </body>
