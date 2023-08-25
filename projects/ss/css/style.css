@@ -1667,7 +1667,6 @@ button[type=submit]:disabled {
   right: 30%;
   width: 100%;
   height: 100%;
-  width: 26vw;
   max-width: 400px;
   max-height: 400px;
   background-image: url("../images/promo/ellipse.png");
