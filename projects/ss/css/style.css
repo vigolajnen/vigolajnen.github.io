@@ -219,16 +219,9 @@ button[type=submit]:disabled {
 }
 
 .main {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  padding: 0;
   background-color: rgba(4, 8, 40, 0.8);
-  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051f 100%);
+  background: radial-gradient(at top left, #000 0%, #1e137e 50%, #000 100%), radial-gradient(at right top, #000 0%, #1e137e 100%), radial-gradient(at bottom, #000 0%, #7c76fa 10%, #1e137e 50%, #000 100%);
 }
 
 .visually-hidden {
@@ -1255,25 +1248,12 @@ button[type=submit]:disabled {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-width: 1440px;
   margin: 0 auto;
   color: #fff;
-  background-color: transparent;
   -webkit-transform-style: inherit;
   transform-style: inherit;
-}
-@media (min-width: 768px) {
-  .promo::before {
-    z-index: 1;
-    position: absolute;
-    content: "";
-    bottom: -50%;
-    left: 20%;
-    width: 494px;
-    height: 494px;
-    background-image: radial-gradient(50% 50% at 50% 50%, #1a61cb 76.56%, rgba(9, 39, 98, 0) 100%);
-    -webkit-filter: blur(162px);
-    filter: blur(162px);
-  }
+  overflow: hidden;
 }
 @media (min-width: 1200px) {
   .promo::after {
@@ -1287,8 +1267,8 @@ button[type=submit]:disabled {
     background-image: url("../images/promo/p04.png");
     background-size: contain;
     background-repeat: no-repeat;
-    -webkit-animation: anim 5s infinite;
-    animation: anim 5s infinite;
+    -webkit-animation: show-element-pic3 5s forwards;
+    animation: show-element-pic3 5s forwards;
   }
   @supports (background-image: -webkit-image-set(url("../images/promo/p04.webp") 1x)) {
     .promo::after {
@@ -1309,10 +1289,11 @@ button[type=submit]:disabled {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+  min-height: 100vh;
   max-width: 1440px;
   margin: 0;
-  padding: 0 15px;
-  padding-top: 24px;
+  padding: 50px 15px;
+  padding-top: 100px;
 }
 @media (min-width: 576px) {
   .promo .container {
@@ -1327,11 +1308,56 @@ button[type=submit]:disabled {
     -ms-flex-direction: row;
     flex-direction: row;
     padding-top: 62px;
+    min-height: 620px;
   }
 }
 @media (min-width: 992px) {
   .promo .container {
     padding-top: 75px;
+  }
+}
+@media (max-width: 576px) {
+  .promo .container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-image: url("../images/promo/ellipse2.webp");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: contain;
+    animation: anim 6s infinite reverse;
+  }
+}
+.promo .container::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  right: 30%;
+  width: 300px;
+  height: 100%;
+  background-image: url("../images/promo/ellipse.webp");
+  background-repeat: no-repeat;
+  background-position: 0% 90%;
+  background-size: contain;
+  -webkit-animation: anim 8s infinite;
+  animation: anim 8s infinite;
+}
+@media (min-width: 768px) {
+  .promo .container::before {
+    -webkit-animation: none;
+    animation: none;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: 600px;
+    height: 620px;
+    background: url("../images/promo/ellipse2.webp"), url("../images/promo/woman.webp"), url("../images/promo/ellipse.webp");
+    background-position: 60% 100%, 100% 10%, 100% 0;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 55%, contain, 60%;
   }
 }
 .promo__info {
@@ -1465,239 +1491,6 @@ button[type=submit]:disabled {
     line-height: 120%;
   }
 }
-.promo__pic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 350px;
-  min-height: 348px;
-  margin-left: auto;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-@media (min-width: 992px) {
-  .promo__pic {
-    width: 400px;
-    min-height: 650px;
-  }
-}
-.promo__pic--pic-w {
-  position: absolute;
-  bottom: -30px;
-  right: -15%;
-  width: 316.54px;
-  height: 430px;
-}
-@media (min-width: 576px) {
-  .promo__pic--pic-w {
-    width: 526px;
-    height: 620px;
-    top: 0;
-    bottom: -30px;
-    right: -48%;
-  }
-}
-@media (min-width: 992px) {
-  .promo__pic--pic-w {
-    width: 505px;
-    height: 761px;
-  }
-}
-.promo__pic--pic-w::before {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  bottom: 0;
-  right: 10%;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/promo/woman.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-@supports (background-image: -webkit-image-set(url("../images/promo/woman.webp") 1x)) {
-  .promo__pic--pic-w::before {
-    background-image: url("../images/promo/woman.webp");
-  }
-}
-.promo__pic--pic-2 {
-  position: absolute;
-  bottom: 5%;
-  left: 10%;
-  width: 265.77px;
-  height: 265.77px;
-}
-@media (min-width: 576px) {
-  .promo__pic--pic-2 {
-    width: 409px;
-    height: 409px;
-    left: -23%;
-  }
-}
-@media (min-width: 992px) {
-  .promo__pic--pic-2 {
-    width: 424px;
-    height: 424px;
-    left: -68%;
-    bottom: 6%;
-  }
-}
-.promo__pic--pic-2::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/promo/ellipse2.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-@supports (background-image: -webkit-image-set(url("../images/promo/ellipse2.webp") 1x)) {
-  .promo__pic--pic-2::before {
-    background-image: url("../images/promo/ellipse2.webp");
-  }
-}
-.promo__pic--pic-1 {
-  position: absolute;
-  top: -10%;
-  right: -30%;
-  width: 284.57px;
-  height: 284.57px;
-}
-@media (min-width: 576px) {
-  .promo__pic--pic-1 {
-    width: 406px;
-    height: 407px;
-    top: -60%;
-  }
-}
-@media (min-width: 992px) {
-  .promo__pic--pic-1 {
-    width: 454px;
-    height: 454px;
-    right: -32px;
-    top: -5%;
-  }
-}
-.promo__pic--pic-1::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  right: -10px;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/promo/ellipse.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-@supports (background-image: -webkit-image-set(url("../images/promo/ellipse.webp") 1x)) {
-  .promo__pic--pic-1::before {
-    background-image: url("../images/promo/ellipse.webp");
-  }
-}
-.promo__picture {
-  position: relative;
-  max-width: 260px;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
-@media (min-width: 576px) {
-  .promo__picture {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-@media (min-width: 768px) {
-  .promo__picture {
-    position: relative;
-    max-width: 100%;
-  }
-}
-.promo__picture picture {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.promo__picture::after {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/promo/ellipse2.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  animation: anim 6s infinite reverse;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-@supports (background-image: -webkit-image-set(url("../images/promo/ellipse2.webp") 1x)) {
-  .promo__picture::after {
-    background-image: url("../images/promo/ellipse2.webp");
-  }
-}
-@media (min-width: 576px) {
-  .promo__picture::after {
-    top: 10%;
-    right: -10%;
-  }
-}
-@media (min-width: 768px) {
-  .promo__picture::after {
-    top: -10%;
-    right: -10%;
-  }
-}
-.promo__picture::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  bottom: -35%;
-  right: 30%;
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 400px;
-  background-image: url("../images/promo/ellipse.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-animation: anim 8s infinite;
-  animation: anim 8s infinite;
-}
-@supports (background-image: -webkit-image-set(url("../images/promo/ellipse.webp") 1x)) {
-  .promo__picture::before {
-    background-image: url("../images/promo/ellipse.webp");
-  }
-}
-@media (min-width: 576px) {
-  .promo__picture::before {
-    bottom: -60%;
-    width: 40vw;
-  }
-}
-@media (min-width: 768px) {
-  .promo__picture::before {
-    bottom: -55%;
-    width: 30vw;
-  }
-}
-@media (min-width: 1200px) {
-  .promo__picture::before {
-    bottom: -35%;
-    width: 26vw;
-  }
-}
 
 @-webkit-keyframes show-element {
   from {
@@ -1799,8 +1592,6 @@ button[type=submit]:disabled {
 .profit {
   position: relative;
   overflow: hidden;
-  background-color: rgba(4, 8, 40, 0.8);
-  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051f 100%);
 }
 @media (min-width: 1200px) {
   .profit {
@@ -1817,22 +1608,7 @@ button[type=submit]:disabled {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-.profit__wrapper::before {
-  content: "";
-  position: absolute;
-  bottom: 125%;
-  left: 10%;
-  width: 494px;
-  height: 494px;
-  background-image: radial-gradient(50% 50% at 50% 50%, #0720be 76.56%, rgba(9, 39, 98, 0) 100%);
-  -webkit-filter: blur(162px);
-  filter: blur(162px);
-}
-@media (min-width: 1200px) {
-  .profit__wrapper::before {
-    bottom: 45%;
-  }
+  max-width: 100%;
 }
 .profit .container {
   position: relative;
@@ -1853,29 +1629,6 @@ button[type=submit]:disabled {
     padding-top: 0;
     padding-bottom: 54px;
   }
-}
-.profit .container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 494px;
-  height: 494px;
-  background-image: radial-gradient(50% 50% at 50% 50%, #0720be 76.56%, rgba(9, 39, 98, 0) 100%);
-  -webkit-filter: blur(162px);
-  filter: blur(162px);
-}
-.profit .container::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  bottom: 30%;
-  right: 0;
-  width: 500px;
-  height: 500px;
-  background-image: radial-gradient(50% 50% at 50% 50%, #0720be 76.56%, rgba(9, 39, 98, 0) 100%);
-  -webkit-filter: blur(162px);
-  filter: blur(162px);
 }
 .profit .products {
   width: 100%;
@@ -2002,9 +1755,6 @@ button[type=submit]:disabled {
   position: relative;
   padding-top: 50px;
   color: #fff;
-  overflow: hidden;
-  background-color: rgba(4, 8, 40, 0.8);
-  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051f 100%);
 }
 @media (min-width: 768px) {
   .gallery {
@@ -2016,31 +1766,6 @@ button[type=submit]:disabled {
     padding-top: 115px;
   }
 }
-.gallery::before {
-  content: "";
-  position: absolute;
-  top: 15%;
-  right: 0;
-  width: 494px;
-  height: 494px;
-  background-image: radial-gradient(50% 50% at 50% 50%, #0720be 76.56%, rgba(9, 39, 98, 0) 100%);
-  -webkit-filter: blur(162px);
-  filter: blur(162px);
-  -webkit-animation: anim 5s infinite;
-  animation: anim 5s infinite;
-}
-.gallery::after {
-  content: "";
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 494px;
-  height: 494px;
-  background-image: radial-gradient(50% 50% at 50% 50%, #0720be 76.56%, rgba(9, 39, 98, 0) 100%);
-  -webkit-filter: blur(162px);
-  filter: blur(162px);
-  animation: anim 5s infinite reverse;
-}
 .gallery .container {
   position: relative;
   z-index: 2;
@@ -2049,22 +1774,12 @@ button[type=submit]:disabled {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .gallery .container {
     padding: 0;
   }
-}
-.gallery .container::after {
-  content: "";
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  width: 494px;
-  height: 494px;
-  background-image: radial-gradient(50% 50% at 50% 50%, #0720be 76.56%, rgba(9, 39, 98, 0) 100%);
-  -webkit-filter: blur(162px);
-  filter: blur(162px);
 }
 .gallery__header {
   display: -webkit-box;
@@ -2241,6 +1956,7 @@ button[type=submit]:disabled {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 700px;
 }
 .faq .container {
   position: relative;
@@ -2329,17 +2045,6 @@ button[type=submit]:disabled {
     right: 6%;
   }
 }
-.faq__bg--2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 938px;
-  height: 636px;
-  max-width: 100%;
-  background: radial-gradient(50% 50% at 50% 50%, #071053 40.76%, #020c56 76.56%, #000 98.44%);
-  -webkit-filter: blur(162px);
-  filter: blur(162px);
-}
 .faq__list {
   position: relative;
   z-index: 5;
@@ -2381,8 +2086,6 @@ button[type=submit]:disabled {
   position: relative;
   padding-top: 54px;
   color: #fff;
-  overflow: hidden;
-  background-image: -webkit-linear-gradient(0deg, #010310 0%, #01051f 100%);
 }
 @media (min-width: 768px) {
   .advantages {
@@ -2424,17 +2127,6 @@ button[type=submit]:disabled {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-}
-.advantages .container::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  width: 494px;
-  height: 494px;
-  background-image: radial-gradient(50% 50% at 50% 50%, #0720be 76.56%, rgba(9, 39, 98, 0) 100%);
-  -webkit-filter: blur(162px);
-  filter: blur(162px);
 }
 .advantages .title {
   position: relative;
@@ -3250,13 +2942,17 @@ button[type=submit]:disabled {
 }
 @media (min-width: 768px) {
   .page-stub::before {
+    z-index: 0;
     position: absolute;
     content: "";
+    top: auto;
     bottom: -50%;
     left: 20%;
+    right: auto;
     width: 494px;
     height: 494px;
-    background-image: radial-gradient(50% 50% at 50% 50%, #1a61cb 76.56%, rgba(9, 39, 98, 0) 100%);
+    max-width: 100%;
+    background-image: radial-gradient(50% 50% at 50% 50%, #0720be 76.56%, rgba(9, 39, 98, 0) 100%);
     -webkit-filter: blur(162px);
     filter: blur(162px);
   }
