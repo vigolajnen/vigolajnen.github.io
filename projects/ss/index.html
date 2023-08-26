@@ -41,15 +41,10 @@
       var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
       })(window, document, 'script', 'cloud.roistat.com', '85417265771b0fc5af8bf2070bcc89db');</script><script>window.addEventListener('DOMContentLoaded', function() {
             //- Клик по кнопке купить Первый экран
-        //- document.getElementById("click_basic_first").onclick = function() {
-        //-   //- console.log('click_basic_first');
-        //-   roistat.event.send("click_basic_first");
-        //- };
-      
-       document.getElementById("click_basic_first").addEventListener('click', function() {
-            //- console.log('click_buy_prices');
-            roistat?.event?.send("click_basic_first");
-          })
+        document.getElementById("click_basic_first").onclick = function() {
+          //- console.log('click_basic_first');
+          roistat.event.send("click_basic_first");
+        };
       
           //- Клик по кнопке купить Описание тарифов
         document.querySelectorAll('.click_buy_prices').forEach(btnPay => {
