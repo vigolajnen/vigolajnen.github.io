@@ -220,7 +220,7 @@ button[type=submit]:disabled {
 
 .main {
   padding: 0;
-  background: -webkit-linear-gradient(0deg, #010310 0%, #01051f 100%);
+  background: -webkit-linear-gradient(0deg, #010310 0%, #030b41 100%);
 }
 
 .visually-hidden {
@@ -1275,6 +1275,11 @@ button[type=submit]:disabled {
     }
   }
 }
+@media (min-width: 1920px) {
+  .promo {
+    overflow: visible;
+  }
+}
 .promo .container {
   position: relative;
   display: -webkit-box;
@@ -1291,8 +1296,8 @@ button[type=submit]:disabled {
   max-width: 1440px;
   margin: 0;
   padding: 50px 15px;
-  padding-bottom: 350px;
-  background: radial-gradient(30em at top, transparent 0%, #150e4f 0.01%, transparent 50%), radial-gradient(40em at bottom, transparent 0%, #130e3e 0.01%, transparent 50%);
+  padding-bottom: 450px;
+  background: radial-gradient(30em at top, transparent 0%, #231d5a 0.01%, transparent 50%), radial-gradient(20em at bottom, transparent 0%, #231d5a 0.01%, transparent 50%);
 }
 @media (min-width: 576px) {
   .promo .container {
@@ -1315,6 +1320,7 @@ button[type=submit]:disabled {
 @media (min-width: 992px) {
   .promo .container {
     padding-top: 75px;
+    background: radial-gradient(30em at top, transparent 0%, #231d5a 0.01%, transparent 50%), radial-gradient(30em at bottom, transparent 0%, #231d5a 0.01%, transparent 50%);
   }
 }
 .promo .container::before {
@@ -1322,12 +1328,14 @@ button[type=submit]:disabled {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 300px;
+  left: 0;
+  margin: 0 auto;
+  width: 350px;
   height: 100%;
-  height: 400px;
+  height: 450px;
   background: url("../images/promo/ellipse2.png"), url("../images/promo/woman.png"), url("../images/promo/ellipse.png");
   background-image: url("../images/promo/ellipse2.webp"), url("../images/promo/woman.webp"), url("../images/promo/ellipse.webp");
-  background-position: 30% 100%, 100% 10%, 100% 0;
+  background-position: 20% 100%, 80% 10%, 60% 0;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 70%, contain, 70%;
   -webkit-animation: show-element-pic1 3s forwards;
@@ -1335,10 +1343,11 @@ button[type=submit]:disabled {
 }
 @media (min-width: 576px) {
   .promo .container::before {
+    left: auto;
     top: 0;
     bottom: auto;
     height: 470px;
-    background-position: 0 90%, 100% 10%, 100% 0;
+    background-position: 10% 100%, 100% 10%, 100% 0;
   }
 }
 @media (min-width: 768px) {
@@ -1347,17 +1356,29 @@ button[type=submit]:disabled {
     right: 0;
     bottom: auto;
     width: 600px;
-    height: 620px;
-    background-position: 60% 89%, 100% 10%, 100% 0;
+    height: 600px;
+    background-position: 50% 89%, 80% 10%, 90% 0;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 55%, 64%, 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .promo .container::before {
+    top: 5%;
+    right: 0;
+    bottom: auto;
+    width: 650px;
+    height: 650px;
+    background-position: 50% 89%, 80% 10%, 90% 0;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 55%, 64%, 60%;
   }
 }
 @media (min-width: 1920px) {
   .promo .container::before {
-    width: 670px;
-    height: 670px;
-    background-position: 65% 89%, 100% 10%, 100% 0;
+    width: 750px;
+    height: 750px;
+    background-position: 50% 89%, 80% 10%, 90% 0;
     background-size: 55%, 64%, 60%;
   }
 }
@@ -1592,7 +1613,11 @@ button[type=submit]:disabled {
 }
 .profit {
   position: relative;
-  overflow: hidden;
+}
+@media (min-width: 1300px) {
+  .profit {
+    overflow: hidden;
+  }
 }
 .profit__wrapper {
   position: relative;
@@ -1606,7 +1631,12 @@ button[type=submit]:disabled {
   justify-content: center;
   max-width: 100%;
   padding-top: 50px;
-  background: radial-gradient(40em at top, transparent 0%, #130e3e 0.01%, transparent 50%);
+  background: radial-gradient(15em at top, transparent 0%, #231d5a 0.01%, transparent 50%);
+}
+@media (min-width: 768px) {
+  .profit__wrapper {
+    background: radial-gradient(40em at top, transparent 0%, #231d5a 0.01%, transparent 50%);
+  }
 }
 .profit .container {
   position: relative;
@@ -1620,11 +1650,16 @@ button[type=submit]:disabled {
   justify-content: center;
   max-width: 1440px;
   padding: 70px 15px 40px;
-  background: radial-gradient(40em at top, transparent 0%, #130e3e 0.01%, transparent 50%), radial-gradient(40em at bottom, transparent 0%, #130e3e 0.01%, transparent 50%);
+  background: radial-gradient(20em at top, transparent 0%, #231d5a 0.01%, transparent 50%), radial-gradient(20em at bottom, transparent 0%, #231d5a 0.01%, transparent 50%);
+}
+@media (min-width: 768px) {
+  .profit .container {
+    background: radial-gradient(30em at top, transparent 0%, #231d5a 0.01%, transparent 50%), radial-gradient(40em at bottom, transparent 0%, #231d5a 0.01%, transparent 50%);
+  }
 }
 @media (min-width: 992px) {
   .profit .container {
-    padding-top: 70px;
+    padding-top: 20px;
     padding-bottom: 54px;
   }
 }
@@ -1763,16 +1798,17 @@ button[type=submit]:disabled {
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
-  background: radial-gradient(40em at top, transparent 0%, #130e3e 0.01%, transparent 50%), radial-gradient(40em at center, transparent 0%, #130e3e 0.01%, transparent 50%), radial-gradient(40em at bottom, transparent 0%, #130e3e 0.01%, transparent 50%);
+  background: radial-gradient(20em at top, transparent 0%, #231d5a 0.01%, transparent 50%), radial-gradient(40em at center, transparent 0%, #231d5a 0.01%, transparent 50%), radial-gradient(20em at bottom, transparent 0%, #231d5a 0.01%, transparent 50%);
 }
 @media (min-width: 768px) {
   .gallery .container {
     padding-top: 54px;
+    background: radial-gradient(40em at top, transparent 0%, #231d5a 0.01%, transparent 50%), radial-gradient(40em at center, transparent 0%, #231d5a 0.01%, transparent 50%), radial-gradient(40em at bottom, transparent 0%, #231d5a 0.01%, transparent 50%);
   }
 }
 @media (min-width: 1200px) {
   .gallery .container {
-    padding-top: 115px;
+    padding-top: 50px;
   }
 }
 .gallery__header {
@@ -1958,11 +1994,13 @@ button[type=submit]:disabled {
   padding: 0 15px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background: radial-gradient(40em at top, transparent 0%, #130e3e 0.01%, transparent 50%), radial-gradient(40em at bottom, transparent 0%, #130e3e 0.01%, transparent 0%);
+  padding-top: 50px;
+  background: radial-gradient(20em at top, transparent 0%, #231d5a 0%, transparent 50%), radial-gradient(20em at bottom, transparent 0%, #231d5a 0%, transparent 0%);
 }
 @media (min-width: 768px) {
   .faq .container {
-    padding-top: 50px;
+    padding-top: 25px;
+    background: radial-gradient(40em at top, transparent 0%, #231d5a 0%, transparent 50%), radial-gradient(40em at bottom, transparent 0%, #231d5a 0%, transparent 0%);
   }
 }
 @media (min-width: 992px) {
@@ -2088,7 +2126,6 @@ button[type=submit]:disabled {
 .advantages .container {
   z-index: 1;
   position: relative;
-  padding-top: 54px;
   width: 100%;
   max-width: 1110px;
   display: -webkit-box;
@@ -2102,12 +2139,12 @@ button[type=submit]:disabled {
   -ms-flex-align: center;
   align-items: center;
   gap: 42px;
-  background: radial-gradient(40em at top, transparent 0%, #130e3e 0.01%, transparent 50%), radial-gradient(40em at bottom, transparent 0%, #130e3e 0.01%, transparent 50%);
+  background: radial-gradient(20em at top, transparent 0%, #231d5a 0%, transparent 50%), radial-gradient(20em at bottom, #231d5a 0%, transparent 50%);
 }
 @media (min-width: 768px) {
   .advantages .container {
     padding-bottom: 54px;
-    padding-top: 80px;
+    background: radial-gradient(40em at top, transparent 0%, #231d5a 0%, transparent 50%), radial-gradient(40em at bottom, #231d5a 0%, transparent 50%);
   }
 }
 @media (min-width: 992px) {
@@ -2156,8 +2193,6 @@ button[type=submit]:disabled {
   justify-content: space-between;
   gap: 20px;
   width: 100%;
-  padding-bottom: 44px;
-  margin-bottom: 34px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -2492,13 +2527,7 @@ button[type=submit]:disabled {
 
 .products {
   position: relative;
-  background: radial-gradient(40em at bottom, transparent 0%, #130e3e 0.01%, transparent 50%);
-}
-@media (min-width: 768px) {
-  .products {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+  background: radial-gradient(40em at bottom, transparent 0%, #231d5a 0.01%, transparent 50%);
 }
 @media (min-width: 1200px) {
   .products {
@@ -2538,21 +2567,23 @@ button[type=submit]:disabled {
 }
 .products .bg-pic-3 {
   position: absolute;
-  top: -3%;
-  left: -47%;
-  width: 420px;
-  height: 420px;
+  top: 0;
+  left: 0;
+  width: 200px;
+  max-width: 100%;
+  height: 200px;
   animation: anim 4s infinite reverse;
 }
 @media (min-width: 768px) {
   .products .bg-pic-3 {
-    left: -20%;
+    left: 0%;
   }
 }
 @media (min-width: 1200px) {
   .products .bg-pic-3 {
-    top: 30%;
-    left: 15%;
+    top: auto;
+    left: 45%;
+    bottom: 10%;
   }
 }
 .products .bg-pic-3::before {
@@ -2561,8 +2592,8 @@ button[type=submit]:disabled {
   z-index: 0;
   bottom: 0;
   right: 0;
-  width: 420px;
-  height: 420px;
+  width: 300px;
+  height: 300px;
   background-image: url("../images/profit/circle.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -2570,6 +2601,12 @@ button[type=submit]:disabled {
 @supports (background-image: -webkit-image-set(url("../images/profit/circle.webp") 1x)) {
   .products .bg-pic-3::before {
     background-image: url("../images/profit/circle.webp");
+  }
+}
+@media (min-width: 768px) {
+  .products .bg-pic-3::before {
+    width: 420px;
+    height: 420px;
   }
 }
 .products .bg-pic-2 {
@@ -2585,12 +2622,13 @@ button[type=submit]:disabled {
 }
 @media (min-width: 768px) {
   .products .bg-pic-2 {
-    right: -20%;
+    top: 0;
+    right: 10%;
   }
 }
 @media (min-width: 992px) {
   .products .bg-pic-2 {
-    right: -10%;
+    right: 0%;
   }
 }
 @media (min-width: 1200px) {
@@ -2620,7 +2658,7 @@ button[type=submit]:disabled {
   z-index: 1;
   display: none;
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 84%;
   width: 120px;
   height: 120px;
@@ -2630,7 +2668,7 @@ button[type=submit]:disabled {
 @media (min-width: 768px) {
   .products .bg-pic-1 {
     display: block;
-    left: -20%;
+    left: 0%;
     width: 408px;
     height: 408px;
   }
@@ -2638,7 +2676,7 @@ button[type=submit]:disabled {
 @media (min-width: 992px) {
   .products .bg-pic-1 {
     top: 60%;
-    left: -5%;
+    left: 5%;
   }
 }
 @media (min-width: 1200px) {
@@ -2676,12 +2714,6 @@ button[type=submit]:disabled {
   flex-direction: column;
   max-width: 395px;
   height: auto;
-  margin-bottom: 2rem;
-}
-@media (min-width: 576px) {
-  .products__item {
-    margin-bottom: 0;
-  }
 }
 @media (min-width: 768px) {
   .products__item {
