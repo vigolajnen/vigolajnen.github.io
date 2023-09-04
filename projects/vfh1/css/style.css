@@ -2547,6 +2547,37 @@ yx-axis
   border-radius: 16px;
   overflow: hidden;
 }
+.slider--main .swiper-container {
+  overflow: hidden;
+  position: relative;
+  width: 99.4%;
+  border-radius: 16px;
+}
+@media (min-width: 425px) {
+  .slider--main .swiper-container {
+    width: 99.2%;
+  }
+}
+@media (min-width: 576px) {
+  .slider--main .swiper-container {
+    width: 99.1%;
+  }
+}
+@media (min-width: 768px) {
+  .slider--main .swiper-container {
+    width: 99.5%;
+    box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  }
+}
+@media (min-width: 1920px) {
+  .slider--main .swiper-container {
+    width: 99.4%;
+  }
+}
+.slider--main .swiper-wrapper {
+  height: auto;
+  box-shadow: none;
+}
 .slider .swiper-container {
   position: relative;
 }
@@ -4250,6 +4281,16 @@ yx-axis
   border-radius: 16px;
   overflow: hidden;
   min-height: 54vw;
+}
+@media (min-width: 576px) {
+  .main__slider .slider--bg .swiper-slide {
+    min-height: 40vw;
+  }
+}
+@media (min-width: 768px) {
+  .main__slider .slider--bg .swiper-slide {
+    min-height: 50vw;
+  }
 }
 @media (min-width: 992px) {
   .main__slider .slider--bg .swiper-slide {
@@ -6040,7 +6081,7 @@ yx-axis
   display: block;
 }
 
-.page-sale .container {
+.page-sale.container {
   position: relative;
   display: flex;
   flex-direction: row;
