@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Тренеры Fitness House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Start">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="container"><a class="phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+              <svg class="icon" width="13" height="22" viewBox="0 0 13 22">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg><span>(812) 610 06 06</span></a><a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
+              <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                <use xlink:href="img/sprite.svg#user-lk"></use>
+              </svg><span>Личный кабинет</span></a>
+        <button class="page-header__btn-menu" aria-label="Открыть меню">
+              <svg class="icon" width="40" height="19" viewBox="0 0 40 19">
+                <use xlink:href="img/sprite.svg#menu"></use>
+              </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <div class="mobile-menu__wrapper">
+          <button class="mobile-menu__btn-close" aria-label="Закрыть меню">
+                <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                  <use xlink:href="img/sprite.svg#btn-close"></use>
+                </svg>
+          </button><a class="link-text link-text--svg" href="lk">
+                <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                  <use xlink:href="img/sprite.svg#user-lk"></use>
+                </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
+          <ul class="list list--bold">
+            <li><a href="sale.html">Акции</a></li>
+            <li><a href="clubs.html">Клубы</a></li>
+            <li><a href="#">Тренеры</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+          </ul>
+          <ul class="list">
+            <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Реклама</a></li>
+          </ul>
+          <hr><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
+                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <ul class="social">
+            <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="31" height="19" viewBox="0 0 31 19">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--inst" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="31" height="22" viewBox="0 0 31 22">
+                            <use xlink:href="img/sprite.svg#youtube"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--fb" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="26" height="27" viewBox="0 0 26 27">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <nav class="nav-menu container">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item nav-menu__item--city">
+          <div class="nav-city">
+            <button class="nav-city__title" tabindex="0"><span>Самара</span>
+                        <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
+                          <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+            </button>
+            <div class="nav-city__wrapper d-none">
+              <div class="my-custom-scrollbar my-custom-scrollbar-primary">
+                <ul class="nav-city__list">
+                  <li><a class="region-select" href="/" data-region="1">Санкт-Петербург</a></li>
+                  <li><a class="region-select" href="index-n-novgorod.html" data-region="2">Нижний Новгород</a></li>
+                  <li><a class="region-select" href="index-kazan.html" data-region="3">Казань</a></li>
+                  <li><a class="region-select" href="index-tolyatti.html" data-region="4">Тольятти</a></li>
+                  <li><a class="region-select" href="1976.html" data-region="5">Самара</a></li>
+                  <li><a class="region-select" href="2123.html" data-region="6">Ульяновск</a></li>
+                  <li><a class="region-select" href="2181.html" data-region="7">Архангельск</a></li>
+                  <li><a class="region-select" href="2210.html" data-region="8">Ижевск</a></li>
+                  <li><a class="region-select" href="2236.html" data-region="9">Ярославль</a></li>
+                  <li><a class="region-select" href="2473.html" data-region="11">Петрозаводск</a></li>
+                  <li><a class="region-select" href="2526.html" data-region="12">Мурманск</a></li>
+                  <li><a class="region-select" href="2537.html" data-region="13">Рязань</a></li>
+                  <li><a class="region-select" href="3172.html" data-region="14">Набережные Челны</a></li>
+                  <li><a class="region-select" href="5556.html" data-region="15">Тула</a></li>
+                  <li><a class="region-select" href="6804.html" data-region="16">Нижнекамск</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-menu__item  order-2"><a class="nav-menu__link nav-menu__link--sale" href="sale.html"><span class="d-none d-sm-block">Акции</span><span class="d-sm-none">Акционные предложения</span>
+                      <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                        <use xlink:href="img/sprite.svg#sale"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link nav-menu__link" href="clubs.html"><span>Клубы</span>
+                      <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                        <use xlink:href="img/sprite.svg#city"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Тренеры</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#trainer"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="schedule.html"><span>Расписание</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#schedule"></use>
+                      </svg></a></li>
+      </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
+    </nav>
+    <main class="container">
+      <section class="coaches-form-search">
+        <form class="form">
+          <h3 class="title">Найти своего тренера</h3>
+          <label class="form-label"><span class="form__label-name">Введите имя или фамилию тренера</span>
+            <input class="form-control form-control-search-icon" type="text" placeholder="Быстрый поиск">
+          </label>
+          <div class="form__wrapper">
+            <label class="form-label"><span class="form__label-name">Выберите клуб</span>
+              <select class="form-select form-control selectpicker" aria-label="Выберите клуб" autocomplete="off" required>
+                <option selected disabled value="">Выберите клуб</option>
+                <option value="На Выбогской">На Выбогской</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Краснопутиловской">На Краснопутиловской</option>
+                <option value="На Северном">На Северном</option>
+                <option value="На Шаврова">На Шаврова</option>
+              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+            </label>
+            <label class="form-label"><span class="form__label-name">Выберите направление</span>
+              <select class="form-select form-control selectpicker" aria-label="Выберите направление" autocomplete="off">
+                <option selected disabled value="Выберите категорию">Выберите направление</option>
+                <option value="Водный комплекс">Водный комплекс</option>
+                <option value="Групповые занятия">Групповые занятия</option>
+                <option value="Детские секции «Вода»">Детские секции «Вода»</option>
+                <option value="Детские секции «Вода»">Детские секции «Суша»</option>
+              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+            </label>
+            <div class="form__btns">
+              <button class="button button--yellow" type="submit" data-schedule="schedule">Подобрать</button>
+              <button class="button button--outline" type="reset">Сбросить</button>
+            </div>
+          </div>
+          <button class="button coaches-form-search__btn-more">ещё ᨆ</button>
+        </form>
+      </section>
+      <div class="coaches-list">
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Анна Зоннейфельд</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер-тренер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="https://www.fitnesshouse.ru/assets/cache/images/assets/snippets/coach/uploads/cropped/15587855005ce92ddc1e3b8-282x272-a00.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Дмитрий Садовников</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="https://www.fitnesshouse.ru/assets/cache/images/assets/snippets/coach/uploads/1611427840600c7000c3ea6-282x272-0c9.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Екатерина Ворошилова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Маргарита Моисейченко</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Антонина Сбойнова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Мария Ефимова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Сергей Халепо</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/2.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>2.350 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Юлия Чистякова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/3.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.950 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Игорь Усатов</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/4.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>2.900 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Анна Зоннейфельд</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер-тренер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="https://www.fitnesshouse.ru/assets/cache/images/assets/snippets/coach/uploads/cropped/15587855005ce92ddc1e3b8-282x272-a00.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Дмитрий Садовников</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="https://www.fitnesshouse.ru/assets/cache/images/assets/snippets/coach/uploads/1611427840600c7000c3ea6-282x272-0c9.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Екатерина Ворошилова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Маргарита Моисейченко</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Антонина Сбойнова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Мария Ефимова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Сергей Халепо</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/2.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>2.350 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Юлия Чистякова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/3.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.950 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Игорь Усатов</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/4.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>2.900 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Анна Зоннейфельд</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер-тренер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="https://www.fitnesshouse.ru/assets/cache/images/assets/snippets/coach/uploads/cropped/15587855005ce92ddc1e3b8-282x272-a00.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Дмитрий Садовников</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="https://www.fitnesshouse.ru/assets/cache/images/assets/snippets/coach/uploads/1611427840600c7000c3ea6-282x272-0c9.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Екатерина Ворошилова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Мастер</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Маргарита Моисейченко</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Антонина Сбойнова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Мария Ефимова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/1.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.650 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Сергей Халепо</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/2.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>2.350 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Юлия Чистякова</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Профи</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/3.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>1.950 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+              <section class="coaches-preview">
+                <div class="coaches-preview__header">
+                  <h3 class="coaches-preview__title">Игорь Усатов</h3>
+                        <button class="coach-category js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Согласно категории тренеров Фитнес Хаус" aria-label="Согласно категории тренеров Фитнес Хаус"><span>Эксперт</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
+                                      <use xlink:href="img/sprite.svg#cup"></use>
+                                    </svg>
+                        </button>
+                </div><a class="coaches-preview__link" href="coach.html"><img class="coaches-preview__pic" src="../../img/coaches/4.jpg" alt="" width="290" height="320"></a>
+                <div class="coaches-preview__footer">
+                  <div class="coaches-preview__price">Стоимость тренировки<span>2.900 руб.</span></div>
+                  <button class="coaches-preview__label js-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Стоимость тренировки в интернет-магазине" aria-label="Стоимость тренировки в интернет-магазине">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                                <use xlink:href="img/sprite.svg#information"></use>
+                              </svg>
+                  </button>
+                </div>
+              </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
+                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <div class="page-footer__links links">
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Новости клубов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Академия фитнеса Корус</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Вакансии</span></a></li>
+            </ul>
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Корпоративные продажи</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Развитие регионов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Реклама в клубах</span></a></li>
+            </ul>
+          </div>
+          <div class="page-footer__support">Служба поддержки
+            <ul class="social pt-2 mb-0 pb-2">
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://wa.me/+79213443525" aria-label="Наш whatsApp" target="_blank">
+                              <svg class="icon" width="30" height="30" viewBox="0 0 19 19">
+                                <use xlink:href="img/sprite.svg#wp"></use>
+                              </svg></a></li>
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://t.me/+79213443525" aria-label="Наш telegram" target="_blank">
+                              <svg class="icon" width="21" height="17" viewBox="0 0 17 17">
+                                <use xlink:href="img/sprite.svg#tl"></use>
+                              </svg></a></li>
+            </ul><span>с 07:00 до 00:00</span>
+            <div>Email:<a href="mailto:help@fhclub.ru">help@fhclub.ru</a></div>
+          </div><a class="logo logo--footer" href="#">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo.svg"><img src="img/logo.svg" alt="Логотип компании" width="154" height="26">
+                      </picture></a>
+        </div>
+        <div class="page-footer__buttom">
+          <ul class="social">
+            <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="31" height="19" viewBox="0 0 31 19">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--inst" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="31" height="22" viewBox="0 0 31 22">
+                            <use xlink:href="img/sprite.svg#youtube"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--fb" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="26" height="27" viewBox="0 0 26 27">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+          </ul><a class="link-text" href="#">Юридическая информация</a><a class="link-text" href="#">Cоглашение на обработку персональных данных</a>
+          <div class="page-footer__copy">
+            <div>© 2007 - 2023</div>
+            <div>Все права защищены.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.min.js" type="module"></script>
+  </body>
+</html>
