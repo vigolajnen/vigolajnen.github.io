@@ -12808,6 +12808,7 @@ yx-axis
   grid-area: p;
   text-decoration: none;
   display: block;
+  background-color: #42474d;
 }
 .coaches-preview__link:focus, .coaches-preview__link:hover {
   text-decoration: none;
@@ -13000,7 +13001,7 @@ yx-axis
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px;
   font-size: 16px;
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
@@ -13016,6 +13017,11 @@ yx-axis
 }
 .coach-category:hover {
   color: #217abf;
+}
+@media (min-width: 768px) {
+  .coach-category span {
+    width: 65px;
+  }
 }
 .coach-category.initial {
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
