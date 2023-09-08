@@ -40,9 +40,9 @@
                 </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
           <ul class="list list--bold">
             <li><a href="sale.html">Акции</a></li>
-            <li><a href="clubs">Клубы</a></li>
+            <li><a href="clubs.html">Клубы</a></li>
             <li><a href="#">Тренеры</a></li>
-            <li><a href="#">Расписание</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
           </ul>
           <ul class="list">
             <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
@@ -74,7 +74,7 @@
       <ul class="nav-menu__list">
         <li class="nav-menu__item nav-menu__item--city">
           <div class="nav-city">
-            <button class="nav-city__title" role="button" tabindex="0"><span>Самара</span>
+            <button class="nav-city__title" tabindex="0"><span>Самара</span>
                         <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
                           <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
@@ -114,18 +114,18 @@
                       <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
                         <use xlink:href="img/sprite.svg#trainer"></use>
                       </svg></a></li>
-        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Расписание</span>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="schedule.html"><span>Расписание</span>
                       <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
                         <use xlink:href="img/sprite.svg#schedule"></use>
                       </svg></a></li>
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
-    <main class="main container">
+    <main class="main container main-location">
       <div class="main__grid">
         <section class="main__sale"><a class="sale section" href="#">
                       <picture>
-                        <source media="(min-width: 1200px)" srcset="img/sale/banner/1.jpg">
-                        <source media="(min-width: 768px)" srcset="img/sale/banner/2.jpg"><img src="img/sale/banner/3.jpg" alt="Акция" width="294" height="330">
+                        <source media="(min-width: 1200px)" srcset="img/sale/11.jpg">
+                        <source media="(min-width: 768px)" srcset="img/sale/11.jpg"><img src="img/sale/11.jpg" alt="Акция" width="294" height="330">
                       </picture></a>
         </section>
         <section class="main__adv">
@@ -141,7 +141,7 @@
                   <div class="advantages__title">городов<span>в россии</span></div>
                 </li>
                 <li class="advantages__item advantages__item--2">
-                  <div class="advantages__count"><span class="number">72</span>
+                  <div class="advantages__count"><span class="number">71</span>
                               <svg class="icon" width="53" height="29" viewBox="0 0 53 29">
                                 <use xlink:href="img/sprite.svg#people"></use>
                               </svg>
@@ -184,7 +184,7 @@
               <label class="form-label" for="formPhone2"><span class="form__label-name">Введите номер телефона</span>
                 <input class="form-control" type="tel" name="phone-number" id="formPhone2" placeholder="8 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
-              <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+              <label class="form-label"><span class="form__label-name">Выберите клуб</span>
                 <select class="form-select" size="1" name="club" aria-label="клуб" required>
                   <option selected value="">Ваш клуб</option>
                   <option value="На Гашека">На Гашека</option>
@@ -199,10 +199,6 @@
                 </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
               <div class="form-offers__btns">
-                <div class="custom-form-check order-1" tabindex="0">
-                  <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required tabindex="0">
-                  <label for="custom-form-check-1"><span>Даю согласие на обработку данных</span></label>
-                </div>
                 <button class="button button--red" type="submit">Подобрать</button>
               </div>
             </div>
@@ -225,14 +221,13 @@
                       </div></a>
         </section>
         <section class="main__slider">
-          <section class="slider order-2">
+          <section class="slider order-2 slider--bg slider--main">
             <div class="swiper-container">
               <!-- swiper slides-->
-              <div class="swiper-wrapper"><a class="swiper-slide" href="#" style="background-image: url(img/slider/1.jpg);"></a>
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=53);"></div>
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=52);"></div>
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=21);"></div>
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=53);"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/images/sale/July2023/presale/spb/pl.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/images/sale/July2023/arkhangelsk/zamena3/pl.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/cache/images/Photos_clubs/Foto23/003-x-d73.png);"></div>
               </div>
               <!-- !swiper slides-->
               <!-- next / prev arrows-->
@@ -275,7 +270,7 @@
                           <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
                             <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                           </label>
-                          <label class="form-label"><span class="form__label-name">Выберете клуб</span>
+                          <label class="form-label"><span class="form__label-name">Выберите клуб</span>
                             <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
                               <option selected disabled value="">Ваш клуб</option>
                               <option value="На Гашека">На Гашека</option>
@@ -358,7 +353,17 @@
                             </svg><span>Реклама в клубах</span></a></li>
             </ul>
           </div>
-          <div class="page-footer__support">Служба поддержки<span>с 07:00 до 00:00</span>
+          <div class="page-footer__support">Служба поддержки
+            <ul class="social pt-2 mb-0 pb-2">
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://wa.me/+79213443525" aria-label="Наш whatsApp" target="_blank">
+                              <svg class="icon" width="30" height="30" viewBox="0 0 19 19">
+                                <use xlink:href="img/sprite.svg#wp"></use>
+                              </svg></a></li>
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://t.me/+79213443525" aria-label="Наш telegram" target="_blank">
+                              <svg class="icon" width="21" height="17" viewBox="0 0 17 17">
+                                <use xlink:href="img/sprite.svg#tl"></use>
+                              </svg></a></li>
+            </ul><span>с 07:00 до 00:00</span>
             <div>Email:<a href="mailto:help@fhclub.ru">help@fhclub.ru</a></div>
           </div><a class="logo logo--footer" href="#">
                       <picture>
@@ -392,7 +397,7 @@
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalToggleCityLabelChange">Выберете ваш город</h5>
+            <h5 class="modal-title" id="modalToggleCityLabelChange">Выберите ваш город</h5>
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-dismiss="modal"></button>
           </div>
           <div class="modal-body">

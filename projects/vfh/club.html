@@ -40,9 +40,9 @@
                 </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
           <ul class="list list--bold">
             <li><a href="sale.html">Акции</a></li>
-            <li><a href="clubs">Клубы</a></li>
+            <li><a href="clubs.html">Клубы</a></li>
             <li><a href="#">Тренеры</a></li>
-            <li><a href="#">Расписание</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
           </ul>
           <ul class="list">
             <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
@@ -74,7 +74,7 @@
       <ul class="nav-menu__list">
         <li class="nav-menu__item nav-menu__item--city">
           <div class="nav-city">
-            <button class="nav-city__title" role="button" tabindex="0"><span>Самара</span>
+            <button class="nav-city__title" tabindex="0"><span>Самара</span>
                         <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
                           <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
@@ -114,18 +114,22 @@
                       <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
                         <use xlink:href="img/sprite.svg#trainer"></use>
                       </svg></a></li>
-        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Расписание</span>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="schedule.html"><span>Расписание</span>
                       <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
                         <use xlink:href="img/sprite.svg#schedule"></use>
                       </svg></a></li>
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
-    <main class="page-club main">
+    <main class="page-club">
       <div class="page-club__header container">
-        <div class="title">Fitness House на Северном</div>
+        <div class="page-club__title d-none d-lg-block">Fitness House<span>
+            
+             на Северном</span></div>
         <div class="page-club__wrapper">
           <div class="page-club__header-item">
-            <div class="title">Fitness House<span>на Северном</span></div>
+            <div class="page-club__title-inner d-lg-none">Fitness House<span>
+                
+                 на Северном</span></div>
             <div class="raiting">
               <iframe src="https://yandex.ru/sprav/widget/rating-badge/170179942434" width="150" height="50" frameborder="0"></iframe>
             </div>
@@ -136,12 +140,22 @@
           </div>
           <div class="page-club__header-item working-hours">
             <div class="working-hours__item">
-              <div class="subtitle">Режим работы<span></span> клуба</div>
-              <div class="working-hours__club"><span>ПН-ПТ 07:00–23:00</span><span>СБ-ВС 08:00–22:00</span></div>
+              <div class="subtitle">Режим работы<span>
+                  
+                  клуба</span></div>
+              <div class="working-hours__club">
+                <div class="working-hours__club-label">ПН-ПТ<span>07:00–23:00</span></div>
+                <div class="working-hours__club-label">СБ-ВС<span>08:00–22:00</span></div>
+              </div>
             </div>
             <div class="working-hours__item">
-              <div class="subtitle">Режим работы<span></span> коммерческого отдела</div>
-              <div class="working-hours__managers"><span>ПН-ПТ 10:00–21:00</span><span>СБ-ВС 11:00–21:00</span></div>
+              <div class="subtitle">Режим работы<span>
+                  
+                   коммерческого отдела</span></div>
+              <div class="working-hours__managers">
+                <div class="working-hours__club-label">ПН-ПТ<span>10:00–21:00</span></div>
+                <div class="working-hours__club-label">СБ-ВС<span>11:00–21:00</span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -150,22 +164,22 @@
         <div class="page-club__promo-inner">
                     <section class="slider">
                       <div class="swiper-container" id="slider-club">
-                        <div class="swiper-wrapper"><a class="swiper-slide" href="#11">
+                        <div class="swiper-wrapper"><a class="swiper-slide" href="sale.html">
                             <picture>
-                              <source media="(min-width: 1200px)" srcset="img/club/slider/slide1.webp    1x, img/club/slider/slide1@2x.webp    2x">
-                              <source media="(min-width: 450px)" srcset="img/club/slider/slide1-768.webp    1x, img/club/slider/slide1-768@2x.webp    2x"><img class="swiper-lazy" src="img/club/slider/slide1-mob.jpg" alt="1Акция!В декабре - 80%" width="342" height="400">
-                            </picture>
-                            <div class="swiper-lazy-preloader"></div></a><a class="swiper-slide" href="#22">
+                              <source>
+                              <source media="(min-width: 1200px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/July2023/main/standart-896-575.jpg">
+                              <source media="(min-width: 450px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/July2023/main/standart-pl.jpg"><img class="swiper-slicer-image swiper-lazy" src="https://www.fitnesshouse.ru/assets/images/sale/July2023/main/standar-mob.jpg" alt="1Акция!В декабре - 80%" width="342" height="400">
+                            </picture></a><a class="swiper-slide" href="sale.html">
                             <picture>
-                              <source media="(min-width: 1200px)" srcset="img/club/slider/slide1.webp    1x, img/club/slider/slide1@2x.webp    2x">
-                              <source media="(min-width: 450px)" srcset="img/club/slider/slide1-768.webp    1x, img/club/slider/slide1-768@2x.webp    2x"><img class="swiper-lazy" src="img/club/slider/slide1-mob.jpg" alt="2Акция!В декабре - 80%" width="342" height="400">
-                            </picture>
-                            <div class="swiper-lazy-preloader"></div></a><a class="swiper-slide" href="#33">
+                              <source>
+                              <source media="(min-width: 1200px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/July2023/PT/novoe/standart699-896-575.jpg">
+                              <source media="(min-width: 450px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/July2023/PT/novoe/pl-699.jpg"><img class="swiper-slicer-image swiper-lazy" src="https://www.fitnesshouse.ru/assets/images/sale/July2023/PT/novoe/699-r-mob.jpg" alt="2Акция!В декабре - 80%" width="342" height="400">
+                            </picture></a><a class="swiper-slide" href="sale.html">
                             <picture>
-                              <source media="(min-width: 1200px)" srcset="img/club/slider/slide1.webp    1x, img/club/slider/slide1@2x.webp    2x">
-                              <source media="(min-width: 450px)" srcset="img/club/slider/slide1-768.webp    1x, img/club/slider/slide1-768@2x.webp    2x"><img class="swiper-lazy" src="img/club/slider/slide1-mob.jpg" alt="3Акция!В декабре - 80%" width="342" height="400">
-                            </picture>
-                            <div class="swiper-lazy-preloader"></div></a>
+                              <source>
+                              <source media="(min-width: 1200px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/April2023/clubs/korus_896_575.png">
+                              <source media="(min-width: 450px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/mart2023/new_akcii/korus-tab-730x400.png"><img class="swiper-slicer-image swiper-lazy" src="https://www.fitnesshouse.ru/assets/images/sale/April2023/clubs/korus_mob_395x450.png" alt="3Акция!В декабре - 80%" width="342" height="400">
+                            </picture></a>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -173,10 +187,10 @@
                       </div>
                     </section>
           <form class="form form-book form needs-validation" novalidate>
-            <div class="title">Успей забронировать выгодно</div>
+            <div class="title">Заказать обратный звонок по стоимости абонемента</div>
             <div class="form-book__wrapper">
-              <label class="form-label" for="formService"><span class="form__label-name">Выберете услугу</span>
-                <select class="form-select form-control form-select" id="formService" name="formClub" aria-label="Выберете услугу" required>
+              <label class="form-label" for="formService"><span class="form__label-name">Выберите услугу</span>
+                <select class="form-select form-control form-select" id="formService" name="formClub" aria-label="Выберите услугу" required>
                   <option selected value="Абонементы">Абонементы</option>
                   <option value="Персональные тренировки">Персональные тренировки</option>
                   <option value="Дополнительные услуги">Дополнительные услуги</option>
@@ -190,69 +204,60 @@
                 <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
               <div class="form-book__btns">
-                <div class="custom-form-check order-1" tabindex="0">
-                  <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required tabindex="0">
-                  <label for="custom-form-check-1"><span>Даю согласие на обработку данных</span></label>
+                <div class="form-book__mess order-1">
+                  Отправляя свои данные, вы даете согласие с
+                  <a href="#">Политикой конфиденциальности</a>
                 </div>
-                <button class="button button--red" type="submit">Подобрать</button>
+                <button class="button button--red" type="submit">Заказать</button>
               </div>
             </div>
           </form>
         </div>
       </div>
       <div class="container">
-        <div class="content">
-          <p><span class="d-block d-sm-inline"><strong>Фитнес Хаус</strong></span><span><strong>на Северном</strong></span>  — вас приятно удивит просторный водный комплекс, где можно плавать в свое удовольствие или поучаствовать в оздоровительном занятии аквааэробикой.</p>
+        <div class="content content--promo">
+          <p><span class="d-block d-sm-inline"><strong>Фитнес Хаус</strong></span><span>
+              
+              <strong>на Северном</strong></span>  — вас приятно удивит просторный водный комплекс, где можно плавать в свое удовольствие или поучаствовать в оздоровительном занятии аквааэробикой.</p>
           <p><strong>Тренажерный зал</strong> оборудован современными и разнообразными тренажерами фирмы Technogym. Для вас в неограниченном доступе зона свободных весов, тренажеры для силовых и кардио-занятий.</p>
           <p><strong>На групповых тренировках</strong> с профессиональными инструкторами вы сможете развить пластику движений и растяжку, скорректировать осанку и фигуру, повысить тонус мышц.
              Мы заботимся о том, чтобы ваши тренировки проходили с комфортом. Поэтому все помещения оснащены хорошей вентиляцией, а в летний период работают кондиционеры.
           </p>
         </div>
-        <section class="club-services">
-          <ul class="club-services__list">
-            <li class="club-services__item club-services__item--1">
+        <h3>В клубах без бассейна</h3>
+        <section class="club-services club-services--prestige">
+          <ul class="club-services__list row">
+            <li class="col-sm-4 club-services__item club-services__item--1">
               <div class="club-services__content club-services__content--1">
                 <div class="club-services__title">Тренажерный зал</div>
                 <div class="club-services__text">Зона свободных весов, силовые тренажеры</div>
               </div>
             </li>
-            <li class="club-services__item club-services__item--2">
+            <li class="col-sm-4 club-services__item club-services__item--2">
               <div class="club-services__content club-services__content--2">
                 <div class="club-services__title">Групповые занятия</div>
-                <div class="club-services__text">Танцы, йога, пилатес, акваэробика</div>
+                <div class="club-services__text">Танцы, йога, пилатес, бокс, суставная гимнастика</div>
               </div>
             </li>
-            <li class="club-services__item club-services__item--3">
+            <li class="col-sm-4 club-services__item club-services__item--3">
               <div class="club-services__content club-services__content--3">
                 <div class="club-services__title">Кардио-зона</div>
                 <div class="club-services__text">Беговые дорожки, велосипеды, сайкл</div>
               </div>
             </li>
-            <li class="club-services__item club-services__item--4">
+            <li class="col-sm-4 club-services__item club-services__item--4">
               <div class="club-services__content club-services__content--4">
                 <div class="club-services__title">Мастер-классы от ведущих тренеров</div>
                 <div class="club-services__text"></div>
               </div>
             </li>
-            <li class="club-services__item club-services__item--5">
-              <div class="club-services__content club-services__content--5">
-                <div class="club-services__title">Бассейн</div>
-                <div class="club-services__text">Спортивный бассейн, детский бассейн</div>
-              </div>
-            </li>
-            <li class="club-services__item club-services__item--6">
+            <li class="col-sm-4 club-services__item club-services__item--6">
               <div class="club-services__content club-services__content--6">
                 <div class="club-services__title">СПА-зона</div>
                 <div class="club-services__text">Инфракрасная сауна, хаммам, финская сауна</div>
               </div>
             </li>
-            <li class="club-services__item club-services__item--7">
-              <div class="club-services__content club-services__content--7">
-                <div class="club-services__title">Детские секции</div>
-                <div class="club-services__text">Плавание, танцы, единоборства и др.</div>
-              </div>
-            </li>
-            <li class="club-services__item club-services__item--8">
+            <li class="col-sm-4 club-services__item club-services__item--8">
               <div class="club-services__content club-services__content--8">
                 <div class="club-services__title">Стартовый пакет персональных тренировок</div>
                 <div class="club-services__text"></div>
@@ -260,46 +265,173 @@
             </li>
           </ul>
         </section>
-      </div>
-      <div class="page-club__record container">
-        <div class="page-club__record-inner">
-                    <section class="slider slider-content">
-                      <div class="swiper-container" id="slider-content">
-                        <div class="swiper-wrapper"><a class="swiper-slide" href="#11">
-                            <picture>
-                              <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
-                              <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img class="swiper-lazy" src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
-                            </picture>
-                            <div class="swiper-lazy-preloader"></div></a><a class="swiper-slide" href="#22">
-                            <picture>
-                              <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
-                              <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img class="swiper-lazy" src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
-                            </picture>
-                            <div class="swiper-lazy-preloader"></div></a><a class="swiper-slide" href="#33">
-                            <picture>
-                              <source media="(min-width: 1200px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x">
-                              <source media="(min-width: 768px)" srcset="img/sale/slider/content/slide-1.webp    1x, img/sale/slider/content/slide-1@2x.webp    2x"><img class="swiper-lazy" src="img/sale/slider/content/slide-1-mob.jpg" alt="1" width="287" height="400">
-                            </picture>
-                            <div class="swiper-lazy-preloader"></div></a>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                      </div>
-                    </section><a class="link record record--club" href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">
-            <h3 class="record__title">Понравился клуб?</h3>
-            <div class="record__subtitle">
-              Запишись на
-               <span> бесплатную экскурсию</span>
-            </div>
-            <div class="link-text link-text--more"><span>записаться</span>
-                        <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
-                          <use xlink:href="img/sprite.svg#arrow"></use>
-                        </svg>
-            </div></a>
+        <h3>В клубе Охта Молл</h3>
+        <section class="club-services club-services--premier">
+          <ul class="club-services__list row">
+            <li class="col-sm-4 club-services__item club-services__item--1">
+              <div class="club-services__content club-services__content--1">
+                <div class="club-services__title">Тренажерный зал</div>
+                <div class="club-services__text">Зона свободных весов, силовые тренажеры</div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--2">
+              <div class="club-services__content club-services__content--2">
+                <div class="club-services__title">Групповые занятия</div>
+                <div class="club-services__text">Танцы, йога, пилатес, суставная гимнастика</div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--3">
+              <div class="club-services__content club-services__content--3">
+                <div class="club-services__title">Кардио-зона</div>
+                <div class="club-services__text">Беговые дорожки, велосипеды, сайкл</div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--4">
+              <div class="club-services__content club-services__content--4">
+                <div class="club-services__title">Мастер-классы от ведущих тренеров</div>
+                <div class="club-services__text"></div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--6">
+              <div class="club-services__content club-services__content--6">
+                <div class="club-services__title">СПА-зона</div>
+                <div class="club-services__text">Инфракрасная сауна, хаммам, финская сауна, джакузи с гидромассажем</div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--8">
+              <div class="club-services__content club-services__content--8">
+                <div class="club-services__title">Стартовый пакет персональных тренировок</div>
+                <div class="club-services__text"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <h3>В клубе Салова</h3>
+        <section class="club-services">
+          <ul class="club-services__list row">
+            <li class="col-sm-4 club-services__item club-services__item--1">
+              <div class="club-services__content club-services__content--1">
+                <div class="club-services__title">Тренажерный зал</div>
+                <div class="club-services__text">Зона свободных весов, силовые тренажеры</div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--2">
+              <div class="club-services__content club-services__content--2">
+                <div class="club-services__title">Групповые занятия</div>
+                <div class="club-services__text">Танцы, йога, пилатес, аквааэробика, суставная гимнастика</div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--3">
+              <div class="club-services__content club-services__content--3">
+                <div class="club-services__title">Кардио-зона</div>
+                <div class="club-services__text">Беговые дорожки, велосипеды, сайкл</div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--4">
+              <div class="club-services__content club-services__content--4">
+                <div class="club-services__title">Мастер-классы от ведущих тренеров</div>
+                <div class="club-services__text"></div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--5">
+              <div class="club-services__content club-services__content--5">
+                <div class="club-services__title">Бассейн и СПА-зона</div>
+                <div class="club-services__text">Спортивный бассейн, инфракрасная сауна, хаммам, финская сауна</div>
+              </div>
+            </li>
+            <li class="col-sm-4 club-services__item club-services__item--8">
+              <div class="club-services__content club-services__content--8">
+                <div class="club-services__title">Стартовый пакет персональных тренировок</div>
+                <div class="club-services__text"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <h3>Все остальные</h3>
+        <section class="club-services">
+          <ul class="club-services__list row">
+            <li class="col-sm-3 club-services__item club-services__item--1">
+              <div class="club-services__content club-services__content--1">
+                <div class="club-services__title">Тренажерный зал</div>
+                <div class="club-services__text">Зона свободных весов, силовые тренажеры</div>
+              </div>
+            </li>
+            <li class="col-sm-3 club-services__item club-services__item--2">
+              <div class="club-services__content club-services__content--2">
+                <div class="club-services__title">Групповые занятия</div>
+                <div class="club-services__text">Танцы, йога, пилатес, аквааэробика</div>
+              </div>
+            </li>
+            <li class="col-sm-3 club-services__item club-services__item--3">
+              <div class="club-services__content club-services__content--3">
+                <div class="club-services__title">Кардио-зона</div>
+                <div class="club-services__text">Беговые дорожки, велосипеды, сайкл</div>
+              </div>
+            </li>
+            <li class="col-sm-3 club-services__item club-services__item--4">
+              <div class="club-services__content club-services__content--4">
+                <div class="club-services__title">Мастер-классы от ведущих тренеров</div>
+                <div class="club-services__text"></div>
+              </div>
+            </li>
+            <li class="col-sm-3 club-services__item club-services__item--5">
+              <div class="club-services__content club-services__content--5">
+                <div class="club-services__title">Бассейн</div>
+                <div class="club-services__text">Спортивный бассейн, детский бассейн</div>
+              </div>
+            </li>
+            <li class="col-sm-3 club-services__item club-services__item--6">
+              <div class="club-services__content club-services__content--6">
+                <div class="club-services__title">СПА-зона</div>
+                <div class="club-services__text">Инфракрасная сауна, хаммам, финская сауна</div>
+              </div>
+            </li>
+            <li class="col-sm-3 club-services__item club-services__item--7">
+              <div class="club-services__content club-services__content--7">
+                <div class="club-services__title">Детские секции</div>
+                <div class="club-services__text">Плавание, танцы, единоборства и др.</div>
+              </div>
+            </li>
+            <li class="col-sm-3 club-services__item club-services__item--8">
+              <div class="club-services__content club-services__content--8">
+                <div class="club-services__title">Стартовый пакет персональных тренировок</div>
+                <div class="club-services__text"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="page-club__record">
+          <div class="page-club__record-inner">
+            <section class="slider slider--bg">
+              <div class="swiper-container">
+                <!-- swiper slides-->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/images/sale/July2023/presale/spb/pl.jpg);"></div>
+                  <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/images/sale/July2023/arkhangelsk/zamena3/pl.jpg);"></div>
+                  <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/cache/images/Photos_clubs/Foto23/003-x-d73.png);"></div>
+                </div>
+                <!-- !swiper slides-->
+                <!-- next / prev arrows-->
+                <div class="swiper-button-next" aria-label="кнопка вперед"></div>
+                <div class="swiper-button-prev" aria-label="кнопка назад"></div>
+                <!-- !next / prev arrows-->
+                <!-- pagination dots-->
+                <div class="swiper-pagination"></div>
+                <!-- !pagination dots-->
+              </div>
+            </section><a class="link record record--club" href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">
+              <h3 class="record__title">Понравился клуб?</h3>
+              <div class="record__subtitle">
+                Записаться на
+                <span> бесплатную экскурсию</span>
+              </div>
+              <div class="link-text link-text--more"><span>записаться</span>
+                          <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                          </svg>
+              </div></a>
+          </div>
         </div>
-      </div>
-      <div class="container">
         <section class="news-wg">
           <div class="news-wg__header">
                       <svg class="icon" width="66" height="63" viewBox="0 0 66 63">
@@ -324,58 +456,58 @@
                 <p>01 и 02 января — клубы не работают.с 03 по 08 января — по режиму выходного дня — с 08:00 до 22:00 часов.</p>
               </div>
             </li>
-          </ul><a class="link-text link-text--more" href="#"><span>Показать еще</span>
+          </ul><a class="news-wg__link link-icon link-icon--more link-icon--lower" href="#"><span>Показать еще</span>
                       <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
                         <use xlink:href="img/sprite.svg#arrow"></use>
                       </svg></a>
         </section>
-      </div>
-            <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
-              <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content" style="--pic:url('../img/modal/modal-bg-gym.jpg')">
-                  <div class="modal-header">
-                    <h5 class="title modal-title">Записаться на экскурсию</h5>
-                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                                <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
-                                  <use xlink:href="img/sprite.svg#btn-close"></use>
-                                </svg>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="form needs-validation" novalidate>
-                      <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
-                        <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form-label" for="formSingUpEmail"><span class="form__label-name">Введите @email</span>
-                        <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
-                        <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <label class="form-label"><span class="form__label-name">Выберете клуб</span>
-                        <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
-                          <option selected disabled value="">Ваш клуб</option>
-                          <option value="На Гашека">На Гашека</option>
-                          <option value="На Северном">На Северном</option>
-                          <option value="На Заречной">На Заречной</option>
-                          <option value="На Камышовой">На Камышовой</option>
-                          <option value="На Лесной">На Лесной</option>
-                          <option value="На Выборгской">На Выборгской</option>
-                          <option value="На Большевиков">На Большевиков</option>
-                          <option value="На Ладожской">На Ладожской</option>
-                          <option value="На Левашовском">На Левашовском</option>
-                        </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-                      </label>
-                      <div class="custom-form-check order-1" tabindex="0">
-                        <input class="visually-hidden" type="checkbox" id="custom-form-check" required>
-                        <label for="custom-form-check"><span>Оставляя свой email, я принимаю</span><br><a href="#">Политику конфиденциальности</a></label>
+                <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="--pic:url('../img/modal/modal-bg-gym.jpg')">
+                      <div class="modal-header">
+                        <h5 class="title modal-title">Записаться на экскурсию</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                    <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                      <use xlink:href="img/sprite.svg#btn-close"></use>
+                                    </svg>
+                        </button>
                       </div>
-                      <button class="botton button--red mt-2" type="submit">Записаться</button>
-                    </form>
+                      <div class="modal-body">
+                        <form class="form needs-validation" novalidate>
+                          <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
+                            <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label" for="formSingUpEmail"><span class="form__label-name">Введите @email</span>
+                            <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
+                            <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label"><span class="form__label-name">Выберите клуб</span>
+                            <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
+                              <option selected disabled value="">Ваш клуб</option>
+                              <option value="На Гашека">На Гашека</option>
+                              <option value="На Северном">На Северном</option>
+                              <option value="На Заречной">На Заречной</option>
+                              <option value="На Камышовой">На Камышовой</option>
+                              <option value="На Лесной">На Лесной</option>
+                              <option value="На Выборгской">На Выборгской</option>
+                              <option value="На Большевиков">На Большевиков</option>
+                              <option value="На Ладожской">На Ладожской</option>
+                              <option value="На Левашовском">На Левашовском</option>
+                            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <div class="custom-form-check order-1" tabindex="0">
+                            <input class="visually-hidden" type="checkbox" id="custom-form-check" required>
+                            <label for="custom-form-check"><span>Оставляя свой email, я принимаю</span><br><a href="#">Политику конфиденциальности</a></label>
+                          </div>
+                          <button class="botton button--red mt-2" type="submit">Записаться</button>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+      </div>
             <div class="modal fade modal-map" aria-hidden="true" tabindex="-1" id="modal-map">
               <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
@@ -450,7 +582,17 @@
                             </svg><span>Реклама в клубах</span></a></li>
             </ul>
           </div>
-          <div class="page-footer__support">Служба поддержки<span>с 07:00 до 00:00</span>
+          <div class="page-footer__support">Служба поддержки
+            <ul class="social pt-2 mb-0 pb-2">
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://wa.me/+79213443525" aria-label="Наш whatsApp" target="_blank">
+                              <svg class="icon" width="30" height="30" viewBox="0 0 19 19">
+                                <use xlink:href="img/sprite.svg#wp"></use>
+                              </svg></a></li>
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://t.me/+79213443525" aria-label="Наш telegram" target="_blank">
+                              <svg class="icon" width="21" height="17" viewBox="0 0 17 17">
+                                <use xlink:href="img/sprite.svg#tl"></use>
+                              </svg></a></li>
+            </ul><span>с 07:00 до 00:00</span>
             <div>Email:<a href="mailto:help@fhclub.ru">help@fhclub.ru</a></div>
           </div><a class="logo logo--footer" href="#">
                       <picture>
@@ -480,7 +622,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/libs-map.min.js"></script>
+    <script src="js/libs-map-slider.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=5bc879da-d208-4e6a-bfb8-ab4b7a20802a&amp;lang=ru_RU" type="text/javascript"></script>
     <script src="js/script-club.min.js" type="module"></script>
   </body>
