@@ -120,42 +120,49 @@
                       </svg></a></li>
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
-    <main class="container">
-      <section class="coaches-form-search">
+    <main>
+      <section class="coaches-form-search container-fluid">
         <form class="form">
-          <h3 class="title">Найти своего тренера</h3>
-          <label class="form-label"><span class="form__label-name">Введите имя или фамилию тренера</span>
-            <input class="form-control form-control-search-icon" type="text" placeholder="Быстрый поиск">
-          </label>
-          <div class="form__wrapper">
-            <label class="form-label"><span class="form__label-name">Выберите клуб</span>
-              <select class="form-select form-control selectpicker" aria-label="Выберите клуб" autocomplete="off" required>
-                <option selected disabled value="">Выберите клуб</option>
-                <option value="На Выбогской">На Выбогской</option>
-                <option value="На Гашека">На Гашека</option>
-                <option value="На Краснопутиловской">На Краснопутиловской</option>
-                <option value="На Северном">На Северном</option>
-                <option value="На Шаврова">На Шаврова</option>
-              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+          <div class="coaches-form-search__wrapper">
+            <h3 class="title">Найти своего тренера</h3>
+            <label class="form-label d-sm-none"><span class="form__label-name">Введите имя или фамилию тренера</span>
+              <input class="form-control form-control-search-icon" type="text" placeholder="Быстрый поиск">
             </label>
-            <label class="form-label"><span class="form__label-name">Выберите направление</span>
-              <select class="form-select form-control selectpicker" aria-label="Выберите направление" autocomplete="off">
-                <option selected disabled value="Выберите категорию">Выберите направление</option>
-                <option value="Водный комплекс">Водный комплекс</option>
-                <option value="Групповые занятия">Групповые занятия</option>
-                <option value="Детские секции «Вода»">Детские секции «Вода»</option>
-                <option value="Детские секции «Вода»">Детские секции «Суша»</option>
-              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-            </label>
-            <div class="form__btns">
-              <button class="button button--yellow" type="submit" data-schedule="schedule">Подобрать</button>
-              <button class="button button--outline" type="reset">Сбросить</button>
+            <div class="form__wrapper">
+              <label class="form-label"><span class="form__label-name">Выберите клуб</span>
+                <select class="form-select form-control selectpicker" aria-label="Выберите клуб" autocomplete="off" required>
+                  <option selected disabled value="">Выберите клуб</option>
+                  <option value="На Выбогской">На Выбогской</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Краснопутиловской">На Краснопутиловской</option>
+                  <option value="На Северном">На Северном</option>
+                  <option value="На Шаврова">На Шаврова</option>
+                </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+              </label>
+              <label class="form-label"><span class="form__label-name">Выберите направление</span>
+                <select class="form-select form-control selectpicker" aria-label="Выберите направление" autocomplete="off">
+                  <option selected disabled value="Выберите категорию">Выберите направление</option>
+                  <option value="Водный комплекс">Водный комплекс</option>
+                  <option value="Групповые занятия">Групповые занятия</option>
+                  <option value="Детские секции «Вода»">Детские секции «Вода»</option>
+                  <option value="Детские секции «Вода»">Детские секции «Суша»</option>
+                </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+              </label>
+              <div class="form__btns">
+                <button class="button button--yellow" type="submit" data-schedule="schedule">Подобрать</button>
+                <button class="button button--outline" type="reset">Сбросить</button>
+              </div>
             </div>
+            <button class="button button--outline coaches-form-search__btn-more">Больше параметров</button>
           </div>
-          <button class="button coaches-form-search__btn-more">ещё ᨆ</button>
+          <div class="coaches-form-search__search">
+            <label class="d-none d-sm-block form-label w-100"><span class="form__label-name">Введите имя или фамилию тренера</span>
+              <input class="form-control form-control-search-icon" type="text" placeholder="Быстрый поиск">
+            </label>
+          </div>
         </form>
       </section>
-      <div class="coaches-list">
+      <div class="coaches-list container">
               <section class="coaches-preview">
                 <div class="coaches-preview__header">
                   <h3 class="coaches-preview__title">Анна Зоннейфельд</h3>
@@ -643,6 +650,11 @@
                 </div>
               </section>
       </div>
+      <button class="button btn-scroll" type="button">
+                  <svg class="icon" width="104" height="104" viewBox="0 0 104 104">
+                    <use xlink:href="img/sprite.svg#btn-scroll"></use>
+                  </svg>
+      </button>
     </main>
     <footer class="page-footer">
       <div class="container">
