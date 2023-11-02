@@ -142,7 +142,7 @@
       </section>
       <section class="coach-info my-2">
         <div class="coach-info__contacts">
-          <div class="coach-info__avatar"><img src="../../img/coach/1t.jpg" alt=""></div>
+          <div class="coach-info__avatar"><img src="img/coach/1t.jpg" alt="" width="290" height="365"></div>
                 <div class="coach-contacts">
                   <h3 class="title">Всегда на связи:</h3><a class="link" href="tel:+79531503455">+7 953 150 34 55</a>
                   <div class="coach-contacts__social"><a class="link link--outline-green" href="#" target="_blank">
@@ -170,21 +170,27 @@
         </div>
       </section>
       <section class="coach-achievements"><a class="coach-achievements__coach button link" href="#modal-coach-gallery" data-bs-toggle="modal" data-bs-dismiss="modal">
-          <div class="coach-achievements__pic"><img src="../../img/coach/1.jpg" alt=""></div>
+          <div class="coach-achievements__pic"><img src="img/coach/1.jpg" alt=""></div>
           <div class="coach-achievements__name">Достижения<br>тренера</div>
           <div class="coach-achievements__arrow">
                       <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
                         <use xlink:href="img/sprite.svg#arrow"></use>
                       </svg>
           </div></a><a class="coach-achievements__client button link" href="#modal-client-gallery" data-bs-toggle="modal" data-bs-dismiss="modal">
-          <div class="coach-achievements__pic"><img src="../../img/coach/2.jpg" alt=""></div>
+          <div class="coach-achievements__pic"><img src="img/coach/2.jpg" alt=""></div>
           <div class="coach-achievements__name">Достижения<br>клиентов</div>
           <div class="coach-achievements__arrow">
                       <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
                         <use xlink:href="img/sprite.svg#arrow"></use>
                       </svg>
           </div></a><a class="coach-achievements__video button link" href="#modal-coach-video" data-bs-toggle="modal" data-bs-dismiss="modal">
-          <div class="visually-hidden">Смотреть тренировки</div><img class="icon" src="../img/coach/play-video.png" alt="" width="202" height="202"></a></section>
+          <div class="coach-achievements__pic d-block d-sm-none"><img src="img/coach/person.png" alt=""></div>
+          <div class="coach-achievements__name d-block d-sm-none">Смотреть<br>тренировки</div>
+          <div class="coach-achievements__arrow d-block d-sm-none">
+                      <svg class="icon" width="30" height="30" viewBox="0 0 30 30">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+          </div><img class="icon d-none d-sm-block" src="img/coach/play-video.png" alt="" width="202" height="202"></a></section>
       <section class="coach-directions">
         <h3 class="title">НАПРАВЛЕНИЯ</h3>
         <ul>
@@ -204,12 +210,360 @@
           </button>
         </div>
         <div class="coach-dinamic__item">
-          <button class="button button--outline-red" type="button">Записаться на стартовую тренировку</button>
+          <button class="button button--outline-red" type="button" data-bs-target="#modal-form-spt" data-bs-toggle="modal" data-bs-dismiss="modal">Записаться на стартовую тренировку</button>
           <button class="button button-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Уже есть в Вашем абонементе" aria-label="Уже есть в Вашем абонементе">
                       <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
                         <use xlink:href="img/sprite.svg#information"></use>
                       </svg>
           </button>
+        </div>
+      </section>
+      <section class="coach-reviews">
+        <div class="rating">
+          <h3 class="rating__title">
+            Рейтинг
+            <span class="rating__count">4,5</span>
+          </h3>
+          <div class="rating__stars">
+            <div class="stars">
+              <div class="stars__bottom">
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+              </div>
+              <div class="stars__top" style="width:  90%">
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+              </div>
+            </div><span class="rating__label">(на основе 25 отзывов)</span>
+          </div>
+        </div>
+        <div class="swiper reviews-slider" id="slider-coach-review">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                    <section class="review-slide">
+                      <div class="review-slide__avatar"><img src="../img/coach/1r.jpg" alt=""></div>
+                      <div class="review-slide__header">
+                        <h3 class="review-slide__title">Алиса Гордеева</h3>
+                              <div class="stars">
+                                <div class="stars__bottom">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                                <div class="stars__top" style="width:  80%">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="review-slide__text">Теперь я знаю, что обращаться за помощью это нормально....</div>
+                      <div class="review-slide__date">10 июля 2023, 10:20</div><a class="link-icon link-icon--more review-slide__link" href="#modal-review-slide" data-bs-toggle="modal" data-bs-dismiss="modal"><span>читать целиком</span>
+                                  <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg></a>
+                    </section>
+            </div>
+            <div class="swiper-slide">
+                    <section class="review-slide">
+                      <div class="review-slide__avatar"><img src="../img/coach/1r.jpg" alt=""></div>
+                      <div class="review-slide__header">
+                        <h3 class="review-slide__title">Алиса Гордеева</h3>
+                              <div class="stars">
+                                <div class="stars__bottom">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                                <div class="stars__top" style="width:  80%">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="review-slide__text">Теперь я знаю, что обращаться за помощью это нормально....</div>
+                      <div class="review-slide__date">10 июля 2023, 10:20</div><a class="link-icon link-icon--more review-slide__link" href="#modal-review-slide" data-bs-toggle="modal" data-bs-dismiss="modal"><span>читать целиком</span>
+                                  <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg></a>
+                    </section>
+            </div>
+            <div class="swiper-slide">
+                    <section class="review-slide">
+                      <div class="review-slide__avatar"><img src="../img/coach/1r.jpg" alt=""></div>
+                      <div class="review-slide__header">
+                        <h3 class="review-slide__title">Алиса Гордеева</h3>
+                              <div class="stars">
+                                <div class="stars__bottom">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                                <div class="stars__top" style="width:  80%">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="review-slide__text">Теперь я знаю, что обращаться за помощью это нормально....</div>
+                      <div class="review-slide__date">10 июля 2023, 10:20</div><a class="link-icon link-icon--more review-slide__link" href="#modal-review-slide" data-bs-toggle="modal" data-bs-dismiss="modal"><span>читать целиком</span>
+                                  <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg></a>
+                    </section>
+            </div>
+            <div class="swiper-slide">
+                    <section class="review-slide">
+                      <div class="review-slide__avatar"><img src="../img/coach/1r.jpg" alt=""></div>
+                      <div class="review-slide__header">
+                        <h3 class="review-slide__title">Алиса Гордеева</h3>
+                              <div class="stars">
+                                <div class="stars__bottom">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                                <div class="stars__top" style="width:  80%">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="review-slide__text">Теперь я знаю, что обращаться за помощью это нормально....</div>
+                      <div class="review-slide__date">10 июля 2023, 10:20</div><a class="link-icon link-icon--more review-slide__link" href="#modal-review-slide" data-bs-toggle="modal" data-bs-dismiss="modal"><span>читать целиком</span>
+                                  <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg></a>
+                    </section>
+            </div>
+            <div class="swiper-slide">
+                    <section class="review-slide">
+                      <div class="review-slide__avatar"><img src="../img/coach/1r.jpg" alt=""></div>
+                      <div class="review-slide__header">
+                        <h3 class="review-slide__title">Алиса Гордеева</h3>
+                              <div class="stars">
+                                <div class="stars__bottom">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                                <div class="stars__top" style="width:  80%">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="review-slide__text">Теперь я знаю, что обращаться за помощью это нормально....</div>
+                      <div class="review-slide__date">10 июля 2023, 10:20</div><a class="link-icon link-icon--more review-slide__link" href="#modal-review-slide" data-bs-toggle="modal" data-bs-dismiss="modal"><span>читать целиком</span>
+                                  <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg></a>
+                    </section>
+            </div>
+            <div class="swiper-slide">
+                    <section class="review-slide">
+                      <div class="review-slide__avatar"><img src="../img/coach/1r.jpg" alt=""></div>
+                      <div class="review-slide__header">
+                        <h3 class="review-slide__title">Алиса Гордеева</h3>
+                              <div class="stars">
+                                <div class="stars__bottom">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                                <div class="stars__top" style="width:  80%">
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                              <use xlink:href="img/sprite.svg#star"></use>
+                                            </svg>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="review-slide__text">Теперь я знаю, что обращаться за помощью это нормально....</div>
+                      <div class="review-slide__date">10 июля 2023, 10:20</div><a class="link-icon link-icon--more review-slide__link" href="#modal-review-slide" data-bs-toggle="modal" data-bs-dismiss="modal"><span>читать целиком</span>
+                                  <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg></a>
+                    </section>
+            </div>
+          </div>
+          <div class="nav-btn">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -290,11 +644,11 @@
       </div>
     </footer>
         <div class="modal fade modal-gallery" aria-hidden="true" tabindex="-1" id="modal-coach-gallery">
-          <div class="modal-dialog modal-md modal-dialog-centered">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
                           <svg class="icon" width="26" height="26">
-                            <use xlink:href="img/sprite.svg#btn-close"></use>
+                            <use xlink:href="img/sprite.svg#cancel"></use>
                           </svg>
               </button>
               <div class="modal-header">
@@ -303,23 +657,23 @@
               <div class="modal-body">
                 <section class="gallery-achievements">
                   <div class="gallery-achievements__container">
-                    <div class="swiper mySwiper1">
+                    <div class="swiper gallery-thumbs">
                       <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="https://www.fitnesshouse.ru/assets/snippets/coach/uploads/15725246695dbad27de0fe7.jpg" alt="Image Gallery"></div>
-                        <div class="swiper-slide"><img src="https://www.fitnesshouse.ru/assets/snippets/coach/uploads/1481525574584e4946a4598.jpg" alt="Image Gallery"></div>
-                        <div class="swiper-slide"><img src="https://www.fitnesshouse.ru/assets/snippets/coach/uploads/15638351135d363ae94adf9.jpg" alt="Image Gallery"></div>
-                        <div class="swiper-slide"><img src="https://bit.ly/2Nv9zHh" alt="Image Gallery"></div>
-                        <div class="swiper-slide"><img src="https://bit.ly/2q0iuay" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/1.webp" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/2.webp" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/3.webp" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/4.webp" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/5.webp" alt="Image Gallery"></div>
                       </div>
                       <div class="swiper-scrollbar"></div>
                     </div>
-                    <div class="swiper mySwiper2" thumbsSlider="">
+                    <div class="swiper gallery-big">
                       <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="https://www.fitnesshouse.ru/assets/snippets/coach/uploads/15725246695dbad27de0fe7.jpg" alt="Image Gallery"></div>
-                        <div class="swiper-slide"><img src="https://www.fitnesshouse.ru/assets/snippets/coach/uploads/1481525574584e4946a4598.jpg" alt="Image Gallery"></div>
-                        <div class="swiper-slide"><img src="https://www.fitnesshouse.ru/assets/snippets/coach/uploads/15638351135d363ae94adf9.jpg" alt="Image Gallery"></div>
-                        <div class="swiper-slide"><img src="https://bit.ly/2Nv9zHh" alt="Image Gallery"></div>
-                        <div class="swiper-slide"><img src="https://bit.ly/2q0iuay" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/1.webp" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/2.webp" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/3.webp" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/4.webp" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/1/5.webp" alt="Image Gallery"></div>
                       </div>
                       <div class="nav-btn">
                         <div class="swiper-button-prev"></div>
@@ -332,19 +686,23 @@
             </div>
           </div>
         </div>
-        <div class="modal fade modal-gallery" aria-hidden="true" tabindex="-1" id="modal-client-gallery">
+        <div class="modal fade modal--bg-md" aria-hidden="true" tabindex="-1" id="modal-client-gallery">
           <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content" style="--pic:url('../img/coach/modal.jpg')">
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                          <svg class="icon" width="26" height="26">
+                          <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
                             <use xlink:href="img/sprite.svg#btn-close"></use>
                           </svg>
               </button>
-              <div class="modal-header">
-                <h5 class="title">Достижения клиента</h5>
-              </div>
               <div class="modal-body">
-                <div>444444</div>
+                <div class="message">
+                  <div class="message__icon">
+                              <svg class="icon" width="55" height="54" viewBox="0 0 55 54">
+                                <use xlink:href="img/sprite.svg#modal-1"></use>
+                              </svg>
+                  </div>
+                  <p class="message__text">Данная страница находится в разработке</p>
+                </div>
               </div>
             </div>
           </div>
@@ -354,84 +712,143 @@
             <div class="modal-content">
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
                           <svg class="icon" width="26" height="26">
-                            <use xlink:href="img/sprite.svg#btn-close"></use>
+                            <use xlink:href="img/sprite.svg#cancel"></use>
                           </svg>
               </button>
               <div class="modal-header">
                 <h5 class="title">video</h5>
               </div>
               <div class="modal-body">
-                <div>77777</div>
+                <section class="gallery-achievements">
+                  <div class="gallery-achievements__container">
+                    <div class="swiper gallery-video-thumbs">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/coach/poster.jpg" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/poster.jpg" alt="Image Gallery"></div>
+                        <div class="swiper-slide"><img src="img/coach/poster.jpg" alt="Image Gallery"></div>
+                      </div>
+                      <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="swiper gallery-video-big">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide poster">
+                          <iframe width="560" height="315" src="https://vk.com/video_ext.php?oid=-22515572&amp;id=456242265&amp;hd=2" poster="img/coach/poster.jpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide poster">
+                          <iframe width="560" height="315" src="https://vk.com/video_ext.php?oid=-22515572&amp;id=456242257&amp;hd=2" poster="img/coach/poster.jpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide poster">
+                          <iframe width="560" height="315" src="https://vk.com/video_ext.php?oid=-22515572&amp;id=456242254&amp;hd=2" poster="img/coach/poster.jpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="nav-btn">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade modal--bg-md" aria-hidden="true" tabindex="-1" id="modal-form-spt">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="--pic:url('../img/modal/modal-bg-pool.jpg')">
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                          <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                            <use xlink:href="img/sprite.svg#btn-close"></use>
+                          </svg>
+              </button>
+              <div class="modal-body">
+                <h4 class="title py-4 pb-2">Оставить заявку на Пакет стартовых тренировок*</h4>
+                <p>*Стартовые пакет тренировок включает персональную тренировку в тренажерном зале, в водном комплексе, групповое занятие расширенного формата "+"</p>
+                <form class="form needs-validation pt-2 pb-4" novalidate>
+                  <label class="form-label" for="formName1"><span class="form__label-name">Введите имя</span>
+                    <input class="form-control" type="text" id="formName1" placeholder="Алексей" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form-label" for="formPhone1"><span class="form__label-name">Введите номер телефона</span>
+                    <input class="form-control" type="tel" id="formPhone1" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <label class="form-label" for="formClub"><span class="form__label-name">Выберите клуб</span>
+                    <select class="form-select form-select" id="formClub" name="formClub" aria-label="клуб" required>
+                      <option selected disabled value="">На Гашека</option>
+                      <option value="На Гашека">На Гашека</option>
+                      <option value="На Гашека">На Гашека</option>
+                      <option value="На Гашека">На Гашека</option>
+                    </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                  </label>
+                  <div class="form__btns">
+                    <div class="custom-form-check order-1" tabindex="0">
+                      <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-3" required tabindex="0">
+                      <label for="custom-form-check-3"><span>Даю согласие на обработку данных</span></label>
+                    </div>
+                    <button class="button button--red" type="submit">Подобрать</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" aria-hidden="true" tabindex="-1" id="modal-review-slide">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                          <svg class="icon" width="26" height="26">
+                            <use xlink:href="img/sprite.svg#cancel"></use>
+                          </svg>
+              </button>
+              <div class="modal-body">
+                    <section class="review-full">
+                      <div class="review-full__avatar"><img src="../img/coach/1r.jpg" alt=""></div>
+                      <div class="review-full__header">
+                        <h3 class="review-full__title">Алиса Гордеева</h3>
+                            <div class="stars">
+                              <div class="stars__bottom">
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                              </div>
+                              <div class="stars__top" style="width:  90%">
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                                          <svg class="icon" width="31" height="32" viewBox="0 0 31 32">
+                                            <use xlink:href="img/sprite.svg#star"></use>
+                                          </svg>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="review-full__text">Теперь я знаю, что обращаться за помощью это нормально. Физическое здоровье очень важно и влияет на множество аспектов жизни Теперь я знаю, что обращаться за помощью это нормально. Физическое здоровье очень важно и влияет на множество аспектов жизни Теперь я знаю, что обращаться за помощью это нормально. Физическое здоровье очень важно и влияет на множество аспектов </div>
+                      <div class="review-full__date">10 июля 2023, 10:20</div>
+                    </section>
               </div>
             </div>
           </div>
         </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script>
-      let dragSize = 50;
-      const swiper = new Swiper(".mySwiper1", {
-        init: true,
-        spaceBetween: 10,
-        slidesPerView: 4,
-        watchSlidesProgress: true,
-        direction: "vertical",
-        slidesPerView: "auto",
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          draggable: true,
-          dragSize: dragSize
-        },
-        mousewheel: true,
-        on: {
-        click(event) {
-          console.log(event.target.src);
-        },
-      }
-      });
-      
-      swiper.init();
-      
-      const swiper2 = new Swiper(".mySwiper2", {
-        //- autoplay: {
-        //-   delay: 2000,
-        //-   disableOnInteraction: false,
-        //- },
-        init: true,
-        autoHeight: true,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        on: {
-          click(event) {
-      
-            const mBody = event.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
-            const mHeader = mBody.previousSibling.previousSibling;
-            const asideSlider = event.target.parentElement.parentElement.parentElement.previousSibling.previousSibling;
-            const fullSlider = event.target.parentElement.parentElement.parentElement;
-      
-            fullSlider.classList.toggle('active');
-            mHeader.classList.toggle('d-none');
-            asideSlider.classList.toggle('d-none');
-      
-            swiper2.updateSize();
-          },
-        }
-      });
-      
-      swiper2.init();
-      swiper2.updateSize();
-      
-    </script>
     <script src="js/script.min.js" type="module"></script>
   </body>
 </html>
