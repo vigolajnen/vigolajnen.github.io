@@ -1976,6 +1976,7 @@ yx-axis
 }
 .button--red:focus, .button--red:hover {
   color: #cd4141;
+  border: 2px solid #cd4141;
   background-color: transparent;
 }
 .button--outline {
@@ -1996,9 +1997,9 @@ yx-axis
   background-color: transparent;
 }
 .button--outline-red:focus, .button--outline-red:hover {
-  color: #cd4141;
+  color: #ffffff;
   border-color: #cd4141;
-  background-color: transparent;
+  background-color: #cd4141;
 }
 .button--yellow {
   color: #42474d;
@@ -12745,9 +12746,6 @@ yx-axis
 .link:focus, .link:hover {
   text-decoration: none;
 }
-.link:focus, .link:header {
-  opacity: 0.5;
-}
 .link--outline {
   border: 1px solid;
   border-color: #007bf5;
@@ -12755,6 +12753,17 @@ yx-axis
 .link--outline-green {
   border: 1px solid;
   border-color: #31a428;
+}
+.link--red {
+  background-color: #cd4141;
+  color: #ffffff;
+  border: 2px solid #cd4141;
+}
+.link--red:focus, .link--red:hover {
+  opacity: 1;
+  background-color: transparent;
+  color: #cd4141;
+  border: 2px solid #cd4141;
 }
 
 .coaches-list {
@@ -13602,7 +13611,8 @@ yx-axis
     text-align: left;
   }
 }
-.coach-contacts__social .link {
+.coach-contacts__social-link {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13613,16 +13623,39 @@ yx-axis
   font-weight: 400;
   line-height: 140%; /* 21px */
   border-radius: 16px;
+  color: #42474d;
+}
+.coach-contacts__social-link:focus, .coach-contacts__social-link:hover {
+  text-decoration: none;
+}
+.coach-contacts__social-link:focus, .coach-contacts__social-link:hover {
+  color: #ffffff;
 }
 @media (min-width: 576px) {
-  .coach-contacts__social .link {
-    padding: 6px;
+  .coach-contacts__social-link {
+    padding: 1rem;
   }
 }
 @media (min-width: 992px) {
-  .coach-contacts__social .link {
-    padding: 12px 14px;
+  .coach-contacts__social-link {
+    padding: 0.5rem 0.75rem;
   }
+}
+.coach-contacts__social-link--vk {
+  border: 1px solid;
+  border-color: #007bf5;
+}
+.coach-contacts__social-link--vk:focus, .coach-contacts__social-link--vk:hover {
+  color: #ffffff;
+  background-color: #007bf5;
+}
+.coach-contacts__social-link--wp {
+  border: 1px solid;
+  border-color: #31a428;
+}
+.coach-contacts__social-link--wp:focus, .coach-contacts__social-link--wp:hover {
+  color: #ffffff;
+  background-color: #31a428;
 }
 .coach-contacts__social .icon {
   width: 20px;
@@ -13884,8 +13917,10 @@ yx-axis
 }
 @media (min-width: 992px) {
   .coach-dinamic {
+    gap: 40px;
     flex-direction: row;
     margin-bottom: 54px;
+    padding: 2rem 0;
   }
 }
 .coach-dinamic__item {
@@ -13913,6 +13948,13 @@ yx-axis
   .coach-dinamic__item .link, .coach-dinamic__item .button--outline-red {
     width: auto;
     font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .coach-dinamic__item .link, .coach-dinamic__item .button--outline-red {
+    font-size: 25px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -13953,6 +13995,14 @@ yx-axis
   margin-left: 0;
   margin-right: auto;
   margin-bottom: 0.5rem;
+  transition: 0.3s;
+  color: #42474d;
+  background-color: transparent;
+  border: 2px solid;
+}
+.coach-reviews__btn-modal-review.button:focus, .coach-reviews__btn-modal-review.button:hover {
+  background-color: #42474d;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .coach-reviews__btn-modal-review.button {
