@@ -2034,7 +2034,7 @@ yx-axis
   color: #ffffff;
   border: 2px solid #cd4141;
   background-color: #cd4141;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   transition: 0.3s;
   text-decoration: none;
@@ -2144,7 +2144,7 @@ yx-axis
   margin: 0.5rem;
   color: #42474d;
   background-color: #e2f0fb;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   transition: 0.3s;
   line-height: normal;
@@ -2215,7 +2215,7 @@ yx-axis
   height: 100%;
   color: #42474d;
   background-color: #e2f0fb;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   transition: 0.3s;
   line-height: normal;
@@ -2406,7 +2406,7 @@ yx-axis
   justify-content: space-between;
   align-items: center;
   border-radius: 16px;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   background-color: #e2f0fb;
   width: 100%;
   text-decoration: none;
@@ -2578,7 +2578,7 @@ yx-axis
 }
 .slider .swiper-wrapper {
   height: auto;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 .slider .swiper-slide {
   height: 100%;
@@ -3616,6 +3616,8 @@ yx-axis
   width: 100%;
   min-height: 100vh;
   background-color: #f5f5f5;
+  background-image: url("../img/decor/ng/bg.webp");
+  background-size: cover;
   scroll-behavior: smooth;
   padding-top: 100px;
 }
@@ -4382,7 +4384,7 @@ yx-axis
   .main__slider {
     order: 0;
     padding: 0;
-    box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   }
 }
 @media (min-width: 992px) {
@@ -4401,7 +4403,7 @@ yx-axis
 }
 @media (min-width: 1400px) {
   .main__slider {
-    box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   }
 }
 .main__slider .slider--bg .swiper-slide {
@@ -4512,7 +4514,7 @@ yx-axis
   position: relative;
   background-color: #e2f0fb;
   border-radius: 22px;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
 }
@@ -5219,7 +5221,7 @@ yx-axis
   line-height: 140%;
   color: #42474d;
   background-color: #e2f0fb;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   transition: 0.3s;
   text-decoration: none;
@@ -7177,7 +7179,7 @@ yx-axis
   }
 }
 .hero__pic picture {
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   overflow: hidden;
   height: 100%;
@@ -7185,7 +7187,7 @@ yx-axis
 .hero__pic img {
   max-width: 100%;
   height: 100%;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
 }
 @media (min-width: 992px) {
@@ -7213,7 +7215,7 @@ yx-axis
   }
 }
 .hero__link picture, .hero__link img {
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   overflow: hidden;
 }
@@ -7508,7 +7510,7 @@ yx-axis
 .form-clubs {
   background-color: #90959a;
   padding: 20px;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -8543,6 +8545,7 @@ yx-axis
   padding-bottom: 25px;
   border-radius: 22px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
 }
 @media (min-width: 600px) {
   .card-club {
@@ -9524,7 +9527,7 @@ yx-axis
     align-items: center;
     justify-content: space-between;
     background-color: #e2f0fb;
-    box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
     overflow: hidden;
   }
@@ -9831,7 +9834,7 @@ yx-axis
   padding: 30px;
   margin: 1rem 0 45px;
   border-radius: 16px;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 .club-services--prestige {
   background-color: rgba(227, 194, 252, 0.8862745098);
@@ -10186,7 +10189,7 @@ yx-axis
   font-size: 20px;
   line-height: 130%;
   background-color: #e2f0fb;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
 }
 @media (min-width: 768px) {
@@ -11562,7 +11565,7 @@ yx-axis
   font-size: 17px;
   line-height: 120%;
   background: #e2f0fb;
-  box-shadow: 8px 8px 16px rgba(73, 76, 79, 0.19), -8px -8px 10px #ffffff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
 }
 @media (min-width: 576px) {
@@ -14182,9 +14185,9 @@ yx-axis
   padding: 0;
   display: block;
   width: 12px;
-  height: 20px;
+  height: 15px;
   border-radius: 50%;
-  margin: 20px;
+  margin: 15px;
   display: inline-block;
   background: #00f7a5;
   box-shadow: 0px 4.66667px 24px 3px #00f7a5;
@@ -14192,6 +14195,12 @@ yx-axis
   animation-name: flash-1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
+}
+@media (min-width: 768px) {
+  .lightrope li {
+    height: 20px;
+    margin: 20px;
+  }
 }
 
 .lightrope li:nth-child(2n+1) {
@@ -14310,5 +14319,36 @@ yx-axis
   50% {
     background: rgba(247, 0, 148, 0.4);
     box-shadow: 0px 4.66667px 24px 3px rgba(247, 0, 148, 0.2);
+  }
+}
+.decor-form-ng {
+  position: relative;
+}
+.decor-form-ng::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -25px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  max-width: 75%;
+  background-image: url("../img/decor/ng/form-before.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .decor-form-ng::before {
+    top: -30px;
+    right: -5px;
+    max-width: 50%;
+    width: 250px;
+    height: 150px;
+  }
+}
+@media (min-width: 1300px) {
+  .decor-form-ng::before {
+    top: -30px;
+    right: -30px;
   }
 }
