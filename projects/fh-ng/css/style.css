@@ -3611,15 +3611,16 @@ yx-axis
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 100px;
   font-size: 20px;
   line-height: 130%;
   width: 100%;
   min-height: 100vh;
+  scroll-behavior: smooth;
   background-color: #f5f5f5;
   background-image: url("../img/decor/ng/bg.webp");
-  background-size: cover;
-  scroll-behavior: smooth;
-  padding-top: 100px;
+  background-size: contain;
+  background-position: 50% 50%;
 }
 @media (max-width: 576px) {
   .page-body {
