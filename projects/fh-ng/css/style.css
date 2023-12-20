@@ -3608,6 +3608,8 @@ yx-axis
 }
 
 .page-body {
+  z-index: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3618,9 +3620,6 @@ yx-axis
   min-height: 100vh;
   scroll-behavior: smooth;
   background-color: #f5f5f5;
-  background-image: url("../img/decor/ng/bg.webp");
-  background-size: contain;
-  background-position: 50% 50%;
 }
 @media (max-width: 576px) {
   .page-body {
@@ -14354,5 +14353,35 @@ yx-axis
     max-width: 30%;
     width: 220px;
     height: 130px;
+  }
+}
+
+.bg-ng {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: url("../img/decor/ng/bg.webp");
+  background-size: 800px 100%;
+  background-position: 50% 50%;
+  background-repeat: repeat no-repeat;
+}
+@media (min-width: 768px) {
+  .bg-ng {
+    background-size: 1000px 100%;
+  }
+}
+@media (min-width: 992px) {
+  .bg-ng {
+    background-size: 1500px 100%;
+  }
+}
+@media (min-width: 1300px) {
+  .bg-ng {
+    background-size: 1536px 100%;
+  }
+}
+@media (min-width: 1600px) {
+  .bg-ng {
+    background-size: 2300px 100%;
   }
 }
