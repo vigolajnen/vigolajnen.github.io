@@ -1,0 +1,1 @@
+import{r as s}from"./react-IgOIl9ry.js";const r=()=>{const[a,e]=s.useState(!1),o=s.useCallback(()=>{e(!0)},[]),t=s.useCallback(()=>{e(!1)},[]);return{isModalOpen:a,openModal:o,closeModal:t}};export{r as u};

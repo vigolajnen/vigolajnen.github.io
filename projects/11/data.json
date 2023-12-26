@@ -1,0 +1,322 @@
+{
+  "services": [
+    {
+      "city": "Санкт-Петербург",
+      "clubs": [
+        {
+          "id": 1,
+          "name": "Васильевский",
+          "address": "пр. Большой В.О., д. 68А",
+          "isPool": false,
+          "products": [
+            {
+              "product_id": "414890",
+              "product_price": "1500",
+              "product_name": "1 месяц Утро Подписка Васильевский",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "414889",
+              "product_price": "1900",
+              "product_name": "1 месяц Подписка Васильевский",
+              "product_type": "full"
+            },
+            {
+              "product_id": "415406",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Шушары",
+          "address": "пр. Шушары",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "414890",
+              "product_price": "2500",
+              "product_name": "1 месяц Утро Подписка Шушары",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "414889",
+              "product_price": "2900",
+              "product_name": "1 месяц Подписка Шушары",
+              "product_type": "full"
+            },
+            {
+              "product_id": "415406",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Салово",
+          "address": "пр. Салово",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "414890",
+              "product_price": "2500",
+              "product_name": "1 месяц Утро Подписка Салово",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "414889",
+              "product_price": "2900",
+              "product_name": "1 месяц Подписка Салово",
+              "product_type": "full"
+            },
+            {
+              "product_id": "415406",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Охта Молл",
+          "address": "пр. Охта Молл",
+          "isPool": false,
+          "products": [
+            {
+              "product_id": "414890",
+              "product_price": "2500",
+              "product_name": "1 месяц Утро Подписка Охта Молл",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "414889",
+              "product_price": "2900",
+              "product_name": "1 месяц Подписка Охта Молл",
+              "product_type": "full"
+            },
+            {
+              "product_id": "415406",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Выбогрская",
+          "address": "пр. Выбогрская",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "414890",
+              "product_price": "2500",
+              "product_name": "1 месяц Утро Подписка Выбогрская",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "414889",
+              "product_price": "2900",
+              "product_name": "1 месяц Подписка Выбогрская",
+              "product_type": "full"
+            },
+            {
+              "product_id": "415406",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Самара",
+      "clubs": [
+        {
+          "id": 1,
+          "name": "Монте Роза",
+          "address": "Московское ш., 4, корп. 4",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "404241",
+              "product_price": "1900",
+              "product_name": "1 месяц утро Самара Подписка",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "407264",
+              "product_price": "2500",
+              "product_name": "1 месяц Самара Подписка",
+              "product_type": "full"
+            },
+            {
+              "product_id": "418035",
+              "product_price": "2900",
+              "product_name": "Мультикарта Самара 1 месяц Подписка",
+              "product_type": "mc_full"
+            },
+            {
+              "product_id": "415406",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Гудок",
+          "address": "Красноармейская ул., 131",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "404242",
+              "product_price": "1900",
+              "product_name": "1 месяц утро Самара Подписка",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "407263",
+              "product_price": "2500",
+              "product_name": "1 месяц Самара Подписка",
+              "product_type": "full"
+            },
+            {
+              "product_id": "418034",
+              "product_price": "2900",
+              "product_name": "Мультикарта Самара 1 месяц Подписка",
+              "product_type": "mc_full"
+            },
+            {
+              "product_id": "415405",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Амбар",
+          "address": "Южное ш., 5",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "404244",
+              "product_price": "1900",
+              "product_name": "1 месяц утро Самара Подписка",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "407265",
+              "product_price": "2500",
+              "product_name": "1 месяц Самара Подписка",
+              "product_type": "full"
+            },
+            {
+              "product_id": "418037",
+              "product_price": "2900",
+              "product_name": "Мультикарта Самара 1 месяц Подписка",
+              "product_type": "mc_full"
+            },
+            {
+              "product_id": "415408",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Шипка",
+          "address": "Ул. Стара Загора, 58",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "409888",
+              "product_price": "2500",
+              "product_name": "1 месяц Самара Подписка",
+              "product_type": "full"
+            },
+            {
+              "product_id": "418036",
+              "product_price": "2900",
+              "product_name": "Мультикарта Самара 1 месяц Подписка",
+              "product_type": "mc_full"
+            },
+            {
+              "product_id": "415407",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Архангельск",
+      "clubs": [
+        {
+          "id": 1,
+          "name": "Монте Роза",
+          "address": "Московское ш., 4, корп. 4",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "404241",
+              "product_price": "1900",
+              "product_name": "1 месяц утро Самара Подписка",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "407264",
+              "product_price": "2500",
+              "product_name": "1 месяц Самара Подписка",
+              "product_type": "full"
+            },
+            {
+              "product_id": "418035",
+              "product_price": "2900",
+              "product_name": "Мультикарта Самара 1 месяц Подписка",
+              "product_type": "mc_full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": "Ярославль",
+      "clubs": [
+        {
+          "id": 1,
+          "name": "Монте Роза",
+          "address": "Московское ш., 4, корп. 4",
+          "isPool": true,
+          "products": [
+            {
+              "product_id": "404241",
+              "product_price": "1900",
+              "product_name": "1 месяц утро Самара Подписка",
+              "product_type": "morning"
+            },
+            {
+              "product_id": "415406",
+              "product_price": "1950",
+              "product_name": "Первоначальный платеж",
+              "product_type": "subscription_recurrent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
