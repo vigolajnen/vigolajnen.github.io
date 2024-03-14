@@ -14416,7 +14416,7 @@ yx-axis
   overflow: hidden;
   min-height: 315px;
   max-height: 440px;
-  background-image: url("../../img/vacancies/invite.jpg");
+  background-image: url("../img/vacancies/invite.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -14606,7 +14606,8 @@ yx-axis
   font-size: 1.6vw;
   color: #ffffff;
   border-radius: 22px;
-  background-image: url("../../img/vacancies/bg_hero.jpg");
+  background-color: #42474d;
+  background-image: url("../img/vacancies/bg_hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
