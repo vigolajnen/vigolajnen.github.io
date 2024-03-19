@@ -14187,13 +14187,7 @@ yx-axis
   margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
-  font-size: 1.563rem;
   text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  .vacancies__header-text {
-    font-size: 1.688rem;
-  }
 }
 @media (min-width: 992px) {
   .vacancies__header-text {
@@ -14203,18 +14197,48 @@ yx-axis
 .vacancies__header-text p {
   margin: 0;
   opacity: 0.5;
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
+}
+@media (min-width: 576px) {
+  .vacancies__header-text p {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 1200px) {
+  .vacancies__header-text p {
+    font-size: 1.6875rem;
+    font-weight: 700;
+    line-height: 2.1875rem;
+  }
 }
 .vacancies .title {
   margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-size: 1.6875rem;
   font-weight: 700;
-  font-size: 1.688rem;
+  line-height: 2.1875rem;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .vacancies .title {
     margin: 0;
     font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 4.0625rem;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 1200px) {
+  .vacancies .title {
+    font-size: 3.4375rem;
+    font-weight: 700;
+    line-height: 4.4375rem;
+    letter-spacing: 0.02em;
   }
 }
 .vacancies .title span {
@@ -14226,8 +14250,29 @@ yx-axis
   }
 }
 .vacancies__header-btn {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.25rem;
   color: #42474d;
   border-color: #42474d;
+}
+@media (min-width: 576px) {
+  .vacancies__header-btn {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+@media (min-width: 768px) {
+  .vacancies__header-btn {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .vacancies__header-btn {
+    font-size: 1.5625rem;
+    line-height: 2rem;
+  }
 }
 .vacancies__header-btn:focus, .vacancies__header-btn:hover {
   color: #42474d;
@@ -14237,12 +14282,25 @@ yx-axis
 .vacancies .vacancies-team .title {
   margin-bottom: 2rem;
   color: #42474d;
-  line-height: normal;
-  font-size: 1.688rem;
+  font-size: 1.8125rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  opacity: 0.75;
 }
-@media (min-width: 1400px) {
+@media (min-width: 576px) {
   .vacancies .vacancies-team .title {
-    font-size: 2.6rem;
+    font-size: 3.125rem;
+    line-height: 4.0625rem;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 1200px) {
+  .vacancies .vacancies-team .title {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.02em;
+    opacity: 1;
   }
 }
 
@@ -14252,37 +14310,62 @@ yx-axis
 }
 
 .questionary-and-certificate {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  color: #42474d;
 }
 @media (min-width: 992px) {
   .questionary-and-certificate {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 }
 @media (min-width: 1200px) {
   .questionary-and-certificate {
-    margin-bottom: 100px;
+    margin-bottom: 1toRem 0;
   }
 }
 .questionary-and-certificate__header {
-  margin-bottom: 2rem;
   font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  font-size: 1.2rem;
+  line-height: 1.3125rem;
+}
+@media (min-width: 576px) {
+  .questionary-and-certificate__header {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
 }
 .questionary-and-certificate__header p {
   opacity: 0.7;
 }
 .questionary-and-certificate .title {
+  margin-bottom: 0.5rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-size: 1.6875rem;
   font-weight: 700;
-  font-size: 2.5rem;
+  line-height: 2.1875rem;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .questionary-and-certificate .title {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 1200px) {
+  .questionary-and-certificate .title {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.02em;
+  }
 }
 .questionary-and-certificate__wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .questionary-and-certificate__item {
   display: flex;
@@ -14290,12 +14373,12 @@ yx-axis
 }
 @media (min-width: 992px) {
   .questionary-and-certificate__item--questionary {
-    width: calc(66% - 10px);
+    width: calc(70% - 0.625rem);
   }
 }
 @media (min-width: 1400px) {
   .questionary-and-certificate__item--questionary {
-    width: calc(70% - 10px);
+    width: calc(75% - 0.625rem);
   }
 }
 .questionary-and-certificate__item--certificate {
@@ -14304,12 +14387,12 @@ yx-axis
 @media (min-width: 992px) {
   .questionary-and-certificate__item--certificate {
     display: flex;
-    width: calc(34% - 10px);
+    width: calc(30% - 0.625rem);
   }
 }
 @media (min-width: 1400px) {
   .questionary-and-certificate__item--certificate {
-    width: calc(30% - 10px);
+    width: calc(25% - 0.625rem);
   }
 }
 
@@ -14328,7 +14411,7 @@ yx-axis
   .invite-and-certificate__wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 2.5rem;
   }
 }
 .invite-and-certificate__inner {
@@ -14339,17 +14422,17 @@ yx-axis
   .invite-and-certificate__inner {
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 @media (min-width: 992px) {
   .invite-and-certificate__inner {
     gap: 0;
-    width: calc(50% - 20px);
+    width: calc(50% - 1.25rem);
   }
 }
 .invite-and-certificate__info {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 @media (min-width: 992px) {
   .invite-and-certificate__info {
@@ -14357,35 +14440,47 @@ yx-axis
     flex-direction: column;
     justify-content: space-around;
     order: 1;
+    padding: 3rem 0;
     padding-right: 10%;
-    width: calc(50% - 20px);
+    width: calc(50% - 1.25rem);
     border-top: 1px solid;
     border-bottom: 1px solid;
   }
 }
 .invite-and-certificate__info-top {
   font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
 }
 @media (min-width: 768px) {
   .invite-and-certificate__info-top {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.625rem;
   }
 }
 .invite-and-certificate__info-big {
   margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-size: 1.688rem;
-  line-height: normal;
+  font-size: 1.6875rem;
+  font-weight: 700;
+  line-height: 2.1875rem;
+  letter-spacing: 0.02em;
   color: #42474d;
 }
 @media (min-width: 768px) {
   .invite-and-certificate__info-big {
     font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.02em;
   }
 }
 @media (min-width: 1200px) {
   .invite-and-certificate__info-big {
+    margin-bottom: 2rem;
     font-size: 3.125rem;
+    line-height: 4.0625rem;
+    letter-spacing: 0.02em;
   }
   .invite-and-certificate__info-big span {
     display: block;
@@ -14395,16 +14490,21 @@ yx-axis
   display: inline-block;
   vertical-align: middle;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-size: 1rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.375rem;
 }
 @media (min-width: 768px) {
   .invite-and-certificate__info .link-text {
-    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 2.1875rem;
+    letter-spacing: 0.02em;
   }
 }
 @media (min-width: 1200px) {
   .invite-and-certificate__info .link-text {
-    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 2.625rem;
   }
 }
 .invite-and-certificate__info .link-text .icon {
@@ -14414,8 +14514,8 @@ yx-axis
 .invite-and-certificate__pic {
   border-radius: 22px;
   overflow: hidden;
-  min-height: 315px;
-  max-height: 440px;
+  min-height: 19.6875rem;
+  max-height: 27.5rem;
   background-image: url("../img/vacancies/invite.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -14424,20 +14524,20 @@ yx-axis
 @media (min-width: 576px) {
   .invite-and-certificate__pic {
     flex-grow: 1;
-    width: calc(50% - 10px);
-    min-height: 418px;
+    width: calc(50% - 0.625rem);
+    min-height: 4toRem 18;
   }
 }
 @media (min-width: 768px) {
   .invite-and-certificate__pic {
-    width: calc(50% - 10px);
+    width: calc(50% - 0.625rem);
   }
 }
 @media (min-width: 992px) {
   .invite-and-certificate__pic {
     width: 100%;
-    max-width: 730px;
-    min-height: 437px;
+    max-width: 7toRem 30;
+    min-height: 4toRem 37;
   }
 }
 .invite-and-certificate__cert {
@@ -14445,7 +14545,7 @@ yx-axis
 }
 @media (min-width: 576px) {
   .invite-and-certificate__cert {
-    width: calc(50% - 10px);
+    width: calc(50% - 0.625rem);
     margin: 0;
   }
 }
@@ -14456,30 +14556,45 @@ yx-axis
 }
 
 .questionary {
-  padding: 20px;
-  padding-bottom: 30px;
+  padding: 1.25rem 1rem 1.875rem;
   background-color: rgb(226, 240, 251);
-  border-radius: 22px;
+  border-radius: 10px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .questionary {
-    padding: 40px;
+    padding: 1.25rem;
+    border-radius: 22px;
     box-shadow: none;
   }
 }
+@media (min-width: 992px) {
+  .questionary {
+    padding: 2.5rem;
+  }
+}
 .questionary .title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
-  font-size: 2.5rem;
+  line-height: 1.9375rem;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #42474d;
+}
+@media (min-width: 576px) {
+  .questionary .title {
+    margin-bottom: 1.6rem;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.02em;
+  }
 }
 .questionary__btn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 1rem 0.5rem 0;
 }
 @media (min-width: 576px) {
@@ -14489,44 +14604,89 @@ yx-axis
   }
 }
 .questionary__btn button {
-  font-size: 1.3rem;
-}
-@media (min-width: 576px) {
-  .questionary__btn button {
-    font-size: 1rem;
-  }
+  font-size: 1.25rem;
+  line-height: 1.625rem;
 }
 .questionary .form .form-control, .questionary .form .form-select {
   padding: 0.65rem;
+  padding-left: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+}
+.questionary .form .form-control::placeholder, .questionary .form .form-select::placeholder {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
 }
 .questionary .form .form-label {
-  padding-bottom: 1rem;
+  padding-bottom: 0;
+  font-size: 0.9375rem;
+  line-height: 1.3125rem;
+}
+.questionary .form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .questionary .form__wrapper {
+    gap: 1.25rem;
+  }
+}
+.questionary .form__item {
+  width: 100%;
+  flex-grow: 1;
+}
+@media (min-width: 576px) {
+  .questionary .form__item {
+    width: calc(50% - 0.625rem);
+  }
+}
+@media (min-width: 768px) {
+  .questionary .form__item {
+    width: calc(50% - 1.25rem);
+  }
 }
 
 .certificate {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: center;
+  gap: 1.25rem;
   padding: 1rem;
   height: 100%;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-size: 1.0625rem;
   font-weight: 700;
-  font-size: 1rem;
-  background-color: #fff;
+  line-height: 1.375rem;
+  color: #42474d;
+  background-color: #ffffff;
   border-radius: 22px;
   text-transform: uppercase;
 }
+.certificate:focus, .certificate:hover {
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   .certificate {
-    font-size: 1.25rem;
     padding: 1.6rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
   }
 }
+.certificate:hover {
+  opacity: 0.75;
+  color: inherit;
+}
 .certificate__pic {
-  width: 153px;
-  height: 227px;
+  width: 135px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .certificate__pic {
+    width: 153px;
+  }
 }
 .certificate .button {
   padding: 0;
@@ -14543,7 +14703,7 @@ yx-axis
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 @media (min-width: 992px) {
   .vacancies-hero {
@@ -14556,18 +14716,18 @@ yx-axis
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.625rem;
   width: 100%;
   max-width: 100%;
 }
 @media (min-width: 992px) {
   .vacancies-hero__list {
-    max-width: calc(50% - 10px);
+    max-width: calc(50% - 0.625rem);
   }
 }
 @media (min-width: 1400px) {
   .vacancies-hero__list {
-    max-width: calc(43% - 10px);
+    max-width: calc(43% - 0.625rem);
   }
 }
 .vacancies-hero__list li {
@@ -14586,7 +14746,7 @@ yx-axis
 }
 @media (min-width: 576px) {
   .vacancies-hero__list li {
-    width: calc(50% - 10px);
+    width: calc(50% - 0.625rem);
   }
 }
 .vacancies-hero__text {
@@ -14599,10 +14759,10 @@ yx-axis
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   width: 100%;
   max-width: 100%;
-  min-height: 265px;
+  min-height: 16.5625rem;
   font-size: 1.6vw;
   color: #ffffff;
   border-radius: 22px;
@@ -14613,43 +14773,49 @@ yx-axis
   background-position: 50% 100%;
   overflow: hidden;
 }
+@media (min-width: 576px) {
+  .vacancies-hero__history {
+    padding: 2rem 4rem;
+  }
+}
 @media (min-width: 992px) {
   .vacancies-hero__history {
     justify-content: center;
-    padding: 2rem;
-    max-width: calc(50% - 10px);
+    max-width: calc(50% - 0.625rem);
   }
 }
 @media (min-width: 1400px) {
   .vacancies-hero__history {
-    max-width: calc(57% - 10px);
+    max-width: calc(57% - 0.625rem);
   }
 }
 .vacancies-hero__history-title {
-  margin-bottom: 1.3vw;
-  max-width: 400px;
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-weight: 700;
+  margin-bottom: 1.875rem;
+  max-width: 4toRem 0;
   font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.625rem;
   text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  .vacancies-hero__history-title {
+    margin-bottom: 2.5rem;
+  }
 }
 .vacancies-hero__history a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
   color: #fffeda;
   text-decoration: none;
 }
 @media (min-width: 576px) {
   .vacancies-hero__history a {
     justify-content: flex-start;
-  }
-}
-@media (min-width: 1400px) {
-  .vacancies-hero__history a {
-    font-size: 1.6rem;
   }
 }
 .vacancies-hero__history a:focus, .vacancies-hero__history a:active, .vacancies-hero__history a:hover {
@@ -14666,10 +14832,11 @@ yx-axis
 
 .vacancies-profit {
   position: relative;
-  padding: 1rem;
+  padding: 1rem 0;
   font-weight: 700;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   background-color: #ffffff;
+  color: #42474d;
   border-radius: 22px;
   overflow: hidden;
 }
@@ -14687,25 +14854,41 @@ yx-axis
   display: block;
   position: absolute;
   top: 5%;
-  right: 5%;
-  width: 30px;
-  height: 30px;
+  right: 2%;
+  width: 1.875rem;
+  height: 1.875rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .vacancies-profit__touch-icon {
     display: none;
   }
 }
 .vacancies-profit__title {
+  padding: 0 1.25rem;
   margin-bottom: 1rem;
-  font-size: 1.6rem;
-  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
   text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  .vacancies-profit__title {
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .vacancies-profit__title {
+    font-size: 1.5625rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+  }
 }
 @media (min-width: 1200px) {
   .vacancies-profit__title {
-    font-size: 2.6rem;
     margin-bottom: 3rem;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.02em;
   }
 }
 .vacancies-profit__list {
@@ -14713,18 +14896,14 @@ yx-axis
   margin: 0;
   padding: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .vacancies-profit__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    max-width: 900px;
+    gap: 1.875rem;
+    max-width: 9toRem 0;
     margin: 0 auto;
-  }
-}
-@media (min-width: 1200px) {
-  .vacancies-profit__list {
     max-width: 100%;
   }
 }
@@ -14734,6 +14913,8 @@ yx-axis
   align-items: center;
   text-align: center;
   color: #42474d;
+  font-size: 1rem;
+  line-height: 1.3125rem;
 }
 .vacancies-profit__item:hover {
   color: rgb(104, 146, 188);
@@ -14741,7 +14922,13 @@ yx-axis
 .vacancies-profit__item:hover .vacancies-profit__text {
   color: #42474d;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
+  .vacancies-profit__item {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+@media (min-width: 576px) {
   .vacancies-profit__item {
     order: 2;
     width: calc(33.3333333333% - 30px);
@@ -14754,11 +14941,11 @@ yx-axis
   }
 }
 .vacancies-profit__item--1 {
-  order: 1;
   flex-grow: 1;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .vacancies-profit__item--1 {
+    order: 1;
     width: calc(50% - 30px);
   }
 }
@@ -14771,7 +14958,7 @@ yx-axis
 .vacancies-profit__item--2 {
   flex-grow: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .vacancies-profit__item--2 {
     order: 3;
   }
@@ -14785,7 +14972,7 @@ yx-axis
 .vacancies-profit__item--5 {
   flex-grow: 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .vacancies-profit__item--5 {
     width: 17%;
   }
@@ -14793,12 +14980,30 @@ yx-axis
 .vacancies-profit__item--6 {
   flex-grow: 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .vacancies-profit__item--6 {
     width: 17%;
   }
 }
+.vacancies-profit__item--7 {
+  flex-grow: 0;
+}
+@media (min-width: 576px) {
+  .vacancies-profit__item--7 {
+    width: 30%;
+  }
+}
 @media (min-width: 992px) {
+  .vacancies-profit__item--7 {
+    width: calc(33.3333333333% - 30px);
+  }
+}
+@media (min-width: 1200px) {
+  .vacancies-profit__item--7 {
+    width: calc(25% - 30px);
+  }
+}
+@media (min-width: 576px) {
   .vacancies-profit__item--8 {
     order: 1;
     width: calc(50% - 30px);
@@ -14811,17 +15016,16 @@ yx-axis
   }
 }
 .vacancies-profit .icon {
-  width: 70%;
+  width: 50%;
+}
+@media (min-width: 576px) {
+  .vacancies-profit .icon {
+    width: 70%;
+  }
 }
 .vacancies-profit__text {
   display: block;
   margin-top: 1rem;
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .vacancies-profit__text {
-    font-size: 1.3rem;
-  }
 }
 
 .vacancies-stories {
@@ -14829,15 +15033,34 @@ yx-axis
 }
 .vacancies-stories__header {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
 }
 .vacancies-stories__header h3 {
   margin: 0;
+  font-size: 1.6875rem;
+  font-weight: 700;
+  line-height: 2.1875rem;
+  letter-spacing: 0.02em;
 }
-.vacancies-stories__header h3 span {
+@media (min-width: 576px) {
+  .vacancies-stories__header h3 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.02em;
+  }
+}
+.vacancies-stories__header h3 > span {
   display: block;
+}
+.vacancies-stories__header h3 > span > span {
+  display: block;
+}
+@media (min-width: 576px) {
+  .vacancies-stories__header h3 > span > span {
+    display: inline-block;
+  }
 }
 .vacancies-stories__touch-icon {
   display: none;
@@ -14848,25 +15071,31 @@ yx-axis
     position: absolute;
     top: 50%;
     right: 0;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     transform: translateY(-50%);
   }
 }
 .vacancies-stories__slider {
   margin-bottom: 1rem;
+  overflow: visible;
+}
+@media (min-width: 576px) {
+  .vacancies-stories__slider {
+    overflow: hidden;
+  }
 }
 .vacancies-stories__slider .swiper-wrapper {
   flex-direction: column;
 }
 @media (min-width: 768px) {
   .vacancies-stories__slider .swiper-wrapper {
-    gap: 10px;
+    gap: 0.625rem;
     flex-direction: row;
   }
 }
 .vacancies-stories__slider .swiper-slide {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 @media (min-width: 768px) {
   .vacancies-stories__slider .swiper-slide {
@@ -14889,11 +15118,10 @@ yx-axis
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem;
   color: #42474d;
   background-color: #fffeda;
-  border-radius: 22px;
+  border-radius: 10px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
@@ -14904,41 +15132,50 @@ yx-axis
   color: #42474d;
   background-color: rgb(226, 240, 251);
 }
+@media (min-width: 576px) {
+  .stories-slide {
+    align-items: center;
+    border-radius: 22px;
+  }
+}
 .stories-slide__header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
+  row-gap: 0;
   width: 80%;
 }
 @media (min-width: 768px) {
   .stories-slide__header {
-    gap: 20px;
-    justify-content: space-between;
+    gap: 1.25rem;
   }
 }
 .stories-slide__avatar {
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
   border-radius: 16px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
   .stories-slide__avatar {
-    width: 105px;
-    height: 105px;
+    width: 6.5625rem;
+    height: 6.5625rem;
   }
 }
 .stories-slide__title {
-  max-width: calc(100% - 105px - 20px);
+  max-width: calc(100% - 6.5625rem - 0.625rem);
   font-weight: 700;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.375rem;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .stories-slide__title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
   }
 }
 .stories-slide__text {
