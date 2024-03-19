@@ -14215,6 +14215,14 @@ yx-axis
     line-height: 2.1875rem;
   }
 }
+.vacancies__header-text p span {
+  display: block;
+}
+@media (min-width: 576px) {
+  .vacancies__header-text p span {
+    display: inline-block;
+  }
+}
 .vacancies .title {
   margin-bottom: 1rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
@@ -14286,7 +14294,7 @@ yx-axis
   font-weight: 700;
   line-height: 2rem;
   letter-spacing: 0.02em;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 @media (min-width: 576px) {
   .vacancies .vacancies-team .title {
@@ -14301,6 +14309,14 @@ yx-axis
     line-height: 3.25rem;
     letter-spacing: 0.02em;
     opacity: 1;
+  }
+}
+.vacancies .vacancies-team .title span {
+  display: block;
+}
+@media (min-width: 576px) {
+  .vacancies .vacancies-team .title span {
+    display: inline-block;
   }
 }
 
@@ -14482,9 +14498,9 @@ yx-axis
     line-height: 4.0625rem;
     letter-spacing: 0.02em;
   }
-  .invite-and-certificate__info-big span {
-    display: block;
-  }
+}
+.invite-and-certificate__info-big span {
+  display: block;
 }
 .invite-and-certificate__info .link-text {
   display: inline-block;
@@ -14703,7 +14719,7 @@ yx-axis
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 20px;
 }
 @media (min-width: 992px) {
   .vacancies-hero {
@@ -14716,18 +14732,18 @@ yx-axis
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.625rem;
+  gap: 10px;
   width: 100%;
   max-width: 100%;
 }
 @media (min-width: 992px) {
   .vacancies-hero__list {
-    max-width: calc(50% - 0.625rem);
+    max-width: calc(50% - 10px);
   }
 }
 @media (min-width: 1400px) {
   .vacancies-hero__list {
-    max-width: calc(43% - 0.625rem);
+    max-width: calc(43% - 10px);
   }
 }
 .vacancies-hero__list li {
@@ -14746,7 +14762,7 @@ yx-axis
 }
 @media (min-width: 576px) {
   .vacancies-hero__list li {
-    width: calc(50% - 0.625rem);
+    width: calc(50% - 10px);
   }
 }
 .vacancies-hero__text {
@@ -14762,7 +14778,7 @@ yx-axis
   padding: 1rem 1.5rem;
   width: 100%;
   max-width: 100%;
-  min-height: 16.5625rem;
+  min-height: 265px;
   font-size: 1.6vw;
   color: #ffffff;
   border-radius: 22px;
@@ -14781,25 +14797,25 @@ yx-axis
 @media (min-width: 992px) {
   .vacancies-hero__history {
     justify-content: center;
-    max-width: calc(50% - 0.625rem);
+    max-width: calc(50% - 10px);
   }
 }
 @media (min-width: 1400px) {
   .vacancies-hero__history {
-    max-width: calc(57% - 0.625rem);
+    max-width: calc(57% - 10px);
   }
 }
 .vacancies-hero__history-title {
-  margin-bottom: 1.875rem;
-  max-width: 4toRem 0;
-  font-size: 1.25rem;
+  margin-bottom: 30px;
+  max-width: 400px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1.625rem;
+  line-height: 26px;
   text-transform: uppercase;
 }
 @media (min-width: 576px) {
   .vacancies-hero__history-title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
   }
 }
 .vacancies-hero__history a {
@@ -14807,9 +14823,9 @@ yx-axis
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.9375rem;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.3125rem;
+  line-height: 21px;
   color: #fffeda;
   text-decoration: none;
 }
@@ -14832,7 +14848,7 @@ yx-axis
 
 .vacancies-profit {
   position: relative;
-  padding: 1rem 0;
+  padding: 1rem 0 1.3rem 1rem;
   font-weight: 700;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   background-color: #ffffff;
@@ -14855,8 +14871,8 @@ yx-axis
   position: absolute;
   top: 5%;
   right: 2%;
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 40px;
+  height: 40px;
 }
 @media (min-width: 576px) {
   .vacancies-profit__touch-icon {
@@ -14869,11 +14885,11 @@ yx-axis
   font-size: 1.25rem;
   line-height: 1.625rem;
   text-transform: uppercase;
+  text-align: center;
 }
 @media (min-width: 576px) {
   .vacancies-profit__title {
     padding: 0;
-    text-align: center;
   }
 }
 @media (min-width: 768px) {
@@ -14902,7 +14918,7 @@ yx-axis
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.875rem;
-    max-width: 9toRem 0;
+    max-width: 56.25rem;
     margin: 0 auto;
     max-width: 100%;
   }
@@ -15118,6 +15134,7 @@ yx-axis
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-height: 149px;
   padding: 1rem;
   color: #42474d;
   background-color: #fffeda;
@@ -15138,6 +15155,11 @@ yx-axis
     border-radius: 22px;
   }
 }
+@media (min-width: 768px) {
+  .stories-slide {
+    min-height: 207px;
+  }
+}
 .stories-slide__header {
   display: flex;
   flex-wrap: wrap;
@@ -15149,6 +15171,7 @@ yx-axis
 @media (min-width: 768px) {
   .stories-slide__header {
     gap: 1.25rem;
+    row-gap: 0.625rem;
   }
 }
 .stories-slide__avatar {
@@ -15181,29 +15204,23 @@ yx-axis
 .stories-slide__text {
   margin: 0;
   width: 100%;
-  font-size: 0.78rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 @media (min-width: 768px) {
   .stories-slide__text {
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 1400px) {
-  .stories-slide__text {
-    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9375rem;
+    line-height: 1.03125rem;
   }
 }
 .stories-slide__icon {
-  width: 15%;
+  width: 1.875rem;
 }
 @media (min-width: 576px) {
   .stories-slide__icon {
-    width: 12%;
-  }
-}
-@media (min-width: 1200px) {
-  .stories-slide__icon {
-    width: 20%;
+    width: 3.75rem;
   }
 }
 .stories-slide__icon .icon {
