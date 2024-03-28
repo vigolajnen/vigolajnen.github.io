@@ -119,6 +119,11 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 20px;
   line-height: 130%;
@@ -14158,11 +14163,16 @@ yx-axis
 .vacancies {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 35px;
+}
+@media (min-width: 768px) {
+  .vacancies {
+    gap: 45px;
+  }
 }
 @media (min-width: 1400px) {
   .vacancies {
-    gap: 3rem;
+    gap: 64px;
   }
 }
 .vacancies__header {
@@ -14258,28 +14268,22 @@ yx-axis
   }
 }
 .vacancies__header-btn {
-  font-size: 1.0625rem;
+  padding: 1.375rem 2.4375rem;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
-  line-height: 1.25rem;
+  font-size: 1.06rem;
+  line-height: 120%;
   color: #42474d;
   border-color: #42474d;
 }
 @media (min-width: 576px) {
   .vacancies__header-btn {
     font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-@media (min-width: 768px) {
-  .vacancies__header-btn {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 }
 @media (min-width: 992px) {
   .vacancies__header-btn {
-    font-size: 1.5625rem;
-    line-height: 2rem;
+    font-size: 1.56rem;
   }
 }
 .vacancies__header-btn:focus, .vacancies__header-btn:hover {
@@ -14288,7 +14292,7 @@ yx-axis
   opacity: 0.5;
 }
 .vacancies .vacancies-team .title {
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   color: #42474d;
   font-size: 1.8125rem;
   font-weight: 700;
@@ -14298,6 +14302,7 @@ yx-axis
 }
 @media (min-width: 576px) {
   .vacancies .vacancies-team .title {
+    margin-bottom: 25px;
     font-size: 3.125rem;
     line-height: 4.0625rem;
     letter-spacing: 0.02em;
@@ -14305,6 +14310,7 @@ yx-axis
 }
 @media (min-width: 1200px) {
   .vacancies .vacancies-team .title {
+    margin-bottom: 35px;
     font-size: 2.5rem;
     line-height: 3.25rem;
     letter-spacing: 0.02em;
@@ -14358,24 +14364,14 @@ yx-axis
 .questionary-and-certificate .title {
   margin-bottom: 0.5rem;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-size: 1.6875rem;
-  font-weight: 700;
-  line-height: 2.1875rem;
+  font-size: 1.69rem;
+  line-height: 130%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .questionary-and-certificate .title {
     font-size: 2.5rem;
-    line-height: 3.25rem;
-    letter-spacing: 0.02em;
-  }
-}
-@media (min-width: 1200px) {
-  .questionary-and-certificate .title {
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    letter-spacing: 0.02em;
   }
 }
 .questionary-and-certificate__wrapper {
@@ -14448,7 +14444,18 @@ yx-axis
   }
 }
 .invite-and-certificate__info {
-  padding: 2rem 0;
+  padding: 20px 0;
+  max-width: 320px;
+}
+@media (min-width: 480px) {
+  .invite-and-certificate__info {
+    max-width: 545px;
+  }
+}
+@media (min-width: 768px) {
+  .invite-and-certificate__info {
+    max-width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .invite-and-certificate__info {
@@ -14484,7 +14491,7 @@ yx-axis
   letter-spacing: 0.02em;
   color: #42474d;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .invite-and-certificate__info-big {
     font-size: 2.5rem;
     line-height: 3.25rem;
@@ -14502,6 +14509,11 @@ yx-axis
 .invite-and-certificate__info-big span {
   display: block;
 }
+@media (min-width: 420px) {
+  .invite-and-certificate__info-big span {
+    display: inline-block;
+  }
+}
 .invite-and-certificate__info .link-text {
   display: inline-block;
   vertical-align: middle;
@@ -14510,7 +14522,7 @@ yx-axis
   font-weight: 700;
   line-height: 1.375rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .invite-and-certificate__info .link-text {
     font-size: 1.5625rem;
     line-height: 2.1875rem;
@@ -14669,8 +14681,8 @@ yx-axis
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
-  padding: 1rem;
+  gap: 16px;
+  padding: 20px;
   height: 100%;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-size: 1.0625rem;
@@ -14704,6 +14716,11 @@ yx-axis
     width: 153px;
   }
 }
+.certificate__pic-modal {
+  max-width: max-content;
+  margin: auto;
+  display: block;
+}
 .certificate .button {
   padding: 0;
   color: #ffffff;
@@ -14713,6 +14730,14 @@ yx-axis
 }
 .certificate .button .icon path {
   stroke: #217ABF;
+}
+.certificate__info {
+  max-width: 225px;
+}
+@media (min-width: 576px) {
+  .certificate__info {
+    max-width: max-content;
+  }
 }
 
 .vacancies-hero {
@@ -14798,6 +14823,7 @@ yx-axis
   .vacancies-hero__history {
     justify-content: center;
     max-width: calc(50% - 10px);
+    padding-left: 5rem;
   }
 }
 @media (min-width: 1400px) {
@@ -14811,6 +14837,7 @@ yx-axis
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 @media (min-width: 576px) {
@@ -14880,8 +14907,8 @@ yx-axis
   }
 }
 .vacancies-profit__title {
-  padding: 0 1.25rem;
   margin-bottom: 1rem;
+  max-width: calc(100% - 40px);
   font-size: 1.25rem;
   line-height: 1.625rem;
   text-transform: uppercase;
@@ -14890,6 +14917,7 @@ yx-axis
 @media (min-width: 576px) {
   .vacancies-profit__title {
     padding: 0;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -15049,22 +15077,24 @@ yx-axis
 }
 .vacancies-stories__header {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: calc(20px - 0.5rem);
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
 }
 .vacancies-stories__header h3 {
+  max-width: 288px;
   margin: 0;
-  font-size: 1.6875rem;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-weight: 700;
-  line-height: 2.1875rem;
+  font-size: 1.69rem;
+  line-height: 130%;
   letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 @media (min-width: 576px) {
   .vacancies-stories__header h3 {
+    max-width: max-content;
     font-size: 2.5rem;
-    line-height: 3.25rem;
-    letter-spacing: 0.02em;
   }
 }
 .vacancies-stories__header h3 > span {
@@ -15130,6 +15160,7 @@ yx-axis
 }
 
 .stories-slide {
+  position: relative;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
@@ -15139,7 +15170,7 @@ yx-axis
   color: #42474d;
   background-color: #fffeda;
   border-radius: 10px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: -1px 4px 24px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .stories-slide:focus, .stories-slide:hover {
@@ -15160,13 +15191,17 @@ yx-axis
     min-height: 207px;
   }
 }
+@media (min-width: 1200px) {
+  .stories-slide {
+    padding-right: 40px;
+  }
+}
 .stories-slide__header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.625rem;
   row-gap: 0;
-  width: 80%;
 }
 @media (min-width: 768px) {
   .stories-slide__header {
@@ -15188,17 +15223,15 @@ yx-axis
 }
 .stories-slide__title {
   max-width: calc(100% - 6.5625rem - 0.625rem);
-  font-weight: 700;
   font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
-  font-size: 1.0625rem;
   font-weight: 700;
-  line-height: 1.375rem;
+  font-size: 1.06rem;
+  line-height: 130%;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .stories-slide__title {
     font-size: 1.25rem;
-    line-height: 1.625rem;
   }
 }
 .stories-slide__text {
@@ -15206,21 +15239,29 @@ yx-axis
   width: 100%;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 130%;
 }
 @media (min-width: 768px) {
   .stories-slide__text {
     margin-bottom: 0.75rem;
-    font-size: 0.9375rem;
-    line-height: 1.03125rem;
+    font-size: 0.94rem;
+    line-height: 110%;
   }
 }
 .stories-slide__icon {
-  width: 1.875rem;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-130%);
+  width: 40px;
+  height: 40px;
 }
 @media (min-width: 576px) {
   .stories-slide__icon {
-    width: 3.75rem;
+    width: 61px;
+    height: 61px;
+    right: 40px;
+    transform: translateY(-50%);
   }
 }
 .stories-slide__icon .icon {
