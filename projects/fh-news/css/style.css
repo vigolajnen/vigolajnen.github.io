@@ -12643,12 +12643,23 @@ yx-axis
 .news {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 24px;
   color: #42474d;
+}
+@media (min-width: 768px) {
+  .news {
+    gap: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .news {
+    gap: 24px;
+  }
 }
 @media (min-width: 1200px) {
   .news.container {
-    margin-bottom: 3.75rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -12687,6 +12698,9 @@ yx-axis
   font-weight: 400;
   font-size: 0.94rem;
   line-height: 140%;
+}
+.news__form .form-label {
+  padding-bottom: 0;
 }
 .news__form .form-select {
   margin-top: 0.5rem;
@@ -12791,7 +12805,7 @@ yx-axis
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
-  max-width: 73.75rem;
+  max-width: 75.45rem;
 }
 @media (min-width: 768px) {
   .news__list {
