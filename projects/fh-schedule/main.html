@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fitness House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Start">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="container"><a class="phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+              <svg class="icon" width="13" height="22" viewBox="0 0 13 22">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg><span>(812) 610 06 06</span></a><a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
+              <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                <use xlink:href="img/sprite.svg#user-lk"></use>
+              </svg><span>Личный кабинет</span></a>
+        <button class="page-header__btn-menu" aria-label="Открыть меню">
+              <svg class="icon" width="40" height="19" viewBox="0 0 40 19">
+                <use xlink:href="img/sprite.svg#menu"></use>
+              </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <div class="mobile-menu__wrapper">
+          <button class="mobile-menu__btn-close" aria-label="Закрыть меню">
+                <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                  <use xlink:href="img/sprite.svg#btn-close"></use>
+                </svg>
+          </button><a class="link-text link-text--svg" href="lk">
+                <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                  <use xlink:href="img/sprite.svg#user-lk"></use>
+                </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
+          <ul class="list list--bold">
+            <li><a href="sale.html">Акции</a></li>
+            <li><a href="clubs.html">Клубы</a></li>
+            <li><a href="#">Тренеры</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+          </ul>
+          <ul class="list">
+            <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Реклама</a></li>
+          </ul>
+          <hr><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
+                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <ul class="social">
+            <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="31" height="19" viewBox="0 0 31 19">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--inst" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="31" height="22" viewBox="0 0 31 22">
+                            <use xlink:href="img/sprite.svg#youtube"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--fb" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="26" height="27" viewBox="0 0 26 27">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <nav class="nav-menu container">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item nav-menu__item--city">
+          <div class="nav-city">
+            <button class="nav-city__title" tabindex="0"><span>Самара</span>
+                        <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
+                          <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+            </button>
+            <div class="nav-city__wrapper d-none">
+              <div class="my-custom-scrollbar my-custom-scrollbar-primary">
+                <ul class="nav-city__list">
+                  <li><a class="region-select" href="/" data-region="1">Санкт-Петербург</a></li>
+                  <li><a class="region-select" href="index-n-novgorod.html" data-region="2">Нижний Новгород</a></li>
+                  <li><a class="region-select" href="index-kazan.html" data-region="3">Казань</a></li>
+                  <li><a class="region-select" href="index-tolyatti.html" data-region="4">Тольятти</a></li>
+                  <li><a class="region-select" href="1976.html" data-region="5">Самара</a></li>
+                  <li><a class="region-select" href="2123.html" data-region="6">Ульяновск</a></li>
+                  <li><a class="region-select" href="2181.html" data-region="7">Архангельск</a></li>
+                  <li><a class="region-select" href="2210.html" data-region="8">Ижевск</a></li>
+                  <li><a class="region-select" href="2236.html" data-region="9">Ярославль</a></li>
+                  <li><a class="region-select" href="2473.html" data-region="11">Петрозаводск</a></li>
+                  <li><a class="region-select" href="2526.html" data-region="12">Мурманск</a></li>
+                  <li><a class="region-select" href="2537.html" data-region="13">Рязань</a></li>
+                  <li><a class="region-select" href="3172.html" data-region="14">Набережные Челны</a></li>
+                  <li><a class="region-select" href="5556.html" data-region="15">Тула</a></li>
+                  <li><a class="region-select" href="6804.html" data-region="16">Нижнекамск</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-menu__item  order-2"><a class="nav-menu__link nav-menu__link--sale" href="sale.html"><span class="d-none d-sm-block">Акции</span><span class="d-sm-none">Акционные предложения</span>
+                      <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                        <use xlink:href="img/sprite.svg#sale"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link nav-menu__link" href="clubs.html"><span>Клубы</span>
+                      <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                        <use xlink:href="img/sprite.svg#city"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Тренеры</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#trainer"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="schedule.html"><span>Расписание</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#schedule"></use>
+                      </svg></a></li>
+      </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
+    </nav>
+    <main class="main container main-location">
+      <div class="main__grid">
+        <section class="main__sale"><a class="sale section" href="#">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/sale/11.jpg">
+                        <source media="(min-width: 768px)" srcset="img/sale/11.jpg"><img src="img/sale/11.jpg" alt="Акция" width="294" height="330">
+                      </picture></a>
+        </section>
+        <section class="main__adv">
+          <section class="advantages order-2 order-md-1">
+            <h1 class="visually-hidden">Фитнес Хаус - это</h1><img class="advantages__h1" src="img/fh-text-main.png" width="623" height="78" alt="Фитнес Хаус - это"><a class="link advantages__link-modal" href="#modal-history" data-bs-toggle="modal">
+              <ul class="advantages__list">
+                <li class="advantages__item advantages__item--1">
+                  <div class="advantages__count"><span class="number">14</span>
+                              <svg class="icon" width="49" height="45" viewBox="0 0 49 45">
+                                <use xlink:href="img/sprite.svg#house"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">городов<span>в россии</span></div>
+                </li>
+                <li class="advantages__item advantages__item--2">
+                  <div class="advantages__count"><span class="number">71</span>
+                              <svg class="icon" width="53" height="29" viewBox="0 0 53 29">
+                                <use xlink:href="img/sprite.svg#people"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">клуба<span>федеральной сети</span></div>
+                </li>
+                <li class="advantages__item advantages__item--3">
+                  <div class="advantages__count"><span class="number">25<sub>+</sub></span>
+                              <svg class="icon" width="55" height="55" viewBox="0 0 55 55">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">Групповых<span>направлений</span></div>
+                </li>
+                <li class="advantages__item advantages__item--4">
+                  <div class="advantages__count"><span class="number">4</span>
+                              <svg class="icon" width="49" height="36" viewBox="0 0 49 36">
+                                <use xlink:href="img/sprite.svg#barbell"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">клуба<span>премиум-класса</span></div>
+                </li>
+              </ul>
+              <div class="advantages__more">
+                <div class="link-text link-text--more"><span>читать историю компании</span>
+                            <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                              <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                </div>
+              </div></a>
+          </section>
+        </section>
+        <section class="main__form">
+          <form class="form form-offers section order-1 order-md-2 needs-validation" method="post" action="https://echo.htmlacademy.ru" novalidate>
+            <div class="form-offers__title">Подберём персональное предложение</div>
+            <div class="form-offers__wrapper">
+              <label class="form-label" for="formName2"><span class="form__label-name">Введите имя</span>
+                <input class="form-control" type="text" name="name" id="formName2" placeholder="Алексей" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+              </label>
+              <label class="form-label" for="formPhone2"><span class="form__label-name">Введите номер телефона</span>
+                <input class="form-control" type="tel" name="phone-number" id="formPhone2" placeholder="8 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+              </label>
+              <label class="form-label"><span class="form__label-name">Выберите клуб</span>
+                <select class="form-select" size="1" name="club" aria-label="клуб" required>
+                  <option selected value="">Ваш клуб</option>
+                  <option value="На Гашека">На Гашека</option>
+                  <option value="На Северном">На Северном</option>
+                  <option value="На Заречной">На Заречной</option>
+                  <option value="На Камышовой">На Камышовой</option>
+                  <option value="На Лесной">На Лесной</option>
+                  <option value="На Выборгской">На Выборгской</option>
+                  <option value="На Большевиков">На Большевиков</option>
+                  <option value="На Ладожской">На Ладожской</option>
+                  <option value="На Левашовском">На Левашовском</option>
+                </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+              </label>
+              <div class="form-offers__btns">
+                <button class="button button--red" type="submit">Подобрать</button>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="main__job"><a class="box box box--job job order-2" href="#">
+                      <div class="box__title">Работа в компании <span>Fitness house</span></div>
+                      <div class="link-text link-text--more"><span>Подробнее</span>
+                                  <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg>
+                      </div></a>
+        </section>
+        <section class="main__schedule"><a class="box box box--schedule box--yellow schedule order-2" href="#">
+                      <div class="box__title">Расписание <span>групповых занятий</span></div>
+                      <div class="link-text link-text--more"><span>Подробнее</span>
+                                  <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                  </svg>
+                      </div></a>
+        </section>
+        <section class="main__slider">
+          <section class="slider order-2 slider--bg slider--main">
+            <div class="swiper-container">
+              <!-- swiper slides-->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/images/sale/July2023/presale/spb/pl.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/images/sale/July2023/arkhangelsk/zamena3/pl.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(https://www.fitnesshouse.ru/assets/cache/images/Photos_clubs/Foto23/003-x-d73.png);"></div>
+              </div>
+              <!-- !swiper slides-->
+              <!-- next / prev arrows-->
+              <div class="swiper-button-next" aria-label="кнопка вперед"></div>
+              <div class="swiper-button-prev" aria-label="кнопка назад"></div>
+              <!-- !next / prev arrows-->
+              <!-- pagination dots-->
+              <div class="swiper-pagination"></div>
+              <!-- !pagination dots-->
+            </div>
+          </section>
+        </section>
+        <section class="main__record"><a class="link record order-2" href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">
+            <h3 class="record__title">Запишись<span>на экскурсию</span></h3>
+            <div class="link-text link-text--more"><span>Записаться</span>
+                        <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                          <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+            </div></a>
+        </section>
+                <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="--pic:url('../img/modal/modal-bg-gym.jpg')">
+                      <div class="modal-header">
+                        <h5 class="title modal-title">Записаться на экскурсию</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                    <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                      <use xlink:href="img/sprite.svg#btn-close"></use>
+                                    </svg>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="form needs-validation" novalidate>
+                          <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
+                            <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label" for="formSingUpEmail"><span class="form__label-name">Введите @email</span>
+                            <input class="form-control" type="email" id="formSingUpEmail" placeholder="Ivanov@mail.com" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label" for="formSingUpPhone"><span class="form__label-name">Введите номер телефона</span>
+                            <input class="form-control" type="tel" id="formSingUpPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <label class="form-label"><span class="form__label-name">Выберите клуб</span>
+                            <select class="form-select form-control form-select" name="formClub" aria-label="клуб" required>
+                              <option selected disabled value="">Ваш клуб</option>
+                              <option value="На Гашека">На Гашека</option>
+                              <option value="На Северном">На Северном</option>
+                              <option value="На Заречной">На Заречной</option>
+                              <option value="На Камышовой">На Камышовой</option>
+                              <option value="На Лесной">На Лесной</option>
+                              <option value="На Выборгской">На Выборгской</option>
+                              <option value="На Большевиков">На Большевиков</option>
+                              <option value="На Ладожской">На Ладожской</option>
+                              <option value="На Левашовском">На Левашовском</option>
+                            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                          </label>
+                          <div class="custom-form-check order-1" tabindex="0">
+                            <input class="visually-hidden" type="checkbox" id="custom-form-check" required>
+                            <label for="custom-form-check"><span>Оставляя свой email, я принимаю</span><br><a href="#">Политику конфиденциальности</a></label>
+                          </div>
+                          <button class="botton button--red mt-2" type="submit">Записаться</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade modal--bg-md modal-submit-form" aria-hidden="true" tabindex="-1" id="modal-submit-form">
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
+                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                  <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                    <use xlink:href="img/sprite.svg#btn-close"></use>
+                                  </svg>
+                      </button>
+                      <div class="modal-body">
+                        <div class="form-message-modal">
+                          <div class="form-message-modal__wrapper">
+                                      <svg class="icon" width="36" height="36" viewBox="0 0 36 36">
+                                        <use xlink:href="img/sprite.svg#ok"></use>
+                                      </svg>
+                            <div class="form-message-modal__title">Заявка отправлена в клуб!<span>Ваш менеджер перезвонит в ближайшее время</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
+                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <div class="page-footer__links links">
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Новости клубов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Академия фитнеса Корус</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Вакансии</span></a></li>
+            </ul>
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Корпоративные продажи</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Развитие регионов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Реклама в клубах</span></a></li>
+            </ul>
+          </div>
+          <div class="page-footer__support">Служба поддержки
+            <ul class="social pt-2 mb-0 pb-2">
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://wa.me/+79213443525" aria-label="Наш whatsApp" target="_blank">
+                              <svg class="icon" width="30" height="30" viewBox="0 0 19 19">
+                                <use xlink:href="img/sprite.svg#wp"></use>
+                              </svg></a></li>
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://t.me/+79213443525" aria-label="Наш telegram" target="_blank">
+                              <svg class="icon" width="21" height="17" viewBox="0 0 17 17">
+                                <use xlink:href="img/sprite.svg#tl"></use>
+                              </svg></a></li>
+            </ul><span>с 07:00 до 00:00</span>
+            <div>Email:<a href="mailto:help@fhclub.ru">help@fhclub.ru</a></div>
+          </div><a class="logo logo--footer" href="#">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo.svg"><img src="img/logo.svg" alt="Логотип компании" width="154" height="26">
+                      </picture></a>
+        </div>
+        <div class="page-footer__buttom">
+          <ul class="social">
+            <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="31" height="19" viewBox="0 0 31 19">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--inst" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="31" height="22" viewBox="0 0 31 22">
+                            <use xlink:href="img/sprite.svg#youtube"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--fb" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="26" height="27" viewBox="0 0 26 27">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+          </ul><a class="link-text" href="#">Юридическая информация</a><a class="link-text" href="#">Cоглашение на обработку персональных данных</a>
+          <div class="page-footer__copy">
+            <div>© 2007 - 2023</div>
+            <div>Все права защищены.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal-city fade" id="modalToggleCityChange" aria-hidden="true" aria-labelledby="modalToggleCityLabelChange" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalToggleCityLabelChange">Выберите ваш город</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="my-custom-scrollbar my-custom-scrollbar-primary">
+              <ul class="city-list">
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="1">Санкт-Петербург</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="2">Нижний Новгород</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="3">Казань</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="4">Тольятти</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="5">Самара</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="6">Ульяновск</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="7">Архангельск</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="8">Ижевск</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="9">Ярославль</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="11">Петрозаводск</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="12">Мурманск</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="13">Рязань</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="14">Набережные Челны</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="15">Тула</button>
+                </li>
+                <li>
+                  <button class="region-select" type="button" data-bs-dismiss="modal" aria-label="Close" data-region="16">Нижнекамск</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="modal fade modal-history" aria-hidden="true" tabindex="-1" id="modal-history">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="--pic:url('../img/modal/girl-swimming-pool.jpg')">
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                          <svg class="icon" width="26" height="26">
+                            <use xlink:href="img/sprite.svg#btn-close"></use>
+                          </svg>
+              </button>
+              <div class="modal-body">
+                    <section class="history">
+                      <div class="history__header">
+                        <h3 class="title">История компании</h3>
+                                  <svg class="icon" width="130" height="22" viewBox="0 0 130 22">
+                                    <use xlink:href="img/sprite.svg#logo"></use>
+                                  </svg>
+                      </div>
+                      <ul class="history__list">
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor: #5E879F">2007 год</h4>
+                          <div class="history__text">30 июня 2007 г. открывается первый Fitness House на Стрелке Васильевского острова, в самом центре Санкт-Петербурга.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#5E879F">2011 год</h4>
+                          <div class="history__text">К началу 2011 г. сеть насчитывает 26 клубов в разных районах Санкт-Петербурга. Конец 2011 г. отмечен открытием первого клуба новой линейки фитнес-клубов премиум класса Fitness House Prestige на Левашовском проспекте.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#5095AC">2017 год</h4>
+                          <div class="history__text">В начале 2017 г. сеть насчитывает 43 клуба, из них — 34 клуба с бассейными комплексами,
+          5 клубов без бассейнов, 4 клуба премиум класса Fitness House Prestige.
+          В этом году Fitness House начинает покорять регионы. Осенью открываются первые клубы в Нижнем Новгороде и Казани.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#559CB4">2018 год</h4>
+                          <div class="history__text">В 2018 г. продолжается активное строительство новых фитнес-клубов. Fitness House узнают в регионах. Открываются вторые клубы в Казани и Нижнем Новгороде. Теперь наши клубы в Тольятти и Ульяновске.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#51A5BC">2019 год</h4>
+                          <div class="history__text">Открываются новые клубы в Архангельске, Ижевске, Самаре, Ярославле и Петрозаводске.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#54AAB6">2020 год</h4>
+                          <div class="history__text">Fitness House продолжает покорять регионы. Теперь наши клубы в Рязани, Мурманске, открываются вторые клубы в Самаре и Ижевске.
+          В Санкт-Петербурге появляется новый формат фитнес-клубов бизнес-класса Fitness House Premier в ТЦ «Охта Молл» и на улице Салова.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#63B3B8">2021 год</h4>
+                          <div class="history__text">Fitness House активно продолжает свой рост в Санкт-Петербурге, Казани, Самаре, Ижевске. К концу 2021 года сеть насчитывает 66 клубов в 12 городах РФ.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#6DBDC2">2022 год</h4>
+                          <div class="history__text">Открываются 6 новых клубов: 3 в Санкт-Петербурге, а также в других городах: в Набережных Челнах, в Туле и 4й клуб в Самаре.</div>
+                        </li>
+                        <li class="history__item">
+                          <h4 class="history__title" style="--bgColor:#77C7CC">Перспективы на 2023 год</h4>
+                          <div class="history__text">Открытие новых клубов в разных городах России, продолжение развития сети в Санкт-Петербурге.</div>
+                        </li>
+                      </ul>
+                    </section>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.min.js" type="module"></script>
+  </body>
+</html>
