@@ -12643,6 +12643,7 @@ yx-axis
 @media (min-width: 768px) {
   .advantages-pro__title {
     font-size: 2.6rem;
+    margin-bottom: 1.6rem;
   }
 }
 @media (min-width: 1200px) {
@@ -12667,6 +12668,11 @@ yx-axis
     flex-wrap: wrap;
   }
 }
+@media (min-width: 992px) {
+  .advantages-pro__items {
+    justify-content: start;
+  }
+}
 .advantages-pro__items .button {
   padding: 0.85rem 0.5rem;
   font-size: 0.75rem;
@@ -12674,6 +12680,11 @@ yx-axis
   border-color: #42474d;
   text-align: center;
   flex-grow: 0.5;
+}
+@media (min-width: 420px) {
+  .advantages-pro__items .button {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 576px) {
   .advantages-pro__items .button {
@@ -12692,6 +12703,7 @@ yx-axis
     font-size: 0.85rem;
     padding: 0.5rem 0.5rem;
     text-align: left;
+    flex-grow: 0;
   }
 }
 @media (min-width: 1200px) {
