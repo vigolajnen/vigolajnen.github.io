@@ -12634,7 +12634,8 @@ yx-axis
 }
 .advantages-pro__title {
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
   font-size: 1.6rem;
   line-height: normal;
   text-transform: uppercase;
@@ -12667,12 +12668,18 @@ yx-axis
   }
 }
 .advantages-pro__items .button {
-  padding: 0.85rem;
-  font-size: 1rem;
+  padding: 0.85rem 0.5rem;
+  font-size: 0.75rem;
   color: #42474d;
   border-color: #42474d;
   text-align: center;
   flex-grow: 0.5;
+}
+@media (min-width: 576px) {
+  .advantages-pro__items .button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
 }
 @media (min-width: 768px) {
   .advantages-pro__items .button {
@@ -12697,6 +12704,13 @@ yx-axis
   padding: 1rem 2rem;
   margin-top: 1rem;
   text-align: center;
+  background-color: #42474d;
+  border-color: #42474d;
+}
+.advantages-pro__btn:focus, .advantages-pro__btn:hover {
+  color: #ffffff;
+  border-color: #cd4141;
+  background-color: #cd4141;
 }
 @media (min-width: 768px) {
   .advantages-pro__btn {
