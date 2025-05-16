@@ -12624,6 +12624,26 @@ yx-axis
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 576px) {
+  .advantages-pro {
+    padding: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .advantages-pro {
+    padding: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages-pro {
+    padding: 1.8rem 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .advantages-pro {
+    padding: 1.8rem;
+  }
+}
 .advantages-pro:focus, .advantages-pro:hover {
   color: #42474d;
 }
