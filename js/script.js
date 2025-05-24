@@ -1,4 +1,113 @@
-import projects from './projects.js';
+const projects = [
+  {
+    title: 'Магазин украшений',
+    desc: 'Верстка на HTML/CSS с Flexbox и Grid',
+    tags: ['html', 'css', 'js'],
+    image: 'img/gallery/shop1.jpg',
+    images: [
+      'img/gallery/shop1.jpg',
+      'https://images.unsplash.com/photo-1621839673705-6617adf9e890',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    ],
+    link: 'https://vigolajnen.github.io/projects/jewellery/index.html',
+  },
+  {
+    title: 'Cat Energy',
+    desc: 'Верстка на HTML/CSS с Flexbox и Grid',
+    tags: ['html', 'css', 'js'],
+    image: 'img/gallery/cat1.jpg',
+    images: [
+      'img/gallery/cat1.jpg',
+      'https://images.unsplash.com/photo-1621839673705-6617adf9e890',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    ],
+    link: 'https://vigolajnen.github.io/catEnergy/index.html',
+  },
+  {
+    title: 'Фитнес центр',
+    desc: 'Верстка на HTML/CSS с Flexbox и Grid',
+    tags: ['html', 'css', 'js'],
+    image: 'img/gallery/fitness1.jpg',
+    images: [
+      'img/gallery/fitness1.jpg',
+      'https://images.unsplash.com/photo-1621839673705-6617adf9e890',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    ],
+    link: 'https://vigolajnen.github.io/projects/fitness/index.html',
+  },
+  {
+    title: 'Лендинг - Круизы в Антарктику',
+    desc: 'Верстка на HTML/CSS с Flexbox и Grid',
+    tags: ['html', 'css', 'js'],
+    image: 'img/gallery/cruise1.jpg',
+    images: [
+      'img/gallery/cruise1.jpg',
+      'https://images.unsplash.com/photo-1621839673705-6617adf9e890',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    ],
+    link: 'https://vigolajnen.github.io/projects/cruise/index.html',
+  },
+  {
+    title: 'Адаптивный лендинг',
+    desc: 'Верстка на HTML/CSS с Flexbox и Grid',
+    tags: ['html', 'css', 'js'],
+    image: 'img/gallery/mishka1.jpg',
+    images: [
+      'img/gallery/mishka1.jpg',
+      'https://images.unsplash.com/photo-1621839673705-6617adf9e890',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    ],
+    link: 'https://vigolajnen.github.io/projects/mishka/index.html',
+  },
+  {
+    title: 'Адаптивный лендинг',
+    desc: 'Верстка на HTML/CSS с Flexbox и Grid',
+    tags: ['html', 'css', 'js'],
+    image: 'img/gallery/test1.jpg',
+    images: [
+      'img/gallery/test1.jpg',
+      'https://images.unsplash.com/photo-1621839673705-6617adf9e890',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    ],
+    link: 'https://vigolajnen.github.io/projects/reka/index.html',
+  },
+  {
+    title: 'Адаптивный лендинг',
+    desc: 'Верстка на HTML/CSS с Flexbox и Grid',
+    tags: ['html', 'css', 'js'],
+    image: 'img/gallery/auto1.jpg',
+    images: [
+      'img/gallery/auto1.jpg',
+      'https://images.unsplash.com/photo-1621839673705-6617adf9e890',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    ],
+    link: 'https://vigolajnen.github.io/projects/auto/index.html',
+  },
+  {
+    title: 'Адаптивный лендинг',
+    desc: 'Верстка на HTML/CSS с Flexbox и Grid',
+    tags: ['html', 'css', 'js'],
+    image: 'img/gallery/nesco1.jpg',
+    images: [
+      'img/gallery/nesco1.jpg',
+      'https://images.unsplash.com/photo-1621839673705-6617adf9e890',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3',
+    ],
+    link: 'https://vigolajnen.github.io/projects/nesco/index.html',
+  },
+  {
+    title: 'Shop Burger',
+    desc: 'SPA',
+    tags: ['react', 'scss', 'typescript'],
+    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee',
+    images: [
+      'https://images.unsplash.com/photo-1633356122544-f134324a6cee',
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
+      'https://images.unsplash.com/photo-1579389083078-4e7018379f7e',
+    ],
+    link: 'https://vigolajnen.github.io/react-burger/',
+  },
+];
 
 document.addEventListener('DOMContentLoaded', function () {
   const themeToggle = document.getElementById('themeToggle');
