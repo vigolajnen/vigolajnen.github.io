@@ -1,5 +1,28 @@
 const projects = [
   {
+    title: 'Shop Burger',
+    desc: 'SPA',
+    tags: ['react', 'scss', 'typescript'],
+    image: 'img/gallery/burger/burger.png',
+    images: [
+      'img/gallery/burger/burger.png',
+      'img/gallery/burger/burger-2.png',
+      'img/gallery/burger/burger-3.png',
+      'img/gallery/burger/burger-4.png',
+    ],
+    link: 'https://vigolajnen.github.io/react-burger/',
+  },
+  {
+    title: 'Shop pro',
+    desc: 'SPA',
+    tags: ['react', 'scss', 'typescript'],
+    image: 'img/gallery/pro/pro.png',
+    images: [
+      'img/gallery/pro/pro.png',
+    ],
+    link: 'https://pro.fitnesshause.ru',
+  },
+  {
     title: 'Магазин украшений',
     desc: 'Верстка на HTML/CSS с Flexbox и Grid',
     tags: ['html', 'css', 'js'],
@@ -94,18 +117,6 @@ const projects = [
       'https://images.unsplash.com/photo-1551650975-87deedd944c3',
     ],
     link: 'https://vigolajnen.github.io/projects/nesco/index.html',
-  },
-  {
-    title: 'Shop Burger',
-    desc: 'SPA',
-    tags: ['react', 'scss', 'typescript'],
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee',
-    images: [
-      'https://images.unsplash.com/photo-1633356122544-f134324a6cee',
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
-      'https://images.unsplash.com/photo-1579389083078-4e7018379f7e',
-    ],
-    link: 'https://vigolajnen.github.io/react-burger/',
   },
 ];
 
