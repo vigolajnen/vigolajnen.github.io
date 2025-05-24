@@ -16,11 +16,9 @@ const projects = [
     title: 'Shop pro',
     desc: 'SPA',
     tags: ['react', 'scss', 'typescript'],
-    image: 'img/gallery/pro/pro.png',
-    images: [
-      'img/gallery/pro/pro.png',
-    ],
-    link: 'https://pro.fitnesshause.ru',
+    image: 'img/gallery/pro/pro-2.png',
+    images: ['img/gallery/pro/pro-2.png'],
+    link: 'https://pro.fitnesshouse.ru/',
   },
   {
     title: 'Магазин украшений',
