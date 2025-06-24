@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Подписка Fitness House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Start">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <body class="page-body">
+    <header class="page-header">
+      <div class="container"><a class="phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+              <svg class="icon" width="13" height="22" viewBox="0 0 13 22">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg><span>(812) 610 06 06</span></a><a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
+              <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                <use xlink:href="img/sprite.svg#user-lk"></use>
+              </svg><span>Личный кабинет</span></a>
+        <button class="page-header__btn-menu" aria-label="Открыть меню">
+              <svg class="icon" width="40" height="19" viewBox="0 0 40 19">
+                <use xlink:href="img/sprite.svg#menu"></use>
+              </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <div class="mobile-menu__wrapper">
+          <button class="mobile-menu__btn-close" aria-label="Закрыть меню">
+                <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                  <use xlink:href="img/sprite.svg#btn-close"></use>
+                </svg>
+          </button><a class="link-text link-text--svg" href="lk">
+                <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                  <use xlink:href="img/sprite.svg#user-lk"></use>
+                </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
+          <ul class="list list--bold">
+            <li><a href="sale.html">Акции</a></li>
+            <li><a href="clubs.html">Клубы</a></li>
+            <li><a href="#">Тренеры</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+          </ul>
+          <ul class="list">
+            <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Реклама</a></li>
+          </ul>
+          <hr><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
+                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <ul class="social">
+            <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="31" height="19" viewBox="0 0 31 19">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--inst" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="31" height="22" viewBox="0 0 31 22">
+                            <use xlink:href="img/sprite.svg#youtube"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--fb" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="26" height="27" viewBox="0 0 26 27">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <nav class="nav-menu container">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item nav-menu__item--city">
+          <div class="nav-city">
+            <button class="nav-city__title" tabindex="0"><span>Санкт-Петербург</span>
+                        <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
+                          <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+            </button>
+            <div class="nav-city__wrapper d-none">
+              <div class="my-custom-scrollbar my-custom-scrollbar-primary">
+                <ul class="nav-city__list">
+                  <li><a class="region-select" href="/" data-region="1">Санкт-Петербург</a></li>
+                  <li><a class="region-select" href="index-n-novgorod.html" data-region="2">Нижний Новгород</a></li>
+                  <li><a class="region-select" href="index-kazan.html" data-region="3">Казань</a></li>
+                  <li><a class="region-select" href="index-tolyatti.html" data-region="4">Тольятти</a></li>
+                  <li><a class="region-select" href="1976.html" data-region="5">Самара</a></li>
+                  <li><a class="region-select" href="2123.html" data-region="6">Ульяновск</a></li>
+                  <li><a class="region-select" href="2181.html" data-region="7">Архангельск</a></li>
+                  <li><a class="region-select" href="2210.html" data-region="8">Ижевск</a></li>
+                  <li><a class="region-select" href="2236.html" data-region="9">Ярославль</a></li>
+                  <li><a class="region-select" href="2473.html" data-region="11">Петрозаводск</a></li>
+                  <li><a class="region-select" href="2526.html" data-region="12">Мурманск</a></li>
+                  <li><a class="region-select" href="2537.html" data-region="13">Рязань</a></li>
+                  <li><a class="region-select" href="3172.html" data-region="14">Набережные Челны</a></li>
+                  <li><a class="region-select" href="5556.html" data-region="15">Тула</a></li>
+                  <li><a class="region-select" href="6804.html" data-region="16">Нижнекамск</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-menu__item  order-2"><a class="nav-menu__link nav-menu__link--sale" href="sale.html"><span class="d-none d-sm-block">Акции</span><span class="d-sm-none">Акционные предложения</span>
+                      <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                        <use xlink:href="img/sprite.svg#sale"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link nav-menu__link" href="clubs.html"><span>Клубы</span>
+                      <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                        <use xlink:href="img/sprite.svg#city"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Тренеры</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#trainer"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="schedule.html"><span>Расписание</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#schedule"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="podpiska.html"><span>Подписка</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#schedule"></use>
+                      </svg></a></li>
+      </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
+    </nav>
+    <main class="page-subscription">
+      <div class="container">
+        <section class="page-subscription__header page-subscription--indent">
+          <h1>Абонемент в фитнес-клуб от 1.590 ₽/мес</h1>
+          <div class="page-subscription__header-picture"></div>
+        </section>
+        <section class="page-subscription--indent subscription-advantages" data-aos="fade-up">
+          <h3 class="page-subscription__title" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">ФИТНЕС по подписке — это</h3>
+          <ul class="subscription-advantages__list">
+            <li class="subscription-advantages__item" data-aos="fade-up" data-aos-delay="100"><span class="subscription-advantages__item-header"><span class="subscription-advantages__item-title">Оплата за месяц</span>
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-money"></use>
+                          </svg></span><span class="subscription-advantages__item-text">Специальный тарифный план, в котором не нужно платить за год вперед</span></li>
+            <li class="subscription-advantages__item" data-aos="fade-up" data-aos-delay="100"><span class="subscription-advantages__item-header"><span class="subscription-advantages__item-title">Варианты тарифов</span>
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-variants"></use>
+                          </svg></span><span class="subscription-advantages__item-text">Выбирайте фитнес или фитнес+бассейн Платите только за то, чем пользуетесь.</span></li>
+            <li class="subscription-advantages__item" data-aos="fade-up" data-aos-delay="200"><span class="subscription-advantages__item-header"><span class="subscription-advantages__item-title">Доступность клубов</span>
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-clubs"></use>
+                          </svg></span><span class="subscription-advantages__item-text">Доступность клубов Сеть фитнес-клубов включает в себя более 70 адресов. Выбирайте один клуб или посещайте все клубы сети</span></li>
+            <li class="subscription-advantages__item" data-aos="fade-up" data-aos-delay="200"><span class="subscription-advantages__item-header"><span class="subscription-advantages__item-title">Заморозка абонемента</span>
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-lock"></use>
+                          </svg></span><span class="subscription-advantages__item-text">Не оплачивайте первоначальный взнос заново, если собираетесь в отпуск</span></li>
+            <li class="subscription-advantages__item" data-aos="fade-up" data-aos-delay="300"><span class="subscription-advantages__item-header"><span class="subscription-advantages__item-title">Разнообразие групповых занятий</span>
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-train"></use>
+                          </svg></span><span class="subscription-advantages__item-text">Выбирайте тренировку по душе, пробуйте новое и экспериментируйте</span></li>
+            <li class="subscription-advantages__item" data-aos="fade-up" data-aos-delay="300"><span class="subscription-advantages__item-header"><span class="subscription-advantages__item-title">Индивидуальный подход тренеров</span>
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-personal"></use>
+                          </svg></span><span class="subscription-advantages__item-text">Выбирайте тренировку по душе, пробуйте новое и экспериментируйте</span></li>
+          </ul>
+        </section>
+        <section class="page-subscription--indent">
+          <h3 class="page-subscription__title">Как оформить</h3>
+          <div class="subscription-steps" data-aos="fade-up">
+            <ol class="subscription-steps__list">
+              <li data-aos="fade-up" data-aos-delay="100">Оплачиваете тариф</li>
+              <li data-aos="fade-up" data-aos-delay="200">Приходите в клуб</li>
+              <li data-aos="fade-up" data-aos-delay="300">Получаете индивидуальный брелок</li>
+              <li data-aos="fade-up" data-aos-delay="400">Используете стартовые тренировки</li>
+              <li data-aos="fade-up" data-aos-delay="500">Тренируетесь в клубе</li>
+            </ol>
+            <div class="subscription-steps__picture" data-aos="fade" data-aos-delay="100"></div>
+          </div>
+        </section>
+        <section class="page-subscription__tariffs page-subscription--indent">
+          <h3 class="page-subscription__title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Тарифы</h3>
+          <section class="tariffs-carousel overflow-auto">
+            <article class="tariff" data-aos="fade" data-aos-delay="100">
+              <h3 class="tariff__title">Junior<span>(только с 14 до 23 лет)</span></h3>
+              <button class="tariff__tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Услуги, включенные в тариф могут отличаться в зависимости от выбора клуба">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                          </svg>
+              </button>
+              <ul class="tariff__services">
+                <li class="tariff__service">Безлимитный доступ в клуб</li>
+                <li class="tariff__service">Тренажерный зал</li>
+                <li class="tariff__service">Групповые уроки</li>
+                <li class="tariff__service">Сауны в спа-зоне клуба
+                  <button class="tariff__service-tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Финская сауна, турецкая парная, инфракрасная сауна, соляная комната (при их наличии в клубе)">
+                              <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                                <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                              </svg>
+                  </button>
+                </li>
+                <li class="tariff__service">Индивидуальные шкафчики</li>
+                <li class="tariff__service">Сейфовые ячейки</li>
+                <li class="tariff__service"><b>Две</b>
+                  бонусные тренировки
+                </li>
+                <li class="tariff__service">Гостевой доступ для друзей
+                  <button class="tariff__service-tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Каждый гость может бесплатно посетить клуб один раз">
+                              <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                                <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                              </svg>
+                  </button>
+                </li>
+                <li class="tariff__service tariff__service--cancel">Бассейн</li>
+              </ul><a class="tariff__link" href="#"><span>Купить от 1.590 ₽/мес</span></a>
+            </article>
+            <article class="tariff tariff--yellow" data-aos="fade" data-aos-delay="300">
+              <h3 class="tariff__title">LUX<span>(бассейн + фитнес + спа)</span></h3>
+              <button class="tariff__tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Услуги, включенные в тариф могут отличаться в зависимости от выбора клуба">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                          </svg>
+              </button>
+              <ul class="tariff__services">
+                <li class="tariff__service tariff__service--bold">Посещение всех клубов сети
+                  <button class="tariff__service-tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Кроме Prestige">
+                              <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                                <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                              </svg>
+                  </button>
+                </li>
+                <li class="tariff__service">Безлимитный доступ в клуб</li>
+                <li class="tariff__service">Тренажерный зал</li>
+                <li class="tariff__service">Групповые уроки</li>
+                <li class="tariff__service">Сауны в спа-зоне клуба
+                  <button class="tariff__service-tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Финская сауна, турецкая парная, инфракрасная сауна, соляная комната (при их наличии в клубе)">
+                              <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                                <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                              </svg>
+                  </button>
+                </li>
+                <li class="tariff__service">Индивидуальные шкафчики</li>
+                <li class="tariff__service">Сейфовые ячейки</li>
+                <li class="tariff__service"><b>Три</b>
+                  бонусные тренировки
+                </li>
+                <li class="tariff__service">Гостевой доступ для друзей
+                  <button class="tariff__service-tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Каждый гость может бесплатно посетить клуб один раз">
+                              <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                                <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                              </svg>
+                  </button>
+                </li>
+                <li class="tariff__service tariff__service--bold">Бассейн</li>
+              </ul><a class="tariff__link tariff__link--red" href="#"><span>Купить от 5.500 ₽/мес</span></a>
+            </article>
+            <article class="tariff" data-aos="fade" data-aos-delay="400">
+              <h3 class="tariff__title">Smart<span>(фитнес + спа)</span></h3>
+              <button class="tariff__tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Услуги, включенные в тариф могут отличаться в зависимости от выбора клуба">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                          </svg>
+              </button>
+              <ul class="tariff__services">
+                <li class="tariff__service tariff__service--bold">Посещение всех клубов сети
+                  <button class="tariff__service-tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Кроме Prestige">
+                              <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                                <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                              </svg>
+                  </button>
+                </li>
+                <li class="tariff__service">Безлимитный доступ в клуб</li>
+                <li class="tariff__service">Тренажерный зал</li>
+                <li class="tariff__service">Групповые уроки</li>
+                <li class="tariff__service">Сауны в спа-зоне клуба
+                  <button class="tariff__service-tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Финская сауна, турецкая парная, инфракрасная сауна, соляная комната (при их наличии в клубе)">
+                              <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                                <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                              </svg>
+                  </button>
+                </li>
+                <li class="tariff__service">Индивидуальные шкафчики</li>
+                <li class="tariff__service">Сейфовые ячейки</li>
+                <li class="tariff__service"><b>Две</b>
+                  бонусные тренировки
+                </li>
+                <li class="tariff__service">Гостевой доступ для друзей
+                  <button class="tariff__service-tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Каждый гость может бесплатно посетить клуб один раз">
+                              <svg class="icon" width="28" height="28" viewBox="0 0 28 28">
+                                <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                              </svg>
+                  </button>
+                </li>
+                <li class="tariff__service tariff__service--cancel">Бассейн</li>
+              </ul><a class="tariff__link" href="#"><span>Купить от 3.400 ₽/мес</span></a>
+            </article>
+          </section>
+        </section>
+        <section class="page-subscription__sale page-subscription--indent">
+          <h3 class="page-subscription__title">Акции</h3>
+          <ul class="nav nav-tabs subscription-tabs" role="tablist" data-aos="fade-up">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="trade-in-tab" data-bs-toggle="tab" data-bs-target="#trade-in" type="button" role="tab" aria-controls="trade-in" aria-selected="true" data-aos="fade-up" data-aos-delay="100">TRADE IN</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="student-tab" data-bs-toggle="tab" data-bs-target="#student" type="button" role="tab" aria-controls="student" aria-selected="false" data-aos="fade-up" data-aos-delay="200">Студент</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="dr-tab" data-bs-toggle="tab" data-bs-target="#dr" type="button" role="tab" aria-controls="dr" aria-selected="false" data-aos="fade-up" data-aos-delay="300">День рождения</button>
+            </li>
+          </ul>
+          <div class="tab-content subscription-tab-content" data-aos="fade-up" data-aos-delay="500">
+            <div class="tab-pane fade show active" id="trade-in" role="tabpanel" aria-labelledby="trade-in-tab">
+              <div class="subscription-tab-content__pane">
+                <div class="subscription-tab-content__info">
+                  <div class="subscription-tab-content__header">
+                    <h3>Акция «TRADE IN»
+                      <button class="subscription-tab-content__tooltip" type="button" data-bs-toggle="trade-in-tooltip" data-bs-placement="top" title="Предоставьте фото карты/браслета/договора менеджеру клуба при оформлении абонемента.">
+                                  <svg class="icon" width="18" height="18" viewBox="0 0 24 24">
+                                    <use xlink:href="img/sprite-subscription.svg#icon-info"></use>
+                                  </svg>
+                      </button>
+                    </h3>
+                    <p>Подтвердите наличие абонемента в любом другом фитнес-клубе и получите максимальную скидку на первоначальный платеж</p>
+                  </div>
+                  <div class="subscription-tab-content__form">
+                    <form class="form needs-validation" novalidate>
+                      <label class="form-label" for="formName"><span class="form__label-name">Введите имя</span>
+                        <input class="form-control" type="text" id="formName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <label class="form-label" for="formPhone"><span class="form__label-name">Введите номер телефона</span>
+                        <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <div class="custom-form-check mb-4" tabindex="0">
+                        <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-5" required tabindex="0">
+                        <label for="custom-form-check-5"><span>Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с <a href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных.</a></span></label>
+                      </div>
+                      <button class="button button--red py-3 me-auto" type="submit">Хочу скидку</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="subscription-tab-content__picture subscription-tab-content__picture--trade-in"></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="student" role="tabpanel" aria-labelledby="student-tab">
+              <div class="subscription-tab-content__pane">
+                <div class="subscription-tab-content__info">
+                  <div class="subscription-tab-content__header">
+                    <h3>Для студентов и учащихся от 14 лет</h3>
+                    <p>Оставьте заявку, чтобы получить максимальную скидку</p>
+                  </div>
+                  <div class="subscription-tab-content__form">
+                    <form class="form needs-validation" novalidate>
+                      <label class="form-label" for="formName"><span class="form__label-name">Введите имя</span>
+                        <input class="form-control" type="text" id="formName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <label class="form-label" for="formPhone"><span class="form__label-name">Введите номер телефона</span>
+                        <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <div class="custom-form-check mb-4" tabindex="0">
+                        <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-5" required tabindex="0">
+                        <label for="custom-form-check-5"><span>Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с <a href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных.</a></span></label>
+                      </div>
+                      <button class="button button--red py-3 me-auto" type="submit">Хочу скидку</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="subscription-tab-content__picture subscription-tab-content__picture--student"></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="dr" role="tabpanel" aria-labelledby="dr-tab">
+              <div class="subscription-tab-content__pane">
+                <div class="subscription-tab-content__info">
+                  <div class="subscription-tab-content__header">
+                    <h3>Акция в День рождения</h3>
+                    <p>Оставьте заявку, чтобы получить максимальную скидку за 5 дней до и 5 дней после вашего Дня рождения</p>
+                  </div>
+                  <div class="subscription-tab-content__form">
+                    <form class="form needs-validation" novalidate>
+                      <label class="form-label" for="formName"><span class="form__label-name">Введите имя</span>
+                        <input class="form-control" type="text" id="formName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <label class="form-label" for="formPhone"><span class="form__label-name">Введите номер телефона</span>
+                        <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <div class="custom-form-check mb-4" tabindex="0">
+                        <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-5" required tabindex="0">
+                        <label for="custom-form-check-5"><span>Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с <a href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных.</a></span></label>
+                      </div>
+                      <button class="button button--red py-3 me-auto" type="submit">Хочу скидку</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="subscription-tab-content__picture subscription-tab-content__picture--dr"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-subscription__faq page-subscription--indent">
+          <h3 class="page-subscription__title" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Отвечаем на вопросы</h3>
+          <div class="accordion" id="faqAccordion" data-aos="fade-up">
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-1" aria-expanded="false" aria-controls="item-1">Часто задаваемые вопросы перед покупкой</button>
+              </h2>
+              <div class="accordion-collapse collapse" id="item-1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                                    <div class="accordion accordion-flush mt-2">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-1-0" aria-expanded="false">Как оформить / купить подписку</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-1-0">
+                                          <div class="accordion-body">
+      <p>Для оформления абонемента необходимо на сайте https://pro.fitnesshouse.ru</p>
+      <ul>
+        <li>1.Выбрать город</li>
+        <li>2.Выбрать клуб</li>
+        <li>3.Выбрать тариф</li>
+        <li>4.Ввести персональные данные</li>
+        <li>5.Оплатить</li>
+      </ul>
+      <p>Информационное письмо о покупке и чек будет у вас на почте. Активация абонемента происходит автоматически в день покупки.</p></div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-1-1" aria-expanded="false">Для чего нужно выбрать клуб, если оформляю Мультикарту?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-1-1">
+                                          <div class="accordion-body"><p>В выбранный клуб будет начислен стартовый пакет тренировок (персональная тренировка в тренажерном зале, в бассейне (при наличии в клубе) и групповое занятие расширенного формата)</p>
+      </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-1-2" aria-expanded="false">Сколько посещений входит в абонемент?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-1-2">
+                                          <div class="accordion-body">
+      <p>Клуб можно посещать неограниченное количество раз. Однако время посещения зависит от вашего тарифа: </p>
+      <p>«Утро» - до 17:00 или «Свободное посещение» - весь период работы клуба.</p></div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-1-3" aria-expanded="false">Где почитать полные условия договора по подписке?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-1-3">
+                                          <div class="accordion-body">Вы можете ознакомиться с правилами оформления абонемента в <a href="https://market.fitnesshouse.ru/storage/documents/pravila_cluba.pdf" target="_blank">«Правилах клуба»</a> на нашем сайте https://market.fitnesshouse.ru/documentation Раздел V. Правила потребления (оказания) услуг по форме оплаты - Подписка.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-1-4" aria-expanded="false">С какого возраста можно стать членом клуба по абонементу Подписка?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-1-4">
+                                          <div class="accordion-body">Членом клуба можно стать с 14 лет.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-1-5" aria-expanded="false">Абонемент по Подписке – это рассрочка?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-1-5">
+                                          <div class="accordion-body">Нет. Подписка - это форма абонемента с ежемесячной оплатой, которую вы можете заморозить или отменить в любое время.</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item2" aria-expanded="false">Что нужно знать после покупки</button>
+              </h2>
+              <div class="accordion-collapse collapse" id="item2">
+                <div class="accordion-body">
+                                    <div class="accordion accordion-flush mt-2">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-2-0" aria-expanded="false">Купил(а) абонемент, что дальше?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-2-0">
+                                          <div class="accordion-body">
+      Поздравляем вас с покупкой абонемента!</br>
+      Активация абонемента происходит автоматически в день покупки.</br>
+      Ждем вас в клубе с удостоверением личности. При первом посещении вас зарегистрируют и выдадут индивидуальный брелок.</br>
+      Администратор подскажет по навигации клуба и как получить допуск к занятиям.</br>
+      Желаем продуктивных тренировок!</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-2-1" aria-expanded="false">Как записаться на стартовую персональную тренировку?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-2-1">
+                                          <div class="accordion-body">
+      После покупки абонемента по Подписке у каждого посетителя появляется возможность воспользоваться стартовым пакетом тренировок (персональная тренировка в тренажерном зале, в бассейне (при наличии в клубе) и групповое занятие расширенного формата)</br>
+      Записаться на тренировку вы можете в коммерческом отделе клуба.
+      </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-2-2" aria-expanded="false">Что нужно взять с собой в клуб?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-2-2">
+                                          <div class="accordion-body">Для комфортного посещения клуба мы рекомендуем взять с собой, помимо формы для занятий, бутылку для воды, полотенце, тапочки для душа, купальный костюм для бассейна и СПА зоны.
+      </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-2-3" aria-expanded="false">Когда начинает действовать абонемент?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-2-3">
+                                          <div class="accordion-body">Активация абонемента происходит автоматически в день покупки.</br>
+      При первом посещении необходимо взять с собой паспорт.</br>
+      Обратите внимание на режим работы коммерческого отдела:
+      <ul>
+        <li>будни с 10:00 до 21:00,</li>
+        <li> выходные и праздничные дни с 11:00 до 21:00.</li>
+      </ul>
+      </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-2-4" aria-expanded="false">Где посмотреть расписание?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-2-4">
+                                          <div class="accordion-body">Расписание можно посмотреть на сайте https://www.fitnesshouse.ru/ в разделе <a href="https://www.fitnesshouse.ru/schedule.html">«расписание»</a>
+      </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-2-5" aria-expanded="false">Могу ли я привести гостя, если у меня абонемент Подписка?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-2-5">
+                                          <div class="accordion-body">Вы можете привести гостя (если он ни разу не занимался в нашем клубе и гостю есть 14 лет).</br>
+        Время гостевого визита:</br>
+        <ul>
+          <li>Будни с 11:00 до 17:00</li>
+          <li>Выходные и праздничные с 16:00 до 20:00</li>
+        </ul>
+          Для оформления нужен паспорт.
+      </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-2-6" aria-expanded="false">Для чего нужен личный кабинет?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-2-6">
+                                          <div class="accordion-body">После оформления абонемента, рекомендуем вам создать личный кабинет на нашем сайте https://lk.fitnesshouse.ru В личном кабинете для вас будет доступна вся необходимая информация по абонементу. Вы сможете применить в нем заморозку, изменить карту для списания ежемесячного платежа при необходимости.
+      </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-2-7" aria-expanded="false">В абонемент включены полотенца? Есть ли кулеры?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-2-7">
+                                          <div class="accordion-body">Полотенца в абонемент по подписке не включены, но можно взять в аренду (исключение престиж на Пулковском и престиж на Гашека). На территории клуба есть кулеры и питьевые фонтанчики. Возьмите с собой питьевую бутылочку.
+      </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item3" aria-expanded="false">Оплата, списания, заморозка</button>
+              </h2>
+              <div class="accordion-collapse collapse" id="item3">
+                <div class="accordion-body">
+                                    <div class="accordion accordion-flush mt-2">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-3-0" aria-expanded="false">Как происходит списание ежемесячного платежа?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-3-0">
+                                          <div class="accordion-body">Ежемесячный платеж списывается автоматически с вашей банковской карты, с которой происходило первое списание. Убедитесь, что у вас достаточно денежных средств. Пополнять счет личного кабинета ни в коем случае не нужно.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-3-1" aria-expanded="false">Можно ли не платить первоначальный платеж?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-3-1">
+                                          <div class="accordion-body">Все посетители наших фитнес-клубов при оформлении абонемента Подписка оплачивают первоначальный платеж — это единоразовая оплата. Оплачивая подписку, вы получаете преимущество в виде пакета стартовых тренировок с тренером (персональное занятие в зале, в бассейне(при его наличии) и групповой урок)</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-3-2" aria-expanded="false">Что делать если списание за следующий месяц не произошло?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-3-2">
+                                          <div class="accordion-body">Списание очередного платежа происходит автоматически с банковской карты. Проверьте, что денежных средств для списания очередного платежа на карте достаточно. Если в вашем личном кабинете привязана не рабочая карта, то нужно привязать другую.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-3-3" aria-expanded="false">Как заморозить абонемент?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-3-3">
+                                          <div class="accordion-body">
+      Заморозка оформляется в личном кабинете согласно прайс-листу. Раздел «Мои Подписки» - «Заморозить».</br>
+      Абонемент замораживается сразу на весь период.Выбирается только дата начала заморозки.</br>
+      Замораживать можно неограниченное количество раз в течение действия договора. Разморозить досрочно абонемент не получится.</br>
+      Обратите внимание, что заморозку можно оформить не позже, чем за 2 дня до окончания договора и, если подписка активна.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-3-4" aria-expanded="false">Как изменить тариф?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-3-4">
+                                          <div class="accordion-body">Для смены тарифа необходимо отписаться от текущей подписки и оформить абонемент заново.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-3-5" aria-expanded="false">Как отменить подписку?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-3-5">
+                                          <div class="accordion-body">Отказаться от Подписки можно в любой момент. Для этого необходимо в терминале клуба, который Вы посещаете, нажать кнопку "Отменить подписку". Отмену подписки необходимо сделать заблаговременно, при этом списание за следующий месяц не производится, а оставшийся период не сгорает.</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item4" aria-expanded="false">Технические вопросы</button>
+              </h2>
+              <div class="accordion-collapse collapse" id="item4">
+                <div class="accordion-body">
+                                    <div class="accordion accordion-flush mt-2">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-4-0" aria-expanded="false">При регистрации в личном кабинете показывается: «Ошибка привязки данных»</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-4-0">
+                                          <div class="accordion-body">Чтобы мы могли помочь оперативно разобраться и помочь в регистрации, просим направить обращение на почту <a href="mailto:help@fhclub.ru">help@fhclub.ru</a>, в письме указать Ваши данные: ФИО, дату рождения, номер телефона, который указываете при регистрации, клуб в котором занимаетесь, прикрепить фото первой страницы паспорта и описать вид ошибки.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-4-1" aria-expanded="false">При регистрации в личном кабинете показывается: «выдает ошибку «500»»</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-4-1">
+                                          <div class="accordion-body">Ошибка «500» возникает в случае, если посетитель ранее уже регистрировал ЛК с другим номером телефона. В таком случае просим написать обращение на почту <a href="mailto:help@fhclub.ru">help@fhclub.ru</a>. В письме указать Ваши данные: ФИО, дату рождения, клуб в котором занимаетесь. Написать, что ранее регистрировались с номером (указать прежний номер) и хотите произвести регистрацию с новым номером телефона, а также прикрепите фото первой страницы паспорта. После аннулирования старого ЛК Вы сможете пройти регистрацию с новым номером телефона.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-4-2" aria-expanded="false">Не могу войти в ЛК. Пишет: нет такого номера.</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-4-2">
+                                          <div class="accordion-body">Вероятно, Вы еще не зарегистрировали Личный кабинет. Для регистрации необходимо перейти по ссылке https://lk.fitnesshouse.ru/login , нажать кнопку «Регистрация», ввести номер телефона и задать удобный пароль. Для корректного отображения информации регистрируйте Личный кабинет на номер телефона, который указывали при оформлении договора.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-4-3" aria-expanded="false">У меня поменялся номер телефона, что нужно сделать для изменения данных?</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-4-3">
+                                          <div class="accordion-body">Для изменения номера телефона на актуальный Вам необходимо направить обращение на почту <a href="mailto:help@fhclub.ru">help@fhclub.ru</a>. В письмо приложить фото первой страницы паспорта, указать клуб, в котором занимаетесь, и актуальный номер телефона.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-4-4" aria-expanded="false">Не отображается оформленный договор в личном кабинете / В Личном кабинете отображаются все оформленные Договоры.</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-4-4">
+                                          <div class="accordion-body">Для отображения всех активных и неактивных Договоров в правой верхней части страницы активируйте кнопку «Все договоры». Обращаем внимание, что для корректного отображения оформленных Договоров, номер телефона в личном кабинете должен совпадать с номером телефона, который указывали при оформлении договора.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedItem-4-5" aria-expanded="false">Почему мой абонемент не отображается в личном кабинете</button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse" id="nestedItem-4-5">
+                                          <div class="accordion-body">Проверьте, что вы в нем зарегистрировались. Убедитесь, что Подписка оформлена на нужный № телефона либо позвоните на горячую линию по номеру <a href="tel:+78005050606">88005050606</a>. Сотрудники вам помогут разобраться с отображением абонемента в ЛК.</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+            <div class="modal fade modal--bg-md modal-submit-form" aria-hidden="true" tabindex="-1" id="modal-submit-form">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                              <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                <use xlink:href="img/sprite.svg#btn-close"></use>
+                              </svg>
+                  </button>
+                  <div class="modal-body">
+                    <div class="form-message-modal">
+                      <div class="form-message-modal__wrapper">
+                                  <svg class="icon" width="36" height="36" viewBox="0 0 36 36">
+                                    <use xlink:href="img/sprite.svg#ok"></use>
+                                  </svg>
+                        <div class="form-message-modal__title">Заявка отправлена!<span>Свяжемся с вами в ближайшее время</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
+                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <div class="page-footer__links links">
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Новости клубов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Академия фитнеса Корус</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Вакансии</span></a></li>
+            </ul>
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Корпоративные продажи</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Развитие регионов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Реклама в клубах</span></a></li>
+            </ul>
+          </div>
+          <div class="page-footer__support">Служба поддержки
+            <ul class="social pt-2 mb-0 pb-2">
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://wa.me/+79213443525" aria-label="Наш whatsApp" target="_blank">
+                              <svg class="icon" width="30" height="30" viewBox="0 0 19 19">
+                                <use xlink:href="img/sprite.svg#wp"></use>
+                              </svg></a></li>
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://t.me/+79213443525" aria-label="Наш telegram" target="_blank">
+                              <svg class="icon" width="21" height="17" viewBox="0 0 17 17">
+                                <use xlink:href="img/sprite.svg#tl"></use>
+                              </svg></a></li>
+            </ul><span>с 07:00 до 00:00</span>
+            <div>Email:<a href="mailto:help@fhclub.ru">help@fhclub.ru</a></div>
+          </div><a class="logo logo--footer" href="#">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo.svg"><img src="img/logo.svg" alt="Логотип компании" width="154" height="26">
+                      </picture></a>
+        </div>
+        <div class="page-footer__buttom">
+          <ul class="social">
+            <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="31" height="19" viewBox="0 0 31 19">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--inst" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="31" height="22" viewBox="0 0 31 22">
+                            <use xlink:href="img/sprite.svg#youtube"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--fb" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="26" height="27" viewBox="0 0 26 27">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+          </ul><a class="link-text" href="#">Юридическая информация</a><a class="link-text" href="#">Cоглашение на обработку персональных данных</a>
+          <div class="page-footer__copy">
+            <div>© 2007 - 2023</div>
+            <div>Все права защищены.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.min.js" type="module"></script>
+    <script src="js/script-subscription.min.js" type="module"></script>
+    <script>AOS.init();</script>
+  </body>
+</html>
