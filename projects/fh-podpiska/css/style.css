@@ -12729,7 +12729,7 @@ yx-axis
   height: 200px;
   border-radius: 1.38rem;
   background-color: #8f8f8f;
-  background-image: url("../../img/podpiska/main.webp");
+  background-image: url("../img/podpiska/main.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -12811,7 +12811,7 @@ yx-axis
 }
 .accordion .accordion-button::after {
   transition: var(--bs-accordion-transition) !important;
-  background-image: url("../../img/podpiska/icons/icon-plus.svg");
+  background-image: url("../img/podpiska/icons/icon-plus.svg");
   background-size: 32px 32px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -12950,13 +12950,13 @@ yx-axis
 }
 .subscription-tab-content__picture--trade-in {
   background-color: #e6d491;
-  background-image: url("../../img/podpiska/sale.webp");
+  background-image: url("../img/podpiska/sale.webp");
 }
 .subscription-tab-content__picture--student {
-  background-image: url("../../img/podpiska/sale-student.webp");
+  background-image: url("../img/podpiska/sale-student.webp");
 }
 .subscription-tab-content__picture--dr {
-  background-image: url("../../img/podpiska/sale-dr.webp");
+  background-image: url("../img/podpiska/sale-dr.webp");
 }
 .subscription-tab-content__info {
   padding: 1.5rem 1rem;
@@ -13151,7 +13151,7 @@ yx-axis
   min-height: 230px;
   border-radius: 1.38rem;
   background-color: #8f8f8f;
-  background-image: url("../../img/podpiska/steps.webp");
+  background-image: url("../img/podpiska/steps.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
