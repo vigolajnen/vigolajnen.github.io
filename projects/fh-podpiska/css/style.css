@@ -2872,23 +2872,29 @@ yx-axis
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
+.modal--bg-md .modal-content::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  background-image: var(--pic);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: cover;
+  background-color: #42474d;
+}
 @media (min-width: 992px) {
   .modal--bg-md .modal-content {
     padding: 1rem;
     min-height: 240px;
   }
   .modal--bg-md .modal-content::before {
-    content: "";
-    position: absolute;
     top: 0;
     right: 0;
     height: 100%;
     width: 45%;
-    background-image: var(--pic);
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: cover;
-    background-color: #42474d;
   }
 }
 .modal--bg-md .modal-header {
@@ -5927,13 +5933,21 @@ yx-axis
 
 .form-message-modal {
   padding: 1rem 0;
+  padding-bottom: 200px;
 }
 @media (min-width: 576px) {
   .form-message-modal {
     padding: 3rem 2rem;
+    padding-bottom: 200px;
   }
 }
 @media (min-width: 768px) {
+  .form-message-modal {
+    padding: 1rem;
+    padding-bottom: 200px;
+  }
+}
+@media (min-width: 992px) {
   .form-message-modal {
     padding: 1rem;
   }
@@ -13017,6 +13031,10 @@ yx-axis
   width: calc(100% - 25px);
   font-size: 0.9rem;
   line-height: 130%;
+}
+
+.form-message-modal__title {
+  text-align: center !important;
 }
 
 :root {
