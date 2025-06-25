@@ -12702,7 +12702,7 @@ yx-axis
   }
 }
 .page-subscription__header h1 {
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-family: "Avenir Next Cyr Demi", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   line-height: 130%;
@@ -12713,6 +12713,33 @@ yx-axis
 @media (min-width: 768px) {
   .page-subscription__header h1 {
     font-size: 3.12rem;
+  }
+}
+.page-subscription__header-price {
+  position: relative;
+  padding-left: 25px;
+  display: inline-flex;
+}
+@media (min-width: 768px) {
+  .page-subscription__header-price {
+    padding-left: 33px;
+  }
+}
+.page-subscription__header-price::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-size: 100% 100%;
+  background-image: url("../img/podpiska/icons/icon-rub-bold.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+@media (min-width: 768px) {
+  .page-subscription__header-price::before {
+    width: 45px;
   }
 }
 .page-subscription__header-picture {
