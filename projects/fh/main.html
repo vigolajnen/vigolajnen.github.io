@@ -16,8 +16,8 @@
   <body class="page-body">
     <header class="page-header">
       <div class="container"><a class="phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
-              <svg class="icon" width="13" height="22" viewBox="0 0 13 22">
-                <use xlink:href="img/sprite.svg#phone"></use>
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="img/sprite.svg#phone-new"></use>
               </svg><span>(812) 610 06 06</span></a><a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
               <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
                 <use xlink:href="img/sprite.svg#user-lk"></use>
@@ -34,24 +34,42 @@
                 <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
                   <use xlink:href="img/sprite.svg#btn-close"></use>
                 </svg>
-          </button><a class="link-text link-text--svg" href="lk">
-                <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
-                  <use xlink:href="img/sprite.svg#user-lk"></use>
-                </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
+          </button>
+          <div class="dropdown-center mobile-menu__dropdown">
+            <button class="btn text-white p-0 font-weight-bold dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Санкт-Петербург</button>
+            <ul class="dropdown-menu overflow-auto">
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Санкт-Петербург</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Нижний Новгород</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Тольятти</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Ульяновск</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Самара</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Архангельск</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Казань</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Ижевск</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Ярославль</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Петрозаводск</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Рязань</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Набережные Челны</a></li>
+              <li><a class="dropdown-item m-0 text-dark" href="#">Тула</a></li>
+            </ul>
+          </div>
           <ul class="list list--bold">
-            <li><a href="sale.html">Акции</a></li>
             <li><a href="clubs.html">Клубы</a></li>
-            <li><a href="#">Тренеры</a></li>
+            <li><a href="sale.html">Акции</a></li>
+            <li><a href="clubs.html">Тренеры</a></li>
             <li><a href="schedule.html">Расписание</a></li>
+            <li><a href="clubs.html">Подписка</a></li>
           </ul>
           <ul class="list">
             <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
             <li><a href="#">Вакансии</a></li>
             <li><a href="#">Реклама</a></li>
-          </ul>
-          <hr><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
-                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
-                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+          </ul><a class="link-pay" href="#">Купить сейчас</a><a class="link-text link-text--svg" href="lk">
+                <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                  <use xlink:href="img/sprite.svg#user-lk"></use>
+                </svg><span>Личный кабинет</span></a><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                        <use xlink:href="img/sprite.svg#phone-new"></use>
                       </svg><span class="ml-2">(812) 610 06 06</span></a>
           <ul class="social">
             <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
@@ -70,7 +88,7 @@
         </div>
       </nav>
     </header>
-    <nav class="nav-menu container">
+    <nav class="nav-menu container d-none d-lg-flex">
       <ul class="nav-menu__list">
         <li class="nav-menu__item nav-menu__item--city">
           <div class="nav-city">
@@ -121,7 +139,7 @@
       </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
     </nav>
     <main class="main container main-location">
-      <div class="main__grid">
+      <div class="main__grid pt-4">
         <section class="main__sale"><a class="sale section" href="#">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="img/sale/11.jpg">
@@ -129,20 +147,65 @@
                       </picture></a>
         </section>
         <section class="main__adv">
-          <section class="advantages order-2 order-md-1"><a class="link advantages-pro" href="#">
-              <h3 class="advantages-pro__title">фитнес на месяц<br>по подписке</h3><span class="advantages-pro__items"><span class="button button--outline">JUNIOR от 1590 ₽/мес</span><span class="button button--outline">ФИТНЕС+СПА  от 3400 ₽/мес</span><span class="button button--outline">ФИТНЕС+БАССЕЙН+СПА  от 5500 ₽/мес</span></span><span class="advantages-pro__btn button button--red">Выбрать тариф</span></a></section>
+          <section class="advantages order-2 order-md-1">
+            <h1>Фитнес Хаус - это</h1><a class="link advantages__link-modal" href="#modal-history" data-bs-toggle="modal">
+              <ul class="advantages__list">
+                <li class="advantages__item advantages__item--1">
+                  <div class="advantages__count"><span class="number">14</span>
+                              <svg class="icon" width="49" height="45" viewBox="0 0 49 45">
+                                <use xlink:href="img/sprite.svg#house"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">городов<span>в россии</span></div>
+                </li>
+                <li class="advantages__item advantages__item--2">
+                  <div class="advantages__count"><span class="number">71</span>
+                              <svg class="icon" width="53" height="29" viewBox="0 0 53 29">
+                                <use xlink:href="img/sprite.svg#people"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">клуба<span>федеральной сети</span></div>
+                </li>
+                <li class="advantages__item advantages__item--3">
+                  <div class="advantages__count"><span class="number">25<sub>+</sub></span>
+                              <svg class="icon" width="55" height="55" viewBox="0 0 55 55">
+                                <use xlink:href="img/sprite.svg#heart"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">Групповых<span>направлений</span></div>
+                </li>
+                <li class="advantages__item advantages__item--4">
+                  <div class="advantages__count"><span class="number">4</span>
+                              <svg class="icon" width="49" height="36" viewBox="0 0 49 36">
+                                <use xlink:href="img/sprite.svg#barbell"></use>
+                              </svg>
+                  </div>
+                  <div class="advantages__title">клуба<span>премиум-класса</span></div>
+                </li>
+              </ul>
+              <div class="advantages__more">
+                <div class="link-text link-text--more"><span>читать историю компании</span>
+                            <svg class="icon" width="34" height="8" viewBox="0 0 34 8">
+                              <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                </div>
+              </div></a>
+          </section>
         </section>
         <section class="main__form">
           <form class="form form-offers section order-1 order-md-2 needs-validation" method="post" action="https://echo.htmlacademy.ru" novalidate>
-            <div class="form-offers__title">Подберём персональное предложение</div>
+            <div class="form-offers__title">
+              Закажите обратный звонок, чтобы узнать стоимость абонемента, или позвоните прямо сейчас на горячую линию
+              <a class="link text-white" href="tel:+78126100606">(812) 610–06–06</a>
+            </div>
             <div class="form-offers__wrapper">
-              <label class="form-label" for="formName2"><span class="form__label-name">Введите имя</span>
+              <label class="form-label" for="formName2"><span class="form__label-name d-none d-sm-block">Введите имя</span>
                 <input class="form-control" type="text" name="name" id="formName2" placeholder="Алексей" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
-              <label class="form-label" for="formPhone2"><span class="form__label-name">Введите номер телефона</span>
+              <label class="form-label" for="formPhone2"><span class="form__label-name d-none d-sm-block">Введите номер телефона</span>
                 <input class="form-control" type="tel" name="phone-number" id="formPhone2" placeholder="8 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
-              <label class="form-label"><span class="form__label-name">Выберите клуб</span>
+              <label class="form-label"><span class="form__label-name d-none d-sm-block">Выберите клуб</span>
                 <select class="form-select" size="1" name="club" aria-label="клуб" required>
                   <option selected value="">Ваш клуб</option>
                   <option value="На Гашека">На Гашека</option>
@@ -157,7 +220,13 @@
                 </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
               <div class="form-offers__btns">
-                <button class="button button--red" type="submit">Подобрать</button>
+                <button class="button button--red" type="submit">Заказать</button>
+              </div>
+              <div class="custom-form-check order-1" tabindex="0">
+                <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+                <label for="custom-form-check-1"><span>
+                    Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с
+                    <a class="text-white" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных</a></span></label>
               </div>
             </div>
           </form>
@@ -206,18 +275,16 @@
                         </svg>
             </div></a>
         </section>
-                <div class="modal fade modal--bg modal-tour order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
+                <div class="modal fade modal--bg modal--tour modal-size--sm order-2" aria-hidden="true" tabindex="-1" id="modalToggle">
                   <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content" style="--pic:url('../img/modal/modal-bg-gym.jpg')">
-                      <div class="modal-header">
-                        <h5 class="title modal-title">Записаться на экскурсию</h5>
-                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                                    <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
-                                      <use xlink:href="img/sprite.svg#btn-close"></use>
-                                    </svg>
-                        </button>
-                      </div>
+                      <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                                    <use xlink:href="img/sprite.svg#btn-close"></use>
+                                  </svg>
+                      </button>
                       <div class="modal-body">
+                        <h5 class="title modal-title">Записаться на экскурсию</h5>
                         <form class="form needs-validation" novalidate>
                           <label class="form-label" for="formSingUpName"><span class="form__label-name">Введите имя</span>
                             <input class="form-control" type="text" id="formSingUpName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
@@ -243,8 +310,10 @@
                             </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                           </label>
                           <div class="custom-form-check order-1" tabindex="0">
-                            <input class="visually-hidden" type="checkbox" id="custom-form-check" required>
-                            <label for="custom-form-check"><span>Оставляя свой email, я принимаю</span><br><a href="#">Политику конфиденциальности</a></label>
+                            <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+                            <label for="custom-form-check-1"><span>
+                                Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с
+                                <a class="text-gray" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных</a></span></label>
                           </div>
                           <button class="botton button--red mt-2" type="submit">Записаться</button>
                         </form>
@@ -256,7 +325,7 @@
                   <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content" style="--pic:url('../img/forms/1.jpg')">
                       <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                                  <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
                                     <use xlink:href="img/sprite.svg#btn-close"></use>
                                   </svg>
                       </button>
@@ -278,8 +347,8 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
-                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
-                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                        <use xlink:href="img/sprite.svg#phone-new"></use>
                       </svg><span class="ml-2">(812) 610 06 06</span></a>
           <div class="page-footer__links links">
             <ul class="links__list">

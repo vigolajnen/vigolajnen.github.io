@@ -16,8 +16,8 @@
   <body class="page-body">
     <header class="page-header">
       <div class="container"><a class="phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
-              <svg class="icon" width="13" height="22" viewBox="0 0 13 22">
-                <use xlink:href="img/sprite.svg#phone"></use>
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="img/sprite.svg#phone-new"></use>
               </svg><span>(812) 610 06 06</span></a><a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
               <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
                 <use xlink:href="img/sprite.svg#user-lk"></use>
@@ -34,24 +34,42 @@
                 <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
                   <use xlink:href="img/sprite.svg#btn-close"></use>
                 </svg>
-          </button><a class="link-text link-text--svg" href="lk">
-                <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
-                  <use xlink:href="img/sprite.svg#user-lk"></use>
-                </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
+          </button>
+          <div class="dropdown-center mobile-menu__dropdown">
+            <button class="btn text-white p-0 font-weight-bold dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Санкт-Петербург</button>
+            <ul class="dropdown-menu overflow-auto">
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Санкт-Петербург</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Нижний Новгород</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Тольятти</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Ульяновск</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Самара</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Архангельск</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Казань</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Ижевск</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Ярославль</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Петрозаводск</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Рязань</a></li>
+              <li><a class="dropdown-item m-0 border-bottom text-dark" href="#">Набережные Челны</a></li>
+              <li><a class="dropdown-item m-0 text-dark" href="#">Тула</a></li>
+            </ul>
+          </div>
           <ul class="list list--bold">
-            <li><a href="sale.html">Акции</a></li>
             <li><a href="clubs.html">Клубы</a></li>
-            <li><a href="#">Тренеры</a></li>
+            <li><a href="sale.html">Акции</a></li>
+            <li><a href="clubs.html">Тренеры</a></li>
             <li><a href="schedule.html">Расписание</a></li>
+            <li><a href="clubs.html">Подписка</a></li>
           </ul>
           <ul class="list">
             <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
             <li><a href="#">Вакансии</a></li>
             <li><a href="#">Реклама</a></li>
-          </ul>
-          <hr><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
-                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
-                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+          </ul><a class="link-pay" href="#">Купить сейчас</a><a class="link-text link-text--svg" href="lk">
+                <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                  <use xlink:href="img/sprite.svg#user-lk"></use>
+                </svg><span>Личный кабинет</span></a><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                        <use xlink:href="img/sprite.svg#phone-new"></use>
                       </svg><span class="ml-2">(812) 610 06 06</span></a>
           <ul class="social">
             <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
@@ -70,7 +88,7 @@
         </div>
       </nav>
     </header>
-    <nav class="nav-menu container">
+    <nav class="nav-menu container d-none d-lg-flex">
       <ul class="nav-menu__list">
         <li class="nav-menu__item nav-menu__item--city">
           <div class="nav-city">
@@ -131,22 +149,22 @@
       <section class="page-sale__slider mt-2">
                 <section class="slider slider--sale slider-h-auto">
                   <div class="swiper-container" id="slider-sale">
-                    <div class="swiper-wrapper"><a class="swiper-slide" href="">
+                    <div class="swiper-wrapper"><a class="swiper-slide" href="#modal-form-trade-in" data-bs-toggle="modal">
                         <picture>
                           <source>
                           <source media="(min-width: 1200px)" srcset="https://www.fitnesshouse.ru/assets/cache/images/sale/July2023/presale/spb/pk-x-3d9.jpg">
                           <source media="(min-width: 620px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/July2023/presale/spb/pl.jpg"><img class="swiper-slicer-image swiper-lazy" src="https://www.fitnesshouse.ru/assets/images/sale/July2023/presale/spb/mob-1.jpg" alt="2Акция!В декабре - 80%" width="287" height="328">
-                        </picture></a><a class="swiper-slide" href="#22">
+                        </picture></a><a class="swiper-slide" href="#22" data-bs-toggle="modal">
                         <picture>
                           <source>
                           <source media="(min-width: 1200px)" srcset="https://www.fitnesshouse.ru/assets/cache/images/sale/July2023/arkhangelsk/zamena2/akcii-pk-x-dcf.jpg">
                           <source media="(min-width: 620px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/July2023/arkhangelsk/zamena2/akcii-pl.jpg"><img class="swiper-slicer-image swiper-lazy" src="https://www.fitnesshouse.ru/assets/images/sale/July2023/arkhangelsk/zamena2/akcii-mob.jpg" alt="2Акция!В декабре - 80%" width="287" height="328">
-                        </picture></a><a class="swiper-slide" href="#22">
+                        </picture></a><a class="swiper-slide" href="#22" data-bs-toggle="modal">
                         <picture>
                           <source>
                           <source media="(min-width: 1200px)" srcset="https://www.fitnesshouse.ru/assets/cache/images/sale/April2023/dop26-30/1280h500_standart-x-524.jpg    1x, https://www.fitnesshouse.ru/assets/cache/images/sale/April2023/dop26-30/1280h500_standart-x-524.jpg    2x">
                           <source media="(min-width: 620px)" srcset="https://www.fitnesshouse.ru/assets/images/sale/April2023/dop26-30/730h400_standart.jpg    1x, https://www.fitnesshouse.ru/assets/images/sale/April2023/dop26-30/730h400_standart.jpg    2x"><img class="swiper-slicer-image swiper-lazy" src="https://www.fitnesshouse.ru/assets/images/sale/April2023/dop26-30/395h450_standart.jpg" alt="2Акция!В декабре - 80%" width="287" height="328">
-                        </picture></a><a class="swiper-slide" href="#22">
+                        </picture></a><a class="swiper-slide" href="#22" data-bs-toggle="modal">
                         <picture>
                           <source>
                           <source media="(min-width: 1200px)" srcset="https://www.fitnesshouse.ru/assets/cache/images/sale/April2023/dop26-30/akciya-levash.pk-x-1d7.jpg    1x, https://www.fitnesshouse.ru/assets/cache/images/sale/April2023/dop26-30/akciya-levash.pk-x-1d7.jpg    2x">
@@ -208,7 +226,7 @@
                 <div id="minutes">5</div><span id="label-minutes">минут</span>
               </div>
             </div>
-            <div class="timer__item">
+            <div class="timer__item d-none d-sm-block">
               <svg viewBox="0 0 160 160" width="160" height="160">
                 <defs>
                   <radialGradient id="gradient-3" gradientTransform="rotate(90)">
@@ -228,15 +246,18 @@
       </section>
       <section class="page-sale__form">
         <form class="form form-offers form-offers--sale section needs-validation" novalidate>
-          <div class="form-offers__title">Подберём персональное предложение</div>
+          <div class="form-offers__title">
+            Закажите обратный звонок, чтобы узнать стоимость абонемента, или позвоните прямо сейчас на горячую линию
+            <a class="link text-white" href="tel:+78126100606">(812) 610–06–06</a>
+          </div>
           <div class="form-offers__wrapper">
-            <label class="form-label" for="formName3"><span class="form__label-name">Введите имя</span>
+            <label class="form-label" for="formName3"><span class="form__label-name d-none d-sm-block">Введите имя</span>
               <input class="form-control" type="text" id="formName3" placeholder="Алексей" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
             </label>
-            <label class="form-label" for="formPhone3"><span class="form__label-name">Введите номер телефона</span>
+            <label class="form-label" for="formPhone3"><span class="form__label-name d-none d-sm-block">Введите номер телефона</span>
               <input class="form-control" type="tel" name="phone-number" id="formPhone3" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
             </label>
-            <label class="form-label"><span class="form__label-name">Выберите клуб</span>
+            <label class="form-label"><span class="form__label-name d-none d-sm-block">Выберите клуб</span>
               <select class="form-select form-control" name="club" aria-label="клуб" required>
                 <option selected value="">Ваш клуб</option>
                 <option value="На Гашека">На Гашека</option>
@@ -251,11 +272,13 @@
               </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
             </label>
             <div class="form-offers__btns">
-              <div class="custom-form-check order-1" tabindex="0">
-                <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
-                <label for="custom-form-check-1"><span>Даю согласие на обработку данных</span></label>
-              </div>
               <button class="botton button--red" type="submit">Подобрать</button>
+            </div>
+            <div class="custom-form-check order-1" tabindex="0">
+              <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+              <label for="custom-form-check-1"><span>
+                  Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с
+                  <a class="text-white" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных</a></span></label>
             </div>
           </div>
         </form>
@@ -429,16 +452,16 @@
           <p>Настоящая Акция действует только при обращении в коммерческий отдел Клубов и не распространяет свое действие на интернет-магазин Fitness House (Фитнес Хаус).</p>
         </div>
       </div>
-            <div class="modal fade modal--bg-md modal-kids" aria-hidden="true" tabindex="-1" id="modal-form-kids">
+            <div class="modal fade modal--bg modal-size--md" aria-hidden="true" tabindex="-1" id="modal-form-kids">
               <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content" style="--pic:url('../img/modal/swimming-lesson-kids.jpg')">
+                <div class="modal-content" style="--pic:url('https://www.fitnesshouse.ru/assets/images/sale/mart25/ds/ds_pk.jpg')">
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                              <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                              <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
                                 <use xlink:href="img/sprite.svg#btn-close"></use>
                               </svg>
                   </button>
                   <div class="modal-body">
-                    <h4 class="title">В Фитнес Хаус до 31 марта идет набор на разнообразные детские секции.</h4>
+                    <h4 class="title title--sm">В Фитнес Хаус до 31 марта идет набор на разнообразные детские секции.</h4>
                     <p>Плавание, танцы, гимнастика, и персональные тренировки для посетителей от 3 до 13 лет включительно.</p>
                     <p>Детские секции:</p>
                     <ul class="list">
@@ -463,11 +486,54 @@
                         </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
                       </label>
                       <div class="form__btns">
-                        <div class="custom-form-check order-1" tabindex="0">
-                          <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-3" required tabindex="0">
-                          <label for="custom-form-check-3"><span>Даю согласие на обработку данных</span></label>
-                        </div>
                         <button class="button button--red" type="submit">Подобрать</button>
+                      </div>
+                      <div class="custom-form-check order-1" tabindex="0">
+                        <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+                        <label for="custom-form-check-1"><span>
+                            Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с
+                            <a class="text-gray" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных</a></span></label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!--/////////////////////-->
+            <div class="modal fade modal--bg modal-size--sm" aria-hidden="true" tabindex="-1" id="modal-form-trade-in">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="--pic:url('../img/modal/bg-trade-in.jpg')">
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                              <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                                <use xlink:href="img/sprite.svg#btn-close"></use>
+                              </svg>
+                  </button>
+                  <div class="modal-body">
+                    <h4 class="title">Персональная скидка 20% на абонемент</h4>
+                    <p class="mb-4">Предъявите карту или договор другого клуба. Забронируйте специальные условия через менеджера</p>
+                    <form class="form needs-validation" novalidate>
+                      <label class="form-label" for="formName1"><span class="form__label-name">Введите имя</span>
+                        <input class="form-control" type="text" id="formName1" placeholder="Алексей" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <label class="form-label" for="formPhone1"><span class="form__label-name">Введите номер телефона</span>
+                        <input class="form-control" type="tel" id="formPhone1" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <label class="form-label" for="formClub"><span class="form__label-name">Выберите клуб</span>
+                        <select class="form-select form-select" id="formClub" name="formClub" aria-label="клуб" required>
+                          <option selected disabled value="">На Гашека</option>
+                          <option value="На Гашека">На Гашека</option>
+                          <option value="На Гашека">На Гашека</option>
+                          <option value="На Гашека">На Гашека</option>
+                        </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+                      </label>
+                      <div class="form__btns">
+                        <button class="button button--red" type="submit">Отправить</button>
+                      </div>
+                      <div class="custom-form-check order-1" tabindex="0">
+                        <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+                        <label for="custom-form-check-1"><span>
+                            Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с
+                            <a class="text-gray" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных</a></span></label>
                       </div>
                     </form>
                   </div>
@@ -478,8 +544,8 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
-                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
-                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                        <use xlink:href="img/sprite.svg#phone-new"></use>
                       </svg><span class="ml-2">(812) 610 06 06</span></a>
           <div class="page-footer__links links">
             <ul class="links__list">
