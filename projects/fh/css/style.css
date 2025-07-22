@@ -3023,18 +3023,8 @@ yx-axis
   line-height: 130%;
   color: rgba(66, 71, 77, 0.5);
 }
-@media (min-width: 576px) {
-  .form .form-select::placeholder, .form .form-control::placeholder {
-    font-size: 1.25rem;
-  }
-}
 @media (min-width: 992px) {
   .form .form-select::placeholder, .form .form-control::placeholder {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 576px) {
-  .form .form-select, .form .form-control {
     font-size: 1.25rem;
   }
 }
