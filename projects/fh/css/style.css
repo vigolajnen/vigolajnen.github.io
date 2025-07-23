@@ -10078,6 +10078,9 @@ yx-axis
   margin-bottom: var(--base-mb);
   background-color: #e2f0fb;
 }
+.page-presale__form .title a {
+  color: inherit;
+}
 .page-presale__form.form .invalid-feedback, .page-presale__form.form .valid-feedback {
   bottom: -10px;
 }
@@ -10096,7 +10099,7 @@ yx-axis
 }
 .page-presale__form .form-label {
   flex-grow: 1;
-  padding-bottom: 0.5rem;
+  padding: 0;
 }
 .page-presale__form .form__title {
   margin-bottom: 20px;

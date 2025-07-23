@@ -202,7 +202,10 @@
               </div>
             </section>
       <form class="form page-presale__form section needs-validation" novalidate>
-        <div class="form__title">Забронировать абонемент по Акции</div>
+        <div class="title mb-4">
+          Закажите обратный звонок, чтобы узнать стоимость абонемента, или позвоните прямо сейчас на горячую линию
+          <a class="link text-gray" href="tel:+78126100606">(812) 610–06–06</a>
+        </div>
         <div class="form__wrapper">
           <label class="form-label" for="formName3"><span class="form__label-name">Введите имя</span>
             <input class="form-control" type="text" id="formName3" placeholder="Алексей" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
@@ -211,9 +214,12 @@
             <input class="form-control" type="tel" name="phone-number" id="formPhone3" placeholder="+7 999 999 99 99" autocomplete="off" minlength="10" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
           </label>
           <button class="botton button--yellow" type="submit">Забронировать</button>
-          <div class="form__policy"><span>
-              Отправляя свои данные, вы даете согласие с
-              <a href="#">Политикой конфиденциальности</a></span></div>
+          <div class="custom-form-check form__policy" tabindex="0">
+            <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+            <label for="custom-form-check-1"><span>
+                Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с
+                <a class="text-gray" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных</a></span></label>
+          </div>
         </div>
       </form>
       <section class="timer page-presale__timer">
@@ -264,7 +270,7 @@
               <div id="minutes">5</div><span id="label-minutes">минут</span>
             </div>
           </div>
-          <div class="timer__item">
+          <div class="timer__item d-none d-sm-block">
             <svg viewBox="0 0 160 160" width="160" height="160">
               <defs>
                 <radialGradient id="gradient-3" gradientTransform="rotate(90)">
