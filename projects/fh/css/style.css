@@ -2987,7 +2987,6 @@ yx-axis
   font-weight: 400;
   line-height: 140%;
   color: #42474d;
-  padding-bottom: 1rem;
   margin-bottom: 0;
   outline-color: #42474d;
 }
@@ -9261,60 +9260,17 @@ yx-axis
   }
 }
 .form-book .title {
-  padding-bottom: 1rem;
-  font-size: 18px;
-  line-height: 130%;
+  font-size: 1.1rem;
 }
-@media (min-width: 480px) {
-  .form-book .title {
-    font-size: 22px;
-  }
-}
-@media (min-width: 576px) {
-  .form-book .title {
-    padding-bottom: 36px;
-  }
-}
-@media (min-width: 768px) {
-  .form-book .title {
-    font-size: 24px;
-  }
-}
-@media (min-width: 992px) {
-  .form-book .title {
-    font-size: 18px;
-    line-height: 100%;
-    padding-bottom: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .form-book .title {
-    font-size: 22px;
-    line-height: 100%;
-  }
-}
-@media (min-width: 1400px) {
-  .form-book .title {
-    padding-bottom: 1.5rem;
-    line-height: 130%;
-    font-size: 24px;
-  }
+.form-book .title a {
+  color: inherit;
 }
 .form-book__wrapper {
-  display: grid;
-  column-gap: 20px;
-  row-gap: 10px;
-}
-@media (min-width: 576px) {
-  .form-book__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 992px) {
-  .form-book__wrapper {
-    gap: 0;
-    grid-template-columns: repeat(1, 1fr);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
 }
 .form-book .form-label {
   display: flex;
@@ -9322,6 +9278,17 @@ yx-axis
   justify-content: flex-start;
   width: 100%;
   flex-grow: 1;
+  padding: 0;
+}
+@media (min-width: 576px) {
+  .form-book .form-label {
+    width: calc(50% - 1rem);
+  }
+}
+@media (min-width: 992px) {
+  .form-book .form-label {
+    width: 100%;
+  }
 }
 @media (min-width: 576px) {
   .form-book .form-label[for=formName] {
@@ -9393,36 +9360,26 @@ yx-axis
   flex-direction: column;
   align-items: flex-start;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 0;
   padding-right: 0;
-  padding-top: 1rem;
   width: var(--field-width);
   width: 100%;
 }
 @media (min-width: 576px) {
   .form-book__btns {
     order: 1;
-    padding-top: 35px;
+    width: calc(50% - 1rem);
   }
 }
 @media (min-width: 992px) {
   .form-book__btns {
     order: 0;
     width: 100%;
-    padding-right: 0;
-    padding-top: 0.5rem;
   }
 }
 @media (min-width: 1200px) {
   .form-book__btns {
     width: 100%;
-    padding-right: 0;
-    padding-top: 0.5rem;
-  }
-}
-@media (min-width: 1400px) {
-  .form-book__btns {
-    padding-top: 1rem;
   }
 }
 .form-book__mess {

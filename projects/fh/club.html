@@ -205,7 +205,10 @@
                       </div>
                     </section>
           <form class="form form-book form needs-validation" novalidate>
-            <div class="title">Заказать обратный звонок по стоимости абонемента</div>
+            <div class="title mb-4">
+              Закажите обратный звонок, чтобы узнать стоимость абонемента, или позвоните прямо сейчас на горячую линию
+              <a class="link text-gray" href="tel:+78126100606">(812) 610–06–06</a>
+            </div>
             <div class="form-book__wrapper">
               <label class="form-label" for="formService"><span class="form__label-name">Выберите услугу</span>
                 <select class="form-select form-control form-select" id="formService" name="formClub" aria-label="Выберите услугу" required>
@@ -221,12 +224,14 @@
               <label class="form-label" for="formPhone"><span class="form__label-name">Введите номер телефона</span>
                 <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
-              <div class="form-book__btns">
-                <div class="form-book__mess order-1">
-                  Отправляя свои данные, вы даете согласие с
-                  <a href="#">Политикой конфиденциальности</a>
-                </div>
+              <div class="form-book__btns order-1">
                 <button class="button button--red" type="submit">Заказать</button>
+              </div>
+              <div class="custom-form-check order-1" tabindex="0">
+                <input class="visually-hidden" type="checkbox" name="check" id="custom-form-check-1" required>
+                <label for="custom-form-check-1"><span>
+                    Отправляя свои данные, Вы даете согласие на обработку персональных данных в соответствии с
+                    <a class="text-gray" href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных</a></span></label>
               </div>
             </div>
           </form>
