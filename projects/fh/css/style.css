@@ -11336,12 +11336,7 @@ yx-axis
 }
 @media (min-width: 992px) {
   .form-schedule .form-label, .form-schedule .form-clubs__btns {
-    width: calc(23% - 1rem);
-  }
-}
-@media (min-width: 1200px) {
-  .form-schedule .form-label, .form-schedule .form-clubs__btns {
-    width: calc(23% - 1rem);
+    width: calc(24% - 1rem);
   }
 }
 .form-schedule .form-clubs__btns {
@@ -11349,7 +11344,7 @@ yx-axis
 }
 @media (min-width: 992px) {
   .form-schedule .form-clubs__btns {
-    width: calc(31% - 1rem);
+    width: calc(29% - 1rem);
     margin-right: 0;
   }
 }
@@ -11409,7 +11404,15 @@ yx-axis
 }
 @media (min-width: 1400px) {
   .form-schedule .button {
-    width: calc(50% - 24px);
+    width: calc(50% - 1rem);
+  }
+}
+@media (max-width: 1200px) {
+  .form-schedule .button {
+    font-size: 1rem;
+  }
+  .form-schedule .button[type=submit] {
+    font-size: 1rem;
   }
 }
 .form-schedule--all {
