@@ -5350,6 +5350,7 @@ yx-axis
     margin-right: 15%;
   }
 }
+
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -5503,7 +5504,6 @@ yx-axis
   font-weight: 700;
   font-size: 27px;
   line-height: 130%;
-  /* identical to box height, or 78px */
   letter-spacing: 0.02em;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -8212,9 +8212,6 @@ yx-axis
   }
 }
 
-/**
-    * Reinstate scrolling for non-JS clients
-    */
 .simplebar-content-wrapper {
   scrollbar-width: auto;
   -ms-overflow-style: auto;
@@ -10020,6 +10017,7 @@ yx-axis
   font-size: 15px;
   line-height: 140%;
 }
+
 .modal-map .modal-content {
   border-radius: 22px;
 }
