@@ -14042,9 +14042,14 @@ yx-axis
   position: relative;
   padding-left: 21px;
   font-weight: 700;
-  font-size: 0.94rem;
+  font-size: 0.9rem;
   line-height: 130%;
   color: #42474D;
+}
+@media (min-width: 768px) {
+  .club-tariff__service {
+    font-size: 0.94rem;
+  }
 }
 .club-tariff__service::before {
   content: "";
