@@ -13458,13 +13458,13 @@ yx-axis
   background-size: contain;
 }
 .page-tariffs .modal-submit-form .social__item--vk .icon {
-  background-image: url("../../img/podpiska-2/icons/vk.svg");
+  background-image: url("../img/podpiska-2/icons/vk.svg");
 }
 .page-tariffs .modal-submit-form .social__item--dz .icon {
-  background-image: url("../../img/podpiska-2/icons/dzen.svg");
+  background-image: url("../img/podpiska-2/icons/dzen.svg");
 }
 .page-tariffs .modal-submit-form .social__item--tm .icon {
-  background-image: url("../../img/podpiska-2/icons/telegram.svg");
+  background-image: url("../img/podpiska-2/icons/telegram.svg");
 }
 .page-tariffs .modal-submit-form .social__item a {
   display: block;
@@ -14353,7 +14353,7 @@ yx-axis
     left: 0;
     width: 50%;
     height: 100%;
-    background-image: url("../../img/podpiska-2/bg-form.webp");
+    background-image: url("../img/podpiska-2/bg-form.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
