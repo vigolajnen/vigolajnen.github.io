@@ -13649,7 +13649,7 @@ yx-axis
   }
 }
 .page-tariffs__advantages__wrap {
-  background: url("../../img/podpiska-2/about/bg.jpg");
+  background: url("../img/podpiska-2/about/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14660,7 +14660,7 @@ yx-axis
   right: -20px;
   width: 60%;
   height: 130%;
-  background: url("../../img/podpiska-2/about/app.png");
+  background: url("../img/podpiska-2/about/app.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
