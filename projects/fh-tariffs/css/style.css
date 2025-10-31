@@ -14241,7 +14241,7 @@ yx-axis
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 0 1rem 3rem;
+  padding: 0 0 3rem 1rem;
   width: 100%;
 }
 @media (min-width: 992px) {
