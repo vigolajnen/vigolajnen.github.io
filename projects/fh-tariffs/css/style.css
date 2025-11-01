@@ -90,6 +90,13 @@
   src: local("Avenir Next Cyr"), url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
 }
 @font-face {
+  font-family: "Avenir Next Cyr Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("Avenir Next Cyr Medium"), url("../fonts/avenirnextcyr-medium.woff2") format("woff2"), url("../fonts/avenirnextcyr-medium.woff") format("woff");
+}
+@font-face {
   font-family: "Avenir Next Cyr Bold";
   font-weight: 900;
   font-style: normal;
@@ -13477,7 +13484,6 @@ yx-axis
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 10px;
   font-family: "Avenir Next Cyr Bold", "Arial", "Helvetica CY", sans-serif;
   font-weight: 750;
   font-size: 1.69rem;
@@ -13489,6 +13495,7 @@ yx-axis
 }
 @media (min-width: 768px) {
   .tariffs-header__top {
+    gap: 10px;
     padding-bottom: 36px;
   }
 }
@@ -13506,6 +13513,7 @@ yx-axis
   letter-spacing: 0.02em;
   text-transform: uppercase;
   max-width: 1100px;
+  margin-bottom: 8px;
 }
 @media (min-width: 768px) {
   .tariffs-header__top h1 {
@@ -13516,6 +13524,11 @@ yx-axis
 @media (min-width: 992px) {
   .tariffs-header__top h1 {
     font-size: 4.19rem;
+  }
+}
+@media (max-width: 576px) {
+  .tariffs-header__top h1 span {
+    display: block;
   }
 }
 .tariffs-header .link {
@@ -13536,6 +13549,11 @@ yx-axis
   text-align: center;
   transition: all 0.4s ease;
   text-decoration: none;
+}
+@media (min-width: 992px) {
+  .tariffs-header .link {
+    margin-top: 8px;
+  }
 }
 .tariffs-header .link::before {
   content: "";
@@ -13615,6 +13633,7 @@ yx-axis
   width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: bottom;
   background: linear-gradient(171deg, #3485aa 18.3%, #1e6586 76.81%, #2e7292 100%);
 }
 
@@ -13623,7 +13642,7 @@ yx-axis
   flex-direction: row;
   align-items: flex-end;
   flex-wrap: wrap;
-  gap: 10px;
+  margin-bottom: 8px;
 }
 .tariffs-header__price-count {
   font-size: 1.5rem;
@@ -13632,6 +13651,7 @@ yx-axis
 }
 @media (min-width: 768px) {
   .tariffs-header__price-count {
+    gap: 10px;
     font-size: 1.75rem;
   }
 }
@@ -13854,20 +13874,37 @@ yx-axis
     background: linear-gradient(to top, var(--bg-color) 10%, transparent 100%);
   }
 }
+@media (min-width: 1200px) {
+  .page-tariffs__club-gallery .swiper-slide {
+    min-height: 800px;
+  }
+}
+@media (min-width: 1920px) {
+  .page-tariffs__club-gallery .swiper-slide {
+    min-height: 1000px;
+  }
+}
 .page-tariffs__club-gallery .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.5s ease;
 }
 .page-tariffs__club-gallery .slide-gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 @media (min-width: 1200px) {
   .page-tariffs__club-gallery .slide-gallery__img {
     min-height: 800px;
+  }
+}
+@media (min-width: 1920px) {
+  .page-tariffs__club-gallery .slide-gallery__img {
+    min-height: 1000px;
   }
 }
 .page-tariffs__club-gallery .slide-gallery__info {
@@ -14042,6 +14079,45 @@ yx-axis
     transform: translateX(-50%);
     min-height: 100%;
   }
+}
+
+/* Анимации для текста слайдера */
+@keyframes slideTextIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideTextOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+/* Стили для активного слайда */
+.swiper-slide-active .slide-gallery__title,
+.swiper-slide-active .slide-gallery__text {
+  animation: slideTextIn 0.8s ease-out 0.3s both;
+}
+
+/* Стили для неактивных слайдов */
+.swiper-slide:not(.swiper-slide-active) .slide-gallery__title,
+.swiper-slide:not(.swiper-slide-active) .slide-gallery__text {
+  animation: slideTextOut 0.5s ease-in both;
+}
+
+/* Отключаем AOS анимации для слайдера, т.к. будем использовать свои */
+#js-slider-gallery [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .club-tariff {
@@ -14324,6 +14400,7 @@ yx-axis
 @media (min-width: 1200px) {
   .page-tariffs__club-tariffs .club-tariffs__text {
     padding-left: 5rem;
+    max-width: 1300px;
   }
 }
 @media (min-width: 1500px) {
@@ -14531,12 +14608,31 @@ yx-axis
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-family: "Avenir Next Cyr Medium", "Arial", "Helvetica CY", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 100%;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+.feedback-form .list li {
+  position: relative;
+  padding-left: 0.5rem;
+}
+.feedback-form .list li::before {
+  content: attr(data-li);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 1.12rem;
+  line-height: 90%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 .feedback-form .button[type=submit] {
   position: relative;
@@ -14741,7 +14837,7 @@ yx-axis
     top: 0;
     right: 0;
     width: 300px;
-    height: 100%;
+    height: 98%;
   }
 }
 @media (min-width: 992px) {
