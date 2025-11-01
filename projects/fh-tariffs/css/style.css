@@ -14628,6 +14628,11 @@ yx-axis
 .feedback-form .form__btns .button {
   flex-grow: 1;
 }
+@media (max-width: 768px) {
+  .feedback-form .form__btns .button {
+    width: 100%;
+  }
+}
 
 .page-tariffs__map-clubs {
   margin-bottom: 2rem;
@@ -14810,6 +14815,29 @@ yx-axis
 }
 .map-sidebar .icon-user {
   background-image: url("../img/podpiska-2/icons/icon-user.svg");
+}
+
+.lazy-iframe {
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.lazy-iframe:not([src]) {
+  opacity: 0.7;
+  background: #f5f5f5;
+}
+
+.lazy-iframe.loaded {
+  opacity: 1;
+}
+
+.iframe-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #666;
+  font-style: italic;
 }
 
 .page-tariffs__app {
