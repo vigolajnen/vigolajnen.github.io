@@ -13590,6 +13590,11 @@ yx-axis
   max-height: 615px;
   background-color: rgb(36, 108, 190);
 }
+@media (min-width: 1920px) {
+  .tariffs-header__info {
+    max-height: 1000px;
+  }
+}
 .tariffs-header__wrapper {
   position: absolute;
   bottom: -10px;
@@ -13861,6 +13866,11 @@ yx-axis
   background-color: var(--bg-color);
   color: var(--text-color);
   border-radius: 0;
+}
+@media (min-width: 1920px) {
+  .page-tariffs__club-gallery .swiper-slide {
+    max-height: 1000px;
+  }
 }
 .page-tariffs__club-gallery .swiper-slide::before {
   content: "";
