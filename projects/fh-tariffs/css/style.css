@@ -13479,6 +13479,11 @@ yx-axis
     overflow: hidden;
   }
 }
+@media (min-width: 1920px) {
+  .tariffs-header {
+    min-height: 800px;
+  }
+}
 .tariffs-header__top {
   display: flex;
   flex-direction: column;
