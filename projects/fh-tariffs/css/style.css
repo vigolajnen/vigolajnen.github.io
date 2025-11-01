@@ -13948,7 +13948,7 @@ yx-axis
   }
 }
 .page-tariffs__club-gallery .swiper-button-next, .page-tariffs__club-gallery .swiper-button-prev {
-  top: 70%;
+  top: 65%;
   color: var(--text-color);
   background: rgba(255, 255, 255, 0.7);
   width: 30px;
