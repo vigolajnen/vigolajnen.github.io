@@ -13882,9 +13882,6 @@ yx-axis
   background: linear-gradient(to top, var(--bg-color) 10%, transparent 100%);
 }
 @media (min-width: 768px) {
-  .page-tariffs__club-gallery .swiper-slide {
-    min-height: 685px;
-  }
   .page-tariffs__club-gallery .swiper-slide:hover::before {
     background: linear-gradient(to top, var(--bg-color) 10%, transparent 100%);
   }
