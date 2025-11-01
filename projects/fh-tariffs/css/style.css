@@ -14130,7 +14130,7 @@ yx-axis
   color: #5c6166;
 }
 .club-tariff__price span {
-  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
   font-weight: 500;
   font-size: 1.12rem;
 }
@@ -14791,6 +14791,25 @@ yx-axis
 }
 .map-sidebar__table td {
   padding: 0.25rem 0.5rem;
+}
+.map-sidebar .map-sidebar__td {
+  display: flex;
+  align-items: flex-end;
+}
+.map-sidebar .icon {
+  display: inline-block;
+  margin-right: 0.25rem;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.map-sidebar .icon-clock {
+  background-image: url("../img/podpiska-2/icons/icon-clock.svg");
+}
+.map-sidebar .icon-user {
+  background-image: url("../img/podpiska-2/icons/icon-user.svg");
 }
 
 .page-tariffs__app {
