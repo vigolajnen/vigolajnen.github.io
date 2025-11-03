@@ -14959,15 +14959,6 @@ yx-axis
   opacity: 1;
 }
 
-.iframe-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  color: #666;
-  font-style: italic;
-}
-
 .page-tariffs__app {
   max-width: 80rem;
   margin: 0 auto;
