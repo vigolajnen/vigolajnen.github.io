@@ -13454,13 +13454,13 @@ yx-axis
   background-size: contain;
 }
 .page-tariffs .modal-submit-form .social__item--vk .icon {
-  background-image: url("../img/podpiska-2/icons/icon-vk.svg");
+  background-image: url("../img/page-club-tariffs/icons/icon-vk.svg");
 }
 .page-tariffs .modal-submit-form .social__item--dz .icon {
-  background-image: url("../img/podpiska-2/icons/icon-dzen.svg");
+  background-image: url("../img/page-club-tariffs/icons/icon-dzen.svg");
 }
 .page-tariffs .modal-submit-form .social__item--tm .icon {
-  background-image: url("../img/podpiska-2/icons/icon-telegram.svg");
+  background-image: url("../img/page-club-tariffs/icons/icon-telegram.svg");
 }
 .page-tariffs .modal-submit-form .social__item a {
   display: block;
@@ -13489,7 +13489,6 @@ yx-axis
   justify-content: flex-start;
   align-items: flex-start;
   max-width: 1440px;
-  margin: 0 auto;
   font-family: "Avenir Next Cyr Bold", "Arial", "Helvetica CY", sans-serif;
   font-weight: 750;
   font-size: 1.69rem;
@@ -13508,6 +13507,12 @@ yx-axis
   .tariffs-header__top {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 20px 40px 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .tariffs-header__top {
+    margin: 0 auto;
     padding: 0 20px 40px 70px;
   }
 }
@@ -13708,7 +13713,7 @@ yx-axis
   }
 }
 .page-tariffs__advantages__wrap {
-  background: url("../img/podpiska-2/about/bg.jpg");
+  background: url("../img/page-club-tariffs/about/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14169,7 +14174,7 @@ yx-axis
 .club-tariff__tooltip .icon-info {
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url("../img/podpiska-2/icons/icon-info.svg");
+  background-image: url("../img/page-club-tariffs/icons/icon-info.svg");
 }
 .club-tariff__title {
   display: flex;
@@ -14241,7 +14246,7 @@ yx-axis
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-image: url("../img/podpiska-2/icons/icon-check.svg");
+  background-image: url("../img/page-club-tariffs/icons/icon-check.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
@@ -14258,7 +14263,7 @@ yx-axis
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-image: url("../img/podpiska-2/icons/icon-cancel.svg");
+  background-image: url("../img/page-club-tariffs/icons/icon-cancel.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
@@ -14569,7 +14574,7 @@ yx-axis
     left: 0;
     width: 50%;
     height: 100%;
-    background-image: url("../img/podpiska-2/bg-form.webp");
+    background-image: url("../img/page-club-tariffs/bg-form.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -14913,10 +14918,10 @@ yx-axis
   background-position: center;
 }
 .map-sidebar .icon-clock {
-  background-image: url("../img/podpiska-2/icons/icon-clock.svg");
+  background-image: url("../img/page-club-tariffs/icons/icon-clock.svg");
 }
 .map-sidebar .icon-user {
-  background-image: url("../img/podpiska-2/icons/icon-user.svg");
+  background-image: url("../img/page-club-tariffs/icons/icon-user.svg");
 }
 
 .lazy-iframe {
@@ -14996,7 +15001,7 @@ yx-axis
   right: 10%;
   width: 100%;
   height: 180%;
-  background: url("../img/podpiska-2/about/app__all.png");
+  background: url("../img/page-club-tariffs/about/app__all.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
