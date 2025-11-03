@@ -130,11 +130,11 @@
     </nav>
     <main class="page-tariffs">
       <section class="page-tariffs__header tariffs-header" data-aos="fade">
-        <div class="tariffs-header__top container-fluid">
-          <h1 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <div class="tariffs-header__top">
+          <div class="title" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
             Фитнес нового формата
             <span>по подписке</span>
-          </h1>
+          </div>
           <div class="tariffs-header__price"><span class="tariffs-header__price-count">от 1.000</span><span class="tariffs-header__price-unit">₽/мес</span></div><a class="link" href="#feedbackForm"><span>Записаться</span>
             <svg viewbox="0 0 137 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M136.354 4.03568C136.549 3.84042 136.549 3.52384 136.354 3.32858L133.172 0.146595C132.976 -0.0486671 132.66 -0.0486671 132.464 0.146595C132.269 0.341857 132.269 0.65844 132.464 0.853702L135.293 3.68213L132.464 6.51056C132.269 6.70582 132.269 7.0224 132.464 7.21766C132.66 7.41292 132.976 7.41292 133.172 7.21766L136.354 4.03568ZM0 3.68213L0 4.18213L136 4.18213V3.68213V3.18213L0 3.18213L0 3.68213Z" fill="currentColor"></path>
@@ -162,70 +162,84 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide slide-gallery" style="--bg-color: #585858; --text-color: #ffffff" data-slide="bg_1">
-                <picture class="slide-gallery__img">
-                  <source srcset="img/podpiska-2/gym-2000.webp" media="(min-width: 1400px)">
-                  <source srcset="img/podpiska-2/gym-1440.webp" media="(min-width: 768px)"><img src="img/podpiska-2/gym-320.webp" alt="Junior тариф">
-                </picture>
+                        <picture class="slide-gallery__img">
+                          <source srcset="img/podpiska-2/gallery/gym-2880.webp 1x," media="(min-width: 1920)">
+                          <source srcset="img/podpiska-2/gallery/gym-2880.webp 2x, img/podpiska-2/gallery/gym-1440.webp 1x" media="(min-width: 1440px)">
+                          <source srcset="img/podpiska-2/gallery/gym-1440.webp 2x, img/podpiska-2/gallery/gym-768.webp 1x" media="(min-width: 768px)">
+                          <source srcset="img/podpiska-2/gallery/gym-768.webp 2x, img/podpiska-2/gallery/gym-640.webp 1x" media="(min-width: 567px)"><img srcset="img/podpiska-2/gallery/gym-320.webp 2x, img/podpiska-2/gallery/gym-320.webp 1x" src="img/podpiska-2/gallery/gym-320.webp" alt="Тренажерный зал" loading="lazy">
+                        </picture>
                 <div class="slide-gallery__info">
                   <div class="h3 slide-gallery__title container">Тренажерный зал</div>
                   <p class="slide-gallery__text"><span class="container">Зал оснащенный зоной свободных весов и силовыми тренажерами</span></p>
                 </div>
               </div>
-              <div class="swiper-slide" style="--bg-color: #226B9E; --text-color: #ffffff" data-slide="bg_2">
-                <picture class="slide-gallery__img">
-                  <source srcset="img/podpiska-2/pool-2000.webp" media="(min-width: 1400px)">
-                  <source srcset="img/podpiska-2/pool-1440.webp" media="(min-width: 768px)"><img src="img/podpiska-2/pool-320.webp" alt="бассейн" loading="lazy">
-                </picture>
+              <div class="swiper-slide slide-gallery" style="--bg-color: #226B9E; --text-color: #ffffff" data-slide="bg_2">
+                        <picture class="slide-gallery__img">
+                          <source srcset="img/podpiska-2/gallery/pool-2880.webp 1x," media="(min-width: 1920)">
+                          <source srcset="img/podpiska-2/gallery/pool-2880.webp 2x, img/podpiska-2/gallery/pool-1440.webp 1x" media="(min-width: 1440px)">
+                          <source srcset="img/podpiska-2/gallery/pool-1440.webp 2x, img/podpiska-2/gallery/pool-768.webp 1x" media="(min-width: 768px)">
+                          <source srcset="img/podpiska-2/gallery/pool-768.webp 2x, img/podpiska-2/gallery/pool-640.webp 1x" media="(min-width: 567px)"><img srcset="img/podpiska-2/gallery/pool-320.webp 2x, img/podpiska-2/gallery/pool-320.webp 1x" src="img/podpiska-2/gallery/pool-320.webp" alt="бассейн" loading="lazy">
+                        </picture>
                 <div class="slide-gallery__info">
                   <div class="h3 slide-gallery__title container">бассейн</div>
                   <p class="slide-gallery__text"><span class="container">Спортивный, гидромассажный и детский бассейны для вашего отдыха</span></p>
                 </div>
               </div>
-              <div class="swiper-slide" style="--bg-color: #45281D; --text-color: #ffffff" data-slide="bg_3">
-                <picture class="slide-gallery__img">
-                  <source srcset="img/podpiska-2/sauna-1-2000.webp" media="(min-width: 1400px)">
-                  <source srcset="img/podpiska-2/sauna-1-1440.webp" media="(min-width: 768px)"><img src="img/podpiska-2/sauna-1-320.webp" alt="Русская сауна" loading="lazy">
-                </picture>
+              <div class="swiper-slide slide-gallery" style="--bg-color: #45281D; --text-color: #ffffff" data-slide="bg_3">
+                        <picture class="slide-gallery__img">
+                          <source srcset="img/podpiska-2/gallery/sauna-1-2880.webp 1x," media="(min-width: 1920)">
+                          <source srcset="img/podpiska-2/gallery/sauna-1-2880.webp 2x, img/podpiska-2/gallery/sauna-1-1440.webp 1x" media="(min-width: 1440px)">
+                          <source srcset="img/podpiska-2/gallery/sauna-1-1440.webp 2x, img/podpiska-2/gallery/sauna-1-768.webp 1x" media="(min-width: 768px)">
+                          <source srcset="img/podpiska-2/gallery/sauna-1-768.webp 2x, img/podpiska-2/gallery/sauna-1-640.webp 1x" media="(min-width: 567px)"><img srcset="img/podpiska-2/gallery/sauna-1-320.webp 2x, img/podpiska-2/gallery/sauna-1-320.webp 1x" src="img/podpiska-2/gallery/sauna-1-320.webp" alt="Русская сауна" loading="lazy">
+                        </picture>
                 <div class="slide-gallery__info">
                   <div class="h3 slide-gallery__title container">Русская сауна</div>
                   <p class="slide-gallery__text"><span class="container">Классическая парная для тех, кто ценит традиции и результат</span></p>
                 </div>
               </div>
-              <div class="swiper-slide" style="--bg-color: #3B3230; --text-color: #ffffff" data-slide="bg_4">
-                <picture class="slide-gallery__img">
-                  <source srcset="img/podpiska-2/sauna-2-2000.webp" media="(min-width: 1400px)">
-                  <source srcset="img/podpiska-2/sauna-2-1440.webp" media="(min-width: 768px)"><img src="img/podpiska-2/sauna-2-320.webp" alt="Хаммам" loading="lazy">
-                </picture>
+              <div class="swiper-slide slide-gallery" style="--bg-color: #3B3230; --text-color: #ffffff" data-slide="bg_4">
+                        <picture class="slide-gallery__img">
+                          <source srcset="img/podpiska-2/gallery/sauna-2-2880.webp 1x," media="(min-width: 1920)">
+                          <source srcset="img/podpiska-2/gallery/sauna-2-2880.webp 2x, img/podpiska-2/gallery/sauna-2-1440.webp 1x" media="(min-width: 1440px)">
+                          <source srcset="img/podpiska-2/gallery/sauna-2-1440.webp 2x, img/podpiska-2/gallery/sauna-2-768.webp 1x" media="(min-width: 768px)">
+                          <source srcset="img/podpiska-2/gallery/sauna-2-768.webp 2x, img/podpiska-2/gallery/sauna-2-640.webp 1x" media="(min-width: 567px)"><img srcset="img/podpiska-2/gallery/sauna-2-320.webp 2x, img/podpiska-2/gallery/sauna-2-320.webp 1x" src="img/podpiska-2/gallery/sauna-2-320.webp" alt="Хаммам" loading="lazy">
+                        </picture>
                 <div class="slide-gallery__info">
                   <div class="h3 slide-gallery__title container">Хаммам</div>
                   <p class="slide-gallery__text"><span class="container">Тёплый пар, ароматы и тишина — полное расслабление в восточном стиле</span></p>
                 </div>
               </div>
-              <div class="swiper-slide" style="--bg-color: #DBDAD8; --text-color: #4b5052" data-slide="bg_5">
-                <picture class="slide-gallery__img">
-                  <source srcset="img/podpiska-2/sauna-3-2000.webp" media="(min-width: 1400px)">
-                  <source srcset="img/podpiska-2/sauna-3-1440.webp" media="(min-width: 768px)"><img src="img/podpiska-2/sauna-3-320.webp" alt="Хаммам" loading="lazy">
-                </picture>
+              <div class="swiper-slide slide-gallery" style="--bg-color: #DBDAD8; --text-color: #4b5052" data-slide="bg_5">
+                        <picture class="slide-gallery__img">
+                          <source srcset="img/podpiska-2/gallery/sauna-3-2880.webp 1x," media="(min-width: 1920)">
+                          <source srcset="img/podpiska-2/gallery/sauna-3-2880.webp 2x, img/podpiska-2/gallery/sauna-3-1440.webp 1x" media="(min-width: 1440px)">
+                          <source srcset="img/podpiska-2/gallery/sauna-3-1440.webp 2x, img/podpiska-2/gallery/sauna-3-768.webp 1x" media="(min-width: 768px)">
+                          <source srcset="img/podpiska-2/gallery/sauna-3-768.webp 2x, img/podpiska-2/gallery/sauna-3-640.webp 1x" media="(min-width: 567px)"><img srcset="img/podpiska-2/gallery/sauna-3-320.webp 2x, img/podpiska-2/gallery/sauna-3-320.webp 1x" src="img/podpiska-2/gallery/sauna-3-320.webp" alt="Соляная комната" loading="lazy">
+                        </picture>
                 <div class="slide-gallery__info">
                   <div class="h3 slide-gallery__title container">Соляная комната</div>
-                  <p class="slide-gallery__text"><span class="container">Природная терапия для дыхания и спокойствия</span></p>
+                  <p class="slide-gallery__text"><span class="container">Природная терапия для дыхания и спокойствия</span></p>
                 </div>
               </div>
-              <div class="swiper-slide" style="--bg-color: #522F20; --text-color: #ffffff" data-slide="bg_6">
-                <picture class="slide-gallery__img">
-                  <source srcset="img/podpiska-2/sauna-4-2000.webp" media="(min-width: 1400px)">
-                  <source srcset="img/podpiska-2/sauna-4-1440.webp" media="(min-width: 768px)"><img src="img/podpiska-2/sauna-4-320.webp" alt="ИК-сауна" loading="lazy">
-                </picture>
+              <div class="swiper-slide slide-gallery" style="--bg-color: #522F20; --text-color: #ffffff" data-slide="bg_6">
+                        <picture class="slide-gallery__img">
+                          <source srcset="img/podpiska-2/gallery/sauna-4-2880.webp 1x," media="(min-width: 1920)">
+                          <source srcset="img/podpiska-2/gallery/sauna-4-2880.webp 2x, img/podpiska-2/gallery/sauna-4-1440.webp 1x" media="(min-width: 1440px)">
+                          <source srcset="img/podpiska-2/gallery/sauna-4-1440.webp 2x, img/podpiska-2/gallery/sauna-4-768.webp 1x" media="(min-width: 768px)">
+                          <source srcset="img/podpiska-2/gallery/sauna-4-768.webp 2x, img/podpiska-2/gallery/sauna-4-640.webp 1x" media="(min-width: 567px)"><img srcset="img/podpiska-2/gallery/sauna-4-320.webp 2x, img/podpiska-2/gallery/sauna-4-320.webp 1x" src="img/podpiska-2/gallery/sauna-4-320.webp" alt="ИК-сауна" loading="lazy">
+                        </picture>
                 <div class="slide-gallery__info">
                   <div class="h3 slide-gallery__title container">ИК-сауна</div>
                   <p class="slide-gallery__text"><span class="container">Тепло инфракрасных лучей помогает восстановиться после тренировок</span></p>
                 </div>
               </div>
-              <div class="swiper-slide" style="--bg-color: #585858; --text-color: #ffffff" data-slide="bg_7">
-                <picture class="slide-gallery__img">
-                  <source srcset="img/podpiska-2/cardio-2000.webp" media="(min-width: 1400px)">
-                  <source srcset="img/podpiska-2/cardio-1440.webp" media="(min-width: 768px)"><img src="img/podpiska-2/cardio-320.webp" alt="Кардиозона" loading="lazy">
-                </picture>
+              <div class="swiper-slide slide-gallery" style="--bg-color: #585858; --text-color: #ffffff" data-slide="bg_7">
+                        <picture class="slide-gallery__img">
+                          <source srcset="img/podpiska-2/gallery/cardio-2880.webp 1x," media="(min-width: 1920)">
+                          <source srcset="img/podpiska-2/gallery/cardio-2880.webp 2x, img/podpiska-2/gallery/cardio-1440.webp 1x" media="(min-width: 1440px)">
+                          <source srcset="img/podpiska-2/gallery/cardio-1440.webp 2x, img/podpiska-2/gallery/cardio-768.webp 1x" media="(min-width: 768px)">
+                          <source srcset="img/podpiska-2/gallery/cardio-768.webp 2x, img/podpiska-2/gallery/cardio-640.webp 1x" media="(min-width: 567px)"><img srcset="img/podpiska-2/gallery/cardio-320.webp 2x, img/podpiska-2/gallery/cardio-320.webp 1x" src="img/podpiska-2/gallery/cardio-320.webp" alt="Кардиозона" loading="lazy">
+                        </picture>
                 <div class="slide-gallery__info">
                   <div class="h3 slide-gallery__title container">Кардиозона</div>
                   <p class="slide-gallery__text"><span class="container">Современное оборудование для любых кардиотренировок</span></p>
@@ -244,7 +258,7 @@
           <section class="slider-tariffs" id="js-slider-tariffs">
             <div class="swiper-container container-fluid">
               <div class="swiper-wrapper">
-                <article class="swiper-slide club-tariff" data-aos="fade" data-aos-delay="" data-tariff="teen">
+                <article class="swiper-slide club-tariff" data-tariff="teen">
                   <h3 class="club-tariff__title">Teen<span>(только с 14 до 23 лет)</span></h3>
                   <button class="club-tariff__tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Услуги, включенные в тариф могут отличаться в зависимости от выбора клуба">
                               <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
@@ -290,7 +304,7 @@
                   </ul>
                   <div class="club-tariff__price">1.000 <span>₽/мес</span></div><a class="club-tariff__link" href="#feedbackForm" data-tariff-name="teen" data-tariff-price="1000"><span>Выбрать</span></a>
                 </article>
-                <article class="swiper-slide club-tariff" data-aos="fade" data-aos-delay="" data-tariff="junior">
+                <article class="swiper-slide club-tariff" data-tariff="junior">
                   <h3 class="club-tariff__title">Junior<span>(только с 14 до 23 лет)</span></h3>
                   <button class="club-tariff__tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Услуги, включенные в тариф могут отличаться в зависимости от выбора клуба">
                               <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
@@ -336,7 +350,7 @@
                   </ul>
                   <div class="club-tariff__price">1.500 <span>₽/мес</span></div><a class="club-tariff__link" href="#feedbackForm" data-tariff-name="junior" data-tariff-price="1500"><span>Выбрать</span></a>
                 </article>
-                <article class="swiper-slide club-tariff club-tariff--royal" data-aos="fade" data-aos-delay="300" data-tariff="royal">
+                <article class="swiper-slide club-tariff club-tariff--royal" data-tariff="royal">
                   <h3 class="club-tariff__title">Royal<span>(бассейн + фитнес + спа)</span></h3>
                   <button class="club-tariff__tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Услуги, включенные в тариф могут отличаться в зависимости от выбора клуба">
                               <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
@@ -382,7 +396,7 @@
                   </ul>
                   <div class="club-tariff__price">4.900 <span>₽/мес</span></div><a class="club-tariff__link" href="#feedbackForm" data-tariff-name="royal" data-tariff-price="4900"><span>Выбрать</span></a>
                 </article>
-                <article class="swiper-slide club-tariff" data-aos="fade" data-aos-delay="400" data-tariff="smart">
+                <article class="swiper-slide club-tariff" data-tariff="smart">
                   <h3 class="club-tariff__title">Smart<span>(фитнес + спа)</span></h3>
                   <button class="club-tariff__tooltip" type="button" data-bs-toggle="tariff-tooltip" data-bs-placement="top" title="Услуги, включенные в тариф могут отличаться в зависимости от выбора клуба">
                               <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
@@ -508,6 +522,7 @@
                   <option value="2500">Smart | 2.500 ₽</option>
                 </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
               </label>
+              <input type="hidden" name="clubId" value="132">
               <div class="form__btns">
                 <div class="form-personal">
                   Отправляя свои данные, Вы соглашаетесь с

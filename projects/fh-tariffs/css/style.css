@@ -13388,7 +13388,6 @@ yx-axis
 }
 
 .page-tariffs .container-fluid {
-  max-width: 1440px;
   margin: 0 auto;
 }
 .page-tariffs .modal-submit-form .btn-close svg {
@@ -13489,13 +13488,14 @@ yx-axis
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: "Avenir Next Cyr Bold", "Arial", "Helvetica CY", sans-serif;
   font-weight: 750;
   font-size: 1.69rem;
   line-height: 130%;
   letter-spacing: 0.02em;
   color: #4b5052;
-  max-width: 1000px;
   padding: 20px 1rem 40px;
 }
 @media (min-width: 768px) {
@@ -13511,7 +13511,8 @@ yx-axis
     padding: 0 20px 40px 70px;
   }
 }
-.tariffs-header__top h1 {
+.tariffs-header__top .title {
+  font-family: "Avenir Next Cyr Bold", "Arial", "Helvetica CY", sans-serif;
   font-weight: 750;
   font-size: 1.69rem;
   line-height: 130%;
@@ -13521,18 +13522,18 @@ yx-axis
   margin-bottom: 8px;
 }
 @media (min-width: 768px) {
-  .tariffs-header__top h1 {
+  .tariffs-header__top .title {
     font-size: 1.95rem;
     line-height: 120%;
   }
 }
 @media (min-width: 992px) {
-  .tariffs-header__top h1 {
+  .tariffs-header__top .title {
     font-size: 4.19rem;
   }
 }
 @media (max-width: 576px) {
-  .tariffs-header__top h1 span {
+  .tariffs-header__top .title span {
     display: block;
   }
 }
@@ -13614,6 +13615,7 @@ yx-axis
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  max-width: 1440px;
   padding: 24px;
   padding-left: 48px;
   margin: 0;
@@ -13863,14 +13865,12 @@ yx-axis
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 100%;
   background-color: var(--bg-color);
   color: var(--text-color);
   border-radius: 0;
-}
-@media (min-width: 1920px) {
-  .page-tariffs__club-gallery .swiper-slide {
-    max-height: 1000px;
-  }
+  background-position: center;
+  background-size: cover;
 }
 .page-tariffs__club-gallery .swiper-slide::before {
   content: "";
@@ -13884,16 +13884,6 @@ yx-axis
 @media (min-width: 768px) {
   .page-tariffs__club-gallery .swiper-slide:hover::before {
     background: linear-gradient(to top, var(--bg-color) 10%, transparent 100%);
-  }
-}
-@media (min-width: 1200px) {
-  .page-tariffs__club-gallery .swiper-slide {
-    min-height: 800px;
-  }
-}
-@media (min-width: 1920px) {
-  .page-tariffs__club-gallery .swiper-slide {
-    min-height: 1000px;
   }
 }
 .page-tariffs__club-gallery .swiper-slide img {
@@ -14114,22 +14104,23 @@ yx-axis
     transform: translateY(-40px);
   }
 }
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Стили для активного слайда */
-.swiper-slide-active .slide-gallery__title,
+.swiper-slide-active .slide-gallery__title {
+  animation: slideTextIn 0.5s forwards;
+}
+
 .swiper-slide-active .slide-gallery__text {
-  animation: slideTextIn 0.8s ease-out 0.3s both;
-}
-
-/* Стили для неактивных слайдов */
-.swiper-slide:not(.swiper-slide-active) .slide-gallery__title,
-.swiper-slide:not(.swiper-slide-active) .slide-gallery__text {
-  animation: slideTextOut 0.5s ease-in both;
-}
-
-/* Отключаем AOS анимации для слайдера, т.к. будем использовать свои */
-#js-slider-gallery [data-aos] {
-  opacity: 1 !important;
-  transform: none !important;
+  animation: slideTextIn 1s forwards;
 }
 
 .club-tariff {
@@ -14392,6 +14383,7 @@ yx-axis
   letter-spacing: 0.02em;
   color: var(--text-color);
   max-width: 1000px;
+  margin: 0 auto;
 }
 @media (min-width: 992px) {
   .page-tariffs__club-tariffs .club-tariffs__text {
@@ -14458,6 +14450,8 @@ yx-axis
   justify-content: space-around;
   padding: 0 0 3rem 1rem;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 @media (min-width: 992px) {
   .page-tariffs__club-tariffs .slider-tariffs {
