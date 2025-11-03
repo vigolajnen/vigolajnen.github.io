@@ -13507,7 +13507,6 @@ yx-axis
   .tariffs-header__top {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 20px 40px 70px;
   }
 }
 @media (min-width: 1200px) {
