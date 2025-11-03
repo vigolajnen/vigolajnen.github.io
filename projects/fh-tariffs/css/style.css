@@ -13405,6 +13405,7 @@ yx-axis
   margin: 0 auto;
 }
 .page-tariffs .modal-submit-form .modal-body {
+  padding-top: 2rem;
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 100%;
@@ -13438,6 +13439,7 @@ yx-axis
 .page-tariffs .modal-submit-form .social {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 1rem;
 }
 .page-tariffs .modal-submit-form .social__item {
@@ -13454,16 +13456,36 @@ yx-axis
   background-size: contain;
 }
 .page-tariffs .modal-submit-form .social__item--vk .icon {
-  background-image: url("../img/page-club-tariffs/icons/icon-vk.svg");
+  background-image: url("../img/pct/icons/icon-vk.svg");
 }
 .page-tariffs .modal-submit-form .social__item--dz .icon {
-  background-image: url("../img/page-club-tariffs/icons/icon-dzen.svg");
+  background-image: url("../img/pct/icons/icon-dzen.svg");
 }
 .page-tariffs .modal-submit-form .social__item--tm .icon {
-  background-image: url("../img/page-club-tariffs/icons/icon-telegram.svg");
+  background-image: url("../img/pct/icons/icon-telegram.svg");
 }
 .page-tariffs .modal-submit-form .social__item a {
   display: block;
+}
+
+.tariff-tooltip.tooltip.show, .trade-in-tooltip.tooltip.show, .advantages-tooltip.tooltip.show {
+  opacity: 1;
+}
+.tariff-tooltip .tooltip-inner, .trade-in-tooltip .tooltip-inner, .advantages-tooltip .tooltip-inner {
+  background: white;
+  padding: 0.5rem;
+  box-shadow: 4px 4px 12px 0 rgba(66, 71, 77, 0.1);
+  border-radius: 0.75rem;
+  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 400;
+  font-size: 0.81rem;
+  line-height: 130%;
+  color: #42474d;
+  opacity: 1;
+}
+.tariff-tooltip .tooltip-arrow::before, .trade-in-tooltip .tooltip-arrow::before, .advantages-tooltip .tooltip-arrow::before {
+  border-color: transparent;
+  border-top-color: white;
 }
 
 .tariffs-header {
@@ -13712,7 +13734,7 @@ yx-axis
   }
 }
 .page-tariffs__advantages__wrap {
-  background: url("../img/page-club-tariffs/about/bg.jpg");
+  background: url("../img/pct/about/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14173,7 +14195,7 @@ yx-axis
 .club-tariff__tooltip .icon-info {
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url("../img/page-club-tariffs/icons/icon-info.svg");
+  background-image: url("../img/pct/icons/icon-info.svg");
 }
 .club-tariff__title {
   display: flex;
@@ -14245,7 +14267,7 @@ yx-axis
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-image: url("../img/page-club-tariffs/icons/icon-check.svg");
+  background-image: url("../img/pct/icons/icon-check.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
@@ -14262,7 +14284,7 @@ yx-axis
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-image: url("../img/page-club-tariffs/icons/icon-cancel.svg");
+  background-image: url("../img/pct/icons/icon-cancel.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
@@ -14573,7 +14595,7 @@ yx-axis
     left: 0;
     width: 50%;
     height: 100%;
-    background-image: url("../img/page-club-tariffs/bg-form.webp");
+    background-image: url("../img/pct/bg-form.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -14917,10 +14939,10 @@ yx-axis
   background-position: center;
 }
 .map-sidebar .icon-clock {
-  background-image: url("../img/page-club-tariffs/icons/icon-clock.svg");
+  background-image: url("../img/pct/icons/icon-clock.svg");
 }
 .map-sidebar .icon-user {
-  background-image: url("../img/page-club-tariffs/icons/icon-user.svg");
+  background-image: url("../img/pct/icons/icon-user.svg");
 }
 
 .lazy-iframe {
@@ -15000,7 +15022,7 @@ yx-axis
   right: 10%;
   width: 100%;
   height: 180%;
-  background: url("../img/page-club-tariffs/about/app__all.webp");
+  background: url("../img/pct/about/app__all.webp");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
