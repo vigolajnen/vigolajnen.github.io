@@ -2714,13 +2714,13 @@ button[type=submit] {
   background-size: contain;
 }
 .page-tariffs .modal-submit-form .social__item--vk .icon {
-  background-image: url("../img/pct/icons/icon-vk.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-vk.svg");
 }
 .page-tariffs .modal-submit-form .social__item--dz .icon {
-  background-image: url("../img/pct/icons/icon-dzen.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-dzen.svg");
 }
 .page-tariffs .modal-submit-form .social__item--tm .icon {
-  background-image: url("../img/pct/icons/icon-telegram.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-telegram.svg");
 }
 .page-tariffs .modal-submit-form .social__item a {
   display: block;
@@ -2992,7 +2992,7 @@ button[type=submit] {
   }
 }
 .page-tariffs__advantages__wrap {
-  background: url("../img/pct/about/bg.jpg");
+  background: url("../img/pages/club-tariffs/about/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3453,7 +3453,7 @@ button[type=submit] {
 .club-tariff__tooltip .icon-info {
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url("../img/pct/icons/icon-info.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-info.svg");
 }
 .club-tariff__title {
   display: flex;
@@ -3525,7 +3525,7 @@ button[type=submit] {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-image: url("../img/pct/icons/icon-check.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-check.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
@@ -3542,7 +3542,7 @@ button[type=submit] {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-image: url("../img/pct/icons/icon-cancel.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-cancel.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
@@ -3628,7 +3628,7 @@ button[type=submit] {
   top: 55%;
   right: -70%;
   transform: translateY(-50%);
-  background-image: url("../img/pct/icons/icon-arrow.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
@@ -3853,7 +3853,7 @@ button[type=submit] {
     left: 0;
     width: 50%;
     height: 100%;
-    background-image: url("../img/pct/bg-form.webp");
+    background-image: url("../img/pages/club-tariffs/bg-form.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -4197,10 +4197,10 @@ button[type=submit] {
   background-position: center;
 }
 .map-sidebar .icon-clock {
-  background-image: url("../img/pct/icons/icon-clock.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-clock.svg");
 }
 .map-sidebar .icon-user {
-  background-image: url("../img/pct/icons/icon-user.svg");
+  background-image: url("../img/pages/club-tariffs/icons/icon-user.svg");
 }
 
 .lazy-iframe {
@@ -4271,7 +4271,7 @@ button[type=submit] {
   right: 10%;
   width: 100%;
   height: 180%;
-  background: url("../img/pct/about/app__all.webp");
+  background: url("../img/pages/club-tariffs/about/app__all.webp");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
