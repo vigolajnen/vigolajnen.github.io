@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Статья Fitness House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Start">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style-article.min.css">
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="container"><a class="phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+              <svg class="icon" width="13" height="22" viewBox="0 0 13 22">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg><span>(812) 610 06 06</span></a><a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип компании" width="269" height="45"></a><a class="page-header__lk link-text link-text--svg" href="lk">
+              <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                <use xlink:href="img/sprite.svg#user-lk"></use>
+              </svg><span>Личный кабинет</span></a>
+        <button class="page-header__btn-menu" aria-label="Открыть меню">
+              <svg class="icon" width="40" height="19" viewBox="0 0 40 19">
+                <use xlink:href="img/sprite.svg#menu"></use>
+              </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <div class="mobile-menu__wrapper">
+          <button class="mobile-menu__btn-close" aria-label="Закрыть меню">
+                <svg class="icon" width="26" height="26" viewBox="0 0 26 26">
+                  <use xlink:href="img/sprite.svg#btn-close"></use>
+                </svg>
+          </button><a class="link-text link-text--svg" href="lk">
+                <svg class="icon" width="18" height="21" viewBox="0 0 18 21">
+                  <use xlink:href="img/sprite.svg#user-lk"></use>
+                </svg><span>Личный кабинет</span></a><a class="link-pay" href="#">Купить сейчас</a>
+          <ul class="list list--bold">
+            <li><a href="sale.html">Акции</a></li>
+            <li><a href="clubs.html">Клубы</a></li>
+            <li><a href="#">Тренеры</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+          </ul>
+          <ul class="list">
+            <li><a href="#modalToggle" data-bs-toggle="modal" data-toggle="modal">Запись на экскурсию</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Реклама</a></li>
+          </ul>
+          <hr><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
+                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <ul class="social">
+            <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="31" height="19" viewBox="0 0 31 19">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--inst" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="31" height="22" viewBox="0 0 31 22">
+                            <use xlink:href="img/sprite.svg#youtube"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--fb" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="26" height="27" viewBox="0 0 26 27">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <nav class="nav-menu container">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item nav-menu__item--city">
+          <div class="nav-city">
+            <button class="nav-city__title" tabindex="0"><span>Санкт-Петербург</span>
+                        <svg class="icon" width="14" height="8" viewBox="0 0 14 8">
+                          <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+            </button>
+            <div class="nav-city__wrapper d-none">
+              <div class="my-custom-scrollbar my-custom-scrollbar-primary">
+                <ul class="nav-city__list">
+                  <li><a class="region-select" href="/" data-region="1">Санкт-Петербург</a></li>
+                  <li><a class="region-select" href="index-n-novgorod.html" data-region="2">Нижний Новгород</a></li>
+                  <li><a class="region-select" href="index-kazan.html" data-region="3">Казань</a></li>
+                  <li><a class="region-select" href="index-tolyatti.html" data-region="4">Тольятти</a></li>
+                  <li><a class="region-select" href="1976.html" data-region="5">Самара</a></li>
+                  <li><a class="region-select" href="2123.html" data-region="6">Ульяновск</a></li>
+                  <li><a class="region-select" href="2181.html" data-region="7">Архангельск</a></li>
+                  <li><a class="region-select" href="2210.html" data-region="8">Ижевск</a></li>
+                  <li><a class="region-select" href="2236.html" data-region="9">Ярославль</a></li>
+                  <li><a class="region-select" href="2473.html" data-region="11">Петрозаводск</a></li>
+                  <li><a class="region-select" href="2526.html" data-region="12">Мурманск</a></li>
+                  <li><a class="region-select" href="2537.html" data-region="13">Рязань</a></li>
+                  <li><a class="region-select" href="3172.html" data-region="14">Набережные Челны</a></li>
+                  <li><a class="region-select" href="5556.html" data-region="15">Тула</a></li>
+                  <li><a class="region-select" href="6804.html" data-region="16">Нижнекамск</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-menu__item  order-2"><a class="nav-menu__link nav-menu__link--sale" href="sale.html"><span>Акции</span>
+                      <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                        <use xlink:href="img/sprite.svg#icon-menu-sale"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-1 order-md-3"><a class="nav-menu__link nav-menu__link" href="clubs.html"><span>Клубы</span>
+                      <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+                        <use xlink:href="img/sprite.svg#icon-menu-point"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="#"><span>Тренеры</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#icon-menu-user"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="schedule.html"><span>Расписание</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 19 18">
+                        <use xlink:href="img/sprite.svg#icon-menu-list"></use>
+                      </svg></a></li>
+        <li class="nav-menu__item  order-3"><a class="nav-menu__link" href="podpiska.html"><span>Подписка</span>
+                      <svg class="icon" width="19" height="18" viewBox="0 0 20 21">
+                        <use xlink:href="img/sprite.svg#icon-menu-subscr"></use>
+                      </svg></a></li>
+      </ul><a class="nav-menu__pay link-pay d-none d-lg-block" href="#">Купить сейчас</a>
+    </nav>
+    <ul class="breadcrumbs container">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Блог</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Тренировки</a></li>
+      <li class="breadcrumbs__item">Тренировка для похудения в тренажерном зале или на улице</li>
+    </ul>
+    <article class="article container">
+      <div class="article-wrapper">
+        <h1>Тренировка для похудения в тренажерном зале или на улице</h1>
+        <div class="article-meta">
+          <div class="article-meta__author">
+            <div class="article-meta__avatar"><img src="../img/pages/article/avatar.webp" alt="Ольга Ершкова" width="40" height="40"></div>
+            <div class="article-meta__info">
+              <div class="article-meta__name">Ольга Ершкова</div>
+              <div class="article-meta__position">Автор статьи, эксперт фитнес-тренер</div>
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="article-meta__rating">
+              <svg class="article-meta__star article-meta__star--filled" width="16" height="16" viewBox="0 0 19 19">
+                <path d="m9.437 1.404 1.663 4.875c.13.418.517.702.955.702h5.004c.96 0 1.369 1.219.604 1.797l-4.118 3.117c-.336.254-.477.693-.351 1.095l1.556 4.989c.29.928-.782 1.682-1.558 1.095l-4.172-3.1a1.04 1.04 0 0 0-1.206 0l-4.172 3.1c-.776.587-1.848-.167-1.558-1.095l1.556-4.989c.126-.402-.014-.841-.351-1.095L1.337 8.778c-.765-.578-.356-1.797.604-1.797h5.004c.438 0 .825-.284.955-.702z"></path>
+              </svg>
+              <svg class="article-meta__star article-meta__star--filled" width="16" height="16" viewBox="0 0 19 19">
+                <path d="m9.437 1.404 1.663 4.875c.13.418.517.702.955.702h5.004c.96 0 1.369 1.219.604 1.797l-4.118 3.117c-.336.254-.477.693-.351 1.095l1.556 4.989c.29.928-.782 1.682-1.558 1.095l-4.172-3.1a1.04 1.04 0 0 0-1.206 0l-4.172 3.1c-.776.587-1.848-.167-1.558-1.095l1.556-4.989c.126-.402-.014-.841-.351-1.095L1.337 8.778c-.765-.578-.356-1.797.604-1.797h5.004c.438 0 .825-.284.955-.702z"></path>
+              </svg>
+              <svg class="article-meta__star article-meta__star--filled" width="16" height="16" viewBox="0 0 19 19">
+                <path d="m9.437 1.404 1.663 4.875c.13.418.517.702.955.702h5.004c.96 0 1.369 1.219.604 1.797l-4.118 3.117c-.336.254-.477.693-.351 1.095l1.556 4.989c.29.928-.782 1.682-1.558 1.095l-4.172-3.1a1.04 1.04 0 0 0-1.206 0l-4.172 3.1c-.776.587-1.848-.167-1.558-1.095l1.556-4.989c.126-.402-.014-.841-.351-1.095L1.337 8.778c-.765-.578-.356-1.797.604-1.797h5.004c.438 0 .825-.284.955-.702z"></path>
+              </svg>
+              <svg class="article-meta__star article-meta__star--filled" width="16" height="16" viewBox="0 0 19 19">
+                <path d="m9.437 1.404 1.663 4.875c.13.418.517.702.955.702h5.004c.96 0 1.369 1.219.604 1.797l-4.118 3.117c-.336.254-.477.693-.351 1.095l1.556 4.989c.29.928-.782 1.682-1.558 1.095l-4.172-3.1a1.04 1.04 0 0 0-1.206 0l-4.172 3.1c-.776.587-1.848-.167-1.558-1.095l1.556-4.989c.126-.402-.014-.841-.351-1.095L1.337 8.778c-.765-.578-.356-1.797.604-1.797h5.004c.438 0 .825-.284.955-.702z"></path>
+              </svg>
+              <svg class="article-meta__star article-meta__star--empty" width="16" height="16" viewBox="0 0 19 19">
+                <path d="m9.437 1.404 1.663 4.875c.13.418.517.702.955.702h5.004c.96 0 1.369 1.219.604 1.797l-4.118 3.117c-.336.254-.477.693-.351 1.095l1.556 4.989c.29.928-.782 1.682-1.558 1.095l-4.172-3.1a1.04 1.04 0 0 0-1.206 0l-4.172 3.1c-.776.587-1.848-.167-1.558-1.095l1.556-4.989c.126-.402-.014-.841-.351-1.095L1.337 8.778c-.765-.578-.356-1.797.604-1.797h5.004c.438 0 .825-.284.955-.702z"></path>
+              </svg>
+            </div>
+            <div class="article-meta__date">
+              <time datetime="2025-10-25">25.10.2025</time>
+            </div>
+          </div>
+        </div>
+        <figure><img src="img/pages/article/poster.jpg" alt="text">
+          <figureCaption class="visually-hidden">text</figureCaption>
+        </figure>
+        <h2>Содержание</h2>
+        <ul>
+          <li><b>Пункт содержания</b></li>
+          <li><b>Пункт содержания</b></li>
+          <li><b>Пункт содержания</b></li>
+        </ul>
+        <p><a href="#">Кардиотренировки </a>— любые активности, ускоряющие сердцебиение, которые выполняются в одном ритме и затрагивают все тело или его значительную часть. Они оказывают разнообразное положительное влияние на организм, в том числе эффективны для сжигания жира.</p>
+        <p>В ходе кардиотренировки спортсмен заводит пульс в нужную зону — выше 110 ударов в минуту. В результате, сердце при участии дыхательной системы перекачивает кровь в 2 раза сильнее, затрачивая на это в 2 раза больше энергии. В течение первых 20 минут организм получает энергию, потребляет печёночный гликоген, а затем переключается на подкожный жир. Таким образом, любая интенсивная кардиотренировка эффективна для похудения.</p>
+        <h2>Чем полезны кардиотренировки?</h2>
+        <p>Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном ритме и затрагивают все тело или его значительную часть. Они оказывают разнообразное положительное влияние на организм, в том числе эффективны для сжигания жира.</p>
+        <p>В ходе кардиотренировки спортсмен заводит пульс в нужную зону — выше 110 ударов в минуту. В результате, сердце при участии дыхательной системы перекачивает кровь в 2 раза сильнее, затрачивая на это в 2 раза больше энергии. В течение первых 20 минут организм получает энергию, потребляет печёночный гликоген, а затем переключается на подкожный жир. Таким образом, любая интенсивная кардиотренировка эффективна для похудения.</p><img src="../img/pages/article/content-img.jpg" alt=""><a class="link-red" href="#formSale">Получить скидку</a>
+        <div class="div row">
+          <div class="col-sm-6 block block--yellow">
+            <h3>План тренировок для новичков</h3>
+            <ol>
+              <li>Быстрая ходьба на беговой дорожке</li>
+              <li>Занятие на велотренажере с нагрузкой</li>
+              <li>Бег на дорожке с нагрузкой</li>
+              <li>Заминка в виде тренировки на велотренажере в легком темпе</li>
+            </ol>
+          </div>
+          <div class="col-sm-6 block">
+            <h3>Виды кардиотренировок</h3>
+            <ul>
+              <li>Бег</li>
+              <li>Ходьба в любом темпе</li>
+              <li>Катание на роликовых коньках и скейтборде</li>
+              <li>Аэробика</li>
+              <li>Бег</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper-table">
+          <table>
+            <tr>
+              <td>Категория 1</td>
+              <td>Категория 2</td>
+              <td>Категория 3</td>
+              <td>Категория 4</td>
+            </tr>
+            <tr>
+              <td>Наименование</td>
+              <td>Наименование</td>
+              <td>Наименование</td>
+              <td>Наименование</td>
+            </tr>
+            <tr>
+              <td>Наименование</td>
+              <td>Наименование</td>
+              <td>Наименование</td>
+              <td>Наименование</td>
+            </tr>
+            <tr>
+              <td>Наименование</td>
+              <td>Наименование</td>
+              <td>Наименование</td>
+              <td>Наименование</td>
+            </tr>
+          </table>
+        </div>
+        <p>Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном ритме и затрагивают все тело или его значительную часть. Они оказывают разнообразное положительное влияние на организм, в том числе эффективны для сжигания жира.</p>
+        <p>В ходе кардиотренировки спортсмен заводит пульс в нужную зону — выше 110 ударов в минуту. В результате, сердце при участии дыхательной системы перекачивает кровь в 2 раза сильнее, затрачивая на это в 2 раза больше энергии. В течение первых 20 минут организм получает энергию, потребляет печёночный гликоген, а затем переключается на подкожный жир. Таким образом, любая интенсивная кардиотренировка эффективна для похудения.Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном ритме и затрагивают все тело или его значительную часть. Они оказывают разнообразное положительное влияние на организм, в том числе эффективны для сжигания жира.</p>
+        <p>В ходе кардиотренировки спортсмен заводит пульс в нужную зону — выше 110 ударов в минуту. В результате, сердце при участии дыхательной системы перекачивает кровь в 2 раза сильнее, затрачивая на это в 2 раза больше энергии. В течение первых 20 минут организм получает энергию, потребляет печёночный гликоген, а затем переключается на подкожный жир. Таким образом, любая интенсивная кардиотренировка эффективна для похудения.</p>
+      </div>
+    </article>
+    <section class="articles container">
+      <h3 class="articles__title">Вам будет интересно почитать:</h3>
+      <div class="articles__wrapper">
+        <div class="articles__item">
+          <article class="blog__item article-preview">
+            <figure class="article-preview__figure"><a class="article-preview__link" href="/article.html"><img class="article-preview__img" src="img/pages/blog/preview.webp" alt="text"></a>
+              <figcaption class="visually-hidden">text</figcaption>
+            </figure>
+            <div class="article-preview__content"><a class="article-preview__link" href="/article.html" rel="bookmark">
+                <h2 class="article-preview__title">Тренировка для похудения в тренажёрном зале или на улице</h2></a>
+              <p class="article-preview__description">Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном…</p>
+            </div>
+            <footer class="article-preview__footer"><a class="article-preview__link link-icon" href="/article.html" aria-label="">Читать далее</a></footer>
+          </article>
+        </div>
+        <div class="articles__item">
+          <article class="blog__item article-preview">
+            <figure class="article-preview__figure"><a class="article-preview__link" href="/article.html"><img class="article-preview__img" src="img/pages/blog/preview.webp" alt="text"></a>
+              <figcaption class="visually-hidden">text</figcaption>
+            </figure>
+            <div class="article-preview__content"><a class="article-preview__link" href="/article.html" rel="bookmark">
+                <h2 class="article-preview__title">Тренировка для похудения в тренажёрном зале или на улице</h2></a>
+              <p class="article-preview__description">Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном…</p>
+            </div>
+            <footer class="article-preview__footer"><a class="article-preview__link link-icon" href="/article.html" aria-label="">Читать далее</a></footer>
+          </article>
+        </div>
+        <div class="articles__item">
+          <article class="blog__item article-preview">
+            <figure class="article-preview__figure"><a class="article-preview__link" href="/article.html"><img class="article-preview__img" src="img/pages/blog/preview.webp" alt="text"></a>
+              <figcaption class="visually-hidden">text</figcaption>
+            </figure>
+            <div class="article-preview__content"><a class="article-preview__link" href="/article.html" rel="bookmark">
+                <h2 class="article-preview__title">Тренировка для похудения в тренажёрном зале или на улице</h2></a>
+              <p class="article-preview__description">Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном…</p>
+            </div>
+            <footer class="article-preview__footer"><a class="article-preview__link link-icon" href="/article.html" aria-label="">Читать далее</a></footer>
+          </article>
+        </div>
+        <div class="articles__item">
+          <article class="blog__item article-preview">
+            <figure class="article-preview__figure"><a class="article-preview__link" href="/article.html"><img class="article-preview__img" src="img/pages/blog/preview.webp" alt="text"></a>
+              <figcaption class="visually-hidden">text</figcaption>
+            </figure>
+            <div class="article-preview__content"><a class="article-preview__link" href="/article.html" rel="bookmark">
+                <h2 class="article-preview__title">Тренировка для похудения в тренажёрном зале или на улице</h2></a>
+              <p class="article-preview__description">Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном…</p>
+            </div>
+            <footer class="article-preview__footer"><a class="article-preview__link link-icon" href="/article.html" aria-label="">Читать далее</a></footer>
+          </article>
+        </div>
+        <div class="articles__item">
+          <article class="blog__item article-preview">
+            <figure class="article-preview__figure"><a class="article-preview__link" href="/article.html"><img class="article-preview__img" src="img/pages/blog/preview.webp" alt="text"></a>
+              <figcaption class="visually-hidden">text</figcaption>
+            </figure>
+            <div class="article-preview__content"><a class="article-preview__link" href="/article.html" rel="bookmark">
+                <h2 class="article-preview__title">Тренировка для похудения в тренажёрном зале или на улице</h2></a>
+              <p class="article-preview__description">Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном…</p>
+            </div>
+            <footer class="article-preview__footer"><a class="article-preview__link link-icon" href="/article.html" aria-label="">Читать далее</a></footer>
+          </article>
+        </div>
+        <div class="articles__item">
+          <article class="blog__item article-preview">
+            <figure class="article-preview__figure"><a class="article-preview__link" href="/article.html"><img class="article-preview__img" src="img/pages/blog/preview.webp" alt="text"></a>
+              <figcaption class="visually-hidden">text</figcaption>
+            </figure>
+            <div class="article-preview__content"><a class="article-preview__link" href="/article.html" rel="bookmark">
+                <h2 class="article-preview__title">Тренировка для похудения в тренажёрном зале или на улице</h2></a>
+              <p class="article-preview__description">Кардиотренировки — любые активности, ускоряющие сердцебиение, которые выполняются в одном…</p>
+            </div>
+            <footer class="article-preview__footer"><a class="article-preview__link link-icon" href="/article.html" aria-label="">Читать далее</a></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="article__form" id="formSale">
+      <div class="article-form">
+        <h3 class="article-form__title">Получить индивидуальную цену на годовой абонемент</h3>
+        <form class="form needs-validation" novalidate>
+          <label class="form-label" for="formName">
+            <input class="form-control" type="text" id="formName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+          </label>
+          <label class="form-label" for="formPhone">
+            <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+          </label>
+          <label class="form-label">
+            <select class="form-select" size="1" name="formClub" aria-label="Клуб" required>
+              <option selected disabled value="">Выберите клуб</option>
+              <option value="На Гашека">На Гашека</option>
+              <option value="На Северном">На Северном</option>
+              <option value="На Заречной">На Заречной</option>
+              <option value="На Камышовой">На Камышовой</option>
+              <option value="На Лесной">На Лесной</option>
+              <option value="На Выборгской">На Выборгской</option>
+              <option value="На Большевиков">На Большевиков</option>
+              <option value="На Ладожской">На Ладожской</option>
+            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+          </label>
+          <div class="form__btns">
+            <div class="form-personal">
+              Отправляя свои данные, Вы соглашаетесь с
+              <a href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных.</a>
+            </div>
+            <button class="button button--red" type="submit">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+    </section>
+        <div class="modal fade article-form-modal" aria-hidden="true" tabindex="-1" id="modal-submit-form">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                          <svg class="icon" width="26" height="26">
+                            <use xlink:href="img/sprite.svg#btn-close"></use>
+                          </svg>
+              </button>
+              <div class="modal-body">
+                <div class="form-message-modal">
+                  <div class="form-message-modal__wrapper">
+                    <svg viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="18" cy="18" r="17" stroke="#3080A3" stroke-width="2"></circle>
+                      <path d="M11 17.5L15.7063 24.3455C16.0952 24.9112 16.9253 24.9258 17.3339 24.3742L26.5 12" stroke="#3080A3" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                    <div class="form-message-modal__title text-center">Ваша заявка успешно отправлена! Наши менеджеры свяжутся с вами в ближайшее время</div>
+                    <div class="form-message-modal__text">Подписывайтесь на наши социальные сети, чтобы быть в курсе новостей</div>
+                    <ul class="social">
+                      <li class="social__item social__item--vk"><a class="link icon" href="#vk" aria-label="Наш вк"></a></li>
+                      <li class="social__item social__item--dz"><a class="link icon" href="#dzen" aria-label="Наш dzen"></a></li>
+                      <li class="social__item social__item--tm"><a class="link icon" href="#telegram" aria-label="Наш телеграм"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__top"><a class="page-footer__phone link-text link-text--svg" href="tel:88126100606" aria-label="Наш телефон">
+                      <svg class="icon" width="47" height="37" viewBox="0 0 47 37">
+                        <use xlink:href="img/sprite.svg#phone-footer"></use>
+                      </svg><span class="ml-2">(812) 610 06 06</span></a>
+          <div class="page-footer__links links">
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Новости клубов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Академия фитнеса Корус</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Вакансии</span></a></li>
+            </ul>
+            <ul class="links__list">
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Корпоративные продажи</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Развитие регионов</span></a></li>
+              <li><a class="link-text link-text--arrow" href="#">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+                              <use xlink:href="img/sprite.svg#arrow-li"></use>
+                            </svg><span>Реклама в клубах</span></a></li>
+            </ul>
+          </div>
+          <div class="page-footer__support">Служба поддержки
+            <ul class="social pt-2 mb-0 pb-2">
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://wa.me/+79213443525" aria-label="Наш whatsApp" target="_blank">
+                              <svg class="icon" width="30" height="30" viewBox="0 0 19 19">
+                                <use xlink:href="img/sprite.svg#wp"></use>
+                              </svg></a></li>
+              <li class="social__item px-sm-1"><a class="social__link social__link--support" href="https://t.me/+79213443525" aria-label="Наш telegram" target="_blank">
+                              <svg class="icon" width="21" height="17" viewBox="0 0 17 17">
+                                <use xlink:href="img/sprite.svg#tl"></use>
+                              </svg></a></li>
+            </ul><span>с 07:00 до 00:00</span>
+            <div>Email:<a href="mailto:help@fhclub.ru">help@fhclub.ru</a></div>
+          </div><a class="logo logo--footer" href="#">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo.svg"><img src="img/logo.svg" alt="Логотип компании" width="154" height="26">
+                      </picture></a>
+        </div>
+        <div class="page-footer__buttom">
+          <ul class="social">
+            <li class="social__item px-1"><a class="social__link social__link--vk" href="#" aria-label="Наш вк">
+                          <svg class="icon" width="31" height="19" viewBox="0 0 31 19">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--inst" href="#" aria-label="Наш youtube">
+                          <svg class="icon" width="31" height="22" viewBox="0 0 31 22">
+                            <use xlink:href="img/sprite.svg#youtube"></use>
+                          </svg></a></li>
+            <li class="social__item px-1"><a class="social__link social__link--fb" href="#" aria-label="Наш телеграм">
+                          <svg class="icon" width="26" height="27" viewBox="0 0 26 27">
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg></a></li>
+          </ul><a class="link-text" href="#">Юридическая информация</a><a class="link-text" href="#">Cоглашение на обработку персональных данных</a>
+          <div class="page-footer__copy">
+            <div>© 2007 - 2023</div>
+            <div>Все права защищены.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.min.js" type="module"></script>
+  </body>
+</html>
