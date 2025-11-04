@@ -3259,6 +3259,15 @@ button[type=submit] {
   }
 }
 .article-preview__description {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  -webkit-line-clamp: 3;
+  -moz-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 120%;
@@ -3283,7 +3292,7 @@ button[type=submit] {
   transform: translate(0, -50%);
   width: 2rem;
   height: 1rem;
-  background-image: url("../img/pages/blog/icon-arrow.svg");
+  background-image: url("../img/pages/article/icon-arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

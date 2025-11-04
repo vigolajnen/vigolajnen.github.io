@@ -2738,7 +2738,7 @@ button[type=submit] {
 .blog__nav-item:hover {
   background: #fffeda;
 }
-.blog__nav-item .active {
+.blog__nav-item.active {
   background: #fffeda;
 }
 .blog__nav-link {
@@ -2777,6 +2777,7 @@ button[type=submit] {
 
 .blog__btn-more {
   display: inline-block;
+  min-width: 170px;
   margin: 0 auto;
   margin-bottom: 40px;
   border-radius: 1rem;
@@ -2870,6 +2871,15 @@ button[type=submit] {
   }
 }
 .article-preview__description {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  -webkit-line-clamp: 3;
+  -moz-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 120%;
