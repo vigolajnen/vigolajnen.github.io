@@ -2640,6 +2640,208 @@ button[type=submit] {
   fill: #ffffff;
 }
 
+.modal.modal-city {
+  background-color: transparent;
+}
+.modal.modal-city--list {
+  background-color: rgba(66, 71, 77, 0.7);
+}
+.modal.modal-city .modal-dialog {
+  max-width: 420px;
+}
+.modal.modal-city .modal-content {
+  padding: 1rem 0;
+  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
+  background-color: #fffeda;
+  border-radius: 14px;
+}
+.modal.modal-city .modal-content .my-custom-scrollbar {
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 70vh;
+}
+@media (min-width: 576px) {
+  .modal.modal-city .modal-content .my-custom-scrollbar {
+    height: auto;
+    min-height: auto;
+  }
+}
+.modal.modal-city .modal-header {
+  border: none;
+  padding: 0 1rem;
+  align-items: baseline;
+}
+.modal.modal-city .modal-body {
+  padding: 0 0.25rem 0 1rem;
+  border-color: transparent;
+}
+@media (min-width: 992px) {
+  .modal.modal-city .modal-body {
+    padding: 0 1rem;
+  }
+}
+.modal.modal-city .modal-city-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.modal.modal-city .modal-city-footer .button {
+  margin: 0 0.5rem;
+}
+.modal.modal-city .modal-title {
+  margin-bottom: 1rem;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #42474d;
+  font-size: 18px;
+}
+@media (min-width: 320px) {
+  .modal.modal-city .modal-title {
+    font-size: calc(-0.6696428571vw + 20.1428571429px);
+  }
+}
+@media (min-width: 768px) {
+  .modal.modal-city .modal-title {
+    font-size: 15px;
+  }
+}
+.modal.modal-city .btn-close {
+  padding: 0;
+  margin: 0;
+  right: 7px;
+  top: 0;
+  position: relative;
+  width: 0.7em;
+  height: 0.7em;
+  opacity: 1;
+}
+
+.city-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .city-list {
+    column-count: 2;
+  }
+}
+.city-list li {
+  min-width: 100px;
+  margin-bottom: 4px;
+}
+.city-list li:first-child button {
+  font-weight: 700;
+}
+.city-list a {
+  text-decoration: none;
+  color: #42474d;
+}
+.city-list button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  color: #052a56;
+  font-family: "Avenir Next Cyr", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  width: 100%;
+  text-align: left;
+  padding: 2px;
+  font-size: 20px;
+}
+@media (min-width: 320px) {
+  .city-list button {
+    font-size: calc(-0.4464285714vw + 21.4285714286px);
+  }
+}
+@media (min-width: 768px) {
+  .city-list button {
+    font-size: 18px;
+  }
+}
+.city-list button:focus, .city-list button:hover {
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-weight: 700;
+}
+
+.location {
+  z-index: 10;
+  position: absolute;
+  top: 10%;
+  left: 5px;
+  background-color: #fffeda;
+  border-radius: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 310px;
+  padding: 1rem 1rem 1.3rem 1.4rem;
+}
+@media (min-width: 576px) {
+  .location {
+    top: 100%;
+    left: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .location {
+    left: 20px;
+    padding: 1.5rem 1rem 1.6rem 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .location {
+    left: 80px;
+  }
+}
+.location__title {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  font-family: "Avenir Next Cyr Demi", "Arial", "Helvetica CY", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #42474d;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .location__title {
+    margin-bottom: 1.1rem;
+  }
+}
+.location .button {
+  font-size: 20px;
+  color: #42474d;
+  border: 1px solid #42474d;
+  border-radius: 6px;
+  margin: 0 0.5rem;
+  padding: 0.6rem 2.15rem;
+  transition: 0.3s;
+}
+.location .button:hover {
+  background-color: #42474d;
+  border-color: #42474d;
+  color: #ffffff;
+}
+.location .button.active {
+  background-color: #42474d;
+  color: #ffffff;
+}
+
 .modal-submit-form .btn-close {
   top: 10px;
   right: 5px;
@@ -3742,7 +3944,7 @@ button[type=submit] {
     padding: 0 0 5rem 3rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .page-tariffs__club-tariffs .slider-tariffs {
     padding: 0 5rem;
   }

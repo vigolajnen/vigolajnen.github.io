@@ -71,7 +71,8 @@
     567: { slidesPerView: 2, spaceBetween: 5 },
     768: { slidesPerView: 2.5, spaceBetween: 10 },
     1024: { slidesPerView: 2.7, spaceBetween: 10 },
-    1200: { slidesPerView: 4, spaceBetween: 10 },
+    1200: { slidesPerView: 3.5, spaceBetween: 10 },
+    1400: { slidesPerView: 4, spaceBetween: 10 },
   };
   
   
@@ -279,7 +280,7 @@
          * Получает выбранный тариф
          */
     getSelectedTariff(form) {
-      const tariffSelect = form.querySelector('select[name="formTariff"]');
+      const tariffSelect = form.querySelector('select[name="service"]');
       if (!tariffSelect || tariffSelect.selectedIndex < 0) return '';
   
       const selectedOption = tariffSelect.options[tariffSelect.selectedIndex];
@@ -354,7 +355,7 @@
          * Инициализация обработчиков выбора тарифа
          */
     initTariffSelectHandler() {
-      const selects = document.querySelectorAll('select[name="formTariff"]');
+      const selects = document.querySelectorAll('select[name="service"]');
       selects.forEach(select => {
         select.addEventListener('change', this.handleTariffChange.bind(this));
       });
@@ -380,9 +381,7 @@
          * Устанавливает тариф из внешнего источника
          */
     setTariffFromButton(tariffPrice, tariffName) {
-      const tariffSelects = document.querySelectorAll(
-        'select[name="formTariff"]',
-      );
+      const tariffSelects = document.querySelectorAll('select[name="service"]');
   
       tariffSelects.forEach(select => {
         const option = Array.from(select.options).find(
@@ -700,13 +699,6 @@
   // Экспорт функций
   window.initTariffsAndSliders = initTariffsAndSliders;
   window.destroyTariffsAndSliders = destroy;
-  
-  // Автоматическая инициализация при загрузке DOM
-  // if (document.readyState === 'loading') {
-  //   document.addEventListener('DOMContentLoaded', initTariffsAndSliders);
-  // } else {
-  //   initTariffsAndSliders();
-  // }
   
   
   
