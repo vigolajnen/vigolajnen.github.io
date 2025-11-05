@@ -674,13 +674,6 @@
         sliderTariffs.slideTo(index);
       }
     }
-  
-    if (sliderGallery) {
-      const index = Array.from(sliderTariffs.slides).indexOf(tariffElement);
-      if (index !== -1) {
-        sliderGallery.slideTo(index);
-      }
-    }
   }
   
   /**
