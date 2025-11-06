@@ -2660,8 +2660,12 @@ button[type=submit] {
   flex-wrap: wrap;
   gap: 0.75rem;
   list-style: none;
-  padding: 0;
-  padding-bottom: 0.5rem;
+  padding: 1.5rem 0 1rem;
+}
+@media (min-width: 992px) {
+  .breadcrumbs {
+    padding: 1rem 0;
+  }
 }
 .breadcrumbs__item {
   position: relative;
@@ -2886,6 +2890,12 @@ button[type=submit] {
   color: #000;
   margin-bottom: 0;
 }
+@media (min-width: 768px) {
+  .article-preview__description {
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+  }
+}
 .article-preview__footer {
   padding: 1rem;
   padding-top: 0;
@@ -2894,6 +2904,9 @@ button[type=submit] {
   position: relative;
   display: inline-block;
   padding-right: 2.5rem;
+  font-weight: 400;
+  font-size: 0.94rem;
+  line-height: 140%;
   transition: 0.3s;
 }
 .article-preview .link-icon::before {
