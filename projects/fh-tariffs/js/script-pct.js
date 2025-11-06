@@ -14,6 +14,15 @@
       bg_6: 'linear-gradient(135deg, #522F20 0%, #522F20 100%)',
       bg_7: 'linear-gradient(135deg, #585858 0%, #585858 100%)',
     },
+    bgColor: {
+      bg_1: '#585858',
+      bg_2: '#226B9E',
+      bg_3: '#45281D',
+      bg_4: '#3B3230',
+      bg_5: '#DBDAD8',
+      bg_6: '#522F20',
+      bg_7: '#585858',
+    },
     text: {
       light: '#fff',
       dark: '#4b5052',
@@ -24,30 +33,37 @@
   const BACKGROUND_DATA = {
     bg_1: {
       gradient: COLORS.gradients.bg_1,
+      bgColor: COLORS.bgColor.bg_1,
       color: COLORS.text.light,
     },
     bg_2: {
       gradient: COLORS.gradients.bg_2,
+      bgColor: COLORS.bgColor.bg_2,
       color: COLORS.text.light,
     },
     bg_3: {
       gradient: COLORS.gradients.bg_3,
+      bgColor: COLORS.bgColor.bg_3,
       color: COLORS.text.light,
     },
     bg_4: {
       gradient: COLORS.gradients.bg_4,
+      bgColor: COLORS.bgColor.bg_4,
       color: COLORS.text.light,
     },
     bg_5: {
       gradient: COLORS.gradients.bg_5,
+      bgColor: COLORS.bgColor.bg_5,
       color: COLORS.text.dark,
     },
     bg_6: {
       gradient: COLORS.gradients.bg_6,
+      bgColor: COLORS.bgColor.bg_6,
       color: COLORS.text.light,
     },
     bg_7: {
       gradient: COLORS.gradients.bg_7,
+      bgColor: COLORS.bgColor.bg_7,
       color: COLORS.text.light,
     },
   };
@@ -563,13 +579,14 @@
     const gallerySection = document.querySelector('#js-slider-gallery');
     const background = BACKGROUND_DATA[slide];
     const style = `--bg-color: ${background.gradient}; --text-color: ${background.color}`;
+    const styleSlide = `--bg-color: ${background.bgColor}; --text-color: ${background.color}`;
   
     if (tariffsSection) {
       tariffsSection.setAttribute('style', style);
     }
   
     if (gallerySection) {
-      gallerySection.setAttribute('style', style);
+      gallerySection.setAttribute('style', styleSlide);
     }
   
     highlightActiveTariff(slide);
