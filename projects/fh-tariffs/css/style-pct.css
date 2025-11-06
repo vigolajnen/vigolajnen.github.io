@@ -3701,7 +3701,7 @@ button[type=submit] {
   line-height: 130%;
   color: #42474D;
 }
-@media (min-width: 576px) {
+@media (min-width: 375px) {
   .club-tariff__service {
     font-size: 0.9rem;
   }
