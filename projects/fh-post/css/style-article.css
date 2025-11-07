@@ -2850,7 +2850,6 @@ button[type=submit] {
   color: #42474d;
 }
 .article-wrapper {
-  max-width: 865px;
   margin: 0 auto;
   padding-top: 1rem;
   display: flex;
