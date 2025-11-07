@@ -167,9 +167,9 @@
             </div>
           </div>
         </div>
-        <figure><img src="img/pages/article/poster.jpg" alt="text">
-          <figureCaption class="visually-hidden">text</figureCaption>
-        </figure>
+        <picture>
+          <source srcset="img/pages/article/poster.webp" media="(min-width: 567px)"><img src="img/pages/article/poster-mob.webp" alt="">
+        </picture>
         <h2>Содержание</h2>
         <ul>
           <li><b>Пункт содержания</b></li>
@@ -316,37 +316,39 @@
         </div>
       </div>
     </section>
-    <section class="article__form" id="formSale">
-      <div class="article-form">
-        <h3 class="article-form__title">Получить индивидуальную цену на годовой абонемент</h3>
-        <form class="form needs-validation" novalidate>
-          <label class="form-label" for="formName">
-            <input class="form-control" type="text" id="formName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-          </label>
-          <label class="form-label" for="formPhone">
-            <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-          </label>
-          <label class="form-label">
-            <select class="form-select" size="1" name="formClub" aria-label="Клуб" required>
-              <option selected disabled value="">Выберите клуб</option>
-              <option value="На Гашека">На Гашека</option>
-              <option value="На Северном">На Северном</option>
-              <option value="На Заречной">На Заречной</option>
-              <option value="На Камышовой">На Камышовой</option>
-              <option value="На Лесной">На Лесной</option>
-              <option value="На Выборгской">На Выборгской</option>
-              <option value="На Большевиков">На Большевиков</option>
-              <option value="На Ладожской">На Ладожской</option>
-            </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
-          </label>
-          <div class="form__btns">
-            <div class="form-personal">
-              Отправляя свои данные, Вы соглашаетесь с
-              <a href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных.</a>
+    <section class="container article__form" id="formSale">
+      <div class="article__form-wrapper">
+        <div class="article-form">
+          <h3 class="article-form__title">Получить индивидуальную цену на годовой абонемент</h3>
+          <form class="form needs-validation" novalidate>
+            <label class="form-label" for="formName">
+              <input class="form-control" type="text" id="formName" placeholder="Артем" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+            </label>
+            <label class="form-label" for="formPhone">
+              <input class="form-control" type="tel" id="formPhone" placeholder="+7 999 999 99 99" autocomplete="off" required><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+            </label>
+            <label class="form-label">
+              <select class="form-select" size="1" name="formClub" aria-label="Клуб" required>
+                <option selected disabled value="">Выберите клуб</option>
+                <option value="На Гашека">На Гашека</option>
+                <option value="На Северном">На Северном</option>
+                <option value="На Заречной">На Заречной</option>
+                <option value="На Камышовой">На Камышовой</option>
+                <option value="На Лесной">На Лесной</option>
+                <option value="На Выборгской">На Выборгской</option>
+                <option value="На Большевиков">На Большевиков</option>
+                <option value="На Ладожской">На Ладожской</option>
+              </select><span class="valid-feedback">Успешно</span><span class="invalid-feedback">Заполните поле</span>
+            </label>
+            <div class="form__btns">
+              <div class="form-personal">
+                Отправляя свои данные, Вы соглашаетесь с
+                <a href="https://market.fitnesshouse.ru/storage/documents/legal_information.pdf" target="_blank">Положением об обработке персональных данных.</a>
+              </div>
+              <button class="button button--red" type="submit">Отправить заявку</button>
             </div>
-            <button class="button button--red" type="submit">Отправить заявку</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
         <div class="modal fade article-form-modal" aria-hidden="true" tabindex="-1" id="modal-submit-form">

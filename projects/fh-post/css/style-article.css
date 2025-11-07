@@ -2899,7 +2899,7 @@ button[type=submit] {
   max-width: 100%;
   height: auto;
 }
-.article figure {
+.article figure, .article picture {
   display: block;
   margin: 20px auto;
   border-radius: 1rem;
@@ -3378,16 +3378,20 @@ button[type=submit] {
   transition: 0.3s;
 }
 
-.article__form {
+@media (max-width: 768px) {
+  .article__form.container {
+    padding: 0;
+  }
+}
+.article__form-wrapper {
   width: 100%;
-  max-width: 865px;
   margin: 0 auto;
   margin: 35px auto;
   padding: 1.25rem;
   background: #e2f0fb;
 }
 @media (min-width: 992px) {
-  .article__form {
+  .article__form-wrapper {
     margin: 50px auto;
     border-radius: 1rem;
     box-shadow: -8px -8px 10px 0 #fff, 8px 8px 16px 0 rgba(73, 76, 79, 0.19);
